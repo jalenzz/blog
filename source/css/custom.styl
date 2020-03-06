@@ -95,18 +95,21 @@ body {
     color: #2f4154;
 }
 
-// #scroll-top-button {
-// 	right: 50px !important;
-// 	width: 70px !important;
-// 	height: 651px !important;
-// 	top: -90px !important;
-// 	bottom: unset;
-// 	transition: all .5s ease-in-out; 
-// 	background: url("/img/scroll.png");
-// 	> i {
-// 		display: none;
-// 	}
-// }
-// .z-depth-1 {
-//     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.0),0 2px 10px 0 rgba(0,0,0,0.0) !important;
-// }
+#scroll-top-button {
+	right: 50px !important;
+	width: 70px !important;
+	height: 651px !important;
+	top: -90px !important;
+	bottom: unset;
+	transition: all .5s ease-in-out; 
+	background: url("/img/scroll.png");
+	> i {
+		display: none;
+	}
+	@media (max-width: 767px){
+		display: none;
+	}
+}
+.z-depth-1 {
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.0),0 2px 10px 0 rgba(0,0,0,0.0) !important;
+}
