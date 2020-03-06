@@ -92,6 +92,7 @@ navbar:
     tag: /tags/
     links: /links/
     about: /about/
+    comment: https://kiko2hjmvapb.cn-e1.leanapp.cn/
     疫情图: /2019-nCoV/
 search: # 搜索栏
   enable: true
