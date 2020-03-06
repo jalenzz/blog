@@ -1,0 +1,38 @@
+<%- js_ex(theme.static_prefix.jquery, 'jquery.min.js') %>
+<%- js_ex(theme.static_prefix.popper, 'popper.min.js') %>
+<%- js_ex(theme.static_prefix.bootstrap, 'js/bootstrap.min.js') %>
+<%- js_ex(theme.static_prefix.mdbootstrap, 'js/mdb.min.js') %>
+<%- js_ex(theme.static_prefix.internal_js, 'main.js') %>
+
+<% if(theme.lazyload.enable){ %>
+  <%- js_ex(theme.static_prefix.internal_js, 'lazyload.js') %>
+<% } %>
+
+<% if(is_post()){ %>
+  <%- partial('_partial/postjs.ejs') %>
+<% } %>
+
+<% if (theme.smooth_scroll.enable) { %>
+  <%- js_ex(theme.static_prefix.smooth_scroll, 'SmoothScroll.min.js') %>
+<% } %>
+
+<% if (theme.footer.statistics.enable || theme.post.meta.views.enable) { %>
+  <%- js_ex('//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js', '', 'defer') %>
+  <!-- //cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.min.js -->
+  <!-- //busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js -->
+<% } %>
+
+<% if (theme.custom_js) { %>
+  <%- js(theme.custom_js) %>
+<% } %>
+
+<!-- Plugins -->
+<%- partial('_partial/plugins/analytics.ejs') %>
+<%- partial('_partial/plugins/prettify.ejs') %>
+<%- partial('_partial/plugins/typed.ejs') %>
+<%- partial('_partial/plugins/anchor.ejs') %>
+<%- partial('_partial/plugins/local-search.ejs') %>
+<%- partial('_partial/plugins/fancybox.ejs') %>
+<%- partial('_partial/plugins/math.ejs') %>
+<%- partial('_partial/plugins/mouse-click.ejs') %>
+<%- partial('_partial/plugins/daovoice.ejs') %>

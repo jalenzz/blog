@@ -1,0 +1,183 @@
+body {
+  overflow: hidden;
+  margin: 0;
+  height: 100vh;
+  background:url(https://i.loli.net/2020/02/16/cz56uknGl4EOXM7.jpg);
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-size: cover;
+  background-position:50% 50%;
+}
+body:before, body:after {
+  position: absolute;
+  width: 100%;
+  opacity: .05;
+  font: italic 900 4vmin/ 2 petit formal script;
+  text-align: center;
+}
+@keyframes prog {
+  to {
+    transform: translate(0);
+  }
+}
+div {
+  position: absolute;
+  transform-style: preserve-3d;
+}
+
+.slice {
+  left: calc((var(--k) - .5*(var(--n) - 1))*10em/var(--n));
+  animation: a 8s calc(var(--k)/var(--n)*4s - 8s) infinite forwards;
+}
+.slice:nth-child(1) {
+  --k: 0;
+}
+.slice:nth-child(2) {
+  --k: 1;
+}
+.slice:nth-child(3) {
+  --k: 2;
+}
+.slice:nth-child(4) {
+  --k: 3;
+}
+
+.cube {
+  --n: 4;
+  --f: 0;
+  --notf: calc(1 - var(--f));
+  --sgnf: calc(1 - 2*var(--f));
+  top: 50%;
+  left: 50%;
+  transform: rotatex(-35deg) rotatey(calc(var(--sgnf)*45deg));
+  animation: flip 8s steps(1) infinite;
+}
+
+@keyframes flip {
+  50% {
+    --f: 1;
+  }
+}
+.cuboid {
+  animation-name: cuboid;
+}
+.cuboid__face {
+  --i: 0;
+  --j: calc(1 - var(--i));
+  --m: 1;
+  --out: var(--i);
+  --p: 0;
+  --inn: calc(1 - var(--out));
+  --top: calc(var(--p)*var(--i));
+  --lat: calc(1 - var(--top));
+  --pad: calc((var(--j) + var(--i)/var(--n))*5em);
+  margin: -5em calc(-1*var(--pad));
+  padding: 5em var(--pad);
+  transform: rotate3d(var(--i), var(--j), 0, calc(var(--m)*90deg)) translatez(calc((var(--i) + var(--j)/var(--n))*5em));
+  box-shadow: 0 0 calc(var(--i)*1px) currentcolor;
+  background: currentcolor;
+  --lum: calc(65% + var(--out)*15% + var(--top)*20% + (var(--notf)*var(--i) + var(--f)*var(--j))*var(--lat)*10%);
+  color: HSL(200, calc(var(--inn)*30%), var(--lum));
+}
+.cuboid__face:nth-child(2n) {
+  --p: 1;
+}
+.cuboid__face:nth-child(-n + 4) {
+  --i: 1;
+}
+.cuboid__face:nth-child(1) {
+  --m: 0;
+}
+.cuboid__face:nth-child(3) {
+  --m: 2;
+}
+.cuboid__face:nth-child(4) {
+  --m: 3;
+}
+.cuboid__face:nth-child(6) {
+  --m: -1;
+}
+.cuboid:nth-child(1) .cuboid__face:nth-child(6), .cuboid:nth-child(4) .cuboid__face:nth-child(5) {
+  --out: 1;
+}
+
+@keyframes cuboid {
+  54.375% {
+    transform: translatey(-1.36719em);
+  }
+  4.375% {
+    transform: translatey(1.36719em);
+  }
+  57.5% {
+    transform: translatey(-1.875em);
+  }
+  7.5% {
+    transform: translatey(1.875em);
+  }
+  59.375% {
+    transform: translatey(-1.99219em);
+  }
+  9.375% {
+    transform: translatey(1.99219em);
+  }
+  0%, 52.5%, 56.25%, 58.75%, 60%, 100% {
+    transform: translatey(-2em);
+  }
+  2.5%, 6.25%, 8.75%, 10%, 50% {
+    transform: translatey(2em);
+  }
+  52.5%, 56.25%, 58.75%, 2.5%, 6.25%, 8.75% {
+    animation-timing-function: ease-out;
+  }
+  54.375%, 57.5%, 59.375%, 4.375%, 7.5%, 9.375% {
+    animation-timing-function: ease-in;
+  }
+}
+.drop {
+  transform: translatey(9em) rotatex(90deg);
+  opacity: .1;
+  filter: blur(9px);
+}
+
+.shadow {
+  margin: -5em calc(-5em/var(--n));
+  padding: 5em calc(5em/var(--n));
+  transform-origin: calc((var(--k) - .5*(var(--n) - 1))*-10em/var(--n)) 50%;
+  transform: scale(var(--sr));
+  opacity: var(--sr);
+  background: #000;
+  animation-name: shadow;
+}
+
+@keyframes shadow {
+  54.375% {
+    --sr: 0.88776;
+  }
+  4.375% {
+    --sr: 0.97891;
+  }
+  57.5% {
+    --sr: 0.87083;
+  }
+  7.5% {
+    --sr: 0.99583;
+  }
+  59.375% {
+    --sr: 0.86693;
+  }
+  9.375% {
+    --sr: 0.99974;
+  }
+  0%, 52.5%, 56.25%, 58.75%, 60%, 100% {
+    --sr: 0.86667;
+  }
+  2.5%, 6.25%, 8.75%, 10%, 50% {
+    --sr: 1;
+  }
+  52.5%, 56.25%, 58.75%, 2.5%, 6.25%, 8.75% {
+    animation-timing-function: ease-out;
+  }
+  54.375%, 57.5%, 59.375%, 4.375%, 7.5%, 9.375% {
+    animation-timing-function: ease-in;
+  }
+}
