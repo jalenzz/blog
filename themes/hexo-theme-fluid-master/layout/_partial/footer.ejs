@@ -1,0 +1,63 @@
+<script>
+  (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      if (curProtocol === 'https'){
+     bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else{
+    bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+  })();
+</script>
+<script>
+  function show_date_time(){
+      window.setTimeout("show_date_time()", 1000);
+      BirthDay=new Date("11/20/2019 00:00:00");
+      today=new Date();
+      timeold=(today.getTime()-BirthDay.getTime());
+      sectimeold=timeold/1000
+      secondsold=Math.floor(sectimeold);
+      msPerDay=24*60*60*1000
+      e_daysold=timeold/msPerDay
+      daysold=Math.floor(e_daysold);
+      e_hrsold=(e_daysold-daysold)*24;
+      hrsold=setzero(Math.floor(e_hrsold));
+      e_minsold=(e_hrsold-hrsold)*60;
+      minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
+      seconds=setzero(Math.floor((e_minsold-minsold)*60));
+      document.getElementById('days').innerHTML="本站已在各种bug中运行 "+daysold+" 天 "+hrsold+" 小时 "+minsold+" 分 "+seconds+" 秒";
+  }
+  function setzero(i) {
+      if (i<10) {
+          i="0" + i
+      };
+      return i;
+  }
+  show_date_time();
+</script>
+<footer class="mt-5">
+  <div class="text-center py-3">
+    <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><b>Hexo</b></a>
+    <i class="iconfont icon-love"></i>
+    <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"> <b>Fluid</b></a>
+    <br>
+    <div id="days"></div>
+    
+
+    <%- partial('_partial/beian.ejs') %>
+
+    <!-- cnzz Analytics icon -->
+    <% if(theme.web_analytics.cnzz) { %>
+      <span id="cnzz_stat_icon_<%- theme.web_analytics.cnzz %>" style="display: none"></span>
+    <% } %>
+    <%- partial('_partial/busuanzi.ejs') %>
+  </div>
+  
+
+</footer>
+
+<!-- SCRIPTS -->
+<%- partial('_partial/scripts.ejs') %>
