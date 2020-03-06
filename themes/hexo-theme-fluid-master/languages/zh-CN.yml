@@ -40,3 +40,7 @@ page404:
 links:
   title: 友链
   subtitle: 友情链接
+
+comment:
+  title: 评论管理
+  subtitle: 评论管理
