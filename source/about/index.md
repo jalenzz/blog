@@ -220,7 +220,7 @@ layout: about
                 shadowBlur: 15,
                 shadowOffsetY: 15,
             },
-            data: [0, 2, 6, 10, 15, 29, 31]
+            data: [1, 6, 10, 15, 30, 32]
         },
         {
             name: "该月发布数",
@@ -240,7 +240,7 @@ layout: about
                     barBorderRadius: [30, 30, 0, 0],
                 }
             },
-            data: [0, 2, 4, 4, 5, 15, 2]
+            data: [1, 5, 4, 5, 15, 2]
         }
     ]
 };
