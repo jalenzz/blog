@@ -139,7 +139,7 @@ scroll_top_arrow:  # 向顶部滚动的箭头
 index:
   banner_img: https://cdn.jsdelivr.net/gh/Royce2019/img/img/cz56uknGl4EOXM7.jpg  # 首页 Banner 头图，以下相同
   banner_img_height: 100  # 头图高度，屏幕百分比，available: 0 - 100
-  post_default_img: /img/index_img.jpg # 默认的文章封面图，当没有指定 index_img 时会使用该图片，若都为空则不显示任何图片
+  post_default_img: https://cdn.jsdelivr.net/gh/Royce2019/img/img/index_img.jpg # 默认的文章封面图，当没有指定 index_img 时会使用该图片，若都为空则不显示任何图片
   slogan:  # 首页副标题的独立设置
     enable: true  # 为 false 则不显示任何内容
     text: 时代的尘埃，落在个人身上就是一座大山 # 为空则按 hexo config.subtitle 显示
@@ -323,7 +323,7 @@ tag:
 about:  # 以下仅为页面顶部的基本信息，更多内容请在 ./pages/about.md 中编辑，支持 markdown 和 HTML
   banner_img: /img/default.png
   banner_img_height: 80  # available: 0 - 100
-  avatar: /img/avatar.jpg # 头像
+  avatar: https://cdn.jsdelivr.net/gh/Royce2019/img/img/avatar.jpg # 头像
   name: Royce
   introduce: OI小白 # 支持 HTML
   icons: # 更多图标可从 https://fontawesome.com/v5.10.0/icons?d=gallery 查找，并以 "图标名: url" 的格式添加在下方
@@ -373,26 +373,26 @@ links:
   banner_img: /img/default.png
   banner_img_height: 80  # available: 0 - 100
   defaultlinks:
-    Neworld2002: [https://neworld2002.github.io, OI大佬, https://i.loli.net/2019/03/17/5c8dff0100f07.jpg]    # 头像地址
-    newsheep: [http://newsheep2003.github.io/, 社长大大, https://newsheep2003.github.io/images/apple-touch-icon.png?v=5.1.3] 
+    Neworld2002: [https://neworld2002.github.io, OI大佬, https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/neworld2002.jpg]    # 头像地址
+    newsheep: [http://newsheep2003.github.io/, 社长大大, https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/newsheep.png] 
   friendslinks:
-    辉少菌: [http://huishao.top, 一个爱搞技术的高一党, "https://i.loli.net/2020/03/05/gETpufbBrjhRXan.png"]
-    Atuo: [https://blog.atuo.store, 网络安全, https://oss-hexo.oss-cn-hongkong.aliyuncs.com/HeadImage.jpg]
-    维他入我心: [https://wtrwx.top, 科技/生活日常～, https://wtrwx.top/img/avatar.png]
-    Linhk1606: [https://linhk1606.github.io, ..., https://i.loli.net/2020/02/09/PN7I5RJfFtA93r2.png]
-    LeFlacon: [https://leflacon.github.io, Let’s think!, https://leflacon.github.io/images/0.png]
-    小康博客: [https://www.antmoe.com, 一个收藏回忆与分享技术的地方, https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/avatar.jpg]
-    小K同學: [https://kksan.top, 技术，日语，云旅游, http://kksan.top/css/images/avatar.jpg]
-    吃白饭的休伯利安号: [https://eatrice.top, 卑微的考研狗, https://eatrice.top/img/favcion.png] 
-    IamWu555: [http://blog.wubuster.com, A man with superb shot, https://i.loli.net/2020/02/21/qFpWnBxgeLDIruY.jpg]
-    极客空间: [https://www.geek-space.cn, 一个准备高考的高三狗, https://www.geek-space.cn/images/avatar.jpg]
-    MOCEHU: [https://mocehu.top,  一个没有技术贴的技术博客, https://mocehu.top/wp-content/uploads/2020/02/1540094772278.jpg]
-    Codgi的小窝: [https://codgi.xin, Do what you love, http://redamancy.club/wp-content/uploads/2020/01/admin-ajax.php_.png]
-    JimmyQin: [https://apde.xyz, 挨拍的儿, https://i.niupic.com/images/2020/02/26/6Wjj.png]
-    木子洋: [https://www.yanghuaxing.com, 记录成长学习的博客, https://pic.yanghuaxing.com/zb_users/upload/2019/12/201912301577672667725555.png]
-    惴与绕: [https://idkzr.com, 一条咸鱼的日常, https://pic.idkzr.com/img/avatar.jpg]
-    许小逸资源站: [https://www.xuxiaoyi.top, 每天为大家更新各种好玩的软件工具等, https://en.gravatar.com/userimage/151872283/0d231825286ebd0bd9afe9aa5c2d60d1.png]
-    yuzh: [ https://yyuzh.xyz/, 永不停歇--Never Settle, https://i.loli.net/2020/02/25/yhFDpw2dqV4b3Gt.png]
-    Bert: [https://ixfish.cn/, 面朝大海，春暖花开, https://pic.91scraft.com/me.jpeg]
-    Guan FuQing: [https://yiki.tech/,Error:No object found!, https://tc.yiki.tech/avatar.png]
-    JiuXiaPE: [www.9xiao.top, 更好用的启动盘工具箱, https://i.loli.net/2020/03/01/NzHDks2TL9bFXcE.jpg]
+    辉少菌: [http://huishao.top, 一个爱搞技术的高一党, https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/辉少菌.png]
+    Atuo: [https://blog.atuo.store, 网络安全, https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/Atuo.jpg]
+    维他入我心: [https://wtrwx.top, 科技/生活日常～, https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/维他入我心.png]
+    Linhk1606: [https://linhk1606.github.io, ..., https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/Linhk1606.png]
+    LeFlacon: [https://leflacon.github.io, Let’s think!, https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/LeFlacon.png]
+    小康博客: [https://www.antmoe.com, 一个收藏回忆与分享技术的地方, https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/小康.jpg]
+    小K同學: [https://kksan.top, 技术，日语，云旅游, https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/小K同学.jpg]
+    吃白饭的休伯利安号: [https://eatrice.top, 卑微的考研狗, https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/吃白饭的休伯利安号.png] 
+    IamWu555: [http://blog.wubuster.com, A man with superb shot, https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/lamWu555.jpg]
+    极客空间: [https://www.geek-space.cn, 一个准备高考的高三狗, https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/极客空间.jpg]
+    MOCEHU: [https://mocehu.top,  一个没有技术贴的技术博客, https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/MOCEHU.jpg]
+    Codgi的小窝: [https://codgi.xin, Do what you love, https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/Codgi.png]
+    JimmyQin: [https://apde.xyz, 挨拍的儿, https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/JimmyQin.png]
+    木子洋: [https://www.yanghuaxing.com, 记录成长学习的博客, https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/木子洋.png]
+    惴与绕: [https://idkzr.com, 一条咸鱼的日常, https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/惴绕.jpeg]
+    许小逸资源站: [https://www.xuxiaoyi.top, 每天为大家更新各种好玩的软件工具等, https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/]
+    yuzh: [ https://yyuzh.xyz/, 永不停歇--Never Settle, https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/yuzh.png]
+    Bert: [https://ixfish.cn/, 面朝大海，春暖花开, https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/bert.jpeg]
+    Guan FuQing: [https://yiki.tech/,Error:No object found!, https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/GuanFuQing.png]
+    JiuXiaPE: [www.9xiao.top, 更好用的启动盘工具箱, https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/JiuXiaPE.jpg]
