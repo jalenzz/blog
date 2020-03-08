@@ -1,72 +1,7 @@
-// @media (max-width 768px)
-//   .links_card
-//     display flex
-//     flex-direction column
-//     justify-content center
+.links
+    margin-bottom: 2rem 
 
-// .link-card
-//   box-shadow none
-
-// .link-body
-//   margin 1rem 0
-//   padding .5rem 1rem
-//   border-radius .3rem
-
-//   &:hover
-//     transition all 0.3s
-//     background-color #ebedef
-//     z-index 1
-
-//     .link-avatar
-//       transform scale(1.15)
-//       transition-duration 0.25s
-
-// .link-container
-//   margin .5rem 1rem
-
-// .link-avatar
-//   width 3rem
-//   height 3rem
-//   border-radius 1.5rem
-//   margin-right .75rem
-//   object-fit cover
-
-// .link-text
-//   display flex
-//   flex-direction column
-//   justify-content center
-
-//   @media (min-width 769px)
-//     &:only-child
-//       margin-left 1rem
-
-// .link-title
-//   overflow hidden
-//   text-overflow ellipsis
-//   white-space nowrap
-//   color #2f4154
-//   font-weight bold
-
-// .link-intro
-//   height 2rem
-//   font-size 0.85rem
-//   line-height 1.2
-//   color #a3a3a3
-//   display -webkit-box
-//   -webkit-box-orient vertical
-//   -webkit-line-clamp 2
-//   text-overflow ellipsis
-//   overflow hidden
-//   display flex
-//   align-items center
-
-#links
-    margin-top: 5rem 
-
-.links-content
-    margin-top:1rem 
-
-.link-navigation::after 
+.links::after 
     content: " " 
     display: block 
     clear: both 
@@ -76,61 +11,47 @@
     font-size: 1rem 
     padding: 10px 20px 
     border-radius: 4px 
-    transition-duration: 0.25s 
-    margin-bottom: 1rem 
-    display:flex 
-    position: relative
-    float: left
-    overflow: hidden
-    margin: 20px 7px 
-    width: calc(100% / 3 - 14px) 
-    border-radius: 8px 
-    list-style: none 
-    line-height: 17px 
+    transition-duration: 0.25s
+    display:flex
+    margin: 20px 7px
+    width: calc(100% / 3 - 14px)
+    line-height: 17px
+
+.link_card img
+	width: 44px
+	height: 44px
+	margin:5px
+	margin-right: 1em
+	border-radius:25px 
+	transition-duration: 0.25s
 
 .link_card:nth-child(odd) 
     float: left 
 
 .link_card:nth-child(even) 
-    float: right 
+    float: right
 
 .link_card:hover 
     transform: scale(1.1) 
-    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3), 0 0 6px 0 rgba(0, 0, 0, 0.3) 
-
-.link_card a 
-    border:none 
-
-.link_card .ava 
-    width: 44px
-    height: 44px
-    margin:5px
-    margin-right: 1em
-    border-radius:25px 
-    transition-duration: 0.25s
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .2), 0 0 6px 0 rgba(0, 0, 0, .2) 
 
 .link_card:hover img
     transform: scale(1.15) rotate(12deg) 
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 0 6px 0 rgba(0, 0, 0, 0.2) 
 
-.link_card .link_card-header 
-    font-style: italic 
+.link_card-header 
     overflow: hidden 
     width: 236px 
     margin-top: 10px 
+	
+.link_card-header a
+	color: #2f4154 
+	font-weight: bold 
 
-.link_card .link_card-header a
-    font-style: normal 
-    color: #2f4154 
-    font-weight: bold 
-    text-decoration: none 
+.link_card-header a:hover
+	color: #FF779A !important
 
-.link_card .link_card-header a:hover
-    color: #FF779A 
-    text-decoration: none 
-
-.link_card .link_card-header .info
-    font-style:normal 
+.info
     color:#a3a3a3 
     font-size:14px 
     min-width: 0 
