@@ -4,6 +4,7 @@ tags: [学习笔记, python]
 abbrlink: 1a8f87d5
 date: 2020-01-19 11:33:58
 updated: 2020-01-31 11:33:58
+index_img: https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/1e9726e77f5a9377ce09d493d3add5b9_1_3_art.jpg
 ---
 
 选择了[小甲鱼老师的课程](https://www.bilibili.com/video/av27789609)进行Python入门，希望自己能坚持
