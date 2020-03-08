@@ -12,6 +12,7 @@ var banner_img_height = page.banner_img_height || theme.index.banner_img_height
 <body>
   <header style="height: <%- banner_img_height %>vh;">
     <%- partial('_partial/nav') %> 
+    <!-- <div class="view intro-2" id="background" <%- theme.banner_parallax && 'parallax=true' %> -->
     <div class="view intro-2" id="background">
       <div class="full-bg-img">
         <div class="mask rgba-black-light flex-center">
@@ -75,7 +76,7 @@ var banner_img_height = page.banner_img_height || theme.index.banner_img_height
     <% } else { %>
       <div class="container nopadding-md">
         <div class="py-5 z-depth-3" id="board">
-          <% if(page.layout == 'about') { %>
+          <div class="py-5 z-depth-3" id="board" <%- banner_img_height >= 100 ? 'style=margin-top:0' : '' %>>
             <div class="about-avatar">
               <img src="<%- url_for(theme.about.avatar) %>"
                    class="img-fluid z-depth-1 rounded-circle"
