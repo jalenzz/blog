@@ -26,11 +26,10 @@ var banner_img_height = page.banner_img_height || theme.index.banner_img_height
             <% if(is_post()) { %>
               <% if (theme.post.meta.date.enable) { %>
                 <p class="mt-3 post-meta">
-                  <i class="fas fa-calendar-alt" aria-hidden="true"></i>&nbsp;
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i>
                   <%- full_date(page.date, theme.post.meta.date.format) %>
                 </p>
               <% } %>
-
               <p class="mt-1">
                 <% if (theme.post.meta.wordcount.enable) { %>
                   <% var wordcount_texts = theme.post.meta.wordcount.format.split('{}') %>
@@ -39,7 +38,6 @@ var banner_img_height = page.banner_img_height || theme.index.banner_img_height
                     <%- wordcount_texts[0] %><%- wordcount(page.content) %><%- wordcount_texts[1] %>
                   </span>
                 <% } %>
-
                 <% if (theme.post.meta.min2read.enable) { %>
                   <% var min2read_texts = theme.post.meta.min2read.format.split('{}') %>
                   <span class="post-meta">
@@ -47,7 +45,6 @@ var banner_img_height = page.banner_img_height || theme.index.banner_img_height
                     <%- min2read_texts[0] %><%- min2read(page.content) %><%- min2read_texts[1] %>
                 </span>
                 <% } %>
-
                 <% if (theme.post.meta.views.enable) { %>
                   <!-- 不蒜子统计文章PV -->
                   <% var views_texts = theme.post.meta.views.format.split('{}') %>
@@ -75,9 +72,9 @@ var banner_img_height = page.banner_img_height || theme.index.banner_img_height
       <%- body %>
     <% } else { %>
       <div class="container nopadding-md">
-        <div class="py-5 z-depth-3" id="board">
-          <div class="py-5 z-depth-3" id="board"
+        <div class="py-5 z-depth-3" id="board"
           <%- banner_img_height >= 100 && theme.banner_parallax ? 'style=margin-top:0' : '' %>>
+          <% if(page.layout == 'about') { %>
             <div class="about-avatar">
               <img src="<%- url_for(theme.about.avatar) %>"
                    class="img-fluid z-depth-1 rounded-circle"
