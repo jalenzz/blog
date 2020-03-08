@@ -6,42 +6,37 @@ page.banner_img = theme.links.banner_img
 page.banner_img_height = theme.links.banner_img_height
 %>
 
-<div id="links" class="links-content">
-    <div class="note note-success"><div class="link-info"><h4>👨‍🎓 跟着身边的大佬走，努力成为小大佬</h4></div></div>
-    <div class="link-navigation">
-    	<% for(const each in theme.links.defaultlinks) { %>
-        	<% var props = theme.links.defaultlinks[each] %>
-        	<% if (!props) continue %>
-            	<div class="link_card" onclick="window.open('<%= url_for(props[0]) %>')">
-                	<img class="ava nomediumzoom" src="<%= props[2] %>"/>
-                	<div class="link_card-header">
-                		<div><a href="<%= url_for(props[0]) %>"><%- each %></a></div>
-                		<div class="info"><%- props[1] %></div>
-                	</div>
-            	</div>
-        <% } %>
-    </div>
-
-    <div class="note note-primary"><div class="link-info"><h4>🍭 五湖四海的朋友们</h4></div></div>
-    <div class="link-navigation">
-    	<% for (const each in theme.links.friendslinks) { %>
-			<% var props = theme.links.friendslinks[each] %>
-			<% if (!props) continue %>
-				<div class="link_card" onclick="window.open('<%= url_for(props[0]) %>')">
-					<img class="ava nomediumzoom" src="<%= props[2] %>"/>
-					<div class="link_card-header">
-						<div><a><%- each %></a></div>
-						<div class="info"><%- props[1] %></div>
-					</div>
+<div class="links">
+	<h4 class="note note-success">👨‍🎓 跟着身边的大佬走，努力成为小大佬</h4>
+	<% for(const each in theme.links.defaultlinks) { %>
+		<% var props = theme.links.defaultlinks[each] %>
+		<% if (!props) continue %>
+			<div class="link_card">
+				<img src="<%= props[2] %>"/>
+				<div class="link_card-header">
+					<a href="<%= url_for(props[0]) %>"><%- each %></a>
+					<div class="info"><%- props[1] %></div>
 				</div>
-		<% } %>
-    </div>
+			</div>
+	<% } %>
+</div>
+<div class="links">
+	<h4 class="note note-primary">🍭 五湖四海的朋友们</h4>
+	<% for (const each in theme.links.friendslinks) { %>
+		<% var props = theme.links.friendslinks[each] %>
+		<% if (!props) continue %>
+			<div class="link_card">
+				<img src="<%= props[2] %>"/>
+				<div class="link_card-header">
+					<a href="<%= url_for(props[0]) %>"><%- each %></a>
+					<div class="info"><%- props[1] %></div>
+				</div>
+			</div>
+	<% } %>
 </div>
 
-    
 <h5 class="note note-success">申请要求<br></h5>
 <p>&#8195;无广告<br>&#8195;保持更新</p>
-
 <h5 class="note note-info">留言格式<br></h5>
 <p>&#8195;名称: Royce<br>&#8195;网站: https://royce2003.top<br>&#8195;简介: OI小白<br>&#8195;头像: https://royce2003.top/images/royce.jpg</p>
 
