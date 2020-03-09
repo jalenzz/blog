@@ -1,5 +1,5 @@
 ---
-title: Hexo Valine评论之微信+邮件提醒
+title: Valine评论之微信提醒
 date: 2020-02-20 14:42:29
 abbrlink: 22549
 tag: [Hexo, 教程]
