@@ -142,7 +142,7 @@ index:
   post_default_img: https://cdn.jsdelivr.net/gh/Royce2019/img/img/index_img.jpg # 默认的文章封面图，当没有指定 index_img 时会使用该图片，若都为空则不显示任何图片
   slogan:  # 首页副标题的独立设置
     enable: true  # 为 false 则不显示任何内容
-    text: 时代的尘埃，落在个人身上就是一座大山 # 为空则按 hexo config.subtitle 显示
+    text: 今日任务：敲代码(0/1) # 为空则按 hexo config.subtitle 显示
   auto_excerpt:
     enable: true
   post_url_target: _self  # available: _blank | _self
@@ -290,7 +290,7 @@ baidu_url_submit:
 archive:
   banner_img: /img/default.png
   banner_img_height: 80  # available: 0 - 100
-  subtitle:  # 打字机内容
+  subtitle: 记下即将逝去的青春，留下即将过去的幸福 # 打字机内容
 
 #---------------------------
 # 分类归档页
@@ -308,7 +308,7 @@ category:
 tag:
   banner_img: /img/default.png
   banner_img_height: 80  # available: 0 - 100
-  subtitle:  # 打字机内容
+  subtitle: 今天也是开心的一天 # 打字机内容
   tagcloud: # 标签云
     min_font: 15
     max_font: 30
@@ -324,7 +324,7 @@ tag:
 about:  # 以下仅为页面顶部的基本信息，更多内容请在 ./pages/about.md 中编辑，支持 markdown 和 HTML
   banner_img: /img/default.png
   banner_img_height: 80  # available: 0 - 100
-  subtitle:  # 打字机内容
+  subtitle: 时代的尘埃落在个人身上就是一座大山 # 打字机内容
   avatar: https://cdn.jsdelivr.net/gh/Royce2019/img/img/avatar.jpg # 头像
   name: Royce
   introduce: OI小白 # 支持 HTML
@@ -343,7 +343,7 @@ about:  # 以下仅为页面顶部的基本信息，更多内容请在 ./pages/a
 page404:
   banner_img: /img/default.png
   banner_img_height: 100  # available: 0 - 100
-  subtitle: 'Page not found' # 打字机内容
+  subtitle: 喂，幺幺零吗？这里的页面找不到了 # 打字机内容
 
 # 站点地图
 sitemap:
@@ -374,7 +374,7 @@ feed:
 links:
   banner_img: /img/default.png
   banner_img_height: 80  # available: 0 - 100
-  subtitle:  # 打字机内容
+  subtitle: 用热情去灌溉，用原则去培养，用谅解去护理 # 打字机内容
   defaultlinks:
     Neworld2002: [https://neworld2002.github.io, OI大佬, https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/neworld2002.jpg]    # 头像地址
     newsheep: [http://newsheep2003.github.io/, 社长大大, https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/newsheep.png] 
