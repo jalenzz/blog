@@ -118,8 +118,8 @@ banner_parallax: false # 头图滚动视差
 footer:
   statistics:  # 统计网站 PV、UV，使用的是不蒜子，显示在页脚
     enable: true
-    pv_format: "总访问量 {} 次"  # 显示的文本，{}是数字的占位符（必须包含)，下同
-    uv_format: "总访客数 {} 人"
+    pv_format: "历经 {} 次回眸"  # 显示的文本，{}是数字的占位符（必须包含)，下同
+    uv_format: "与第 {} 个小伙伴相遇"
 
   beian:  # The footer of China's website policy, other areas keep disable
     enable: false
@@ -290,7 +290,7 @@ baidu_url_submit:
 archive:
   banner_img: /img/default.png
   banner_img_height: 80  # available: 0 - 100
-
+  subtitle:  # 打字机内容
 
 #---------------------------
 # 分类归档页
@@ -299,7 +299,7 @@ archive:
 category:
   banner_img: /img/default.png
   banner_img_height: 80  # available: 0 - 100
-
+  subtitle:  # 打字机内容
 
 #---------------------------
 # 标签归档页
@@ -308,6 +308,7 @@ category:
 tag:
   banner_img: /img/default.png
   banner_img_height: 80  # available: 0 - 100
+  subtitle:  # 打字机内容
   tagcloud: # 标签云
     min_font: 15
     max_font: 30
@@ -323,6 +324,7 @@ tag:
 about:  # 以下仅为页面顶部的基本信息，更多内容请在 ./pages/about.md 中编辑，支持 markdown 和 HTML
   banner_img: /img/default.png
   banner_img_height: 80  # available: 0 - 100
+  subtitle:  # 打字机内容
   avatar: https://cdn.jsdelivr.net/gh/Royce2019/img/img/avatar.jpg # 头像
   name: Royce
   introduce: OI小白 # 支持 HTML
@@ -341,7 +343,7 @@ about:  # 以下仅为页面顶部的基本信息，更多内容请在 ./pages/a
 page404:
   banner_img: /img/default.png
   banner_img_height: 100  # available: 0 - 100
-  subtitle: 'Page not found'
+  subtitle: 'Page not found' # 打字机内容
 
 # 站点地图
 sitemap:
@@ -372,6 +374,7 @@ feed:
 links:
   banner_img: /img/default.png
   banner_img_height: 80  # available: 0 - 100
+  subtitle:  # 打字机内容
   defaultlinks:
     Neworld2002: [https://neworld2002.github.io, OI大佬, https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/neworld2002.jpg]    # 头像地址
     newsheep: [http://newsheep2003.github.io/, 社长大大, https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/newsheep.png] 
