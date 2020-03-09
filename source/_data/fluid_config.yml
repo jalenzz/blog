@@ -21,7 +21,7 @@ force_https: true  # 强制所有链接升级为 HTTPS（适用于图片等资�
 
 highlight: # 代码高亮
   enable: true
-  theme: tomorrow # available: github-v2 | tomorrow | tomorrow-night | tomorrow-night-eighties，更多主题可从 https://jmblog.github.io/color-themes-for-google-code-prettify/ 获取，保存为 `*.min.css` 到 `source/lib/prettify/`，在其中 .prettyprint{ background: ***; ...} 的background 值后加上 !important，例如：.prettyprint{background:#fafbfc!important; ...}
+  theme: tomorrow-night # available: github-v2 | tomorrow | tomorrow-night | tomorrow-night-eighties，更多主题可从 https://jmblog.github.io/color-themes-for-google-code-prettify/ 获取，保存为 `*.min.css` 到 `source/lib/prettify/`，在其中 .prettyprint{ background: ***; ...} 的background 值后加上 !important，例如：.prettyprint{background:#fafbfc!important; ...}
 
 fun_features: # 一些好玩的功能
   typing: # 为 subtitle 添加打字机效果
@@ -34,7 +34,7 @@ fun_features: # 一些好玩的功能
     element: h1,h2,h3,h4,h5,h6
     placement: right # icon放置的位置： left | right
     visible: hover # 默认悬浮显示，可选：hover（鼠标在元素上悬浮时显示） | always（一直显示） | touch（移动端触摸显示）
-    icon: "§" # 可选：§ | # | ❡ 等，留空则为默认效果
+    icon: "❡" # 可选：§ | # | ❡ 等，留空则为默认效果
   mouse_click:  # 鼠标点击动效
     enable: false
     style: values # 目前设置两个值：values（价值观词汇） | love（爱心）
@@ -73,7 +73,7 @@ daovoice:  # 在线客服 Daovoice 参考：http://dashboard.daovoice.io
 
 aplayer:  # 音乐播放器
   enable: true
-  autoplay: false  # 音频自动播放
+  autoplay: true  # 音频自动播放
   loop: 'all'  # 音频循环播放, 可选值: 'all', 'one', 'none'
   order: 'random'  # 播放顺序，可选值: 'list', 'random'
   songs:  # 歌曲列表，必须传入下列各参数，其中 url 与 cover 在本地需存于 source 目录，更多参数见文档：https://aplayer.js.org/#/zh-Hans/?id=%E5%8F%82%E6%95%B0
