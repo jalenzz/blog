@@ -3,7 +3,7 @@ title: Hexo标签云
 tags: [教程, Hexo, NexT]
 abbrlink: db44ecae
 date: 2020-02-10 16:01:12
-index_img: https://gitee.com/Royce2003/blogimages/raw/master/img/20200303195435.png
+index_img: https://cdn.jsdelivr.net/gh/Royce2019/img/img/20200303195435.png
 top: 9
 ---
 
