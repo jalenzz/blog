@@ -1,6 +1,5 @@
 <%- js_ex(theme.static_prefix.aplayer, 'APlayer.min.js') %>
 <%- css_ex(theme.static_prefix.aplayer, 'APlayer.min.css') %>
-<%- css_ex(theme.static_prefix.aplayer, 'APlayer.min.css') %>
 <script type="text/javascript">
   var oldLoad = window.onload;
   window.onload = function () {
@@ -10,7 +9,8 @@
       autoplay: '<%= theme.aplayer.autoplay %>' === 'true',
       loop: '<%= theme.aplayer.loop %>',
       order: '<%= theme.aplayer.order %>',
-      preload: 'auto',
+      theme: '<%= theme.aplayer.theme %>',
+      preload: 'none',
       audio: <%- JSON.stringify(theme.aplayer.songs || []) %>
     });
     oldLoad && oldLoad();
