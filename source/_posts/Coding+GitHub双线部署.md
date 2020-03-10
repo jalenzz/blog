@@ -125,55 +125,30 @@ ssh -T git@e.coding.net
 
 ![](https://gitee.com/Royce2003/blogimages/raw/master/img/2335206_5e18ba18_5776_568@1920x1077.jpeg.m.jpg)
 
-## GitHub的解析记录
-首先我们添加github的解析
+
+<strong class="note note-danger">注意！！！先进行coding解析并申请证书开启强制HTTPS，证书成功申请之后再进行github解析！！！！！</strong>
+
+## coding的解析记录
+首先我们添加coding的解析记录
 主机记录选 www
 记录类型选CNAME
-线路选境外，也就是说，如果境外访问你的博客会走github
-记录值填写github给你的博客地址
+此时我们的线路类型应该选择境内，因为我们的初衷就是为了加快国内访问速度
+国内肯定走coding
+记录值填写coding给你的域名
 TTL是每次修改记录生效的时间，时间越短当然生效越快，但是时间短了会影响解析速度，根据自己需求决定。
 然后保存
+![](https://cdn.jsdelivr.net/gh/Royce2019/img/img/Snipaste_03-10_17-59-23.png)
 
-![](https://gitee.com/Royce2003/blogimages/raw/master/img/2335206_1c42ff40_5776_5682@1609x249.jpeg.m.jpg)
 
-接着还需要添加另一条记录
-不过在此之前我们要获取下自己域名的IPv4地址
+接下来在添加一条主机记录为 @ 的记录
+记录类型选择A
+记录值填域名的ipv4地址
 打开cmd
 输入
 ping 你的域名
 注意，你的域名不能加 https:// 或者 http://
 接着，方括号中就是我们需要的值
-
-![](https://gitee.com/Royce2003/blogimages/raw/master/img/2335206_ca91f703_5776_5684@801x352.jpeg.m.jpg)
-
-添加第二条解析记录
-主机记录选 @
-记录类型 A
-线路境外
-记录值就填我们刚刚获取的那个
-然后保存
-
-![](https://gitee.com/Royce2003/blogimages/raw/master/img/2335206_89d396bf_5779_3436@1613x703.jpeg.m.jpg)
-
-解析记录填写完了，我们就需要到github上设置下
-进入你存放博客的仓库，点击settings
-
-![](https://gitee.com/Royce2003/blogimages/raw/master/img/2335206_62c82d27_5779_3438@1920x1077.jpeg.m.jpg)
-
-settings
-
-然后向下滑找到GitHub Pages
-填入自己的域名，点击save，可以选择强制HTTPS，当保存玩看到上面出现一栏绿绿的东西，然后还有你的域名就说明成功了
-![](https://gitee.com/Royce2003/blogimages/raw/master/img/2335206_da1da6ef_5779_344@1051x791.jpeg.m.jpg)
-
-此时github的域名绑定已经完成
-
-## coding的解析记录
-接下来就是coding的了
-同样的按照刚刚到方法添加两条解析记录
-此时我们的线路类型应该选择境内，因为我们的初衷就是为了加快国内访问速度
-国内肯定走coding
-一样的，www 的主机记录，记录值为coding给你打博客地址，@ 的主机记录 ，纪录值为cmd ping出来的IPv4地址
+![](https://cdn.jsdelivr.net/gh/Royce2019/img/img/Snipaste_03-10_17-51-58.png)
 
 ![](https://gitee.com/Royce2003/blogimages/raw/master/img/2335206_7a0b5def_5779_3442@1606x198.jpeg.m.jpg)
 
@@ -191,6 +166,43 @@ settings
 绑定成功会显示在这里，可以选择再绑定一个www多跳转至首选
 
 ![](https://gitee.com/Royce2003/blogimages/raw/master/img/2335206_2e3aa0ed_5779_3447@1409x201.jpeg.m.jpg)
+
+## GitHub的解析记录
+接着我们添加github的解析
+主机记录选 www
+记录类型选CNAME
+线路选境外，也就是说，如果境外访问你的博客会走github
+记录值填写github给你的博客地址
+仓库名.github.io
+
+![](https://gitee.com/Royce2003/blogimages/raw/master/img/2335206_1c42ff40_5776_5682@1609x249.jpeg.m.jpg)
+
+
+添加第二条解析记录
+主机记录选 @
+记录类型 A
+线路境外
+记录值和之前相同方法通过cmd获取
+然后保存
+
+![](https://gitee.com/Royce2003/blogimages/raw/master/img/2335206_89d396bf_5779_3436@1613x703.jpeg.m.jpg)
+
+解析记录填写完了，我们就需要到github上设置下
+进入你存放博客的仓库，点击settings
+
+![](https://gitee.com/Royce2003/blogimages/raw/master/img/2335206_62c82d27_5779_3438@1920x1077.jpeg.m.jpg)
+
+settings
+
+然后向下滑找到GitHub Pages
+填入自己的域名，点击save，可以选择强制HTTPS，当保存玩看到上面出现一栏绿绿的东西，然后还有你的域名就说明成功了
+![](https://gitee.com/Royce2003/blogimages/raw/master/img/2335206_da1da6ef_5779_344@1051x791.jpeg.m.jpg)
+
+此时github的域名绑定已经完成
+
+如果coding证书申请失败，访问网站提示不安全
+<p class="note note-danger">方法1 暂停关于github的两条解析并关闭github上的强制https再申请</p>
+<p class="note note-danger">方法2 可能是你的解析记录填写错误，按照教程重新填写</p>
 
 接着进入站点根目录的配置文件
 修改deploy
