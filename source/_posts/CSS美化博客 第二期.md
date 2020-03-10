@@ -7,9 +7,9 @@ tags:
   - CSS
 abbrlink: 17142
 date: 2020-02-26 16:43:12
-index_img: https://gitee.com/Royce2003/blogimages/raw/master/img/2335206_94a1b9ce_7356_3822@1600x719.jpeg
+index_img: https://cdn.jsdelivr.net/gh/Royce2019/img/img/2335206_94a1b9ce_7356_3822@1600x719.jpeg
 ---
-![](https://gitee.com/Royce2003/blogimages/raw/master/img/2335206_94a1b9ce_7356_3822@1600x719.jpeg)
+![](https://cdn.jsdelivr.net/gh/Royce2019/img/img/2335206_94a1b9ce_7356_3822@1600x719.jpeg)
 
 
 哪个男孩子不想要个炫酷的博客
