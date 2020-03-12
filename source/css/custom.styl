@@ -64,23 +64,34 @@ body {
 .scroll-top-arrow {
     color: #2f4154;
 }
-
 #scroll-top-button {
-	right: 50px !important;
-	width: 70px !important;
-	height: 651px !important;
-	top: -400px !important;
-	bottom: unset;
-	transition: all .5s ease-in-out; 
-	background: url("https://cdn.jsdelivr.net/gh/Royce2019/img/img/scroll.png");
-	> i {
-		display: none;
-	}
-	@media (max-width: 767px) {
-		display: none;
-	}
+	border-radius: 100%;
+	transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -webkit-transition: all .6s ease;
+    -o-transition: all .6s ease;
+}
+#scroll-top-button:hover {
+	transform: scale(1.2);
+    border-radius: 20%;
+}
+
+// #scroll-top-button {
+// 	right: 50px !important;
+// 	width: 70px !important;
+// 	height: 651px !important;
+// 	top: -400px !important;
+// 	bottom: unset;
+// 	transition: all .5s ease-in-out; 
+// 	background: url("https://cdn.jsdelivr.net/gh/Royce2019/img/img/scroll.png");
+// 	> i {
+// 		display: none;
+// 	}
+// 	@media (max-width: 767px) {
+// 		display: none;
+// 	}
 	
-}
-.z-depth-1 {
-	box-shadow: none !important;
-}
+// }
+// .z-depth-1 {
+// 	box-shadow: none !important;
+// }
