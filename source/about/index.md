@@ -4,25 +4,26 @@ date: 2020-01-31 15:40:33
 layout: about
 ---
 
-<p class="note note-info">个人简介</p>
-
-- 高一，坐标 🌏🚩福建，喜欢数码科技  
-- 取名 Royce 没有什么特殊含义，2003，出生年🐣  
-- 懂一点点点点点前端知识，在搭建博客过程中不断学习，不断实践  
-- 还懂那么一点点c/c++，是最菜的OIer，抱歉拉低了OIer的水平 orz orz  
-- 由于个人水平非常有限，在博客分享的内容可能有错，希望莅临指导🤝  
-
-
-<p class="note note-danger">博客简介</p>
-
-- Hexo框架+Fluid主题  
-- Coding Pages<i class="fa fa-plus" aria-hidden="true"></i>GitHub Pages双线部署  
-- 全站HTTPS  
-
-<p class="note note-success">博客历史</p>
-
-- 2020.02.27 从NexT搬迁至Fluid，已完成大部分功能搬迁
-
+<div class="note note-info">
+    <strong>个人简介</strong>
+    <li>高一，坐标 🌏🚩福建，喜欢数码科技</li>  
+    <li>取名 Royce 没有什么特殊含义，2003，出生年🐣  
+    <li>懂一点点点点点前端知识，在搭建博客过程中不断学习，不断实践</li>  
+    <li>还懂那么一点点c/c++，是最菜的OIer，抱歉拉低了OIer的水平 orz orz </li>  
+    <li>由于个人水平非常有限，在博客分享的内容可能有错，希望莅临指导🤝</li>  
+</div>
+<div class="note note-danger">
+    <strong>博客简介</strong>
+    <li>全站HTTPS</li>
+    <li>Hexo框架+Fluid主题</li>  
+    <li>Coding Pages+GitHub Pages双线部署</li>
+</div>
+<div class="note note-success">
+    <strong>博客历史</strong>
+    <li>2020.02.27 从NexT搬迁至Fluid，已完成大部分功能搬迁</li>
+    <li>2020.03.05 搬迁完成</li>  
+</div>
+<br><br>
 {% echarts %}
 {
     title: {
@@ -219,7 +220,7 @@ layout: about
                 shadowBlur: 15,
                 shadowOffsetY: 15,
             },
-            data: [1, 6, 10, 15, 30, 32]
+            data: [1, 6, 10, 15, 30, 33]
         },
         {
             name: "该月发布数",
@@ -239,12 +240,14 @@ layout: about
                     barBorderRadius: [30, 30, 0, 0],
                 }
             },
-            data: [1, 5, 4, 5, 15, 2]
+            data: [1, 5, 4, 5, 15, 3]
         }
     ]
 };
 {% endecharts %}
----
+
+<br><br>
+
 {% echarts %}
 option = {
     title: {
@@ -317,7 +320,7 @@ option = {
             value: 10,
             name: "2019Q4"
         }, {
-            value: 22,
+            value: 23,
             name: "2020Q1"
         }
         ]
