@@ -35,7 +35,6 @@ code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
   - start.html
-  - my/**
   - 404.html
   - google31c60c23147ff31c.html
   - sogousiteverification.txt
