@@ -220,7 +220,7 @@ layout: about
                 shadowBlur: 15,
                 shadowOffsetY: 15,
             },
-            data: [1, 6, 10, 15, 30, 33]
+            data: [1, 6, 10, 15, 30, 34]
         },
         {
             name: "该月发布数",
@@ -240,7 +240,7 @@ layout: about
                     barBorderRadius: [30, 30, 0, 0],
                 }
             },
-            data: [1, 5, 4, 5, 15, 3]
+            data: [1, 5, 4, 5, 15, 4]
         }
     ]
 };
@@ -320,7 +320,7 @@ option = {
             value: 10,
             name: "2019Q4"
         }, {
-            value: 23,
+            value: 24,
             name: "2020Q1"
         }
         ]
