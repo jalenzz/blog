@@ -81,3 +81,142 @@ body {
 	transform: scale(1.2);
     border-radius: 20%;
 }
+/*修改h1前面图标*/
+.post-content h1:before{
+    // top: 10px;
+    // width: 18px;
+    // height: 18px;
+    content: "🌈";
+    // font-size: 18px;
+    // line-height: 18px;
+    // margin-right: 16px;
+    visibility: visible;
+	display: inline;
+}
+
+/*修改h2前面图标*/
+.post-content h2:before{
+    // top: 10px;
+    // width: 18px;
+    // height: 18px;
+    content: "🔍";
+    // font: normal normal normal 14px/1 FontAwesome;
+    // font-size: 18px;
+    // line-height: 18px;
+    // margin-right: 16px
+	visibility: visible;
+	display: inline;
+}
+
+/*修改h3前面图标*/
+.post-content h3:before{
+    // top: 10px;
+    // width: 18px;
+    // height: 18px;
+    content: "🌞";
+    // font: normal normal normal 14px/1 FontAwesome;
+    // font-size: 18px;
+    // line-height: 18px;
+    // margin-right: 16px;
+	visibility: visible;
+	display: inline;
+}
+
+/* 4~6级标题前置设置 */
+// .posts-expand .post-body h4:before,
+// .posts-expand .post-body h5:before
+// .posts-expand .post-body h6:before{
+//     // top: 10px;
+//     // width: 18px;
+//     // height: 18px;
+//     // font-size: 18px;
+//     // line-height: 18px;
+//     // margin-right: 18px;    
+// }
+// .note {
+//     position: relative;
+//     padding: 15px;
+//     margin-top: 10px
+//     margin-bottom: 10px;
+//     border: initial;
+//     border-left: 3px solid #eee;
+//     background-color: #f9f9f9;
+//     border-radius: 3px;
+// 	padding-left: 45px;
+// }
+// .note:not(.no-icon):before {
+//     position: absolute;
+//     font-family: FontAwesome;
+//     font-size: larger;
+//     top: 13px;
+//     left: 15px;
+// }
+// /*warning样式*/
+// .note-warning {
+//     background-color: #fdf8ea;
+//     border-left-color: #f0ad4e;
+// }
+
+// .note-warning:before {
+//     content: "";
+// }
+
+
+// /*success样式*/
+// .note-success {
+//     background-color: #eff8f0;
+//     border-left-color: #5cb85c;
+// }
+
+// /*info样式*/
+// .note-info {
+//     background-color: #eef7fa;
+//     border-left-color: #428bca;
+// }
+
+// /*primary样式*/
+// .note-primary {
+//     background-color: #f5f0fa;
+//     border-left-color: #6f42c1;
+// }
+
+// /*danger样式*/
+// .note-danger {
+//     background-color: #fcf1f2;
+//     border-left-color: #d9534f;
+// }
+
+/*更好的侧边滚动条*/
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+}
+::-webkit-scrollbar-button:start:increment,::-webkit-scrollbar-button:end:decrement {
+  display: none;
+}
+::-webkit-scrollbar-corner {
+  display: block;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: rgba(0,0,0,.2);
+}
+::-webkit-scrollbar-thumb:hover {
+  border-radius: 8px;
+  background-color: rgba(0,0,0,.5);
+}
+::-webkit-scrollbar-track,::-webkit-scrollbar-thumb {
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
+}
+::-webkit-scrollbar-track:hover {
+  background-color: rgba(0,0,0,.15);
+}
+::-webkit-scrollbar-button:start {
+  width: 10px;
+  height: 10px;
+}
