@@ -21,10 +21,10 @@ permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
   trailing_html: true # Set to false to remove trailing '.html' from permalinks
-
   abbrlink:
-	alg: crc32   #算法： crc16(default) and crc32
-	rep: hex     #进制： dec(default) and hex
+    alg: crc32   #算法： crc16(default) and crc32
+    rep: hex     #进制： dec(default) and hex
+
 # Directory
 source_dir: source
 public_dir: public
