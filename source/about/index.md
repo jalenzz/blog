@@ -6,22 +6,23 @@ layout: about
 
 <div class="note note-info">
     <strong>个人简介</strong>
-    <li>高一，坐标 🌏🚩福建，喜欢数码科技</li>  
-    <li>取名 Royce 没有什么特殊含义，2003，出生年🐣  
-    <li>懂一点点点点点前端知识，在搭建博客过程中不断学习，不断实践</li>  
-    <li>还懂那么一点点c/c++，是最菜的OIer，抱歉拉低了OIer的水平 orz orz </li>  
+    <li>高一党一枚，坐标 🌏，喜欢数码科技</li>  
+    <li>喜欢前端，在搭建博客过程中不断学习</li>  
+    <li>最菜的 OIer，抱歉拉低了 OIer 的水平 orz orz </li>  
     <li>由于个人水平非常有限，在博客分享的内容可能有错，希望莅临指导🤝</li>  
 </div>
 <div class="note note-danger">
     <strong>博客简介</strong>
-    <li>全站HTTPS</li>
-    <li>Hexo框架+Fluid主题</li>  
-    <li>Coding Pages+GitHub Pages双线部署</li>
+    <li>全站 HTTPS</li>
+    <li>Hexo 框架 + Fluid 主题</li>  
+    <li> Coding Pages + GitHub Pages 双线部署</li>
+    <li>本博客文章均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow noopener noopener">CC BY-NC-SA 4.0 协议</a>，转载请注明出处！</li>
 </div>
 <div class="note note-success">
     <strong>博客历史</strong>
-    <li>2020.02.27 从NexT搬迁至Fluid，已完成大部分功能搬迁</li>
-    <li>2020.03.05 搬迁完成</li>  
+    <li>2020.02.27 从 NexT 搬迁到 Fluid</li>
+    <li>2020.03.05 搬迁全部完成</li>  
+    <li>2020.03.16 新增相册功能</li>
 </div>
 <br><br>
 {% echarts %}
