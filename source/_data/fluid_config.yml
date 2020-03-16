@@ -96,7 +96,8 @@ navbar:
     links: /links/
     about: /about/
     comment: https://kiko2hjmvapb.cn-e1.leanapp.cn/
-    疫情图: /2019-nCoV/
+    # 疫情图: /2019-nCoV/
+    相册: /gallery/
     瞎搞: /my/
 
 search: # 搜索栏
