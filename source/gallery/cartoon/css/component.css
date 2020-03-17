@@ -25,6 +25,7 @@
 	border: none;
 	display: block;
 	max-width: 100%;
+	box-shadow: 0 12px 15px 0 rgba(0,0,0,0.19),0 17px 50px 0 rgba(0,0,0,0.12);
 }
 
 /* Effect 1: opacity */
