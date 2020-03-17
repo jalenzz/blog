@@ -72,7 +72,7 @@ var banner_img_height = page.banner_img_height || theme.index.banner_img_height
       <%- body %>
     <% } else { %>
       <div class="container nopadding-md">
-        <div class="py-5 z-depth-3" id="board"
+        <div class="py-5 z-depth-3" id="board" style="margin-top:0"
           <%- banner_img_height >= 100 && theme.banner_parallax ? 'style=margin-top:0' : '' %>>
           <% if(page.layout == 'about') { %>
             <div class="about-avatar">
