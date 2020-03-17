@@ -39,7 +39,7 @@ skip_render:
   - google31c60c23147ff31c.html
   - sogousiteverification.txt
   - 68ffcf99ed3702dcb3a714e7db62a434.txt
-  - gallery/sample/**
+  - gallery/cartoon/**
 
 # Writing
 new_post_name: :title.md # File name of new posts
