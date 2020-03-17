@@ -41,6 +41,14 @@ links:
   title: 友链
   subtitle: 友情链接
 
+gallery:
+  title: 相册
+  subtitle: 相册
+
+my:
+  title: 功能
+  subtitle: 小功能
+
 comment:
   title: 评论管理
   subtitle: 评论管理
