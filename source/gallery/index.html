@@ -1,0 +1,42 @@
+---
+title: -相册-
+---
+
+
+<link rel="stylesheet" href="css/demo.min.css" />
+<link rel="stylesheet" href="css/lgallery.min.css" />
+<div class="TemplateParent">
+	<a href="cartoon">
+		<div class="TemplateParent-Item">
+			<img src="https://gitee.com/Royce2003/blog/raw/master/gallery/cartoon/s/012.jpg" />
+			<span>动漫</span>
+		</div>
+	</a>
+	<a href="cartoon">
+		<div class="TemplateParent-Item">
+			<img src="https://gitee.com/Royce2003/blog/raw/master/gallery/md/s/011.jpg" />
+			<span>MD</span>
+		</div>
+	</a>
+</div>
+<script src="js/lgallery.min.js"></script>
+<script>
+	function slowScrolling() {
+		let anchors = document.querySelectorAll('a[href*="#"]')
+
+		for (let anchor of anchors) {
+			anchor.addEventListener('click', function (e) {
+				e.preventDefault()
+
+				let blockID = anchor.getAttribute('href')
+
+				document.querySelector('' + blockID).scrollIntoView({
+					behavior: 'smooth',
+					block: 'start'
+				});
+			});
+		};
+	};
+	slowScrolling()
+	let x = initLG();
+</script>
