@@ -1,105 +1,10 @@
-@charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Arvo");
-* {
-  box-sizing: border-box;
-}
-a {
-  color: #1B9AAA;
-  text-decoration: none;
-  border-bottom: 1px solid currentColor;
-}
-a:hover {
-  color: #14727e;
-}
-a:focus, a:active {
-  color: #0d4a52;
-}
-
-body,
-html {
-  background:url(https://i.loli.net/2020/02/16/cz56uknGl4EOXM7.jpg);
-  background-repeat: no-repeat;
-  background-attachment:fixed;
-  background-size: cover;
-  background-position:50% 50%;
-
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  font-family: "Arvo", Helvetica, sans-serif;
-  font-family: 12px;
-  color: #555;
-}
-
-strong {
-  font-weight: bold;
-}
-
 p {
-  line-height: 1.6;
-}
-
-.inspired {
-  margin-top: 1em;
-  font-size: 0.9rem;
-  color: #9a9a95;
-}
-
-header {
-  color: #F8FFE5;
-  text-align: center;
-}
-header span {
-  display: inline-block;
-  box-sizing: border-box;
-  width: 4rem;
-  height: 4rem;
-  line-height: 4rem;
-  margin: 0 0.4rem;
-  background: #FFC43D;
-}
-header span:nth-of-type(2) {
-  background: #EF476F;
-}
-header span:nth-of-type(3) {
-  background: #1B9AAA;
-}
-header span:nth-of-type(4) {
-  background: #06D6A0;
-}
-
-h1 {
-  font-size: 2.2rem;
-}
-
-.directions {
-  padding: 2rem;
-  border-top: 1px solid #9a9a95;
-  border-bottom: 1px solid #9a9a95;
+  margin:0;
 }
 
 .container {
-  margin: 0 auto;
-  padding-bottom: 3.5rem;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  width: 100%;
-  max-width: 550px;
   text-align: center;
-}
-header .container {
-  padding: 0;
-  padding: 2rem 4rem;
-  max-width: 900px;
-}
+} 
 
 .scores {
   display: -webkit-box;
