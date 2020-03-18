@@ -39,6 +39,7 @@ skip_render:
   - gallery/cartoon/**
   - gallery/md/**
   - gallery/original/**
+  - my/01/**
 
 # Writing
 new_post_name: :title.md # File name of new posts
