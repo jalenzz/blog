@@ -4,7 +4,6 @@ date: 2020-02-27 16:32:48
 tags: [Hexo, 教程]
 abbrlink: 13128
 index_img: https://gitee.com/Royce2003/blogimages/raw/master/img/v2-3c4c11c13be108a27febe713.jpg
-top: 10
 ---
 
 ![](https://gitee.com/Royce2003/blogimages/raw/master/img/v2-3c4c11c13be108a27febe713.jpg)

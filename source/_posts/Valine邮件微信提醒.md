@@ -4,7 +4,6 @@ date: 2020-02-20 14:42:29
 abbrlink: 22549
 tag: [Hexo, 教程]
 index_img: https://gitee.com/Royce2003/blogimages/raw/master/img/6MD8RFDM3WIAKOP.png
-top: 8
 ---
 ![](https://i.loli.net/2020/02/26/CUA1Ve4gOPRW83v.png)
 该功能基于 Leancloud 的云引擎与云函数。
