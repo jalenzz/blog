@@ -221,7 +221,7 @@ layout: about
                 shadowBlur: 15,
                 shadowOffsetY: 15,
             },
-            data: [1, 6, 10, 15, 30, 34]
+            data: [1, 6, 10, 15, 30, 36]
         },
         {
             name: "该月发布数",
@@ -241,7 +241,7 @@ layout: about
                     barBorderRadius: [30, 30, 0, 0],
                 }
             },
-            data: [1, 5, 4, 5, 15, 4]
+            data: [1, 5, 4, 5, 15, 6]
         }
     ]
 };
@@ -249,7 +249,7 @@ layout: about
 
 <br><br>
 
-{% echarts %}
+<!-- {% echarts %}
 option = {
     title: {
         text: "文章季度统计",
@@ -321,10 +321,10 @@ option = {
             value: 10,
             name: "2019Q4"
         }, {
-            value: 24,
+            value: 26,
             name: "2020Q1"
         }
         ]
     }]
 };
-{% endecharts %}
+{% endecharts %} -->
