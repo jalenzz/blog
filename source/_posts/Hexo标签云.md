@@ -9,7 +9,7 @@ index_img: https://cdn.jsdelivr.net/gh/Royce2019/img/img/20200303195435.png
 
 ## hexo-tag-cloud插件介绍
 
-`hexo-tag-cloud`插件是MikeCoder写的一个Hexo博客的标签云插件，能直观的展示标签的种类，美观大方且非常优雅。
+`hexo-tag-cloud` 插件是 MikeCoder 写的一个 Hexo 博客的标签云插件，能直观的展示标签的种类，美观大方且非常优雅。
 
 <!--more-->
 
@@ -41,7 +41,7 @@ npm install hexo-tag-cloud@^2.1.* --save
 
 - 这里以 Next 主题为例。
 - 找到文件 `next/layout/_macro/sidebar.swig`, 然后添加如下内容。（添加位置与显示位置相关联）
-- 对于最新版的NexT主题，文件位置在`Blog\source\_data\sidebar.swig`(若没有则创建)添加如下内容，并且在主题配置文件的`custom_file_path`中将`sidebar: source/_data/sidebar.swig`取消注释
+- 对于最新版的 NexT 主题，文件位置在 `Blog\source\_data\sidebar.swig` (若没有则创建)添加如下内容，并且在主题配置文件的 `custom_file_path` 中将 `sidebar: source/_data/sidebar.swig` 取消注释
 
 ```html
 {% raw %}{% if site.tags.length > 1 %}{% endraw %}

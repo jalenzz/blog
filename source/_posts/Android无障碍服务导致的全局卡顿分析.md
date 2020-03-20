@@ -25,7 +25,7 @@ index_img: https://gitee.com/Royce2003/blogimages/raw/master/img/u=1085547070,20
 
 红色箭头处就是掉帧的地方. 从上面的 Buffer 个数可以看到, SF没有绘制的原因是 Launcher 没有提交 Buffer 上来.
 
-对应的 Launcher Trace如下 , 可以看到 Launcher 没有绘制的原因是没有 Input 事件传上来. 所以 Launcher 的画面没有更新, 所以才会出现掉帧.
+对应的 Launcher Trace 如下 , 可以看到 Launcher 没有绘制的原因是没有 Input 事件传上来. 所以 Launcher 的画面没有更新, 所以才会出现掉帧.
 [![img](https://www.androidperformance.com/images/media/performancecase/15482435308066.jpg)](https://www.androidperformance.com/images/media/performancecase/15482435308066.jpg)
 
 没有事件上来这个本身就是有问题的 , 我们手指是连续从屏幕上划过的, 事件的上报应该是连续的才对, 我们怀疑是屏幕报点有问题, 不过 Check 硬件之前我们首先看一下 InputReader 和 InputDispatcher 线程是否正常工作
