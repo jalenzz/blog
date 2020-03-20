@@ -7,7 +7,7 @@ math: true
 index_img: https://cdn.jsdelivr.net/gh/Royce2019/img/img/1583388363915.png
 ---
 
-2019.11.24 用Hexo搭建了我的第一个博客，并写下了第一篇文章
+2019 年 11 月 24 日，用 Hexo 搭建了我的第一个博客，并写下了第一篇文章
 
 <!--more-->
 $$

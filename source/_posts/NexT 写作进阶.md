@@ -6,8 +6,8 @@ date: 2020-02-17 23:44:18
 index_img: https://cdn.jsdelivr.net/gh/Royce2019/img/img/S00222-10150895.jpg
 ---
 <p class="note note-danger">
-是否厌倦了纯文本写作，是否厌倦了Markdown语法，是否想要追求美观，那就来看看这篇文章吧
-以下博客写作基于Next主题，其它主题不一定可以
+是否厌倦了纯文本写作，是否厌倦了 Markdown 语法，是否想要追求美观，那就来看看这篇文章吧
+以下博客写作基于 Next 主题，其它主题不一定可以
 </p>
 
 <!--more-->
