@@ -7,7 +7,7 @@ updated: 2020-01-31 11:33:58
 index_img: https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/1e9726e77f5a9377ce09d493d3add5b9_1_3_art.jpg
 ---
 
-选择了[小甲鱼老师的课程](https://www.bilibili.com/video/av27789609)进行Python入门，希望自己能坚持
+选择了 [小甲鱼老师的课程](https://www.bilibili.com/video/av27789609)进行 Python 入门，希望自己能坚持
 
 因为有其他语言基础，笔记里只会记录一些新的东西
 
@@ -194,10 +194,10 @@ assert ('linux' in sys.platform) # 该代码只能在 Linux 下执行
 [1, 2, 3, 4]
 '''
 直接相等时，会受原列表影响
-这种情况下，list1和list3是一样的，他们指向同一片内存，list3不过是list1的别名，是引用。赋值操作（包括对象作为参数、返回值）不会开辟新的内存空间，它只是复制了新对象的引用。也就是说，除了list3这个名字以外，没有其它的内存开销。修改了list1，就影响了list3；同理，修改了list3就影响了list1。
+这种情况下，list1 和 list3是一样的，他们指向同一片内存，list3 不过是 list1的别名，是引用。赋值操作（包括对象作为参数、返回值）不会开辟新的内存空间，它只是复制了新对象的引用。也就是说，除了 list3 这个名字以外，没有其它的内存开销。修改了 list1，就影响了 list3；同理，修改了 list3 就影响了 list1。
 
 若进行拷贝，则当前列表不会受原列表影响
-拷贝会创建新对象,拷贝产生的list2不再是list1了，它们也不指向同一片内存
+拷贝会创建新对象,拷贝产生的 list2 不再是 list1 了，它们也不指向同一片内存
 '''
 ```
 
@@ -310,11 +310,11 @@ print(new)
 函数内修改全局变量后new为 10
 50
 '''
-python中，在函数内对全局变量new进行修改并不会真正改变它的值
-因为python会在函数中创建一个与new同名的局部变量，对局部变量进行赋值
+python 中，在函数内对全局变量 new 进行修改并不会真正改变它的值
+因为 python 会在函数中创建一个与 new 同名的局部变量，对局部变量进行赋值
 '''
 
-# 若一定要进行修改可使用global关键字
+# 若一定要进行修改可使用 global 关键字
 def function(new):
     global new = 10
     print('函数内求改全局变量后new为',new)
@@ -342,11 +342,11 @@ print(new)
 40
 >>> fun1(8)(5)
 40
-# fun2无法在外部调用，且fun2内无法对fun1内的变量进行直接修改，但可通过  `nonlocal x` 强行声明为非局部变量进行修改
+# fun2 无法在外部调用，且 fun2 内无法对 fun1 内的变量进行直接修改，但可通过  `nonlocal x` 强行声明为非局部变量进行修改
 ```
 
 ```python
-# lambda表达式 可理解为f(x)
+# lambda 表达式 可理解为f(x)
 >>> lambda x : 2 * x +1
 <function <lambda> at 0x03F17070>
 >>> i = lambda x : 2 * x +1
@@ -366,9 +366,9 @@ filter(function or None, iterable（可迭代对象）) --> filter object
 Return an iterator yielding those items of iterable for which function(item) is true.
 If function is None, return the items that are true.
 
-filter有两个参数，第一个参数可以是一个函数也可是None，第二个参数为可迭代对象
-第一个参数为None时，将第二个参数中为True的值筛选出并组成列表
-第一个参数为函数时，将第二个参数中的每个值当作函数参数传入，并将返回Ture的值筛选出并组成列表
+filter 有两个参数，第一个参数可以是一个函数也可是 None，第二个参数为可迭代对象
+第一个参数为 None 时，将第二个参数中为 True 的值筛选出并组成列表
+第一个参数为函数时，将第二个参数中的每个值当作函数参数传入，并将返回 Ture 的值筛选出并组成列表
 '''
 >>> def odd(x):
 	return x % 2

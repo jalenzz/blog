@@ -20,7 +20,7 @@ index_img: https://gitee.com/Royce2003/blogimages/raw/master/img/6MD8RFDM3WIAKOP
 
 [Valine官方文档](https://valine.js.org/)
 
-首先进入LeanCloud
+首先进入 LeanCloud
 
 华东节点的从这里进 [查看链接](https://tab.leancloud.cn/applist.html#/apps)
 
@@ -28,21 +28,21 @@ index_img: https://gitee.com/Royce2003/blogimages/raw/master/img/6MD8RFDM3WIAKOP
 
 ## 修改代码库
 然后进入放评论数据的那个应用，云引擎-->设置-->修改代码库为
-` https://github.com/zhaojun1998/Valine-Admin`
+`https://github.com/zhaojun1998/Valine-Admin`
 
 ![](https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/2335206_9a4e1173_8875_288@1920x1077.jpeg.m.jpg)
 
-进入部署界面，选择Git源码部署，
+进入部署界面，选择 Git 源码部署，
 
 ![](https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/2335206_6d6882b2_8875_2882@1920x588.jpeg.m.jpg)
 
-修改 分支或版本号为master
+修改 分支或版本号为 master
 
 ![](https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/2335206_2fcac2c1_8875_2884@980x480.jpeg.m.jpg)
 
 下载最新依赖是升级用的
 然后点击部署
-过程会比较漫长，耐心等待当看到完成之类的字眼就好啦图片我下了个最新依赖花了我4分钟.....
+过程会比较漫长，耐心等待当看到完成之类的字眼就好啦图片我下了个最新依赖花了我 4 分钟.....
 
 ![](https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/2335206_539f6cae_8875_2886@748x523.jpeg.m.jpg)
 
@@ -59,15 +59,15 @@ index_img: https://gitee.com/Royce2003/blogimages/raw/master/img/6MD8RFDM3WIAKOP
 `TEMPLATE_NAME`：邮件的样式，可以不写这行就按默认，除了默认还有另一个样式rainbow  
 （我没提到但图片里有的环境变量先不管他）  
 支持的邮件服务商:
-`"126" "163" "1und1" "AOL" "DebugMail" "DynectEmail" "FastMail" "GandiMail" "Gmail" "Godaddy" "GodaddyAsia" "GodaddyEurope" "hot.ee" "Hotmail" "iCloud" "mail.ee" "Mail.ru" "Maildev" "Mailgun" "Mailjet" "Mailosaur" "Mandrill" "Naver" "OpenMailBox" "Outlook365" "Postmark" "QQ" "QQex" "SendCloud" "SendGrid" "SendinBlue" "SendPulse" "SES" "SES-US-EAST-1" "SES-US-WEST-2" "SES-EU-WEST-1" "Sparkpost" "Yahoo" "Yandex" "Zoho" "qiye.aliyun"`就这么多啦
+`"126" "163" "1und1" "AOL" "DebugMail" "DynectEmail" "FastMail" "GandiMail" "Gmail" "Godaddy" "GodaddyAsia" "GodaddyEurope" "hot.ee" "Hotmail" "iCloud" "mail.ee" "Mail.ru" "Maildev" "Mailgun" "Mailjet" "Mailosaur" "Mandrill" "Naver" "OpenMailBox" "Outlook365" "Postmark" "QQ" "QQex" "SendCloud" "SendGrid" "SendinBlue" "SendPulse" "SES" "SES-US-EAST-1" "SES-US-WEST-2" "SES-EU-WEST-1" "Sparkpost" "Yahoo" "Yandex" "Zoho" "qiye.aliyun"` 就这么多啦
 
-<p class="note note-danger">每次配置完环境变量需要重启容器！！！！!</p>
+<p class="note note-danger">每次配置完环境变量需要重启容器!</p>
 
 好啦，至此已经完成了邮件提醒!
 
 
 ## 防止休眠
-不过还有个小问题LeanCloud也是要恰饭的，当然不可能给你免费提供给这么好的服务!
+不过还有个小问题 LeanCloud 也是要恰饭的，当然不可能给你免费提供给这么好的服务!
 
 免费版的 LeanCloud 容器，是有强制性休眠策略的，不能 24 小时运行
 每天必须休眠 6 个小时
@@ -78,11 +78,11 @@ index_img: https://gitee.com/Royce2003/blogimages/raw/master/img/6MD8RFDM3WIAKOP
 
 如果您不缺钱请直接购买付费容器并跳过这段
 
-正是因为大家都缺钱所以我们需要利用LeanCloud的云函数进行唤醒
+正是因为大家都缺钱所以我们需要利用 LeanCloud的 云函数进行唤醒
 
-既然必须休眠6个小时，那就让他休眠呗，总不可能你博客24小时都有人评论
+既然必须休眠 6 个小时，那就让他休眠呗，总不可能你博客 24 小时都有人评论
 
-首先我们需要再添加一个环境变量`ADMIN_URL` 然后把下方Web主机域名给填写上
+首先我们需要再添加一个环境变量 `ADMIN_URL` 然后把下方 Web 主机域名给填写上
 
 ![](https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/2335206_29fdfec6_8875_289@1093x472.jpeg.m.jpg)
 
@@ -91,12 +91,12 @@ index_img: https://gitee.com/Royce2003/blogimages/raw/master/img/6MD8RFDM3WIAKOP
 ![](https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/2335206_13b6e405_8875_2892@1920x1077.jpeg.m.jpg)
 
 名字随便取
-选择生产环境下的`self_wake`
+选择生产环境下的 `self_wake`
 然后cron表达式输入
 `0 */20 7-23 * * ?`
-意思是8点到23点每20分钟唤醒一次
+意思是 8 点到 23 点每 20 分钟唤醒一次
 这是我的表达式
-大家可以按自己需求改只需要保证6小时的休眠就好啦
+大家可以按自己需求改只需要保证 6 小时的休眠就好啦
 然后如果出问题了可以去应用日志里查看以下
 
 ![](https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/2335206_6f33090a_8875_2894@1920x1077.jpeg.m.jpg)
@@ -106,7 +106,7 @@ index_img: https://gitee.com/Royce2003/blogimages/raw/master/img/6MD8RFDM3WIAKOP
 当有人评论时，应用日志里也会显示  
 
 ## 评论管理
-然后还记得刚刚的Web主机域名，你也可以绑定自己的域名  
+然后还记得刚刚的 Web 主机域名，你也可以绑定自己的域名  
 通过访问该地址你就可以管理评论啦  
 但当你打开网址时会叫你登录  
 这时候你需要去创建个用户，也就是你自己  
@@ -116,13 +116,13 @@ index_img: https://gitee.com/Royce2003/blogimages/raw/master/img/6MD8RFDM3WIAKOP
 
 ![](https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/2335206_7fa85424_8880_4244@893x714.jpeg.m.jpg)
 
-注意！！！邮箱才是是你的登录名！！！!  
+注意！邮箱才是是你的登录名！
 不懂这是什么逻辑
 
 
 # 微信提醒
 好啦，接下来时加如微信提醒了
-首先进入Server酱官网注册个账号然后按官网首页绑定微信
+首先进入 Server 酱官网注册个账号然后按官网首页绑定微信
 
 ![](https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/2335206_8f323549_8880_4246@1920x1077.jpeg.m.jpg)
 
@@ -135,15 +135,15 @@ index_img: https://gitee.com/Royce2003/blogimages/raw/master/img/6MD8RFDM3WIAKOP
 ![](https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/2335206_ab6e6496_8880_4248@903x237.jpeg.m.jpg)
 
 ## 配置环境变量
-然后再添加一个新的环境变量`SCKEY`
+然后再添加一个新的环境变量 `SCKEY`
 
 ![](https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/2335206_6e8bec86_8880_425@974x73.jpeg.m.jpg)
 
-`SCKEY`的值从这来
+`SCKEY` 的值从这来
 
 ![](https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/2335206_f516d74c_8880_4252@1920x1077.jpeg.m.jpg)
 
-<p class="note note-danger">然后一定记得要进行重新部署，重启容器！！！！</p>
+<p class="note note-danger">然后一定记得要进行重新部署，重启容器！</p>
 
 好啦！！大功告成，你可以在微信收到博客的评论啦！！
 
