@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "cleangs": "hexo clean && hexo generate && hexo server",
-    "cleangd": "hexo clean && hexo generate && hexo deploy",
+    "cggd": "hexo clean && hexo generate && gulp && hexo deploy",
     "clean": "hexo clean",
     "built": "hexo generate",
     "server": "hexo server",
