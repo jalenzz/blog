@@ -11,7 +11,7 @@ gulp.task('minify-css', function() {
 });
 // 压缩 public 目录 html
 gulp.task('minify-html', function() {
-  return gulp.src('./public/**/*.html')
+  return gulp.src(['./public/**/*.html','!./public/posts/6f836d4e/*.html'])
     .pipe(htmlclean())
     .pipe(htmlmin({collaspseWhiteSpace:true}))
     .pipe(htmlmin({
@@ -24,7 +24,7 @@ gulp.task('minify-html', function() {
 });
 // 压缩 public/js 目录 js
 gulp.task('minify-js', function() {
-    return gulp.src('./public/**/*.js')
+    return gulp.src(['./public/**/*.js','!./public/js/lazyload.js','!./public/js/main.js','!./public/lib/blog-encrypt.js'])
         .pipe(uglify())
         .pipe(gulp.dest('./public'));
 });
