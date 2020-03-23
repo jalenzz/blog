@@ -1,8 +1,6 @@
 ---
 title: {{ title }}
 date: {{ date }}
-mathjax: false
-comment: true
-tags:
-
+tags: []
+index_img: 
 ---

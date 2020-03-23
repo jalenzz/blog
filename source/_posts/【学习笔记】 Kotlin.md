@@ -1,8 +1,14 @@
 ---
-hide: true
+title: 【学习笔记】 Kotlin
+date: 2020-03-22 15:47:25
+tags: [学习笔记, Kotlin]
 abbrlink: 42757
+index_img: https://gitee.com/royce2003/blog/raw/master/img/20170531071800_2.jpg
 ---
 
+记录一些 Kotlin 的高阶函数以便复习
+也会记录一些好玩的东西
+<!--more-->
 ```kotlin
 //生成一张00ff00的bmp图片
 import java.awt.image.BufferedImage
