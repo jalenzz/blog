@@ -1,5 +1,6 @@
 ---
 hide: true
+abbrlink: 42757
 ---
 
 ```kotlin
