@@ -16,6 +16,7 @@ layout: about
     <li>全站 HTTPS</li>
     <li>Hexo 框架 + Fluid 主题</li>  
     <li> Coding Pages + GitHub Pages 双线部署</li>
+    <li>博客中的部分图片源于网络，侵删</li>
     <li>本博客文章均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow noopener noopener">CC BY-NC-SA 4.0 协议</a>，转载请注明出处！</li>
 </div>
 <div class="note note-success">
@@ -221,7 +222,7 @@ layout: about
                 shadowBlur: 15,
                 shadowOffsetY: 15,
             },
-            data: [1, 6, 10, 15, 30, 36]
+            data: [1, 6, 10, 15, 30, 38]
         },
         {
             name: "该月发布数",
@@ -241,7 +242,7 @@ layout: about
                     barBorderRadius: [30, 30, 0, 0],
                 }
             },
-            data: [1, 5, 4, 5, 15, 6]
+            data: [1, 5, 4, 5, 15, 8]
         }
     ]
 };
