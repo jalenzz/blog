@@ -49,6 +49,6 @@ my:
   title: 功能
   subtitle: 小功能
 
-comment:
-  title: 评论管理
-  subtitle: 评论管理
+messageboard:
+  title: 留言板
+  subtitle: 留言板

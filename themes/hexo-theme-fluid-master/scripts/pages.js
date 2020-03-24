@@ -33,3 +33,12 @@ hexo.extend.generator.register('_links', function (locals) {
     layout: 'links',
   };
 });
+
+// generate messageboard page
+hexo.extend.generator.register('_messageboard', function (locals) {
+  return {
+    path: 'messageboard/index.html',
+    data: locals.theme,
+    layout: 'messageboard',
+  };
+});

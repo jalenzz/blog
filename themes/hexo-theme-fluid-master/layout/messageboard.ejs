@@ -1,0 +1,27 @@
+<%
+page.layout = "messageboard"
+page.title = theme.messageboard.title || __('messageboard.title')
+page.subtitle = theme.messageboard.subtitle || __('messageboard.subtitle')
+page.banner_img = theme.messageboard.banner_img
+page.banner_img_height = theme.messageboard.banner_img_height
+%>
+
+<div class="markdown-body">
+    <img src="https://cdn.jsdelivr.net/gh/Royce2019/img/img/012.jpg" />
+</div>
+
+<div class="text-center">
+    来访的第<span class="busuanzi-value logo" id="busuanzi_value_site_pv"></span>位小伙伴，你好呀
+    <br><br>
+    🍭 欢迎对本站提出一些建议
+</div>
+<br><br>
+
+<!-- Comments -->
+<div class="container comments mx-auto" id="comments">
+    <% if(theme.post.comments.enable) { %>
+    <br><br>
+    <% var type = '_partial/comments/' + theme.post.comments.type %>
+    <%- partial(type) %>
+    <% } %>
+</div>
