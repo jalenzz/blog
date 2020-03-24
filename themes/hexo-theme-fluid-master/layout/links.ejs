@@ -13,8 +13,10 @@ page.banner_img_height = theme.links.banner_img_height
 		<% if (!props) continue %>
 			<div class="card col-lg-4 col-md-6 col-sm-12">
 				<a href="<%= url_for(props[0]) %>" class="card-body" target="_blank" rel="noopener">
-					<div class="row">
-						<img class="link-avatar my-auto" src="<%= props[2] %>" alt="<%= each %>" />
+					<div class="card-content">
+						<div class="link-avatar my-auto">
+							<img src="<%= props[2] %>" alt="<%= each %>" />
+						</div>
 						<div class="link-text">
 							<div class="link-title"><%- each %></div>
 							<div class="link-intro"><%- props[1] %></div>
@@ -32,8 +34,10 @@ page.banner_img_height = theme.links.banner_img_height
 		<% if (!props) continue %>
 			<div class="card col-lg-4 col-md-6 col-sm-12">
 				<a href="<%= url_for(props[0]) %>" class="card-body" target="_blank" rel="noopener">
-					<div class="row">
-						<img class="link-avatar my-auto" src="<%= props[2] %>" alt="<%= each %>" />
+					<div class="card-content">
+						<div class="link-avatar my-auto">
+							<img src="<%= props[2] %>" alt="<%= each %>" />
+						</div>
 						<div class="link-text">
 							<div class="link-title"><%- each %></div>
 							<div class="link-intro"><%- props[1] %></div>
