@@ -22,8 +22,9 @@ layout: about
 <div class="note note-success">
     <strong>博客历史</strong>
     <li>2020.02.27 从 NexT 搬迁到 Fluid</li>
-    <li>2020.03.05 搬迁全部完成</li>  
+    <li>2020.03.05 搬迁全部完成</li>
     <li>2020.03.16 新增相册功能</li>
+    <li>2020.03.24 更换 valine 评论系统为增强版 valine</li>
 </div>
 <br><br>
 {% echarts %}
