@@ -5,6 +5,7 @@
   "scripts": {
     "cleangs": "hexo clean && hexo generate && hexo server",
     "cggd": "hexo clean && hexo generate && gulp && hexo deploy",
+    "gulp": "gulp",
     "clean": "hexo clean",
     "built": "hexo generate",
     "server": "hexo server",
