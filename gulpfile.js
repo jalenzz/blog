@@ -24,7 +24,7 @@ gulp.task('minify-html', function() {
 });
 // 压缩 public/js 目录 js
 gulp.task('minify-js', function() {
-    return gulp.src(['./public/**/*.js','!./public/js/lazyload.js','!./public/js/main.js','!./public/lib/blog-encrypt.js'])
+    return gulp.src(['./public/**/*.js','!./public/lib/blog-encrypt.js'])
         .pipe(uglify())
         .pipe(gulp.dest('./public'));
 });
