@@ -1,0 +1,137 @@
+/*夜间模式*/
+@media (prefers-color-scheme: dark) {
+    html {
+        content: "dark";
+    }
+}
+/* 背景遮罩 */
+.dark .rgba-black-light:after{
+  background-color: rgba(47, 55, 66, 1);
+}
+
+/* 主体 */
+#dark {
+  cursor: pointer;
+  position: fixed;
+  right: 40px;
+  bottom: 98px;
+  width: 16px;
+  height: 14px;
+  z-index: 1050;
+  font-size: 20px;
+}
+.dark #board{
+  background-color: #282c34;
+  color: #a09c9c;
+}
+.dark img {
+    filter: brightness(50%);
+}
+.dark p , 
+.dark .index-info a,
+.dark .container a {
+  color: #a09c9c !important;
+}
+.dark .markdown-body h1,
+.dark .markdown-body h2,
+.dark .markdown-body h3,
+.dark .markdown-body h4,
+.dark .markdown-body h5,
+.dark .markdown-body h6,
+.dark .markdown-body s,
+.dark .markdown-body li {
+  color:#a09c9c !important;
+}
+
+/* 顶栏 */
+.dark .navbar-col-show,
+.dark .top-nav-collapse {
+  background-color: #282c34;
+}
+.dark .animated-icon span { /* 手机端 */
+  background-color: #a09c9c;
+}
+
+/* page-number */
+.dark .pagination a:hover, 
+.dark .pagination .current {
+  background-color: #6b6b6b73;
+}
+
+/* 打字机 */
+.dark #subtitle, 
+.dark.typed-cursor--blink {
+  color: #a09c9c;
+}
+.dark .scroll-down-arrow {
+  color: #a09c9c;
+}
+
+/* back to top */
+.dark #scroll-top-button {
+  background-color: #282c34;
+}
+.dark #scroll-top-button i {
+  color: #a09c9c;
+}
+
+/* echart */
+.dark .markdown-body canvas {
+  background-color: #282c34;
+}
+
+/* 归档页 */
+.dark .list-group-item {
+  background-color: #282c34;
+}
+.dark .list-group-item:hover {
+  background-color: #46484d;
+}
+.dark .tagcloud a:hover {
+  background-color: #46484d;
+}
+
+/* 友链页 */
+.dark .card {
+  background-color: #282c34;
+}
+.dark .links .card-body:hover {
+  background-color: #46484d;
+}
+.dark .link-title, .dark .link-intro {
+  color: #a09c9c;
+}
+
+/* note */
+.dark .note-info {
+  background-color: #3b5359;
+  border-color: #006d80;
+}
+.dark .note-danger {
+  background-color: #783f42;
+  border-color: #670009;
+}
+.dark .note-success {
+  background-color: #2a3e2e;
+  border-color: #005915;
+}
+.dark .note-warning {
+  background-color: #5b543e;
+  border-color: #846500;
+}
+.dark .note-primary {
+  background-color: #455a6f;
+  border-color: #004188;
+}
+
+/* Valine */
+.dark .valine * ,
+.dark .valine .info .col,
+.dark .valine .vpage .more,
+.dark .valine .vinputs-area .auth-section,
+.dark .valine .vinputs-area .textarea-wrapper,
+.dark .valine .vinputs-area .textarea-wrapper textarea,
+.dark .valine .vinputs-area .auth-section .input-wrapper input,
+.dark .valine .vinputs-area .textarea-wrapper .comment_trigger {
+  background-color: #282c34;
+}

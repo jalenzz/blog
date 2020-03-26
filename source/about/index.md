@@ -25,6 +25,7 @@ layout: about
     <li>2020.03.05 搬迁全部完成</li>
     <li>2020.03.16 新增相册功能</li>
     <li>2020.03.24 更换 valine 评论系统为增强版 valine</li>
+    <li>2020.03.26 新增夜间模式</li>
 </div>
 <br><br>
 {% echarts %}
