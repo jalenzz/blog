@@ -25,7 +25,7 @@ var banner_img_height = page.banner_img_height || theme.index.banner_img_height
         background-size: cover;"> -->
     <div class="view intro-2" id="background">
       <div class="full-bg-img">
-        <div class="mask rgba-black-light flex-center">
+        <div class="mask flex-center">
           <div class="container text-center white-text fadeInUp">
             <span class="h2" id="subtitle">
               <% if(theme.fun_features.typing.enable == false) { %>
@@ -82,15 +82,14 @@ var banner_img_height = page.banner_img_height || theme.index.banner_img_height
       <%- body %>
     <% } else { %>
       <div class="container nopadding-md">
-        <div class="py-5 z-depth-3" id="board" style="margin-top:0"
+        <div class="py-5" id="board"
           <%- banner_img_height >= 100 && theme.banner_parallax ? 'style=margin-top:0' : '' %>>
           <% if(page.layout == 'about') { %>
             <div class="about-avatar">
               <img src="<%- url_for(theme.about.avatar) %>"
-                   class="img-fluid z-depth-1"
-                   alt="avatar">
+                   class="img-fluid" alt="avatar">
             </div>
-          <% } %>
+            <% } %>
           <div class="container">
             <div class="row">
               <div class="col-12 col-md-10 m-auto">
@@ -104,7 +103,7 @@ var banner_img_height = page.banner_img_height || theme.index.banner_img_height
   </main>
 
   <% if (theme.scroll_top_arrow.enable) { %>
-    <a class="z-depth-1" id="scroll-top-button" href="#" role="button">
+    <a id="scroll-top-button" href="#" role="button">
       <i class="fa fa-chevron-up scroll-top-arrow" aria-hidden="true"></i>
     </a>
   <% } %>
@@ -112,8 +111,7 @@ var banner_img_height = page.banner_img_height || theme.index.banner_img_height
   <% if (theme.search.enable) { %>
     <%- partial('_partial/search') %>
   <% } %>
-  <!-- 聊天
-  <script src="//code.tidio.co/4dv0azvzherqgaskcjgn7qw8qvdavqgr.js" async></script> -->
+
   <% if (theme.aplayer && theme.aplayer.enable && theme.aplayer.songs) { %>
     <!-- APlayer 音乐播放器 -->
     <div id="aplayer"></div>
@@ -127,7 +125,8 @@ var banner_img_height = page.banner_img_height || theme.index.banner_img_height
       </div>
     </div>
   <% } %>
+
   <%- partial('_partial/footer', { data: { 'subtitle': subtitle } }) %>
-  
+
 </body>
 </html>
