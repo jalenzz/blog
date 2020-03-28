@@ -1,6 +1,14 @@
+<%
+page.layout = "tools"
+page.title = theme.tools.title || __('tools.title')
+page.subtitle = theme.tools.subtitle || __('tools.subtitle')
+page.banner_img = theme.tools.banner_img
+page.banner_img_height = theme.tools.banner_img_height
+%>
+
 <div class="row links">
-	<% for(const each in theme.tools) { %>
-		<% var props = theme.tools[each] %>
+	<% for(const each in theme.tools.items) { %>
+		<% var props = theme.tools.items[each] %>
 		<% if (!props) continue %>
 			<div class="card col-lg-4 col-md-6 col-sm-12">
 				<a href="<%= url_for(props[0]) %>" class="card-body">
