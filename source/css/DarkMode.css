@@ -1,8 +1,8 @@
 /*夜间模式*/
 
 /* 背景遮罩 */
-.dark .rgba-black-light:after{
-  background-color: rgba(47, 55, 66, 1);
+.dark .view .mask:after {
+  background-color: rgba(47, 55, 66, 0.9);
 }
 
 /* 主体 */
@@ -56,10 +56,10 @@
 /* 打字机 */
 .dark #subtitle, 
 .dark.typed-cursor--blink {
-  color: #a09c9c;
+  color: #dfdfdf;
 }
 .dark .scroll-down-arrow {
-  color: #a09c9c;
+  color: #dfdfdf;
 }
 
 /* back to top */
@@ -68,11 +68,6 @@
 }
 .dark #scroll-top-button i {
   color: #a09c9c;
-}
-
-/* echart */
-.dark .markdown-body canvas {
-  background-color: #282c34;
 }
 
 /* 归档页 */
@@ -129,5 +124,14 @@
 .dark .valine .vinputs-area .textarea-wrapper textarea,
 .dark .valine .vinputs-area .auth-section .input-wrapper input,
 .dark .valine .vinputs-area .textarea-wrapper .comment_trigger {
+  background-color: #282c34;
+}
+.dark .valine input,
+.dark .valine textarea {
+  color: #a09c9c !important;
+}
+
+/* echart */
+.dark .markdown-body canvas {
   background-color: #282c34;
 }
