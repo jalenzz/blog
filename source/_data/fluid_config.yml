@@ -428,15 +428,20 @@ links:
     小丁: [https://tding.top, 世间所有的相遇，都是久别重逢, https://cdn.jsdelivr.net/gh/royce2019/img/links-img/小丁.webp]
     小太（小太の游乐园）: [https://713.moe, 一个热爱ACG的技术宅, https://cdn.jsdelivr.net/gh/royce2019/img/links-img/小太.png]
     七夏浅笑: [https://www.julydate.com, 七月之约，夏末浅笑, https://cdn.jsdelivr.net/gh/royce2019/img/links-img/七夏浅笑.jpg]
+    Mystery: [https://blog.say521.cn, 心有猛虎，细嗅蔷薇, https://cdn.jsdelivr.net/gh/royce2019/img/links-img/Mystery.jpg]
 
 #---------------------------
 # 工具页
 # Tools Page
 #---------------------------
 tools:
-  疫情图: [/2019-nCoV, 国际国内实时疫情图]
-  评论管理: [https://kiko2hjmvapb.cn-e1.leanapp.cn, Valin 后台评论管理]
-  RSS: [/atom.xml, 本站RSS订阅]
-  2048: [/my/2048, 2048小游戏]
-  小动画: [/my/01, 无聊的动画]
-  轮播图: [/my/lunbo, 无聊的轮播图]
+  banner_img: /img/default.png
+  banner_img_height: 80  # available: 0 - 100
+  subtitle: 喂，幺幺零吗？这里的页面找不到了 # 打字机内容
+  items:
+    疫情图: [/2019-nCoV, 国际国内实时疫情图]
+    评论管理: [https://kiko2hjmvapb.cn-e1.leanapp.cn, Valin 后台评论管理]
+    RSS: [/atom.xml, 本站RSS订阅]
+    2048: [/my/2048, 2048小游戏]
+    小动画: [/my/01, 无聊的动画]
+    轮播图: [/my/lunbo, 无聊的轮播图]
