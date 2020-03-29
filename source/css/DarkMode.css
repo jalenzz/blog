@@ -43,6 +43,9 @@
 .dark .top-nav-collapse {
   background-color: #282c34;
 }
+.dark .navbar a {
+  color: #a09c9c !important;
+}
 .dark .animated-icon span { /* 手机端 */
   background-color: #a09c9c;
 }
@@ -67,6 +70,19 @@
   background-color: #282c34;
 }
 .dark #scroll-top-button i {
+  color: #a09c9c;
+}
+
+/* Toc */
+.dark .tocbot-list a {
+  color: #a09c9c;
+}
+.tocbot-active-link,
+footer a:hover {
+  color: #1abc9c !important;
+}
+/* footer */
+.dark footer, footer a {
   color: #a09c9c;
 }
 
