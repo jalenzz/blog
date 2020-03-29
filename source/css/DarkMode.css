@@ -82,7 +82,8 @@ footer a:hover {
   color: #1abc9c !important;
 }
 /* footer */
-.dark footer, footer a {
+.dark footer,
+.dark footer a {
   color: #a09c9c;
 }
 
