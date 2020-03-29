@@ -126,8 +126,8 @@ banner_parallax: true # 头图滚动视差
 footer:
   statistics:  # 统计网站 PV、UV，使用的是不蒜子，显示在页脚
     enable: true
-    pv_format: "历经 {} 次回眸"  # 显示的文本，{}是数字的占位符（必须包含)，下同
-    uv_format: "与第 {} 个小伙伴相遇"
+    pv_format: "{} 次回眸"  # 显示的文本，{}是数字的占位符（必须包含)，下同
+    uv_format: "遇见了 {} 个小伙伴"
 
   beian:  # The footer of China's website policy, other areas keep disable
     enable: false
@@ -175,7 +175,7 @@ post:
   meta:  # 文章标题下方的信息
     date:  # 文章日期
       enable: true
-      format: "dddd, MMMM Do YYYY, h:mm a"  # 格式参照 ISO-8601 日期格式化
+      format: "YYYY MMMM Do, dddd, h:mm a"  # 格式参照 ISO-8601 日期格式化
     wordcount:  # 字数统计
       enable: true
       format: "{} 字"  # 显示的文本，{}是数字的占位符（必须包含)，下同
@@ -429,6 +429,7 @@ links:
     小太（小太の游乐园）: [https://713.moe, 一个热爱ACG的技术宅, https://cdn.jsdelivr.net/gh/royce2019/img/links-img/小太.png]
     七夏浅笑: [https://www.julydate.com, 七月之约，夏末浅笑, https://cdn.jsdelivr.net/gh/royce2019/img/links-img/七夏浅笑.jpg]
     Mystery: [https://blog.say521.cn, 心有猛虎，细嗅蔷薇, https://cdn.jsdelivr.net/gh/royce2019/img/links-img/Mystery.jpg]
+    barriery: [https://barriery.cn, "A student, programmer and explorer.", https://cdn.jsdelivr.net/gh/royce2019/img/links-img/barriery.jpg]
 
 #---------------------------
 # 工具页
