@@ -255,6 +255,7 @@ valine:
   verify: false # Verification code
   placeholder: 说点什么 # comment box placeholder
   avatar: wavatar # gravatar style https://valine.js.org/avatar.html
+  meta: ['nick', 'mail', 'link']  # guest info
   pageSize: 10 # pagination size
 
 # Changyan
