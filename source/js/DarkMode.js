@@ -1,4 +1,5 @@
 // Dark Mode
+document.getElementById('dark').innerHTML = document.querySelector("body").classList.contains("dark")?"🌙":"🌞";
 var isNight = 0;
 (function () {
     if(matchMedia('(prefers-color-scheme: dark)').matches) {
@@ -13,10 +14,10 @@ var isNight = 0;
         document.body.classList.add('dark');
         console.log("cookie触发暗黑模式");
     }
-    $("#dark").html($('body').hasClass('dark')?"🌙":"🌞");
+    // $("#dark").html($('body').hasClass('dark')?"🌙":"🌞");
 })();
 //点击事件
-$("#dark").click(function () {
+function switchDarkMode() {
     var isDark = $('body').hasClass('dark');
     if (isDark) {
         if(isNight) document.body.classList.add('noDark');
@@ -30,4 +31,4 @@ $("#dark").click(function () {
         localStorage.setItem('dark', '1');
         localStorage.setItem('noDark', '0');
     }
-});
+}
