@@ -27,7 +27,7 @@ highlight: # 代码高亮
 fun_features: # 一些好玩的功能
   typing: # 为 subtitle 添加打字机效果
     enable: true
-    typeSpeed: 70 # 打印速度
+    typeSpeed: 70  # 打印速度，数字越大越慢
     cursorChar: "_" # 游标字符
     loop: false # 是否循环播放效果
   anchorjs: # 为文章内容中的标题添加锚图标
@@ -69,7 +69,7 @@ web_analytics:  # 网页访问统计
 
 lazyload: # 对页面中的图片进行懒加载处理，可见范围外的图片不会加载
   enable: true
-  onlypost: true  # 仅在文章页使用懒加载
+  onlypost: true  # 仅在文章页使用懒加载，开启后如果自定义页面需要使用，可以在 Front-matter 里指定 `lazyload: true`
 
 smooth_scroll: # 平滑滚动效果，服务器加载过慢可能会影响滚动，请慎用
   enable: true
@@ -169,7 +169,7 @@ page:
 # 文章页
 # Post Page
 #---------------------------
-post:
+post:  # 部分配置同时控制自定义页面，注意备注
   banner_img: /img/default.png
   banner_img_height: 70  # available: 0 - 100
   meta:  # 文章标题下方的信息
