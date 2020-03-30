@@ -35,10 +35,6 @@ code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
   - start.html
-  - 404.html
-  - gallery/cartoon/**
-  - gallery/md/**
-  - gallery/original/**
   - my/01/**
 
 # Writing
