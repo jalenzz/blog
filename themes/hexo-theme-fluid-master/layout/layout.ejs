@@ -54,7 +54,10 @@ var banner_img_height = page.banner_img_height || theme.index.banner_img_height
                   <% var min2read_texts = theme.post.meta.min2read.format.split('{}') %>
                   <span class="post-meta">
                     <i class="far fa-clock"></i>
-                    <%- min2read_texts[0] %><%- min2read(page.content) %><%- min2read_texts[1] %>
+                    <% var words = parseInt(theme.post.meta.min2read.words) %>
+                    <%- min2read_texts[0] %>
+                    <%- min2read(page.content, { cn: words, en: words / 2 }) %>
+                    <%- min2read_texts[1] %>
                 </span>
                 <% } %>
                 <% if (theme.post.meta.views.enable) { %>
@@ -91,7 +94,7 @@ var banner_img_height = page.banner_img_height || theme.index.banner_img_height
               <img src="<%- url_for(theme.about.avatar) %>"
                    class="img-fluid" alt="avatar">
             </div>
-            <% } %>
+          <% } %>
           <div class="container">
             <div class="row">
               <div class="col-12 col-md-10 m-auto">
