@@ -3,7 +3,7 @@ title: 【学习笔记】 Kotlin
 date: 2020-03-22 15:47:25
 tags: [学习笔记, Kotlin]
 abbrlink: 42757
-index_img: https://gitee.com/royce2003/blog/raw/master/img/20170531071800_2.jpg
+index_img: https://royce-img.oss-cn-beijing.aliyuncs.com/42757/index_img.webp
 ---
 
 记录一些 Kotlin 的高阶函数以便复习
