@@ -347,13 +347,13 @@ about:  # 以下仅为页面顶部的基本信息，更多内容请在 ./pages/a
   banner_img: /img/default.png
   banner_img_height: 80  # available: 0 - 100
   subtitle: 时代的尘埃落在个人身上就是一座大山 # 打字机内容
-  avatar: https://cdn.jsdelivr.net/gh/Royce2019/img/img/avatar.jpg # 头像
+  avatar: https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/about/Royce.webp # 头像
   name: Royce
   introduce: OI小白 # 支持 HTML
   icons: # 更多图标可从 https://fontawesome.com/v5.10.0/icons?d=gallery 查找，并以 "图标名: url" 的格式添加在下方
     "fab fa-github-alt": https://github.com/Royce2019
-    "fab fa-android qrcode":  https://gitee.com/Royce2003/blogimages/raw/master/img/IMG_20200303_174906.png
-    "fab fa-qq qrcode": https://i.loli.net/2020/02/15/ivX7OPmn5GlbaKk.jpg
+    "fab fa-android qrcode":  https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/about/coolapk.webp
+    "fab fa-qq qrcode": https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/about/QQ.webp
     "fas fa-envelope": mailto:1098870059@qq.com
     # 添加 qrcode 后，点击不再跳转，而是悬浮二维码，因此值需要是二维码图片地址
 
@@ -384,7 +384,7 @@ feed:
   content_limit: 140
   content_limit_delim: ' '
   order_by: -date
-  icon: icon.png
+  icon: /img/favicon.ico
   autodiscovery: true
   template:
 
@@ -398,44 +398,45 @@ links:
   banner_img_height: 80  # available: 0 - 100
   subtitle: 用热情去灌溉，用原则去培养，用谅解去护理 # 打字机内容
   defaultlinks:
-    Neworld2002: [https://neworld2002.github.io, OI大佬, https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/neworld2002.jpg]    # 头像地址
-    newsheep: [http://newsheep2003.github.io/, 社长大大, https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/newsheep.png] 
+    Neworld2002: [https://neworld2002.github.io, OI大佬, https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/neworld2002.webp]
+    newsheep: [http://newsheep2003.github.io/, 社长大大, https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/newsheep.webp]
   friendslinks:
-    辉少菌: [http://huishao.top, 一个爱搞技术的高一党, https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/辉少菌.png]
-    Atuo: [https://blog.atuo.store, 网络安全, https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/Atuo.jpg]
-    维他入我心: [https://wtrwx.top, 科技/生活日常～, https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/维他入我心.png]
-    Linhk1606: [https://linhk1606.github.io, ..., https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/Linhk1606.png]
-    LeFlacon: [https://leflacon.top, Let’s think!, https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/LeFlacon.png]
-    小康博客: [https://www.antmoe.com, 一个收藏回忆与分享技术的地方, https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/小康.jpg]
-    小K同學: [https://kksan.top, 技术，日语，云旅游, https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/小K同学.jpg]
-    吃白饭的休伯利安号: [https://eatrice.top, 卑微的考研狗, https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/吃白饭的休伯利安号.png] 
-    IamWu555: [http://blog.wubuster.com, A man with superb shot, https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/lamWu555.jpg]
-    极客空间: [https://www.geek-space.cn, 一个准备高考的高三狗, https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/极客空间.jpg]
-    MOCEHU: [https://mocehu.top,  一个没有技术贴的技术博客, https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/MOCEHU.jpg]
-    Codgi的小窝: [https://codgi.xin, Do what you love, https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/Codgi.png]
-    JimmyQin: [https://apde.xyz, 挨拍的儿, https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/JimmyQin.png]
-    木子洋: [https://www.yanghuaxing.com, 记录成长学习的博客, https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/木子洋.png]
-    惴与绕: [https://idkzr.com, 一条咸鱼的日常, https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/惴绕.jpeg]
-    yuzh: [ https://yyuzh.xyz/, 永不停歇--Never Settle, https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/yuzh.png]
-    Bert: [https://ixfish.cn/, 面朝大海，春暖花开, https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/bert.jpeg]
-    Guan FuQing: [https://yiki.tech/,Error:No object found!, https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/GuanFuQing.png]
-    JiuXiaPE: [www.9xiao.top, 更好用的启动盘工具箱, https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/JiuXiaPE.jpg]
-    TanHua: [https://tutouyuan.top, IoT在校生, https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/TanHua.jpg]
-    破旧的手枪: [https://pistol.city/, 只争朝夕 不负韶华, https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/20200308235324.png]
-    星下小屋: [https://skyhouse.xyz, 学习记录笔记本, https://cdn.jsdelivr.net/gh/royce2019/img/links-img/星下小屋.jpg]
-    MinePHP: [https://www.aahy.xyz, MinePHP Blog, https://cdn.jsdelivr.net/gh/royce2019/img/links-img/MinePHP.png]
-    云游君: [https://www.yunyoujun.cn, All at sea., https://cdn.jsdelivr.net/gh/royce2019/img/links-img/云游君.jpg]
-    以成杂谈: [https://transion.cc, 以成，却非已成, https://cdn.jsdelivr.net/gh/royce2019/img/links-img/以成杂谈.png]
-    xaoxuu: [https://xaoxuu.com, iOS, https://cdn.jsdelivr.net/gh/royce2019/img/links-img/xaoxuu.png]
-    YU到边: [https://www.yuhangwei.com, 前端技术交流, https://cdn.jsdelivr.net/gh/royce2019/img/links-img/YU到边.jpg]
-    Sanarous: [https://bestzuo.cn, 码农人生, https://cdn.jsdelivr.net/gh/royce2019/img/links-img/Sanarous.jpg]
-    Burgess: [https://bibiqo.cn/, 日常, https://cdn.jsdelivr.net/gh/royce2019/img/links-img/Burgess.jpg]
-    YINUXY: [https://blog.yinuxy.com/, 理想的生活就是生活的理想, https://cdn.jsdelivr.net/gh/royce2019/img/links-img/YINUXY.jpg]
-    小丁: [https://tding.top, 世间所有的相遇，都是久别重逢, https://cdn.jsdelivr.net/gh/royce2019/img/links-img/小丁.webp]
-    小太（小太の游乐园）: [https://713.moe, 一个热爱ACG的技术宅, https://cdn.jsdelivr.net/gh/royce2019/img/links-img/小太.png]
-    七夏浅笑: [https://www.julydate.com, 七月之约，夏末浅笑, https://cdn.jsdelivr.net/gh/royce2019/img/links-img/七夏浅笑.jpg]
-    Mystery: [https://blog.say521.cn, 心有猛虎，细嗅蔷薇, https://cdn.jsdelivr.net/gh/royce2019/img/links-img/Mystery.jpg]
-    barriery: [https://barriery.cn, "A student, programmer and explorer.", https://cdn.jsdelivr.net/gh/royce2019/img/links-img/barriery.jpg]
+    辉少菌: [http://huishao.top, 一个爱搞技术的高一党, https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/辉少菌.webp]
+    Atuo: [https://blog.atuo.store, 网络安全, https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/Atuo.webp]
+    维他入我心: [https://wtrwx.top, 科技/生活日常～, https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/维他入我心.webp]
+    Linhk1606: [https://linhk1606.github.io, ..., https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/Linhk1606.webp]
+    LeFlacon: [https://leflacon.top, Let’s think!, https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/LeFlacon.webp]
+    小康博客: [https://www.antmoe.com, 一个收藏回忆与分享技术的地方, https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/小康.webp]
+    小K同學: [https://kksan.top, 技术，日语，云旅游, https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/小K同学.webp]
+    吃白饭的休伯利安号: [https://eatrice.top, 卑微的考研狗, https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/吃白饭的休伯利安号.webp] 
+    IamWu555: [http://blog.wubuster.com, A man with superb shot, https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/lamWu555.webp]
+    极客空间: [https://www.geek-space.cn, 一个准备高考的高三狗, https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/极客空间.webp]
+    MOCEHU: [https://mocehu.top,  一个没有技术贴的技术博客, https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/MOCEHU.webp]
+    Codgi的小窝: [https://codgi.xin, Do what you love, https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/Codgi.webp]
+    JimmyQin: [https://apde.xyz, 挨拍的儿, https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/JimmyQin.webp]
+    木子洋: [https://www.yanghuaxing.com, 记录成长学习的博客, https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/木子洋.webp]
+    惴与绕: [https://idkzr.com, 一条咸鱼的日常, https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/惴绕.webp]
+    yuzh: [ https://yyuzh.xyz/, 永不停歇--Never Settle, https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/yuzh.webp]
+    Bert: [https://ixfish.cn/, 面朝大海，春暖花开, https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/bert.webp]
+    Guan FuQing: [https://yiki.tech/,Error:No object found!, https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/GuanFuQing.webp]
+    JiuXiaPE: [www.9xiao.top, 更好用的启动盘工具箱, https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/JiuXiaPE.webp]
+    TanHua: [https://tutouyuan.top, IoT在校生, https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/TanHua.webp]
+    破旧的手枪: [https://pistol.city/, 只争朝夕 不负韶华, https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/破旧的手枪.webp]
+    星下小屋: [https://skyhouse.xyz, 学习记录笔记本, https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/星下小屋.webp]
+    MinePHP: [https://www.aahy.xyz, MinePHP Blog, https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/MinePHP.webp]
+    云游君: [https://www.yunyoujun.cn, All at sea., https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/云游君.webp]
+    以成杂谈: [https://transion.cc, 以成，却非已成, https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/以成杂谈.webp]
+    xaoxuu: [https://xaoxuu.com, iOS, https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/xaoxuu.webp]
+    YU到边: [https://www.yuhangwei.com, 前端技术交流, https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/YU到边.webp]
+    Sanarous: [https://bestzuo.cn, 码农人生, https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/Sanarous.webp]
+    Burgess: [https://bibiqo.cn/, 日常, https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/Burgess.webp]
+    YINUXY: [https://blog.yinuxy.com/, 理想的生活就是生活的理想, https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/YINUXY.webp]
+    夏目友人帐: [https://xiamuyourenzhang.cn/, 夏目友人帐, https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/夏目友人帐.webp]
+    小丁: [https://tding.top, 世间所有的相遇，都是久别重逢, https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/小丁.webp]
+    小太（小太の游乐园）: [https://713.moe, 一个热爱ACG的技术宅, https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/小太.webp]
+    七夏浅笑: [https://www.julydate.com, 七月之约，夏末浅笑, https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/七夏浅笑.webp]
+    Mystery: [https://blog.say521.cn, 心有猛虎，细嗅蔷薇, https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/Mystery.webp]
+    barriery: [https://barriery.cn, "A student, programmer and explorer.", https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/barriery.webp]
 
 #---------------------------
 # 工具页
