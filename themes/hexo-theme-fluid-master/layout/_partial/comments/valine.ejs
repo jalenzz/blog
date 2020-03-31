@@ -1,7 +1,7 @@
 <% if(theme.valine.appid && theme.valine.appkey){ %>
   <div id="vcomments"></div>
   <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  <script src="/js/Valine.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/royce2019/BlogSource/js/Valine.min.js"></script>
 
   <script type="text/javascript">
     var oldLoadVa = window.onload;
@@ -14,8 +14,8 @@
         el: '#comments' ,
         app_id: '<%= theme.valine.appid %>',
         app_key: '<%= theme.valine.appkey %>',
-        emoticon_url: 'https://cdn.jsdelivr.net/gh/royce2019/img/comment',
-        emoticon_list: ["动耳朵.gif","抖脚脚.gif","抖眼.gif","抖眼镜.gif","风吹秀发.gif","慌张.gif","夹住.gif","开车.gif","哭唧唧.gif","绿色的.gif","跳舞.gif","跳着走.gif","我走了.gif","小花花.gif","眼睛转.gif","摇头.gif","眨眼.gif","吃东西.gif","弹肚皮.gif","动次打次.gif ","比心心.gif","吹风.gif","打篮球.gif","都是小心心.gif","浪起来.gif","浪起来-1.gif","吐.png","喷血.png","狂汗.png","不说话.png","汗.png","坐等.png","献花.png","不高兴.png","中刀.png","害羞.png","皱眉.png","小眼睛.png","中指.png","尴尬.png","瞅你.png","想一想.png","中枪.png","得意.png","肿包.png","扇耳光.png","亲亲.png","惊喜.png","脸红.png","无所谓.png","便便.png","愤怒.png","蜡烛.png","献黄瓜.png","内伤.png","投降.png","观察.png","看不见.png","击掌.png","抠鼻.png","邪恶.png","看热闹.png","口水.png","抽烟.png","锁眉.png","装大款.png","吐舌.png","无奈.png","长草.png","赞一个.png","呲牙.png","无语.png","阴暗.png","不出所料.png","咽气.png","期待.png","高兴.png","吐血倒地.png","哭泣.png","欢呼.png","黑线.png","喜极而泣.png","喷水.png","深思.png","鼓掌.png","暗地观察.png"],
+        emoticon_url: 'https://cdn.jsdelivr.net/gh/royce2019/BlogSource/comment',
+        emoticon_list: ["动耳朵.webp","抖脚脚.webp","抖眼.webp","抖眼镜.webp","风吹秀发.webp","慌张.webp","夹住.webp","开车.webp","哭唧唧.webp","绿色的.webp","跳舞.webp","跳着走.webp","小花花.webp","眼睛转.webp","摇头.webp","眨眼.webp","吃东西.webp","弹肚皮.webp","动次打次.webp ","比心心.webp","吹风.webp","打篮球.webp","都是小心心.webp","吐.webp","喷血.webp","狂汗.webp","不说话.webp","汗.webp","坐等.webp","献花.webp","不高兴.webp","中刀.webp","害羞.webp","皱眉.webp","小眼睛.webp","中指.webp","尴尬.webp","瞅你.webp","想一想.webp","中枪.webp","得意.webp","肿包.webp","扇耳光.webp","亲亲.webp","惊喜.webp","脸红.webp","无所谓.webp","便便.webp","愤怒.webp","蜡烛.webp","献黄瓜.webp","内伤.webp","投降.webp","观察.webp","看不见.webp","击掌.webp","抠鼻.webp","邪恶.webp","看热闹.webp","口水.webp","抽烟.webp","锁眉.webp","装大款.webp","吐舌.webp","无奈.webp","长草.webp","赞一个.webp","呲牙.webp","无语.webp","阴暗.webp","不出所料.webp","咽气.webp","期待.webp","高兴.webp","吐血倒地.webp","哭泣.webp","欢呼.webp","黑线.webp","喜极而泣.webp","喷水.webp","深思.webp","鼓掌.webp","暗地观察.webp"],
         placeholder: '<%= theme.valine.placeholder %>',
       });
     };
