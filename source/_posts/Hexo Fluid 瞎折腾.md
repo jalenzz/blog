@@ -6,7 +6,7 @@ index_img:
 abbrlink: 60394
 ---
 
-动态背景、滚挡条、动画
+动态背景、滚挡条、动画... 各类折腾
 
 <!--more-->
 首先，按照 Fluid 配置文件中的方法，在 `source/css` 下新建 `custom.css` 文件，在其中写入自定义 CSS
@@ -251,8 +251,10 @@ body {
 #scroll-top-button:hover {
 	transform: scale(1.2);
     border-radius: 20%;
-}cdd
+}
 ```
+之前的文章写了个另一种样式 [文章链接](./54321.html)
+
 
 ### 标题前 Emoji
 ```css
@@ -308,3 +310,151 @@ footer a:hover {
 
 [效果链接](../links)
 文字触碰动画（源网）
+```css
+/* 注意避免类名相同造成样式冲突 */
+.link {
+	outline: none;
+	text-decoration: none;
+	position: relative;
+	font-size: 2em;
+	color: #9e9ba4;
+	display: inline-block;
+}
+.link--kukuri {
+	text-transform: uppercase;
+	font-weight: 700;
+	overflow: hidden;
+	color: #2f4144;
+}
+
+.link--kukuri:hover {
+	color: #2f4144;
+}
+
+.link--kukuri::after {
+	content: '';
+	position: absolute;
+	height: 10px;
+	width: 100%;
+	top: 42%;
+	margin: auto;
+	right: 0;
+	background: #F9F9F9;
+	-webkit-transform: translate3d(-100%,0,0);
+	transform: translate3d(-100%,0,0);
+	-webkit-transition: -webkit-transform 0.4s;
+	transition: transform 0.4s;
+	-webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+}
+
+.link--kukuri:hover::after {
+	-webkit-transform: translate3d(100%,0,0);
+	transform: translate3d(100%,0,0);
+}
+
+.link--kukuri::before {
+  border:0px solid;
+	content: attr(data-letters);
+	position: absolute;
+	z-index: 2;
+	overflow: hidden;
+	color: #ff779a;
+	white-space: nowrap;
+	width: 0%;
+	-webkit-transition: width 0.4s 0.3s;
+	transition: width 0.4s 0.3s;
+}
+
+.link--kukuri:hover::before {
+	width: 100%;
+}
+```
+
+然后在你想显示的地方插入如下 HTML
+```html
+<a class="link link--kukuri" href="test.test" data-letters="test">test</a>
+```
+<p class="note note-primary">data-letters 中需要和内容保持一致<br>不用 a 标签也可以，保证类名正确</p>
+
+
+### 留言板
+在 `themes\hexo-theme-fluid-master\layout\` 中新建 `messageboard.ejs` 文件
+先写上头图之类的设定
+```ejs
+<%
+page.layout = "messageboard"
+page.title = theme.messageboard.title || __('messageboard.title')
+page.subtitle = theme.messageboard.subtitle || __('messageboard.subtitle')
+page.banner_img = theme.messageboard.banner_img
+page.banner_img_height = theme.messageboard.banner_img_height
+%>
+```
+
+然后在配置文件中加入相应内容，当然，你也可以直接在上面的代码中指定
+```yml
+#---------------------------
+# 留言板页
+# Messageboard Page
+#---------------------------
+messageboard:
+  banner_img: 			# 头图
+  banner_img_height:  	# available: 0 - 100
+  subtitle:  			# 打字机内容
+```
+语言文件中也是一样的，这里就不写了
+
+#### 引入评论
+刚刚创建的 ejs 文件中
+```ejs
+<!-- Comments -->
+<div class="container comments mx-auto" id="comments">
+    <% if(theme.post.comments.enable) { %>
+    <br><br>
+    <% var type = '_partial/comments/' + theme.post.comments.type %>
+    <%- partial(type) %>
+    <% } %>
+</div>
+```
+自定义内容写在评论代码之前就好了，支持 HTML
+
+然后两种方法开启，二选一即可
+#### 1
+在根目录的 `source` 文件夹中创建 `messageboard.md` 
+并在 `front-matter` 中加上 ``layout: messageboard`
+和 about 界面的方法一样
+
+#### 2
+在 `themes\fluid\scripts\pages.js` 文件中加入如下代码
+```js
+// generate messageboard page
+hexo.extend.generator.register('_messageboard', function (locals) {
+  return {
+    path: 'messageboard/index.html',
+    data: locals.theme,
+    layout: 'messageboard',
+  };
+});
+```
+
+### 最后
+没啥可折腾的了，暗黑模式下篇文章再写吧 ~~（水文章数量）~~
+作者已经把主题做的非常完美了，有什么问题都会立马修复，功能也出的很快，超 nice
+博客刚搭建的时候用了一个 material 主题，觉得过于平淡，换到了一个 gal 主题，功能很多
+慢慢的又看厌了，很多人推荐 Next，就又换到了 Next，的确很好用
+就光针对 Next 的教程数量而言，应该能算是大部分用 Hexo 的人都用过的
+经常逛博客也发现很多都是用的这个主题，用了几个月，改了很多东西，但也慢慢看厌了
+就开始再次踏上寻找主题的路，经常看到一个好看的主题，但又想到自己在 Next 上大量的自定义内容，一直不忍心丢下
+看到 Fluid 之后甚是喜欢，先用 Fluid 搭建了副站，放在 Gitee 上，慢慢完善
+完善到一定程度，发现甚至比主站还好看了（个人认为）
+下定决心开始换主题，前前后后花了一个多星期全部完成
+
+Fluid 应该是会一直用下去了
+不过仍有继续折腾的打算
+可能会再用 Typecho 搭建一个玩玩...
+
+放个折腾合集吧
+[面向纯小白的 CSS 教程1](./25976.html)
+[面向纯小白的 CSS 教程2](./17142.html)
+[Hexo 球形标签云](./db44ecae.html)
+[Valine 邮件+微信提醒](./22549.html)

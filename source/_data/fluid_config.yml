@@ -145,7 +145,7 @@ scroll_top_arrow:  # 向顶部滚动的箭头
 # Index Page
 #---------------------------
 index:
-  banner_img: https://cdn.jsdelivr.net/gh/Royce2019/img/img/cz56uknGl4EOXM7.jpg  # 首页 Banner 头图，以下相同
+  banner_img:   # 首页 Banner 头图，以下相同
   banner_img_height: 100  # 头图高度，屏幕百分比，available: 0 - 100
   post_default_img: https://cdn.jsdelivr.net/gh/Royce2019/img/img/index_img.jpg # 默认的文章封面图，当没有指定 index_img 时会使用该图片，若都为空则不显示任何图片
   slogan:  # 首页副标题的独立设置
@@ -162,7 +162,7 @@ index:
 # 通过 hexo new page 命令创建的页面
 # Custom Page
 page:
-  banner_img: /img/default.png
+  banner_img: 
   banner_img_height: 70  # available: 0 - 100
 
 #---------------------------
@@ -170,7 +170,7 @@ page:
 # Post Page
 #---------------------------
 post:  # 部分配置同时控制自定义页面，注意备注
-  banner_img: /img/default.png
+  banner_img: 
   banner_img_height: 70  # available: 0 - 100
   meta:  # 文章标题下方的信息
     date:  # 文章日期
@@ -302,7 +302,7 @@ baidu_url_submit:
 # Archive Page
 #---------------------------
 archive:
-  banner_img: /img/default.png
+  banner_img: 
   banner_img_height: 80  # available: 0 - 100
   subtitle: 记下即将逝去的青春，留下即将过去的幸福 # 打字机内容
 
@@ -311,7 +311,7 @@ archive:
 # Categories Page
 #---------------------------
 category:
-  banner_img: /img/default.png
+  banner_img: 
   banner_img_height: 80  # available: 0 - 100
   subtitle:  # 打字机内容
 
@@ -320,7 +320,7 @@ category:
 # Tags Page
 #---------------------------
 tag:
-  banner_img: /img/default.png
+  banner_img: 
   banner_img_height: 80  # available: 0 - 100
   subtitle: 今天也是开心的一天 # 打字机内容
   tagcloud: # 标签云
@@ -335,7 +335,7 @@ tag:
 # Messageboard Page
 #---------------------------
 messageboard:
-  banner_img: /img/default.png
+  banner_img: 
   banner_img_height: 80  # available: 0 - 100
   subtitle: 留下你的脚印 # 打字机内容
 
@@ -344,7 +344,7 @@ messageboard:
 # About Page
 #---------------------------
 about:  # 以下仅为页面顶部的基本信息，更多内容请在 ./pages/about.md 中编辑，支持 markdown 和 HTML
-  banner_img: /img/default.png
+  banner_img: 
   banner_img_height: 80  # available: 0 - 100
   subtitle: 时代的尘埃落在个人身上就是一座大山 # 打字机内容
   avatar: https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/about/Royce.webp # 头像
@@ -363,7 +363,7 @@ about:  # 以下仅为页面顶部的基本信息，更多内容请在 ./pages/a
 # 404 Page
 #---------------------------
 page404:
-  banner_img: /img/default.png
+  banner_img: 
   banner_img_height: 100  # available: 0 - 100
   subtitle: 喂，幺幺零吗？这里的页面找不到了 # 打字机内容
 
@@ -394,7 +394,7 @@ feed:
 # Links Page
 #---------------------------
 links:
-  banner_img: /img/default.png
+  banner_img: 
   banner_img_height: 80  # available: 0 - 100
   subtitle: 用热情去灌溉，用原则去培养，用谅解去护理 # 打字机内容
   defaultlinks:
@@ -443,7 +443,7 @@ links:
 # Tools Page
 #---------------------------
 tools:
-  banner_img: /img/default.png
+  banner_img: 
   banner_img_height: 80  # available: 0 - 100
   subtitle: 喂，幺幺零吗？这里的页面找不到了 # 打字机内容
   items:
