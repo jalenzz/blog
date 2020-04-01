@@ -16,7 +16,7 @@ timezone: ''
 url: https://royce2003.top
 root: /
 # permalink: :year/:month/:day/:title/
-permalink: posts/:abbrlink/
+permalink: posts/:abbrlink.html
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks

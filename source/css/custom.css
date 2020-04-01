@@ -88,36 +88,19 @@ footer a:hover {
   }
 }
 /*侧边滚动条*/
+::-webkit-scrollbar-button {
+  display: none;
+}
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
-}
-::-webkit-scrollbar-button {
-  width: 0;
-  height: 0;
-}
-::-webkit-scrollbar-button:start:increment,::-webkit-scrollbar-button:end:decrement {
-  display: none;
-}
-::-webkit-scrollbar-corner {
-  display: block;
+  background-color: #2f415452;
 }
 ::-webkit-scrollbar-thumb {
-  border-radius: 8px;
-  background-color: rgba(0,0,0,.2);
+  border-radius: 5px;
+  background-color: #2f4154;
+  background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.2) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.2) 50%,rgba(255,255,255,.2) 75%,transparent 75%,transparent);
 }
 ::-webkit-scrollbar-thumb:hover {
-  border-radius: 8px;
-  background-color: rgba(0,0,0,.5);
-}
-::-webkit-scrollbar-track,::-webkit-scrollbar-thumb {
-  border-right: 1px solid transparent;
-  border-left: 1px solid transparent;
-}
-::-webkit-scrollbar-track:hover {
-  background-color: rgba(0,0,0,.15);
-}
-::-webkit-scrollbar-button:start {
-  width: 10px;
-  height: 10px;
+  background-color: #2f4154b8;
 }
