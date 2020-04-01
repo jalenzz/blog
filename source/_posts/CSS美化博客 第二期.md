@@ -11,6 +11,7 @@ index_img: https://cdn.jsdelivr.net/gh/Royce2019/img/img/2335206_94a1b9ce_7356_3
 ---
 ![](https://cdn.jsdelivr.net/gh/Royce2019/img/img/2335206_94a1b9ce_7356_3822@1600x719.jpeg)
 
+<p class="note note-info">首发于酷安，再转博客上，没怎么编辑。由于酷安不支持 Markdown 所以没 TOC 之类的</p>
 
 哪个男孩子不想要个炫酷的博客
 哪个女孩子不想要个美美是博客

@@ -11,6 +11,8 @@ index_img: https://gitee.com/Royce2003/blogimages/raw/master/img/2335206_83c5ad6
 ---
 ![](https://gitee.com/Royce2003/blogimages/raw/master/img/2335206_83c5ad65_5449_5352@1080x485.jpeg)
 
+<p class="note note-info">首发于酷安，再转博客上，没怎么编辑。由于酷安不支持 Markdown 所以没 TOC 之类的</p>
+
 封面感谢 [@我是天小正](https://www.coolapk.com/u/我是天小正) 的教程
 哪个男孩子不想要一个炫酷的博客！
 哪个女孩子不想要一个超赞的博客！
