@@ -14,7 +14,6 @@ var isNight = 0;
         document.body.classList.add('dark');
         console.log("cookie触发暗黑模式");
     }
-    // $("#dark").html($('body').hasClass('dark')?"🌙":"🌞");
 })();
 //点击事件
 function switchDarkMode() {

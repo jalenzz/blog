@@ -48,8 +48,9 @@ index_img: https://gitee.com/Royce2003/blogimages/raw/master/img/6MD8RFDM3WIAKOP
 
 ## 配置环境变量
 接下来就需要配置环境变量了
+<p class="note note-warning">环境变量配置图片已更新，请注意 SITE_URL 的值需要带 http(s)，否则邮件无法跳转</p>
 
-![](https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/2335206_f73f537d_8875_2888@1920x1077.jpeg.m.jpg)
+![](https://gitee.com/royce2003/blog/raw/master/img/sGGNPfS0.webp)
 
 `SITE_NAME` : 网站名称  
 `SITE_URL` : 网站地址, 最后不要加 / SMTP_SERVICE : 邮件服务提供商，不如QQ，163...  
