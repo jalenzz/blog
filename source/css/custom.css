@@ -104,3 +104,38 @@ footer a:hover {
 ::-webkit-scrollbar-thumb:hover {
   background-color: #2f4154b8;
 }
+/* 按钮样式 */
+.BoxButton {
+  display: block;
+  position: relative;
+  width:fit-content;
+  width:-webkit-fit-content;
+  width:-moz-fit-content;
+  line-height: 40px;
+  padding: 0 30px;
+  margin-top: 25px;
+  background: #FF5E65 !important;
+  border-radius: 25px;
+  text-decoration: none !important;
+  color: #fff !important;
+  transition: background .75s ease;
+  overflow: hidden;
+}
+.BoxButton:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 100px;
+  bottom: -25px;
+  background: #fff;
+  border: 2px solid #fff;
+  transition: transform .75s ease;
+  transform: translateX(-50px) rotate(45deg);
+}
+.BoxButton:hover {
+  background: #332F63 !important;
+}
+.BoxButton:hover:before {
+  transform: translateX(250px) rotate(45deg);
+}
