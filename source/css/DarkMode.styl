@@ -1,0 +1,147 @@
+/* 切换按钮 */
+#dark
+  cursor pointer
+  position fixed
+  right 40px
+  bottom 98px
+  width 16px
+  height 14px
+  z-index 1050
+  font-size 20px
+
+/*暗黑模式*/
+.dark
+
+  /* 背景遮罩 */
+  .view, .mask
+    &:after
+      background-color rgba(47, 55, 66, 0.9);
+
+  /* 主体 */
+  #board 
+    background-color #282c34
+    color #a09c9c
+  
+  img  
+    filter brightness(50%)
+
+  p, .index-info a  
+    color #a09c9c !important
+
+  .markdown-body
+    h1, h2, h3, h4, h5, h6, s, li  
+      color:#a09c9c !important
+    
+
+  /* 顶栏 */
+  .navbar-col-show
+  .top-nav-collapse  
+    background-color #282c34
+    
+  .navbar a  
+    color #a09c9c !important
+    
+  .animated-icon span   /* 手机端 */
+    background-color #a09c9c
+
+
+  /* page-number */
+  .pagination 
+    .current, a:hover
+      background-color #6b6b6b73;
+
+
+  /* 打字机 */
+  #subtitle
+  .scroll-down-arrow
+  .dark.typed-cursor--blink
+    color #dfdfdf
+
+
+  /* back to top */
+  #scroll-top-button
+    background-color #282c34
+
+    i
+      color #a09c9c
+    
+
+  /* Toc */
+  .tocbot-list a
+    color #a09c9c
+
+  .tocbot-active-link
+  footer a:hover
+    color #1abc9c !important
+
+
+  /* footer */
+  footer, footer a
+    color #a09c9c
+    
+
+  /* 归档页 */
+  .list-group-item
+    color #a09c9c
+    background-color #282c34
+    
+    &:hover
+      background-color #46484d
+
+
+  /* 标签页 */
+  .tagcloud a:hover
+    background-color #46484d
+
+
+  /* 友链页 */
+  .links
+    .card  
+      background-color #282c34
+      
+    .card-body:hover  
+      background-color #46484d
+      
+    .link-title, .link-intro  
+      color #a09c9c
+    
+
+  /* note */
+  .note-info
+    background-color #3b5359
+    border-color #006d80
+
+  .note-danger
+    background-color #783f42
+    border-color #670009
+
+  .note-success
+    background-color #2a3e2e
+    border-color #005915
+
+  .note-warning
+    background-color #5b543e
+    border-color #846500
+
+  .note-primary
+    background-color #455a6f
+    border-color #004188
+
+
+  /* Valine */
+  .valine
+    *, .info .col, .vpage .more
+    .vinputs-area .auth-section
+    .vinputs-area .textarea-wrapper
+    .vinputs-area .textarea-wrapper textarea
+    .vinputs-area .auth-section .input-wrapper input
+    .vinputs-area .textarea-wrapper .comment_trigger
+      background-color #282c34
+
+    input, textarea
+      color #a09c9c !important
+
+
+  /* echart */
+  .markdown-body canvas
+    background-color #282c34
