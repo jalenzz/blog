@@ -90,7 +90,8 @@ layout: about
             "2019.12",
             "2020.01",
             "2020.02",
-            "2020.03"
+            "2020.03",
+            "2020.04"
         ],
         axisLine: {
             show: true //隐藏X轴轴线
@@ -224,7 +225,7 @@ layout: about
                 shadowBlur: 15,
                 shadowOffsetY: 15,
             },
-            data: [1, 6, 10, 15, 30, 40]
+            data: [1, 6, 10, 15, 30, 40, 42]
         },
         {
             name: "该月发布数",
@@ -244,7 +245,7 @@ layout: about
                     barBorderRadius: [30, 30, 0, 0],
                 }
             },
-            data: [1, 5, 4, 5, 15, 10]
+            data: [1, 5, 4, 5, 15, 10, 2]
         }
     ]
 };
