@@ -14,7 +14,7 @@ layout: about
 <div class="note note-danger">
     <strong>博客简介</strong>
     <li>全站 HTTPS</li>
-    <li>Hexo 框架 + Fluid 主题</li>  
+    <li>Hexo 框架 + Fluid 主题</li>
     <li> Coding Pages + GitHub Pages 双线部署</li>
     <li>博客中的部分图片源于网络，侵删</li>
     <li>本博客文章均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow noopener noopener">CC BY-NC-SA 4.0 协议</a>，转载请注明出处！</li>
