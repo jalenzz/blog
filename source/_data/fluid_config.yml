@@ -147,7 +147,7 @@ scroll_top_arrow:  # 向顶部滚动的箭头
 index:
   banner_img:   # 首页 Banner 头图，以下相同
   banner_img_height: 100  # 头图高度，屏幕百分比，available: 0 - 100
-  post_default_img: https://cdn.jsdelivr.net/gh/Royce2019/img/img/index_img.jpg # 默认的文章封面图，当没有指定 index_img 时会使用该图片，若都为空则不显示任何图片
+  post_default_img: https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/posts/index_img/01.webp # 默认的文章封面图，当没有指定 index_img 时会使用该图片，若都为空则不显示任何图片
   slogan:  # 首页副标题的独立设置
     enable: true  # 为 false 则不显示任何内容
     text: 今日任务：早起（0/1） # 为空则按 hexo config.subtitle 显示
