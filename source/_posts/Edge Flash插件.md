@@ -15,7 +15,7 @@ abbrlink: 34979
 
 ### 替换文件
 浏览器地址栏输入 `edge://version/` ，chrome 等方法类似，找到 flash 的位置
-![](https://royce-img.oss-cn-beijing.aliyuncs.com/34979/01.webp)
+![](https://oss.royce2003.top/34979/01.webp)
 将 `pepflashplayer.dll` 替换成我这里提供的文件
 <a class="BoxButton" href="https://www.lanzous.com/iawvd9a">点我下载</a>
 密码: b0fx
