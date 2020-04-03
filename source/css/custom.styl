@@ -1,0 +1,283 @@
+/* Custom styles */
+body 
+  overflow-x: hidden;
+
+.slideshow
+  position: absolute; 
+  width: 100vw; 
+  height: 100vh; 
+  overflow: hidden;
+
+  .slideshow-image
+    position: fixed; 
+    background-size: cover;
+    width: 100%; height: 100%; 
+    background: repeat 50% 50%; 
+    animation-name: kenburns;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 24s; opacity: 1;
+    transform: scale(1.2);
+    filter: brightness(70%)
+
+    &:nth-child(1){-webkit-animation-name: kenburns-1; animation-name: kenburns-1; z-index: -2;}
+    &:nth-child(2){-webkit-animation-name: kenburns-2; animation-name: kenburns-2; z-index: -3;}
+    &:nth-child(3){-webkit-animation-name: kenburns-3; animation-name: kenburns-3; z-index: -4;}
+    &:nth-child(4){-webkit-animation-name: kenburns-4; animation-name: kenburns-4; z-index: -5;}
+
+@keyframes kenburns-1{0%{opacity: 1; -webkit-transform: scale(1.2); transform: scale(1.2);} 1.5625%{opacity: 1;} 23.4375%{opacity: 1;} 26.5625%{opacity: 0; -webkit-transform: scale(1); transform: scale(1);} 100%{opacity: 0; -webkit-transform: scale(1.2); transform: scale(1.2);} 98.4375%{opacity: 0; -webkit-transform: scale(1.21176); transform: scale(1.21176);} 100%{opacity: 1;}}
+@keyframes kenburns-2{23.4375%{opacity: 1; -webkit-transform: scale(1.2); transform: scale(1.2);} 26.5625%{opacity: 1;} 48.4375%{opacity: 1;} 51.5625%{opacity: 0; -webkit-transform: scale(1); transform: scale(1);} 100%{opacity: 0; -webkit-transform: scale(1.2); transform: scale(1.2);}}
+@keyframes kenburns-3{48.4375%{opacity: 1; -webkit-transform: scale(1.2); transform: scale(1.2);} 51.5625%{opacity: 1;} 73.4375%{opacity: 1;} 76.5625%{opacity: 0; -webkit-transform: scale(1); transform: scale(1);} 100%{opacity: 0; -webkit-transform: scale(1.2); transform: scale(1.2);}}
+@keyframes kenburns-4{73.4375%{opacity: 1; -webkit-transform: scale(1.2); transform: scale(1.2);} 76.5625%{opacity: 1;} 98.4375%{opacity: 1;} 100%{opacity: 0; -webkit-transform: scale(1); transform: scale(1);}}
+
+
+.view .mask
+  background-color: rgba(0,0,0,0);
+
+.tocbot-list a
+#toc, footer, footer a
+  color #ffffff
+
+footer a:hover
+.tocbot-active-link
+  color #1abc9c !important
+
+
+.index-img
+  transition: .4s;
+
+.index-card:hover .index-img
+  transform: scale(1.1);
+  box-shadow: 0 5px 11px 0 rgba(0,0,0,0.38), 0 4px 15px 0 rgba(0,0,0,0.35);
+
+
+.scroll-top-arrow
+  color #2f4154
+
+#scroll-top-button 
+  border-radius 25px
+  -webkit-transition all .6s
+  -moz-transition all .6s
+  -o-transition all .6s
+  transition all .6s
+
+  &:hover 
+    transform scale(1.2)
+    border-radius 20%
+
+
+@media (min-width:768px) 
+  .post-content 
+    h1::before
+      content: "🌈";
+      visibility: visible;
+      display: inline;
+    h2::before
+      content: "🚀";
+      visibility: visible;
+      display: inline;
+    h3::before
+      content: "🔍";
+      visibility: visible;
+      display: inline;
+
+
+/*侧边滚动条*/
+::-webkit-scrollbar-button
+  display none
+
+::-webkit-scrollbar
+  width 10px
+  height 10px
+  background-color: #2f415452
+
+::-webkit-scrollbar-thumb
+  border-radius 5px
+  background-color #2f4154
+  background-image -webkit-linear-gradient(45deg,rgba(255,255,255,.2) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.2) 50%,rgba(255,255,255,.2) 75%,transparent 75%,transparent)
+
+  &:hover
+    background-color #2f4154b8;
+
+
+/* 按钮样式 */
+.BoxButton
+  display block
+  position relative
+  width:fit-content
+  width:-webkit-fit-content
+  width:-moz-fit-content
+  line-height 40px
+  padding 0 30px
+  margin-top 25px
+  background #FF5E65 !important
+  border-radius 25px
+  text-decoration none !important
+  color #fff !important
+  transition background .75s ease
+  overflow hidden
+
+  &:hover
+    background #332F63 !important
+
+    &::before
+      transform translateX(250px) rotate(45deg)
+
+  &::before
+    content ''
+    position absolute
+    left 0
+    width 20px
+    height 100px
+    bottom -25px
+    background #fff
+    border 2px solid #fff
+    transition transform .75s ease
+    transform translateX(-50px) rotate(45deg)
+
+
+/* 切换按钮 */
+#dark
+  cursor pointer
+  position fixed
+  right 40px
+  bottom 98px
+  width 16px
+  height 14px
+  z-index 1050
+  font-size 20px
+
+/*暗黑模式*/
+.dark
+  /* 背景遮罩 */
+  .slideshow-image
+    filter brightness(30%)
+
+  /* 主体 */
+  #board 
+    background-color #282c34
+    color #a09c9c
+  
+  img  
+    filter brightness(50%)
+
+  p, .index-info a  
+    color #a09c9c !important
+
+  .markdown-body
+    h1, h2, h3, h4, h5, h6, s, li  
+      color:#a09c9c !important
+    
+
+  /* 顶栏 */
+  .navbar-col-show
+  .top-nav-collapse  
+    background-color #282c34
+    
+  .navbar a  
+    color #a09c9c !important
+    
+  .animated-icon span   /* 手机端 */
+    background-color #a09c9c
+
+
+  /* page-number */
+  .pagination 
+    .current, a:hover
+      background-color #6b6b6b73;
+
+
+  /* 打字机 */
+  #subtitle
+  .scroll-down-arrow
+  .dark.typed-cursor--blink
+    color #dfdfdf
+
+
+  /* back to top */
+  #scroll-top-button
+    background-color #282c34
+
+    i
+      color #a09c9c
+    
+
+  /* Toc */
+  .tocbot-list a
+    color #a09c9c
+
+  .tocbot-active-link
+  footer a:hover
+    color #1abc9c !important
+
+
+  /* footer */
+  footer, footer a
+    color #a09c9c
+    
+
+  /* 归档页 */
+  .list-group-item
+    color #a09c9c
+    background-color #282c34
+    
+    &:hover
+      background-color #46484d
+
+
+  /* 标签页 */
+  .tagcloud a:hover
+    background-color #46484d
+
+
+  /* 友链页 */
+  .links
+    .card  
+      background-color #282c34
+      
+    .card-body:hover  
+      background-color #46484d
+      
+    .link-title, .link-intro  
+      color #a09c9c
+    
+
+  /* note */
+  .note-info
+    background-color #3b5359
+    border-color #006d80
+
+  .note-danger
+    background-color #783f42
+    border-color #670009
+
+  .note-success
+    background-color #2a3e2e
+    border-color #005915
+
+  .note-warning
+    background-color #5b543e
+    border-color #846500
+
+  .note-primary
+    background-color #455a6f
+    border-color #004188
+
+
+  /* Valine */
+  .valine
+    *, .info .col, .vpage .more
+    .vinputs-area .auth-section
+    .vinputs-area .textarea-wrapper
+    .vinputs-area .textarea-wrapper textarea
+    .vinputs-area .auth-section .input-wrapper input
+    .vinputs-area .textarea-wrapper .comment_trigger
+      background-color #282c34
+
+    input, textarea
+      color #a09c9c !important
+
+
+  /* echart */
+  .markdown-body canvas
+    background-color #282c34
