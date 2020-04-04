@@ -11,7 +11,13 @@ var banner_img_height = page.banner_img_height || theme.index.banner_img_height
 
 <body>
   <div id="dark" onclick="switchDarkMode()"></div>
-  <script src="//cdn.jsdelivr.net/gh/Royce2019/BlogSource/js/DarkMode.js"></script>
+  <script>
+    document.getElementById('dark').innerHTML = document.querySelector("body").classList.contains("dark")?"🌙":"🌞";
+    var isNight = new Date().getHours() >= 10 || new Date().getHours() < 7;
+    if(((matchMedia('(prefers-color-scheme: dark)').matches)||isNight||(localStorage.getItem('dark') === '1'))&&!(isNight&&localStorage.getItem('noDark') === '1')) {
+      document.body.classList.add('dark');
+    }
+  </script>
   <div class="slideshow">
     <div class="slideshow-image" style="background-image: url('//cdn.jsdelivr.net/gh/Royce2019/BlogGallery/02.webp')"></div>
     <div class="slideshow-image" style="background-image: url('//cdn.jsdelivr.net/gh/Royce2019/BlogGallery/01.webp')"></div>
