@@ -61,9 +61,9 @@ web_analytics:  # 网页访问统计
   baidu: 3b1c52021da1d2ea4a18cb97b7313fd0 # 百度统计的Key，参见 https://tongji.baidu.com/sc-web/10000033910/home/site/getjs?siteId=13751376 代码获取中 hm.js? 后边的字符串
   google: UA-159538037-1 # Google统计的Tracking ID，参见 https://analytics.google.com/analytics/web/
   tencent:  # 腾讯统计的H5 App id，参见 https://mta.qq.com/h5/manage/ctr_app_manage (开启高级功能才有cid)
-    sid: 500714554
+    sid:
     cid:
-  tajs: 66531637  # 腾讯统计早期版站点统计sID，参见 https://ta.qq.com/#/site/list
+  tajs: # 腾讯统计早期版站点统计sID，参见 https://ta.qq.com/#/site/list
   woyaola:  # 51.la站点统计ID，参见 https://www.51.la/user/site/index
   cnzz:  # 友盟/cnzz站点统计web_id，参见 https://web.umeng.com/main.php?c=site&a=show
 
@@ -195,7 +195,7 @@ post:  # 部分配置同时控制自定义页面，注意备注
     collapseDepth: 0  # 层级的折叠深度，0 是全部折叠，6 是全部不折叠
   copyright:  # 版权声明
     enable: true
-    content: '本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="nofollow noopener">CC BY-NC-SA 4.0协议</a> 。转载请注明出处！'
+    content: '本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="nofollow noopener">CC BY-NC-SA 4.0 协议</a> 。转载请注明出处！'
   custom:  # 文章底部自定义内容
     enable: false
     content: '<img src="https://octodex.github.com/images/jetpacktocat.png" class="rounded mx-auto d-block mt-5" style="width:150px; height:150px;">' # 自定义区域，支持 HTML，可自行插入赞赏码、公众号二维码等内容
@@ -447,7 +447,7 @@ links:
 tools:
   banner_img: 
   banner_img_height: 80  # available: 0 - 100
-  subtitle: 喂，幺幺零吗？这里的页面找不到了 # 打字机内容
+  subtitle: 都是好玩的 # 打字机内容
   items:
     疫情图: [/2019-nCoV, 国际国内实时疫情图]
     评论管理: [https://kiko2hjmvapb.cn-e1.leanapp.cn, Valin 后台评论管理]
