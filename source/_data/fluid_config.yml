@@ -126,11 +126,11 @@ banner_parallax: true # 头图滚动视差
 footer:
   statistics:  # 统计网站 PV、UV，使用的是不蒜子，显示在页脚
     enable: true
-    pv_format: "{} 次回眸"  # 显示的文本，{}是数字的占位符（必须包含)，下同
-    uv_format: "遇见了 {} 个小伙伴"
+    pv_format: "{}&nbsp;次回眸"  # 显示的文本，{}是数字的占位符（必须包含)，下同
+    uv_format: "遇见了&nbsp;{}&nbsp;个小伙伴"
 
   beian:  # The footer of China's website policy, other areas keep disable
-    enable: ftrue
+    enable: true
     icp_text: 闽ICP备20005437号-1 # ICP证号
     police_text:  # 公安备案号，不填则只显示ICP
     police_code:  # 公安备案的编号，用于URL跳转查询

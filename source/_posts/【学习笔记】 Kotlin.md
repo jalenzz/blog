@@ -83,3 +83,27 @@ fun main() {
 
 }
 ```
+```kotlin
+views.filter { it is Moveable }.forEach { move -> //it 用 move 代替，以和内部的另一个 it 却别
+
+    move as Moveable
+
+    var badDirection: Direction? = null
+    var badBlock:Blockable? = null
+
+    views.filter { it is Blockable }.forEach blockTag@{ block -> //it 用 block 代替，blockTag@ 为标签，用于 return 等操作时的定位
+        block as Blockable
+
+        val direction:Direction? = move.willCollision(block)
+
+        //let 作用域函数，主要功能是为调用者函数提供内部作用域
+        //虽然我还没完全搞清楚另几个作用域函数...
+        direction?.let {
+            badDirection = direction
+            badBlock = block
+            return@blockTag
+        }
+    }
+
+}
+```
