@@ -2,7 +2,7 @@
 title: Hexo Fluid 瞎折腾
 date: 2020-04-01 12:20:51
 tags: [Fluid, Hexo, CSS]
-index_img: 
+index_img: https://cos.royce2003.top/60394/index_img.webp
 abbrlink: 60394
 top: 10
 ---
