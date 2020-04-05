@@ -2,7 +2,7 @@
 title: 
 date: 2020-03-01 19:59:32
 tags: [others]
-index_img: https://oss.royce2003.top/39017/index_img.webp
+index_img: https://cos.royce2003.top/39017/index_img.webp
 abbrlink: 39017
 ---
 2020.3.1 是值得纪念的一天
