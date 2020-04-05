@@ -70,3 +70,7 @@ busuanzi: https://busuanzi.ibruce.info/busuanzi/2.3/
 clipboard: https://cdn.staticfile.org/clipboard.js/2.0.6/
 
 mermaid: https://cdn.staticfile.org/mermaid/8.4.8/
+
+valine: https://cdn.jsdelivr.net/gh/royce2019/BlogSource/js/
+
+gitalk: https://cdn.staticfile.org/gitalk/1.6.2/
