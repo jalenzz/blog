@@ -4,169 +4,60 @@ date: 2020-04-01 12:20:51
 tags: [Fluid, Hexo, CSS]
 index_img: 
 abbrlink: 60394
+top: 10
 ---
 
-动态背景、滚挡条、动画... 各类折腾
-
+<p class="note note-info"><b>2020.04.05 新增 更好看的音乐播放器</b></p>
 <!--more-->
-首先，按照 Fluid 配置文件中的方法，在 `source/css` 下新建 `custom.css` 文件，在其中写入自定义 CSS
+
+## 前言
+好像还没有看到大佬写关于 Fluid 折腾的文章，就开了这个坑
+文章放了源码进来，所以挺长的，大部分是改 CSS，JS 很少
+首先，按照 Fluid 配置文件中的方法，新建自定义 CSS 和 JS
+建议创建 .styl 而不是 .css
+下方代码会是 .styl，因为写着更省事...
+<p class="note note-danger">不管是什么，配置文件中都填 .css</p>
+
 ```yml
-custom_js:   # 指定自定义 js 文件路径，路径是相对 source 目录，如 /js/custom.js
+custom_js: /js/custom.js # 指定自定义 js 文件路径，路径是相对 source 目录，如 /js/custom.js
 custom_css: /css/custom.css # 指定自定义 css 文件路径，路径是相对 source 目录，如 /css/custom.css
 custom_html: ''  # 自定义底部 HTML 内容（位于 footer 上方），也可用于外部引入 js css 这些操作，注意不要和 post.custom 配置冲突
 ```
 
-### 动态背景
+## 动态背景
 主题本身采用的是头图滚动视差，非常 nice，但我可能更喜欢花里胡哨吧
 现在自定义 CSS 中加入如下代码
-```css
-.slideshow-image {
-	position: fixed;
-	background-size: cover;
-	width: 100%;
-	height: 100%;
-	background: repeat 50% 50%;
-	animation-name: kenburns;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-	animation-duration: 24s;
-	opacity: 1;
-	transform: scale(1.2);
-}
-.slideshow {
-	position: absolute;
-	width: 100vw;
-	height: 100vh;
-	overflow: hidden;
-}
-.slideshow-image:nth-child(1) {
-	-webkit-animation-name: kenburns-1;
-	animation-name: kenburns-1;
-	z-index: -2;
-}
-.slideshow-image:nth-child(2) {
-	-webkit-animation-name: kenburns-2;
-	animation-name: kenburns-2;
-	z-index: -3;
-}
-.slideshow-image:nth-child(3) {
-	-webkit-animation-name: kenburns-3;
-	animation-name: kenburns-3;
-	z-index: -4;
-}
-.slideshow-image:nth-child(4) {
-	-webkit-animation-name: kenburns-4;
-	animation-name: kenburns-4;
-	z-index: -5;
-}
-@keyframes kenburns-1 {
-	0% {
-		opacity: 1;
-		-webkit-transform: scale(1.2);
-		transform: scale(1.2);
-	}
-	1.5625% {
-		opacity: 1;
-	}
+```stylus
+.slideshow
+  position: absolute; 
+  width: 100vw; 
+  height: 100vh; 
+  overflow: hidden;
 
-	23.4375% {
-		opacity: 1;
-	}
-	26.5625% {
-		opacity: 0;
-		-webkit-transform: scale(1);
-		transform: scale(1);
-	}
-	100% {
-		opacity: 0;
-		-webkit-transform: scale(1.2);
-		transform: scale(1.2);
-	}
-	98.4375% {
-		opacity: 0;
-		-webkit-transform: scale(1.21176);
-		transform: scale(1.21176);
-	}
-	100% {
-		opacity: 1;
-	}
-}
-@keyframes kenburns-2 {
-	23.4375% {
-		opacity: 1;
-		-webkit-transform: scale(1.2);
-		transform: scale(1.2);
-	}
-	26.5625% {
-		opacity: 1;
-	}
-	48.4375% {
-		opacity: 1;
-	}
-	51.5625% {
-		opacity: 0;
-		-webkit-transform: scale(1);
-		transform: scale(1);
-	}
-	100% {
-		opacity: 0;
-		-webkit-transform: scale(1.2);
-		transform: scale(1.2);
-	}
-}
-@keyframes kenburns-3 {
-	48.4375% {
-		opacity: 1;
-		-webkit-transform: scale(1.2);
-		transform: scale(1.2);
-	}
-	51.5625% {
-		opacity: 1;
-	}
-	73.4375% {
-		opacity: 1;
-	}
-	76.5625% {
-		opacity: 0;
-		-webkit-transform: scale(1);
-		transform: scale(1);
-	}
-	100% {
-		opacity: 0;
-		-webkit-transform: scale(1.2);
-		transform: scale(1.2);
-	}
-}
-@keyframes kenburns-4 {
-	73.4375% {
-		opacity: 1;
-		-webkit-transform: scale(1.2);
-		transform: scale(1.2);
-	}
-	76.5625% {
-		opacity: 1;
-	}
-	98.4375% {
-		opacity: 1;
-	}
-	100% {
-		opacity: 0;
-		-webkit-transform: scale(1);
-		transform: scale(1);
-	}
-}
+  .slideshow-image
+    position: fixed; 
+    background-size: cover;
+    width: 100%; height: 100%; 
+    background: repeat 50% 50%; 
+    animation-name: kenburns;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 24s; opacity: 1;
+    transform: scale(1.2);
+    filter: brightness(70%)
 
-.view .mask {
-	background-color: rgba(0,0,0,0); /* 去除头图遮罩 */
-}
-.view .mask:after {
-	z-index: -1;
-	content: "";
-	position: fixed;
-	top: 0;	left: 0;
-    width: 100%; height: 100%;
-	background-color: rgba(0,0,0,.3); /* 添加全屏背景遮罩 */
-}
+    &:nth-child(1){-webkit-animation-name: kenburns-1; animation-name: kenburns-1; z-index: -2;}
+    &:nth-child(2){-webkit-animation-name: kenburns-2; animation-name: kenburns-2; z-index: -3;}
+    &:nth-child(3){-webkit-animation-name: kenburns-3; animation-name: kenburns-3; z-index: -4;}
+    &:nth-child(4){-webkit-animation-name: kenburns-4; animation-name: kenburns-4; z-index: -5;}
+
+@keyframes kenburns-1{0%{opacity: 1; -webkit-transform: scale(1.2); transform: scale(1.2);} 1.5625%{opacity: 1;} 23.4375%{opacity: 1;} 26.5625%{opacity: 0; -webkit-transform: scale(1); transform: scale(1);} 100%{opacity: 0; -webkit-transform: scale(1.2); transform: scale(1.2);} 98.4375%{opacity: 0; -webkit-transform: scale(1.21176); transform: scale(1.21176);} 100%{opacity: 1;}}
+@keyframes kenburns-2{23.4375%{opacity: 1; -webkit-transform: scale(1.2); transform: scale(1.2);} 26.5625%{opacity: 1;} 48.4375%{opacity: 1;} 51.5625%{opacity: 0; -webkit-transform: scale(1); transform: scale(1);} 100%{opacity: 0; -webkit-transform: scale(1.2); transform: scale(1.2);}}
+@keyframes kenburns-3{48.4375%{opacity: 1; -webkit-transform: scale(1.2); transform: scale(1.2);} 51.5625%{opacity: 1;} 73.4375%{opacity: 1;} 76.5625%{opacity: 0; -webkit-transform: scale(1); transform: scale(1);} 100%{opacity: 0; -webkit-transform: scale(1.2); transform: scale(1.2);}}
+@keyframes kenburns-4{73.4375%{opacity: 1; -webkit-transform: scale(1.2); transform: scale(1.2);} 76.5625%{opacity: 1;} 98.4375%{opacity: 1;} 100%{opacity: 0; -webkit-transform: scale(1); transform: scale(1);}}
+
+.view .mask
+  background-color: rgba(0,0,0,0);
 ```
 接着在 `themes\fluid\layout\layout.ejs` 中 `<body>` 后加入如下代码
 `background-image: url` 中填入图片链接
@@ -198,118 +89,101 @@ banner_parallax: false # 头图滚动视差
 ```
 
 害，原来自己写的方法在第一张图片加载的时候 100% 闪烁，找不到解决办法
-上面的 CSS 代码是从网上找来的，稍作修改，适配了下主题，但是这方法也有我没解决的问题
-因为是依赖 `z-index` 实现的切换，所以如果当前图片未加载出来会直接显示下一张，不过这个问题不到
+上面的动画代码是从网上 [链接](https://www.51qianduan.com/article/3115.html) 找来的，稍作修改，适配了下主题，但是这方法也有我没解决的问题
+因为是依赖 `z-index` 实现的切换，所以如果当前图片未加载出来会直接显示下一张，不过这个问题不大
 还有就是出现了 x 轴滚动条，搞了好久一直弄不好最终无奈只好直接暴力隐藏，将下方代码添加在自定义 CSS 中
-```css
-body {
-	overflow-x: hidden;
-}
+```stylus
+body 
+  overflow-x: hidden;
 ```
 图片尽量小一点，推荐用 webp 格式，同质量的图片体积小很多
 可以试试又拍云的转换工具 [地址](https://www.upyun.com/webp)
 效果非常明显，我原来的 4 张图加起来 1.6 MB（已经压缩过的了），现在转成 webp 之后 0.4 MB
 直接减少了 75% 的体积，画质还不变
 
-### 侧边滚动条
-```css
-/* 上下箭头按钮 */
-::-webkit-scrollbar-button {
-    display: none;
-}
+## 侧边滚动条
+```stylus
+::-webkit-scrollbar-button
+  display none
 
-/* 整个滚动条 */
-::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-    background-color: #2f415452;
-}
+::-webkit-scrollbar
+  width 10px
+  height 10px
+  background-color: #2f415452
 
-/* 滚动条上的滑块 */
-::-webkit-scrollbar-thumb {
-    border-radius: 8px;
-    background-color: #2f4154;
-    background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.2) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.2) 50%,rgba(255,255,255,.2) 75%,transparent 75%,transparent);
-}
-/* 滑块触碰后 */
-::-webkit-scrollbar-thumb:hover { 
-    background-color: #2f4154b8;
-}
+::-webkit-scrollbar-thumb
+  border-radius 5px
+  background-color #2f4154
+  background-image -webkit-linear-gradient(45deg,rgba(255,255,255,.2) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.2) 50%,rgba(255,255,255,.2) 75%,transparent 75%,transparent)
+
+  &:hover
+    background-color #2f4154b8;
 ```
 <p class="note note-info">会同时对所有滚动条生效，包括代码块的横向滚动条</p>
 
-### 返回顶部按钮
+## 返回顶部按钮
 增加动画
-```css
-#scroll-top-button {
-    border-radius: 100%;
-    transition: all .6s ease;
-    -moz-transition: all .6s ease;
-    -webkit-transition: all .6s ease;
-    -o-transition: all .6s ease;
-}
-#scroll-top-button:hover {
-	transform: scale(1.2);
-    border-radius: 20%;
-}
+```stylus
+#scroll-top-button 
+  border-radius 25px
+  -webkit-transition all .6s
+  -moz-transition all .6s
+  -o-transition all .6s
+  transition all .6s
+
+  &:hover 
+    transform scale(1.2)
+    border-radius 20%
 ```
 之前的文章写了个另一种样式 [文章链接](./54321.html)
 
 
-### 标题前 Emoji
-```css
-/* 想在手机端也显示请去除最外层的 @media */
-@media (min-width:768px) {
-    /*修改h1前面图标*/
-    .post-content h1:before {
-        content: "🌈";
-        visibility: visible;
-        display: inline;
-    }
-    /*修改h2前面图标*/
-    .post-content h2:before {
-        content: "🚀";
-        visibility: visible;
-        display: inline;
-    }
-    /*修改h3前面图标*/
-    .post-content h3:before {
-        content: "🔍";
-        visibility: visible;
-        display: inline;
-    }
-}
+## 标题前 Emoji
+```stylus
+/* 想在手机端也显示，去除最外层的 @media，并更改缩进 */
+@media (min-width:768px) 
+  .post-content 
+    h1::before
+      content: "🌈";
+      visibility: visible;
+      display: inline;
+    h2::before
+      content: "🚀";
+      visibility: visible;
+      display: inline;
+    h3::before
+      content: "🔍";
+      visibility: visible;
+      display: inline;
 ```
 
-### 首页图片动画
+## 首页图片动画
 鼠标触碰放大
-```css
-.index-img {
-	transition: .4s;
-}
-.index-card:hover .index-img {
-	transform: scale(1.1);
-	box-shadow: 0 5px 11px 0 rgba(0,0,0,0.38), 0 4px 15px 0 rgba(0,0,0,0.35);
-}
+```stylus
+.index-img
+  transition: .4s;
+
+.index-card:hover .index-img
+  transform: scale(1.1);
+  box-shadow: 0 5px 11px 0 rgba(0,0,0,0.38), 0 4px 15px 0 rgba(0,0,0,0.35);
 ```
 
-### 底部及 TOC 样式更改
+## 底部及 TOC 样式更改
 因为之前的动态背景添加了遮罩导致底部链接等看不起
 ```css
-footer, footer a,
-#toc, .tocbot-list a {
-    color: #ffffff;
-}
-.tocbot-active-link,
-footer a:hover {
-  color: #1abc9c !important;
-}
+.tocbot-list a
+#toc, footer, footer a
+  color #ffffff
+
+footer a:hover
+.tocbot-active-link
+  color #1abc9c !important
 ```
 
-### 友链界面底部的文字
+## 友链界面底部的文字
 
 [效果链接](../links)
-文字触碰动画（源网）
+文字触碰动画（源网，找不到原站链接了）
 ```css
 /* 注意避免类名相同造成样式冲突 */
 .link {
@@ -378,7 +252,7 @@ footer a:hover {
 <p class="note note-primary">data-letters 中需要和内容保持一致<br>不用 a 标签也可以，保证类名正确</p>
 
 
-### 留言板
+## 留言板
 在 `themes\hexo-theme-fluid-master\layout\` 中新建 `messageboard.ejs` 文件
 先写上头图之类的设定
 ```ejs
@@ -404,7 +278,7 @@ messageboard:
 ```
 语言文件中也是一样的，这里就不写了
 
-#### 引入评论
+### 引入评论
 刚刚创建的 ejs 文件中
 ```ejs
 <!-- Comments -->
@@ -419,12 +293,12 @@ messageboard:
 自定义内容写在评论代码之前就好了，支持 HTML
 
 然后两种方法开启，二选一即可
-#### 1
+### 1
 在根目录的 `source` 文件夹中创建 `messageboard.md` 
 并在 `front-matter` 中加上 ``layout: messageboard`
 和 about 界面的方法一样
 
-#### 2
+### 2
 在 `themes\fluid\scripts\pages.js` 文件中加入如下代码
 ```js
 // generate messageboard page
@@ -437,23 +311,495 @@ hexo.extend.generator.register('_messageboard', function (locals) {
 });
 ```
 
-### 最后
-没啥可折腾的了，暗黑模式下篇文章再写吧 ~~（水文章数量）~~
+## 更好看的音乐播放器
+本身的 aplayer 个人觉得并不是很好看，而且是全局的
+换了给好看点的播放器，在指定页面加载
+需要加载的页面加入
+
+### js
+自定义 js 里加入
+```js
+(function() {
+    var dr = $("#dowebok");
+    if(!dr.length > 0) return;
+    dr.append("<div id=\"player\"><div id=\"player-track\"><div id=\"album-name\"></div><div id=\"track-name\"></div><div id=\"track-time\"><div id=\"current-time\"></div><div id=\"track-length\"></div></div><div id=\"s-area\"><div id=\"ins-time\"></div><div id=\"s-hover\"></div><div id=\"seek-bar\"></div></div></div><div id=\"player-content\"><div id=\"album-art\"><img src=\"images/1.jpg\" class=\"active\" id=\"album-pic\"><div id=\"buffer-box\">加载中...</div></div><div id=\"player-controls\"><div class=\"control\"><div class=\"player-button\" id=\"play-previous\"><i class=\"fas fa-backward\"></i></div></div><div class=\"control\"><div class=\"player-button\" id=\"play-pause-button\"><i class=\"fas fa-play\"></i></div></div><div class=\"control\"><div class=\"player-button\" id=\"play-next\"><i class=\"fas fa-forward\"></i></div></div></div></div></div>");
+    var playerTrack = $("#player-track"),
+        albumName = $('#album-name'),
+        trackName = $('#track-name'),
+        albumArt = $('#album-art'),
+        sArea = $('#s-area'),
+        seekBar = $('#seek-bar'),
+        trackTime = $('#track-time'),
+        insTime = $('#ins-time'),
+        sHover = $('#s-hover'),
+        playPauseButton = $("#play-pause-button"),
+        i = playPauseButton.find('i'),
+        tProgress = $('#current-time'),
+        tTime = $('#track-length'),
+        seekT, seekLoc, seekBarPos, cM, ctMinutes, ctSeconds, curMinutes, curSeconds, durMinutes, durSeconds, playProgress, bTime, nTime = 0,
+        buffInterval = null,
+        tFlag = false,
+        playPreviousTrackButton = $('#play-previous'),
+        playNextTrackButton = $('#play-next');
+    function playPause() {
+        setTimeout(function () {
+            if (audio.paused) {
+                playerTrack.addClass('active');
+                albumArt.addClass('active');
+                checkBuffering();
+                i.attr('class', 'fas fa-pause');
+                audio.play();
+            } else {
+                playerTrack.removeClass('active');
+                albumArt.removeClass('active');
+                clearInterval(buffInterval);
+                albumArt.removeClass('buffering');
+                i.attr('class', 'fas fa-play');
+                audio.pause();
+            }
+        }, 300);
+    }
+    function showHover(event) {
+        seekBarPos = sArea.offset();
+        seekT = event.clientX - seekBarPos.left;
+        seekLoc = audio.duration * (seekT / sArea.outerWidth());
+        sHover.width(seekT);
+        cM = seekLoc / 60;
+        ctMinutes = Math.floor(cM);
+        ctSeconds = Math.floor(seekLoc - ctMinutes * 60);
+        if ((ctMinutes < 0) || (ctSeconds < 0)) return;
+        if (ctMinutes < 10) ctMinutes = '0' + ctMinutes;
+        if (ctSeconds < 10) ctSeconds = '0' + ctSeconds;
+        if (isNaN(ctMinutes) || isNaN(ctSeconds)) insTime.text('--:--');
+        else insTime.text(ctMinutes + ':' + ctSeconds);
+        insTime.css({
+            'left': seekT,
+            'margin-left': '-21px'
+        }).fadeIn(0);
+    }
+    function hideHover() {
+        sHover.width(0);
+        insTime.text('00:00').css({
+            'left': '0px',
+            'margin-left': '0px'
+        }).fadeOut(0);
+    }
+    function playFromClickedPos() {
+        audio.currentTime = seekLoc;
+        seekBar.width(seekT);
+        hideHover();
+    }
+    function updateCurrTime() {
+        nTime = new Date();
+        nTime = nTime.getTime();
+        if (!tFlag) {
+            tFlag = true;
+            trackTime.addClass('active');
+        }
+        curMinutes = Math.floor(audio.currentTime / 60);
+        curSeconds = Math.floor(audio.currentTime - curMinutes * 60);
+        durMinutes = Math.floor(audio.duration / 60);
+        durSeconds = Math.floor(audio.duration - durMinutes * 60);
+        playProgress = (audio.currentTime / audio.duration) * 100;
+        if (curMinutes < 10) curMinutes = '0' + curMinutes;
+        if (curSeconds < 10) curSeconds = '0' + curSeconds;
+        if (durMinutes < 10) durMinutes = '0' + durMinutes;
+        if (durSeconds < 10) durSeconds = '0' + durSeconds;
+        if (isNaN(curMinutes) || isNaN(curSeconds)) tProgress.text('00:00');
+        else tProgress.text(curMinutes + ':' + curSeconds);
+        if (isNaN(durMinutes) || isNaN(durSeconds)) tTime.text('00:00');
+        else tTime.text(durMinutes + ':' + durSeconds);
+        if (isNaN(curMinutes) || isNaN(curSeconds) || isNaN(durMinutes) || isNaN(durSeconds)) trackTime.removeClass('active');
+        else trackTime.addClass('active');
+        seekBar.width(playProgress + '%');
+        if (playProgress == 100) {
+            i.attr('class', 'fa fa-play');
+            seekBar.width(0);
+            tProgress.text('00:00');
+            albumArt.removeClass('buffering').removeClass('active');
+            clearInterval(buffInterval);
+        }
+    }
+    function checkBuffering() {
+        clearInterval(buffInterval);
+        buffInterval = setInterval(function () {
+            if ((nTime == 0) || (bTime - nTime) > 1000) albumArt.addClass('buffering');
+            else albumArt.removeClass('buffering');
+            bTime = new Date();
+            bTime = bTime.getTime();
+        }, 100);
+    }
+    function selectTrack2(flag) {
+        //歌单api调用 https://api.uomg.com/doc-rand.music.html
+        $.getJSON('https://api.uomg.com/api/rand.music?', {
+            sort: "热歌榜" 	 //选择输出分类[热歌榜|新歌榜|飙升榜|抖音榜|电音榜]，为空输出热歌榜
+            mid: 12345,		//sort mid 二选一
+            format: 'json'
+        }, function(json, textStatus) {
+            if (json.code == 1) {
+                if (flag == 0) i.attr('class', 'fa fa-play');
+                else {
+                    albumArt.removeClass('buffering');
+                    i.attr('class', 'fa fa-pause');
+                }
+                seekBar.width(0);
+                trackTime.removeClass('active');
+                tProgress.text('00:00');
+                tTime.text('00:00');
+                currAlbum = json.data.artistsname;
+                currTrackName = json.data.name;
+                currArtwork = json.data.picurl;
+                audio.src = json.data.url;
+                nTime = 0;
+                bTime = new Date();
+                bTime = bTime.getTime();
+                if (flag != 0) {
+                    audio.play();
+                    playerTrack.addClass('active');
+                    albumArt.addClass('active');
+                    clearInterval(buffInterval);
+                    checkBuffering();
+                }
+                albumName.text(currAlbum);
+                trackName.text(currTrackName);
+                albumArt.find('img.active').removeClass('active');
+                $('#album-pic').addClass('active');
+                $('#album-pic').attr('src',currArtwork);
+            }
+        });
+    }
+    function initPlayer() {
+        audio = new Audio();
+        selectTrack2(1); //非0自动播放
+        audio.loop = false;
+        playPauseButton.on('click', playPause);
+        sArea.mousemove(function (event) {
+            showHover(event);
+        });
+        sArea.mouseout(hideHover);
+        sArea.on('click', playFromClickedPos);
+        $(audio).on('timeupdate', updateCurrTime);
+        playPreviousTrackButton.on('click', function () {
+            selectTrack2(-1);
+        });
+        playNextTrackButton.on('click', function () {
+            selectTrack2(1);
+        });
+    }
+    initPlayer();
+})();
+```
+### CSS
+自定义 CSS 中加入
+```stylus
+#dowebok
+  right 0
+  left 0
+  width 430px
+  height 100px
+  margin 100px auto 100px
+
+#player
+  position relative
+  height 100%
+  z-index 3
+
+#player-track
+  position absolute
+  top 0
+  right 15px
+  left 15px
+  padding 13px 22px 10px 184px
+  background-color #fff7f7
+  border-radius 15px 15px 0 0
+  transition 0.3s ease top
+  z-index 1
+
+  &.active
+    top -80px
+
+#album-name 
+  color #54576f
+  font-size 17px
+  font-weight bold
+
+#track-name
+  color #acaebd
+  font-size 11px
+  white-space: nowrap; 
+  width: 100%; 
+  overflow: hidden;
+  text-overflow:ellipsis;
+
+#track-time
+  height 12px
+  margin-bottom 3px
+
+  &.active
+    #current-time, #track-length
+      color #f86d92;
+      background-color transparent
+
+#current-time 
+  float left
+
+#track-length 
+  float right
+
+#current-time,
+#track-length
+  color transparent
+  font-size 11px
+  background-color #ffe8ee
+  border-radius 10px
+  transition 0.3s ease all
+
+
+#s-area,
+#seek-bar
+  position relative
+  height 4px
+  border-radius 4px
+
+#s-area
+  background-color #ffe8ee
+  cursor pointer
+
+#ins-time 
+  position absolute
+  top -29px
+  color #fff
+  font-size 12px
+  white-space pre
+  padding 5px 6px
+  border-radius 4px
+  display none;
+  background-color #3b3d50
+
+#s-hover
+  position absolute
+  top 0
+  bottom 0
+  left 0
+  opacity 0.2
+  z-index 2
+  background-color #3b3d50
+
+
+#seek-bar
+  content ''
+  position absolute
+  top 0
+  bottom 0
+  left 0
+  width 0
+  background-color #fd6d94
+  transition 0.2s ease width
+  z-index 1
+
+#player-content
+  position relative
+  height 100%
+  background-color #fff
+  box-shadow 0 30px 80px #656565
+  border-radius 15px
+  z-index 2
+
+#album-art
+  position absolute
+  top -40px
+  width 115px
+  height 115px
+  margin-left 40px
+  -webkit-transform rotateZ(0)
+  transform rotateZ(0)
+  transition 0.3s ease all
+  box-shadow 0 0 0 10px #fff
+  border-radius 50%
+  overflow hidden
+
+  .buffering
+    #buffer-box
+      opacity 1
+
+    img
+      opacity 0.25
+
+      .active
+        opacity 0.8
+        filter blur(2px)
+        -webkit-filter blur(2px)
+
+  img 
+    display block;
+    position absolute;
+    top 0;
+    left 0;
+    width 100%;
+    height 100%;
+    opacity 0;
+    z-index -1;
+    transition 0.1s linear all
+
+    &.active 
+      opacity 1;
+      z-index 1;
+
+  &.active 
+    top -60px
+    box-shadow 0 0 0 4px #fff7f7, 0 30px 50px -15px #afb7c1
+
+    img.active 
+      z-index 1;
+      -webkit-animation rotateAlbumArt 3s linear 0s infinite forwards;
+      animation rotateAlbumArt 3s linear 0s infinite forwards;
+
+  &::before 
+    content ''
+    position absolute
+    top 50%
+    right 0
+    left 0
+    width 20px
+    height 20px
+    margin -10px auto 0 auto
+    background-color #d6dee7
+    border-radius 50%
+    box-shadow inset 0 0 0 2px #fff
+    z-index 2
+
+@-webkit-keyframes rotateAlbumArt
+  0%
+    -webkit-transform: rotateZ(0)
+    transform: rotateZ(0)
+  100%
+    -webkit-transform: rotateZ(360deg)
+    transform: rotateZ(360deg)
+@keyframes rotateAlbumArt
+  0%
+    -webkit-transform: rotateZ(0)
+    transform: rotateZ(0)
+  100%
+    -webkit-transform: rotateZ(360deg)
+    transform: rotateZ(360deg)
+
+#buffer-box
+  position absolute
+  top 50%
+  right 0
+  left 0
+  height 13px
+  color #1f1f1f
+  font-size 13px
+  font-family Helvetica
+  text-align center
+  font-weight bold
+  line-height 1
+  padding 6px
+  margin -12px auto 0 auto
+  background-color rgba(255, 255, 255, 0.19)
+  opacity 0
+  z-index 2
+  transition 0.1s linear all
+
+#player-controls
+  width 250px
+  height 100%
+  margin 0 5px 0 141px
+  float right
+  overflow hidden
+
+.control
+  width 33.333%
+  float left
+  padding 12px 0
+
+.player-button
+  padding 25px
+  background-color #fff
+  border-radius 6px
+  cursor pointer
+  transition 0.2s ease all
+
+  i
+    display block
+    color #d6dee7
+    font-size 26px
+    text-align center
+    line-height 1
+    transition 0.2s ease all
+
+  &:hover
+    background-color #d6d6de
+
+    i
+      color #fff
+
+@media (max-width:768px)
+  #dowebok
+    width 95%
+    height 20vw
+
+  #player-controls
+    width 175px
+
+  .player-button
+    padding: 20px
+
+    i
+      font-size: 20px
+
+    &:hover
+      background-color #0000
+
+      i
+        color #d6dee7
+
+  #album-art
+    width 30%
+    height 0
+    padding-bottom: 30%
+
+  #album-name
+    font-size 15px
+
+  #track-name
+    font-size 10px
+```
+
+需要加载的页面（md 或者 ejs）中加入
+
+### html
+```html
+<div id="dowebok"></div>
+```
+可能会出现遮挡问题，自己通过 `<br>` 调整就好了
+
+js 和 css，源自[链接](https://www.yanghuaxing.com/blog/547.html)
+稍作修改，手机端适配我可能没怎么写好 ~~(就那么几行能适配完美才怪)~~
+暗黑模式也没适配这个
+音乐来源见 js 代码块的 114、115 行，可选自己的网易歌单或者热歌榜等排行榜
+
+直接把源码部署到一个地方拿来代替用也非常不错，毕竟很好看，再用 Edge 安装在电脑上，嘻嘻嘻
+
+## 最后
+应该没啥可折腾的了，还有的话也不新开文章了，就这里持续更新吧
+暗黑模式下篇文章再写吧 ~~(水文章数量)~~
 作者已经把主题做的非常完美了，有什么问题都会立马修复，功能也出的很快，超 nice
 博客刚搭建的时候用了一个 material 主题，觉得过于平淡，换到了一个 gal 主题，功能很多
 慢慢的又看厌了，很多人推荐 Next，就又换到了 Next，的确很好用
 就光针对 Next 的教程数量而言，应该能算是大部分用 Hexo 的人都用过的
 经常逛博客也发现很多都是用的这个主题，用了几个月，改了很多东西，但也慢慢看厌了
 就开始再次踏上寻找主题的路，经常看到一个好看的主题，但又想到自己在 Next 上大量的自定义内容，一直不忍心丢下
-看到 Fluid 之后甚是喜欢，先用 Fluid 搭建了副站，放在 Gitee 上，慢慢完善
-完善到一定程度，发现甚至比主站还好看了（个人认为）
-下定决心开始换主题，前前后后花了一个多星期全部完成
+看到 Fluid 之后超喜欢，先用 Fluid 搭建了副站，放在 Gitee 上，慢慢完善
+完善到一定程度，有人和我说副站更好看，我看了看好像真是这么回事...
+才下定决心开始换主题，前前后后花了一个多星期全部完成
 
 Fluid 应该是会一直用下去了
 不过仍有继续折腾的打算
 可能会再用 Typecho 搭建一个玩玩...
 
-放个折腾合集吧
+放个折腾合集吧，写的不好，凑合吧
 [面向纯小白的 CSS 教程1](./25976.html)
 [面向纯小白的 CSS 教程2](./17142.html)
 [Hexo 球形标签云](./db44ecae.html)
