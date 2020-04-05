@@ -25,6 +25,7 @@
     "hexo-abbrlink": "^2.0.5",
     "hexo-baidu-url-submit": "0.0.6",
     "hexo-blog-encrypt": "^3.0.12",
+    "hexo-deployer-cos-cdn": "^1.7.0",
     "hexo-deployer-git": "^2.1.0",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-baidu-sitemap": "^0.1.6",
