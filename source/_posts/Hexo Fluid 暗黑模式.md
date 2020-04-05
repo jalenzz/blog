@@ -2,7 +2,7 @@
 title: Hexo Fluid 暗黑模式
 date: 2020-04-02 18:04:57
 tags: [Hexo, Fluid, CSS]
-index_img: https://royce-img.oss-cn-beijing.aliyuncs.com/41212/index_img.webp
+index_img: https://cos.royce2003.top/41212/index_img.webp
 abbrlink: 41212
 ---
 
