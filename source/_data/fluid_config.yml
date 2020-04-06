@@ -104,6 +104,7 @@ navbar:
     - { key: 'messageboard', link: '/messageboard/' }
     - { key: 'about', link: '/about/' }
     - { key: 'my', link: '/my/' }
+
 search: # 搜索栏
   enable: true
   path: /local-search.xml # 文件引用地址，默认是下方生成位置，也可以将生成后的 local-search.xml 上传到其它位置引用，如：https://www.example.com/local-search.xml
@@ -351,13 +352,11 @@ about:  # 以下仅为页面顶部的基本信息，更多内容请在 ./pages/a
   avatar: https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/about/Royce.webp # 头像
   name: Royce
   introduce: OI小白 # 支持 HTML
-  icons: # 更多图标可从 https://fontawesome.com/v5.10.0/icons?d=gallery 查找，并以 "图标名: url" 的格式添加在下方
-    "fab fa-github-alt": https://github.com/Royce2019
-    "fab fa-android qrcode":  https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/about/coolapk.webp
-    "fab fa-qq qrcode": https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/about/QQ.webp
-    "fas fa-envelope": mailto:1098870059@qq.com
-    # 添加 qrcode 后，点击不再跳转，而是悬浮二维码，因此值需要是二维码图片地址
-
+  icons: # 更多图标可从 https://fontawesome.com/v5.10.0/icons?d=gallery 查找，class 代表图标的 css class
+    - { class: 'fab fa-github-alt', link: 'https://github.com/Royce2019' }
+    - { class: 'fab fa-android qrcode', qrcode: 'https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/about/coolapk.webp' }
+    - { class: 'fab fa-qq', qrcode: 'https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/about/QQ.webp' }  # 添加 qrcode 后，点击不再跳转，而是悬浮二维码，需要指定 image
+    - { class: 'fas fa-envelope', link: 'mailto:1098870059@qq.com' }
 
 #---------------------------
 # 404页
