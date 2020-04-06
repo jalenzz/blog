@@ -8,19 +8,23 @@ page.banner_mask_alpha = theme.page404.banner_mask_alpha
 %>
 
 <div class="text-center">
-  <p class="h3"><%- theme.about.name %></p>
-  <p><%- theme.about.introduce %></p>
-  <% for(const each of theme.about.icons) { %>
-    <% if (!each.class) continue; %>
-    <% var cls = each.class %>
-    <% var isQr = each.qrcode %>
-    <a href="<%= isQr ? 'javascript:;' : url_for(each.link) %>" class="px-1 <%= isQr ? 'qr-trigger' : '' %>">
-      <svg class="icon" aria-hidden="true"><use xlink:href="#<%= cls %>"></use></svg>
-      <% if (isQr) { %>
-        <img class="qr-img" src="<%= url_for(each.qrcode) %>" alt="qrcode" />
+  <div class="about-info">
+    <div class="about-name"><%- theme.about.name %></div>
+    <div class="about-intro"><%- theme.about.introduce %></div>
+    <div class="about-icons">
+      <% for(const each of theme.about.icons) { %>
+        <% if (!each.class) continue; %>
+        <% var cls = each.class %>
+        <% var isQr = each.qrcode %>
+        <a href="<%= isQr ? 'javascript:;' : url_for(each.link) %>" class="<%= isQr ? 'qr-trigger' : '' %>">
+          <svg class="icon" aria-hidden="true"><use xlink:href="#<%= cls %>"></use></svg>
+          <% if (isQr) { %>
+            <img class="qr-img" src="<%= url_for(each.qrcode) %>" alt="qrcode" />
+          <% } %>
+        </a>
       <% } %>
-    </a>
-  <% } %>
+    </div>
+  </div>
 </div>
 <div id="dowebok"></div>
 <div class="mt-5 markdown-body">
