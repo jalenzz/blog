@@ -1,7 +1,8 @@
+title: 练手合集
+---
 <div id="dowebok"></div>
-<link rel="stylesheet" type="text/css" href="../css/component.css" />
-<script src="../js/modernizr.custom.js"></script>
-<div class="note note-danger">本页面图片转载请注明原作者！</div>
+<div class="note note-danger">本页面图片为自己制作，灵感或构图来源网络，转载请注明原作者！</div>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/Royce2019/BlogSource/css/gallery.min.css">
 <ul class="grid9 effect-39" id="grid9">
 	<li><a href="https://cdn.jsdelivr.net/gh/Royce2019/BlogGallery/original/001.jpg"><img src="https://cdn.jsdelivr.net/gh/Royce2019/BlogGallery/original/s/001.webp"></a></li>
 	<li><a href="https://cdn.jsdelivr.net/gh/Royce2019/BlogGallery/original/002.jpg"><img src="https://cdn.jsdelivr.net/gh/Royce2019/BlogGallery/original/s/002.webp"></a></li>
@@ -13,14 +14,5 @@
 	<li><a href="https://cdn.jsdelivr.net/gh/Royce2019/BlogGallery/original/008.jpg"><img src="https://cdn.jsdelivr.net/gh/Royce2019/BlogGallery/original/s/008.webp"></a></li>
 	<li><a href="https://cdn.jsdelivr.net/gh/Royce2019/BlogGallery/original/009.jpg"><img src="https://cdn.jsdelivr.net/gh/Royce2019/BlogGallery/original/s/009.webp"></a></li>
 	<li><a href="https://cdn.jsdelivr.net/gh/Royce2019/BlogGallery/original/010.jpg"><img src="https://cdn.jsdelivr.net/gh/Royce2019/BlogGallery/original/s/010.webp"></a></li>
-<script src="../js/masonry.pkgd.min.js"></script>
-<script src="../js/imagesloaded.js"></script>
-<script src="../js/classie.js"></script>
-<script src="../js/AnimOnScroll.js"></script>
-<script>
-	new AnimOnScroll(document.getElementById('grid9'), {
-		minDuration: 0.4,
-		maxDuration: 0.7,
-		viewportFactor: 0.2
-	});
-</script>
+</ul>
+<script src="//cdn.jsdelivr.net/gh/Royce2019/BlogSource@master/js/gallery.min.js"></script>

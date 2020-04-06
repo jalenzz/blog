@@ -102,7 +102,7 @@ navbar:
     - { key: 'gallery', link: '/gallery/', icon: 'iconfont icon-xiangce1' }
     - { key: 'messageboard', link: '/messageboard/', icon: 'iconfont icon-jurassic_message1' }
     - { key: 'about', link: '/about/', icon: 'iconfont icon-user-fill' }
-    - { key: 'my', link: '/my/', icon: 'iconfont icon-gongnengdingyi' }
+    - { key: 'tools', link: '/tools/', icon: 'iconfont icon-gongnengdingyi' }
 
 search: # 搜索栏
   enable: true
@@ -459,10 +459,10 @@ tools:
   banner_mask_alpha: 0  # available: 0 - 1.0
   subtitle: 都是好玩的 # 打字机内容
   items:
-    - { title: '疫情图', intro: '国际国内实时疫情图', link: '/my/2019-nCoV' }
+    - { title: '疫情图', intro: '国际国内实时疫情图', link: '/tools/2019-nCoV' }
     - { title: '评论管理', intro: 'Valin 后台评论管理', link: 'https://serve.royce2003.top' }
     - { title: 'RSS', intro: '本站RSS订阅', link: '/atom.xml' }
-    - { title: '2048', intro: '2048小游戏', link: '/my/2048' }
+    - { title: '2048', intro: '2048小游戏', link: '/tools/2048' }
     - { title: 'Fluid Docs', intro: '主题使用指南', link: 'https://hexo.fluid-dev.com/docs/' }
     - { title: 'Fluid Repo', intro: '主题 GitHub 仓库', link: 'https://github.com/fluid-dev/hexo-theme-fluid' }
     - { title: 'Fluid Changelog', intro: '主题更新日志', link: 'https://github.com/fluid-dev/hexo-theme-fluid/blob/master/Changelog.md' }
