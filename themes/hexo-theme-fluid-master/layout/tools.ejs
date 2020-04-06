@@ -8,18 +8,17 @@ page.banner_img_height = theme.tools.banner_img_height
 
 <div id="dowebok"></div>
 <div class="row links">
-	<% for(const each in theme.tools.items) { %>
-		<% var props = theme.tools.items[each] %>
-		<% if (!props) continue %>
-			<div class="card col-lg-4 col-md-6 col-sm-12">
-				<a href="<%= url_for(props[0]) %>" class="card-body">
-					<div class="card-content">
-						<div class="link-text">
-							<div class="link-title"><%- each %></div>
-							<div class="link-intro"><%- props[1] %></div>
-						</div>
-					</div>
-				</a>
+	<% for(const each of theme.tools.items) { %>
+	  <% if (!each.title || !each.link) continue %>
+	  <div class="card col-lg-4 col-md-6 col-sm-12">
+		<a href="<%= url_for(each.link) %>" class="card-body" target="_blank" rel="noopener">
+		  <div class="card-content">
+			<div class="link-text">
+			  <div class="link-title"><%- each.title %></div>
+			  <div class="link-intro"><%- each.intro %></div>
 			</div>
+		  </div>
+		</a>
+	  </div>
 	<% } %>
-</div>
+  </div>

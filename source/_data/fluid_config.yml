@@ -398,46 +398,45 @@ links:
   banner_img_height: 80  # available: 0 - 100
   subtitle: 用热情去灌溉，用原则去培养，用谅解去护理 # 打字机内容
   defaultlinks:
-    Neworld2002: [https://neworld2002.github.io, OI大佬, https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/neworld2002.webp]
-    newsheep: [http://newsheep2003.github.io/, 社长大大, https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/newsheep.webp]
+    - { title: 'Neworld200', intro: 'OI大佬', link: 'https://neworld2002.github.io',  image: 'https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/neworld2002.webp' }
+    - { title: 'newsheep', intro: '社长大大', link: 'http://newsheep2003.github.io/',  image: 'https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/newsheep.webp' }
   friendslinks:
-    辉少菌: [http://huishao.top, 一个爱搞技术的高一党, https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/辉少菌.webp]
-    Atuo: [https://blog.atuo.store, 网络安全, https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/Atuo.webp]
-    维他入我心: [https://wtrwx.top, 科技/生活日常～, https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/维他入我心.webp]
-    Linhk1606: [https://linhk1606.github.io, ..., https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/Linhk1606.webp]
-    LeFlacon: [https://leflacon.top, Let’s think!, https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/LeFlacon.webp]
-    小康博客: [https://www.antmoe.com, 一个收藏回忆与分享技术的地方, https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/小康.webp]
-    小K同學: [https://kksan.top, 技术，日语，云旅游, https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/小K同学.webp]
-    吃白饭的休伯利安号: [https://eatrice.top, 卑微的考研狗, https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/吃白饭的休伯利安号.webp] 
-    IamWu555: [http://blog.wubuster.com, A man with superb shot, https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/lamWu555.webp]
-    极客空间: [https://www.geek-space.cn, 一个准备高考的高三狗, https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/极客空间.webp]
-    MOCEHU: [https://mocehu.top,  一个没有技术贴的技术博客, https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/MOCEHU.webp]
-    Codgi的小窝: [https://codgi.xin, Do what you love, https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/Codgi.webp]
-    JimmyQin: [https://apde.xyz, 挨拍的儿, https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/JimmyQin.webp]
-    木子洋: [https://www.yanghuaxing.com, 记录成长学习的博客, https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/木子洋.webp]
-    惴与绕: [https://idkzr.com, 一条咸鱼的日常, https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/惴绕.webp]
-    yuzh: [ https://yyuzh.xyz/, 永不停歇--Never Settle, https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/yuzh.webp]
-    Bert: [https://ixfish.cn/, 面朝大海，春暖花开, https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/bert.webp]
-    Guan FuQing: [https://yiki.tech/,Error:No object found!, https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/GuanFuQing.webp]
-    JiuXiaPE: [www.9xiao.top, 更好用的启动盘工具箱, https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/JiuXiaPE.webp]
-    TanHua: [https://tutouyuan.top, IoT在校生, https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/TanHua.webp]
-    破旧的手枪: [https://pistol.city/, 只争朝夕 不负韶华, https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/破旧的手枪.webp]
-    星下小屋: [https://skyhouse.xyz, 学习记录笔记本, https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/星下小屋.webp]
-    MinePHP: [https://www.aahy.xyz, MinePHP Blog, https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/MinePHP.webp]
-    云游君: [https://www.yunyoujun.cn, All at sea., https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/云游君.webp]
-    以成杂谈: [https://transion.cc, 以成，却非已成, https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/以成杂谈.webp]
-    xaoxuu: [https://xaoxuu.com, iOS, https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/xaoxuu.webp]
-    YU到边: [https://www.yuhangwei.com, 前端技术交流, https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/YU到边.webp]
-    Sanarous: [https://bestzuo.cn, 码农人生, https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/Sanarous.webp]
-    Burgess: [https://bibiqo.cn/, 日常, https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/Burgess.webp]
-    YINUXY: [https://blog.yinuxy.com/, 理想的生活就是生活的理想, https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/YINUXY.webp]
-    夏目友人帐: [https://xiamuyourenzhang.cn/, 夏目友人帐, https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/夏目友人帐.webp]
-    小丁: [https://tding.top, 世间所有的相遇，都是久别重逢, https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/小丁.webp]
-    小太（小太の游乐园）: [https://713.moe, 一个热爱ACG的技术宅, https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/小太.webp]
-    七夏浅笑: [https://www.julydate.com, 七月之约，夏末浅笑, https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/七夏浅笑.webp]
-    Mystery: [https://blog.say521.cn, 心有猛虎，细嗅蔷薇, https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/Mystery.webp]
-    barriery: [https://barriery.cn, "A student, programmer and explorer.", https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/barriery.webp]
-    keith: [https://keithqwq.com/, 一个热爱网络的学生, https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/keith.webp]
+    - { title: '辉少菌', intro: '一个爱搞技术的高一党', link: 'http://huishao.top', image: 'https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/辉少菌.webp' }
+    - { title: 'Atuo', intro: '网络安全',  link: 'https://blog.atuo.store', image: 'https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/Atuo.webp' }
+    - { title: '维他入我心', intro: '科技/生活日常～', link: 'https://wtrwx.top', image: 'https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/维他入我心.webp' }
+    - { title: 'Linhk1606', intro: '...', link: 'https://linhk1606.github.io', image: 'https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/Linhk1606.webp' }
+    - { title: 'LeFlacon', intro: 'Let’s think!', link: 'https://leflacon.top', image: 'https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/LeFlacon.webp' }
+    - { title: '小康博客', intro: '一个收藏回忆与分享技术的地方', link: 'https://www.antmoe.com', image: 'https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/小康.webp' }
+    - { title: '小K同學', intro: '技术，日语，云旅游', link: 'https://kksan.top', image: 'https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/小K同学.webp' }
+    - { title: '休伯利安号', intro: '卑微的考研狗', link: 'https://eatrice.top', image: 'https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/吃白饭的休伯利安号.webp' }
+    - { title: 'IamWu555', intro: 'A man with superb shot', link: 'http://blog.wubuster.com',image: ' https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/lamWu555.webp' }
+    - { title: '极客空间', intro: '一个准备高考的高三狗', link: 'https://www.geek-space.cn', image: 'https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/极客空间.webp' }
+    - { title: 'MOCEHU',  intro: '一个没有技术贴的技术博客', link: 'https://mocehu.top',image: ' https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/MOCEHU.webp' }
+    - { title: 'Codgi的小窝', intro: 'Do what you love', link: 'https://codgi.xin', image: 'https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/Codgi.webp' }
+    - { title: 'JimmyQin', intro: '挨拍的儿', link: 'https://apde.xyz', image: 'https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/JimmyQin.webp' }
+    - { title: '木子洋', intro: '记录成长学习的博客', link: 'https://www.yanghuaxing.com', image: 'https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/木子洋.webp' }
+    - { title: '惴与绕', intro: '一条咸鱼的日常', link: 'https://idkzr.com', image: 'https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/惴绕.webp' }
+    - { title: 'yuzh', intro: '永不停歇--Never Settle', link: 'https://yyuzh.xyz/', image: 'https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/yuzh.webp' }
+    - { title: 'Bert', intro: '面朝大海，春暖花开', link: 'https://ixfish.cn/', image: 'https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/bert.webp' }
+    - { title: 'Guan FuQing', intro: 'Error:No object found!', link: 'https://yiki.tech/', image: 'https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/GuanFuQing.webp' }
+    - { title: 'TanHua', intro: 'IoT在校生', link: 'https://tutouyuan.top', image: 'https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/TanHua.webp' }
+    - { title: '破旧的手枪', intro: '只争朝夕 不负韶华', link: 'https://pistol.city/', image: 'https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/破旧的手枪.webp' }
+    - { title: '星下小屋', intro: '学习记录笔记本', link: 'https://skyhouse.xyz', image: 'https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/星下小屋.webp' }
+    - { title: 'MinePHP', intro: 'MinePHP Blog', link: 'https://www.aahy.xyz', image: 'https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/MinePHP.webp' }
+    - { title: '云游君', intro: 'All at sea.', link: 'https://www.yunyoujun.cn', image: 'https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/云游君.webp' }
+    - { title: '以成杂谈', intro: '以成，却非已成', link: 'https://transion.cc',image: ' https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/以成杂谈.webp' }
+    - { title: 'xaoxuu', intro: 'iOS', link: 'https://xaoxuu.com', image: 'https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/xaoxuu.webp' }
+    - { title: 'YU到边', intro: '前端技术交流', link: 'https://www.yuhangwei.com', image: 'https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/YU到边.webp' }
+    - { title: 'Sanarous', intro: '码农人生', link: 'https://bestzuo.cn', image: 'https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/Sanarous.webp' }
+    - { title: 'Burgess', intro: '日常', link: 'https://bibiqo.cn/', image: 'https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/Burgess.webp' }
+    - { title: 'YINUXY', intro: '理想的生活就是生活的理想', link: 'https://blog.yinuxy.com/', image: 'https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/YINUXY.webp' }
+    - { title: '夏目友人帐', intro: '夏目友人帐', link: 'https://xiamuyourenzhang.cn/', image: 'https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/夏目友人帐.webp' }
+    - { title: '小丁', intro: '世间所有的相遇，都是久别重逢', link: 'https://tding.top', image: 'https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/小丁.webp' }
+    - { title: '小太', intro: '一个热爱ACG的技术宅', link: 'https://713.moe', image: 'https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/小太.webp' }
+    - { title: '七夏浅笑', intro: '七月之约，夏末浅笑', link: 'https://www.julydate.com', image: 'https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/七夏浅笑.webp' }
+    - { title: 'Mystery', intro: '心有猛虎，细嗅蔷薇',, link: 'https://blog.say521.cn', image: 'https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/Mystery.webp' }
+    - { title: 'barriery', intro: 'A student, programmer and explorer.', link: 'https://barriery.cn', image: 'https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/barriery.webp' }
+    - { title: 'keith', intro: '一个热爱网络的学生', link: 'https://keithqwq.com/', image: 'https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/keith.webp' }
 
 #---------------------------
 # 工具页
@@ -448,9 +447,12 @@ tools:
   banner_img_height: 80  # available: 0 - 100
   subtitle: 都是好玩的 # 打字机内容
   items:
-    疫情图: [/2019-nCoV, 国际国内实时疫情图]
-    评论管理: [https://kiko2hjmvapb.cn-e1.leanapp.cn, Valin 后台评论管理]
-    RSS: [/atom.xml, 本站RSS订阅]
-    2048: [/my/2048, 2048小游戏]
-    小动画: [/my/01, 无聊的动画]
-    轮播图: [/my/lunbo, 无聊的轮播图]
+    - { title: '疫情图', intro: '国际国内实时疫情图', link: '/2019-nCoV' }
+    - { title: '评论管理', intro: 'Valin 后台评论管理', link: 'https://kiko2hjmvapb.cn-e1.leanapp.cn' }
+    - { title: 'RSS', intro: '本站RSS订阅', link: '/atom.xml' }
+    - { title: '2048', intro: '2048小游戏', link: '/my/2048' }
+    - { title: '小动画', intro: '无聊的动画',  link: '/my/01' }
+    - { title: '轮播图', intro: '无聊的轮播图', link: '/my/lunbo' }
+    - { title: 'Fluid Docs', intro: '主题使用指南', link: 'https://hexo.fluid-dev.com/docs/' }
+    - { title: 'Fluid Repo', intro: '主题 GitHub 仓库', link: 'https://github.com/fluid-dev/hexo-theme-fluid' }
+    - { title: 'Fluid Changelog', intro: '主题更新日志', link: 'https://github.com/fluid-dev/hexo-theme-fluid/blob/master/Changelog.md' }
