@@ -8,43 +8,45 @@ page.banner_img_height = theme.links.banner_img_height
 
 <h4 class="note note-success">👨‍🎓 跟着身边的大佬走，努力成为小大佬</h4>
 <div class="row links">
-	<% for(const each in theme.links.defaultlinks) { %>
-		<% var props = theme.links.defaultlinks[each] %>
-		<% if (!props) continue %>
-			<div class="card col-lg-4 col-md-6 col-sm-12">
-				<a href="<%= url_for(props[0]) %>" class="card-body" target="_blank" rel="noopener">
-					<div class="card-content">
-						<div class="link-avatar my-auto">
-							<img src="<%= props[2] %>" alt="<%= each %>" />
-						</div>
-						<div class="link-text">
-							<div class="link-title"><%- each %></div>
-							<div class="link-intro"><%- props[1] %></div>
-						</div>
-					</div>
-				</a>
-			</div>
+	<% for(const each of theme.links.defaultlinks) { %>
+		<% if (!each.title || !each.link) continue %>
+		<div class="card col-lg-4 col-md-6 col-sm-12">
+			<a href="<%= url_for(each.link) %>" class="card-body" target="_blank" rel="noopener">
+			  <div class="card-content">
+				<% if (each.image) { %>
+				  <div class="link-avatar my-auto">
+					<img src="<%= each.image %>" alt="<%= each.title %>" />
+				  </div>
+				<% } %>
+				<div class="link-text">
+				  <div class="link-title"><%- each.title %></div>
+				  <div class="link-intro"><%- each.intro %></div>
+				</div>
+			  </div>
+			</a>
+		  </div>
 	<% } %>
 </div>
 
 <h4 class="note note-primary">🍭 五湖四海的朋友们</h4>
 <div class="row links">
-	<% for(const each in theme.links.friendslinks) { %>
-		<% var props = theme.links.friendslinks[each] %>
-		<% if (!props) continue %>
-			<div class="card col-lg-4 col-md-6 col-sm-12">
-				<a href="<%= url_for(props[0]) %>" class="card-body" target="_blank" rel="noopener">
-					<div class="card-content">
-						<div class="link-avatar my-auto">
-							<img src="<%= props[2] %>" alt="<%= each %>" />
-						</div>
-						<div class="link-text">
-							<div class="link-title"><%- each %></div>
-							<div class="link-intro"><%- props[1] %></div>
-						</div>
-					</div>
-				</a>
-			</div>
+	<% for(const each of theme.links.friendslinks) { %>
+		<% if (!each.title || !each.link) continue %>
+		<div class="card col-lg-4 col-md-6 col-sm-12">
+			<a href="<%= url_for(each.link) %>" class="card-body" target="_blank" rel="noopener">
+			  <div class="card-content">
+				<% if (each.image) { %>
+				  <div class="link-avatar my-auto">
+					<img src="<%= each.image %>" alt="<%= each.title %>" />
+				  </div>
+				<% } %>
+				<div class="link-text">
+				  <div class="link-title"><%- each.title %></div>
+				  <div class="link-intro"><%- each.intro %></div>
+				</div>
+			  </div>
+			</a>
+		  </div>
 	<% } %>
 </div>
 <div id="dowebok"></div>
