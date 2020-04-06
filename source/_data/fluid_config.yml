@@ -148,6 +148,7 @@ scroll_top_arrow:  # 向顶部滚动的箭头
 index:
   banner_img:   # 首页 Banner 头图，以下相同
   banner_img_height: 100  # 头图高度，屏幕百分比，available: 0 - 100
+  banner_mask_alpha: 0  # 头图黑色蒙版的透明度，available: 0 - 1.0， 0 是完全透明（无蒙版），1 是完全不透明
   post_default_img: https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/posts/index_img/01.webp # 默认的文章封面图，当没有指定 index_img 时会使用该图片，若都为空则不显示任何图片
   slogan:  # 首页副标题的独立设置
     enable: true  # 为 false 则不显示任何内容
@@ -165,6 +166,7 @@ index:
 page:
   banner_img: 
   banner_img_height: 70  # available: 0 - 100
+  banner_mask_alpha: 0  # available: 0 - 1.0
 
 #---------------------------
 # 文章页
@@ -173,6 +175,7 @@ page:
 post:  # 部分配置同时控制自定义页面，注意备注
   banner_img: 
   banner_img_height: 70  # available: 0 - 100
+  banner_mask_alpha: 0  # available: 0 - 1.0
   meta:  # 文章标题下方的信息
     date:  # 文章日期
       enable: true
@@ -306,6 +309,7 @@ baidu_url_submit:
 archive:
   banner_img: 
   banner_img_height: 80  # available: 0 - 100
+  banner_mask_alpha: 0  # available: 0 - 1.0
   subtitle: 记下即将逝去的青春，留下即将过去的幸福 # 打字机内容
 
 #---------------------------
@@ -315,6 +319,7 @@ archive:
 category:
   banner_img: 
   banner_img_height: 80  # available: 0 - 100
+  banner_mask_alpha: 0  # available: 0 - 1.0
   subtitle:  # 打字机内容
 
 #---------------------------
@@ -324,6 +329,7 @@ category:
 tag:
   banner_img: 
   banner_img_height: 80  # available: 0 - 100
+  banner_mask_alpha: 0  # available: 0 - 1.0
   subtitle: 今天也是开心的一天 # 打字机内容
   tagcloud: # 标签云
     min_font: 15
@@ -339,6 +345,7 @@ tag:
 messageboard:
   banner_img: 
   banner_img_height: 80  # available: 0 - 100
+  banner_mask_alpha: 0  # available: 0 - 1.0
   subtitle: 留下你的脚印 # 打字机内容
 
 #---------------------------
@@ -348,6 +355,7 @@ messageboard:
 about:  # 以下仅为页面顶部的基本信息，更多内容请在 ./pages/about.md 中编辑，支持 markdown 和 HTML
   banner_img: 
   banner_img_height: 80  # available: 0 - 100
+  banner_mask_alpha: 0  # available: 0 - 1.0
   subtitle: 时代的尘埃落在个人身上就是一座大山 # 打字机内容
   avatar: https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/about/Royce.webp # 头像
   name: Royce
@@ -363,6 +371,7 @@ about:  # 以下仅为页面顶部的基本信息，更多内容请在 ./pages/a
 page404:
   banner_img: 
   banner_img_height: 100  # available: 0 - 100
+  banner_mask_alpha: 0  # available: 0 - 1.0
   subtitle: 喂，幺幺零吗？这里的页面找不到了 # 打字机内容
 
 # 站点地图
@@ -394,6 +403,7 @@ feed:
 links:
   banner_img: 
   banner_img_height: 80  # available: 0 - 100
+  banner_mask_alpha: 0  # available: 0 - 1.0
   subtitle: 用热情去灌溉，用原则去培养，用谅解去护理 # 打字机内容
   defaultlinks:
     - { title: 'Neworld200', intro: 'OI大佬', link: 'https://neworld2002.github.io',  image: 'https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/neworld2002.webp' }
@@ -443,6 +453,7 @@ links:
 tools:
   banner_img: 
   banner_img_height: 80  # available: 0 - 100
+  banner_mask_alpha: 0  # available: 0 - 1.0
   subtitle: 都是好玩的 # 打字机内容
   items:
     - { title: '疫情图', intro: '国际国内实时疫情图', link: '/2019-nCoV' }
