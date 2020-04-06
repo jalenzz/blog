@@ -15,7 +15,7 @@ page.banner_mask_alpha = theme.page404.banner_mask_alpha
     <% var cls = each.class %>
     <% var isQr = each.qrcode %>
     <a href="<%= isQr ? 'javascript:;' : url_for(each.link) %>" class="px-1 <%= isQr ? 'qr-trigger' : '' %>">
-      <i class="<%= cls %> about-icon" aria-hidden="true"></i>
+      <svg class="icon" aria-hidden="true"><use xlink:href="#<%= cls %>"></use></svg>
       <% if (isQr) { %>
         <img class="qr-img" src="<%= url_for(each.qrcode) %>" alt="qrcode" />
       <% } %>
@@ -36,3 +36,4 @@ page.banner_mask_alpha = theme.page404.banner_mask_alpha
     <%- partial(type) %>
   <% } %>
 </div>
+<script src="//at.alicdn.com/t/font_1736949_5gwqfu64xa6.js"></script>

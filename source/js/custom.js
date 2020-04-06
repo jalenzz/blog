@@ -31,7 +31,7 @@ function switchDarkMode() {
 (function() {
     var dr = $("#dowebok");
     if(!dr.length > 0) return;
-    dr.append("<div id=\"player\"><div id=\"player-track\"><div id=\"album-name\"></div><div id=\"track-name\"></div><div id=\"track-time\"><div id=\"current-time\"></div><div id=\"track-length\"></div></div><div id=\"s-area\"><div id=\"ins-time\"></div><div id=\"s-hover\"></div><div id=\"seek-bar\"></div></div></div><div id=\"player-content\"><div id=\"album-art\"><img src=\"images/1.jpg\" class=\"active\" id=\"album-pic\"><div id=\"buffer-box\">加载中...</div></div><div id=\"player-controls\"><div class=\"control\"><div class=\"player-button\" id=\"play-previous\"><i class=\"fas fa-backward\"></i></div></div><div class=\"control\"><div class=\"player-button\" id=\"play-pause-button\"><i class=\"fas fa-play\"></i></div></div><div class=\"control\"><div class=\"player-button\" id=\"play-next\"><i class=\"fas fa-forward\"></i></div></div></div></div></div>");
+    dr.append("<div id=\"player\"><div id=\"player-track\"><div id=\"album-name\"></div><div id=\"track-name\"></div><div id=\"track-time\"><div id=\"current-time\"></div><div id=\"track-length\"></div></div><div id=\"s-area\"><div id=\"ins-time\"></div><div id=\"s-hover\"></div><div id=\"seek-bar\"></div></div></div><div id=\"player-content\"><div id=\"album-art\"><img src=\"images/1.jpg\" class=\"active\" id=\"album-pic\"><div id=\"buffer-box\">加载中...</div></div><div id=\"player-controls\"><div class=\"control\"><div class=\"player-button\" id=\"play-previous\"><i class=\"iconfont icon-backward\"></i></div></div><div class=\"control\"><div class=\"player-button\" id=\"play-pause-button\"><i class=\"iconfont icon-pause\"></i></div></div><div class=\"control\"><div class=\"player-button\" id=\"play-next\"><i class=\"iconfont icon-forward\"></i></div></div></div></div></div>");
     var playerTrack = $("#player-track"),
         albumName = $('#album-name'),
         trackName = $('#track-name'),
@@ -56,14 +56,14 @@ function switchDarkMode() {
                 playerTrack.addClass('active');
                 albumArt.addClass('active');
                 checkBuffering();
-                i.attr('class', 'fas fa-pause');
+                i.attr('class', 'iconfont icon-pause');
                 audio.play();
             } else {
                 playerTrack.removeClass('active');
                 albumArt.removeClass('active');
                 clearInterval(buffInterval);
                 albumArt.removeClass('buffering');
-                i.attr('class', 'fas fa-play');
+                i.attr('class', 'iconfont icon-play_fill');
                 audio.pause();
             }
         }, 300);
@@ -122,7 +122,7 @@ function switchDarkMode() {
         else trackTime.addClass('active');
         seekBar.width(playProgress + '%');
         if (playProgress == 100) {
-            i.attr('class', 'fa fa-play');
+            i.attr('class', 'iconfont icon-play_fill');
             seekBar.width(0);
             tProgress.text('00:00');
             albumArt.removeClass('buffering').removeClass('active');
@@ -148,10 +148,10 @@ function switchDarkMode() {
             format: 'json'
         }, function(json, textStatus) {
             if (json.code == 1) {
-                if (flag == 0) i.attr('class', 'fa fa-play');
+                if (flag == 0) i.attr('class', 'iconfont icon-play_fill');
                 else {
                     albumArt.removeClass('buffering');
-                    i.attr('class', 'fa fa-pause');
+                    i.attr('class', 'iconfont icon-pause');
                 }
                 seekBar.width(0);
                 trackTime.removeClass('active');

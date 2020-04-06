@@ -97,13 +97,12 @@ navbar:
   menu:  # 可自行增减，key 用来关联 languages/*.yml，如不存在关联则显示 key 本身的值，增加 name 可以强制显示指定名称
     - { key: 'home', link: '/', icon: 'iconfont icon-home-fill' }
     - { key: 'archive', link: '/archives/', icon: 'iconfont icon-archive-fill' }
-    # - { key: 'category', link: '/categories/', icon: 'iconfont icon-category-fill' }
     - { key: 'tag', link: '/tags/', icon: 'iconfont icon-tags-fill' }
-    - { key: 'links', link: '/links/', icon: 'iconfont icon-link-fill' }  # 友链页，把前面#去掉即可展示
-    - { key: 'gallery', link: '/gallery/' }
-    - { key: 'messageboard', link: '/messageboard/' }
+    - { key: 'links', link: '/links/', icon: 'iconfont icon-link-fill' }
+    - { key: 'gallery', link: '/gallery/', icon: 'iconfont icon-xiangce1' }
+    - { key: 'messageboard', link: '/messageboard/', icon: 'iconfont icon-jurassic_message1' }
     - { key: 'about', link: '/about/', icon: 'iconfont icon-user-fill' }
-    - { key: 'my', link: '/my/' }
+    - { key: 'my', link: '/my/', icon: 'iconfont icon-gongnengdingyi' }
 
 search: # 搜索栏
   enable: true
@@ -361,9 +360,12 @@ about:  # 以下仅为页面顶部的基本信息，更多内容请在 ./pages/a
   name: Royce
   introduce: OI小白 # 支持 HTML
   icons: # 更多图标可从 https://github.com/fluid-dev/static/blob/master/hexo-theme-fluid/iconfont.png 查找，class 代表图标的 css class
-    - { class: 'iconfont icon-github-fill', link: 'https://github.com' }
-    - { class: 'iconfont icon-douban-fill', link: 'https://github.com' }
-    - { class: 'iconfont icon-wechat-fill', qrcode: '/img/favicon.png' }  # 添加 qrcode 后，点击不再跳转，而是悬浮二维码，需要指定 image
+    - { class: 'icon-github_alt', link: 'https://github.com/royce2019' }
+    - { class: 'icon-coolapk', qrcode: 'https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/about/coolapk.webp' }
+    - { class: 'icon-telegram', link: 'https://t.me/joinchat/PXmDqxgFJOmpx8cADkkc8g' }
+    - { class: 'icon-qq', qrcode: 'https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/about/QQ.webp' }
+    - { class: 'icon-mail', link: 'mailto:1098870059@qq.com' }
+
 #---------------------------
 # 404页
 # 404 Page
@@ -407,7 +409,7 @@ links:
   subtitle: 用热情去灌溉，用原则去培养，用谅解去护理 # 打字机内容
   defaultlinks:
     - { title: 'Neworld200', intro: 'OI大佬', link: 'https://neworld2002.github.io',  image: 'https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/neworld2002.webp' }
-    - { title: 'newsheep', intro: '社长大大', link: 'http://newsheep2003.github.io/',  image: 'https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/newsheep.webp' }
+    - { title: 'newsheep', intro: '社长大大', link: 'http://newsheep2003.github.io',  image: 'https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/newsheep.webp' }
   friendslinks:
     - { title: '辉少菌', intro: '一个爱搞技术的高一党', link: 'http://huishao.top', image: 'https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/辉少菌.webp' }
     - { title: 'Atuo', intro: '网络安全',  link: 'https://blog.atuo.store', image: 'https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/Atuo.webp' }
@@ -424,11 +426,11 @@ links:
     - { title: 'JimmyQin', intro: '挨拍的儿', link: 'https://apde.xyz', image: 'https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/JimmyQin.webp' }
     - { title: '木子洋', intro: '记录成长学习的博客', link: 'https://www.yanghuaxing.com', image: 'https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/木子洋.webp' }
     - { title: '惴与绕', intro: '一条咸鱼的日常', link: 'https://idkzr.com', image: 'https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/惴绕.webp' }
-    - { title: 'yuzh', intro: '永不停歇--Never Settle', link: 'https://yyuzh.xyz/', image: 'https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/yuzh.webp' }
-    - { title: 'Bert', intro: '面朝大海，春暖花开', link: 'https://ixfish.cn/', image: 'https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/bert.webp' }
-    - { title: 'Guan FuQing', intro: 'Error:No object found!', link: 'https://yiki.tech/', image: 'https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/GuanFuQing.webp' }
+    - { title: 'yuzh', intro: '永不停歇--Never Settle', link: 'https://yyuzh.xyz', image: 'https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/yuzh.webp' }
+    - { title: 'Bert', intro: '面朝大海，春暖花开', link: 'https://ixfish.cn', image: 'https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/bert.webp' }
+    - { title: 'Guan FuQing', intro: 'Error:No object found!', link: 'https://yiki.tech', image: 'https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/GuanFuQing.webp' }
     - { title: 'TanHua', intro: 'IoT在校生', link: 'https://tutouyuan.top', image: 'https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/TanHua.webp' }
-    - { title: '破旧的手枪', intro: '只争朝夕 不负韶华', link: 'https://pistol.city/', image: 'https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/破旧的手枪.webp' }
+    - { title: '破旧的手枪', intro: '只争朝夕 不负韶华', link: 'https://pistol.city', image: 'https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/破旧的手枪.webp' }
     - { title: '星下小屋', intro: '学习记录笔记本', link: 'https://skyhouse.xyz', image: 'https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/星下小屋.webp' }
     - { title: 'MinePHP', intro: 'MinePHP Blog', link: 'https://www.aahy.xyz', image: 'https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/MinePHP.webp' }
     - { title: '云游君', intro: 'All at sea.', link: 'https://www.yunyoujun.cn', image: 'https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/云游君.webp' }
@@ -436,15 +438,16 @@ links:
     - { title: 'xaoxuu', intro: 'iOS', link: 'https://xaoxuu.com', image: 'https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/xaoxuu.webp' }
     - { title: 'YU到边', intro: '前端技术交流', link: 'https://www.yuhangwei.com', image: 'https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/YU到边.webp' }
     - { title: 'Sanarous', intro: '码农人生', link: 'https://bestzuo.cn', image: 'https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/Sanarous.webp' }
-    - { title: 'Burgess', intro: '日常', link: 'https://bibiqo.cn/', image: 'https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/Burgess.webp' }
-    - { title: 'YINUXY', intro: '理想的生活就是生活的理想', link: 'https://blog.yinuxy.com/', image: 'https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/YINUXY.webp' }
-    - { title: '夏目友人帐', intro: '夏目友人帐', link: 'https://xiamuyourenzhang.cn/', image: 'https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/夏目友人帐.webp' }
+    - { title: 'Burgess', intro: '日常', link: 'https://bibiqo.cn', image: 'https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/Burgess.webp' }
+    - { title: 'YINUXY', intro: '理想的生活就是生活的理想', link: 'https://blog.yinuxy.com', image: 'https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/YINUXY.webp' }
+    - { title: '夏目友人帐', intro: '夏目友人帐', link: 'https://xiamuyourenzhang.cn', image: 'https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/夏目友人帐.webp' }
     - { title: '小丁', intro: '世间所有的相遇，都是久别重逢', link: 'https://tding.top', image: 'https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/小丁.webp' }
     - { title: '小太', intro: '一个热爱ACG的技术宅', link: 'https://713.moe', image: 'https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/小太.webp' }
     - { title: '七夏浅笑', intro: '七月之约，夏末浅笑', link: 'https://www.julydate.com', image: 'https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/七夏浅笑.webp' }
     - { title: 'Mystery', intro: '心有猛虎，细嗅蔷薇',, link: 'https://blog.say521.cn', image: 'https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/Mystery.webp' }
     - { title: 'barriery', intro: 'A student, programmer and explorer.', link: 'https://barriery.cn', image: 'https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/barriery.webp' }
-    - { title: 'keith', intro: '一个热爱网络的学生', link: 'https://keithqwq.com/', image: 'https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/keith.webp' }
+    - { title: 'keith', intro: '一个热爱网络的学生', link: 'https://keithqwq.com', image: 'https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/keith.webp' }
+    - { title: '故北', intro: '还记得我吗？', link: 'http://gubei.ucu520.top', image: 'https://cdn.jsdelivr.net/gh/royce2019/BlogSource/links/故北.webp'}
 
 #---------------------------
 # 工具页
