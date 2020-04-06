@@ -1,7 +1,8 @@
+title: 动漫风
+---
 <div id="dowebok"></div>
-<link rel="stylesheet" type="text/css" href="../css/component.css" />
-<script src="../js/modernizr.custom.js"></script>
 <div class="note note-info">本页面图片已压缩，点击图片可查看原图</div>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/Royce2019/BlogSource/css/gallery.min.css">
 <ul class="grid9 effect-39" id="grid9">
 	<li><a href="https://cdn.jsdelivr.net/gh/Royce2019/BlogGallery/cartoon/001.webp"><img src="https://cdn.jsdelivr.net/gh/Royce2019/BlogGallery/cartoon/s/001.jpg"></a></li>
 	<li><a href="https://cdn.jsdelivr.net/gh/Royce2019/BlogGallery/cartoon/002.webp"><img src="https://cdn.jsdelivr.net/gh/Royce2019/BlogGallery/cartoon/s/002.jpg"></a></li>
@@ -38,14 +39,4 @@
 	<li><a href="https://cdn.jsdelivr.net/gh/Royce2019/BlogGallery/cartoon/033.webp"><img src="https://cdn.jsdelivr.net/gh/Royce2019/BlogGallery/cartoon/s/033.jpg"></a></li>
 	<li><a href="https://cdn.jsdelivr.net/gh/Royce2019/BlogGallery/cartoon/034.webp"><img src="https://cdn.jsdelivr.net/gh/Royce2019/BlogGallery/cartoon/s/034.jpg"></a></li>
 </ul>
-<script src="../js/masonry.pkgd.min.js"></script>
-<script src="../js/imagesloaded.js"></script>
-<script src="../js/classie.js"></script>
-<script src="../js/AnimOnScroll.js"></script>
-<script>
-	new AnimOnScroll(document.getElementById('grid9'), {
-		minDuration: 0.4,
-		maxDuration: 0.7,
-		viewportFactor: 0.2
-	});
-</script>
+<script src="//cdn.jsdelivr.net/gh/Royce2019/BlogSource@master/js/gallery.min.js"></script>
