@@ -13,7 +13,7 @@ function switchDarkMode() {
 	}
 }
 
-// Baidu Push
+/* Baidu Push
 (function() {
     var bp = document.createElement('script');
     var curProtocol = window.location.protocol.split(':')[0];
@@ -25,7 +25,7 @@ function switchDarkMode() {
     }
     var s = document.getElementsByTagName("script")[0];
     s.parentNode.insertBefore(bp, s);
-})();
+})();*/
 
 // Music
 (function() {
