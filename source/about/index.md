@@ -6,15 +6,14 @@ layout: about
 
 <div class="note note-info">
     <strong>个人简介</strong>
-    <li>高一党一枚，坐标 🌏，喜欢数码科技</li>  
-    <li>喜欢前端，在搭建博客过程中不断学习</li>  
-    <li>最菜的 OIer，抱歉拉低了 OIer 的水平 orz orz </li>  
-    <li>由于个人水平非常有限，在博客分享的内容可能有错，希望莅临指导🤝</li>  
+    <li>高一 OIer，坐标 🌏，喜欢数码科技</li>
+    <li>喜欢前端，在搭建博客过程中不断学习</li>
+    <li>由于个人水平非常有限，在博客分享的内容可能有错，希望莅临指导🤝</li>
 </div>
 <div class="note note-danger">
     <strong>博客简介</strong>
     <li>全站 HTTPS</li>
-    <li>Hexo 框架 + Fluid 主题</li>
+    <li><a href="https://hexo.io/zh-cn" rel="nofollow">Hexo</a> 框架 + <a href="https://github.com/fluid-dev/hexo-theme-fluid" rel="nofollow">Fluid</a> 主题</li>
     <li>博客中的部分图片源于网络，侵删</li>
     <li>本博客文章均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow noopener noopener">CC BY-NC-SA 4.0 协议</a>，转载请注明出处！</li>
 </div>
@@ -23,7 +22,7 @@ layout: about
     <li>2020.02.27 从 NexT 搬迁到 Fluid</li>
     <li>2020.03.05 搬迁全部完成</li>
     <li>2020.03.16 新增相册功能</li>
-    <li>2020.03.24 更换 valine 评论系统为增强版 valine</li>
+    <li>2020.03.24 使用增强版 Valine-Admin</li>
     <li>2020.03.26 新增夜间模式</li>
 </div>
 <br><br>
