@@ -7,7 +7,10 @@ abbrlink: 60394
 top: 10
 ---
 
-<p class="note note-info"><b>2020.04.05 新增 更好看的音乐播放器</b></p>
+
+{% note info %}
+**2020.04.05 新增 更好看的音乐播放器**
+{% endnote %}
 <!--more-->
 
 ## 前言
@@ -16,7 +19,9 @@ top: 10
 首先，按照 Fluid 配置文件中的方法，新建自定义 CSS 和 JS
 建议创建 .styl 而不是 .css
 下方代码会是 .styl，因为写着更省事...
-<p class="note note-danger">不管是什么，配置文件中都填 .css</p>
+{% note danger %}
+不管是什么，配置文件中都填 `.css`
+{% endnote %}
 
 ```yml
 custom_js: /js/custom.js # 指定自定义 js 文件路径，路径是相对 source 目录，如 /js/custom.js
@@ -249,7 +254,10 @@ footer a:hover
 ```html
 <a class="link link--kukuri" href="test.test" data-letters="test">test</a>
 ```
-<p class="note note-primary">data-letters 中需要和内容保持一致<br>不用 a 标签也可以，保证类名正确</p>
+{% note primary %}
+data-letters 中需要和内容保持一致  
+不用 a 标签也可以，保证类名正确
+{% endnote %}
 
 
 ## 留言板
