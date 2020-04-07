@@ -16,7 +16,7 @@ page.banner_mask_alpha = theme.page404.banner_mask_alpha
 			  <div class="card-content">
 				<% if (each.image) { %>
 				  <div class="link-avatar my-auto">
-					<img src="<%= each.image %>" alt="<%= each.title %>" />
+					<img src="https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/<%= each.image %>.webp" alt="<%= each.title %>" />
 				  </div>
 				<% } %>
 				<div class="link-text">
@@ -34,11 +34,11 @@ page.banner_mask_alpha = theme.page404.banner_mask_alpha
 	<% for(const each of theme.links.friendslinks) { %>
 		<% if (!each.title || !each.link) continue %>
 		<div class="card col-lg-4 col-md-6 col-sm-12">
-			<a href="<%= url_for(each.link) %>" class="card-body" target="_blank" rel="noopener">
+			<a href="https://<%= url_for(each.link) %>" class="card-body" target="_blank" rel="noopener">
 			  <div class="card-content">
 				<% if (each.image) { %>
 				  <div class="link-avatar my-auto">
-					<img src="<%= each.image %>" alt="<%= each.title %>" />
+					<img src="https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/<%= each.image %>.webp" alt="<%= each.title %>" />
 				  </div>
 				<% } %>
 				<div class="link-text">
@@ -56,6 +56,7 @@ page.banner_mask_alpha = theme.page404.banner_mask_alpha
 <div class="text-center"><strong>欢迎添加友链⭐</strong></div><br>
 <div class="note note-success">
 	<strong>🛬 申请要求</strong><br>
+	&#8195;HTTPS<br>
 	&#8195;博客可以稳定访问，无繁杂广告推广<br>
 	&#8195;不与资源站或平台博客（CSDN等）交换友链<br>
 	&#8195;原则上只与原创类博客交换友链，大量转载内容不考虑<br>
