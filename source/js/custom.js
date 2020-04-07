@@ -33,8 +33,6 @@ function switchDarkMode() {
     if(!dr.length > 0) return;
     dr.append("<div id=\"player\"><div id=\"player-track\"><div id=\"album-name\"></div><div id=\"track-name\"></div><div id=\"track-time\"><div id=\"current-time\"></div><div id=\"track-length\"></div></div><div id=\"s-area\"><div id=\"ins-time\"></div><div id=\"s-hover\"></div><div id=\"seek-bar\"></div></div></div><div id=\"player-content\"><div id=\"album-art\"><img src=\"images/1.jpg\" class=\"active\" id=\"album-pic\"><div id=\"buffer-box\">加载中...</div></div><div id=\"player-controls\"><div class=\"control\"><div class=\"player-button\" id=\"play-previous\"><i class=\"iconfont icon-backward\"></i></div></div><div class=\"control\"><div class=\"player-button\" id=\"play-pause-button\"><i class=\"iconfont icon-pause\"></i></div></div><div class=\"control\"><div class=\"player-button\" id=\"play-next\"><i class=\"iconfont icon-forward\"></i></div></div></div></div></div>");
     var playerTrack = $("#player-track"),
-        albumName = $('#album-name'),
-        trackName = $('#track-name'),
         albumArt = $('#album-art'),
         sArea = $('#s-area'),
         seekBar = $('#seek-bar'),
@@ -47,9 +45,7 @@ function switchDarkMode() {
         tTime = $('#track-length'),
         seekT, seekLoc, seekBarPos, cM, ctMinutes, ctSeconds, curMinutes, curSeconds, durMinutes, durSeconds, playProgress, bTime, nTime = 0,
         buffInterval = null,
-        tFlag = false,
-        playPreviousTrackButton = $('#play-previous'),
-        playNextTrackButton = $('#play-next');
+        tFlag = false;
     function playPause() {
         setTimeout(function () {
             if (audio.paused) {
@@ -171,8 +167,8 @@ function switchDarkMode() {
                     clearInterval(buffInterval);
                     checkBuffering();
                 }
-                albumName.text(currAlbum);
-                trackName.text(currTrackName);
+                $('#album-name').text(currAlbum);
+                $('#track-name').text(currTrackName);
                 albumArt.find('img.active').removeClass('active');
                 $('#album-pic').addClass('active');
                 $('#album-pic').attr('src',currArtwork);
@@ -190,10 +186,10 @@ function switchDarkMode() {
         sArea.mouseout(hideHover);
         sArea.on('click', playFromClickedPos);
         $(audio).on('timeupdate', updateCurrTime);
-        playPreviousTrackButton.on('click', function () {
+        $('#play-previous').on('click', function () {
             selectTrack2(-1);
         });
-        playNextTrackButton.on('click', function () {
+        $('#play-next').on('click', function () {
             selectTrack2(1);
         });
     }
