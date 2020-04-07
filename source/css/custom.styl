@@ -40,27 +40,12 @@ footer a:hover
   color #1abc9c !important
 
 
-.index-img
+.index-img img
   transition: .4s;
 
-.index-card:hover .index-img
-  transform: scale(1.05);
+.index-card:hover .index-img img
+  transform: scale(1.02);
   box-shadow: 0 5px 11px 0 rgba(0,0,0,0.38), 0 4px 15px 0 rgba(0,0,0,0.35);
-
-
-.scroll-top-arrow
-  color #2f4154
-
-#scroll-top-button 
-  border-radius 25px
-  -webkit-transition all .6s
-  -moz-transition all .6s
-  -o-transition all .6s
-  transition all .6s
-
-  &:hover 
-    transform scale(1.2)
-    border-radius 20%
 
 
 @media (min-width:768px) 
@@ -158,13 +143,21 @@ footer a:hover
   img  
     filter brightness(50%)
 
-  p, .index-info a  
-    color #a09c9c !important
+  p, .index-card a, .post-meta:not(.iconfont)
+    color #a09c9c
+
+  a
+    color #718096
+    
+    &:hover
+      color #0c7863 !important
 
   .markdown-body
     h1, h2, h3, h4, h5, h6, s, li  
       color:#a09c9c !important
-    
+
+  .hover-with-bg:hover
+    background-color #24282F
 
   /* 顶栏 */
   .navbar-col-show
@@ -172,7 +165,7 @@ footer a:hover
     background-color #282c34
     
   .navbar a  
-    color #a09c9c !important
+    color #a09c9c
     
   .animated-icon span   /* 手机端 */
     background-color #a09c9c
