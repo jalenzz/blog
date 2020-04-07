@@ -457,6 +457,7 @@ links:
     - { title: 'barriery', intro: 'A student, programmer and explorer.', link: 'barriery.cn', image: 'barriery' }
     - { title: 'keith', intro: '一个热爱网络的学生', link: 'keithqwq.com', image: 'keith' }
     - { title: '故北', intro: '还记得我吗？', link: 'gubei.ucu520.top', image: '故北'}
+    - { title: 'Vince', intro: '努力学习技术的Vince', link: 'i.vince.pub', image: 'vince'}
 
 #---------------------------
 # 工具页
