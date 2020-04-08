@@ -177,7 +177,7 @@ function switchDarkMode() {
     }
     function initPlayer() {
         audio = new Audio();
-        selectTrack2(1); //非0自动播放
+        selectTrack2(0); //非0自动播放
         audio.loop = false;
         playPauseButton.on('click', playPause);
         sArea.mousemove(function (event) {
