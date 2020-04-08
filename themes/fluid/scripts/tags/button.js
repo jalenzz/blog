@@ -1,4 +1,3 @@
-
 'use strict';
 
 function postButton(args) {
