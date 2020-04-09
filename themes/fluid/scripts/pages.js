@@ -25,15 +25,6 @@ hexo.extend.generator.register('_categories', function (locals) {
   };
 });
 
-// generate links page
-hexo.extend.generator.register('_links', function (locals) {
-  return {
-    path: 'links/index.html',
-    data: locals.theme,
-    layout: 'links',
-  };
-});
-
 // generate messageboard page
 hexo.extend.generator.register('_messageboard', function (locals) {
   return {
