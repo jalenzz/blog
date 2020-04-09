@@ -9,7 +9,7 @@ top: 10
 
 
 {% note info %}
-**2020.04.05 新增 更好看的音乐播放器**
+**2020.04.09 新增超好看的复选框** 
 {% endnote %}
 <!--more-->
 
@@ -17,7 +17,7 @@ top: 10
 **随着主题的更新，文中的代码可能失效或引起错误，请自行修改**
 {% endnote %}
 
-## 前言
+### 前言
 好像还没有看到大佬写关于 Fluid 折腾的文章，就开了这个坑
 文章放了源码进来，所以挺长的，大部分是改 CSS，JS 很少
 首先，按照 Fluid 配置文件中的方法，新建自定义 CSS 和 JS
@@ -33,7 +33,7 @@ custom_css: /css/custom.css # 指定自定义 css 文件路径，路径是相对
 custom_html: ''  # 自定义底部 HTML 内容（位于 footer 上方），也可用于外部引入 js css 这些操作，注意不要和 post.custom 配置冲突
 ```
 
-## 动态背景
+### 动态背景
 主题本身采用的是头图滚动视差，非常 nice，但我可能更喜欢花里胡哨吧
 现在自定义 CSS 中加入如下代码
 ```stylus
@@ -110,7 +110,8 @@ body
 效果非常明显，我原来的 4 张图加起来 1.6 MB（已经压缩过的了），现在转成 webp 之后 0.4 MB
 直接减少了 75% 的体积，画质还不变
 
-## 侧边滚动条
+
+### 侧边滚动条
 ```stylus
 ::-webkit-scrollbar-button
   display none
@@ -130,7 +131,8 @@ body
 ```
 <p class="note note-info">会同时对所有滚动条生效，包括代码块的横向滚动条</p>
 
-## 返回顶部按钮
+
+### 返回顶部按钮
 增加动画
 ```stylus
 #scroll-top-button 
@@ -147,7 +149,8 @@ body
 之前的文章写了个另一种样式 [文章链接](./54321.html)
 
 
-## 标题前 Emoji
+
+### 标题前 Emoji
 ```stylus
 /* 想在手机端也显示，去除最外层的 @media，并更改缩进 */
 @media (min-width:768px) 
@@ -166,7 +169,8 @@ body
       display: inline;
 ```
 
-## 首页图片动画
+
+### 首页图片动画
 鼠标触碰放大
 ```stylus
 .index-img
@@ -177,7 +181,8 @@ body
   box-shadow: 0 5px 11px 0 rgba(0,0,0,0.38), 0 4px 15px 0 rgba(0,0,0,0.35);
 ```
 
-## 底部及 TOC 样式更改
+
+### 底部及 TOC 样式更改
 因为之前的动态背景添加了遮罩导致底部链接等看不起
 ```css
 .tocbot-list a
@@ -189,9 +194,11 @@ footer a:hover
   color #1abc9c !important
 ```
 
-## 友链界面底部的文字
 
-[效果链接](../links)
+### 标题文字特效
+
+![演示](https://cos.royce2003.top/60394/01.webp)
+
 文字触碰动画（源网，找不到原站链接了）
 ```css
 /* 注意避免类名相同造成样式冲突 */
@@ -264,7 +271,8 @@ data-letters 中需要和内容保持一致
 {% endnote %}
 
 
-## 留言板
+
+### 留言板
 在 `themes\hexo-theme-fluid-master\layout\` 中新建 `messageboard.ejs` 文件
 先写上头图之类的设定
 ```ejs
@@ -290,7 +298,7 @@ messageboard:
 ```
 语言文件中也是一样的，这里就不写了
 
-### 引入评论
+#### 引入评论
 刚刚创建的 ejs 文件中
 ```ejs
 <!-- Comments -->
@@ -305,12 +313,12 @@ messageboard:
 自定义内容写在评论代码之前就好了，支持 HTML
 
 然后两种方法开启，二选一即可
-### 1
+#### 1
 在根目录的 `source` 文件夹中创建 `messageboard.md` 
 并在 `front-matter` 中加上 ``layout: messageboard`
 和 about 界面的方法一样
 
-### 2
+#### 2
 在 `themes\fluid\scripts\pages.js` 文件中加入如下代码
 ```js
 // generate messageboard page
@@ -323,12 +331,15 @@ hexo.extend.generator.register('_messageboard', function (locals) {
 });
 ```
 
-## 更好看的音乐播放器
+
+### 更好看的音乐播放器
 本身的 aplayer 个人觉得并不是很好看，而且是全局的
 换了给好看点的播放器，在指定页面加载
 需要加载的页面加入
 
-### js
+![](https://cos.royce2003.top/60394/02.webp)
+
+#### JS
 自定义 js 里加入
 ```js
 (function() {
@@ -501,7 +512,7 @@ hexo.extend.generator.register('_messageboard', function (locals) {
     initPlayer();
 })();
 ```
-### CSS
+#### CSS
 自定义 CSS 中加入
 ```stylus
 #dowebok
@@ -779,9 +790,14 @@ hexo.extend.generator.register('_messageboard', function (locals) {
     font-size 10px
 ```
 
+上方的 css 已经放在 GitHub 中，若想直接引用，可在上方 JS 想办法引进去，或者在需要的界面加进去
+不建议加到全局，毕竟不是所有界面都需要（其实影响也不是很大）
+
+CDN🔗 https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/css/music.min.css
+
+#### HTML
 需要加载的页面（md 或者 ejs）中加入
 
-### html
 ```html
 <div id="dowebok"></div>
 ```
@@ -794,8 +810,206 @@ js 和 css，源自[链接](https://www.yanghuaxing.com/blog/547.html)
 
 直接把源码部署到一个地方拿来代替用也非常不错，毕竟很好看，再用 Edge 安装在电脑上，嘻嘻嘻
 
-## 最后
-应该没啥可折腾的了，还有的话也不新开文章了，就这里持续更新吧
+
+### 可交互复选框
+下方有 Demo
+
+自定义 CSS 中添加以下代码
+
+```stylus
+input
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  transition:all .15s ease-out 0s;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  margin: .4rem .2rem .4rem !important;
+  outline: none;
+  border-radius: 10%;
+
+
+/* Checkbox */
+input[type=checkbox]
+  vertical-align: -0.65rem;
+
+  &:before, &:after
+    position: absolute;
+    content: "";
+    background: #fff;
+    transition: all .2s ease-in-out;
+
+  &:before
+    left: 2px;
+    top: 6px;
+    width: 0;
+    height: 2px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+
+  &:after
+    right: 9px;
+    bottom: 3px;
+    width: 2px;
+    height: 0;
+    transform: rotate(40deg);
+    -webkit-transform: rotate(40deg);
+    -moz-transform: rotate(40deg);
+    -ms-transform: rotate(40deg);
+    -o-transform: rotate(40deg);
+    transition-delay: .2s;
+
+  &:checked
+    &:before
+      left: 1px;
+      top: 10px;
+      width: 6px;
+      height: 2px;
+
+    &:after 
+      right: 5px;
+      bottom: 1px;
+      width: 2px;
+      height: 14px;
+
+  &:indeterminate
+    &:before, &:after
+      width: 7px;
+      height: 2px;
+      transform: rotate(0);
+      -webkit-transform: rotate(0);
+      -moz-transform: rotate(0);
+      -ms-transform: rotate(0);
+      -o-transform: rotate(0);
+
+    &:before
+      left: 1px;
+      top: 7px;
+
+    &:after
+      right: 1px;
+      bottom: 7px;
+
+/* Radio */
+input[type=radio]
+  vertical-align: -0.7rem;
+  border-radius: 50%;
+
+  &:before
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: .2rem;
+    transform: scale(0);
+    transition: all ease-out 250ms;
+
+  &:checked:before
+    transform: scale(1);
+
+/* Colors */
+input[type=checkbox]
+  border: 2px solid #4caf50;
+
+  &:checked, &:indeterminate
+    background: #4caf50;
+
+input[type=radio]
+  border: 2px solid #4caf50;
+
+  &:checked:before
+    background: #4caf50;
+
+input[type=checkbox].blue
+  border: 2px solid #2196f3;
+
+  &:checked, &:indeterminate
+    background: #2196f3;
+
+input[type=radio].blue
+  border: 2px solid #2196f3;
+
+  &:checked:before
+    background: #2196f3;
+
+input[type=checkbox].red
+  border: 2px solid #f44336;
+
+  &:checked, &:indeterminate
+    background: #f44336;
+
+input[type=radio].red
+  border: 2px solid #f44336;
+
+  &:checked:before
+    background: #f44336;
+
+input[type=checkbox].orange
+  border: 2px solid #ffc107;
+
+  &:checked, &:indeterminate
+    background: #ffc107;
+
+input[type=radio].orange
+  border: 2px solid #ffc107;
+
+  &:checked:before
+    background: #ffc107;
+```
+
+自定义 JS 中加入以下代码
+
+```js
+$(".indeterminate").prop("indeterminate", true);
+```
+
+用法
+```html
+<input type="checkbox">
+<input type="radio">
+```
+<input type="checkbox"> 左边是 <code>type=checkbox</code>
+<input type="radio"> 左边是 <code>type=radio</code>
+
+默认绿色，设置颜色，只需要加上 class 就行。
+目前 class 有 `blue` `red` `orange`，可自行更改 CSS
+
+默认是方形没有打勾，圆形没有选中
+加上 chencked 就会默认选中
+如下方代码
+```html
+<input type="radio" chencked>
+```
+
+<input class="blue" type="checkbox" checked> 左边是选中的 blue
+<input class="red" type="radio" checked> 左边是选中的 red
+
+对于方形，还支持特殊的选中方式
+```html
+<input type="checkbox" class="indeterminate red">
+```
+<input type="checkbox" class="indeterminate red">上面的代码是 red + 特殊选中方式
+
+{% note primary %}
+特殊选中方式对圆形无效且不可通过点击显示，只能代码中设置
+{% endnote %}
+
+---
+### 最后
+应该没啥可折腾的了，还有的话也不新开文章了，就这里持续更新吧，会置顶并将最近一次更新写在摘要中
 暗黑模式下篇文章再写吧 ~~(水文章数量)~~
 作者已经把主题做的非常完美了，有什么问题都会立马修复，功能也出的很快，超 nice
 博客刚搭建的时候用了一个 material 主题，觉得过于平淡，换到了一个 gal 主题，功能很多
