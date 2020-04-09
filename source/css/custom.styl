@@ -132,7 +132,6 @@ footer a:hover
   left: 0;
   height: 20px;
   width: 20px;
-  vertical-align: -0.8rem;
   transition:all .15s ease-out 0s;
   color: #fff;
   cursor: pointer;
@@ -144,6 +143,8 @@ footer a:hover
 
 /* Checkbox */
 input[type=checkbox]
+  vertical-align: -0.65rem;
+
   &:before, &:after
     position: absolute;
     content: "";
@@ -206,6 +207,7 @@ input[type=checkbox]
 
 /* Radio */
 input[type=radio]
+  vertical-align: -0.7rem;
   border-radius: 50%;
 
   &:before
@@ -214,7 +216,7 @@ input[type=radio]
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    margin: 3px;
+    margin: .2rem;
     transform: scale(0);
     transition: all ease-out 250ms;
 
