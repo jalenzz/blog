@@ -34,8 +34,6 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
-  - start.html
-  - my/01/**
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -86,8 +84,50 @@ nofollow:
   enable: true
   field: site
   exclude:
-    - 'https://royce2003.top'
-    - 'https://royce2003.gitee.io'
+    - 'royce2003.top'
+    - 'www.royce2003.top'
+    - 'music.royce2003.top'
+    - 'neworld2002.github.io'
+    - 'newsheep2003.github.io'
+    - 'huishao.top'
+    - 'blog.atuo.store'
+    - 'wtrwx.top'
+    - 'linhk1606.github.io'
+    - 'leflacon.top'
+    - 'www.antmoe.com'
+    - 'kksan.top'
+    - 'eatrice.top'
+    - 'blog.wubuster.com'
+    - 'www.geek-space.cn'
+    - 'mocehu.top'
+    - 'codgi.xin'
+    - 'apde.xyz'
+    - 'www.yanghuaxing.com'
+    - 'idkzr.com'
+    - 'yyuzh.xyz'
+    - 'ixfish.cn'
+    - 'yiki.tech'
+    - 'tutouyuan.top'
+    - 'pistol.city'
+    - 'skyhouse.xyz'
+    - 'www.aahy.xyz'
+    - 'www.yunyoujun.cn'
+    - 'transion.cc'
+    - 'xaoxuu.com'
+    - 'www.yuhangwei.com'
+    - 'bestzuo.cn'
+    - 'bibiqo.cn'
+    - 'blog.yinuxy.com'
+    - 'xiamuyourenzhang.cn'
+    - 'tding.top'
+    - '713.moe'
+    - 'www.julydate.com'
+    - 'blog.say521.cn'
+    - 'barriery.cn'
+    - 'keithqwq.com'
+    - 'gubei.ucu520.top'
+    - 'i.vince.pub'
+
 # 本地搜索
 search:
   path: search.xml  # 索引文件的路径，相对于站点根目录

@@ -4,28 +4,27 @@ date: 2020-01-31 15:40:33
 layout: about
 ---
 
-<div class="note note-info">
-    <strong>个人简介</strong>
-    <li>高一 OIer，坐标 🌏，喜欢数码科技</li>
-    <li>喜欢前端，在搭建博客过程中不断学习</li>
-    <li>由于个人水平非常有限，在博客分享的内容可能有错，希望莅临指导🤝</li>
-</div>
-<div class="note note-danger">
-    <strong>博客简介</strong>
-    <li>全站 HTTPS</li>
-    <li><a href="https://hexo.io/zh-cn" rel="nofollow">Hexo</a> 框架 + <a href="https://github.com/fluid-dev/hexo-theme-fluid" rel="nofollow">Fluid</a> 主题</li>
-    <li>博客中的部分图片源于网络，侵删</li>
-    <li>本博客文章均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow noopener noopener">CC BY-NC-SA 4.0 协议</a>，转载请注明出处！</li>
-</div>
-<div class="note note-success">
-    <strong>博客历史</strong>
-    <li>2020.02.27 从 NexT 搬迁到 Fluid</li>
-    <li>2020.03.05 搬迁全部完成</li>
-    <li>2020.03.16 新增相册功能</li>
-    <li>2020.03.24 使用增强版 Valine-Admin</li>
-    <li>2020.03.26 新增夜间模式</li>
-</div>
-<br><br>
+### 🍀 个人简介
+
+<input type="radio" checked> 高一 OIer，坐标 🌏，喜欢数码科技
+<input type="radio" checked> 喜欢前端，在搭建博客过程中不断学习
+<input type="radio" checked> 由于个人水平非常有限，在博客分享的内容可能有错，希望莅临指导🔍
+
+### 🌌 博客简介
+
+<input class="blue" type="checkbox" checked> 全站 HTTPS
+<input class="blue" type="checkbox" checked> <a href="https://hexo.io/zh-cn" rel="nofollow">Hexo</a> 框架 + <a href="https://github.com/fluid-dev/hexo-theme-fluid" rel="nofollow">Fluid</a> 主题
+<input class="blue" type="checkbox" checked> 博客中的部分图片源于网络，侵删
+<input class="blue" type="checkbox" checked> 本博客文章均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-NC-SA 4.0 协议</a>，转载请注明出处！
+
+### ☀️ 博客历史
+
+<input class="orange" type="checkbox" checked> 2020.02.27 从 NexT 搬迁到 Fluid
+<input class="orange" type="checkbox" checked> 2020.03.05 搬迁全部完成
+<input class="orange" type="checkbox" checked> 2020.03.16 新增相册功能
+<input class="orange" type="checkbox" checked> 2020.03.24 使用增强版 Valine-Admin
+<input class="orange" type="checkbox" checked> 2020.03.26 新增夜间模式
+
 {% echarts %}
 {
     title: {
