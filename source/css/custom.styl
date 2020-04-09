@@ -44,24 +44,24 @@ footer a:hover
   transition: .4s;
 
 .index-card:hover .index-img img
-  transform: scale(1.02);
-  box-shadow: 0 5px 11px 0 rgba(0,0,0,0.38), 0 4px 15px 0 rgba(0,0,0,0.35);
+  transform scale(1.02) translateZ(0)
+  box-shadow 0 5px 11px 0 rgba(0,0,0,0.38), 0 4px 15px 0 rgba(0,0,0,0.35);
 
 
 @media (min-width:768px) 
   .post-content 
+    h1,h2,h3,h4
+      &::before
+        visibility: visible
+        display: inline
     h1::before
-      content: "🌈";
-      visibility: visible;
-      display: inline;
+      content: "🌈"
     h2::before
-      content: "🚀";
-      visibility: visible;
-      display: inline;
+      content: "🚀"
     h3::before
-      content: "🔍";
-      visibility: visible;
-      display: inline;
+      content: "🔍"
+    h4::before
+      content: "☀️"
 
 
 /*侧边滚动条*/
@@ -117,6 +117,146 @@ footer a:hover
     transition transform .75s ease
     transform translateX(-50px) rotate(45deg)
 
+.markdown-body input
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  vertical-align: -0.8rem;
+  transition:all .15s ease-out 0s;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  margin: .4rem .2rem .4rem;
+  outline: none;
+  border-radius: 10%;
+
+
+/* Checkbox */
+input[type=checkbox]
+  &:before, &:after
+    position: absolute;
+    content: "";
+    background: #fff;
+    transition: all .2s ease-in-out;
+
+  &:before
+    left: 2px;
+    top: 6px;
+    width: 0;
+    height: 2px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+
+  &:after
+    right: 9px;
+    bottom: 3px;
+    width: 2px;
+    height: 0;
+    transform: rotate(40deg);
+    -webkit-transform: rotate(40deg);
+    -moz-transform: rotate(40deg);
+    -ms-transform: rotate(40deg);
+    -o-transform: rotate(40deg);
+    transition-delay: .2s;
+
+  &:checked
+    &:before
+      left: 1px;
+      top: 10px;
+      width: 6px;
+      height: 2px;
+
+    &:after 
+      right: 5px;
+      bottom: 1px;
+      width: 2px;
+      height: 14px;
+
+  &:indeterminate
+    &:before, &:after
+      width: 7px;
+      height: 2px;
+      transform: rotate(0);
+      -webkit-transform: rotate(0);
+      -moz-transform: rotate(0);
+      -ms-transform: rotate(0);
+      -o-transform: rotate(0);
+
+    &:before
+      left: 1px;
+      top: 7px;
+
+    &:after
+      right: 1px;
+      bottom: 7px;
+
+/* Radio */
+input[type=radio]
+  border-radius: 50%;
+
+  &:before
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 3px;
+    transform: scale(0);
+    transition: all ease-out 250ms;
+
+  &:checked:before
+    transform: scale(1);
+
+/* Colors */
+input[type=checkbox],input[type=radio] {
+  border: 2px solid #4caf50;
+}
+
+input[type=checkbox]:checked,input[type=checkbox]:indeterminate,input[type=radio]:checked:before {
+  background: #4caf50;
+}
+
+/* Complement colors */
+input[type=checkbox].blue,input[type=radio].blue {
+  border: 2px solid #2196f3;
+}
+
+input[type=checkbox].blue:checked,input[type=checkbox].blue:indeterminate,input[type=radio].blue:checked:before {
+  background: #2196f3;
+}
+
+input[type=checkbox].red,input[type=radio].red {
+  border: 2px solid #f44336;
+}
+
+input[type=checkbox].red:checked,input[type=checkbox].red:indeterminate,input[type=radio].red:checked:before {
+  background: #f44336;
+}
+
+input[type=checkbox].orange,input[type=radio].orange {
+  border: 2px solid #ffc107;
+}
+
+input[type=checkbox].orange:checked,input[type=checkbox].orange:indeterminate,input[type=radio].orange:checked:before {
+  background: #ffc107;
+}
+/*
+ * <input type="checkbox">
+ * <input type="radio" checked>
+ * <input type="checkbox" checked>
+ * <input type="checkbox" class="indeterminate">
+ */
 
 /* 切换按钮 */
 #dark
