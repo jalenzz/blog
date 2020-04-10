@@ -16,34 +16,35 @@
 // Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
 // 02110-1301 USA
 //
-// Updated by Rook1e <https://github.com/0x2E>
+// Updated by fluid-dev <https://github.com/fluid-dev>
 
 var searchFunc = function (path, search_id, content_id) {
   // 0x00. environment initialization
   'use strict';
   var $input = document.getElementById(search_id);
   var $resultContent = document.getElementById(content_id);
-  $resultContent.innerHTML = "<div class='m-auto text-center'><div class='spinner-border' role='status'><span class='sr-only'>Loading...</span></div><br/>Loading...</div>";
-  $.ajax({
+  $resultContent.innerHTML = '<div class="m-auto text-center"><div class="spinner-border" role="status">' +
+    '<span class="sr-only">Loading...</span></div><br/>Loading...</div>';
+  ajax({
     // 0x01. load xml file
     url: path,
-    dataType: "xml",
+    dataType: 'xml',
     success: function (xmlResponse) {
       // 0x02. parse xml file
-      var dataList = $("entry", xmlResponse).map(function () {
+      var dataList = $('entry', xmlResponse).map(function () {
         return {
-          title: $("title", this).text(),
-          content: $("content", this).text(),
-          url: $("url", this).text()
+          title: $('title', this).text(),
+          content: $('content', this).text(),
+          url: $('url', this).text(),
         };
       }).get();
-      $resultContent.innerHTML = "";
+      $resultContent.innerHTML = '';
 
       $input.addEventListener('input', function () {
         // 0x03. parse query to keywords list
         var str = '';
         var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-        $resultContent.innerHTML = "";
+        $resultContent.innerHTML = '';
         if (this.value.trim().length <= 0) {
           return;
         }
@@ -52,11 +53,11 @@ var searchFunc = function (path, search_id, content_id) {
           var isMatch = true;
           var content_index = [];
           if (!data.title || data.title.trim() === '') {
-            data.title = "Untitled";
+            data.title = 'Untitled';
           }
           var orig_data_title = data.title.trim();
           var data_title = orig_data_title.toLowerCase();
-          var orig_data_content = data.content.trim().replace(/<[^>]+>/g, "");
+          var orig_data_content = data.content.trim().replace(/<[^>]+>/g, '');
           var data_content = orig_data_content.toLowerCase();
           var data_url = data.url;
           var index_title = -1;
@@ -85,7 +86,7 @@ var searchFunc = function (path, search_id, content_id) {
           }
           // 0x05. show search results
           if (isMatch) {
-            str += "<a href='" + data_url + "' class='list-group-item list-group-item-action font-weight-bolder search-list-title'>" + orig_data_title + "</a>";
+            str += '<a href="' + data_url + '" class="list-group-item list-group-item-action font-weight-bolder search-list-title">' + orig_data_title + '</a>';
             var content = orig_data_content;
             if (first_occur >= 0) {
               // cut out 100 characters
@@ -108,28 +109,87 @@ var searchFunc = function (path, search_id, content_id) {
 
               // highlight all keywords
               keywords.forEach(function (keyword) {
-                var regS = new RegExp(keyword, "gi");
-                match_content = match_content.replace(regS, "<span class='pink-text'>" + keyword + "</span>");
+                var regS = new RegExp(keyword, 'gi');
+                match_content = match_content.replace(regS, '<span class="pink-text">' + keyword + '</span>');
               });
 
-              str += "<p class='search-list-content'>" + match_content + "...</p>"
+              str += '<p class="search-list-content">' + match_content + '...</p>';
             }
           }
         });
+        var searchInput = $('#local-search-input');
         if (str.indexOf('list-group-item') === -1) {
-          return $('#local-search-input').addClass("invalid").removeClass("valid");
+          return searchInput.addClass('invalid').removeClass('valid');
         }
-        $('#local-search-input').addClass("valid").removeClass("invalid");
+        searchInput.addClass('valid').removeClass('invalid');
         $resultContent.innerHTML = str;
       });
-    }
+    },
   });
   $(document).on('click', '#local-search-close', function () {
-    $('#local-search-input').val('').removeClass("invalid").removeClass("valid");
+    $('#local-search-input').val('').removeClass('invalid').removeClass('valid');
     $('#local-search-result').html('');
   });
 };
 
 var getSearchFile = function (path) {
   searchFunc(path, 'local-search-input', 'local-search-result');
+};
+
+var ajax = function (options) {
+  // Data Processing
+  options = options || {};
+  options.data = options.data || {};
+  options.type = options.type || 'get';
+  options.dataType = options.dataType || 'text'; // parsing data
+
+  var arr = [];
+  for (const name in options.data) {
+    arr.push(`${ name }=${ encodeURIComponent(options.data[name]) }`);
+  }
+  var dataStr = arr.join('&');
+
+  // incompatible IE6
+  var xhr = new XMLHttpRequest();
+
+  // Connection, true for asynchrony, false for synchronization; browsers will report errors to asynchronous XHR
+  if (options.type === 'get') {
+    var url = dataStr ? options.url + '?' + dataStr : options.url;
+    xhr.open('get', url, true);
+    xhr.send();
+  } else {
+    xhr.open('post', options.url, true);
+
+    // Send; send contains body, post needs to send Content-Type
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    xhr.send(dataStr);
+  }
+
+  // Receive; 4 represents the end.
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState === 4) {
+      if ((xhr.status >= 200 && xhr.status < 300) || xhr.status === 304) {
+        var result = xhr.responseText;
+        switch (options.dataType) {
+          case 'text':
+            break;
+          case 'json':
+            if (window.JSON && JSON.parse) {
+              result = JSON.parse(result);
+            } else {
+              result = eval('(' + result + ')');
+            }
+            break;
+          case 'xml':
+            result = xhr.responseXML;
+            break;
+          default:
+            break;
+        }
+        options.success && options.success(result);
+      } else {
+        options.error && options.error('error');
+      }
+    }
+  };
 };
