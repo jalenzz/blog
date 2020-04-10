@@ -1,24 +1,25 @@
-/* Custom styles */
 body 
-  overflow-x: hidden;
+  overflow-x hidden
 
 .slideshow
-  position: absolute; 
-  width: 100vw; 
-  height: 100vh; 
-  overflow: hidden;
+  position absolute
+  width 100vw
+  height 100vh
+  overflow hidden
 
   .slideshow-image
-    position: fixed; 
-    background-size: cover;
-    width: 100%; height: 100%; 
-    background: repeat 50% 50%; 
-    animation-name: kenburns;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-duration: 24s; opacity: 1;
-    transform: scale(1.2);
-    filter: brightness(70%)
+    position fixed
+    background-size cover
+    width 100%
+    height 100%
+    background repeat 50% 50%
+    animation-name kenburns
+    animation-timing-function linear
+    animation-iteration-count infinite
+    animation-duration 24s
+    opacity 1
+    transform scale(1.2)
+    filter brightness(70%)
 
     &:nth-child(1){-webkit-animation-name: kenburns-1; animation-name: kenburns-1; z-index: -2;}
     &:nth-child(2){-webkit-animation-name: kenburns-2; animation-name: kenburns-2; z-index: -3;}
@@ -30,7 +31,6 @@ body
 @keyframes kenburns-3{48.4375%{opacity: 1; -webkit-transform: scale(1.2); transform: scale(1.2);} 51.5625%{opacity: 1;} 73.4375%{opacity: 1;} 76.5625%{opacity: 0; -webkit-transform: scale(1); transform: scale(1);} 100%{opacity: 0; -webkit-transform: scale(1.2); transform: scale(1.2);}}
 @keyframes kenburns-4{73.4375%{opacity: 1; -webkit-transform: scale(1.2); transform: scale(1.2);} 76.5625%{opacity: 1;} 98.4375%{opacity: 1;} 100%{opacity: 0; -webkit-transform: scale(1); transform: scale(1);}}
 
-
 .tocbot-list a
 #toc, footer, footer a
   color #ffffff
@@ -39,31 +39,28 @@ footer a:hover
 .tocbot-active-link
   color #1abc9c !important
 
-
 .index-img img
-  transition: .4s;
+  transition .4s
 
 .index-card:hover .index-img img
   transform scale(1.02) translateZ(0)
-  box-shadow 0 5px 11px 0 rgba(0,0,0,0.38), 0 4px 15px 0 rgba(0,0,0,0.35);
-
+  box-shadow 0 5px 11px 0 rgba(0,0,0,0.38), 0 4px 15px 0 rgba(0,0,0,0.35)
 
 @media (min-width:768px) 
   .post-content 
     h1,h2,h3,h4
       &::before
-        visibility: visible
-        display: inline
+        visibility visible
+        display inline
 
     h1::before
-      content: "🌈"
+      content "🌈"
     h2::before
-      content: "🚀"
+      content "🚀"
     h3::before
-      content: "🔍"
+      content "🔍"
     h4::before
-      content: "☀️"
-
+      content "☀️"
 
 /*侧边滚动条*/
 ::-webkit-scrollbar-button
@@ -72,7 +69,7 @@ footer a:hover
 ::-webkit-scrollbar
   width 10px
   height 10px
-  background-color: #2f415452
+  background-color #2f415452
 
 ::-webkit-scrollbar-thumb
   border-radius 5px
@@ -80,8 +77,7 @@ footer a:hover
   background-image -webkit-linear-gradient(45deg,rgba(255,255,255,.2) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.2) 50%,rgba(255,255,255,.2) 75%,transparent 75%,transparent)
 
   &:hover
-    background-color #2f4154b8;
-
+    background-color #2f4154b8
 
 /* 按钮样式 */
 .BoxButton
@@ -91,7 +87,7 @@ footer a:hover
   width:-webkit-fit-content
   width:-moz-fit-content
   line-height 2
-  padding: 0 0.75rem;
+  padding 0 0.75rem
   margin-top 25px
   background #FF5E65 !important
   border-radius 0.25rem
@@ -99,11 +95,12 @@ footer a:hover
   color #fff !important
   transition background .75s ease
   overflow hidden
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+  -webkit-box-shadow 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12)
+  box-shadow 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12)
 
   &:hover
     background #332F63 !important
+    color #fff !important
 
     &::before
       transform translateX(250px) rotate(45deg)
@@ -150,9 +147,6 @@ footer a:hover
 
   a
     color #718096
-    
-    &:hover
-      color #0c7863 !important
 
   .markdown-body
     h1, h2, h3, h4, h5, h6, s, li  
@@ -172,12 +166,10 @@ footer a:hover
   .animated-icon span   /* 手机端 */
     background-color #a09c9c
 
-
   /* page-number */
   .pagination 
     .current, a:hover
-      background-color #6b6b6b73;
-
+      background-color #6b6b6b73
 
   /* 打字机 */
   #subtitle
@@ -185,14 +177,12 @@ footer a:hover
   .dark.typed-cursor--blink
     color #dfdfdf
 
-
   /* back to top */
   #scroll-top-button
     background-color #282c34
 
     i
-      color #a09c9c
-    
+      color #a09c9c 
 
   /* Toc */
   .tocbot-list a
@@ -202,12 +192,10 @@ footer a:hover
   footer a:hover
     color #1abc9c !important
 
-
   /* footer */
   footer, footer a
     color #a09c9c
-    
-
+ 
   /* 归档页 */
   .list-group-item
     color #a09c9c
@@ -216,11 +204,9 @@ footer a:hover
     &:hover
       background-color #46484d
 
-
   /* 标签页 */
   .tagcloud a:hover
     background-color #46484d
-
 
   /* 友链页 */
   .links
@@ -232,7 +218,6 @@ footer a:hover
       
     .link-title, .link-intro  
       color #a09c9c
-    
 
   /* note */
   .note-info
@@ -255,7 +240,6 @@ footer a:hover
     background-color #455a6f
     border-color #004188
 
-
   /* Valine */
   .valine
     *, .info .col, .vpage .more
@@ -269,33 +253,9 @@ footer a:hover
     input, textarea
       color #a09c9c !important
 
-
   /* echart */
   .markdown-body canvas
     background-color #282c34
-
-  /* Music */
-  #player-content
-    background-color #282c34
-    box-shadow: 0 30px 80px #6565658a;
-
-  .player-button
-    background-color #282c34
-
-    &:hover
-      background-color #46484D
-
-      i
-        color: #797e84;
-
-  #album-art
-    box-shadow 0 0 0 10px #D6DEE7
-
-    .active
-      box-shadow 0 0 0 4px #fff7f7, 0 30px 50px -15px #D6DEE7
-
-  #player-track
-    background-color: #1a1c23;
 
 
 @font-face
