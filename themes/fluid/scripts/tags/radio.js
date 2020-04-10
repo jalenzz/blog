@@ -9,7 +9,8 @@ function radio(args) {
   let inline = (args[3] || '').length > 0 && args[3].trim() === '1';
 
   return `${ !inline ? '<div>' : '' }
-            <input class="${color}" type="radio" ${ checked ? 'checked="checked"' : '' }>${ text }</input>
+            <input class="${color}" type="radio" ${ checked ? 'checked="checked"' : '' }></input>
+            ${ hexo.render.renderSync({ text: text, engine: 'markdown' }).split('\n').join('') }
           ${ !inline ? '</div>' : '' }`;
 }
 

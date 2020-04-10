@@ -13,17 +13,17 @@ layout: about
 ### 🌌 博客简介
 
 {% cb 全站 HTTPS, 2, blue, %}
-{% cb <a href="https://hexo.io/zh-cn">Hexo</a> 框架 + <a href="https://github.com/fluid-dev/hexo-theme-fluid" rel="noopener external nofollow noreferrer">Fluid</a> 主题, 2, blue %}
+{% cb [Hexo](https://hexo.io/zh-cn) 框架 + [Fluid](https://github.com/fluid-dev/hexo-theme-fluid) 主题, 2, blue %}
 {% cb 博客中的部分图片源于网络，侵删, 2, blue %}
-{% cb 本博客文章均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener external nofollow noreferrer">CC BY-NC-SA 4.0 协议</a>，转载请注明出处！, 2, blue %}
+{% cb 本博客文章采用 [CC BY-NC-SA 4.0 协议](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)，转载请注明出处, 2, blue %}
 
 ### ☀️ 博客历史
 
-{% cb 2020.02.27 从 NexT 搬迁到 Fluid, 1, orange %}
+{% cb 2020.02.27 从 NexT 搬迁至 Fluid, 1, orange %}
 {% cb 2020.03.05 搬迁全部完成, 1, orange %}
-{% cb 2020.03.16 新增相册功能, 1, orange %}
+{% cb 2020.03.16 新增相册, 1, orange %}
 {% cb 2020.03.24 使用增强版 Valine-Admin, 1, orange %}
-{% cb 2020.03.26 新增夜间模式, 1, orange %}
+{% cb 2020.03.26 新增暗黑模式, 1, orange %}
 
 {% echarts %}
 {
