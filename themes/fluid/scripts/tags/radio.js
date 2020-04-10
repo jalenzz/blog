@@ -1,0 +1,17 @@
+'use strict';
+
+function radio(args) {
+  args = args[0] === ',' ? args.slice(1) : args;
+  args = args.join(' ').split(',');
+  let text = args[0] || '';
+  let checked = (args[1] || '').length > 0 && args[1].trim() !== 'false';
+  let color = args[2] || '';
+  let inline = (args[3] || '').length > 0 && args[3].trim() !== 'false';
+
+  return `${ !inline ? '<div>' : '' }
+            <input class="${color}" type="radio" ${ checked ? 'checked="checked"' : '' }>${ text }</input>
+          ${ !inline ? '</div>' : '' }`;
+}
+
+// {% rd text, checked?, inline? %}
+hexo.extend.tag.register('rd', radio, { ends: false });
