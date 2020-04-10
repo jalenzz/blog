@@ -1,6 +1,5 @@
 title: MD 风
 ---
-<div id="dowebok"></div> 
 <div class="note note-warning">本页面图片已压缩，点击图片可查看原图</div>
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/Royce2019/BlogSource/css/gallery.min.css">
 <ul class="grid9 effect-39" id="grid9">

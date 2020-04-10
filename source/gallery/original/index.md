@@ -1,6 +1,5 @@
 title: 练手合集
 ---
-<div id="dowebok"></div>
 <div class="note note-danger">本页面图片为自己制作，灵感或构图来源网络，转载请注明原作者！</div>
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/Royce2019/BlogSource/css/gallery.min.css">
 <ul class="grid9 effect-39" id="grid9">
