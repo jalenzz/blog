@@ -9,7 +9,7 @@ top: 10
 
 
 {% note info %}
-**2020.04.09 新增超好看的复选框** 
+**2020.04.10 新增超好看的复选框** 
 {% endnote %}
 <!--more-->
 
@@ -812,7 +812,15 @@ js 和 css，源自[链接](https://www.yanghuaxing.com/blog/547.html)
 
 
 ### 可交互复选框
-下方有 Demo
+
+已 PR 至主题，可前往主题更新并通过 Tag 标签使用
+但主题只内置了方形选框，下方新增
+
+{% rd 圆形选框,,green %}
+{% cb 可选颜色,1,red %}
+{% cb 横向 checked（不好解释，看这行做左边就知道了）, 2, orange,1 %}
+
+下方只介绍 HTML 用法
 
 自定义 CSS 中添加以下代码
 
@@ -981,8 +989,8 @@ $(".indeterminate").prop("indeterminate", true);
 <input type="checkbox">
 <input type="radio">
 ```
-<input type="checkbox"> 左边是 <code>type=checkbox</code>
-<input type="radio"> 左边是 <code>type=radio</code>
+{% cb  左边是 <code>type=checkbox</code>,, green%}
+{% rd  左边是 <code>type=radio</code>,, green%}
 
 默认绿色，设置颜色，只需要加上 class 就行。
 目前 class 有 `blue` `red` `orange`，可自行更改 CSS
@@ -994,17 +1002,18 @@ $(".indeterminate").prop("indeterminate", true);
 <input type="radio" chencked>
 ```
 
-<input class="blue" type="checkbox" checked> 左边是选中的 blue
-<input class="red" type="radio" checked> 左边是选中的 red
+{% cb 左边是选中的, 1, blue %}
+{% rd 左边是选中的, 1, red %}
 
 对于方形，还支持特殊的选中方式
 ```html
 <input type="checkbox" class="indeterminate red">
 ```
-<input type="checkbox" class="indeterminate red">上面的代码是 red + 特殊选中方式
+{% cb 上面的代码是 red + 横向 checked, 2, red %}
 
 {% note primary %}
-特殊选中方式对圆形无效且不可通过点击显示，只能代码中设置
+横向 checked对圆形无效，且不可通过点击显示，只能代码中设置
+圆形选框选中后只能通过刷新取消
 {% endnote %}
 
 ---

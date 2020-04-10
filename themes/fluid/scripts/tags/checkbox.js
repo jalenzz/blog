@@ -4,8 +4,8 @@ function checkbox(args) {
   args = args[0] === ',' ? args.slice(1) : args;
   args = args.join(' ').split(',');
   let text = args[0] || '';
-  let checked = args[1] === '1' && args[1].trim() !== 'false';
-  let special = args[1] === '2' && args[1].trim() !== 'false';
+  let checked = (args[1] || '').length  > 0 && args[1].trim() === '1';
+  let special = (args[1] || '').length  > 0 && args[1].trim() === '2';
   let color = args[2] || '';
   let inline = (args[3] || '').length > 0 && args[2].trim() !== 'false';
 
