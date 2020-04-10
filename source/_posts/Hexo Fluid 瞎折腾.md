@@ -818,7 +818,7 @@ js 和 css，源自[链接](https://www.yanghuaxing.com/blog/547.html)
 
 {% rd 圆形选框,,green %}
 {% cb 可选颜色,1,red %}
-{% cb 横向 checked（不好解释，看这行做左边就知道了）, 2, orange,1 %}
+{% cb 横向 *checked*（不好解释，看这行做左边就知道了）, 2, orange,1 %}
 
 下方只介绍 HTML 用法
 
@@ -989,8 +989,8 @@ $(".indeterminate").prop("indeterminate", true);
 <input type="checkbox">
 <input type="radio">
 ```
-{% cb  左边是 <code>type=checkbox</code>,, green%}
-{% rd  左边是 <code>type=radio</code>,, green%}
+{% cb  左边是 `type=checkbox</code>`,, green%}
+{% rd  左边是 `type=radio`,, green%}
 
 默认绿色，设置颜色，只需要加上 class 就行。
 目前 class 有 `blue` `red` `orange`，可自行更改 CSS

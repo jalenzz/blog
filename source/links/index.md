@@ -7,9 +7,9 @@ layout: links
 
 ### 🔗 申请要求
 
-{% cb 全站 HTTPS, 2,red %}
-{% cb 非资源站的原创类博客, 2,red %}
-{% cb 稳定访问，无繁杂广告推广, 2,red %}
+{% cb 全站 HTTPS, 2, red %}
+{% cb 非资源站的原创类博客, 2, red %}
+{% cb 稳定访问，无繁杂广告推广, 2, red %}
 
 ### 🔰 友链声明
 
@@ -29,6 +29,5 @@ layout: links
 {% endnote %}
 
 <center>
-	<a class="BoxButton" href="../messageboard" 
-       title="留言板" style="font-size: 1.25em;">申请友链</a>
+	<a class="BoxButton" href="../messageboard" title="留言板" style="font-size: 1.25em;">申请友链</a>
 </center>
