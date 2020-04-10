@@ -10,7 +10,8 @@ function checkbox(args) {
   let inline = (args[3] || '').length > 0 && args[2].trim() !== 'false';
 
   return `${ !inline ? '<div>' : '' }
-            <input class="${color} ${special ? 'indeterminate' : ''}" type="checkbox" ${ checked ? 'checked="checked"' : '' }>${ text }</input>
+            <input class="${color} ${special ? 'indeterminate' : ''}" type="checkbox" ${ checked ? 'checked="checked"' : '' }></input>
+            ${ hexo.render.renderSync({ text: text, engine: 'markdown' }).split('\n').join('') }
           ${ !inline ? '</div>' : '' }`;
 }
 

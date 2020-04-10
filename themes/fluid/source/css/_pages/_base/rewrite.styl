@@ -218,7 +218,8 @@
   line-height 1
 
 // Rewrite checkbox
-input
+input[type=checkbox]
+input[type=radio]
   -webkit-appearance none
   -moz-appearance none
   position relative
@@ -234,6 +235,9 @@ input
   outline 0
   border-radius .1875rem
   border 2px solid #2f4154
+
+  & + p
+    display inline-block !important
 
 input[type=checkbox]
   vertical-align -.65rem
