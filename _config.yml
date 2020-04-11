@@ -5,8 +5,8 @@
 # Site
 title: Royce
 subtitle: ''
-description: ''
-keywords: 
+description: '小白 | OIer | 科技生活 | 高中生'
+keywords: Royce
 author: Royce
 language: zh-CN
 timezone: ''
@@ -56,13 +56,6 @@ highlight:
   wrap: true
   hljs: false
 
-# hexo-tag-cloud 标签云
-tag_cloud:
-	textFont: Trebuchet MS, Helvetica
-  textColor: '#337ab7'
-  textHeight: 25
-  outlineColor: '#E2E1D1'
-  maxSpeed: 0.1
 
 baidu_url_submit:
   count: 100 # 提交最新的一个链接
