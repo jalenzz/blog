@@ -2,7 +2,6 @@
 title: 解决 Edge Flash 插件不可用的问题
 date: 2020-04-02 12:16:49
 tags: [教程]
-index_img: https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/posts/index_img/03.webp
 abbrlink: 34979
 ---
 
