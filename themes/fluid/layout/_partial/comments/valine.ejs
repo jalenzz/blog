@@ -1,6 +1,5 @@
 <% if(theme.valine.appid && theme.valine.appkey){ %>
-  <div id="vcomments"></div>
-  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <%- js('//cdn1.lncld.net/static/js/3.0.4/av-min.js', 'defer') %>
   <%- js_ex(theme.static_prefix.valine, 'Valine.min.js', 'defer') %>
 
   <script type="text/javascript">
@@ -10,14 +9,24 @@
 
       new Valine({
         lang: 'zh-cn',
-        admin_email: '1098870059@qq.com',
         el: '#comments' ,
         app_id: '<%= theme.valine.appid %>',
         app_key: '<%= theme.valine.appkey %>',
+        admin_email: '<%= theme.valine.admin_email %>',
+        placeholder: '<%= theme.valine.placeholder %>',
         emoticon_url: 'https://cdn.jsdelivr.net/gh/royce2019/BlogSource/comment',
         emoticon_list: ["动耳朵.webp","抖脚脚.webp","抖眼.webp","抖眼镜.webp","风吹秀发.webp","慌张.webp","夹住.webp","开车.webp","哭唧唧.webp","绿色的.webp","跳舞.webp","跳着走.webp","小花花.webp","眼睛转.webp","摇头.webp","眨眼.webp","吃东西.webp","弹肚皮.webp","动次打次.webp ","比心心.webp","吹风.webp","打篮球.webp","都是小心心.webp","吐.webp","喷血.webp","狂汗.webp","不说话.webp","汗.webp","坐等.webp","献花.webp","不高兴.webp","中刀.webp","害羞.webp","皱眉.webp","小眼睛.webp","中指.webp","尴尬.webp","瞅你.webp","想一想.webp","中枪.webp","得意.webp","肿包.webp","扇耳光.webp","亲亲.webp","惊喜.webp","脸红.webp","无所谓.webp","便便.webp","愤怒.webp","蜡烛.webp","献黄瓜.webp","内伤.webp","投降.webp","观察.webp","看不见.webp","击掌.webp","抠鼻.webp","邪恶.webp","看热闹.webp","口水.webp","抽烟.webp","锁眉.webp","装大款.webp","吐舌.webp","无奈.webp","长草.webp","赞一个.webp","呲牙.webp","无语.webp","阴暗.webp","不出所料.webp","咽气.webp","期待.webp","高兴.webp","吐血倒地.webp","哭泣.webp","欢呼.webp","黑线.webp","喜极而泣.webp","喷水.webp","深思.webp","鼓掌.webp","暗地观察.webp"],
-        placeholder: '<%= theme.valine.placeholder %>',
       });
     };
+  </script>
+  <script>
+    if(window.location.hash){
+        var checkExist = setInterval(function() {
+           if ($(window.location.hash).length) {
+              $('html, body').animate({scrollTop: $(window.location.hash).offset().top-90}, 1000);
+              clearInterval(checkExist);
+           }
+        }, 100);
+    }
   </script>
 <% } %>
