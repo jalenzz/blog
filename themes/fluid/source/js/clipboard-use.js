@@ -5,7 +5,7 @@
       copyHtml += '<i class="iconfont icon-copy"></i><span>Copy</span>';
       copyHtml += '</button>';
       $('.markdown-body pre').each(function () {
-        const pre = $(this);
+        var pre = $(this);
         if (pre.find('code.mermaid').length > 0) {
           return;
         }
