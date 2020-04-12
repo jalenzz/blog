@@ -100,14 +100,14 @@ Hexo-Bolg
 |---- source
     |---- _post
 |---- themes
-|---- _config.yml
+|---- _config.yaml
 ```
 1. `node_modules` 是 `node.js` 各种库的目录，
 2. `public` 是生成的网页文件目录（一开始可能没有）
 3. `scaffolds` 里面就三个文件，存储着新文章和新页面的初始设置
 4. `source` 是我们最常用到的一个目录，里面存放着文章、各类页面、图像等文件
 5. `themes` 存放着主题文件
-6. `_config.yml` 站点配置文件
+6. `_config.yaml` 站点配置文件
 
 ## 本地预览
 按顺序输入以下命令：
@@ -171,13 +171,13 @@ hexo deploy
 
 对博客修改之后只有进行了部署才会发布到网上
 
-## 完善配置文件 `_config.yml`
+## 完善配置文件 `_config.yaml`
 只提供主要配置的中文
 按 `Ctrl+F` 可进行搜索
 (#后为注释)
 
 首先修改网站基本信息
-```yml
+```yaml
 # Site
 title:          # 网站标题
 subtitle: ''
@@ -188,22 +188,22 @@ language: zh-CN # 语言
 timezone: ''
 ```
 将链接改为你博客域名（yourname.github.io）
-```yml
+```yaml
 url: http://yoursite.com
 ```
 你博客文章的地址，默认为 yourname.github.io/year/mouth/day/title
 ，可自行修改  
 例如你的一篇文章叫 post，如果按照默认设置则文章地址是 xxxxxxx/2020/02/10/post  
 如果是我图片上的设置则地址是 xxxxxxx/2020/post
-```yml
+```yaml
 permalink: :year/:month/:day/:title/
 ```
 每页的文章数量
-```yml
+```yaml
 per_page: 10
 ```
 你选择的主题，默认即为`landscape`，接下来会介绍
-```yml
+```yaml
 theme: landscape
 ```
 
@@ -247,7 +247,7 @@ title 标题，date 建立日期，updated 更新日期，tags 标签，categori
 git clone https://github.com/theme-next/hexo-theme-next themes/next
 ```
 此时 `/themes` 下多了一个 `next` 文件夹，该文件夹内存放该主题文件
-你会发现文件夹中也有一个 `_config.yml` ，我们称之为 `主题配置文件` 。另一个是 `站点配置文件` 。这个 `主题配置文件` 以后再讲  
+你会发现文件夹中也有一个 `_config.yaml` ，我们称之为 `主题配置文件` 。另一个是 `站点配置文件` 。这个 `主题配置文件` 以后再讲  
 安装完成之后在 `站点配置文件` 中更改主题即可
 
 
