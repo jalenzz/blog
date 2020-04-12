@@ -87,14 +87,17 @@
     font-weight bold
 
   pre
-    padding 1.5rem 1rem
     position relative
+    overflow visible
 
-  code
-    font-size $code-font-size
+    & code
+      font-size $code-font-size
+      display block
+      overflow-x auto
+      padding .5rem 0
 
-    &.mermaid > svg
-      min-width 100%
+      &.mermaid > svg
+        min-width 100%
 
   p > img, p > a > img
     max-width 90%
@@ -102,6 +105,23 @@
     display block
     box-shadow $img-shadow
 
+
+// Rewrite highlight
+
+.markdown-body .highlight code
+  overflow auto
+  font-size $code-font-size
+  line-height 1.5
+  border-radius 3px
+  tab-size 4
+
+div.hljs
+  overflow-x unset
+  padding 0
+  border-radius 3px
+
+pre.hljs
+  background-color transparent
 
 // Rewrite mdb.css
 

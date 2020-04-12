@@ -105,9 +105,9 @@ block container
 
 现在 hexo-tag-cloud 插件支持自定义啦。非常简单的步骤就可以改变你的标签云的字体和颜色，还有突出高亮。
 
-- 在你的博客根目录，找到 `_config.yml` 文件然后添加如下的配置项:
+- 在你的博客根目录，找到 `_config.yaml` 文件然后添加如下的配置项:
 
-```yml
+```yaml
 # hexo-tag-cloud
 tag_cloud:
     textFont: Trebuchet MS, Helvetica
