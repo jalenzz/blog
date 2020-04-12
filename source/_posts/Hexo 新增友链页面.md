@@ -224,7 +224,7 @@ type: links
 # 配置`_config`文件
 ## 增加友链
 最后，添加友链的话，需要在`主题配置文件`文件末尾添加：
-```yml
+```yaml
 defaultlinks: # 跟着身边的大佬走，努力成为小大佬
   - nickname: Neworld2002     # 昵称
     site: https://neworld2002.github.io/ # 友链地址
