@@ -107,9 +107,9 @@ navbar:
     - { key: 'tag', link: '/tags/', icon: 'iconfont icon-tags-fill' }
     - { key: 'links', link: '/links/', icon: 'iconfont icon-link-fill' }
     - { key: 'gallery', link: '/gallery/', icon: 'iconfont icon-xiangce1' }
-    - { key: 'messageboard', link: '/messageboard/', icon: 'iconfont icon-jurassic_message1' }
+    - { key: 'messageboard', link: '/messageboard/', icon: 'iconfont icon-liuyan' }
     - { key: 'about', link: '/about/', icon: 'iconfont icon-user-fill' }
-    - { key: 'tools', link: '/tools/', icon: 'iconfont icon-gongnengdingyi' }
+    - { key: 'tools', link: '/tools/', icon: 'iconfont icon-gongneng' }
 
 search: # 搜索栏
   enable: true
