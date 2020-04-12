@@ -11,7 +11,7 @@ gulp.task('minify-css', function() {
 });
 // 压缩 public 目录 html
 gulp.task('minify-html', function() {
-  return gulp.src(['./public/**/*.html','!./public/posts/6f836d4e.html'])
+  return gulp.src('./public/**/*.html')
     .pipe(htmlclean())
     .pipe(htmlmin({collaspseWhiteSpace:true}))
     .pipe(htmlmin({
