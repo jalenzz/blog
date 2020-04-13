@@ -58,12 +58,9 @@ font:  # 主题字体配置
   font_family:                      # 全局字体
   code_font_size: 85%               # 代码的字号
 
-custom_js: js/custom.js # 指定自定义 js 文件路径，路径是相对 source 目录，如 /js/custom.js
+custom_js: /js/custom.js # 指定自定义 js 文件路径，路径是相对 source 目录，如 /js/custom.js
 custom_css: /css/custom.css # 指定自定义 css 文件路径，路径是相对 source 目录，如 /css/custom.css
 custom_html: ''  # 自定义底部 HTML 内容（位于 footer 上方），也可用于外部引入 js css 这些操作，注意不要和 post.custom 配置冲突
-
-baidupush:
-  enable: true
 
 web_analytics:  # 网页访问统计
   enable: true
@@ -79,7 +76,7 @@ web_analytics:  # 网页访问统计
 lazyload: # 对页面中的图片进行懒加载处理，可见范围外的图片不会加载
   enable: true
   onlypost: true  # 仅在文章页使用懒加载，开启后如果自定义页面需要使用，可以在 Front-matter 里指定 `lazyload: true`
-  image: //cdn.jsdelivr.net/gh/Royce2019/BlogSource/loading.webp
+  image: https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/loading.webp
 
 daovoice:  # 在线客服 Daovoice 参考：http://dashboard.daovoice.io
   enable: false # 是否开启在线客服聊天
@@ -100,7 +97,7 @@ aplayer:  # 音乐播放器，注意不能与 hexo-tag-aplayer 插件共用
 # Header
 #---------------------------
 navbar:
-  blog_title:  # 导航栏左侧的标题，为空则按 hexo config.title 显示
+  blog_title: Royce's world # 导航栏左侧的标题，为空则按 hexo config.title 显示
   menu:  # 可自行增减，key 用来关联 languages/*.yml，如不存在关联则显示 key 本身的值，增加 name 可以强制显示指定名称
     - { key: 'home', link: '/', icon: 'iconfont icon-home-fill' }
     - { key: 'archive', link: '/archives/', icon: 'iconfont icon-archive-fill' }
@@ -123,7 +120,7 @@ scroll_down_arrow:  # 向下滚动的箭头
   banner_height_limit: 90  # 头图高度不小于指定比例，才显示箭头
   scroll_after_turning_page: true  # 翻页后自动滚动
 
-banner_parallax: true # 头图滚动视差
+banner_parallax: false # 头图滚动视差
 
 
 #---------------------------
@@ -132,7 +129,7 @@ banner_parallax: true # 头图滚动视差
 #---------------------------
 footer:
   statistics:  # 统计网站 PV、UV，使用的是不蒜子，显示在页脚
-    enable: true
+    enable: false
     pv_format: "{}&nbsp;次回眸"  # 显示的文本，{}是数字的占位符（必须包含)，下同
     uv_format: "遇见了&nbsp;{}&nbsp;个小伙伴"
 
@@ -161,7 +158,7 @@ index:
     format: webp # 图片格式，保证文件夹中图片格式一致
   slogan:  # 首页副标题的独立设置
     enable: true  # 为 false 则不显示任何内容
-    text: 今日任务：早起（0/1） # 为空则按 hexo config.subtitle 显示
+    text: 今日任务：早起(0/1) # 为空则按 hexo config.subtitle 显示
   auto_excerpt:
     enable: true
   post_url_target: _self  # available: _blank | _self
@@ -174,7 +171,7 @@ index:
 # Custom Page
 page:
   banner_img: 
-  banner_img_height: 70  # available: 0 - 100
+  banner_img_height: 80  # available: 0 - 100
   banner_mask_alpha: 0  # available: 0 - 1.0
 
 #---------------------------
@@ -183,7 +180,7 @@ page:
 #---------------------------
 post:  # 部分配置同时控制自定义页面，注意备注
   banner_img: 
-  banner_img_height: 70  # available: 0 - 100
+  banner_img_height: 80  # available: 0 - 100
   banner_mask_alpha: 0  # available: 0 - 1.0
   meta:  # 文章标题下方的信息
     date:  # 文章日期
@@ -197,7 +194,7 @@ post:  # 部分配置同时控制自定义页面，注意备注
       format: "{} 分钟"
       words: 100  # 每分钟阅读多少字，如果是技术文章，建议降低
     views:  # 阅读次数，统计基于不蒜子
-      enable: true
+      enable: false
       format: "{} 次"
   updated:
     enable: true

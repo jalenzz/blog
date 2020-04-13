@@ -8,8 +8,12 @@ top: 10
 ---
 
 
+{% note primary %}
+**2020.04.10 新增超好看的复选框**  
+{% endnote %}
+
 {% note info %}
-**2020.04.10 新增超好看的复选框** 
+**2020.04.13 更新动态背景代码** 
 {% endnote %}
 <!--more-->
 
@@ -18,6 +22,7 @@ top: 10
 {% endnote %}
 
 ### 前言
+
 好像还没有看到大佬写关于 Fluid 折腾的文章，就开了这个坑
 文章放了源码进来，所以挺长的，大部分是改 CSS，JS 很少
 首先，按照 Fluid 配置文件中的方法，新建自定义 CSS 和 JS
@@ -34,14 +39,15 @@ custom_html: ''  # 自定义底部 HTML 内容（位于 footer 上方），也�
 ```
 
 ### 动态背景
+
 主题本身采用的是头图滚动视差，非常 nice，但我可能更喜欢花里胡哨吧
 现在自定义 CSS 中加入如下代码
+
 ```stylus
 .slideshow
-  position: absolute; 
+  position: fixed; 
   width: 100vw; 
   height: 100vh; 
-  overflow: hidden;
 
   .slideshow-image
     position: fixed; 
@@ -53,7 +59,7 @@ custom_html: ''  # 自定义底部 HTML 内容（位于 footer 上方），也�
     animation-iteration-count: infinite;
     animation-duration: 24s; opacity: 1;
     transform: scale(1.2);
-    filter: brightness(70%)
+    filter: brightness(70%) //背景遮罩，100% 正常，0% 完全黑色
 
     &:nth-child(1){-webkit-animation-name: kenburns-1; animation-name: kenburns-1; z-index: -2;}
     &:nth-child(2){-webkit-animation-name: kenburns-2; animation-name: kenburns-2; z-index: -3;}
@@ -65,11 +71,11 @@ custom_html: ''  # 自定义底部 HTML 内容（位于 footer 上方），也�
 @keyframes kenburns-3{48.4375%{opacity: 1; -webkit-transform: scale(1.2); transform: scale(1.2);} 51.5625%{opacity: 1;} 73.4375%{opacity: 1;} 76.5625%{opacity: 0; -webkit-transform: scale(1); transform: scale(1);} 100%{opacity: 0; -webkit-transform: scale(1.2); transform: scale(1.2);}}
 @keyframes kenburns-4{73.4375%{opacity: 1; -webkit-transform: scale(1.2); transform: scale(1.2);} 76.5625%{opacity: 1;} 98.4375%{opacity: 1;} 100%{opacity: 0; -webkit-transform: scale(1); transform: scale(1);}}
 
-.view .mask
-  background-color: rgba(0,0,0,0);
 ```
+
 接着在 `themes\fluid\layout\layout.ejs` 中 `<body>` 后加入如下代码
 `background-image: url` 中填入图片链接
+
 ```html
 <div class="slideshow">
     <div class="slideshow-image" style="background-image: url('1')"></div>
@@ -81,6 +87,7 @@ custom_html: ''  # 自定义底部 HTML 内容（位于 footer 上方），也�
 
 然后取消原本头图的获取
 用最简单的方法，直接删去获取头图的代码，保留标签(代码前面的减号是吧这行删掉的意思，加号同理)
+
 ```diff
   <header style="height: <%- banner_img_height %>vh;">
     <%- partial('_partial/nav') %> 
@@ -92,6 +99,12 @@ custom_html: ''  # 自定义底部 HTML 内容（位于 footer 上方），也�
         <div class="mask flex-center">
 ```
 
+将主题配置中{% label danger~所有 %}头图的黑色蒙版设为 0
+
+```yaml
+banner_mask_alpha: 0  # 头图黑色蒙版的透明度，available: 0 - 1.0， 0 是完全透明（无蒙版），1 是完全不透明
+```
+
 如果出现背景跟随滚动，请在配置文件中关闭头图滚动视差
 ```yaml
 banner_parallax: false # 头图滚动视差
@@ -100,11 +113,7 @@ banner_parallax: false # 头图滚动视差
 害，原来自己写的方法在第一张图片加载的时候 100% 闪烁，找不到解决办法
 上面的动画代码是从网上 [链接](https://www.51qianduan.com/article/3115.html) 找来的，稍作修改，适配了下主题，但是这方法也有我没解决的问题
 因为是依赖 `z-index` 实现的切换，所以如果当前图片未加载出来会直接显示下一张，不过这个问题不大
-还有就是出现了 x 轴滚动条，搞了好久一直弄不好最终无奈只好直接暴力隐藏，将下方代码添加在自定义 CSS 中
-```stylus
-body 
-  overflow-x: hidden;
-```
+
 图片尽量小一点，推荐用 webp 格式，同质量的图片体积小很多
 可以试试又拍云的转换工具 [地址](https://www.upyun.com/webp)
 效果非常明显，我原来的 4 张图加起来 1.6 MB（已经压缩过的了），现在转成 webp 之后 0.4 MB
@@ -112,6 +121,7 @@ body
 
 
 ### 侧边滚动条
+
 ```stylus
 ::-webkit-scrollbar-button
   display none
@@ -129,7 +139,9 @@ body
   &:hover
     background-color #2f4154b8;
 ```
-<p class="note note-info">会同时对所有滚动条生效，包括代码块的横向滚动条</p>
+{% note info %}
+会同时对所有滚动条生效，包括代码块的横向滚动条
+{% endnote %}
 
 
 ### 返回顶部按钮
@@ -151,6 +163,7 @@ body
 
 
 ### 标题前 Emoji
+
 ```stylus
 /* 想在手机端也显示，去除最外层的 @media，并更改缩进 */
 @media (min-width:768px) 
