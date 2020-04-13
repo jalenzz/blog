@@ -1,7 +1,7 @@
 'use strict';
 
 const postLabel = (args) => {
-  args = args.join(' ').split('@');
+  args = args.join(' ').split('~');
   const classes = args[0] || 'default';
   const text = args[1] || '';
 

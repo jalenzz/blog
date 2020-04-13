@@ -30,7 +30,9 @@ iOS、MacOS 上的 Safari 也支持
 <div id="dark" onclick="switchDarkMode()"></div>
 <script src="你的 js 路径"></script>
 ```
-<p class="note note-danger">注意！一定紧跟在 body 标签之后，否则会出现闪烁</p>
+{% note danger %}
+注意！一定紧跟在 body 标签之后，否则会出现闪烁
+{% endnote %}
 
 
 
@@ -51,31 +53,40 @@ iOS、MacOS 上的 Safari 也支持
     } else if ( LocalStorage.getItem('dark') === '1') {
       document.body.classList.add('dark');
     }
-  //点击事件
-  function switchDarkMode() {
-    var isDark = $('body').hasClass('dark');
-    if (isDark) {
-      if(isNight) document.body.classList.add('noDark');
-      LocalStorage.setItem('noDark', '1');
-      $("#dark").html("🌞");
-      document.body.classList.remove('dark');
-      LocalStorage.setItem('dark', '0');
-    } else {
-      $("#dark").html("🌙"); 
-      document.body.classList.add('dark');
-      LocalStorage.setItem('dark', '1');
-      LocalStorage.setItem('noDark', '0');
-    }
-  }
 </script>
+```
+
+然后随便找个 JS 把下面代码加进去，直接加到 HTML 里面也行
+
+```js
+//点击事件
+function switchDarkMode() {
+  var isDark = $('body').hasClass('dark');
+  if (isDark) {
+    if(isNight) document.body.classList.add('noDark');
+    LocalStorage.setItem('noDark', '1');
+    $("#dark").html("🌞");
+    document.body.classList.remove('dark');
+    LocalStorage.setItem('dark', '0');
+  } else {
+    $("#dark").html("🌙"); 
+    document.body.classList.add('dark');
+    LocalStorage.setItem('dark', '1');
+    LocalStorage.setItem('noDark', '0');
+  }
+}
 ```
 
 ### CSS
 
 在自定义 CSS 中加入代码
-<p class="note note-primary">可以用 stylus，能少些写。但是引入时记得后缀还是 .css 不要变</p>
+{% note primary %}
+可以用 `stylus`，能少些写
+但是引入时记得后缀还是 `.css` 不要变
+{% endnote %}
 
 下面是我的样式代码，基本覆盖所有内容，根据自身情况修改
+
 ```stylus
 /* 切换按钮 */
 #dark
@@ -202,25 +213,26 @@ iOS、MacOS 上的 Safari 也支持
 ```
 
 ### localStorage 还是 sessionStorage
-仔细观察刚刚的 js 代码，在其中用的是 sessionStorage
-除了 sessionStorage，你还可以用 localStorage
+仔细观察刚刚的 js 代码，在其中用的是 LocalStorage
+除了 localStorage，你还可以用 sessionStorage
 两者的区别也非常简单
 
->localStorage：除非被手动清除，否则将会永久保存。
-sessionStorage： 仅在当前网页会话下有效，关闭页面或浏览器后就会被清除。
+> localStorage：除非被手动清除，否则将会永久保存。
+> sessionStorage： 仅在当前网页会话下有效，关闭页面或浏览器后就会被清除。
 
 举个简单例子，如果现在是白天（即没有触发夜间自动开启暗黑模式）
 你手动点击切换成了暗黑模式，当你关闭当前网页再次进入时
 如果你用的是 localStorage，那么此时就还是暗黑模式
 而如果你用的是 sessionStorage，此时就不是暗黑模式了
 
-上面的代码用的时 sessionStorage
-如何换成 localStorage 呢？
-只需要将所有的 sessionStorage 替换成 localStorage 就可以了
+换成 sessionStorage
+只需要将所有的 localStorage 替换成 sessionStorage 就可以了
 两者的使用方法相同
 <br>
-感谢 [@track13](https://crosschannel.cc) 建议
-<p class="note note-info"> sessionStorage 在手机浏览器上问题很多，不推荐使用。</p>
+感谢 {% label success~ <a href="https://crosschannel.cc">@track13</a> %} 建议
+{% note info %}
+sessionStorage 在手机浏览器上问题很多，不推荐使用
+{% endnote %}
 
 下面是支持该特性的最低版本
 ![](https://royce-img.oss-cn-beijing.aliyuncs.com/41212/01.webp)
