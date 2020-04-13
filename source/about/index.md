@@ -17,7 +17,7 @@ layout: about
 {% cb 博客中的部分图片源于网络，侵删, 2, blue %}
 {% cb 本博客文章采用 [CC BY-NC-SA 4.0 协议](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)，转载请注明出处, 2, blue %}
 
-### ☀️ 博客历史
+### ⛅️ 博客历史
 
 {% cb 2020.02.27 从 NexT 搬迁至 Fluid, 1, orange %}
 {% cb 2020.03.05 搬迁全部完成, 1, orange %}
