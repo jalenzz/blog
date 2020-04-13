@@ -1,6 +1,6 @@
 $(".indeterminate").prop("indeterminate", true);
 if ((sessionStorage.getItem('confirm') !== '1') && (issafariBrowser = /Safari/.test(navigator.userAgent)) && (!/Chrome/.test(navigator.userAgent))) {
-    confirm('抱歉，本博客大部分图片在苹果设备上无法显示');
+    confirm('抱歉，本博客在苹果设备上会产生严重卡顿，且大部分图片无法显示');
     sessionStorage.setItem('confirm', '1');
 }
 
