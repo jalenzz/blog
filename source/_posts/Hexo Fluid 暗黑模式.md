@@ -47,7 +47,7 @@ iOS、MacOS 上的 Safari 也支持
 
 ### JS
 
-然后随便找个 JS 把下面代码加进去，直接加到 HTML 里面也行
+然后随便找个 JS 把下面代码加进去，直接加到 `</body>` 之前也行
 
 ```js
 //点击事件
@@ -86,7 +86,7 @@ function switchDarkMode() {
   bottom 98px
   width 16px
   height 14px
-  z-index 1050
+  z-index 100
   font-size 20px
 
 /*暗黑模式*/
@@ -225,10 +225,10 @@ sessionStorage 在手机浏览器上问题很多，不推荐使用
 {% endnote %}
 
 下面是支持该特性的最低版本
-![](https://royce-img.oss-cn-beijing.aliyuncs.com/41212/01.webp)
+![](https://cos.royce2003.top/41212/01.webp)
 
 可以在浏览器控制台中查看他们的值
-![](https://royce-img.oss-cn-beijing.aliyuncs.com/41212/02.webp)
+![](https://cos.royce2003.top/41212/02.webp)
 
 ---
 **参考 [文章链接](https://crosschannel.cc/daily/hexo%E6%B7%BB%E5%8A%A0%E6%9A%97%E8%89%B2%E6%A8%A1%E5%BC%8F.html)**
