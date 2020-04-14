@@ -99,7 +99,7 @@ aplayer:  # 音乐播放器，注意不能与 hexo-tag-aplayer 插件共用
 navbar:
   blog_title: Royce's world # 导航栏左侧的标题，为空则按 hexo config.title 显示
   menu:  # 可自行增减，key 用来关联 languages/*.yml，如不存在关联则显示 key 本身的值，增加 name 可以强制显示指定名称
-    - { key: 'home', link: '/', icon: 'iconfont icon-home-fill' }
+    - { key: 'home', link: 'https://www.royce2003.top', icon: 'iconfont icon-home-fill' }
     - { key: 'archive', link: '/archives/', icon: 'iconfont icon-archive-fill' }
     - { key: 'tag', link: '/tags/', icon: 'iconfont icon-tags-fill' }
     - { key: 'links', link: '/links/', icon: 'iconfont icon-link-fill' }
@@ -399,7 +399,6 @@ links:
     - { title: 'Neworld200', intro: 'OI大佬', link: 'neworld2002.github.io', image: 'neworld2002' }
     - { title: 'newsheep', intro: '社长大大', link: 'newsheep2003.github.io', image: 'newsheep' }
   friendslinks:
-    - { title: '辉少菌', intro: '一个爱搞技术的高一党', link: 'huishao.top', image: '辉少菌' }
     - { title: 'Atuo', intro: '网络安全',  link: 'blog.atuo.store', image: 'Atuo' }
     - { title: '维他入我心', intro: '科技/生活日常～', link: 'wtrwx.top', image: '维他入我心' }
     - { title: 'Linhk1606', intro: '...', link: 'linhk1606.github.io', image: 'Linhk1606' }
@@ -417,6 +416,7 @@ links:
     - { title: 'yuzh', intro: '永不停歇--Never Settle', link: 'yyuzh.xyz', image: 'yuzh' }
     - { title: 'Bert', intro: '面朝大海，春暖花开', link: 'ixfish.cn', image: 'bert' }
     - { title: 'Guan FuQing', intro: 'Error:No object found!', link: 'yiki.tech', image: 'GuanFuQing' }
+    - { title: '辉少菌', intro: '一个爱搞技术的高一党', link: 'huishao.top', image: '辉少菌' }
     - { title: 'TanHua', intro: 'IoT在校生', link: 'tutouyuan.top', image: 'TanHua' }
     - { title: '破旧的手枪', intro: '只争朝夕 不负韶华', link: 'pistol.city', image: '破旧的手枪' }
     - { title: '星下小屋', intro: '学习记录笔记本', link: 'skyhouse.xyz', image: '星下小屋' }
@@ -438,6 +438,7 @@ links:
     - { title: '故北', intro: '还记得我吗？', link: 'gubei.ucu520.top', image: '故北'}
     - { title: 'Vince', intro: '努力学习技术的Vince', link: 'i.vince.pub', image: 'vince'}
     - { title: '飞雨晴忘乡', intro: '享建站之香，解发少之苦', link: 'www.52efi.cn', image: '飞雨晴忘乡'}
+    - { title: 'ConstOwn', intro: '能和你一起成长，我荣幸之至', link: 'blog.juanertu.com', image: 'ConstOwn'}
 
 #---------------------------
 # 工具页
