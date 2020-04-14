@@ -41,7 +41,7 @@ custom_html: ''  # 自定义底部 HTML 内容（位于 footer 上方），也�
 ### 动态背景
 
 主题本身采用的是头图滚动视差，非常 nice，但我可能更喜欢花里胡哨吧
-现在自定义 CSS 中加入如下代码
+自定义 CSS 中加入如下代码
 
 ```stylus
 .slideshow
@@ -275,19 +275,22 @@ footer a:hover
 ```
 
 然后在你想显示的地方插入如下 HTML
-```html
-<a class="link link--kukuri" href="test.test" data-letters="test">test</a>
-```
 {% note primary %}
 data-letters 中需要和内容保持一致  
 不用 a 标签也可以，保证类名正确
 {% endnote %}
+
+```html
+<a class="link link--kukuri" href="test.test" data-letters="test">test</a>
+```
+
 
 
 
 ### 留言板
 在 `themes\hexo-theme-fluid-master\layout\` 中新建 `messageboard.ejs` 文件
 先写上头图之类的设定
+
 ```ejs
 <%
 page.layout = "messageboard"
@@ -299,6 +302,7 @@ page.banner_img_height = theme.messageboard.banner_img_height
 ```
 
 然后在配置文件中加入相应内容，当然，你也可以直接在上面的代码中指定
+
 ```yaml
 #---------------------------
 # 留言板页
@@ -829,12 +833,11 @@ js 和 css，源自[链接](https://www.yanghuaxing.com/blog/547.html)
 已 PR 至主题，可前往主题更新并通过 Tag 标签使用
 但主题只内置了方形选框，下方新增
 
-{% rd 圆形选框,,green %}
-{% cb 可选颜色,1,red %}
-{% cb 横向 *checked*（不好解释，看这行做左边就知道了）, 2, orange,1 %}
+<div><input class=" green" type="radio"><p>圆形选框</p></div>
+<div><input class=" red " type="checkbox" checked="checked"><p>可选颜色</p></div>
+<div><input class=" orange indeterminate" type="checkbox"><p>横向 checked</p></div>
 
 下方只介绍 HTML 用法
-
 自定义 CSS 中添加以下代码
 
 ```stylus

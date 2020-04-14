@@ -1,12 +1,12 @@
 @font-face
   font-family "Cascadia";
-  src url('//cdn.jsdelivr.net/gh/Royce2019/BlogSource/fonts/Cascadia.ttf');
+  src url('https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/fonts/Cascadia.ttf');
 
 *
-  font-family: 'Cascadia', 'Noto Serif SC', serif;
+  font-family: 'Cascadia', 'Noto Serif SC', serif !important
 
 code
-  font-size .75rem !important
+  font-size 90% !important
 
 .markdown-body
   color #333 !important
@@ -60,18 +60,14 @@ footer a:hover
 .index-card:hover .index-img img
   box-shadow 0 5px 11px 0 rgba(0,0,0,0.38), 0 4px 15px 0 rgba(0,0,0,0.35)
 
-#timeDate 
-  display inline-block
-  line-height 36px
+#gradient
   color #f35626
   background-image linear-gradient(92deg,#f35626 0,#feab3a 100%)
   -webkit-background-clip text
   background-clip text
   -webkit-text-fill-color transparent
-  animation hue 2s infinite linear
-  font-size 26px
-  vertical-align -1px
-  font-weight 700
+  text-fill-color transparent
+  font-weight 800
 
 @media (min-width:768px) 
   .post-content 
