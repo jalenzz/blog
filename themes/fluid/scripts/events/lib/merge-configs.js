@@ -21,11 +21,6 @@ module.exports = (hexo) => {
     }
   }
 
-  // Force disable hexo highlight
-  if (hexo.theme.config.highlight.enable) {
-    hexo.config.highlight.enable = false;
-  }
-
   // Merge configs in /source/_data/fluid_static_prefix.yml into hexo.theme.config.
   const configPath = path.join(__dirname, '../../../_static_prefix.yml');
   const yamlDoc = yaml.safeLoad(fs.readFileSync(configPath, 'utf8'));
