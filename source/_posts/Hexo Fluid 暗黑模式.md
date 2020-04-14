@@ -8,78 +8,68 @@ abbrlink: 41212
 
 大概花了一个晚上搞暗黑模式，之后几天陆续优化了下
 目前博客已经基本上适配完成了
-目前是三种方案
+目前是三种方案（优先级递减）
 1. 媒体查询
 2. 定时开启
-3. LocalStorage/sessionStorage 查询
+3. localStorage/sessionStorage 查询
 
 `媒体查询`，判断系统是否处于暗黑模式，支持大部分系统
-win10 需要浏览器开启深色模式
+Win10 需要浏览器开启深色模式
 Android 同理，需要浏览器支持手机开启夜间模式的时候将自身切换到神色模式，目前 Chrome 支持，Edge 不支持，其他没测
 iOS、MacOS 上的 Safari 也支持
 
 `定时开启`，在规定时间自动开启，如果在该时间段内取消了暗黑模式，能一直保持
-再次进入也能一直保持暗黑模式
 
-`LocalStorage/sessionStorage 查询`，能一直保持某一个模式的依赖
+`localStorage/sessionStorage 查询`，能一直保持某一个模式的依赖
 
 ### HTML
 
-在 `\themes\fluid\layout\layout.ejs` 中找到 `<body>`，在其时候加入如下代码
+在 `\themes\fluid\layout\layout.ejs` 中找到 `<body>`，在其之后加入如下代码
+
 ```html
 <div id="dark" onclick="switchDarkMode()"></div>
-<script src="你的 js 路径"></script>
+<script>
+  var isNight = new Date().getHours() >= 22 || new Date().getHours() < 7;
+  if( matchMedia('(prefers-color-scheme: dark)').matches || isNight || localStorage.getItem('dark') === '1') {
+    if(!(isNight&&localStorage.getItem('noDark') === '1')) {
+      document.body.classList.add('dark');
+    }
+  }
+  document.getElementById('dark').innerHTML = document.querySelector("body").classList.contains("dark")?"🌙":"🌞";
+</script>
 ```
+
 {% note danger %}
-注意！一定紧跟在 body 标签之后，否则会出现闪烁
+注意！一定紧跟在 `body` 标签之后，否则会出现闪烁
 {% endnote %}
 
 
 
 ### JS
 
-刚刚插入的 `div` 标签之后插入
-
-```html
-<script>
-  document.getElementById('dark').innerHTML = document.querySelector("body").classList.contains("dark")?"🌙":"🌞";
-  var isNight = 0;
-    if (matchMedia('(prefers-color-scheme: dark)').matches) {
-      document.body.classList.add('dark');
-    } else if ((new Date().getHours() >= 22 || new Date().getHours() < 7)) {
-      isNight = 1; 
-      if ( LocalStorage.getItem('noDark') === '1') return;
-      document.body.classList.add('dark');
-    } else if ( LocalStorage.getItem('dark') === '1') {
-      document.body.classList.add('dark');
-    }
-</script>
-```
-
 然后随便找个 JS 把下面代码加进去，直接加到 HTML 里面也行
 
 ```js
 //点击事件
 function switchDarkMode() {
-  var isDark = $('body').hasClass('dark');
-  if (isDark) {
-    if(isNight) document.body.classList.add('noDark');
-    LocalStorage.setItem('noDark', '1');
-    $("#dark").html("🌞");
-    document.body.classList.remove('dark');
-    LocalStorage.setItem('dark', '0');
-  } else {
-    $("#dark").html("🌙"); 
-    document.body.classList.add('dark');
-    LocalStorage.setItem('dark', '1');
-    LocalStorage.setItem('noDark', '0');
-  }
+	if ($('body').hasClass('dark')) {
+		$("#dark").html("🌞");
+		document.body.classList.remove('dark');
+		localStorage.setItem('noDark', '1');
+		localStorage.setItem('dark', '0');
+	} else {
+		$("#dark").html("🌙"); 
+		document.body.classList.add('dark');
+		localStorage.setItem('dark', '1');
+		localStorage.setItem('noDark', '0');
+	}
 }
 ```
 
 ### CSS
 
 在自定义 CSS 中加入代码
+
 {% note primary %}
 可以用 `stylus`，能少些写
 但是引入时记得后缀还是 `.css` 不要变
@@ -213,7 +203,8 @@ function switchDarkMode() {
 ```
 
 ### localStorage 还是 sessionStorage
-仔细观察刚刚的 js 代码，在其中用的是 LocalStorage
+
+仔细观察刚刚的 js 代码，在其中用的是 localStorage
 除了 localStorage，你还可以用 sessionStorage
 两者的区别也非常简单
 
@@ -225,10 +216,9 @@ function switchDarkMode() {
 如果你用的是 localStorage，那么此时就还是暗黑模式
 而如果你用的是 sessionStorage，此时就不是暗黑模式了
 
-换成 sessionStorage
-只需要将所有的 localStorage 替换成 sessionStorage 就可以了
 两者的使用方法相同
-<br>
+直接替换就可以了
+
 感谢 {% label success~ <a href="https://crosschannel.cc">@track13</a> %} 建议
 {% note info %}
 sessionStorage 在手机浏览器上问题很多，不推荐使用

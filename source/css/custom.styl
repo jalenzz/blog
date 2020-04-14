@@ -60,6 +60,19 @@ footer a:hover
 .index-card:hover .index-img img
   box-shadow 0 5px 11px 0 rgba(0,0,0,0.38), 0 4px 15px 0 rgba(0,0,0,0.35)
 
+#timeDate 
+  display inline-block
+  line-height 36px
+  color #f35626
+  background-image linear-gradient(92deg,#f35626 0,#feab3a 100%)
+  -webkit-background-clip text
+  background-clip text
+  -webkit-text-fill-color transparent
+  animation hue 2s infinite linear
+  font-size 26px
+  vertical-align -1px
+  font-weight 700
+
 @media (min-width:768px) 
   .post-content 
     h1,h2,h3,h4
@@ -74,7 +87,7 @@ footer a:hover
     h3::before
       content "🔍"
     h4::before
-      content "☀️"
+      content "⛅"
 
 /*侧边滚动条*/
 ::-webkit-scrollbar-button
@@ -258,13 +271,8 @@ footer a:hover
     border-color #004188
 
   /* Valine */
-  .valine
-    *, .info .col, .vpage .more
-    .vinputs-area .auth-section
-    .vinputs-area .textarea-wrapper
-    .vinputs-area .textarea-wrapper textarea
-    .vinputs-area .auth-section .input-wrapper input
-    .vinputs-area .textarea-wrapper .comment_trigger
+  div#comments
+    *
       background-color #282c34
 
     input, textarea

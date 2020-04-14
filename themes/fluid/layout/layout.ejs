@@ -13,11 +13,11 @@ var banner_mask_alpha = page.banner_mask_alpha || theme.index.banner_mask_alpha
 <body>
   <div id="dark" onclick="switchDarkMode()"></div>
   <script>
-    document.getElementById('dark').innerHTML = document.querySelector("body").classList.contains("dark")?"🌙":"🌞";
     var isNight = new Date().getHours() >= 22 || new Date().getHours() < 7;
     if(((matchMedia('(prefers-color-scheme: dark)').matches)||isNight||(localStorage.getItem('dark') === '1'))&&!(isNight&&localStorage.getItem('noDark') === '1')) {
       document.body.classList.add('dark');
     }
+    document.getElementById('dark').innerHTML = document.querySelector("body").classList.contains("dark")?"🌙":"🌞";
   </script>
   <div class="slideshow">
     <div class="slideshow-image" style="background-image: url('https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/bg/01.webp')"></div>

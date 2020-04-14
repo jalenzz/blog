@@ -16,7 +16,6 @@ if (page.title) {
   <% if (theme.force_https) { %>
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   <% } %>
-  <link href="https://fonts.loli.net/css2?family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
   <meta name="theme-color" content="<%- theme.color.navbar_bg_color %>">
   <meta name="description" content="<%= config.description %>">
   <meta name="author" content="<%= config.author %>">
@@ -24,4 +23,5 @@ if (page.title) {
   <meta name="shenma-site-verification" content="6232af6f52bbddc858958f593e2b6ba2_1583225913">
   <title><%= title %></title>
   <%- partial('_partial/css.ejs') %>
+  <link href="https://fonts.loli.net/css2?family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 </head>
