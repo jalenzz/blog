@@ -12,10 +12,19 @@ page.banner_mask_alpha = theme.page404.banner_mask_alpha
 </div>
 
 <div class="text-center">
-    来访的第&nbsp;<span class="busuanzi-value logo" id="busuanzi_value_site_pv"></span>&nbsp;位小伙伴，你好呀
-    <br><br>
-    🍭 欢迎对本站提出一些建议
+    不知不觉<span id="timeDate">...</span>天过去了<br><br>
+    🍭 欢迎你的来访<br><br><br>
 </div>
+<script>
+    var now = new Date();
+    function createtime(){
+        var grt = new Date("11/20/2019");//此处修改你的建站时间或者网站上线时间
+        now.setTime(now.getTime()+250);
+        days = Math.floor((now - grt ) / 1000 / 60 / 60 / 24);
+        document.getElementById("timeDate").innerHTML = "&nbsp"+days+"&nbsp";
+    }
+    setInterval("createtime()",250);
+</script>
 
 <!-- Comments -->
 <div class="container comments mx-auto" id="comments">
