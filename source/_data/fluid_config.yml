@@ -439,6 +439,7 @@ links:
     - { title: 'Vince', intro: '努力学习技术的Vince', link: 'i.vince.pub', image: 'vince'}
     - { title: '飞雨晴忘乡', intro: '享建站之香，解发少之苦', link: 'www.52efi.cn', image: '飞雨晴忘乡'}
     - { title: 'ConstOwn', intro: '能和你一起成长，我荣幸之至', link: 'blog.juanertu.com', image: 'ConstOwn'}
+    - { title: 'DmxZ', intro: '欢迎来到 DmxZ 的自留地！', link: 'dmx.pub', image: 'DmxZ' }
 
 #---------------------------
 # 工具页

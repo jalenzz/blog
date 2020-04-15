@@ -13,16 +13,14 @@ index_img: https://cdn.jsdelivr.net/gh/Royce2019/img/img/2335206_94a1b9ce_7356_3
 
 <p class="note note-info">首发于酷安，再转博客上，没怎么编辑。由于酷安不支持 Markdown 所以没 TOC 之类的</p>
 
-哪个男孩子不想要个炫酷的博客
-哪个女孩子不想要个美美是博客
-所以，第二期主要讲圆角动画
-好像没啥因果关系
+第二期主要讲圆角动画
 
 ![](https://gitee.com/Royce2003/blogimages/raw/master/img/2335206_886f2e08_7356_3824@271x265.gif)
 
 在此期间已经有大佬 [@Moce_Hu](https://www.coolapk.com/u/Moce_Hu) 催更，然鹅他自己已经做了圆角动画
 可能这就是大佬吧
 该教程面向小白，大佬请略过全文
+<!--more-->
 如果你是真的想学 css，建议通过专业方法学习，此教程只是为了帮助小白利用 css 美化博客，所以方法略微有些奇怪。也感谢对于上篇文章大佬们的评论建议!
 <!--more-->
 首先，制作圆角动画需要认识一个 css 属性 border-radius ，他用来向元素添加圆角边框。最简单的用法就是在后面加上 多少px

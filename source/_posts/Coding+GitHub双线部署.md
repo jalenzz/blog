@@ -14,7 +14,7 @@ index_img: https://gitee.com/Royce2003/blogimages/raw/master/img/v2-3c4c11c13be1
 哪个孩子不想要一个流畅的博客
 奈何 github 一直处于半墙状态，访问速度贼慢
 所以我们可以选择境内访问走 coding（国内的平台），境外访问走 github
-
+<!--more-->
 网上关于博客双线部署的教程挺多的，但是今年 coding 更新了，界面改变比较大，并没有关于新版的教程，于是乎
 
 
