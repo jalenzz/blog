@@ -3,8 +3,6 @@ Allow: /
 
 Disallow: /js/
 Disallow: /css/
-Disallow: /lib/
-Disallow: /assets/
 
 Sitemap: https://royce2003.top/sitemap.xml
 Sitemap: https://royce2003.top/baidusitemap.xml
