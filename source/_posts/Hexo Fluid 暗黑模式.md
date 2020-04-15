@@ -12,7 +12,7 @@ abbrlink: 41212
 1. 媒体查询
 2. 定时开启
 3. localStorage/sessionStorage 查询
-
+<!--more-->
 `媒体查询`，判断系统是否处于暗黑模式，支持大部分系统
 Win10 需要浏览器开启深色模式
 Android 同理，需要浏览器支持手机开启夜间模式的时候将自身切换到神色模式，目前 Chrome 支持，Edge 不支持，其他没测
