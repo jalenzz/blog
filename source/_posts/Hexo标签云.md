@@ -3,7 +3,7 @@ title: Hexo标签云
 tags: [教程, Hexo, NexT]
 abbrlink: db44ecae
 date: 2020-02-10 16:01:12
-index_img: https://cdn.jsdelivr.net/gh/Royce2019/img/img/20200303195435.png
+index_img: https://cos.royce2003.top/db44ecae/index_img.webp
 ---
 
 
@@ -13,9 +13,8 @@ index_img: https://cdn.jsdelivr.net/gh/Royce2019/img/img/20200303195435.png
 
 <!--more-->
 
-插件效果预览：[标签页](https://royce2003.top/tags/)
 
-![GIF.gif](https://i.loli.net/2020/03/05/xcHjV6X8nT9LBdo.gif)
+![GIF.gif](https://cos.royce2003.top/db44ecae/01.webp)
 
 插件地址：
 [GitHub地址](https://github.com/MikeCoder/hexo-tag-cloud)

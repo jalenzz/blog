@@ -343,7 +343,7 @@ about:  # 以下仅为页面顶部的基本信息，更多内容请在 ./pages/a
   banner_img: 
   banner_img_height: 80  # available: 0 - 100
   banner_mask_alpha: 0  # available: 0 - 1.0
-  subtitle: 时代的尘埃落在个人身上就是一座大山 # 打字机内容
+  subtitle: '今后无论发生什么事也好<br>这个左手上的⋯⋯都是同伴的记号' # 打字机内容
   avatar: https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/about/Royce.webp # 头像
   name: Royce
   introduce: '<span id="gradient">OI/科技/生活</span>' # 支持 HTML
@@ -394,10 +394,10 @@ links:
   banner_img: 
   banner_img_height: 80  # available: 0 - 100
   banner_mask_alpha: 0  # available: 0 - 1.0
-  subtitle: 用热情去灌溉，用原则去培养，用谅解去护理 # 打字机内容
+  subtitle: 我的船上没有手下，只有伙伴 # 打字机内容
   defaultlinks:
-    - { title: 'Neworld200', intro: 'OI大佬', link: 'neworld2002.github.io', image: 'neworld2002' }
-    - { title: 'newsheep', intro: '社长大大', link: 'newsheep2003.github.io', image: 'newsheep' }
+    - { title: 'Neworld2002', intro: '蓝鸟', link: 'neworld2002.github.io', image: 'neworld2002' }
+    - { title: 'newsheep', intro: '憨憨', link: 'newsheep2003.github.io', image: 'newsheep' }
   friendslinks:
     - { title: 'Atuo', intro: '网络安全',  link: 'blog.atuo.store', image: 'Atuo' }
     - { title: '维他入我心', intro: '科技/生活日常～', link: 'wtrwx.top', image: '维他入我心' }
@@ -440,6 +440,7 @@ links:
     - { title: '飞雨晴忘乡', intro: '享建站之香，解发少之苦', link: 'www.52efi.cn', image: '飞雨晴忘乡'}
     - { title: 'ConstOwn', intro: '能和你一起成长，我荣幸之至', link: 'blog.juanertu.com', image: 'ConstOwn'}
     - { title: 'DmxZ', intro: '欢迎来到 DmxZ 的自留地！', link: 'dmx.pub', image: 'DmxZ' }
+    - { title: 'Hcode', intro: '记录编程技术，实现在线小功能', link: 'www.hcode.top', image: 'Hcode' }
 
 #---------------------------
 # 工具页

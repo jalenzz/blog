@@ -3,20 +3,17 @@ title: Valine评论之微信提醒
 date: 2020-02-20 14:42:29
 abbrlink: 22549
 tag: [Hexo, 教程]
-index_img: https://gitee.com/Royce2003/blogimages/raw/master/img/6MD8RFDM3WIAKOP.png
+index_img: https://cos.royce2003.top/22549/index_img.webp
 ---
-![](https://i.loli.net/2020/02/26/CUA1Ve4gOPRW83v.png)
+
 该功能基于 Leancloud 的云引擎与云函数。
 可以提供邮件 通知站长 和 被@ 通知 的功能还支持自定义邮件模板哦!
 
 项目来自 [查看链接](http://www.zhaojun.im/)
-不过我个人觉得作者的教程有一点点难看懂（可能我个人的原因）
 
-那就自己再写一篇呗
+首先你需要一个可以正常使用 Valine 的博客
 
-首先你需要一个可以正常使用Valine的博客
-
-# 邮件提醒
+## 邮件提醒
 
 [Valine官方文档](https://valine.js.org/)
 
@@ -26,31 +23,34 @@ index_img: https://gitee.com/Royce2003/blogimages/raw/master/img/6MD8RFDM3WIAKOP
 
 华北节点从这里 [查看链接](https://leancloud.cn/dashboard/login.html#/apps)
 
-## 修改代码库
+### 修改代码库
 然后进入放评论数据的那个应用，云引擎-->设置-->修改代码库为
 `https://github.com/zhaojun1998/Valine-Admin`
 
-![](https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/2335206_9a4e1173_8875_288@1920x1077.jpeg.m.jpg)
+![](https://cos.royce2003.top/22549/01.webp)
 
 进入部署界面，选择 Git 源码部署，
 
-![](https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/2335206_6d6882b2_8875_2882@1920x588.jpeg.m.jpg)
+![](https://cos.royce2003.top/22549/02.webp)
 
 修改 分支或版本号为 master
 
-![](https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/2335206_2fcac2c1_8875_2884@980x480.jpeg.m.jpg)
+![](https://cos.royce2003.top/22549/03.webp)
 
 下载最新依赖是升级用的
 然后点击部署
 过程会比较漫长，耐心等待当看到完成之类的字眼就好啦图片我下了个最新依赖花了我 4 分钟.....
 
-![](https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/2335206_539f6cae_8875_2886@748x523.jpeg.m.jpg)
+![](https://cos.royce2003.top/22549/04.webp)
 
-## 配置环境变量
+### 配置环境变量
+
 接下来就需要配置环境变量了
-<p class="note note-warning">环境变量配置图片已更新，请注意 SITE_URL 的值需要带 http(s)，否则邮件无法跳转</p>
+{% note warning %}
+环境变量配置图片已更新，请注意 SITE_URL 的值需要带 http(s)，否则邮件无法跳转
+{% endnote %}
 
-![](https://gitee.com/royce2003/blog/raw/master/img/sGGNPfS0.webp)
+![](https://cos.royce2003.top/22549/05.webp)
 
 `SITE_NAME` : 网站名称  
 `SITE_URL` : 网站地址, 最后不要加 / SMTP_SERVICE : 邮件服务提供商，不如QQ，163...  
@@ -62,12 +62,14 @@ index_img: https://gitee.com/Royce2003/blogimages/raw/master/img/6MD8RFDM3WIAKOP
 支持的邮件服务商:
 `"126" "163" "1und1" "AOL" "DebugMail" "DynectEmail" "FastMail" "GandiMail" "Gmail" "Godaddy" "GodaddyAsia" "GodaddyEurope" "hot.ee" "Hotmail" "iCloud" "mail.ee" "Mail.ru" "Maildev" "Mailgun" "Mailjet" "Mailosaur" "Mandrill" "Naver" "OpenMailBox" "Outlook365" "Postmark" "QQ" "QQex" "SendCloud" "SendGrid" "SendinBlue" "SendPulse" "SES" "SES-US-EAST-1" "SES-US-WEST-2" "SES-EU-WEST-1" "Sparkpost" "Yahoo" "Yandex" "Zoho" "qiye.aliyun"` 就这么多啦
 
-<p class="note note-danger">每次配置完环境变量需要重启容器!</p>
+{% note danger %}
+每次配置完环境变量需要重启容器!
+{% endnote %}
 
 好啦，至此已经完成了邮件提醒!
 
+### 防止休眠
 
-## 防止休眠
 不过还有个小问题 LeanCloud 也是要恰饭的，当然不可能给你免费提供给这么好的服务!
 
 免费版的 LeanCloud 容器，是有强制性休眠策略的，不能 24 小时运行
@@ -85,69 +87,71 @@ index_img: https://gitee.com/Royce2003/blogimages/raw/master/img/6MD8RFDM3WIAKOP
 
 首先我们需要再添加一个环境变量 `ADMIN_URL` 然后把下方 Web 主机域名给填写上
 
-![](https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/2335206_29fdfec6_8875_289@1093x472.jpeg.m.jpg)
+![](https://cos.royce2003.top/22549/06.webp)
 
 然后点击定时任务-->创建定时任务
 
-![](https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/2335206_13b6e405_8875_2892@1920x1077.jpeg.m.jpg)
+![](https://cos.royce2003.top/22549/07.webp)
 
 名字随便取
 选择生产环境下的 `self_wake`
 然后cron表达式输入
-`0 */20 7-23 * * ?`
-意思是 8 点到 23 点每 20 分钟唤醒一次
+`0 */30 7-23 * * ?`
+意思是 8 点到 23 点每 30 分钟唤醒一次
 这是我的表达式
 大家可以按自己需求改只需要保证 6 小时的休眠就好啦
 然后如果出问题了可以去应用日志里查看以下
 
-![](https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/2335206_6f33090a_8875_2894@1920x1077.jpeg.m.jpg)
-
-![](https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/2335206_3b9b9eb2_8880_424@1243x483.jpeg.m.jpg)
+![](https://cos.royce2003.top/22549/08.webp)
+![](https://cos.royce2003.top/22549/09.webp)
 
 当有人评论时，应用日志里也会显示  
 
-## 评论管理
+### 评论管理
+
 然后还记得刚刚的 Web 主机域名，你也可以绑定自己的域名  
 通过访问该地址你就可以管理评论啦  
 但当你打开网址时会叫你登录  
 这时候你需要去创建个用户，也就是你自己  
 只需要填写密码，username，邮箱
 
-![](https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/2335206_0569b226_8880_4242@1920x1077.jpeg.m.jpg)
-
-![](https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/2335206_7fa85424_8880_4244@893x714.jpeg.m.jpg)
+![](https://cos.royce2003.top/22549/10.webp)
+![](https://cos.royce2003.top/22549/11.webp)
 
 注意！邮箱才是是你的登录名！
 不懂这是什么逻辑
 
 
-# 微信提醒
+## 微信提醒
+
 好啦，接下来时加如微信提醒了
 首先进入 Server 酱官网注册个账号然后按官网首页绑定微信
 
-![](https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/2335206_8f323549_8880_4246@1920x1077.jpeg.m.jpg)
+![](https://cos.royce2003.top/22549/12.webp)
 
 第三步时测试绑定有没有成功
 
-## 更改代码库
+### 更改代码库
+
 然后还记得更改的代码仓库吗，将他改成这个
 `https://github.com/sviptzk/Valine-Admin-Server` 点击保存
 
-![](https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/2335206_ab6e6496_8880_4248@903x237.jpeg.m.jpg)
+![](https://cos.royce2003.top/22549/13.webp)
 
-## 配置环境变量
+### 配置环境变量
+
 然后再添加一个新的环境变量 `SCKEY`
 
-![](https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/2335206_6e8bec86_8880_425@974x73.jpeg.m.jpg)
+![](https://cos.royce2003.top/22549/14.webp)
 
 `SCKEY` 的值从这来
 
-![](https://cdn.jsdelivr.net/gh/Royce2019/img/links-img/2335206_f516d74c_8880_4252@1920x1077.jpeg.m.jpg)
+![](https://cos.royce2003.top/22549/15.webp)
 
-<p class="note note-danger">然后一定记得要进行重新部署，重启容器！</p>
+{% note danger %}
+然后一定记得要进行重新部署，重启容器！
+{% endnote %}
 
-好啦！！大功告成，你可以在微信收到博客的评论啦！！
+大功告成，你可以在微信收到博客的评论了！
 
-微信提醒参考 小康博客  
-后面用的那个代码仓库也是他的啦  
-[文章链接](https://www.antmoe.com/posts/2380732b/index.html)
+参考 [文章链接](https://www.antmoe.com/posts/2380732b/index.html)
