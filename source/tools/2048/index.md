@@ -1,7 +1,7 @@
 ---
 title: 2048
 ---
-<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/Royce2019/BlogSource/css/2048.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/css/2048.min.css">
 <div class="container">
 	<div class="scores">
 		<div class="score-container best-score">
@@ -28,4 +28,4 @@ title: 2048
 		<span class="not-recommended__annotation"></span>
 	</div>
 </div>
-<script src="//cdn.jsdelivr.net/gh/Royce2019/BlogSource/js/2048.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/js/2048.min.js"></script>

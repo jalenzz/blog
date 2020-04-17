@@ -3,6 +3,7 @@ title: 解决 Edge Flash 插件不可用的问题
 date: 2020-04-02 12:16:49
 tags: [教程]
 abbrlink: 34979
+index_img: https://cos.royce2003.top/34979/index_img.webp
 ---
 
 虽说 flash 被淘汰是毋庸置疑的趋势，但是还就是有些网站在用

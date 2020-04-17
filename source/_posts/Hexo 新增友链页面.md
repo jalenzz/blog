@@ -3,7 +3,7 @@ title: Hexo 新增友链页面
 tags: [NexT, 教程]
 abbrlink: f909dd9a
 date: 2020-02-13 14:18:22
-index_img: https://gitee.com/Royce2003/blogimages/raw/master/img/1e2ddb83bacb0a2f9f667a6557443aed_1_1_art.jpg
+index_img: https://cos.royce2003.top/f909dd9a/index_img.webp
 ---
 
 NexT 主题自带的友链模块放在侧边栏下面，视觉上比较臃肿。  
@@ -11,7 +11,8 @@ NexT 主题自带的友链模块放在侧边栏下面，视觉上比较臃肿。
 本文介绍一种修改友链样式的方法以及具体的步骤。
 <!--more-->
 
-# 新建`Links`界面
+### 新建友链界面
+
 ```bash
 hexo new page links
 ```
@@ -40,190 +41,195 @@ type: links
 - 网站Logo/头像：https://royce2003.top/img/avatar.jpg
 ```
 
-# 新建`link`渲染文件
+### 新建友链渲染文件
+
 在 `/themes/next/layout/_scripts/pages/` 目录下建一个 `link.swig` 文件，写入以下代码
+
 ```
-{% raw %}{% block content %}{% endraw %}
-<div id="links">
-    <style>
-        .container .main-inner {
-            width: 1100px;
-        }
-        .links-content{
-            margin-top:1rem;
-        }
-        .link-navigation::after {
-            content: " ";
-            display: block;
-            clear: both;
-        }
-        .card {
-            width: 45%;
-            font-size: 1rem;
-            padding: 10px 20px;
-            border-radius: 4px;
-            transition-duration: 0.15s;
-            margin-bottom: 1rem;
-            display:flex;
-        }
-        @media(max-width: 1400px){
-            .card{
-                width: 40% !important;
+{% block content %}
+    <div id="links">
+        <style>
+            .container .main-inner {
+                width: 1100px;
             }
-        }
-        .card:nth-child(odd) {
-            float: left;
-        }
-        .card:nth-child(even) {
-            float: right;
-        }
-        .card:hover {
-            transform: scale(1.1);
-            box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12), 0 0 6px 0 rgba(0, 0, 0, 0.04);
-        }
-        .card a {
-            border:none; 
-        }
-        .card .ava {
-            width: 3rem!important;
-            height: 3rem!important;
-            margin:0!important;
-            margin-right: 1em!important;
-            border-radius:4px;
-            
-        }
-        .card .card-header {
-            font-style: italic;
-            overflow: hidden;
-            width: 100%;
-        }
-        .card .card-header a {
-            font-style: normal;
-            color: #2bbc8a;
-            font-weight: bold;
-            text-decoration: none;
-        }
-        .card .card-header a:hover {
-            color: #d480aa;
-            text-decoration: none;
-        }
-        .card .card-header .info {
-            font-style:normal;
-            color:#a3a3a3;
-            font-size:14px;
-            min-width: 0;
-            overflow: hidden;
-            white-space: nowrap;
-        }
-        span.focus-links {
-            font-style: normal;
-            margin-left: 10px;
-            position: unset;
-            left: 0;
-            padding: 0 7px 0 5px;
-            font-size: 11px;
-            border-color: #42c02e;
-            border-radius: 40px;
-            line-height: 24px;
-            height: 22px;
-            color: #fff !important;
-            background-color: #42c02e;
-            display: inline-block;
-        }
-        span.focus-links:hover{
-            background-color: #318024;
-        }
-        .friends-btn{
-            text-align: center;
-            color: #555!important;
-            background-color: #fff;
-            border-radius: 3px;
-            font-size: 15px;
-            box-shadow: inset 0 0 10px 0 rgba(0,0,0,.35);
-            border: none!important;
-            transition-property: unset;
-            padding: 0 15px;
-            margin: inherit;
-        }
-        .friends-btn:hover{
-            color: rgb(255, 255, 255) !important;
-            border-radius: 3px;
-            font-size: 15px;
-            box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
-            background-image: linear-gradient(90deg, #a166ab 0%, #ef4e7b 25%, #f37055 50%, #ef4e7b 75%, #a166ab 100%);
-            margin: inherit;
-        }
-    </style>
-    <div class="links-content">
-        <div class="link-navigation">
-            {% raw %}{% for link in theme.mylinks %}{% endraw %}
-                <div class="card">
-                    <img class="ava" src="{% raw %}{{ link.avatar }}{% endraw %}"/>
-                    <div class="card-header">
-                    <div><a href="{% raw %}{{ link.site }}{% endraw %}" target="_blank"> {% raw %}{{ link.nickname }}{% endraw %}</a> <a href="{% raw %}{{ link.site }}{% endraw %}"><span class="focus-links">关注</span></a></div>
-                    <div class="info">{% raw %}{{ link.info }}{% endraw %}</div>
+            .links-content{
+                margin-top:1rem;
+            }
+            .link-navigation::after {
+                content: " ";
+                display: block;
+                clear: both;
+            }
+            .card {
+                width: 45%;
+                font-size: 1rem;
+                padding: 10px 20px;
+                border-radius: 4px;
+                transition-duration: 0.15s;
+                margin-bottom: 1rem;
+                display:flex;
+            }
+            @media(max-width: 1400px){
+                .card{
+                    width: 40% !important;
+                }
+            }
+            .card:nth-child(odd) {
+                float: left;
+            }
+            .card:nth-child(even) {
+                float: right;
+            }
+            .card:hover {
+                transform: scale(1.1);
+                box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12), 0 0 6px 0 rgba(0, 0, 0, 0.04);
+            }
+            .card a {
+                border:none; 
+            }
+            .card .ava {
+                width: 3rem!important;
+                height: 3rem!important;
+                margin:0!important;
+                margin-right: 1em!important;
+                border-radius:4px;
+                
+            }
+            .card .card-header {
+                font-style: italic;
+                overflow: hidden;
+                width: 100%;
+            }
+            .card .card-header a {
+                font-style: normal;
+                color: #2bbc8a;
+                font-weight: bold;
+                text-decoration: none;
+            }
+            .card .card-header a:hover {
+                color: #d480aa;
+                text-decoration: none;
+            }
+            .card .card-header .info {
+                font-style:normal;
+                color:#a3a3a3;
+                font-size:14px;
+                min-width: 0;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+            span.focus-links {
+                font-style: normal;
+                margin-left: 10px;
+                position: unset;
+                left: 0;
+                padding: 0 7px 0 5px;
+                font-size: 11px;
+                border-color: #42c02e;
+                border-radius: 40px;
+                line-height: 24px;
+                height: 22px;
+                color: #fff !important;
+                background-color: #42c02e;
+                display: inline-block;
+            }
+            span.focus-links:hover{
+                background-color: #318024;
+            }
+            .friends-btn{
+                text-align: center;
+                color: #555!important;
+                background-color: #fff;
+                border-radius: 3px;
+                font-size: 15px;
+                box-shadow: inset 0 0 10px 0 rgba(0,0,0,.35);
+                border: none!important;
+                transition-property: unset;
+                padding: 0 15px;
+                margin: inherit;
+            }
+            .friends-btn:hover{
+                color: rgb(255, 255, 255) !important;
+                border-radius: 3px;
+                font-size: 15px;
+                box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
+                background-image: linear-gradient(90deg, #a166ab 0%, #ef4e7b 25%, #f37055 50%, #ef4e7b 75%, #a166ab 100%);
+                margin: inherit;
+            }
+        </style>
+        <div class="links-content">
+            <div class="link-navigation">
+                {% for link in theme.mylinks %}
+                    <div class="card">
+                        <img class="ava" src="{{ link.avatar }}"/>
+                        <div class="card-header">
+                        <div><a href="{{ link.site }}" target="_blank"> {{ link.nickname }}</a> <a href="{{ link.site }}"><span class="focus-links">关注</span></a></div>
+                        <div class="info">{{ link.info }}</div>
+                        </div>
                     </div>
-                </div>
-            {% raw %}{% endfor %}{% endraw %}
+                {% endfor %}
+            </div>
+            {{ page.content }}
+            </div>
         </div>
-        {% raw %}{{ page.content }}{% endraw %}
-    </div>
-</div>
-{% raw %}{% endblock %}{% endraw %}
+{% endblock %}
 ```
 
+### 修改渲染文件
 
-# 修改`page`渲染文件
 然后修改 `/themems/next/layout/page.swig` 文件，
 ```diff
-{% raw %}{% block title %}{% endraw %}
-    {% raw %}{%- set page_title_suffix = ' | ' + title %}{% endraw %}
+{% block title %}
+    {%- set page_title_suffix = ' | ' + title %}
 
-    {% raw %}{%- if page.type === 'categories' and not page.title %}{% endraw %}
-      {% raw %}{{- __('title.category') + page_title_suffix }}{% endraw %}
-    {% raw %}{%- elif page.type === 'tags' and not page.title %}{% endraw %}
-      {% raw %}{{- __('title.tag') + page_title_suffix }}{% endraw %}
+    {%- if page.type === 'categories' and not page.title %}
+      {{- __('title.category') + page_title_suffix }}
+    {%- elif page.type === 'tags' and not page.title %}
+      {{- __('title.tag') + page_title_suffix }}
       
 +   <!-- 友情链接-->
-+   {% raw %}{% elif page.type === 'links' and not page.title %}{% endraw %}
-+   {% raw %}{{ __('title.links') + page_title_suffix }}{% endraw %}
++   {% elif page.type === 'links' and not page.title %}
++   {{ __('title.links') + page_title_suffix }}
     
-    {% raw %}{%- elif page.type === 'schedule' and not page.title %}{% endraw %}
-      {% raw %}{{- __('title.schedule') + page_title_suffix }}{% endraw %}
-    {% raw %}{%- else %}{% endraw %}
-      {% raw %}{{- page.title + page_title_suffix }}{% endraw %}
-    {% raw %}{%- endif %}{% endraw %}
-  {% raw %}{% endblock %}{% endraw %}
+    {%- elif page.type === 'schedule' and not page.title %}
+      {{- __('title.schedule') + page_title_suffix }}
+    {%- else %}
+      {{- page.title + page_title_suffix }}
+    {%- endif %}
+{% endblock %}
 ```
 
 然后还是在这个 `page.swig` 文件中，引入刚才新建的 `swig` 页面：
 ```diff
-{% raw %}{% elif page.type === 'categories' %}{% endraw %}
+{% elif page.type === 'categories' %}
           <div class="category-all-page">
             <div class="category-all-title">
-              {% raw %}{{ _p('counter.categories', site.categories.length) }}{% endraw %}
+              {{ _p('counter.categories', site.categories.length) }}
             </div>
             <div class="category-all">
-              {% raw %}{{ list_categories() }}{% endraw %}
+              {{ list_categories() }}
             </div>
           </div>
 +           <!-- 友情链接-->
-+          {% raw %}{% elif page.type === 'links' %}{% endraw %}
-+              {% raw %}{% include '_scripts/pages/links.swig' %}{% endraw %}
-        {% raw %}{% elif page.type === 'schedule' %}{% endraw %}
++          {% elif page.type === 'links' %}
++              {% include '_scripts/pages/links.swig' %}
+        {% elif page.type === 'schedule' %}
           <div class="event-list">
           </div>
-          {% raw %}{% include '_scripts/pages/schedule.swig' %}{% endraw %}
-        {% raw %}{% else %}{% endraw %}
-          {% raw %}{{ page.content }}{% endraw %}
-        {% raw %}{%- endif %}{% endraw %}
+          {% include '_scripts/pages/schedule.swig' %}
+        {% else %}
+          {{ page.content }}
+        {%- endif %}
       </div>
 ```
 
 
-# 配置`_config`文件
-## 增加友链
+### 配置`_config`文件
+
+#### 增加友链
+
 最后，添加友链的话，需要在`主题配置文件`文件末尾添加：
+
 ```yaml
 defaultlinks: # 跟着身边的大佬走，努力成为小大佬
   - nickname: Neworld2002     # 昵称
@@ -241,11 +247,12 @@ friendslinks: # 五湖四海的朋友们
     info: 科技/生活日常～
     avatar: https://wtrwx.top/img/avatar.png
 ```
+
 `defaultlinks`: 对应的是 link.swig 文件中 👨‍🎓 跟着身边的大佬走，努力成为小大佬  
 `friendslinks`:呼应的是 link.swig 文件中 🍭 五湖四海的朋友们  
 此处内容可以根据自己需要自行修改
 
-## 开启显示
+#### 开启显示
 同时我们还需要在主题配置文件中开启 Links
 ```diff
 menu:
