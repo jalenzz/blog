@@ -8,6 +8,9 @@ tags:
   - Hexo
   - CSS
 index_img: https://gitee.com/Royce2003/blogimages/raw/master/img/2335206_83c5ad65_5449_5352@1080x485.jpeg
+password: coolapk
+abstract: 施工中...
+message: 首发于酷安，直接复制过来，图片有防盗链看不了，还没换(其实是懒)，密码是酷安英文
 ---
 ![](https://gitee.com/Royce2003/blogimages/raw/master/img/2335206_83c5ad65_5449_5352@1080x485.jpeg)
 

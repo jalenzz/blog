@@ -29,5 +29,5 @@ layout: links
 {% endnote %}
 
 <center>
-	<a class="BoxButton" href="../messageboard" title="留言板" style="font-size: 1.25em;">申请友链</a>
+	<a class="BoxButton" href="/messageboard/" title="留言板" style="font-size: 1.25em;">申请友链</a>
 </center>
