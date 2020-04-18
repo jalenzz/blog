@@ -1,3 +1,5 @@
+/* global hexo */
+
 'use strict';
 
 const checkbox = (args) => {
@@ -9,10 +11,10 @@ const checkbox = (args) => {
   let color = args[2] || '';
   let inline = (args[3] || '').length > 0 && args[2].trim() !== 'false';
 
-  return `${ !inline ? '<div>' : '' }
-            <input class="${color} ${special ? 'indeterminate' : ''}" type="checkbox" ${ checked ? 'checked="checked"' : '' }></input>
-            ${ hexo.render.renderSync({ text: text, engine: 'markdown' }).split('\n').join('') }
-          ${ !inline ? '</div>' : '' }`;
+  return `${!inline ? '<div>' : ''}
+            <input class="${color} ${special ? 'indeterminate' : ''}" type="checkbox" ${checked ? 'checked="checked"' : ''}></input>
+            ${hexo.render.renderSync({ text: text, engine: 'markdown' }).split('\n').join('')}
+          ${!inline ? '</div>' : ''}`;
 };
 
 // {% cb text, checked?, inline? %}

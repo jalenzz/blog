@@ -1,3 +1,5 @@
+/* global hexo */
+
 'use strict';
 
 const radio = (args) => {
@@ -8,11 +10,12 @@ const radio = (args) => {
   let color = args[2] || '';
   let inline = (args[3] || '').length > 0 && args[3].trim() === '1';
 
-  return `${ !inline ? '<div>' : '' }
-            <input class="${color}" type="radio" ${ checked ? 'checked="checked"' : '' }></input>
-            ${ hexo.render.renderSync({ text: text, engine: 'markdown' }).split('\n').join('') }
-          ${ !inline ? '</div>' : '' }`;
+  return `${!inline ? '<div>' : ''}
+            <input class="${color}" type="radio" ${checked ? 'checked="checked"' : ''}></input>
+            ${hexo.render.renderSync({ text: text, engine: 'markdown' }).split('\n').join('')}
+          ${!inline ? '</div>' : ''}`;
 };
 
 // {% rd text, checked?, inline? %}
 hexo.extend.tag.register('rd', radio, { ends: false });
+
