@@ -92,6 +92,9 @@ aplayer:  # 音乐播放器，注意不能与 hexo-tag-aplayer 插件共用
     - { name: 'となりのトトロ', artist: '伊藤サチコ', url: 'https://cdn.jsdelivr.net/gh/Royce2019/img/01.mp3', cover: 'https://cdn.jsdelivr.net/gh/Royce2019/img/img/109951163028865726.jpg' }
     - { name: 'それがあなたの幸せとしても (カバー)', artist: 'rairu', url: 'https://cdn.jsdelivr.net/gh/Royce2019/img/02.mp3', cover: 'https://cdn.jsdelivr.net/gh/Royce2019/img/img/109951163597938340.jpg' }
 
+version:  # 版本相关
+  check: false  # 每次生成检测是否为最新版本
+
 #---------------------------
 # 页头
 # Header
