@@ -396,51 +396,53 @@ links:
   banner_mask_alpha: 0  # available: 0 - 1.0
   subtitle: 我的船上没有手下，只有伙伴 # 打字机内容
   defaultlinks:
-    - { title: 'Neworld2002', intro: '蓝鸟', link: 'neworld2002.github.io', image: 'neworld2002' }
-    - { title: 'newsheep', intro: '憨憨', link: 'newsheep2003.github.io', image: 'newsheep' }
+    - { title: 'Neworld2002', intro: '蓝鸟', link: 'neworld2002.github.io' }
+    - { title: 'Newsheep', intro: '憨憨', link: 'newsheep2003.github.io' }
   friendslinks:
-    - { title: 'Atuo', intro: '网络安全',  link: 'blog.atuo.store', image: 'Atuo' }
-    - { title: '维他入我心', intro: '科技/生活日常～', link: 'wtrwx.top', image: '维他入我心' }
-    - { title: 'Linhk1606', intro: '...', link: 'linhk1606.github.io', image: 'Linhk1606' }
-    - { title: 'LeFlacon', intro: 'Let’s think!', link: 'leflacon.top', image: 'LeFlacon' }
-    - { title: '小康博客', intro: '一个收藏回忆与分享技术的地方', link: 'www.antmoe.com', image: '小康' }
-    - { title: '小K同學', intro: '技术，日语，云旅游', link: 'kksan.top', image: '小K同学' }
-    - { title: '休伯利安号', intro: '卑微的考研狗', link: 'eatrice.top', image: '吃白饭的休伯利安号' }
-    - { title: 'IamWu555', intro: 'A man with superb shot', link: 'blog.wubuster.com',image: 'lamWu555' }
-    - { title: '极客空间', intro: '一个准备高考的高三狗', link: 'www.geek-space.cn', image: '极客空间' }
-    - { title: 'MOCEHU',  intro: '一个没有技术贴的技术博客', link: 'mocehu.top',image: 'MOCEHU' }
-    - { title: 'Codgi的小窝', intro: 'Do what you love', link: 'codgi.xin', image: 'Codgi' }
-    - { title: 'JimmyQin', intro: '挨拍的儿', link: 'apde.xyz', image: 'JimmyQin' }
-    - { title: '木子洋', intro: '记录成长学习的博客', link: 'www.yanghuaxing.com', image: '木子洋' }
-    - { title: '惴与绕', intro: '一条咸鱼的日常', link: 'idkzr.com', image: '惴绕' }
-    - { title: 'yuzh', intro: '永不停歇--Never Settle', link: 'yyuzh.xyz', image: 'yuzh' }
-    - { title: 'Bert', intro: '面朝大海，春暖花开', link: 'ixfish.cn', image: 'bert' }
-    - { title: 'Guan FuQing', intro: 'Error:No object found!', link: 'yiki.tech', image: 'GuanFuQing' }
-    - { title: '辉少菌', intro: '一个爱搞技术的高一党', link: 'huishao.top', image: '辉少菌' }
-    - { title: 'TanHua', intro: 'IoT在校生', link: 'tutouyuan.top', image: 'TanHua' }
-    - { title: '破旧的手枪', intro: '只争朝夕 不负韶华', link: 'pistol.city', image: '破旧的手枪' }
-    - { title: '星下小屋', intro: '学习记录笔记本', link: 'skyhouse.xyz', image: '星下小屋' }
-    - { title: 'MinePHP', intro: 'MinePHP Blog', link: 'www.aahy.xyz', image: 'MinePHP' }
-    - { title: '云游君', intro: 'All at sea.', link: 'www.yunyoujun.cn', image: '云游君' }
-    - { title: '以成杂谈', intro: '以成，却非已成', link: 'transion.cc',image: '以成杂谈' }
-    - { title: 'xaoxuu', intro: 'iOS', link: 'xaoxuu.com', image: 'xaoxuu' }
-    - { title: 'YU到边', intro: '前端技术交流', link: 'www.yuhangwei.com', image: 'YU到边' }
-    - { title: 'Sanarous', intro: '码农人生', link: 'bestzuo.cn', image: 'Sanarous' }
-    - { title: 'Burgess', intro: '日常', link: 'bibiqo.cn', image: 'Burgess' }
-    - { title: 'YINUXY', intro: '理想的生活就是生活的理想', link: 'blog.yinuxy.com', image: 'YINUXY' }
-    - { title: '夏目友人帐', intro: '夏目友人帐', link: 'xiamuyourenzhang.cn', image: '夏目友人帐' }
-    - { title: '小丁', intro: '世间所有的相遇，都是久别重逢', link: 'tding.top', image: '小丁' }
-    - { title: '小太', intro: '一个热爱ACG的技术宅', link: '713.moe', image: '小太' }
-    - { title: '七夏浅笑', intro: '七月之约，夏末浅笑', link: 'www.julydate.com', image: '七夏浅笑' }
-    - { title: 'Mystery', intro: '心有猛虎，细嗅蔷薇',, link: 'blog.say521.cn', image: 'Mystery' }
-    - { title: 'barriery', intro: 'A student, programmer and explorer.', link: 'barriery.cn', image: 'barriery' }
-    - { title: 'keith', intro: '一个热爱网络的学生', link: 'keithqwq.com', image: 'keith' }
-    - { title: '故北', intro: '还记得我吗？', link: 'gubei.ucu520.top', image: '故北'}
-    - { title: 'Vince', intro: '努力学习技术的Vince', link: 'i.vince.pub', image: 'vince'}
-    - { title: '飞雨晴忘乡', intro: '享建站之香，解发少之苦', link: 'www.52efi.cn', image: '飞雨晴忘乡'}
-    - { title: 'ConstOwn', intro: '能和你一起成长，我荣幸之至', link: 'blog.juanertu.com', image: 'ConstOwn'}
-    - { title: 'DmxZ', intro: '欢迎来到 DmxZ 的自留地！', link: 'dmx.pub', image: 'DmxZ' }
-    - { title: 'Hcode', intro: '记录编程技术，实现在线小功能', link: 'www.hcode.top', image: 'Hcode' }
+    - { title: 'Atuo', intro: '网络安全',  link: 'blog.atuo.store' }
+    - { title: '维他入我心', intro: '科技/生活日常～', link: 'wtrwx.top' }
+    - { title: 'Linhk1606', intro: '...', link: 'linhk1606.github.io' }
+    - { title: 'LeFlacon', intro: 'Let’s think!', link: 'leflacon.top' }
+    - { title: '小康博客', intro: '一个收藏回忆与分享技术的地方', link: 'www.antmoe.com' }
+    - { title: '小K同學', intro: '技术，日语，云旅游', link: 'kksan.top' }
+    - { title: '吃白饭的休伯利安号', intro: '卑微的考研狗', link: 'eatrice.top' }
+    - { title: 'IamWu555', intro: 'A man with superb shot', link: 'blog.wubuster.com' }
+    - { title: '极客空间', intro: '一个准备高考的高三狗', link: 'www.geek-space.cn' }
+    - { title: 'MOCEHU',  intro: '一个没有技术贴的技术博客', link: 'mocehu.top' }
+    - { title: 'Codgi', intro: 'Do what you love', link: 'codgi.xin' }
+    - { title: 'JimmyQin', intro: '挨拍的儿', link: 'apde.xyz' }
+    - { title: '木子洋', intro: '记录成长学习的博客', link: 'www.yanghuaxing.com' }
+    - { title: '惴与绕', intro: '一条咸鱼的日常', link: 'idkzr.com' }
+    - { title: 'yuzh', intro: '永不停歇--Never Settle', link: 'yyuzh.xyz' }
+    - { title: 'Bert', intro: '面朝大海，春暖花开', link: 'ixfish.cn' }
+    - { title: 'Guan FuQing', intro: 'Error:No object found!', link: 'yiki.tech' }
+    - { title: '辉少菌', intro: '一个爱搞技术的高一党', link: 'huishao.top' }
+    - { title: 'TanHua', intro: 'IoT在校生', link: 'tutouyuan.top' }
+    - { title: '破旧的手枪', intro: '只争朝夕 不负韶华', link: 'pistol.city' }
+    - { title: '星下小屋', intro: '学习记录笔记本', link: 'skyhouse.xyz' }
+    - { title: 'MinePHP', intro: 'MinePHP Blog', link: 'www.aahy.xyz' }
+    - { title: '云游君', intro: 'All at sea.', link: 'www.yunyoujun.cn' }
+    - { title: '以成杂谈', intro: '以成，却非已成', link: 'transion.cc' }
+    - { title: 'xaoxuu', intro: 'iOS', link: 'xaoxuu.com' }
+    - { title: 'YU到边', intro: '前端技术交流', link: 'www.yuhangwei.com' }
+    - { title: 'Sanarous', intro: '码农人生', link: 'bestzuo.cn' }
+    - { title: 'Burgess', intro: '日常', link: 'bibiqo.cn' }
+    - { title: 'YINUXY', intro: '理想的生活就是生活的理想', link: 'blog.yinuxy.com' }
+    - { title: '夏目友人帐', intro: '夏目友人帐', link: 'xiamuyourenzhang.cn' }
+    - { title: '小丁', intro: '世间所有的相遇，都是久别重逢', link: 'tding.top' }
+    - { title: '小太', intro: '一个热爱ACG的技术宅', link: '713.moe' }
+    - { title: '七夏浅笑', intro: '七月之约，夏末浅笑', link: 'www.julydate.com' }
+    - { title: 'Mystery', intro: '心有猛虎，细嗅蔷薇',, link: 'blog.say521.cn' }
+    - { title: 'barriery', intro: 'A student, programmer and explorer.', link: 'barriery.cn' }
+    - { title: 'keith', intro: '一个热爱网络的学生', link: 'keithqwq.com' }
+    - { title: '故北', intro: '还记得我吗？', link: 'gubei.ucu520.top' }
+    - { title: 'Vince', intro: '努力学习技术的Vince', link: 'i.vince.pub' }
+    - { title: '飞雨晴忘乡', intro: '享建站之香，解发少之苦', link: 'www.52efi.cn' }
+    - { title: 'ConstOwn', intro: '能和你一起成长，我荣幸之至', link: 'blog.juanertu.com' }
+    - { title: 'DmxZ', intro: '欢迎来到 DmxZ 的自留地！', link: 'dmx.pub' }
+    - { title: 'Hcode', intro: '记录编程技术，实现在线小功能', link: 'www.hcode.top' }
+    - { title: 'Neat', intro: '六六的在线记事本', link: 'neatman.club' }
+    - { title: 'LiuYun', intro: '一位信息网络爱好者的博客', link: 'blog.6yfz.cn' }
 
 #---------------------------
 # 工具页
