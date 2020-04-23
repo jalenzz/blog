@@ -7,7 +7,7 @@ page.banner_img_height = theme.links.banner_img_height
 page.banner_mask_alpha = theme.page404.banner_mask_alpha
 %>
 
-<h4 class="note note-success">🍭 跟着身边的大佬走，努力成为小大佬</h4>
+<h4 class="note note-success">🍭 身边的大佬们</h4>
 <div class="row links">
 	<% for(const each of theme.links.defaultlinks) { %>
 		<% if (!each.title || !each.link) continue %>
@@ -15,7 +15,7 @@ page.banner_mask_alpha = theme.page404.banner_mask_alpha
 			<a href="https://<%= url_for(each.link) %>" class="card-body hover-with-bg" target="_blank" rel="noopener">
 			  <div class="card-content">
 				<div class="link-avatar my-auto">
-					<img src="https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/<%= each.title %>.webp" alt="<%= each.title %>" />
+				  <img src="https://rmt.dogedoge.com/fetch/royce/storage/links/<%= each.title %>.jpg?fmt=webp&w=100&h=100&q=100" alt="<%= each.title %>" />
 				</div>
 				<div class="link-text">
 				  <div class="link-title"><%- each.title %></div>
@@ -35,7 +35,7 @@ page.banner_mask_alpha = theme.page404.banner_mask_alpha
 			<a href="https://<%= each.link %>" class="card-body hover-with-bg" target="_blank" rel="noopener">
 			  <div class="card-content">
 				<div class="link-avatar my-auto">
-				  <img src="https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/links/<%= each.title %>.webp" alt="<%= each.title %>" />
+				  <img src="https://rmt.dogedoge.com/fetch/royce/storage/links/<%= each.title %>.jpg?fmt=webp&w=100&h=100&q=100" alt="<%= each.title %>" />
 				</div>
 				<div class="link-text">
 				  <div class="link-title"><%- each.title %></div>

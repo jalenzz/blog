@@ -34,6 +34,7 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+  - google31c60c23147ff31c.html
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -58,7 +59,7 @@ highlight:
 
 
 baidu_url_submit:
-  count: 100 # 提交最新的一个链接
+  count: 200 # 提交最新的一个链接
   host: royce2003.top # 在百度站长平台中注册的域名
   token: COBtZGts63uXwkd6 # 请注意这是您的秘钥， 所以请不要把博客源代码发布在公众仓库里!
   path: baidu_urls.txt # 文本文档的地址， 新链接会保存在此文本文档里
@@ -95,7 +96,6 @@ nofollow:
     - 'mocehu.top'
     - 'codgi.xin'
     - 'apde.xyz'
-    - 'www.yanghuaxing.com'
     - 'idkzr.com'
     - 'yyuzh.xyz'
     - 'ixfish.cn'
@@ -120,14 +120,6 @@ nofollow:
     - 'keithqwq.com'
     - 'gubei.ucu520.top'
     - 'i.vince.pub'
-
-# 本地搜索
-search:
-  path: search.xml  # 索引文件的路径，相对于站点根目录
-  field: all       # 搜索范围，默认是 post，还可以选择 page、all，设置成 all 表示搜索所有页面
-  format: html
-  limit: 100        # 限制搜索的条目数
-
 
 # Security
 encrypt: # hexo-blog-encrypt
