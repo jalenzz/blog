@@ -20,9 +20,9 @@ force_https: true  # 强制所有链接升级为 HTTPS（适用于图片等资�
 
 highlight: # 代码高亮
   enable: true
-  style: 'monokai'  # 高亮样式见：https://highlightjs.org/static/demo/  在页面挑选 style 填入
+  style: 'Atom One Dark'  # 高亮样式见：https://highlightjs.org/static/demo/  在页面挑选 style 填入
   bg_color: true  # 是否根据 style 改变代码背景色，如果 style 是白色背景最好关闭此项
-  copy_btn: true  # 是否开启复制代码的按钮
+  copy_btn: false  # 是否开启复制代码的按钮
 
 fun_features: # 一些好玩的功能
   typing: # 为 subtitle 添加打字机效果
@@ -55,17 +55,17 @@ color:  # 主题颜色配置，不一定能每一处都生效，可能会被局�
 
 font:  # 主题字体配置
   font_size: 16px                   # 全局字号
-  font_family:                      # 全局字体
-  code_font_size: 85%               # 代码的字号
+  font_family: "'Fira Code', 'Noto Serif SC', serif " # 全局字体
+  code_font_size: 100%               # 代码的字号
 
-custom_js: /js/custom.js # 指定自定义 js 文件路径，路径是相对 source 目录，如 /js/custom.js
+custom_js: # 指定自定义 js 文件路径，路径是相对 source 目录，如 /js/custom.js
 custom_css: /css/custom.css # 指定自定义 css 文件路径，路径是相对 source 目录，如 /css/custom.css
 custom_html: ''  # 自定义底部 HTML 内容（位于 footer 上方），也可用于外部引入 js css 这些操作，注意不要和 post.custom 配置冲突
 
 web_analytics:  # 网页访问统计
   enable: true
   baidu: 3b1c52021da1d2ea4a18cb97b7313fd0 # 百度统计的Key，参见 https://tongji.baidu.com/sc-web/10000033910/home/site/getjs?siteId=13751376 代码获取中 hm.js? 后边的字符串
-  google: UA-159538037-1 # Google统计的Tracking ID，参见 https://analytics.google.com/analytics/web/
+  google: # Google统计的Tracking ID，参见 https://analytics.google.com/analytics/web/
   tencent:  # 腾讯统计的H5 App id，参见 https://mta.qq.com/h5/manage/ctr_app_manage (开启高级功能才有cid)
     sid:
     cid:
@@ -102,17 +102,17 @@ version:  # 版本相关
 navbar:
   blog_title: Royce's world # 导航栏左侧的标题，为空则按 hexo config.title 显示
   menu:  # 可自行增减，key 用来关联 languages/*.yml，如不存在关联则显示 key 本身的值，增加 name 可以强制显示指定名称
-    - { key: 'home', link: 'https://www.royce2003.top', icon: 'iconfont icon-home-fill' }
+    # - { key: 'home', link: 'https://www.royce2003.top', icon: 'iconfont icon-home-fill' }
     - { key: 'archive', link: '/archives/', icon: 'iconfont icon-archive-fill' }
     - { key: 'tag', link: '/tags/', icon: 'iconfont icon-tags-fill' }
-    - { key: 'gallery', link: '/gallery/', icon: 'iconfont icon-xiangce1' }
-    - { key: 'links', link: '/links/', icon: 'iconfont icon-link-fill' }
+    # - { key: 'gallery', link: '/gallery/', icon: 'iconfont icon-xiangce1' }
     - { key: 'messageboard', link: '/messageboard/', icon: 'iconfont icon-liuyan' }
+    - { key: 'links', link: '/links/', icon: 'iconfont icon-link-fill' }
     - { key: 'about', link: '/about/', icon: 'iconfont icon-user-fill' }
     - { key: 'tools', link: '/tools/', icon: 'iconfont icon-gongneng' }
 
 search: # 搜索栏
-  enable: true
+  enable: false
   path: /local-search.xml # 文件引用地址，默认是下方生成位置，也可以将生成后的 local-search.xml 上传到其它位置引用，如：https://www.example.com/local-search.xml
   generate_path: /local-search.xml # 文件生成位置，必须为相对位置
   field: post
@@ -123,7 +123,7 @@ scroll_down_arrow:  # 向下滚动的箭头
   banner_height_limit: 90  # 头图高度不小于指定比例，才显示箭头
   scroll_after_turning_page: true  # 翻页后自动滚动
 
-banner_parallax: false # 头图滚动视差
+banner_parallax: true # 头图滚动视差
 
 
 #---------------------------
@@ -152,9 +152,9 @@ scroll_top_arrow:  # 向顶部滚动的箭头
 # Index Page
 #---------------------------
 index:
-  banner_img:   # 首页 Banner 头图，以下相同
+  banner_img: https://rmt.dogedoge.com/fetch/royce/storage/bg/1.jpg?fmt=webp  # 首页 Banner 头图，以下相同
   banner_img_height: 100  # 头图高度，屏幕百分比，available: 0 - 100
-  banner_mask_alpha: 0  # 头图黑色蒙版的透明度，available: 0 - 1.0， 0 是完全透明（无蒙版），1 是完全不透明
+  banner_mask_alpha: 0.3  # 头图黑色蒙版的透明度，available: 0 - 1.0， 0 是完全透明（无蒙版），1 是完全不透明
   post_default_img:   # 随机默认文章封面图，当没有指定 index_img 时会使用该文件夹中的图片，若都为空则不显示任何图片
     url: https://cos.royce2003.top/index_img # 默认的文章封面图文件夹
     number: 3 # 文件夹中图片数量，图片命名从0开始 0.jpg 1.jpg 2.jpg
@@ -173,18 +173,18 @@ index:
 # 通过 hexo new page 命令创建的页面
 # Custom Page
 page:
-  banner_img: 
+  banner_img: https://rmt.dogedoge.com/fetch/royce/storage/bg/1.jpg?fmt=webp
   banner_img_height: 80  # available: 0 - 100
-  banner_mask_alpha: 0  # available: 0 - 1.0
+  banner_mask_alpha: 0.3  # available: 0 - 1.0
 
 #---------------------------
 # 文章页
 # Post Page
 #---------------------------
 post:  # 部分配置同时控制自定义页面，注意备注
-  banner_img: 
+  banner_img: https://rmt.dogedoge.com/fetch/royce/storage/bg/1.jpg?fmt=webp
   banner_img_height: 80  # available: 0 - 100
-  banner_mask_alpha: 0  # available: 0 - 1.0
+  banner_mask_alpha: 0.3  # available: 0 - 1.0
   meta:  # 文章标题下方的信息
     date:  # 文章日期
       enable: true
@@ -298,9 +298,9 @@ baidu_url_submit:
 # Archive Page
 #---------------------------
 archive:
-  banner_img: 
+  banner_img: https://rmt.dogedoge.com/fetch/royce/storage/bg/1.jpg?fmt=webp
   banner_img_height: 80  # available: 0 - 100
-  banner_mask_alpha: 0  # available: 0 - 1.0
+  banner_mask_alpha: 0.3  # available: 0 - 1.0
   subtitle: 记下即将逝去的青春，留下即将过去的幸福 # 打字机内容
 
 #---------------------------
@@ -308,9 +308,9 @@ archive:
 # Categories Page
 #---------------------------
 category:
-  banner_img: 
+  banner_img: https://rmt.dogedoge.com/fetch/royce/storage/bg/1.jpg?fmt=webp
   banner_img_height: 80  # available: 0 - 100
-  banner_mask_alpha: 0  # available: 0 - 1.0
+  banner_mask_alpha: 0.3  # available: 0 - 1.0
   subtitle:  # 打字机内容
 
 #---------------------------
@@ -318,9 +318,9 @@ category:
 # Tags Page
 #---------------------------
 tag:
-  banner_img: 
+  banner_img: https://rmt.dogedoge.com/fetch/royce/storage/bg/1.jpg?fmt=webp
   banner_img_height: 80  # available: 0 - 100
-  banner_mask_alpha: 0  # available: 0 - 1.0
+  banner_mask_alpha: 0.3  # available: 0 - 1.0
   subtitle: 今天也是开心的一天 # 打字机内容
   tagcloud: # 标签云
     min_font: 15
@@ -334,9 +334,9 @@ tag:
 # Messageboard Page
 #---------------------------
 messageboard:
-  banner_img: 
+  banner_img: https://rmt.dogedoge.com/fetch/royce/storage/bg/1.jpg?fmt=webp
   banner_img_height: 80  # available: 0 - 100
-  banner_mask_alpha: 0  # available: 0 - 1.0
+  banner_mask_alpha: 0.3  # available: 0 - 1.0
   subtitle: 留下你的脚印 # 打字机内容
 
 #---------------------------
@@ -344,9 +344,9 @@ messageboard:
 # About Page
 #---------------------------
 about:  # 以下仅为页面顶部的基本信息，更多内容请在 ./pages/about.md 中编辑，支持 markdown 和 HTML
-  banner_img: 
+  banner_img: https://rmt.dogedoge.com/fetch/royce/storage/bg/1.jpg?fmt=webp
   banner_img_height: 80  # available: 0 - 100
-  banner_mask_alpha: 0  # available: 0 - 1.0
+  banner_mask_alpha: 0.3  # available: 0 - 1.0
   subtitle: '今后无论发生什么事也好<br>这个左手上的⋯⋯都是同伴的记号' # 打字机内容
   avatar: https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/about/Royce.webp # 头像
   name: Royce
@@ -363,9 +363,9 @@ about:  # 以下仅为页面顶部的基本信息，更多内容请在 ./pages/a
 # 404 Page
 #---------------------------
 page404:
-  banner_img: 
+  banner_img: https://rmt.dogedoge.com/fetch/royce/storage/bg/1.jpg?fmt=webp
   banner_img_height: 100  # available: 0 - 100
-  banner_mask_alpha: 0  # available: 0 - 1.0
+  banner_mask_alpha: 0.3  # available: 0 - 1.0
   subtitle: 喂，幺幺零吗？这里的页面找不到了 # 打字机内容
 
 # 站点地图
@@ -374,30 +374,15 @@ sitemap:
 # 百度站点地图
 baidusitemap:
   path: baidusitemap.xml
-# RSS订阅
-# 依赖插件 npm install hexo-generator-feed --save
-feed:
-  type: atom
-  path: atom.xml
-  limit: 20
-  hub:
-  content:
-  content_limit: 140
-  content_limit_delim: ' '
-  order_by: -date
-  icon: /img/favicon.ico
-  autodiscovery: true
-  template:
-
 
 #---------------------------
 # 友链页
 # Links Page
 #---------------------------
 links:
-  banner_img: 
+  banner_img: https://rmt.dogedoge.com/fetch/royce/storage/bg/1.jpg?fmt=webp
   banner_img_height: 80  # available: 0 - 100
-  banner_mask_alpha: 0  # available: 0 - 1.0
+  banner_mask_alpha: 0.3  # available: 0 - 1.0
   subtitle: 我的船上没有手下，只有伙伴 # 打字机内容
   defaultlinks:
     - { title: 'Neworld2002', intro: '蓝鸟', link: 'neworld2002.github.io' }
@@ -452,18 +437,19 @@ links:
 # Tools Page
 #---------------------------
 tools:
-  banner_img: 
+  banner_img: https://rmt.dogedoge.com/fetch/royce/storage/bg/1.jpg?fmt=webp
   banner_img_height: 80  # available: 0 - 100
-  banner_mask_alpha: 0  # available: 0 - 1.0
+  banner_mask_alpha: 0.3  # available: 0 - 1.0
   subtitle: 小玩意儿 # 打字机内容
   items:
+    - { title: 'Home', intro: '主页', link: 'https://www.royce2003.top', icon: 'iconfont icon-home-fill' }
+    - { title: '相册', intro: '各种风格的壁纸 or 照片', link: '/gallery/', icon: 'iconfont icon-home-fill' }
     - { title: 'DogeDoge 多吉搜索', intro: '非常好用的搜索引擎，强烈推荐', link: 'https://www.dogedoge.com/' }
-    - { title: '疫情图', intro: '国际国内实时疫情图', link: '/tools/2019-nCoV' }
+    - { title: '疫情图', intro: '国际国内实时疫情图', link: '/tools/2019-nCoV/' }
     - { title: '评论管理', intro: 'Valin 后台评论管理', link: 'https://serve.royce2003.top' }
-    - { title: 'RSS', intro: '本站RSS订阅', link: '/atom.xml' }
-    - { title: '2048', intro: '2048小游戏', link: '/tools/2048' }
+    - { title: '2048', intro: '2048小游戏', link: '/tools/2048/' }
     - { title: 'Music Player', intro: '简约好看的在线音乐播放器', link: 'http://music.royce2003.top/' }
     - { title: 'WebP 转换', intro: '又拍转 WebP + 智能压缩 Demo', link: 'https://www.upyun.com/webp' }
     - { title: 'Fluid Docs', intro: '主题使用指南', link: 'https://hexo.fluid-dev.com/docs/' }
     - { title: 'Fluid Repo', intro: '主题 GitHub 仓库', link: 'https://github.com/fluid-dev/hexo-theme-fluid' }
-    - { title: Fluid Example', intro: '主题操作示例', link: 'https://hexo.fluid-dev.com/docs/example/' }
+    - { title: 'Fluid Example', intro: '主题操作示例', link: 'https://hexo.fluid-dev.com/docs/example/' }
