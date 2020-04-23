@@ -3,12 +3,13 @@ layout: links
 ---
 
 ---
+
 <p align="center"><strong>欢迎留言⭐</strong></p>
 
 ### 🔗 申请要求
 
 {% cb 全站 HTTPS, 2, red %}
-{% cb 非资源站的原创类博客, 2, red %}
+{% cb 非资源站的原创类技术博客, 2, red %}
 {% cb 稳定访问，无繁杂广告推广, 2, red %}
 {% cb 请务必提供 ==1 : 1== 头像, 2, red %}
 

@@ -199,9 +199,10 @@ post:  # 部分配置同时控制自定义页面，注意备注
     views:  # 阅读次数，统计基于不蒜子
       enable: false
       format: "{} 次"
-  updated:
+  updated:  # 在文章开头显示文章更新时间，该时间默认是 md 文件更新时间，可通过 front-matter 中 `updated` 手动指定（和 date 一样格式）
     enable: true
-    content: 本文最后更新于：  
+    content: 本文最后更新于：  # 描述文字
+    relative: true  # 是否使用相对时间表示，比如："3 天前"
   toc:  # 文章右侧目录
     enable: true
     headingSelector: h1,h2,h3,h4,h5,h6
@@ -414,7 +415,6 @@ links:
     - { title: 'MOCEHU',  intro: '一个没有技术贴的技术博客', link: 'mocehu.top' }
     - { title: 'Codgi', intro: 'Do what you love', link: 'codgi.xin' }
     - { title: 'JimmyQin', intro: '挨拍的儿', link: 'apde.xyz' }
-    - { title: '木子洋', intro: '记录成长学习的博客', link: 'www.yanghuaxing.com' }
     - { title: '惴与绕', intro: '一条咸鱼的日常', link: 'idkzr.com' }
     - { title: 'yuzh', intro: '永不停歇--Never Settle', link: 'yyuzh.xyz' }
     - { title: 'Bert', intro: '面朝大海，春暖花开', link: 'ixfish.cn' }
@@ -438,7 +438,6 @@ links:
     - { title: 'Mystery', intro: '心有猛虎，细嗅蔷薇',, link: 'blog.say521.cn' }
     - { title: 'barriery', intro: 'A student, programmer and explorer.', link: 'barriery.cn' }
     - { title: 'keith', intro: '一个热爱网络的学生', link: 'keithqwq.com' }
-    - { title: '故北', intro: '还记得我吗？', link: 'gubei.ucu520.top' }
     - { title: 'Vince', intro: '努力学习技术的Vince', link: 'i.vince.pub' }
     - { title: '飞雨晴忘乡', intro: '享建站之香，解发少之苦', link: 'www.52efi.cn' }
     - { title: 'ConstOwn', intro: '能和你一起成长，我荣幸之至', link: 'blog.juanertu.com' }
@@ -446,6 +445,7 @@ links:
     - { title: 'Hcode', intro: '记录编程技术，实现在线小功能', link: 'www.hcode.top' }
     - { title: 'Neat', intro: '六六的在线记事本', link: 'neatman.club' }
     - { title: 'LiuYun', intro: '一位信息网络爱好者的博客', link: 'blog.6yfz.cn' }
+    - { title: 'Bryce', intro: '啥都想学的程序员', link: 'bryce-huang.club' }
 
 #---------------------------
 # 工具页
@@ -457,6 +457,7 @@ tools:
   banner_mask_alpha: 0  # available: 0 - 1.0
   subtitle: 小玩意儿 # 打字机内容
   items:
+    - { title: 'DogeDoge 多吉搜索', intro: '非常好用的搜索引擎，强烈推荐', link: 'https://www.dogedoge.com/' }
     - { title: '疫情图', intro: '国际国内实时疫情图', link: '/tools/2019-nCoV' }
     - { title: '评论管理', intro: 'Valin 后台评论管理', link: 'https://serve.royce2003.top' }
     - { title: 'RSS', intro: '本站RSS订阅', link: '/atom.xml' }
@@ -465,3 +466,4 @@ tools:
     - { title: 'WebP 转换', intro: '又拍转 WebP + 智能压缩 Demo', link: 'https://www.upyun.com/webp' }
     - { title: 'Fluid Docs', intro: '主题使用指南', link: 'https://hexo.fluid-dev.com/docs/' }
     - { title: 'Fluid Repo', intro: '主题 GitHub 仓库', link: 'https://github.com/fluid-dev/hexo-theme-fluid' }
+    - { title: Fluid Example', intro: '主题操作示例', link: 'https://hexo.fluid-dev.com/docs/example/' }
