@@ -472,8 +472,9 @@ hexo.extend.generator.register('_messageboard', function (locals) {
     function selectTrack2(flag) {
         //歌单api调用 https://api.uomg.com/doc-rand.music.html
         $.getJSON('https://api.uomg.com/api/rand.music?', {
-            sort: "热歌榜" 	 //选择输出分类[热歌榜|新歌榜|飙升榜|抖音榜|电音榜]，为空输出热歌榜
-            mid: 12345,		//sort mid 二选一
+            sort: "热歌榜", //选择输出分类[热歌榜|新歌榜|飙升榜|抖音榜|电音榜]，为空输出热歌榜
+            // mid: 12345,		歌单 id
+            // sort mid 二选一
             format: 'json'
         }, function(json, textStatus) {
             if (json.code == 1) {
