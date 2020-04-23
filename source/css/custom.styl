@@ -1,58 +1,8 @@
-@font-face
-  font-family "Cascadia"
-  src url('https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/fonts/Cascadia.ttf')
-
-*
-  font-family 'Cascadia', 'Noto Serif SC', serif !important
-
 code
-  font-size 100% !important
+  font-family: 'Fira Code', monospace !important
 
 .markdown-body
-  color #333 !important
-
-body 
-  overflow-x hidden
-
-.slideshow
-  position absolute
-  width 100vw
-  height 100vh
-
-  .slideshow-image
-    position fixed
-    background-size cover
-    width 100%
-    height 100%
-    background repeat 50% 50%
-    animation-name kenburns
-    animation-timing-function linear
-    animation-iteration-count infinite
-    animation-duration 24s
-    opacity 1
-    transform scale(1.2)
-    filter brightness(70%)
-
-    &:nth-child(1){-webkit-animation-name: kenburns-1; animation-name: kenburns-1; z-index: -2;}
-    &:nth-child(2){-webkit-animation-name: kenburns-2; animation-name: kenburns-2; z-index: -3;}
-    &:nth-child(3){-webkit-animation-name: kenburns-3; animation-name: kenburns-3; z-index: -4;}
-    &:nth-child(4){-webkit-animation-name: kenburns-4; animation-name: kenburns-4; z-index: -5;}
-
-@keyframes kenburns-1{0%{opacity: 1; -webkit-transform: scale(1.2); transform: scale(1.2);} 1.5625%{opacity: 1;} 23.4375%{opacity: 1;} 26.5625%{opacity: 0; -webkit-transform: scale(1); transform: scale(1);} 100%{opacity: 0; -webkit-transform: scale(1.2); transform: scale(1.2);} 98.4375%{opacity: 0; -webkit-transform: scale(1.21176); transform: scale(1.21176);} 100%{opacity: 1;}}
-@keyframes kenburns-2{23.4375%{opacity: 1; -webkit-transform: scale(1.2); transform: scale(1.2);} 26.5625%{opacity: 1;} 48.4375%{opacity: 1;} 51.5625%{opacity: 0; -webkit-transform: scale(1); transform: scale(1);} 100%{opacity: 0; -webkit-transform: scale(1.2); transform: scale(1.2);}}
-@keyframes kenburns-3{48.4375%{opacity: 1; -webkit-transform: scale(1.2); transform: scale(1.2);} 51.5625%{opacity: 1;} 73.4375%{opacity: 1;} 76.5625%{opacity: 0; -webkit-transform: scale(1); transform: scale(1);} 100%{opacity: 0; -webkit-transform: scale(1.2); transform: scale(1.2);}}
-@keyframes kenburns-4{73.4375%{opacity: 1; -webkit-transform: scale(1.2); transform: scale(1.2);} 76.5625%{opacity: 1;} 98.4375%{opacity: 1;} 100%{opacity: 0; -webkit-transform: scale(1); transform: scale(1);}}
-
-#board
-  margin-top 0
-
-.tocbot-list a
-#toc, footer, footer a
-  color #ffffff
-
-footer a:hover
-.tocbot-active-link
-  color #1abc9c !important
+  color #333
 
 .index-img img
   transition .4s
@@ -156,9 +106,13 @@ footer a:hover
 
 /*暗黑模式*/
 .dark
+  background-color #282c34
   /* 背景遮罩 */
-  .slideshow-image
-    filter brightness(30%)
+  .mask
+    background-color rgba(0,0,0,.7) !important
+    // 打字机
+    span
+        color #a09c9c
 
   /* 主体 */
   #board 
@@ -166,9 +120,9 @@ footer a:hover
     color #a09c9c
   
   img  
-    filter brightness(50%)
+    filter brightness(60%)
 
-  p, .index-card a, .post-meta:not(.iconfont)
+  p, .index-card a, .post-meta
     color #a09c9c
 
   a
@@ -182,12 +136,13 @@ footer a:hover
     background-color #24282F
 
   /* 顶栏 */
+  .nav-link
+  .navbar-brand
+    color:#a09c9c !important
+
   .navbar-col-show
   .top-nav-collapse  
     background-color #282c34
-    
-  .navbar a  
-    color #a09c9c
     
   .animated-icon span   /* 手机端 */
     background-color #a09c9c
@@ -196,12 +151,6 @@ footer a:hover
   .pagination 
     .current, a:hover
       background-color #6b6b6b73
-
-  /* 打字机 */
-  #subtitle
-  .scroll-down-arrow
-  .dark.typed-cursor--blink
-    color #dfdfdf
 
   /* back to top */
   #scroll-top-button
@@ -273,11 +222,3 @@ footer a:hover
 
     input, textarea
       color #a09c9c !important
-
-  .hbe-input-container 
-    input
-      background #282C34
-      border-bottom 1px solid #a09c9c
-
-    label
-      color #a09c9c
