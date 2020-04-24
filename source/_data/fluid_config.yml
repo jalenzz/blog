@@ -27,7 +27,7 @@ highlight: # 代码高亮
 fun_features: # 一些好玩的功能
   typing: # 为 subtitle 添加打字机效果
     enable: true
-    typeSpeed: 70  # 打印速度，数字越大越慢
+    typeSpeed: 100  # 打印速度，数字越大越慢
     cursorChar: "_" # 游标字符
     loop: false # 是否循环播放效果
   anchorjs: # 为文章内容中的标题添加锚图标
@@ -74,7 +74,7 @@ web_analytics:  # 网页访问统计
   cnzz:  # 友盟/cnzz站点统计web_id，参见 https://web.umeng.com/main.php?c=site&a=show
 
 lazyload: # 对页面中的图片进行懒加载处理，可见范围外的图片不会加载
-  enable: true
+  enable: false
   onlypost: true  # 仅在文章页使用懒加载，开启后如果自定义页面需要使用，可以在 Front-matter 里指定 `lazyload: true`
   image: https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/loading.webp
 
@@ -105,7 +105,7 @@ navbar:
     # - { key: 'home', link: 'https://www.royce2003.top', icon: 'iconfont icon-home-fill' }
     - { key: 'archive', link: '/archives/', icon: 'iconfont icon-archive-fill' }
     - { key: 'tag', link: '/tags/', icon: 'iconfont icon-tags-fill' }
-    # - { key: 'gallery', link: '/gallery/', icon: 'iconfont icon-xiangce1' }
+    - { key: 'gallery', link: '/gallery/', icon: 'iconfont icon-xiangce1' }
     - { key: 'messageboard', link: '/messageboard/', icon: 'iconfont icon-liuyan' }
     - { key: 'links', link: '/links/', icon: 'iconfont icon-link-fill' }
     - { key: 'about', link: '/about/', icon: 'iconfont icon-user-fill' }
@@ -209,7 +209,7 @@ post:  # 部分配置同时控制自定义页面，注意备注
     collapseDepth: 0  # 层级的折叠深度，0 是全部折叠，6 是全部不折叠
   copyright:  # 版权声明
     enable: true
-    content: '本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="nofollow noopener">CC BY-NC-SA 4.0 协议</a> 。转载请注明出处！'
+    content: '本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener external nofollow noreferrer">CC BY-NC-SA 4.0 协议</a> 。转载请注明出处！'
   custom:  # 文章底部自定义内容
     enable: false
     content: '<img src="https://octodex.github.com/images/jetpacktocat.png" class="rounded mx-auto d-block mt-5" style="width:150px; height:150px;">' # 自定义区域，支持 HTML，可自行插入赞赏码、公众号二维码等内容
@@ -399,7 +399,7 @@ links:
     - { title: '极客空间', intro: '一个准备高考的高三狗', link: 'www.geek-space.cn' }
     - { title: 'MOCEHU',  intro: '一个没有技术贴的技术博客', link: 'mocehu.top' }
     - { title: 'Codgi', intro: 'Do what you love', link: 'codgi.xin' }
-    - { title: 'JimmyQin', intro: '挨拍的儿', link: 'apde.xyz' }
+    - { title: 'JimmyQin', intro: '挨拍的儿', link: 'www.apde.workers.dev' }
     - { title: '惴与绕', intro: '一条咸鱼的日常', link: 'idkzr.com' }
     - { title: 'yuzh', intro: '永不停歇--Never Settle', link: 'yyuzh.xyz' }
     - { title: 'Bert', intro: '面朝大海，春暖花开', link: 'ixfish.cn' }
@@ -443,7 +443,7 @@ tools:
   subtitle: 小玩意儿 # 打字机内容
   items:
     - { title: 'Home', intro: '主页', link: 'https://www.royce2003.top', icon: 'iconfont icon-home-fill' }
-    - { title: '相册', intro: '各种风格的壁纸 or 照片', link: '/gallery/', icon: 'iconfont icon-home-fill' }
+    # - { title: '相册', intro: '各种风格的壁纸 or 照片', link: '/gallery/', icon: 'iconfont icon-home-fill' }
     - { title: 'DogeDoge 多吉搜索', intro: '非常好用的搜索引擎，强烈推荐', link: 'https://www.dogedoge.com/' }
     - { title: '疫情图', intro: '国际国内实时疫情图', link: '/tools/2019-nCoV/' }
     - { title: '评论管理', intro: 'Valin 后台评论管理', link: 'https://serve.royce2003.top' }

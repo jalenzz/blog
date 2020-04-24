@@ -15,14 +15,21 @@ index_img: https://cos.royce2003.top/34979/index_img.webp
 网上搜了很多其他方法，总结下两个方案
 
 ### 替换文件
+
 浏览器地址栏输入 `edge://version/` ，chrome 等方法类似，找到 flash 的位置
 ![](https://cos.royce2003.top/34979/01.webp)
-将 `pepflashplayer.dll` 替换成我这里提供的文件
+将 `pepflashplayer.dll` 替换下方提供的文件
+
 <a class="BoxButton" href="https://www.lanzous.com/iawvd9a">点我下载</a>
 密码: b0fx
 
 ### 采用浏览器自带插件
+
 （这个方法我这没用，但有人可以，有点奇怪，推荐方法 1）
 同样在浏览器地址栏输入 `edge://version/` ，chrome 等方法类，找到 flash 的位置
 将浏览器关闭，删除 `C:\Users\Royce\AppData\Local\Microsoft\Edge Dev\User Data\PepperFlash\` 文件夹
 之后据说会调用浏览器自己的
+
+---
+
+文件源自 [吾爱破解](https://www.52pojie.cn/thread-1133261-1-1.html)

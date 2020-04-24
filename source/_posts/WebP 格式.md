@@ -26,8 +26,6 @@ abbrlink: 12013
 > 
 > WebP 文件由 VP8 或 VP8L 图像数据以及基于 RIFF 的容器组成。
 
-以上来自 [Google Developers](https://developers.google.com/speed/webp)
-
 ### 兼容性
 
 这种东西就贼烦了
@@ -116,7 +114,7 @@ Google Chrome，Firefox，Edge，Opera 等都支持 WebP
 图片体积小，支持透明、动画，不过少数浏览器不支持  
 ~~万恶的~~ Safari 以后应该也是会支持的吧
 
-能有效缓解网页加载过慢的情况~~（不配图加载最快了）~~  
+能有效缓解网页加载过慢的情况 ~~（不配图加载最快了）~~  
 还能有效缓解流量太大导致的费用过高（针对对象存储）
 
 WebP 支持 Alpha 透明和 24-bit 颜色数，例如 PNG8 中的毛边问题是不会出现的
@@ -260,3 +258,12 @@ options 可调节质量
 这篇文章在此之前一共 18 张图片，PNG 格式大小为 25.1 MB，Snipaste 直接100质量输出，智图转 WebP 之后仅 645 KB，直接就省了 24 MB 啊
 
 ![](https://cos.royce2003.top/12013/19.webp)
+
+---
+
+### 参考
+
+1. [A new image format for the Web](https://developers.google.com/speed/webp)
+2. [Can I use](https://caniuse.com/#search=webp)
+3. [Apple tests Google graphics format to speed up websites](https://www.cnet.com/news/apple-ios-macos-tests-googles-webp-graphics-to-speed-up-web/)
+4. [WebP 示例 (PNG 转 WebP)](https://isparta.github.io/compare-webp/index.html#12345)
