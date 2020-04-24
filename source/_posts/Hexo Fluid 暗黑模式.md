@@ -231,4 +231,7 @@ sessionStorage 在手机浏览器上问题很多，不推荐使用
 ![](https://cos.royce2003.top/41212/02.webp)
 
 ---
-**参考 [文章链接](https://crosschannel.cc/daily/hexo%E6%B7%BB%E5%8A%A0%E6%9A%97%E8%89%B2%E6%A8%A1%E5%BC%8F.html)**
+
+### 参考
+
+1. [面向小白的Hexo添加暗色模式教程 | 宅日记](https://crosschannel.cc/daily/hexo%E6%B7%BB%E5%8A%A0%E6%9A%97%E8%89%B2%E6%A8%A1%E5%BC%8F.html)

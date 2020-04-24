@@ -201,6 +201,3 @@ deploy:
     region: ap-shanghai
     secretId: AKIDfX8TYMJ9OcZ7OO7LHtEI6evQeaGgpBQD
     secretKey: h7HAmY3IGxC5hncBTUEG4cttOcZw4fz2
-  - type: git
-    repo: git@github.com:Royce2019/Royce2019.github.io.git
-    branch: master
