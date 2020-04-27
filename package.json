@@ -18,6 +18,7 @@
     "@upupming/hexo-renderer-markdown-it-plus": "^2.0.2",
     "hexo": "^4.0.0",
     "hexo-abbrlink": "^2.0.5",
+    "hexo-all-minifier": "^0.5.3",
     "hexo-baidu-url-submit": "0.0.6",
     "hexo-blog-encrypt": "^3.0.12",
     "hexo-deployer-cos-cdn": "^1.7.0",
@@ -31,7 +32,6 @@
     "hexo-generator-index-pin-top": "^0.2.2",
     "hexo-generator-sitemap": "^2.0.0",
     "hexo-generator-tag": "^1.0.0",
-    "hexo-neat": "git@github.com:Royce2019/hexo-neat.git",
     "hexo-renderer-ejs": "^1.0.0",
     "hexo-renderer-stylus": "^1.1.0",
     "hexo-server": "^1.0.0"

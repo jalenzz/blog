@@ -4,11 +4,12 @@ date: 2020-04-20 15:00:51
 tags: [横向评测]
 index_img: https://cos.royce2003.top/12013/index_img.webp
 abbrlink: 12013
+excerpt: WebP，由 Google 开发的新型图像格式，从名字就可以看出是专门为了 Web 而设计。采用 WebP 格式能对网站速度提升起到很大帮助。
 ---
 
 ## WebP
 
-新型图像格式，由 Google 开发
+新型图像格式，由 Google 开发[^1]
 
 ### 什么是 WebP
 
@@ -28,17 +29,17 @@ abbrlink: 12013
 
 ### 兼容性
 
-这种东西就贼烦了
+这种东西就贼烦了:hear_no_evil:
 
 Google Chrome，Firefox，Edge，Opera 等都支持 WebP
 
-![支持列表](https://cos.royce2003.top/12013/01.webp)
+[^2]![支持列表](https://cos.royce2003.top/12013/01.webp)
 
-~~万恶的~~ Safari 居然还不支持，但当看到下方的 `Safari is experimenting with supporting WebP images.` 时，还兴奋了一小会，但点进去之后...
+~~万恶的~~ Safari 居然还不支持，但当看到下方的 `Safari is experimenting with supporting WebP images.`[^3] 时，还兴奋了一小会，但点进去之后...
 
 ![Safari 支持情况](https://cos.royce2003.top/12013/02.webp)
 
-2016 年 7 月 19 日 ... wd*md  
+2016 年 7 月 19 日 ... wd*md:anger::anger:  
 而且 2016 年就内测过，居然给删了...  
 和 Google 竞争？没有技术做好？我肯定相信前者
 
@@ -68,10 +69,10 @@ Google Chrome，Firefox，Edge，Opera 等都支持 WebP
 
 #### 腾讯、阿里云
 
-两者均无 WebP 格式图片
+两者均无 WebP 格式图片:-1:
 
 ### 大小
-
+[^4]
 ![PNG WebP 对比1](https://cos.royce2003.top/12013/07.webp)
 ![PNG WebP 对比2](https://cos.royce2003.top/12013/08.webp)
 
@@ -80,11 +81,11 @@ Google Chrome，Firefox，Edge，Opera 等都支持 WebP
 
 ![](https://cos.royce2003.top/12013/09.webp)
 
-好像图片有点大诶，由于采用本地软件[智图](https://zhitu.isux.us/)转换，CPU 直接拉满了 qaq
+好像图片有点大诶，由于采用本地软件[智图](https://zhitu.isux.us/)转换，CPU 直接拉满了 qaq:sob:
 
 ![](https://cos.royce2003.top/12013/10.webp)
 
-而且两张图图还出错了 qaq，就成功了两张
+而且两张图图还出错了 qaq，就成功了两张:sob:
 
 ![](https://cos.royce2003.top/12013/11.webp)
 
@@ -240,7 +241,7 @@ options 可调节质量
 
 #### 缺点
 
-好像没找到缺点，还是托管在 gitee 的，访问速度非常快
+好像没找到缺点，还是托管在 gitee 的，访问速度非常快:laughing:
 
 ### 总结
 
@@ -255,15 +256,12 @@ options 可调节质量
 单张图片最优选又拍云是因为会智能压缩而且比较快，比较方便
 多图主要还是因为智图有客户端，方便一点，webp2jpg-online 如果出客户端我肯定毫不犹豫选它
 
-这篇文章在此之前一共 18 张图片，PNG 格式大小为 25.1 MB，Snipaste 直接100质量输出，智图转 WebP 之后仅 645 KB，直接就省了 24 MB 啊
+这篇文章在此之前一共 18 张图片，PNG 格式大小为 25.1 MB，Snipaste 直接100质量输出，智图转 WebP 之后仅 645 KB，直接就省了 24 MB 啊:+1:
 
 ![](https://cos.royce2003.top/12013/19.webp)
 
----
 
-### 参考
-
-1. [A new image format for the Web](https://developers.google.com/speed/webp)
-2. [Can I use](https://caniuse.com/#search=webp)
-3. [Apple tests Google graphics format to speed up websites](https://www.cnet.com/news/apple-ios-macos-tests-googles-webp-graphics-to-speed-up-web/)
-4. [WebP 示例 (PNG 转 WebP)](https://isparta.github.io/compare-webp/index.html#12345)
+[^1]: 参考 [A new image format for the Web](https://developers.google.com/speed/webp)
+[^2]: 图片来源 [Can I use...](https://caniuse.com/#feat=webp)
+[^3]: 来源 [Apple tests Google graphics format to speed up websites](https://www.cnet.com/news/apple-ios-macos-tests-googles-webp-graphics-to-speed-up-web/)
+[^4]: 图片来源 [WebP 示例 (PNG 转 WebP)](https://isparta.github.io/compare-webp/index.html#12345)
