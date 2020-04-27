@@ -195,9 +195,9 @@ theme: fluid
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   - type: baidu_url_submitter
-  # - type: cos-cdn 
-  #   cloud: tencent 
-  #   bucket: blog-1258841079
-  #   region: ap-shanghai
-  #   secretId: AKIDfX8TYMJ9OcZ7OO7LHtEI6evQeaGgpBQD
-  #   secretKey: h7HAmY3IGxC5hncBTUEG4cttOcZw4fz2
+  - type: cos-cdn 
+    cloud: tencent 
+    bucket: blog-1258841079
+    region: ap-shanghai
+    secretId: AKIDfX8TYMJ9OcZ7OO7LHtEI6evQeaGgpBQD
+    secretKey: h7HAmY3IGxC5hncBTUEG4cttOcZw4fz2

@@ -4,7 +4,7 @@ layout: links
 
 ---
 
-<p align="center"><strong>欢迎留言🌟</strong></p>
+<!-- <p align="center"><strong>欢迎留言🌟</strong></p>
 
 ### :link: 申请要求
 
@@ -27,8 +27,10 @@ layout: links
 网站: https://www.royce2003.top
 简介: OI 小白
 头像: https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/about/Royce.webp
-{% endnote %}
+{% endnote %} -->
 
-<center>
+<!-- <center>
 	<a class="BoxButton" href="/messageboard/" title="留言板" style="font-size: 1.25em;">申请友链</a>
-</center>
+</center> -->
+
+**友链过多，近期会认真审查，暂停交换友链，当然，如果你和我很熟，那就当没看到这行话吧 :laughing:**
