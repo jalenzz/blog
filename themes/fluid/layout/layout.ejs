@@ -11,13 +11,13 @@ var banner_mask_alpha = page.banner_mask_alpha || theme.index.banner_mask_alpha
 <%- partial('_partial/head') %>
 
 <body>
-  <div id="dark" onclick="switchDarkMode()"></div>
+  <a id="dark" onclick="switchDarkMode()"></a>
   <script>
     var isNight = new Date().getHours() >= 22 || new Date().getHours() < 7;
     if(((matchMedia('(prefers-color-scheme: dark)').matches)||isNight||(localStorage.getItem('dark') === '1'))&&!(isNight&&localStorage.getItem('noDark') === '1')) {
       document.body.classList.add('dark');
     }
-    document.getElementById('dark').innerHTML = document.querySelector("body").classList.contains("dark")?"🌙":"🌞";
+    document.getElementById('dark').innerHTML = document.querySelector("body").classList.contains("dark") ? '<i class="iconfont icon-moon"></i>' : '<i class="iconfont icon-sun"></i>';
   </script>
   <header style="height: <%- banner_img_height %>vh;">
     <%- partial('_partial/nav') %> 

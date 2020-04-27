@@ -1,8 +1,25 @@
-code
-  font-family: 'Fira Code', monospace !important
+p, ol, ul
+  line-height 1.6
 
 .markdown-body
-  color #333
+  a
+    color #1abc9c
+
+    &:not([href*="royce2003.top"])[href*="http"]::after
+      font-family "iconfont"
+      content "\e681"
+      color #aaa
+      font-size 12px
+      margin 0 5px 0
+
+  h1, h2, h3, h4, h5, h6
+    a::after
+      content ""
+
+.navbar-col-show, .top-nav-collapse
+  background rgba(47,65,84,.8)
+  backdrop-filter blur(3px)
+  -webkit-backdrop-filter blur(3px)
 
 .link-intro
   font-size .9rem
@@ -12,6 +29,9 @@ code
 
 .index-card:hover .index-img img
   box-shadow 0 5px 11px 0 rgba(0,0,0,0.62), 0 4px 15px 0 rgba(0,0,0,0.65)
+
+.post-meta > i
+  margin-right -.3rem
 
 #gradient
   color #f35626
@@ -43,17 +63,14 @@ code
   display none
 
 ::-webkit-scrollbar
-  width 10px
-  height 10px
-  background-color #2f415452
+  width 8px
+  background-color #bac3cd
 
 ::-webkit-scrollbar-thumb
-  border-radius 5px
   background-color #2f4154
-  background-image -webkit-linear-gradient(45deg,rgba(255,255,255,.2) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.2) 50%,rgba(255,255,255,.2) 75%,transparent 75%,transparent)
 
   &:hover
-    background-color #2f4154b8
+    background-color #576d84
 
 /* 按钮样式 */
 .BoxButton
@@ -98,24 +115,31 @@ code
   height 1.5em
 
 /* 切换按钮 */
-#dark
-  cursor pointer
+#dark i
   position fixed
-  right 6px
-  bottom 4rem
-  width 3rem
-  z-index 1050
-  font-size 20px
+  right 4rem
+  bottom 2rem
+  font-size 2rem
+  z-index 99
+  color #EBA300
+
+@media (max-width 767px)
+  #dark i
+    right 1rem
 
 /*暗黑模式*/
 .dark
   background-color #282c34
+
+  #dark i
+    color #757575
+
   /* 背景遮罩 */
   .mask
     background-color rgba(0,0,0,.7) !important
     // 打字机
     span
-        color #a09c9c
+      color #a09c9c
 
   /* 主体 */
   #board 
@@ -131,27 +155,31 @@ code
   a
     color #718096
 
+    &:hover
+      color #12977d
+
   .markdown-body
-    h1, h2, h3, h4, h5, h6, s, li  
+    h1, h2, h3, h4, h5, h6, li, s
       color:#a09c9c !important
+
+    blockquote
+      border-left: .25em solid #6c6c6c;
 
   .hover-with-bg:hover
     background-color #24282F
 
   /* 顶栏 */
-  .nav-link
-  .navbar-brand
+  .nav-link, .navbar-brand
     color:#a09c9c !important
 
-  .navbar-col-show
-  .top-nav-collapse  
-    background-color #282c34
-    
+  .navbar-col-show, .top-nav-collapse
+    background-color rgba(40, 44, 52, .8)
+
   .animated-icon span   /* 手机端 */
     background-color #a09c9c
 
   /* page-number */
-  .pagination 
+  .pagination
     .current, a:hover
       background-color #6b6b6b73
 
@@ -166,8 +194,7 @@ code
   .tocbot-list a
     color #a09c9c
 
-  .tocbot-active-link
-  footer a:hover
+  .tocbot-active-link, footer a:hover
     color #1abc9c !important
 
   /* footer */
@@ -178,7 +205,7 @@ code
   .list-group-item
     color #a09c9c
     background-color #282c34
-    
+
     &:hover
       background-color #46484d
 
@@ -188,13 +215,13 @@ code
 
   /* 友链页 */
   .links
-    .card  
+    .card 
       background-color #282c34
-      
-    .card-body:hover  
+
+    .card-body:hover
       background-color #46484d
-      
-    .link-title, .link-intro  
+
+    .link-title, .link-intro
       color #a09c9c
 
   /* note */
@@ -225,3 +252,34 @@ code
 
     input, textarea
       color #a09c9c !important
+
+code
+  font-family 'Fira Code', monospace !important
+.hljs
+	color #fff
+	background #20232a
+.hljs-comment,.hljs-quote
+	color #708090
+	font-style italic
+.hljs-literal
+	color #56b6c2
+.hljs-number
+  color #ae81ff
+.hljs-built_in,.hljs-class .hljs-title
+	color #e6c07b
+.hljs-doctag,.hljs-keyword,.hljs-formula
+	color #66d9ef
+.hljs-section,.hljs-name,.hljs-selector-tag,.hljs-deletion,.hljs-subst
+	color #fc7d87
+.hljs-string,.hljs-regexp,.hljs-addition,.hljs-attribute,.hljs-meta-string
+	color #a6e22e
+.hljs-symbol,.hljs-bullet,.hljs-link,.hljs-meta,.hljs-selector-id,.hljs-title
+	color #fff488
+.hljs-attr,.hljs-variable,.hljs-template-variable,.hljs-type,.hljs-selector-class,.hljs-selector-attr,.hljs-selector-pseudo
+	color #ffc289
+.hljs-emphasis
+	font-style italic
+.hljs-strong
+	font-weight bold
+.hljs-link
+	text-decoration underline

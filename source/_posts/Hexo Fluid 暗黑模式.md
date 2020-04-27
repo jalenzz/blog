@@ -4,6 +4,7 @@ date: 2020-04-02 18:04:57
 tags: [Hexo, Fluid, CSS]
 index_img: https://cos.royce2003.top/41212/index_img.webp
 abbrlink: 41212
+excerpt: 适用于 Hexo 的暗黑模式，目前博客已经基本上适配完成了
 ---
 
 大概花了一个晚上搞暗黑模式，之后几天陆续优化了下
