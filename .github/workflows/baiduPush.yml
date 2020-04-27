@@ -1,0 +1,26 @@
+name: baiduPush
+
+on:
+  push:
+  schedule:
+    - cron: '0 16 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '10.x'
+
+    - name: Install
+      run: |
+        npm install hexo-cli -g
+        npm install
+    
+    - name: Push to Baidu
+      run: |
+        hexo clean && hexo g
+        npm run baidupush
