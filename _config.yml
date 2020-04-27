@@ -8,8 +8,8 @@ subtitle: ''
 description: '小白 | OIer | 科技生活 | 高中生'
 keywords: Royce
 author: Royce
-language: zh-CN
-timezone: ''
+language: 
+timezone: 'Asia/Shanghai'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -63,15 +63,6 @@ baidu_url_submit:
   host: royce2003.top # 在百度站长平台中注册的域名
   token: COBtZGts63uXwkd6 # 请注意这是您的秘钥， 所以请不要把博客源代码发布在公众仓库里!
   path: baidu_urls.txt # 文本文档的地址， 新链接会保存在此文本文档里
-
-# 字数统计
-symbols_count_time:
- #文章内是否显示
-  symbols: false
-  time: false
- # 网页底部是否显示
-  total_symbols: false
-  total_time: false
 
 # 外部链接优化
 nofollow:
@@ -154,7 +145,7 @@ meta_generator: true
 ## Hexo uses Moment.js to parse and display date
 ## You can customize the date format as defined in
 ## http://momentjs.com/docs/#/displaying/format/
-date_format: YYYY-MM-DD
+date_format: MMM DD YYYY
 time_format: HH:mm:ss
 ## Use post's date for updated date unless set in front-matter
 use_date_for_updated: false
@@ -170,20 +161,29 @@ include:
 exclude:
 ignore:
 
-neat_enable: true
-neat_html:
+all_minifier: true
+js_concator:
+  enable: false
+  bundle_path: '/js/bundle.js'
+  front: false
+  silent: false
+html_minifier:
   enable: true
+  ignore_error: false
+  silent: false
   exclude:
-neat_css:
+css_minifier:
   enable: true
-  exclude:
+  silent: false
+  exclude: 
     - '*.min.css'
-neat_js:
+js_minifier:
   enable: true
   mangle: true
+  silent: false
   output:
   compress:
-  exclude:
+  exclude: 
     - '*.min.js'
 
 # Extensions
@@ -195,9 +195,9 @@ theme: fluid
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   - type: baidu_url_submitter
-  - type: cos-cdn 
-    cloud: tencent 
-    bucket: blog-1258841079
-    region: ap-shanghai
-    secretId: AKIDfX8TYMJ9OcZ7OO7LHtEI6evQeaGgpBQD
-    secretKey: h7HAmY3IGxC5hncBTUEG4cttOcZw4fz2
+  # - type: cos-cdn 
+  #   cloud: tencent 
+  #   bucket: blog-1258841079
+  #   region: ap-shanghai
+  #   secretId: AKIDfX8TYMJ9OcZ7OO7LHtEI6evQeaGgpBQD
+  #   secretKey: h7HAmY3IGxC5hncBTUEG4cttOcZw4fz2

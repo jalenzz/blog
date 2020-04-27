@@ -129,21 +129,20 @@ $(document).ready(function() {
   scrollTopArrowEvent();
 });
 
-// custom js
+// Custom JS
 $(".indeterminate").prop("indeterminate", true);
 if ((sessionStorage.getItem('confirm') !== '1') && (/Safari/.test(navigator.userAgent) && !/Chrome/.test(navigator.userAgent))) {
   confirm('抱歉，本博客在苹果设备上会产生严重卡顿，\n且在 Safari 中大部分图片无法显示');
   sessionStorage.setItem('confirm', '1');
 }
-// Dark Mode 点击
 function switchDarkMode() {
 	if ($('body').hasClass('dark')) {
-		$("#dark").html("🌞");
+		$("#dark").html('<i class="iconfont icon-sun"></i>');
 		document.body.classList.remove('dark');
 		localStorage.setItem('noDark', '1');
 		localStorage.setItem('dark', '0');
 	} else {
-		$("#dark").html("🌙"); 
+		$("#dark").html('<i class="iconfont icon-moon"></i>'); 
 		document.body.classList.add('dark');
 		localStorage.setItem('dark', '1');
 		localStorage.setItem('noDark', '0');

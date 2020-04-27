@@ -22,7 +22,7 @@ highlight: # 代码高亮
   enable: true
   style: 'Atom One Dark'  # 高亮样式见：https://highlightjs.org/static/demo/  在页面挑选 style 填入
   bg_color: true  # 是否根据 style 改变代码背景色，如果 style 是白色背景最好关闭此项
-  copy_btn: false  # 是否开启复制代码的按钮
+  copy_btn: true  # 是否开启复制代码的按钮
 
 fun_features: # 一些好玩的功能
   typing: # 为 subtitle 添加打字机效果
@@ -46,7 +46,7 @@ color:  # 主题颜色配置，不一定能每一处都生效，可能会被局�
   navbar_text_color: "white"        # 顶部菜单字体色
   text_color: "#3c4858"             # 全局字体色
   sec_text_color: "#718096"         # 全局次级字体色（摘要、简介等位置）
-  post_text_color: "#2c3e50"        # 文章正文字体色
+  post_text_color: "#333"           # 文章正文字体色
   post_heading_color: "#1a202c"     # 文章标题标签字体色（h1 h2 h3...）
   link_color: "#3c4858"             # 超链接字体色
   link_hover_color: "#1abc9c"       # 超链接悬浮时字体色
@@ -54,9 +54,9 @@ color:  # 主题颜色配置，不一定能每一处都生效，可能会被局�
   board_color: "#fff"               # 主面板背景色
 
 font:  # 主题字体配置
-  font_size: 16px                   # 全局字号
+  font_size: 1.1rem # 全局字号
   font_family: "'Fira Code', 'Noto Serif SC', serif " # 全局字体
-  code_font_size: 100%               # 代码的字号
+  code_font_size: 100% # 代码的字号
 
 custom_js: # 指定自定义 js 文件路径，路径是相对 source 目录，如 /js/custom.js
 custom_css: /css/custom.css # 指定自定义 css 文件路径，路径是相对 source 目录，如 /css/custom.css
@@ -109,10 +109,10 @@ navbar:
     - { key: 'messageboard', link: '/messageboard/', icon: 'iconfont icon-liuyan' }
     - { key: 'links', link: '/links/', icon: 'iconfont icon-link-fill' }
     - { key: 'about', link: '/about/', icon: 'iconfont icon-user-fill' }
-    - { key: 'tools', link: '/tools/', icon: 'iconfont icon-gongneng' }
+    - { key: 'tools', link: '/tools/', icon: 'iconfont icon-laboratory' }
 
 search: # 搜索栏
-  enable: false
+  enable: true
   path: /local-search.xml # 文件引用地址，默认是下方生成位置，也可以将生成后的 local-search.xml 上传到其它位置引用，如：https://www.example.com/local-search.xml
   generate_path: /local-search.xml # 文件生成位置，必须为相对位置
   field: post
@@ -188,19 +188,19 @@ post:  # 部分配置同时控制自定义页面，注意备注
   meta:  # 文章标题下方的信息
     date:  # 文章日期
       enable: true
-      format: "YYYY MMMM Do, dddd, h:mm a"  # 格式参照 ISO-8601 日期格式化
+      format: "ddd MMM DD YYYY"  # 格式参照 ISO-8601 日期格式化
     wordcount:  # 字数统计
       enable: true
-      format: "{} 字"  # 显示的文本，{}是数字的占位符（必须包含)，下同
+      format: "{}"  # 显示的文本，{}是数字的占位符（必须包含)，下同
     min2read:  # 阅读时间
-      enable: true
+      enable: false
       format: "{} 分钟"
       words: 100  # 每分钟阅读多少字，如果是技术文章，建议降低
     views:  # 阅读次数，统计基于不蒜子
       enable: false
       format: "{} 次"
   updated:  # 在文章开头显示文章更新时间，该时间默认是 md 文件更新时间，可通过 front-matter 中 `updated` 手动指定（和 date 一样格式）
-    enable: true
+    enable: false
     content: 本文最后更新于：  # 描述文字
     relative: true  # 是否使用相对时间表示，比如："3 天前"
   toc:  # 文章右侧目录
@@ -209,7 +209,9 @@ post:  # 部分配置同时控制自定义页面，注意备注
     collapseDepth: 0  # 层级的折叠深度，0 是全部折叠，6 是全部不折叠
   copyright:  # 版权声明
     enable: true
-    content: '本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener external nofollow noreferrer">CC BY-NC-SA 4.0 协议</a> 。转载请注明出处！'
+    content: '本博客文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0 协议</a>。转载请注明出处！'
+  prev_next:  # 文章底部上一篇下一篇功能
+    enable: false
   custom:  # 文章底部自定义内容
     enable: false
     content: '<img src="https://octodex.github.com/images/jetpacktocat.png" class="rounded mx-auto d-block mt-5" style="width:150px; height:150px;">' # 自定义区域，支持 HTML，可自行插入赞赏码、公众号二维码等内容

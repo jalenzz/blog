@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v1
@@ -15,11 +15,11 @@ jobs:
       with:
         node-version: '10.x'
 
-    - name: Setup Hexo
+    - name: Install
       run: |
         npm install hexo-cli -g
         npm install
     
-    - name: Deploy to COS
+    - name: Deploy to cos
       run: |
         hexo clean && hexo g && hexo d

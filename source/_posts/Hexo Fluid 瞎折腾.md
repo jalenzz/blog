@@ -1,24 +1,20 @@
 ---
 title: Hexo Fluid 瞎折腾
 date: 2020-04-01 12:20:51
-tags: [Fluid, Hexo, CSS]
+tags: 
+  - Fluid
+  - Hexo
+  - CSS
 index_img: https://cos.royce2003.top/60394/index_img.webp
 abbrlink: 60394
 top: 10
+excerpt: 2020.04.13 更新
 ---
 
-
 {% note primary %}
-**2020.04.10 新增超好看的复选框**  
-{% endnote %}
-
-{% note info %}
-**2020.04.13 更新动态背景代码** 
-{% endnote %}
-<!--more-->
-
-{% note danger %}
-**随着主题的更新，文中的代码可能失效或引起错误，请自行修改**
+2020.04.10 新增超好看的复选框 
+2020.04.13 更新动态背景代码
+==随着主题的更新，文中的代码可能失效或引起错误，请自行修改==
 {% endnote %}
 
 ### 前言
@@ -70,7 +66,6 @@ custom_html: ''  # 自定义底部 HTML 内容（位于 footer 上方），也�
 @keyframes kenburns-2{23.4375%{opacity: 1; -webkit-transform: scale(1.2); transform: scale(1.2);} 26.5625%{opacity: 1;} 48.4375%{opacity: 1;} 51.5625%{opacity: 0; -webkit-transform: scale(1); transform: scale(1);} 100%{opacity: 0; -webkit-transform: scale(1.2); transform: scale(1.2);}}
 @keyframes kenburns-3{48.4375%{opacity: 1; -webkit-transform: scale(1.2); transform: scale(1.2);} 51.5625%{opacity: 1;} 73.4375%{opacity: 1;} 76.5625%{opacity: 0; -webkit-transform: scale(1); transform: scale(1);} 100%{opacity: 0; -webkit-transform: scale(1.2); transform: scale(1.2);}}
 @keyframes kenburns-4{73.4375%{opacity: 1; -webkit-transform: scale(1.2); transform: scale(1.2);} 76.5625%{opacity: 1;} 98.4375%{opacity: 1;} 100%{opacity: 0; -webkit-transform: scale(1); transform: scale(1);}}
-
 ```
 
 接着在 `themes\fluid\layout\layout.ejs` 中 `<body>` 后加入如下代码
@@ -106,6 +101,7 @@ banner_mask_alpha: 0  # 头图黑色蒙版的透明度，available: 0 - 1.0， 0
 ```
 
 如果出现背景跟随滚动，请在配置文件中关闭头图滚动视差
+
 ```yaml
 banner_parallax: false # 头图滚动视差
 ```
@@ -139,14 +135,17 @@ banner_parallax: false # 头图滚动视差
   &:hover
     background-color #2f4154b8;
 ```
+
 {% note info %}
 会同时对所有滚动条生效，包括代码块的横向滚动条
 {% endnote %}
 
 
 ### 返回顶部按钮
+
 增加动画
-```stylus
+
+```css
 #scroll-top-button 
   border-radius 25px
   -webkit-transition all .6s
@@ -158,6 +157,7 @@ banner_parallax: false # 头图滚动视差
     transform scale(1.2)
     border-radius 20%
 ```
+
 之前的文章写了个另一种样式 [文章链接](./54321.html)
 
 
@@ -184,7 +184,9 @@ banner_parallax: false # 头图滚动视差
 
 
 ### 首页图片动画
+
 鼠标触碰放大
+
 ```stylus
 .index-img
   transition: .4s;
@@ -196,8 +198,10 @@ banner_parallax: false # 头图滚动视差
 
 
 ### 底部及 TOC 样式更改
+
 因为之前的动态背景添加了遮罩导致底部链接等看不起
-```css
+
+```stylus
 .tocbot-list a
 #toc, footer, footer a
   color #ffffff
@@ -213,7 +217,8 @@ footer a:hover
 ![演示](https://cos.royce2003.top/60394/01.webp)
 
 文字触碰动画（源网，找不到原站链接了）
-```css
+
+```stylus
 /* 注意避免类名相同造成样式冲突 */
 .link {
 	outline: none;
@@ -275,6 +280,7 @@ footer a:hover
 ```
 
 然后在你想显示的地方插入如下 HTML
+
 {% note primary %}
 data-letters 中需要和内容保持一致  
 不用 a 标签也可以，保证类名正确
@@ -288,6 +294,7 @@ data-letters 中需要和内容保持一致
 
 
 ### 留言板
+
 在 `themes\hexo-theme-fluid-master\layout\` 中新建 `messageboard.ejs` 文件
 先写上头图之类的设定
 
@@ -313,10 +320,13 @@ messageboard:
   banner_img_height:  	# available: 0 - 100
   subtitle:  			# 打字机内容
 ```
+
 语言文件中也是一样的，这里就不写了
 
 #### 引入评论
+
 刚刚创建的 ejs 文件中
+
 ```ejs
 <!-- Comments -->
 <div class="container comments mx-auto" id="comments">
@@ -327,16 +337,21 @@ messageboard:
     <% } %>
 </div>
 ```
+
 自定义内容写在评论代码之前就好了，支持 HTML
 
 然后两种方法开启，二选一即可
+
 #### 1
+
 在根目录的 `source` 文件夹中创建 `messageboard.md` 
-并在 `front-matter` 中加上 ``layout: messageboard`
+并在 `front-matter` 中加上 `layout: messageboard`
 和 about 界面的方法一样
 
 #### 2
+
 在 `themes\fluid\scripts\pages.js` 文件中加入如下代码
+
 ```js
 // generate messageboard page
 hexo.extend.generator.register('_messageboard', function (locals) {
@@ -348,8 +363,8 @@ hexo.extend.generator.register('_messageboard', function (locals) {
 });
 ```
 
-
 ### 更好看的音乐播放器
+
 本身的 aplayer 个人觉得并不是很好看，而且是全局的
 换了给好看点的播放器，在指定页面加载
 需要加载的页面加入
@@ -357,7 +372,9 @@ hexo.extend.generator.register('_messageboard', function (locals) {
 ![](https://cos.royce2003.top/60394/02.webp)
 
 #### JS
+
 自定义 js 里加入
+
 ```js
 (function() {
     var dr = $("#dowebok");
@@ -531,7 +548,9 @@ hexo.extend.generator.register('_messageboard', function (locals) {
 })();
 ```
 #### CSS
+
 自定义 CSS 中加入
+
 ```stylus
 #dowebok
   right 0
