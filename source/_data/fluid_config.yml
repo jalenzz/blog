@@ -27,7 +27,7 @@ highlight: # 代码高亮
 fun_features: # 一些好玩的功能
   typing: # 为 subtitle 添加打字机效果
     enable: true
-    typeSpeed: 100  # 打印速度，数字越大越慢
+    typeSpeed: 70  # 打印速度，数字越大越慢
     cursorChar: "_" # 游标字符
     loop: false # 是否循环播放效果
   anchorjs: # 为文章内容中的标题添加锚图标
@@ -433,6 +433,8 @@ links:
     - { title: 'Neat', intro: '六六的在线记事本', link: 'neatman.club' }
     - { title: 'LiuYun', intro: '一位信息网络爱好者的博客', link: 'blog.6yfz.cn' }
     - { title: 'Bryce', intro: '啥都想学的程序员', link: 'bryce-huang.club' }
+    - { title: '饭庄', intro: '饭庄', link: 'fanfan.im'}
+    - { title: 'ChungZH', intro: 'Young, Simple, Naive' ,link: 'chungzh.cn'}
 
 #---------------------------
 # 工具页
