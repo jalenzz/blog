@@ -7,3 +7,4 @@ public/
 .deploy*/
 cos/
 package-lock.json
+_local.yml
