@@ -58,10 +58,10 @@ highlight:
 
 
 baidu_url_submit:
-  count: 200 # 提交最新的一个链接
-  host: royce2003.top # 在百度站长平台中注册的域名
-  token: PwqV2QV0Q8gEOkAX # 请注意这是您的秘钥， 所以请不要把博客源代码发布在公众仓库里!
-  path: baidu_urls.txt # 文本文档的地址， 新链接会保存在此文本文档里
+  count: 200
+  host: royce2003.top
+  token: baiduToken
+  path: baidu_urls.txt
 
 # 外部链接优化
 nofollow:
@@ -199,3 +199,10 @@ theme: fluid
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  - type: cos-cdn 
+    cloud: tencent 
+    bucket: bucket
+    region: region
+    secretId: SecretId
+    secretKey: SecretKey
