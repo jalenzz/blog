@@ -14,10 +14,14 @@ jobs:
       with:
         node-version: '10.x'
 
-    - name: Install
+    - name: Setup Hexo & BAIDU env
+      env:
+        baiduToken: ${{ secrets.baiduToken }}
+
       run: |
         npm install hexo-cli -g
         npm install
+        sed -i "s/baiduToken/${baiduToken}/" _baiduPush.yml
     
     - name: Push to Baidu
       run: |
