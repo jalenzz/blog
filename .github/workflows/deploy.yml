@@ -15,10 +15,18 @@ jobs:
       with:
         node-version: '10.x'
 
-    - name: Install
+    - name: Setup Hexo & COS env
+      env:
+        SecretId: ${{ secrets.SecretId }}
+        SecretKey: ${{ secrets.SecretKey }}
+
       run: |
         npm install hexo-cli -g
         npm install
+        sed -i "s/bucket/${bucket}/" _config.yml
+        sed -i "s/region/${region}/" _config.yml
+        sed -i "s/SecretId/${SecretId}/" _config.yml
+        sed -i "s/SecretKey/${SecretKey}/" _config.yml
     
     - name: Deploy to cos
       run: |
