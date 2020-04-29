@@ -6,9 +6,9 @@ title: 练手合集
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/css/gallery.min.css">
 <ul class="grid9 effect-39" id="grid9"></ul>
 <script>
-	for (i = 9; i >= 1; i--) {
-		var url = 'https://cdn.jsdelivr.net/gh/Royce2019/BlogGallery/original'
-		document.getElementById('grid9').innerHTML += (`<li><a href="${url}/${i}.webp" target="_bank" rel="noopener external nofollow noreferrer"><img src="${url}/s/${i}.webp"></a></li>`);
- 	}
+	var url = 'https://cdn.jsdelivr.net/gh/Royce2019/BlogGallery/original'
+    for (i=9; i>=1; i--) {
+        document.getElementById('grid9').innerHTML += (`<li><a href="${url}/${i}.webp" target="_bank" rel="noopener external nofollow noreferrer"><img src="${url}/s/${i}.webp"></a></li>`);
+     }
 </script>
 <script src="https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/js/gallery.min.js"></script>

@@ -115,24 +115,34 @@ p, ol, ul
   height 1.5em
 
 /* 切换按钮 */
-#dark i
+#dark
+  display none
+
+  i
+    font-size 1.25rem
+    color #EBA300
+
+#mdark i
   position fixed
-  right 4rem
-  bottom 2rem
-  font-size 2rem
+  right 2rem
+  bottom 4rem
+  font-size 1.75rem
   z-index 99
   color #EBA300
 
-@media (max-width 767px)
-  #dark i
-    right 1rem
+@media (min-width: 992px)
+  #mdark
+    display none
+  #dark
+    display block
 
 /*暗黑模式*/
 .dark
   background-color #282c34
 
-  #dark i
-    color #757575
+  #dark, #mdark
+    i
+      color #757575
 
   /* 背景遮罩 */
   .mask
