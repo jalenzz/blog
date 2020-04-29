@@ -204,5 +204,5 @@ deploy:
     cloud: tencent 
     bucket: bucket
     region: region
-    secretId: secretId
-    secretKey: secretKey
+    secretId: SecretId
+    secretKey: SecretKey
