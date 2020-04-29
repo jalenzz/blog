@@ -20,7 +20,7 @@ force_https: true  # 强制所有链接升级为 HTTPS（适用于图片等资�
 
 highlight: # 代码高亮
   enable: true
-  style: 'Atom One Dark'  # 高亮样式见：https://highlightjs.org/static/demo/  在页面挑选 style 填入
+  style: 'Atom One Dark'  # 以在 custom.styl 内置，高亮样式见：https://highlightjs.org/static/demo/
   bg_color: true  # 是否根据 style 改变代码背景色，如果 style 是白色背景最好关闭此项
   copy_btn: true  # 是否开启复制代码的按钮
 
@@ -58,8 +58,8 @@ font:  # 主题字体配置
   font_family: "'Fira Code', 'Noto Serif SC', serif " # 全局字体
   code_font_size: 100% # 代码的字号
 
-custom_js: # 指定自定义 js 文件路径，路径是相对 source 目录，如 /js/custom.js
-custom_css: /css/custom.css # 指定自定义 css 文件路径，路径是相对 source 目录，如 /css/custom.css
+custom_js: # 指定自定义 js 文件路径，路径是相对 source 目录，如 /js/custom.js 对应存放目录 source/js/custom.js，支持列表
+custom_css: /css/custom.css # 指定自定义 css 文件路径，路径是相对 source 目录，如 /css/custom.css 同上，支持列表
 custom_html: ''  # 自定义底部 HTML 内容（位于 footer 上方），也可用于外部引入 js css 这些操作，注意不要和 post.custom 配置冲突
 
 web_analytics:  # 网页访问统计
@@ -74,7 +74,7 @@ web_analytics:  # 网页访问统计
   cnzz:  # 友盟/cnzz站点统计web_id，参见 https://web.umeng.com/main.php?c=site&a=show
 
 lazyload: # 对页面中的图片进行懒加载处理，可见范围外的图片不会加载
-  enable: false
+  enable: true
   onlypost: true  # 仅在文章页使用懒加载，开启后如果自定义页面需要使用，可以在 Front-matter 里指定 `lazyload: true`
   image: https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/loading.webp
 
@@ -103,7 +103,7 @@ navbar:
   blog_title: Royce's world # 导航栏左侧的标题，为空则按 hexo config.title 显示
   menu:  # 可自行增减，key 用来关联 languages/*.yml，如不存在关联则显示 key 本身的值，增加 name 可以强制显示指定名称
     # - { key: 'home', link: 'https://www.royce2003.top', icon: 'iconfont icon-home-fill' }
-    - { key: 'archive', link: '/archives/', icon: 'iconfont icon-archive-fill' }
+    # - { key: 'archive', link: '/archives/', icon: 'iconfont icon-archive-fill' }
     - { key: 'tag', link: '/tags/', icon: 'iconfont icon-tags-fill' }
     - { key: 'gallery', link: '/gallery/', icon: 'iconfont icon-xiangce1' }
     - { key: 'messageboard', link: '/messageboard/', icon: 'iconfont icon-liuyan' }
@@ -215,9 +215,6 @@ post:  # 部分配置同时控制自定义页面，注意备注
   custom:  # 文章底部自定义内容
     enable: false
     content: '<img src="https://octodex.github.com/images/jetpacktocat.png" class="rounded mx-auto d-block mt-5" style="width:150px; height:150px;">' # 自定义区域，支持 HTML，可自行插入赞赏码、公众号二维码等内容
-  comments:  # 评论
-    enable: true  # 开启评论
-    type: valine  # 指定使用的评论模块  available: disqus | valine | gitalk | utterances | changyan | livere  推荐 utterances
   image_zoom:  # 文章图片可点击放大
     enable: true  # 开启后文章默认可用，自定义页面如需使用，需在 Front-matter 中指定 `image_zoom: true`，并且图片使用该格式插入：<img src="..." zoom />
   math:  # 数学公式，开启之前需要更换 Markdown 渲染器，否则复杂公式会有兼容问题，具体请见：https://hexo.fluid-dev.com/docs/guide/##latex-数学公式
@@ -228,13 +225,16 @@ post:  # 部分配置同时控制自定义页面，注意备注
     enable: false  # 开启后文章默认可用，自定义页面如需使用，需在 Front-matter 中指定 `mermaid: true`
     specific: false  # 开启后，只有在文章 Front-matter 里指定 `mermaid: true` 才会在文章页启动公式转换，以便在页面不包含公式时提高加载速度
     options: { theme: 'default' }  # 接口选项，具体可见：http://mermaid-js.github.io/mermaid/#/mermaidAPI
+  comments:  # 评论
+    enable: true  # 开启评论
+    type: valine  # 指定使用的评论模块  available: disqus | valine | gitalk | utterances | changyan | livere  推荐 utterances
 
 #---------------------------
 # 评论
 # Comments
 #---------------------------
 
-# 开启评论在上方的 post.comments 配置
+# 开启评论需要先在上方 post.comments.enable: true
 
 # utterances
 # You can install utterances with https://utteranc.es/ and generate your configuration
@@ -287,14 +287,6 @@ changyan:
 livere:
   uid: ''
 
-
-baidu_url_submit:
-  count: 100 ## 比如3，代表提交最新的三个链接
-  host: royce2003.top ## 在百度站长平台中注册的域名
-  token: COBtZGts63uXwkd6 ## 请注意这是您的秘钥， 请不要发布在公众仓库里!
-  path: baidu_urls.txt ## 文本文档的地址， 新链接会保存在此文本文档里
-
-
 #---------------------------
 # 归档页
 # Archive Page
@@ -345,7 +337,7 @@ messageboard:
 # 关于页
 # About Page
 #---------------------------
-about:  # 以下仅为页面顶部的基本信息，更多内容请在 ./pages/about.md 中编辑，支持 markdown 和 HTML
+about:  # 关于页需要手动创建，具体请见：https://hexo.fluid-dev.com/docs/guide/#关于页
   banner_img: https://rmt.dogedoge.com/fetch/royce/storage/bg/1.jpg?fmt=webp
   banner_img_height: 80  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
@@ -385,12 +377,12 @@ links:
   banner_img: https://rmt.dogedoge.com/fetch/royce/storage/bg/1.jpg?fmt=webp
   banner_img_height: 80  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
-  subtitle: 我的船上没有手下，只有伙伴 # 打字机内容
+  subtitle: 我们的船上没有手下，只有伙伴 # 打字机内容
   defaultlinks:
     - { title: 'Neworld2002', intro: '蓝鸟', link: 'neworld2002.github.io' }
     - { title: 'Newsheep', intro: '憨憨', link: 'newsheep2003.github.io' }
   friendslinks:
-    - { title: 'Atuo', intro: '网络安全',  link: 'blog.atuo.store' }
+    - { title: 'Atuo', intro: '网络安全', link: 'blog.atuo.store' }
     - { title: '维他入我心', intro: '科技/生活日常～', link: 'wtrwx.top' }
     - { title: 'Linhk1606', intro: '...', link: 'linhk1606.github.io' }
     - { title: 'LeFlacon', intro: 'Let’s think!', link: 'leflacon.top' }
@@ -422,7 +414,7 @@ links:
     - { title: '小丁', intro: '世间所有的相遇，都是久别重逢', link: 'tding.top' }
     - { title: '小太', intro: '一个热爱ACG的技术宅', link: '713.moe' }
     - { title: '七夏浅笑', intro: '七月之约，夏末浅笑', link: 'www.julydate.com' }
-    - { title: 'Mystery', intro: '心有猛虎，细嗅蔷薇',, link: 'blog.say521.cn' }
+    - { title: 'Mystery', intro: '心有猛虎，细嗅蔷薇', link: 'blog.say521.cn' }
     - { title: 'barriery', intro: 'A student, programmer and explorer.', link: 'barriery.cn' }
     - { title: 'keith', intro: '一个热爱网络的学生', link: 'keithqwq.com' }
     - { title: 'Vince', intro: '努力学习技术的Vince', link: 'i.vince.pub' }
@@ -447,7 +439,6 @@ tools:
   subtitle: 小玩意儿 # 打字机内容
   items:
     - { title: 'Home', intro: '主页', link: 'https://www.royce2003.top', icon: 'iconfont icon-home-fill' }
-    # - { title: '相册', intro: '各种风格的壁纸 or 照片', link: '/gallery/', icon: 'iconfont icon-home-fill' }
     - { title: 'DogeDoge 多吉搜索', intro: '非常好用的搜索引擎，强烈推荐', link: 'https://www.dogedoge.com/' }
     - { title: '疫情图', intro: '国际国内实时疫情图', link: '/tools/2019-nCoV/' }
     - { title: '评论管理', intro: 'Valin 后台评论管理', link: 'https://serve.royce2003.top' }

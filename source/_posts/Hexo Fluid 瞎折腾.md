@@ -8,12 +8,13 @@ tags:
 index_img: https://cos.royce2003.top/60394/index_img.webp
 abbrlink: 60394
 top: 10
-excerpt: 2020.04.13 更新
+excerpt: 2020.04.28 更新
 ---
 
 {% note primary %}
 2020.04.10 新增超好看的复选框 
-2020.04.13 更新动态背景代码
+2020.04.13 更新动态背景代码  
+2020.04.28 自定义返回顶部图片和球形标签云
 ==随着主题的更新，文中的代码可能失效或引起错误，请自行修改==
 {% endnote %}
 
@@ -24,6 +25,7 @@ excerpt: 2020.04.13 更新
 首先，按照 Fluid 配置文件中的方法，新建自定义 CSS 和 JS
 建议创建 .styl 而不是 .css
 下方代码会是 .styl，因为写着更省事...
+
 {% note danger %}
 不管是什么，配置文件中都填 `.css`
 {% endnote %}
@@ -35,6 +37,8 @@ custom_html: ''  # 自定义底部 HTML 内容（位于 footer 上方），也�
 ```
 
 ### 动态背景
+
+[^1]
 
 主题本身采用的是头图滚动视差，非常 nice，但我可能更喜欢花里胡哨吧
 自定义 CSS 中加入如下代码
@@ -106,15 +110,7 @@ banner_mask_alpha: 0  # 头图黑色蒙版的透明度，available: 0 - 1.0， 0
 banner_parallax: false # 头图滚动视差
 ```
 
-害，原来自己写的方法在第一张图片加载的时候 100% 闪烁，找不到解决办法
-上面的动画代码是从网上 [链接](https://www.51qianduan.com/article/3115.html) 找来的，稍作修改，适配了下主题，但是这方法也有我没解决的问题
-因为是依赖 `z-index` 实现的切换，所以如果当前图片未加载出来会直接显示下一张，不过这个问题不大
-
-图片尽量小一点，推荐用 webp 格式，同质量的图片体积小很多
-可以试试又拍云的转换工具 [地址](https://www.upyun.com/webp)
-效果非常明显，我原来的 4 张图加起来 1.6 MB（已经压缩过的了），现在转成 webp 之后 0.4 MB
-直接减少了 75% 的体积，画质还不变
-
+因为是依赖 `z-index` 实现的切换，建议图片大小递增排序，避免第一张图还没加载出来，第二张图先出现的情况
 
 ### 侧边滚动条
 
@@ -137,7 +133,7 @@ banner_parallax: false # 头图滚动视差
 ```
 
 {% note info %}
-会同时对所有滚动条生效，包括代码块的横向滚动条
+会同时对所有滚动条生效
 {% endnote %}
 
 
@@ -158,11 +154,34 @@ banner_parallax: false # 头图滚动视差
     border-radius 20%
 ```
 
-之前的文章写了个另一种样式 [文章链接](./54321.html)
+或者来试试这个样式
 
+![](https://gitee.com/Royce2003/blogimages/raw/master/img/20200305084052.png)
 
+#### CSS
+
+自定义 CSS 加入下方代码
+
+```stylus
+#scroll-top-button
+  right 50px !important
+  width 70px
+  height 651px
+  top -90px
+  background url("/img/scroll.png"); /* 图片路径 */
+  box-shadow 0 0 /* 去除外边框的阴影 */
+
+  & > i
+    display none /* 隐藏一个小箭头图标，否则会在图片上出现箭头 */
+```
+
+最后附上图片地址
+{% btn https://cdn.jsdelivr.net/gh/Royce2019/img/img/scroll.png, 点我下载 %}
+（图源网，侵删）
 
 ### 标题前 Emoji
+
+[^2]
 
 ```stylus
 /* 想在手机端也显示，去除最外层的 @media，并更改缩进 */
@@ -221,61 +240,61 @@ footer a:hover
 ```stylus
 /* 注意避免类名相同造成样式冲突 */
 .link {
-	outline: none;
-	text-decoration: none;
-	position: relative;
-	font-size: 2em;
-	color: #9e9ba4;
-	display: inline-block;
+  outline: none;
+  text-decoration: none;
+  position: relative;
+  font-size: 2em;
+  color: #9e9ba4;
+  display: inline-block;
 }
 .link--kukuri {
-	text-transform: uppercase;
-	font-weight: 700;
-	overflow: hidden;
-	color: #2f4144;
+  text-transform: uppercase;
+  font-weight: 700;
+  overflow: hidden;
+  color: #2f4144;
 }
 
 .link--kukuri:hover {
-	color: #2f4144;
+  color: #2f4144;
 }
 
 .link--kukuri::after {
-	content: '';
-	position: absolute;
-	height: 10px;
-	width: 100%;
-	top: 42%;
-	margin: auto;
-	right: 0;
-	background: #F9F9F9;
-	-webkit-transform: translate3d(-100%,0,0);
-	transform: translate3d(-100%,0,0);
-	-webkit-transition: -webkit-transform 0.4s;
-	transition: transform 0.4s;
-	-webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
-	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+  content: '';
+  position: absolute;
+  height: 10px;
+  width: 100%;
+  top: 42%;
+  margin: auto;
+  right: 0;
+  background: #F9F9F9;
+  -webkit-transform: translate3d(-100%,0,0);
+  transform: translate3d(-100%,0,0);
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  -webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+  transition-timing-function: cubic-bezier(0.7,0,0.3,1);
 }
 
 .link--kukuri:hover::after {
-	-webkit-transform: translate3d(100%,0,0);
-	transform: translate3d(100%,0,0);
+  -webkit-transform: translate3d(100%,0,0);
+  transform: translate3d(100%,0,0);
 }
 
 .link--kukuri::before {
   border:0px solid;
-	content: attr(data-letters);
-	position: absolute;
-	z-index: 2;
-	overflow: hidden;
-	color: #ff779a;
-	white-space: nowrap;
-	width: 0%;
-	-webkit-transition: width 0.4s 0.3s;
-	transition: width 0.4s 0.3s;
+  content: attr(data-letters);
+  position: absolute;
+  z-index: 2;
+  overflow: hidden;
+  color: #ff779a;
+  white-space: nowrap;
+  width: 0%;
+  -webkit-transition: width 0.4s 0.3s;
+  transition: width 0.4s 0.3s;
 }
 
 .link--kukuri:hover::before {
-	width: 100%;
+  width: 100%;
 }
 ```
 
@@ -289,9 +308,6 @@ data-letters 中需要和内容保持一致
 ```html
 <a class="link link--kukuri" href="test.test" data-letters="test">test</a>
 ```
-
-
-
 
 ### 留言板
 
@@ -364,6 +380,8 @@ hexo.extend.generator.register('_messageboard', function (locals) {
 ```
 
 ### 更好看的音乐播放器
+
+[^3]
 
 本身的 aplayer 个人觉得并不是很好看，而且是全局的
 换了给好看点的播放器，在指定页面加载
@@ -833,6 +851,7 @@ hexo.extend.generator.register('_messageboard', function (locals) {
 CDN🔗 https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/css/music.min.css
 
 #### HTML
+
 需要加载的页面（md 或者 ejs）中加入
 
 ```html
@@ -849,6 +868,8 @@ js 和 css，源自[链接](https://www.yanghuaxing.com/blog/547.html)
 
 
 ### 可交互复选框
+
+[^4]
 
 已 PR 至主题，可前往主题更新并通过 Tag 标签使用
 但主题只内置了方形选框，下方新增
@@ -1021,6 +1042,7 @@ $(".indeterminate").prop("indeterminate", true);
 ```
 
 用法
+
 ```html
 <input type="checkbox">
 <input type="radio">
@@ -1034,6 +1056,7 @@ $(".indeterminate").prop("indeterminate", true);
 默认是方形没有打勾，圆形没有选中
 加上 chencked 就会默认选中
 如下方代码
+
 ```html
 <input type="radio" chencked>
 ```
@@ -1052,8 +1075,60 @@ $(".indeterminate").prop("indeterminate", true);
 圆形选框选中后只能通过刷新取消
 {% endnote %}
 
+### 球形标签云
+
+[^5]
+
+`hexo-tag-cloud` 插件是 MikeCoder 写的一个 Hexo 博客的标签云插件
+
+![GIF.gif](https://cos.royce2003.top/db44ecae/03.webp)
+
+#### 安装插件
+
+```bash
+npm install hexo-tag-cloud@^2.1.* --save
+```
+
+在 `fluid\layout\tags.ejs` 中加入如下代码
+
+```html
+<% if (site.tags.length) { %>
+  <div class="text-center">
+    <script type="text/javascript" charset="utf-8" src="<%- url_for('/js/tagcloud.js') %>"></script>
+    <script type="text/javascript" charset="utf-8" src="<%- url_for('/js/tagcanvas.js') %>"></script>
+    <div class="widget-wrap">
+      <div id="myCanvasContainer" class="widget tagcloud">
+        <canvas width="250" height="250" id="resCanvas" style="width=100%">
+          <%- tagcloud() %>
+        </canvas>
+      </div>
+    </div>
+  </div>
+<% } %>
+```
+
+#### 开启
+
+根目录配置文件添加如下的配置
+
+```yaml
+# hexo-tag-cloud
+tag_cloud:
+    textFont: Trebuchet MS, Helvetica
+    textColor: '#333'
+    textHeight: 25
+    outlineColor: '#E2E1D1'
+    maxSpeed: 0.5
+```
+
+`textColor`: 字体颜色
+`textHeight`: 字体高度
+`maxSpeed`: 文字滚动速度
+
 ---
+
 ### 最后
+
 应该没啥可折腾的了，还有的话也不新开文章了，就这里持续更新吧，会置顶并将最近一次更新写在摘要中
 暗黑模式下篇文章再写吧 ~~(水文章数量)~~
 作者已经把主题做的非常完美了，有什么问题都会立马修复，功能也出的很快，超 nice
@@ -1070,8 +1145,12 @@ Fluid 应该是会一直用下去了
 不过仍有继续折腾的打算
 可能会再用 Typecho 搭建一个玩玩...
 
-放个折腾合集吧，写的不好，凑合吧
+写的不好，凑合吧
 [面向纯小白的 CSS 教程1](./25976.html)
 [面向纯小白的 CSS 教程2](./17142.html)
-[Hexo 球形标签云](./db44ecae.html)
-[Valine 邮件+微信提醒](./22549.html)
+
+[^1]: 参考: [纯css3全屏图片背景缩小渐变式切换特效](https://www.51qianduan.com/article/3115.html)
+[^2]: 参考: [Hexo博客+Next主题深度优化与定制](https://bestzuo.cn/posts/blog-establish.html)
+[^3]: 参考: [网易云HTML5音乐随机播放器](https://www.yanghuaxing.com/blog/547.html)
+[^4]: 参考: [带点击动画特效的CSS3单选框和复选框](http://www.htmleaf.com/css3/css3donghua/201806235190.html)
+[^5]: 参考: [MikeCoder/hexo-tag-cloud](https://github.com/MikeCoder/hexo-tag-cloud)
