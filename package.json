@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "ld": "hexo clean && hexo generate && hexo deploy --config _local.yml",
     "cgs": "hexo clean && hexo generate && hexo server",
     "cgd": "hexo clean && hexo generate && hexo deploy",
     "clean": "hexo clean",
