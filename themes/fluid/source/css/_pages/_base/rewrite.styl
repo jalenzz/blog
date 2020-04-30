@@ -28,7 +28,7 @@
     -webkit-transition .35s
     transition .35s
 
-  @media (min-width: 600px)
+  @media (min-width 600px)
     &.scrolling-navbar
       padding-top 12px
       padding-bottom 12px
@@ -56,7 +56,7 @@
   background-color $navbar-bg-color
 
 
-@media (max-width: 767px)
+@media (max-width 767px)
   .navbar
     font-size 1rem
     line-height 2.5rem
@@ -121,8 +121,6 @@
     pre
       background-color initial
 
-
-
 // Rewrite mdb.css
 
 .list-group-item
@@ -156,84 +154,84 @@
 // Rewrite modal
 
 .modal-dialog .modal-content
-  border: 0;
-  border-radius: .125rem;
-  -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
-  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  border 0
+  border-radius .125rem
+  -webkit-box-shadow 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
+  box-shadow 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 
 .modal-dialog .modal-content .modal-header {
-  border-top-left-radius: .125rem;
-  border-top-right-radius: .125rem;
+  border-top-left-radius .125rem
+  border-top-right-radius .125rem
 }
 
 .md-form {
-  position: relative;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+  position relative
+  margin-top 1.5rem
+  margin-bottom 1.5rem
 }
 
 .md-form
   input[type]
-    -webkit-box-sizing: content-box;
-    box-sizing: content-box;
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid #ced4da;
-    border-radius: 0;
-    outline: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    -webkit-box-sizing content-box
+    box-sizing content-box
+    background-color transparent
+    border none
+    border-bottom 1px solid #ced4da
+    border-radius 0
+    outline none
+    -webkit-box-shadow none
+    box-shadow none
+    transition border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out
 
     $normal = #4285f4
 
     &:focus:not([readonly])
-      border-bottom: 1px solid $normal;
-      -webkit-box-shadow: 0 1px 0 0 $normal;
-      box-shadow: 0 1px 0 0 $normal;
+      border-bottom 1px solid $normal
+      -webkit-box-shadow 0 1px 0 0 $normal
+      box-shadow 0 1px 0 0 $normal
 
       & + label
-        color: $normal;
+        color $normal
 
     $valid = #00c851
 
     &.valid, &:focus.valid
-      border-bottom: 1px solid $valid;
-      -webkit-box-shadow: 0 1px 0 0 $valid;
-      box-shadow: 0 1px 0 0 $valid;
+      border-bottom 1px solid $valid
+      -webkit-box-shadow 0 1px 0 0 $valid
+      box-shadow 0 1px 0 0 $valid
 
       & + label
-        color: $valid;
+        color $valid
 
     $invalid = #f44336
 
     &.invalid, &:focus.invalid
-      border-bottom: 1px solid $invalid;
-      -webkit-box-shadow: 0 1px 0 0 $invalid;
-      box-shadow: 0 1px 0 0 $invalid;
+      border-bottom 1px solid $invalid
+      -webkit-box-shadow 0 1px 0 0 $invalid
+      box-shadow 0 1px 0 0 $invalid
 
       & + label
-        color: $invalid;
+        color $invalid
 
     &.validate
-      margin-bottom: 2.5rem;
+      margin-bottom 2.5rem
 
     &.form-control
-      height: auto;
-      padding: .6rem 0 .4rem 0;
-      margin: 0 0 .5rem 0;
-      background-color: transparent;
-      border-radius: 0;
+      height auto
+      padding .6rem 0 .4rem 0
+      margin 0 0 .5rem 0
+      background-color transparent
+      border-radius 0
 
   label
-    font-size: 0.8rem;
-    position: absolute;
-    top: -1rem;
-    left: 0;
-    color: #757575;
-    cursor: text;
-    -webkit-transition: color .2s ease-out, -webkit-transform .2s ease-out;
-    transition: transform .2s ease-out, color .2s ease-out, -webkit-transform .2s ease-out;
+    font-size 0.8rem
+    position absolute
+    top -1rem
+    left 0
+    color #757575
+    cursor text
+    -webkit-transition color .2s ease-out, -webkit-transform .2s ease-out
+    transition transform .2s ease-out, color .2s ease-out, -webkit-transform .2s ease-out
 
 // Rewrite iconfont
 .iconfont
@@ -329,21 +327,21 @@ input[type=checkbox]
       top .465rem
   
   &.green
-    border: 2px solid #4caf50;
+    border 2px solid #4caf50
     &:checked, &:indeterminate
-      background: #4caf50;
+      background #4caf50
   &.blue
-    border: 2px solid #2196f3
+    border 2px solid #2196f3
     &:checked, &:indeterminate
-      background: #2196f3
+      background #2196f3
   &.red
-    border: 2px solid #f44336
+    border 2px solid #f44336
     &:checked, &:indeterminate
-      background: #f44336
+      background #f44336
   &.orange
-    border: 2px solid #ffc107
+    border 2px solid #ffc107
     &:checked, &:indeterminate
-      background: #ffc107
+      background #ffc107
 
 /* Radio */
 input[type=radio]
@@ -366,18 +364,25 @@ input[type=radio]
     background #2f4154
 
   &.green
-    border: 2px solid #4caf50;
+    border 2px solid #4caf50
+
     &:checked:before
-      background: #4caf50;
+      background #4caf50
+
   &.blue
-    border: 2px solid #2196f3
+    border 2px solid #2196f3
+
     &:checked:before
-      background: #2196f3
+      background #2196f3
+
   &.red
-    border: 2px solid #f44336
+    border 2px solid #f44336
+
     &:checked:before
-      background: #f44336
+      background #f44336
+
   &.orange
-    border: 2px solid #ffc107
+    border 2px solid #ffc107
+
     &:checked:before
-      background: #ffc107
+      background #ffc107

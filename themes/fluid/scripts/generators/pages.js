@@ -32,8 +32,8 @@ hexo.extend.generator.register('_categories', function(locals) {
 // generate messageboard page
 hexo.extend.generator.register('_messageboard', function (locals) {
   return {
-    path: 'messageboard/index.html',
-    data: locals.theme,
+    path  : 'messageboard/index.html',
+    data  : locals.theme,
     layout: 'messageboard',
   };
 });

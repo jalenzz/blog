@@ -95,6 +95,7 @@ aplayer:  # 音乐播放器，注意不能与 hexo-tag-aplayer 插件共用
 version:  # 版本相关
   check: false  # 每次生成检测是否为最新版本
 
+
 #---------------------------
 # 页头
 # Header
@@ -112,7 +113,7 @@ navbar:
     - { key: 'tools', link: '/tools/', icon: 'iconfont icon-laboratory' }
 
 search: # 搜索栏
-  enable: true
+  enable: false
   path: /local-search.xml # 文件引用地址，默认是下方生成位置，也可以将生成后的 local-search.xml 上传到其它位置引用，如：https://www.example.com/local-search.xml
   generate_path: /local-search.xml # 文件生成位置，必须为相对位置
   field: post
@@ -161,7 +162,7 @@ index:
     format: webp # 图片格式，保证文件夹中图片格式一致
   slogan:  # 首页副标题的独立设置
     enable: true  # 为 false 则不显示任何内容
-    text: 今日任务：早起(0/1) # 为空则按 hexo config.subtitle 显示
+    text: 今日任务：早起 (0/1) # 为空则按 hexo config.subtitle 显示
   auto_excerpt:
     enable: true
   post_url_target: _self  # available: _blank | _self
@@ -169,6 +170,7 @@ index:
     date: true
     category: false
     tag: true
+
 
 # 通过 hexo new page 命令创建的页面
 # Custom Page
@@ -229,6 +231,7 @@ post:  # 部分配置同时控制自定义页面，注意备注
     enable: true  # 开启评论
     type: valine  # 指定使用的评论模块  available: disqus | valine | gitalk | utterances | changyan | livere  推荐 utterances
 
+
 #---------------------------
 # 评论
 # Comments
@@ -287,6 +290,7 @@ changyan:
 livere:
   uid: ''
 
+
 #---------------------------
 # 归档页
 # Archive Page
@@ -297,6 +301,7 @@ archive:
   banner_mask_alpha: 0.3  # available: 0 - 1.0
   subtitle: 记下即将逝去的青春，留下即将过去的幸福 # 打字机内容
 
+
 #---------------------------
 # 分类归档页
 # Categories Page
@@ -306,6 +311,7 @@ category:
   banner_img_height: 80  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
   subtitle:  # 打字机内容
+
 
 #---------------------------
 # 标签归档页
@@ -323,6 +329,7 @@ tag:
     start_color: "#BBBBEE"
     end_color: "#337ab7"
 
+
 #---------------------------
 # 留言板页
 # Messageboard Page
@@ -332,6 +339,7 @@ messageboard:
   banner_img_height: 80  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
   subtitle: 留下你的脚印 # 打字机内容
+
 
 #---------------------------
 # 关于页
@@ -352,6 +360,7 @@ about:  # 关于页需要手动创建，具体请见：https://hexo.fluid-dev.co
     - { class: 'icon-qq', qrcode: 'https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/about/QQ.webp' }
     - { class: 'icon-mail', link: 'mailto:1098870059@qq.com' }
 
+
 #---------------------------
 # 404页
 # 404 Page
@@ -362,12 +371,6 @@ page404:
   banner_mask_alpha: 0.3  # available: 0 - 1.0
   subtitle: 喂，幺幺零吗？这里的页面找不到了 # 打字机内容
 
-# 站点地图
-sitemap:
-  path: sitemap.xml
-# 百度站点地图
-baidusitemap:
-  path: baidusitemap.xml
 
 #---------------------------
 # 友链页
@@ -428,6 +431,7 @@ links:
     - { title: '饭庄', intro: '饭庄', link: 'fanfan.im'}
     - { title: 'ChungZH', intro: 'Young, Simple, Naive' ,link: 'chungzh.cn'}
 
+
 #---------------------------
 # 工具页
 # Tools Page
@@ -448,3 +452,11 @@ tools:
     - { title: 'Fluid Docs', intro: '主题使用指南', link: 'https://hexo.fluid-dev.com/docs/' }
     - { title: 'Fluid Repo', intro: '主题 GitHub 仓库', link: 'https://github.com/fluid-dev/hexo-theme-fluid' }
     - { title: 'Fluid Example', intro: '主题操作示例', link: 'https://hexo.fluid-dev.com/docs/example/' }
+
+# 站点地图
+sitemap:
+  path: sitemap.xml
+
+# 百度站点地图
+baidusitemap:
+  path: baidusitemap.xml

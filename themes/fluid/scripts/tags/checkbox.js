@@ -5,11 +5,11 @@
 const checkbox = (args) => {
   args = args[0] === ',' ? args.slice(1) : args;
   args = args.join(' ').split(',');
-  let text = args[0] || '';
-  let checked = (args[1] || '').length  > 0 && args[1].trim() === '1';
-  let special = (args[1] || '').length  > 0 && args[1].trim() === '2';
-  let color = args[2] || '';
-  let inline = (args[3] || '').length > 0 && args[2].trim() !== 'false';
+  const text = args[0] || '';
+  const checked = (args[1] || '').length  > 0 && args[1].trim() === '1';
+  const special = (args[1] || '').length  > 0 && args[1].trim() === '2';
+  const color = args[2] || '';
+  const inline = (args[3] || '').length > 0 && args[2].trim() !== 'false';
 
   return `${!inline ? '<div>' : ''}
             <input class="${color} ${special ? 'indeterminate' : ''}" type="checkbox" ${checked ? 'checked="checked"' : ''}></input>

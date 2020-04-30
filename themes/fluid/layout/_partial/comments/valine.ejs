@@ -6,6 +6,7 @@
     var oldLoadVa = window.onload;
     window.onload = function () {
       oldLoadVa && oldLoadVa();
+
       new Valine({
         lang: 'zh-cn',
         el: '#comments' ,
@@ -18,4 +19,6 @@
       });
     };
   </script>
+  <noscript>Please enable JavaScript to view the <a href="https://valine.js.org" rel="nofollow noopener">comments
+      powered by Valine.</a></noscript>
 <% } %>
