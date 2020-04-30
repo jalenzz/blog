@@ -1,5 +1,6 @@
 <%
 var enable = theme.post.math.enable;
+
 if (enable) {
   if (is_post()) {
     enable = !theme.post.math.specific || (theme.post.math.specific && page.math);
@@ -13,6 +14,7 @@ if (enable) {
 
 <% if (enable) { %>
   <% var engine = theme.post.math.engine; %>
+
   <% if(engine === 'mathjax') { %>
     <!-- MathJax -->
     <script>
@@ -45,7 +47,9 @@ if (enable) {
         }
       };
     </script>
+
     <%- js_ex(theme.static_prefix.mathjax, "tex-svg.js", 'async') %>
+
   <% } else if (engine === 'katex') { %>
     <!-- KaTeX -->
     <%- css_ex(theme.static_prefix.katex, "katex.min.css") %>

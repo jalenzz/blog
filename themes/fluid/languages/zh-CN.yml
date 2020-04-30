@@ -15,7 +15,7 @@ post:
   toc: 目录
 
 home:
-  title: 主页
+  title: 首页
 
 archive:
   title: 归档
@@ -31,7 +31,7 @@ category:
 
 about:
   title: 关于
-  subtitle: 关于我
+  subtitle: 关于
 
 page404:
   title: 页面走丢啦~
@@ -46,8 +46,8 @@ gallery:
   subtitle: 相册
 
 tools:
-  title: 功能
-  subtitle: 小功能
+  title: 探索
+  subtitle: 探索
 
 messageboard:
   title: 留言
