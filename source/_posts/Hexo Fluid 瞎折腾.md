@@ -114,7 +114,7 @@ banner_parallax: false # 头图滚动视差
 
 ### 侧边滚动条
 
-```stylus
+```css
 ::-webkit-scrollbar-button
   display none
 
@@ -206,7 +206,7 @@ banner_parallax: false # 头图滚动视差
 
 鼠标触碰放大
 
-```stylus
+```css
 .index-img
   transition: .4s;
 
@@ -314,7 +314,7 @@ data-letters 中需要和内容保持一致
 在 `themes\hexo-theme-fluid-master\layout\` 中新建 `messageboard.ejs` 文件
 先写上头图之类的设定
 
-```ejs
+```html
 <%
 page.layout = "messageboard"
 page.title = theme.messageboard.title || __('messageboard.title')
@@ -343,7 +343,7 @@ messageboard:
 
 刚刚创建的 ejs 文件中
 
-```ejs
+```html
 <!-- Comments -->
 <div class="container comments mx-auto" id="comments">
     <% if(theme.post.comments.enable) { %>
@@ -881,7 +881,7 @@ js 和 css，源自[链接](https://www.yanghuaxing.com/blog/547.html)
 下方只介绍 HTML 用法
 自定义 CSS 中添加以下代码
 
-```stylus
+```css
 input
   -webkit-appearance: none;
   -moz-appearance: none;

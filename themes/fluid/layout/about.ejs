@@ -4,7 +4,7 @@ page.title = theme.about.title || __('about.title')
 page.subtitle = theme.about.subtitle || __('about.subtitle')
 page.banner_img = theme.about.banner_img
 page.banner_img_height = theme.about.banner_img_height
-page.banner_mask_alpha = theme.page404.banner_mask_alpha
+page.banner_mask_alpha = theme.about.banner_mask_alpha
 %>
 
 <div class="text-center">
@@ -29,14 +29,3 @@ page.banner_mask_alpha = theme.page404.banner_mask_alpha
 <div class="mt-5 markdown-body">
   <%- page.content %>
 </div>
-
-
-<!-- Comments -->
-<div class="container comments mx-auto" id="comments">
-  <% if(theme.post.comments.enable) { %>
-    <br><br>
-    <% var type = '_partial/comments/' + theme.post.comments.type %>
-    <%- partial(type) %>
-  <% } %>
-</div>
-<script src="//at.alicdn.com/t/font_1736949_5gwqfu64xa6.js"></script>

@@ -1,15 +1,15 @@
 <footer class="mt-5">
   <div class="text-center py-3">
-    <a href="https://hexo.io" target="_blank"><span>Hexo</span></a>
-    <i class="iconfont icon-love"></i>
-    <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank">
-      <span>Fluid</span></a>
-    <br>
-
+    <div>
+      <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
+      <i class="iconfont icon-love"></i>
+      <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener">
+        <span>Fluid</span></a>
+    </div>
+    <%- partial('_partial/busuanzi.ejs') %>
     <%- partial('_partial/beian.ejs') %>
-
-    <!-- cnzz Analytics icon -->
     <% if(theme.web_analytics.cnzz) { %>
+      <!-- cnzz Analytics Icon -->
       <span id="cnzz_stat_icon_<%- theme.web_analytics.cnzz %>" style="display: none"></span>
     <% } %>
     <%- partial('_partial/busuanzi.ejs') %>
@@ -18,8 +18,6 @@
     <a href="https://www.dogedoge.com/"><img src="https://rmt.dogedoge.com/fetch/royce/storage/dogedoge.png?w=100&fmt=webp" alt="dogedoge" style="width:2.75rem"></a>
     <a href="https://myssl.com/seal/detail?domain=royce2003.top"><img src="https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/myssl.webp" alt="upyun" style="width:4.6875rem;;margin-left: 1rem;"></a>
   </div>
-  
-
 </footer>
 
 <!-- SCRIPTS -->
