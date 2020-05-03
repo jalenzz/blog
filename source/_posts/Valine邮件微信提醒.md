@@ -6,8 +6,9 @@ tag: [Hexo, 教程]
 index_img: https://cos.royce2003.top/22549/index_img.webp
 ---
 
-该功能基于 Leancloud 的云引擎与云函数。
-可以提供邮件 通知站长 和 被@ 通知 的功能还支持自定义邮件模板哦!
+{% c 该 %}
+功能基于 Leancloud 的云引擎与云函数。
+可以提供邮件 通知站长 和 被@ 通知 的功能还支持自定义邮件模板哦![^1]
 
 项目来自 [查看链接](http://www.zhaojun.im/)
 
@@ -124,7 +125,7 @@ index_img: https://cos.royce2003.top/22549/index_img.webp
 
 ## 微信提醒
 
-好啦，接下来时加如微信提醒了
+好啦，接下来时加如微信提醒[^2]了
 首先进入 Server 酱官网注册个账号然后按官网首页绑定微信
 
 ![](https://cos.royce2003.top/22549/12.webp)
@@ -154,4 +155,5 @@ index_img: https://cos.royce2003.top/22549/index_img.webp
 
 大功告成，你可以在微信收到博客的评论了！
 
-参考 [文章链接](https://www.antmoe.com/posts/2380732b/index.html)
+[^1]: 参考： [Hexo 优化 --- Valine 扩展之邮件通知](http://www.zhaojun.im/hexo-valine-admin/)
+[^2]: 参考： [Hexo 博客 valine 评论微信、qq 提醒](https://www.antmoe.com/posts/2380732b/index.html)

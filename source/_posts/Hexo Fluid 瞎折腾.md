@@ -20,7 +20,8 @@ excerpt: 2020.04.28 更新
 
 ### 前言
 
-好像还没有看到大佬写关于 Fluid 折腾的文章，就开了这个坑
+{% c 好 %}
+像还没有看到大佬写关于 Fluid 折腾的文章，就开了这个坑
 文章放了源码进来，所以挺长的，大部分是改 CSS，JS 很少
 首先，按照 Fluid 配置文件中的方法，新建自定义 CSS 和 JS
 建议创建 .styl 而不是 .css
@@ -874,9 +875,9 @@ js 和 css，源自[链接](https://www.yanghuaxing.com/blog/547.html)
 已 PR 至主题，可前往主题更新并通过 Tag 标签使用
 但主题只内置了方形选框，下方新增
 
-<div><input class=" green" type="radio"><p>圆形选框</p></div>
-<div><input class=" red " type="checkbox" checked="checked"><p>可选颜色</p></div>
-<div><input class=" orange indeterminate" type="checkbox"><p>横向 checked</p></div>
+<div><input type="radio" disabled="" checked=""><p>圆形选框</p></div>
+<div><input type="checkbox" disabled="" checked=""><p>方形选框</p></div>
+<div><input type="checkbox" class="red" disabled="" checked=""><p>可选颜色</p></div>
 
 下方只介绍 HTML 用法
 自定义 CSS 中添加以下代码
@@ -949,25 +950,7 @@ input[type=checkbox]
       width: 2px;
       height: 14px;
 
-  &:indeterminate
-    &:before, &:after
-      width: 7px;
-      height: 2px;
-      transform: rotate(0);
-      -webkit-transform: rotate(0);
-      -moz-transform: rotate(0);
-      -ms-transform: rotate(0);
-      -o-transform: rotate(0);
-
-    &:before
-      left: 1px;
-      top: 7px;
-
-    &:after
-      right: 1px;
-      bottom: 7px;
-
-/* Radio */
+/* radio */
 input[type=radio]
   vertical-align: -0.7rem;
   border-radius: 50%;
@@ -1035,20 +1018,15 @@ input[type=radio].orange
     background: #ffc107;
 ```
 
-自定义 JS 中加入以下代码
-
-```js
-$(".indeterminate").prop("indeterminate", true);
-```
-
 用法
 
 ```html
 <input type="checkbox">
 <input type="radio">
 ```
-{% cb  左边是 `type=checkbox</code>`,, green%}
-{% rd  左边是 `type=radio`,, green%}
+
+<div><input type="checkbox" class="green" disabled=""><p>左边是 <code>type=checkbox</code></p></div>
+<div><input type="radio" disabled=""><p>左边是 <code>type=radio</code></p></div>
 
 默认绿色，设置颜色，只需要加上 class 就行。
 目前 class 有 `blue` `red` `orange`，可自行更改 CSS
@@ -1060,20 +1038,8 @@ $(".indeterminate").prop("indeterminate", true);
 ```html
 <input type="radio" chencked>
 ```
-
-{% cb 左边是选中的, 1, blue %}
-{% rd 左边是选中的, 1, red %}
-
-对于方形，还支持特殊的选中方式
-```html
-<input type="checkbox" class="indeterminate red">
-```
-{% cb 上面的代码是 red + 横向 checked, 2, red %}
-
-{% note primary %}
-横向 checked对圆形无效，且不可通过点击显示，只能代码中设置
-圆形选框选中后只能通过刷新取消
-{% endnote %}
+<div><input type="checkbox" class="blue" disabled="" checked=""><p>左边是选中的</p></div>
+<div><input class="red" type="radio" checked="" disabled=""><p>左边是选中的</p></div>
 
 ### 球形标签云
 
@@ -1131,11 +1097,14 @@ tag_cloud:
 
 应该没啥可折腾的了，还有的话也不新开文章了，就这里持续更新吧，会置顶并将最近一次更新写在摘要中
 暗黑模式下篇文章再写吧 ~~(水文章数量)~~
+
 作者已经把主题做的非常完美了，有什么问题都会立马修复，功能也出的很快，超 nice
+
 博客刚搭建的时候用了一个 material 主题，觉得过于平淡，换到了一个 gal 主题，功能很多
 慢慢的又看厌了，很多人推荐 Next，就又换到了 Next，的确很好用
 就光针对 Next 的教程数量而言，应该能算是大部分用 Hexo 的人都用过的
 经常逛博客也发现很多都是用的这个主题，用了几个月，改了很多东西，但也慢慢看厌了
+
 就开始再次踏上寻找主题的路，经常看到一个好看的主题，但又想到自己在 Next 上大量的自定义内容，一直不忍心丢下
 看到 Fluid 之后超喜欢，先用 Fluid 搭建了副站，放在 Gitee 上，慢慢完善
 完善到一定程度，有人和我说副站更好看，我看了看好像真是这么回事...
