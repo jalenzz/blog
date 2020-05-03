@@ -73,9 +73,8 @@ nofollow:
     - 'neworld2002.github.io'
     - 'newsheep2003.github.io'
     - 'huishao.top'
-    - 'blog.atuo.store'
     - 'wtrwx.top'
-    - 'linhk1606.github.io'
+    - 'blog.lhkstudio.me'
     - 'leflacon.top'
     - 'www.antmoe.com'
     - 'kksan.top'
@@ -89,17 +88,11 @@ nofollow:
     - 'yyuzh.xyz'
     - 'ixfish.cn'
     - 'yiki.tech'
-    - 'tutouyuan.top'
-    - 'pistol.city'
     - 'skyhouse.xyz'
-    - 'www.aahy.xyz'
     - 'www.yunyoujun.cn'
     - 'transion.cc'
     - 'xaoxuu.com'
-    - 'www.yuhangwei.com'
     - 'bestzuo.cn'
-    - 'bibiqo.cn'
-    - 'blog.yinuxy.com'
     - 'xiamuyourenzhang.cn'
     - 'tding.top'
     - '713.moe'
@@ -112,7 +105,6 @@ nofollow:
     - 'blog.juanertu.com'
     - 'dmx.pub'
     - 'www.hcode.top'
-    - 'neatman.club'
     - 'blog.6yfz.cn'
     - 'bryce-huang.club'
     - 'fanfan.im'
@@ -165,6 +157,15 @@ pagination_dir: page
 include:
 exclude:
 ignore:
+
+feed:
+    type: atom
+    path: atom.xml
+    limit: 0
+    hub:
+    content:
+    content_limit:
+    content_limit_delim: ' '
 
 all_minifier: true
 js_concator:

@@ -22,7 +22,7 @@ highlight: # 代码高亮
   enable: true
   style: 'Atom One Dark'  # 以在 custom.styl 内置，高亮样式见：https://highlightjs.org/static/demo/
   bg_color: true  # 是否根据 style 改变代码背景色，如果 style 是白色背景最好关闭此项
-  copy_btn: true  # 是否开启复制代码的按钮
+  copy_btn: false  # 是否开启复制代码的按钮
 
 fun_features: # 一些好玩的功能
   typing: # 为 subtitle 添加打字机效果
@@ -74,7 +74,7 @@ web_analytics:  # 网页访问统计
   cnzz:  # 友盟/cnzz站点统计web_id，参见 https://web.umeng.com/main.php?c=site&a=show
 
 lazyload: # 对页面中的图片进行懒加载处理，可见范围外的图片不会加载
-  enable: true
+  enable: false
   onlypost: true  # 仅在文章页使用懒加载，开启后如果自定义页面需要使用，可以在 Front-matter 里指定 `lazyload: true`
   image: https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/loading.webp
 
@@ -110,7 +110,6 @@ navbar:
     - { key: 'messageboard', link: '/messageboard/', icon: 'iconfont icon-liuyan' }
     - { key: 'links', link: '/links/', icon: 'iconfont icon-link-fill' }
     - { key: 'about', link: '/about/', icon: 'iconfont icon-user-fill' }
-    - { key: 'tools', link: '/tools/', icon: 'iconfont icon-laboratory' }
 
 search: # 搜索栏
   enable: false
@@ -210,7 +209,7 @@ post:  # 部分配置同时控制自定义页面，注意备注
     headingSelector: h1,h2,h3,h4,h5,h6
     collapseDepth: 0  # 层级的折叠深度，0 是全部折叠，6 是全部不折叠
   copyright:  # 版权声明
-    enable: true
+    enable: false
     content: '本博客文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0 协议</a>。转载请注明出处！'
   prev_next:  # 文章底部上一篇下一篇功能
     enable: false
@@ -354,9 +353,8 @@ about:  # 关于页需要手动创建，具体请见：https://hexo.fluid-dev.co
   name: Royce
   introduce: '<span id="gradient">OI/科技/生活</span>' # 支持 HTML
   icons: # 更多图标可从 https://github.com/fluid-dev/static/blob/master/hexo-theme-fluid/iconfont.png 查找，class 代表图标的 css class
-    - { class: 'icon-github_alt', link: 'https://github.com/royce2019' }
+    - { class: 'icon-github', link: 'https://github.com/royce2019' }
     - { class: 'icon-coolapk', qrcode: 'https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/about/coolapk.webp' }
-    - { class: 'icon-telegram', link: 'https://t.me/joinchat/PXmDqxgFJOmpx8cADkkc8g' }
     - { class: 'icon-qq', qrcode: 'https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/about/QQ.webp' }
     - { class: 'icon-mail', link: 'mailto:1098870059@qq.com' }
 
@@ -372,6 +370,15 @@ page404:
   subtitle: 喂，幺幺零吗？这里的页面找不到了 # 打字机内容
 
 
+# 站点地图
+sitemap:
+  path: sitemap.xml
+
+# 百度站点地图
+baidusitemap:
+  path: baidusitemap.xml
+
+
 #---------------------------
 # 友链页
 # Links Page
@@ -385,9 +392,8 @@ links:
     - { title: 'Neworld2002', intro: '蓝鸟', link: 'neworld2002.github.io' }
     - { title: 'Newsheep', intro: '憨憨', link: 'newsheep2003.github.io' }
   friendslinks:
-    - { title: 'Atuo', intro: '网络安全', link: 'blog.atuo.store' }
     - { title: '维他入我心', intro: '科技/生活日常～', link: 'wtrwx.top' }
-    - { title: 'Linhk1606', intro: '...', link: 'linhk1606.github.io' }
+    - { title: 'Linhk1606', intro: '...', link: 'blog.lhkstudio.me' }
     - { title: 'LeFlacon', intro: 'Let’s think!', link: 'leflacon.top' }
     - { title: '小康博客', intro: '一个收藏回忆与分享技术的地方', link: 'www.antmoe.com' }
     - { title: '小K同學', intro: '技术，日语，云旅游', link: 'kksan.top' }
@@ -402,61 +408,24 @@ links:
     - { title: 'Bert', intro: '面朝大海，春暖花开', link: 'ixfish.cn' }
     - { title: 'Guan FuQing', intro: 'Error:No object found!', link: 'yiki.tech' }
     - { title: '辉少菌', intro: '一个爱搞技术的高一党', link: 'huishao.top' }
-    - { title: 'TanHua', intro: 'IoT在校生', link: 'tutouyuan.top' }
-    - { title: '破旧的手枪', intro: '只争朝夕 不负韶华', link: 'pistol.city' }
     - { title: '星下小屋', intro: '学习记录笔记本', link: 'skyhouse.xyz' }
-    - { title: 'MinePHP', intro: 'MinePHP Blog', link: 'www.aahy.xyz' }
     - { title: '云游君', intro: 'All at sea.', link: 'www.yunyoujun.cn' }
     - { title: '以成杂谈', intro: '以成，却非已成', link: 'transion.cc' }
     - { title: 'xaoxuu', intro: 'iOS', link: 'xaoxuu.com' }
-    - { title: 'YU到边', intro: '前端技术交流', link: 'www.yuhangwei.com' }
     - { title: 'Sanarous', intro: '码农人生', link: 'bestzuo.cn' }
-    - { title: 'Burgess', intro: '日常', link: 'bibiqo.cn' }
-    - { title: 'YINUXY', intro: '理想的生活就是生活的理想', link: 'blog.yinuxy.com' }
     - { title: '夏目友人帐', intro: '夏目友人帐', link: 'xiamuyourenzhang.cn' }
     - { title: '小丁', intro: '世间所有的相遇，都是久别重逢', link: 'tding.top' }
-    - { title: '小太', intro: '一个热爱ACG的技术宅', link: '713.moe' }
+    - { title: '小太', intro: '一个热爱 ACG 的技术宅', link: '713.moe' }
     - { title: '七夏浅笑', intro: '七月之约，夏末浅笑', link: 'www.julydate.com' }
     - { title: 'Mystery', intro: '心有猛虎，细嗅蔷薇', link: 'blog.say521.cn' }
     - { title: 'barriery', intro: 'A student, programmer and explorer.', link: 'barriery.cn' }
     - { title: 'keith', intro: '一个热爱网络的学生', link: 'keithqwq.com' }
-    - { title: 'Vince', intro: '努力学习技术的Vince', link: 'i.vince.pub' }
+    - { title: 'Vince', intro: '努力学习技术的 Vince', link: 'i.vince.pub' }
     - { title: '飞雨晴忘乡', intro: '享建站之香，解发少之苦', link: 'www.52efi.cn' }
     - { title: 'ConstOwn', intro: '能和你一起成长，我荣幸之至', link: 'blog.juanertu.com' }
     - { title: 'DmxZ', intro: '欢迎来到 DmxZ 的自留地！', link: 'dmx.pub' }
     - { title: 'Hcode', intro: '记录编程技术，实现在线小功能', link: 'www.hcode.top' }
-    - { title: 'Neat', intro: '六六的在线记事本', link: 'neatman.club' }
     - { title: 'LiuYun', intro: '一位信息网络爱好者的博客', link: 'blog.6yfz.cn' }
     - { title: 'Bryce', intro: '啥都想学的程序员', link: 'bryce-huang.club' }
-    - { title: '饭庄', intro: '饭庄', link: 'fanfan.im'}
-    - { title: 'ChungZH', intro: 'Young, Simple, Naive' ,link: 'chungzh.cn'}
-
-
-#---------------------------
-# 工具页
-# Tools Page
-#---------------------------
-tools:
-  banner_img: https://rmt.dogedoge.com/fetch/royce/storage/bg/1.jpg?fmt=webp
-  banner_img_height: 80  # available: 0 - 100
-  banner_mask_alpha: 0.3  # available: 0 - 1.0
-  subtitle: 小玩意儿 # 打字机内容
-  items:
-    - { title: 'Home', intro: '主页', link: 'https://www.royce2003.top', icon: 'iconfont icon-home-fill' }
-    - { title: 'DogeDoge 多吉搜索', intro: '非常好用的搜索引擎，强烈推荐', link: 'https://www.dogedoge.com/' }
-    - { title: '疫情图', intro: '国际国内实时疫情图', link: '/tools/2019-nCoV/' }
-    - { title: '评论管理', intro: 'Valin 后台评论管理', link: 'https://serve.royce2003.top' }
-    - { title: '2048', intro: '2048小游戏', link: '/tools/2048/' }
-    - { title: 'Music Player', intro: '简约好看的在线音乐播放器', link: 'http://music.royce2003.top/' }
-    - { title: 'WebP 转换', intro: '又拍转 WebP + 智能压缩 Demo', link: 'https://www.upyun.com/webp' }
-    - { title: 'Fluid Docs', intro: '主题使用指南', link: 'https://hexo.fluid-dev.com/docs/' }
-    - { title: 'Fluid Repo', intro: '主题 GitHub 仓库', link: 'https://github.com/fluid-dev/hexo-theme-fluid' }
-    - { title: 'Fluid Example', intro: '主题操作示例', link: 'https://hexo.fluid-dev.com/docs/example/' }
-
-# 站点地图
-sitemap:
-  path: sitemap.xml
-
-# 百度站点地图
-baidusitemap:
-  path: baidusitemap.xml
+    - { title: '饭庄', intro: '饭庄', link: 'fanfan.im' }
+    - { title: 'ChungZH', intro: 'Young, Simple, Naive', link: 'chungzh.cn' }
