@@ -6,7 +6,7 @@ abbrlink: 13128
 index_img: https://cos.royce2003.top/13128/index_img.webp
 ---
 
-哪个孩子不想要一个流畅的博客
+{% c 哪 %}个孩子不想要一个流畅的博客
 奈何 github 一直处于半墙状态，访问速度贼慢
 所以我们可以选择境内访问走 coding（国内的平台），境外访问走 github
 <!--more-->
