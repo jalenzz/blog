@@ -159,13 +159,13 @@ exclude:
 ignore:
 
 feed:
-    type: atom
-    path: atom.xml
-    limit: 0
-    hub:
-    content:
-    content_limit:
-    content_limit_delim: ' '
+  type: atom
+  path: atom.xml
+  limit: 0
+  hub:
+  content:
+  content_limit:
+  content_limit_delim: ' '
 
 all_minifier: true
 js_concator:
