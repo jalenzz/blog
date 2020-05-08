@@ -2,7 +2,7 @@
 title: Hexo Fluid 暗黑模式
 date: 2020-04-02 18:04:57
 tags: [Hexo, Fluid, CSS]
-index_img: https://cos.royce2003.top/41212/index_img.webp
+index_img: https://cos.royce2003.top/41212/index_img.webp-cover
 abbrlink: 41212
 excerpt: 适用于 Hexo 的暗黑模式，目前博客已经基本上适配完成了
 ---
@@ -227,10 +227,10 @@ sessionStorage 在手机浏览器上问题很多，不推荐使用
 {% endnote %}
 
 下面是支持该特性的最低版本
-![](https://cos.royce2003.top/41212/01.webp)
+![](https://cos.royce2003.top/41212/01.webp-default)
 
 可以在浏览器控制台中查看他们的值
-![](https://cos.royce2003.top/41212/02.webp)
+![](https://cos.royce2003.top/41212/02.webp-default)
 
 ---
 

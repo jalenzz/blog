@@ -1,13 +1,13 @@
 @font-face
   font-family 'Edo-SZ'
-  src url('https://cdn.repository.webfont.com/webfonts/nomal/137874/47808/5eaabf40f629d81078598586.gif?r=136641985022')
-  src url('https://cdn.repository.webfont.com/webfonts/nomal/137874/47808/5eaabf40f629d81078598586.gif?r=136641985022?#iefix') format('embedded-opentype'),url('https://cdn.repository.webfont.com/webfonts/nomal/137874/47808/5eaabf40f629d81078598586.png?r=136641985022') format('woff2'),url('https://cdn.repository.webfont.com/webfonts/nomal/137874/47808/5eaabf40f629d81078598586.bmp?r=136641985022') format('woff'),url('https://cdn.repository.webfont.com/webfonts/nomal/137874/47808/5eaabf40f629d81078598586.jpg?r=136641985022') format('truetype')
+  src: url('/fonts/Edo-SZ.woff2') format('woff2'), url('/fonts/Edo-SZ.woff') format('woff')
+@font-face
+  font-family 'Fira Code'
+  src: url('/fonts/FiraCode.woff2') format('woff2'), url('/fonts/FiraCode.woff') format('woff')
 
-body, #board
-  transition .25s
-
-p, ol, ul
-  line-height 1.5
+@media (max-width:767px)
+  body, html
+    font-size 16px
 
 .markdown-body
   a
@@ -27,8 +27,29 @@ p, ol, ul
   mark
     background-color #FDF0B3
 
-.markdown-body > :first-child
-  margin-top 10px !important
+  pre
+    padding-bottom 5px
+
+    code
+      padding 1rem 0 .5rem 0
+
+      &::before
+        content ' '
+        position absolute
+        background #fc625d
+        border-radius 50%
+        box-shadow 20px 0 #fdbc40, 40px 0 #35cd4b
+        margin-top -20px
+        left 12px
+        height 12px
+        width 12px
+
+  & > :first-child
+    margin-top 10px !important
+
+  p, ol, ul
+    line-height 1.5
+
 .drop-cap
   float left
   font-size 40px
@@ -82,7 +103,7 @@ p, ol, ul
   text-fill-color transparent
   font-weight 800
 
-@media (min-width:768px) 
+@media (min-width:768px)
   .post-content 
     h1, h2, h3, h4
       &::before
@@ -203,7 +224,7 @@ p, ol, ul
   img  
     filter brightness(60%)
 
-  p, .index-card a, .post-meta
+  p, .index-card a, .post-meta, .drop-cap
     color #a09c9c
 
   a

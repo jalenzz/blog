@@ -4,7 +4,7 @@ date: 2019-11-24 15:43:27
 tags: Royce
 abbrlink: 9408
 math: true
-index_img: https://cos.royce2003.top/9408/index_img.webp
+index_img: https://cos.royce2003.top/9408/index_img.webp-cover
 excerpt: 庆祝我的 Hexo 博客诞生😃
 ---
 

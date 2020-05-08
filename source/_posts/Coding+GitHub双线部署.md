@@ -3,7 +3,7 @@ title: Coding+GitHub 双线部署
 date: 2020-02-27 16:32:48
 tags: [Hexo, 教程]
 abbrlink: 13128
-index_img: https://cos.royce2003.top/13128/index_img.webp
+index_img: https://cos.royce2003.top/13128/index_img.webp-cover
 ---
 
 {% c 哪 %}个孩子不想要一个流畅的博客
@@ -19,7 +19,7 @@ index_img: https://cos.royce2003.top/13128/index_img.webp
 `你的用户名.github.io`
 变成的一堆乱七八糟的东西，就像这样
 
-![](https://cos.royce2003.top/13128/01.webp)
+![](https://cos.royce2003.top/13128/01.webp-default)
 
 那为什么选择 coding+github 而不是 gitee+github 呢
 还不是因为没钱，gitee 如果想绑定自己域名，第一个月免费，之后就要收费了
@@ -29,72 +29,72 @@ index_img: https://cos.royce2003.top/13128/index_img.webp
 首先注册一个账号
 注意，改版之后只能注册团队，不能单独注册个人，官网 [查看链接](https://coding.net/)
 
-![](https://cos.royce2003.top/13128/02.webp)
+![](https://cos.royce2003.top/13128/02.webp-default)
 
 注册
 
 注册之后登录，在右上角创建项目
 
-![](https://cos.royce2003.top/13128/03.webp)
+![](https://cos.royce2003.top/13128/03.webp-default)
 
 创建项目
 
 选择代码托管项目
 
-![](https://cos.royce2003.top/13128/04.webp)
+![](https://cos.royce2003.top/13128/04.webp-default)
 
 代码托管
 
 然后按照下图填写，项目名称建议像 github 一样强制和用户名一样然后再加 `coding.me`，项目标识没什么关系
 
-![](https://cos.royce2003.top/13128/05.webp)
+![](https://cos.royce2003.top/13128/05.webp-default)
 
 创建
 
 创建完成之后发现并没有静态网页，实际上是被 coding 默认关闭了，我们需要在左下角的设置中开启
 
-![](https://cos.royce2003.top/13128/06.webp)
+![](https://cos.royce2003.top/13128/06.webp-default)
 
 设置
 
-![](https://cos.royce2003.top/13128/07.webp)
+![](https://cos.royce2003.top/13128/07.webp-default)
 
 开启
 
 这个时候再返回来就可以看到有个构建与部署，静态网页就在这里面，点击创建
 
-![](https://cos.royce2003.top/13128/08.webp)
+![](https://cos.royce2003.top/13128/08.webp-default)
 
 静态网页
 
 按照下图填写，记得勾选自动部署，要不然隔壁 gitee 收费而 coding 免费给你用的被你浪费了
 
-![](https://cos.royce2003.top/13128/09.webp)
+![](https://cos.royce2003.top/13128/09.webp-default)
 
 建立
 
 图中框起来的就是你的博客地址
 
-![](https://cos.royce2003.top/13128/10.webp)
+![](https://cos.royce2003.top/13128/10.webp-default)
 
 博客地址
 
 接下来我们要添加 SSH公钥
 在改目录下找到公钥，和你部署 github 的那个一样
 
-![](https://cos.royce2003.top/13128/11.webp)
+![](https://cos.royce2003.top/13128/11.webp-default)
 
 记事本打开，复制，添加到 oding 中
 在个人设置里找到 ssh公钥
 
-![](https://cos.royce2003.top/13128/12.webp)
+![](https://cos.royce2003.top/13128/12.webp-default)
 
 公钥
 
 添加
 记得勾选永久有效
 
-![](https://cos.royce2003.top/13128/13.webp)
+![](https://cos.royce2003.top/13128/13.webp-default)
 
 添加
 
@@ -102,7 +102,7 @@ index_img: https://cos.royce2003.top/13128/index_img.webp
 `ssh -T git@e.coding.net`
 如果添加成功会显示如下信息
 
-![](https://cos.royce2003.top/13128/14.webp)
+![](https://cos.royce2003.top/13128/14.webp-default)
 
 成功
 
@@ -112,7 +112,7 @@ index_img: https://cos.royce2003.top/13128/index_img.webp
 进入控制台-->域名管理
 然后点击解析
 
-![](https://cos.royce2003.top/13128/15.webp)
+![](https://cos.royce2003.top/13128/15.webp-default)
 
 {% note danger %}
 注意！先进行 coding 解析并申请证书开启强制 HTTPS，证书成功申请之后再进行 github 解析！
@@ -129,7 +129,7 @@ index_img: https://cos.royce2003.top/13128/index_img.webp
 TTL 是每次修改记录生效的时间，时间越短当然生效越快，但是时间短了会影响解析速度，根据自己需求决定。
 然后保存
 
-![](https://cos.royce2003.top/13128/16.webp)
+![](https://cos.royce2003.top/13128/16.webp-default)
 
 接下来在添加一条主机记录为 @ 的记录
 记录类型选择 A
@@ -140,22 +140,22 @@ ping 你的域名
 注意，你的域名不能加 `https://` 或者 `http://`
 接着，方括号中就是我们需要的值
 
-![](https://cos.royce2003.top/13128/17.webp)
+![](https://cos.royce2003.top/13128/17.webp-default)
 
-![](https://cos.royce2003.top/13128/18.webp)
+![](https://cos.royce2003.top/13128/18.webp-default)
 
 然后进入 coding 刚刚放博客的仓库，点击
 右上角设置
 
-![](https://cos.royce2003.top/13128/19.webp)
+![](https://cos.royce2003.top/13128/19.webp-default)
 
 向下滑找到自定义域名，讲自己的域名填进去，可以开启强制 HTTPS，然后绑定
 
-![](https://cos.royce2003.top/13128/20.webp)
+![](https://cos.royce2003.top/13128/20.webp-default)
 
 绑定成功会显示在这里，可以选择再绑定一个 www 多跳转至首选
 
-![](https://cos.royce2003.top/13128/21.webp)
+![](https://cos.royce2003.top/13128/21.webp-default)
 
 #### GitHub的解析记录
 
@@ -166,7 +166,7 @@ ping 你的域名
 记录值填写 github 给你的博客地址
 `仓库名.github.io`
 
-![](https://cos.royce2003.top/13128/22.webp)
+![](https://cos.royce2003.top/13128/22.webp-default)
 
 添加第二条解析记录
 主机记录选 @
@@ -175,19 +175,19 @@ ping 你的域名
 记录值和之前相同方法通过 cmd 获取
 然后保存
 
-![](https://cos.royce2003.top/13128/23.webp)
+![](https://cos.royce2003.top/13128/23.webp-default)
 
 解析记录填写完了，我们就需要到 github 上设置下
 进入你存放博客的仓库，点击 settings
 
-![](https://cos.royce2003.top/13128/24.webp)
+![](https://cos.royce2003.top/13128/24.webp-default)
 
 settings
 
 然后向下滑找到 GitHub Pages
 填入自己的域名，点击 save，可以选择强制 HTTPS，当保存玩看到上面出现一栏绿绿的东西，然后还有你的域名就说明成功了
 
-![](https://cos.royce2003.top/13128/25.webp)
+![](https://cos.royce2003.top/13128/25.webp-default)
 
 此时 github 的域名绑定已经完成
 
@@ -201,7 +201,7 @@ settings
 接着进入站点根目录的配置文件
 修改 deploy
 
-![](https://cos.royce2003.top/13128/26.webp)
+![](https://cos.royce2003.top/13128/26.webp-default)
 
 将 royce2003 改成你自己的用户名
 
@@ -209,7 +209,7 @@ settings
 `hexo clean && hexo g && hexo d`
 如果部署成功，在 coding上 是可以看到的
 
-![](https://cos.royce2003.top/13128/27.webp)
+![](https://cos.royce2003.top/13128/27.webp-default)
 
 ### 坑
 
