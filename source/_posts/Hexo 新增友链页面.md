@@ -3,7 +3,7 @@ title: Hexo 新增友链页面
 tags: [NexT, 教程]
 abbrlink: f909dd9a
 date: 2020-02-13 14:18:22
-index_img: https://cos.royce2003.top/f909dd9a/index_img.webp
+index_img: https://cos.royce2003.top/f909dd9a/index_img.webp-cover
 ---
 
 {% c N %}

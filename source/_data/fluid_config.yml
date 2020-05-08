@@ -21,7 +21,7 @@ force_https: true  # 强制所有链接升级为 HTTPS（适用于图片等资�
 highlight: # 代码高亮
   enable: true
   style: 'Atom One Dark'  # 以在 custom.styl 内置，高亮样式见：https://highlightjs.org/static/demo/
-  bg_color: true  # 是否根据 style 改变代码背景色，如果 style 是白色背景最好关闭此项
+  bg_color: true  # 是否根据 style 改变代码背景色，**如果 style 是深色背景别忘了开启此项**
   copy_btn: false  # 是否开启复制代码的按钮
 
 fun_features: # 一些好玩的功能
@@ -92,8 +92,8 @@ aplayer:  # 音乐播放器，注意不能与 hexo-tag-aplayer 插件共用
     - { name: 'となりのトトロ', artist: '伊藤サチコ', url: 'https://cdn.jsdelivr.net/gh/Royce2019/img/01.mp3', cover: 'https://cdn.jsdelivr.net/gh/Royce2019/img/img/109951163028865726.jpg' }
     - { name: 'それがあなたの幸せとしても (カバー)', artist: 'rairu', url: 'https://cdn.jsdelivr.net/gh/Royce2019/img/02.mp3', cover: 'https://cdn.jsdelivr.net/gh/Royce2019/img/img/109951163597938340.jpg' }
 
-version:  # 版本相关
-  check: false  # 每次生成检测是否为最新版本
+version:  # 主题版本相关
+  check: false  # 每次生成页面后，检测主题是否为最新版本
 
 
 #---------------------------
@@ -105,6 +105,7 @@ navbar:
   menu:  # 可自行增减，key 用来关联 languages/*.yml，如不存在关联则显示 key 本身的值，增加 name 可以强制显示指定名称
     # - { key: 'home', link: 'https://www.royce2003.top', icon: 'iconfont icon-home-fill' }
     # - { key: 'archive', link: '/archives/', icon: 'iconfont icon-archive-fill' }
+    - { key: '开往', link: 'https://travellings.now.sh/', icon: 'iconfont icon-plane' }
     - { key: 'tag', link: '/tags/', icon: 'iconfont icon-tags-fill' }
     - { key: 'gallery', link: '/gallery/', icon: 'iconfont icon-xiangce1' }
     - { key: 'messageboard', link: '/messageboard/', icon: 'iconfont icon-liuyan' }
@@ -392,6 +393,7 @@ links:
     - { title: 'Neworld2002', intro: '蓝鸟', link: 'neworld2002.github.io' }
     - { title: 'Newsheep', intro: '憨憨', link: 'newsheep2003.github.io' }
   friendslinks:
+    - { title: 'travellings', intro: '开往-友链接力', link: 'travellings.now.sh' }
     - { title: '维他入我心', intro: '科技/生活日常～', link: 'wtrwx.top' }
     - { title: 'Linhk1606', intro: '...', link: 'blog.lhkstudio.me' }
     - { title: 'LeFlacon', intro: 'Let’s think!', link: 'leflacon.top' }
@@ -429,3 +431,4 @@ links:
     - { title: 'Bryce', intro: '啥都想学的程序员', link: 'bryce-huang.club' }
     - { title: '饭庄', intro: '饭庄', link: 'fanfan.im' }
     - { title: 'ChungZH', intro: 'Young, Simple, Naive', link: 'chungzh.cn' }
+    - { title: '泫', intro: 'Xuan’ blog', link: 'blog.cugxuan.cn' }
