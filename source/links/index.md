@@ -10,6 +10,7 @@ layout: links
 
 {% rd 全站 HTTPS, false, false, red %}
 {% rd 非资源站的原创类博客, false, false, red %}
+{% rd 正版主题（仅针对付费主题）, false, false, red %}
 {% rd 稳定访问，无广告推广（底部 `powered by` 或图标之类的除外）, false, false, red %}
 
 <br>

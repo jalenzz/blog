@@ -3,7 +3,7 @@ title: Android无障碍服务导致的全局卡顿分析
 tags: [转载, Android]
 abbrlink: 7797efbf
 date: 2020-02-15 23:22:55
-index_img: https://cos.royce2003.top/7797efbf/index_img.webp
+index_img: https://cos.royce2003.top/7797efbf/index_img.webp-cover
 ---
 
 {% c 文 %}章转载自魅族系统性能优化工程师，对于某些要求开启无障碍的应用，不开源，不盈利又掌握着你系统的“最高权限”

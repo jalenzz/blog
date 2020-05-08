@@ -5,7 +5,7 @@ tags:
   - Fluid
   - Hexo
   - CSS
-index_img: https://cos.royce2003.top/60394/index_img.webp
+index_img: https://cos.royce2003.top/60394/index_img.webp-cover
 abbrlink: 60394
 top: 10
 excerpt: 2020.04.28 更新
@@ -234,7 +234,7 @@ footer a:hover
 
 ### 标题文字特效
 
-![演示](https://cos.royce2003.top/60394/01.webp)
+![演示](https://cos.royce2003.top/60394/01.webp-default)
 
 文字触碰动画（源网，找不到原站链接了）
 
@@ -388,7 +388,7 @@ hexo.extend.generator.register('_messageboard', function (locals) {
 换了给好看点的播放器，在指定页面加载
 需要加载的页面加入
 
-![](https://cos.royce2003.top/60394/02.webp)
+![](https://cos.royce2003.top/60394/02.webp-default)
 
 #### JS
 
@@ -1047,7 +1047,7 @@ input[type=radio].orange
 
 `hexo-tag-cloud` 插件是 MikeCoder 写的一个 Hexo 博客的标签云插件
 
-![GIF.gif](https://cos.royce2003.top/db44ecae/03.webp)
+![GIF.gif](https://cos.royce2003.top/db44ecae/03.webp-default)
 
 #### 安装插件
 
