@@ -7,19 +7,19 @@ title: 相册
 <div class="total">
     <a href="cartoon/">
         <div class="item">
-            <img srcset="https://cdn.jsdelivr.net/gh/Royce2019/BlogGallery/cartoon/s/12.webp">
+            <img srcset="https://cdn.jsdelivr.net/gh/royce003/BlogGallery/cartoon/s/12.webp">
             <span>动漫</span>
         </div>
     </a>
     <a href="md/">
         <div class="item">
-            <img srcset="https://cdn.jsdelivr.net/gh/Royce2019/BlogGallery/md/s/7.webp">
+            <img srcset="https://cdn.jsdelivr.net/gh/royce003/BlogGallery/md/s/7.webp">
             <span>MD</span>
         </div>
     </a>
     <a href="original/">
         <div class="item">
-            <img srcset="https://cdn.jsdelivr.net/gh/Royce2019/BlogGallery/original/s/9.webp">
+            <img srcset="https://cdn.jsdelivr.net/gh/royce003/BlogGallery/original/s/9.webp">
             <span>原创</span>
         </div>
     </a>

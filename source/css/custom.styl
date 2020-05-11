@@ -13,16 +13,26 @@
   a
     color #1abc9c
 
-    &:not([href*="royce"])[href*="http"]::after
+    &:not([href*="royce2003.top"])[href*="http"]::after
       font-family "iconfont"
       content "\e681"
       color #aaa
-      font-size 12px
-      margin 0 5px 0
+      font-size 10px
+      position relative
+      bottom 2px
+      left 2px
 
-  h1, h2, h3, h4, h5, h6
+    &[href*=".gif"]
+    &[href*=".png"]
+    &[href*=".jpg"]
+    &[href*=".jpeg"]
+    &[href*=".webp"]
+      &::after
+        display none
+
+  h1, h2, h3, h4, h5, h6, span
     a::after
-      content ""
+      display none
   
   mark
     background-color #FDF0B3
@@ -44,7 +54,7 @@
         height 12px
         width 12px
 
-  & > :first-child
+  .drop-cap
     margin-top 10px !important
 
   p, ol, ul
