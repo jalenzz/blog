@@ -242,10 +242,10 @@ post:  # 部分配置同时控制自定义页面，注意备注
 # utterances
 # You can install utterances with https://utteranc.es/ and generate your configuration
 utterances:
-  repo:
-  issue_term:
+  repo: royce003/blog
+  issue_term: pathname
   label: utterances
-  theme: github-light
+  theme: preferred-color-scheme
   crossorigin: anonymous
 
 # Disqus
@@ -276,8 +276,8 @@ gitalk:
 valine:
   appid: KIkO2HJm1qz9uykOuuU41i8F-9Nh9j0Va  # your leancloud application appid
   appkey: oJgS2mVg227GJIkndK0bFGtF  # your leancloud application appkey
-  placeholder: 说点什么... # comment box placeholder=
-  admin_email: 1098870059@qq.com
+  placeholder: 推荐使用 utterances # comment box placeholder=
+  admin_email: royce2003@qq.com
 
 # 畅言
 # http://changyan.kuaizhan.com/
@@ -401,7 +401,7 @@ links:
     - { title: '极客空间', intro: '一个准备高考的高三狗', link: 'www.geek-space.cn' }
     - { title: 'MOCEHU',  intro: '一个没有技术贴的技术博客', link: 'mocehu.top' }
     - { title: 'Codgi', intro: 'Do what you love', link: 'codgi.xin' }
-    - { title: 'JimmyQin', intro: '挨拍的儿', link: 'www.apde.workers.dev' }
+    - { title: 'JimmyQin', intro: '挨拍的儿', link: 'apde.xyz' }
     - { title: '惴与绕', intro: '一条咸鱼的日常', link: 'idkzr.com' }
     - { title: 'yuzh', intro: '永不停歇--Never Settle', link: 'yyuzh.xyz' }
     - { title: 'Bert', intro: '面朝大海，春暖花开', link: 'ixfish.cn' }
@@ -420,7 +420,6 @@ links:
     - { title: 'barriery', intro: 'A student, programmer and explorer.', link: 'barriery.cn' }
     - { title: 'keith', intro: '一个热爱网络的学生', link: 'keithqwq.com' }
     - { title: 'Vince', intro: '努力学习技术的 Vince', link: 'i.vince.pub' }
-    - { title: '飞雨晴忘乡', intro: '享建站之香，解发少之苦', link: 'www.52efi.cn' }
     - { title: 'ConstOwn', intro: '能和你一起成长，我荣幸之至', link: 'blog.juanertu.com' }
     - { title: 'DmxZ', intro: '欢迎来到 DmxZ 的自留地！', link: 'dmx.pub' }
     - { title: 'Hcode', intro: '记录编程技术，实现在线小功能', link: 'www.hcode.top' }

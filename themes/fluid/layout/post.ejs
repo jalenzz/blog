@@ -76,10 +76,7 @@ page.banner_mask_alpha = theme.post.banner_mask_alpha
 
             <% if(page.comments && theme.post.comments.enable) { %>
               <!-- Comments -->
-              <div class="comments" id="comments">
-                <% var type = '_partial/comments/' + theme.post.comments.type %>
-                <%- partial(type) %>
-              </div>
+              <%- partial('_partial/comments') %>
             <% } %>
           </div>
         </div>
