@@ -1,0 +1,26 @@
+# base on https://github.com/blogimg/WakeLeanCloud
+name: wake
+
+on: 
+  push:
+  schedule:
+    - cron: "*/18 0-15 * * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: Set up Python
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.8
+
+    - name: Install requests
+      run: pip install requests
+
+    - name: Waking
+      run:  python wake.py
