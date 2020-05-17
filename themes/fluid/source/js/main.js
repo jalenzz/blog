@@ -137,13 +137,27 @@ if ((sessionStorage.getItem('confirm') !== '1') && (/Safari/.test(navigator.user
 function switchDarkMode() {
   if ($('body').hasClass('dark')) {
     $('#dark').html('<i class="iconfont icon-sun"></i>');
+    $('#mdark').html('<i class="iconfont icon-sun"></i>');
     $('body').removeClass("dark");
     localStorage.setItem('noDark', '1');
     localStorage.setItem('dark', '0');
   } else {
     $('#dark').html('<i class="iconfont icon-moon"></i>'); 
+    $('#mdark').html('<i class="iconfont icon-moon"></i>'); 
     $('body').addClass('dark');
     localStorage.setItem('dark', '1');
     localStorage.setItem('noDark', '0');
   }
 }
+
+(function(){
+  const v = $('.valine'), u = $('.utterances');
+  $("#valine-btn").click(function(){
+    v.css("display","block");
+    u.css("display","none");
+  });
+  $("#utterances-btn").click(function(){
+    v.css("display","none");
+    u.css("display","block");
+  });
+}());
