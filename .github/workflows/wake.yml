@@ -4,8 +4,7 @@ name: wake
 on: 
   push:
   schedule:
-    - cron: "*/18 0-15 * * *"
-    - cron: "*/18 22-0 * * *"
+    - cron: "*/18 0-15,22-23 * * *"
 
 jobs:
   build:
