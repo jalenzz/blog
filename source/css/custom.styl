@@ -1,13 +1,51 @@
 @font-face
   font-family 'Edo-SZ'
-  src: url('/fonts/Edo-SZ.woff2') format('woff2'), url('/fonts/Edo-SZ.woff') format('woff')
+  src url('/fonts/Edo-SZ.woff2') format('woff2'), url('/fonts/Edo-SZ.woff') format('woff')
 @font-face
   font-family 'Fira Code'
-  src: url('/fonts/FiraCode.woff2') format('woff2'), url('/fonts/FiraCode.woff') format('woff')
+  src url('/fonts/FiraCode.woff2') format('woff2'), url('/fonts/FiraCode.woff') format('woff')
 
 @media (max-width:767px)
   body, html
     font-size 16px
+
+/* rewrite post-meta tags */
+.post-meta .hover-with-bg
+  background-color #eee
+  border-radius 3px 0 0 3px
+  height 26px
+  padding 0 20px 0 23px
+  position relative
+  cursor pointer
+
+  &:hover
+    color #fff
+    background-color #2F4154
+
+    &::after
+      border-left 10px solid #2F4154
+
+  &::after
+    position absolute
+    right 0
+    top 0
+    background #fff
+    border-bottom 13px solid transparent
+    border-left 10px solid #eee
+    border-top 13px solid transparent
+    transition .2s
+    content ""
+
+  &::before
+    position absolute
+    left 10px
+    top 10px
+    background #fff
+    border-radius 50%
+    box-shadow inset 0 1px rgba(0,0,0,.25)
+    content ""
+    height 6px
+    width 6px
 
 .markdown-body
   a
@@ -239,6 +277,13 @@
 
     &:hover
       color #12977d
+
+  .post-meta .hover-with-bg
+    &::before
+      background #282C34
+
+    &::after
+      background #282C34
 
   .markdown-body
     h1, h2, h3, h4, h5, h6, li, s
