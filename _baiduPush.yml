@@ -166,7 +166,7 @@ feed:
   content_limit:
   content_limit_delim: ' '
 
-all_minifier: true
+all_minifier: false
 js_concator:
   enable: false
   bundle_path: '/js/bundle.js'

@@ -3,13 +3,13 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "ld": "hexo clean && hexo generate && hexo deploy --config _local.yml",
-    "cgs": "hexo clean && hexo generate && hexo server",
-    "cgd": "hexo clean && hexo generate && hexo deploy",
+    "login": "tcb login",
+    "deploy": "tcb hosting:deploy public/ -e blog-17bf0f",
+    "cgs": "hexo clean && hexo generate --config _local.yml && hexo server",
+    "cgd": "hexo clean && hexo generate && tcb hosting:deploy public/ -e blog-17bf0f",
     "clean": "hexo clean",
     "built": "hexo generate",
     "server": "hexo server",
-    "deploy": "hexo deploy",
     "baidupush": "hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml && hexo deploy --config _baiduPush.yml"
   },
   "hexo": {
@@ -22,8 +22,6 @@
     "hexo-all-minifier": "^0.5.3",
     "hexo-baidu-url-submit": "0.0.6",
     "hexo-blog-encrypt": "^3.0.12",
-    "hexo-deployer-cos-cdn": "^1.7.0",
-    "hexo-deployer-git": "^2.1.0",
     "hexo-filter-nofollow": "^2.0.2",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-baidu-sitemap": "^0.1.6",

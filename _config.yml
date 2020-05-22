@@ -195,13 +195,3 @@ js_minifier:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: fluid
-
-# Deployment
-## Docs: https://hexo.io/docs/deployment.html
-deploy:
-  - type: cos-cdn 
-    cloud: tencent 
-    bucket: BUCKET
-    region: REGION
-    secretId: SECRET_ID
-    secretKey: SECRET_KEY

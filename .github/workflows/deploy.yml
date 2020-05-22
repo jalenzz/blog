@@ -2,8 +2,10 @@ name: Deploy
 
 on:
   push:
-    braches: 
+    branches:
       - master
+  watch:
+    types: [started]
 
 jobs:
   build:
@@ -20,18 +22,14 @@ jobs:
         npm install hexo-cli -g
         npm install
 
-    - name: COS env
-      env:
-        BUCKET: ${{ secrets.BUCKET }}
-        REGION: ${{ secrets.REGION }}
-        SECRET_ID: ${{ secrets.SECRET_ID }}
-        SECRET_KEY: ${{ secrets.SECRET_KEY }}
+    - name: Generate
+      run: hexo clean && hexo g
 
-      run: |
-        sed -i "s/BUCKET/${BUCKET}/" _config.yml
-        sed -i "s/REGION/${REGION}/" _config.yml
-        sed -i "s/SECRET_ID/${SECRET_ID}/" _config.yml
-        sed -i "s/SECRET_KEY/${SECRET_KEY}/" _config.yml
-
-    - name: Deploy to cos
-      run: hexo clean && hexo g && hexo d
+    - name: Deploy static to Tencent CloudBase
+      id: deployStatic
+      uses: TencentCloudBase/cloudbase-action@v1
+      with:
+        secretId: ${{ secrets.SECRET_ID }}
+        secretKey: ${{ secrets.SECRET_KEY }}
+        envId: ${{ secrets.ENV_ID }}
+        staticSrcPath: public
