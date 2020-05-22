@@ -7,8 +7,7 @@ index_img: https://cos.royce2003.top/13858/index_img.webp-cover
 excerpt: GitHub 上的 emoji，commit 的时候喜欢前面加个 emoji 但又不怎么习惯用 Desktop 版，之后搬到博客上，方便查阅
 ---
 
-{% c c %}
-ommit 的时候喜欢前面加个 emoji，每次上 Github 找这个仓库[^1]很不方便，就复制了一份放博客上，正好博客的渲染器支持:satisfied:
+commit 的时候喜欢前面加个 emoji，每次上 Github 找这个仓库[^1]很不方便，就复制了一份放博客上，正好博客的渲染器支持:satisfied:
 
 ### People
 
