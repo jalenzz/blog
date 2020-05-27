@@ -131,6 +131,7 @@ if ((sessionStorage.getItem('confirm') !== '1') && (/Safari/.test(navigator.user
   confirm('抱歉，本博客在 Safari 中大部分图片无法显示');
   sessionStorage.setItem('confirm', '1');
 }
+
 function switchDarkMode() {
   if ($('body').hasClass('dark')) {
     $('#dark').html('<i class="iconfont icon-sun"></i>');
@@ -149,6 +150,7 @@ function switchDarkMode() {
 
 (function(){
   const v = $('.valine'), u = $('.utterances');
+  if((!v.length > 0) || (!u.length > 0)) return;
   $("#valine-btn").click(function(){
     v.css("display","block");
     u.css("display","none");
@@ -158,3 +160,17 @@ function switchDarkMode() {
     u.css("display","block");
   });
 }());
+
+/* Baidu Push
+(function() {
+  var bp = document.createElement('script');
+  var curProtocol = window.location.protocol.split(':')[0];
+  if (curProtocol === 'https') {
+    bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else {
+    bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(bp, s);
+})();*/
