@@ -2,7 +2,7 @@
 layout: links
 ---
 
----
+<!-- ---
 
 <p align="center"><strong>欢迎申请🌟</strong></p>
 
@@ -26,16 +26,16 @@ layout: links
 - 名称: Royce
 - 网站: https://www.royce2003.top
 - 简介: less is more.
-- 头像: https://cdn.jsdelivr.net/gh/royce003/BlogSource/about/Royce.png
+- 头像: https://rmt.dogedoge.com/fetch/royce/storage/royce.png?fmt=webp
 
 ### :pencil: PR 申请
 
 - 在配置文件末尾添加博客信息
 - 参考之前格式，只需填写名字、简介和==不带 https 的链接==
-- PR 时提供头像链接
+- PR 时提供头像链接: https://rmt.dogedoge.com/fetch/royce/storage/royce.png?fmt=webp
 
 <br>
 <div>
 {% btn /messageboard/, 留言, 留言 %}
 {% btn https://github.com/royce003/blog/edit/master/source/_data/fluid_config.yml#L435, PR, PR %}
-</div>
+</div> -->
