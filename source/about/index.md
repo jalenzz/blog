@@ -3,8 +3,6 @@ title: 关于
 layout: about
 ---
 
-<link href="https://fonts.dogedoge.com/css2?family=Sriracha&display=swap" rel="stylesheet" media="print" onload='this.media="all"'>
-
 ### :partly_sunny: 关于我
 
 - 高一，:earth_asia:Fujian, China，喜欢数码科技
