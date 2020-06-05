@@ -23,4 +23,5 @@ if (page.title) {
   <title><%= title %></title>
   <link href="https://fonts.dogedoge.com/css2?family=Sriracha&family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
   <%- partial('_partial/css.ejs') %>
+  <%- js_ex(theme.static_prefix.internal_js, 'utils.js') %>
 </head>
