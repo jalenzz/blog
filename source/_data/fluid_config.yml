@@ -72,7 +72,7 @@ web_analytics:  # 网页访问统计
   tajs: # 腾讯统计早期版站点统计sID，参见 https://ta.qq.com/#/site/list
   woyaola:  # 51.la站点统计ID，参见 https://www.51.la/user/site/index
   cnzz:  # 友盟/cnzz站点统计web_id，参见 https://web.umeng.com/main.php?c=site&a=show
-  leancloud:  # LeanCloud 计数统计，可用于 PV UV 展示
+  leancloud:  # LeanCloud 计数统计，可用于 PV UV 展示，如果 web_analytics.enable 没有开启，PV UV 展示只会查询，不会增加
     app_id: Ikn1WpEQq7e9N6H3EhY9k43J-9Nh9j0Va
     app_key: 3SnOsnvmkYXBAT0WFNoLdEuR
     server_url: https://shuo.royce2003.top # REST API 服务器地址，国际版不填
@@ -147,9 +147,9 @@ banner_parallax: true # 头图滚动视差
 # Footer
 #---------------------------
 footer:
-  statistics:  # 统计网站 PV、UV，使用的是不蒜子，显示在页脚
+  statistics:  # 展示网站的 PV、UV 统计数
     enable: true
-    source: "leancloud"  # 统计数据来源，可选：leancloud | busuanzi   注意不蒜子会间歇抽风
+    source: "leancloud"  # 统计数据来源，可选：leancloud | busuanzi，使用 leancloud 需要在 web_analytics 中设置 api 参数，使用 busuanzi 注意可能间歇抽风
     pv_format: "PV{}"  # 显示的文本，{}是数字的占位符（必须包含)，下同
     uv_format: "UV{}"
 
@@ -169,7 +169,7 @@ scroll_top_arrow:  # 向顶部滚动的箭头
 # Index Page
 #---------------------------
 index:
-  banner_img: https://rmt.dogedoge.com/fetch/royce/storage/bg/1.jpg?fmt=webp  # 首页 Banner 头图，以下相同
+  banner_img: https://rmt.dogedoge.com/fetch/royce/storage/bg.png?fmt=webp  # 首页 Banner 头图，以下相同
   banner_img_height: 100  # 头图高度，屏幕百分比，available: 0 - 100
   banner_mask_alpha: 0.3  # 头图黑色蒙版的透明度，available: 0 - 1.0， 0 是完全透明（无蒙版），1 是完全不透明
   post_default_img:   # 随机默认文章封面图，当没有指定 index_img 时会使用该文件夹中的图片，若都为空则不显示任何图片
@@ -178,7 +178,7 @@ index:
     format: webp # 图片格式，保证文件夹中图片格式一致
   slogan:  # 首页副标题的独立设置
     enable: true  # 为 false 则不显示任何内容
-    text: 今日任务：早起 (0/1) # 为空则按 hexo config.subtitle 显示
+    text: 今日任务：早睡 (0/1) # 为空则按 hexo config.subtitle 显示
   auto_excerpt:
     enable: true
   post_url_target: _self  # available: _blank | _self
@@ -191,7 +191,7 @@ index:
 # 通过 hexo new page 命令创建的页面
 # Custom Page
 page:
-  banner_img: https://rmt.dogedoge.com/fetch/royce/storage/bg/1.jpg?fmt=webp
+  banner_img: https://rmt.dogedoge.com/fetch/royce/storage/emoji.png?fmt=webp
   banner_img_height: 80  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
 
@@ -200,7 +200,7 @@ page:
 # Post Page
 #---------------------------
 post:  # 部分配置同时控制自定义页面，注意备注
-  banner_img: https://rmt.dogedoge.com/fetch/royce/storage/bg/1.jpg?fmt=webp
+  banner_img: https://rmt.dogedoge.com/fetch/royce/storage/emoji.png?fmt=webp
   banner_img_height: 80  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
   meta:  # 文章标题下方的信息
@@ -236,6 +236,9 @@ post:  # 部分配置同时控制自定义页面，注意备注
     content: '<img src="https://octodex.github.com/images/jetpacktocat.png" class="rounded mx-auto d-block mt-5" style="width:150px; height:150px;">' # 自定义区域，支持 HTML，可自行插入赞赏码、公众号二维码等内容
   image_zoom:  # 文章图片可点击放大
     enable: true  # 开启后文章默认可用，自定义页面如需使用，需在 Front-matter 中指定 `image_zoom: true`，并且图片使用该格式插入：<img src="..." zoom />
+  footnote:  # 脚注语法，会在文章底部生成脚注，如果 Markdown 渲染器本身支持，则建议关闭，否则可能会冲突
+    enable: true
+    header: <hr>  # 脚注的节标题，也可以在 front-matter 中通过 `footnote: <h2>Reference</h2>` 这种形式修改单页的节标题
   math:  # 数学公式，开启之前需要更换 Markdown 渲染器，否则复杂公式会有兼容问题，具体请见：https://hexo.fluid-dev.com/docs/guide/##latex-数学公式
     enable: true  # 开启后文章默认可用，自定义页面如需使用，需在 Front-matter 中指定 `math: true`
     specific: true  # 开启后，只有在文章 Front-matter 里指定 `math: true` 才会在文章页启动公式转换，以便在页面不包含公式时提高加载速度
@@ -269,6 +272,11 @@ utterances:
 # 国内用户不要用，已被墙
 disqus:
   shortname: # your shortname
+  # The following are Disqusjs configurations, please ignore if DisqusJS is not required
+  # 以下为 Disqusjs 支持, 如不需要 DisqusJS 请忽略
+  # https://github.com/SukkaW/DisqusJS
+  disqusjs: false # 设置为 true 开启 DisqusJS
+  apikey: # DisqusJS 向 API 发起请求时使用的 API Key
 
 # Gitalk
 # You can get yout ClientID and ClientSecret from https://github.com/settings/applications/new
@@ -313,7 +321,7 @@ livere:
 # Archive Page
 #---------------------------
 archive:
-  banner_img: https://rmt.dogedoge.com/fetch/royce/storage/bg/1.jpg?fmt=webp
+  banner_img: https://rmt.dogedoge.com/fetch/royce/storage/bg.png?fmt=webp
   banner_img_height: 80  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
   subtitle: 记下即将逝去的青春，留下即将过去的幸福 # 打字机内容
@@ -324,7 +332,7 @@ archive:
 # Categories Page
 #---------------------------
 category:
-  banner_img: https://rmt.dogedoge.com/fetch/royce/storage/bg/1.jpg?fmt=webp
+  banner_img: https://rmt.dogedoge.com/fetch/royce/storage/bg.png?fmt=webp
   banner_img_height: 80  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
   subtitle:  # 打字机内容
@@ -336,7 +344,7 @@ category:
 # Tags Page
 #---------------------------
 tag:
-  banner_img: https://rmt.dogedoge.com/fetch/royce/storage/bg/1.jpg?fmt=webp
+  banner_img: https://rmt.dogedoge.com/fetch/royce/storage/bg.png?fmt=webp
   banner_img_height: 80  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
   subtitle: 今天也是开心的一天 # 打字机内容
@@ -353,7 +361,7 @@ tag:
 # Messageboard Page
 #---------------------------
 messageboard:
-  banner_img: https://rmt.dogedoge.com/fetch/royce/storage/bg/1.jpg?fmt=webp
+  banner_img: https://rmt.dogedoge.com/fetch/royce/storage/emoji.png?fmt=webp
   banner_img_height: 80  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
   subtitle: 留下你的脚印 # 打字机内容
@@ -364,7 +372,7 @@ messageboard:
 # About Page
 #---------------------------
 about:  # 关于页需要手动创建，具体请见：https://hexo.fluid-dev.com/docs/guide/#关于页
-  banner_img: https://rmt.dogedoge.com/fetch/royce/storage/bg/1.jpg?fmt=webp
+  banner_img: https://rmt.dogedoge.com/fetch/royce/storage/bg.png?fmt=webp
   banner_img_height: 80  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
   subtitle: '今后无论发生什么事也好<br>这个左手上的⋯⋯都是同伴的记号' # 打字机内容
@@ -380,7 +388,7 @@ about:  # 关于页需要手动创建，具体请见：https://hexo.fluid-dev.co
 # 404 Page
 #---------------------------
 page404:
-  banner_img: https://rmt.dogedoge.com/fetch/royce/storage/bg/1.jpg?fmt=webp
+  banner_img: https://rmt.dogedoge.com/fetch/royce/storage/emoji.png?fmt=webp
   banner_img_height: 100  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
   subtitle: 喂，幺幺零吗？这里的页面找不到了 # 打字机内容
@@ -400,7 +408,7 @@ baidusitemap:
 # Links Page
 #---------------------------
 links:
-  banner_img: https://rmt.dogedoge.com/fetch/royce/storage/bg/1.jpg?fmt=webp
+  banner_img: https://rmt.dogedoge.com/fetch/royce/storage/gallery-cartoon/18.png?fmt=webp&q=75
   banner_img_height: 80  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
   subtitle: 我们的船上没有手下，只有伙伴 # 打字机内容

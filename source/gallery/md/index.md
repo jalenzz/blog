@@ -2,12 +2,26 @@
 title: MD 风
 ---
 
+<style>#board{position: unset;}.view{z-index: -1;}.grid{max-width:69em;list-style:none;margin:30px auto;padding:1}.grid .item{display:block;float:left;padding:2px;width:33%;opacity:1}.grid .item a,.grid .item img{outline:0;border:0;display:block;max-width:100%}.grid.effect-2 .item.animate{-webkit-transform:translateY(200px);transform:translateY(200px);-webkit-animation:moveUp .65s ease forwards;animation:moveUp .65s ease forwards}@-webkit-keyframes moveUp{100%{-webkit-transform:translateY(0);opacity:1}}@keyframes moveUp{100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@media screen and (max-width:900px){.grid .item{width:50%}}@media screen and (max-width:400px){.grid .item{width:100%}}#grid .item-img{cursor:zoom-in}</style>
+
 <div class="note note-warning">本页面图片已压缩，点击图片可查看原图，图源网</div>
-<style>.g-g{max-width:69em;list-style:none;margin:30px auto;padding:0}.g-g li{display:block;float:left;padding:7px;width:33%;opacity:0}.g-g li.shown,.no-cssanimations .g-g li,.no-js .g-g li{opacity:1}.g-g li a,.g-g li img{outline:0;border:none;display:block;max-width:100%;box-shadow:0 12px 15px 0 rgba(0,0,0,.19),0 17px 50px 0 rgba(0,0,0,.12)}.g-g li.animate{-webkit-transform:scale(.6);transform:scale(.6);-webkit-animation:scaleUp .65s ease-in-out forwards;animation:scaleUp .65s ease-in-out forwards}@-webkit-keyframes scaleUp{100%{-webkit-transform:scale(1);opacity:1}}@keyframes scaleUp{100%{-webkit-transform:scale(1);transform:scale(1);opacity:1}}@media screen and (max-width:900px){.g-g li{width:50%}}@media screen and (max-width:400px){.g-g li{width:100%}}</style>
-<ul class="g-g" id="g-g"></ul>
+<div class="grid effect-2" id="grid"></div>
 <script>
     const url = 'https://rmt.dogedoge.com/fetch/royce/storage/gallery-md';
     for (i=13; i>=1; i--)
-        document.getElementById('g-g').innerHTML += (`<li><a href="${url}/${i}.png" target="_bank" rel="noopener external nofollow noreferrer"><img src="${url}/${i}.png?fmt=webp&q=70&w=1200"></a></li>`);
+        document.getElementById('grid').innerHTML += (`<div class="item"><img class="item-img" src="${url}/${i}.png?fmt=webp&q=70&w=350" data-original="${url}/${i}.png?fmt=webp&q=90" /></div>`);
 </script>
-<script src="/js/gallery.min.js"></script>
+<script src="https://rmt.dogedoge.com/fetch/nicol/storage/js/masonry.min.js"></script>
+<script src="https://rmt.dogedoge.com/fetch/~/source/jsdelivr/npm/zooming@2.1.1/build/zooming.min.js"></script>
+<script>
+    window.onload = function(){ 
+        new Zooming({}).listen('#grid .item-img')
+        var elem = document.querySelector('.grid');
+        // initialize
+        var msnry = new Masonry( elem, {
+            // options
+            itemSelector: '.item',
+            // columnWidth: 200
+        });
+    };
+</script>

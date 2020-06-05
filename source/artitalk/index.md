@@ -13,6 +13,4 @@ title: 时光机
           per = 10,
           lazy = 0;
   </script>
-  <script src="https://cdn.staticfile.org/jquery/2.0.0/jquery.min.js"></script>
-  <script src="/js/artitalk.js"></script>
 </body>

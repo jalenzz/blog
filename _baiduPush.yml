@@ -158,6 +158,12 @@ include:
 exclude:
 ignore:
 
+markdown_it_plus:
+  plugins:
+    - plugin:
+      name: markdown-it-footnote
+      enable: false
+
 feed:
   type: atom
   path: atom.xml
