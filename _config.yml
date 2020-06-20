@@ -33,7 +33,7 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render:
+skip_render: gallery/*/*.html
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -69,43 +69,22 @@ nofollow:
   exclude:
     - 'royce2003.top'
     - 'www.royce2003.top'
-    - 'music.royce2003.top'
     - 'neworld2002.github.io'
     - 'newsheep2003.github.io'
-    - 'huishao.top'
     - 'wtrwx.top'
     - 'blog.lhkstudio.me'
-    - 'leflacon.top'
-    - 'www.antmoe.com'
     - 'kksan.top'
     - 'eatrice.top'
     - 'blog.wubuster.com'
-    - 'www.geek-space.cn'
-    - 'mocehu.top'
-    - 'codgi.xin'
     - 'apde.xyz'
-    - 'idkzr.com'
-    - 'yyuzh.xyz'
     - 'ixfish.cn'
-    - 'yiki.tech'
-    - 'skyhouse.xyz'
-    - 'www.yunyoujun.cn'
-    - 'transion.cc'
-    - 'xaoxuu.com'
     - 'bestzuo.cn'
-    - 'xiamuyourenzhang.cn'
-    - 'tding.top'
     - '713.moe'
     - 'www.julydate.com'
     - 'blog.say521.cn'
-    - 'barriery.cn'
     - 'keithqwq.com'
     - 'i.vince.pub'
-    - 'blog.juanertu.com'
-    - 'dmx.pub'
     - 'www.hcode.top'
-    - 'blog.6yfz.cn'
-    - 'bryce-huang.club'
     - 'fanfan.im'
     - 'blog.cugxuan.cn'
     - 'www.flexiston.com'

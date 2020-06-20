@@ -148,7 +148,7 @@ function switchDarkMode() {
   }
 }
 
-(function(){
+/* (function(){
   const v = $('.valine'), u = $('.utterances');
   if((!v.length > 0) || (!u.length > 0)) return;
   $("#valine-btn").click(function(){
@@ -161,7 +161,7 @@ function switchDarkMode() {
   });
 }());
 
-/* Baidu Push
+Baidu Push
 (function() {
   var bp = document.createElement('script');
   var curProtocol = window.location.protocol.split(':')[0];
