@@ -845,10 +845,8 @@ hexo.extend.generator.register('_messageboard', function (locals) {
     font-size 10px
 ```
 
-上方的 css 已经放在 GitHub 中，若想直接引用，可在上方 JS 想办法引进去，或者在需要的界面加进去
+上方的 css 可在 JS 中引进去，或者在需要的界面加进去
 不建议加到全局，毕竟不是所有界面都需要（其实影响也不是很大）
-
-CDN🔗 https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/css/music.min.css
 
 #### HTML
 

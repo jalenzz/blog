@@ -8,9 +8,10 @@ layout: about
 - 高一，:earth_asia:Fujian, China，喜欢数码科技
 - 喜欢前端，但是很菜:persevere:，在搭建博客过程中不断学习
 - 个人水平有限，在博客分享的内容可能有错，希望指出:mag:
+- :banana: 个人主页: https://www.royce2003.top
 - :wrench: 简约而不简陋: https://blog.royce2003.top
-- :octopus: GitHub: [royce003](https://github.com/royce003)
-- :mailbox_closed: Email:  `royce2003[AT]qq.com`
+- :octopus: GitHub: [@royce003](https://github.com/royce003)
+- :mailbox_closed: Email: `royce2003[AT]qq.com`
 
 ### :cyclone: 关于博客
 

@@ -1,11 +1,9 @@
 <% if(theme.valine.appid && theme.valine.appkey){ %>
   <div id="vcomments"></div>
-  <!-- <script defer src="https://cdn.jsdelivr.net/npm/leancloud-storage@3.0.4/dist/av-min.js"></script> -->
-  <!-- <script defer src="https://cdn.jsdelivr.net/gh/royce003/BlogSource/js/Valine.min.js"></script> -->
   <script type="text/javascript">
     function loadValine() {
       addScript('https://cdn.jsdelivr.net/npm/leancloud-storage@3.0.4/dist/av-min.js')
-      addScript('https://cdn.jsdelivr.net/gh/royce003/BlogSource/js/Valine.min.js', function () {
+      addScript('https://cdn.jsdelivr.net/gh/royce003/cdn/js/Valine.min.js', function () {
         new Valine({
           lang: 'zh-cn',
           el: '#comments' ,

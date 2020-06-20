@@ -5,7 +5,7 @@
   "scripts": {
     "login": "tcb login",
     "deploy": "tcb hosting:deploy public/ -e blog-17bf0f",
-    "cgs": "hexo clean && hexo generate --config _local.yml && hexo server",
+    "cgs": "hexo clean && hexo generate --config _local.yml && hexo server --config _local.yml",
     "cgd": "hexo clean && hexo generate && tcb hosting:deploy public/ -e blog-17bf0f",
     "clean": "hexo clean",
     "built": "hexo generate",

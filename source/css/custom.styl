@@ -1,11 +1,3 @@
-@font-face
-  font-family 'Fira Code'
-  src url('/fonts/FiraCode.woff2') format('woff2'), url('/fonts/FiraCode.woff') format('woff')
-
-@media (max-width:767px)
-  body, html
-    font-size 16px
-
 /* rewrite post-meta tags */
 .post-meta .hover-with-bg
   background-color #eee
@@ -46,6 +38,10 @@
     width 6px
 
 .markdown-body
+  p
+    word-spacing -5px
+    line-height 1.8rem
+
   a
     color #1abc9c
     text-decoration underline
@@ -94,57 +90,6 @@
         height 12px
         width 12px
 
-  .drop-cap
-    margin-top 10px !important
-
-  p, ol, ul
-    line-height 1.5
-
-.drop-cap
-  float left
-  font-size 40px
-  margin-right 10px
-  margin-top 10px !important
-  line-height 32px
-  font-weight 700
-
-.emphasis-point
-  font-style normal
-  text-emphasis '•'
-  -webkit-text-emphasis '•'
-  -moz-text-emphasis '•'
-  text-emphasis-position under
-  -webkit-text-emphasis-position under
-  -moz-text-emphasis-position under
-
-.about-name
-.navbar-brand strong
-  font-family Sriracha
-  font-weight 400
-
-.navbar-brand
-  font-size 1.5rem
-  padding .1rem
-  margin -5px 0 -5px 0
-
-.index-img img
-  transition .4s
-
-.index-card:hover .index-img img
-  box-shadow 0 5px 11px 0 rgba(0,0,0,0.62), 0 4px 15px 0 rgba(0,0,0,0.65)
-
-.post-meta > i
-  margin-right -.3rem
-
-#gradient
-  color #f35626
-  background-image linear-gradient(92deg,#f35626 0,#feab3a 100%)
-  -webkit-background-clip text
-  background-clip text
-  -webkit-text-fill-color transparent
-  text-fill-color transparent
-  font-weight 800
-
 @media (min-width:768px)
   .post-content 
     h1, h2, h3, h4
@@ -161,161 +106,13 @@
     h4::before
       content "🍥"
 
-/*侧边滚动条*/
-::-webkit-scrollbar-button
-  display none
-
-::-webkit-scrollbar
-  width 8px
-  height 8px
-  background-color #bac3cd
-
-::-webkit-scrollbar-thumb
-  background-color #2f4154
-
-  &:hover
-    background-color #576d84
-
-/* 按钮样式 */
-.BoxButton
-  display block
-  position relative
-  width:fit-content
-  width:-webkit-fit-content
-  width:-moz-fit-content
-  line-height 2
-  padding 0 0.75rem
-  margin-top 25px
-  background #FF5E65 !important
-  border-radius 0.25rem
-  text-decoration none !important
-  color #fff !important
-  transition background .75s ease
-  overflow hidden
-  -webkit-box-shadow 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12)
-  box-shadow 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12)
-
-  &:hover
-    background #332F63 !important
-    color #fff !important
-
-    &::before
-      transform translateX(250px) rotate(45deg)
-
-  &::before
-    content ''
-    position absolute
-    left 0
-    width 15px
-    height 100px
-    bottom -25px
-    background #fff
-    border 2px solid #fff
-    transition transform .75s ease
-    transform translateX(-50px) rotate(45deg)
-
-.icon
-  width 1.5em
-  height 1.5em
-
 .comments img
   max-width 100%
 
-/* 切换按钮 */
-#dark
-  display none
-
-  i
-    font-size 1.25rem
-    color #EBA300
-
-  &:hover
-    background-color transparent
-
-#mdark i
-  position fixed
-  right 2rem
-  bottom 4rem
-  font-size 1.75rem
-  z-index 99
-  color #EBA300
-
-@media (min-width: 992px)
-  #mdark
-    display none
-  #dark
-    display block
-
-/*暗黑模式*/
 .dark
-  background-color #282c34
-
-  #dark, #mdark
-    i
-      color #757575
-
-  /* 背景遮罩 */
-  .mask
-    background-color rgba(0,0,0,.7) !important
-    // 打字机
-    span
-      color #a09c9c
-
-  /* 主体 */
-  #board 
-    background-color #282c34
-    color #a09c9c
-  
-  img  
-    filter brightness(60%)
-
-  p, .index-card a, .post-meta, .drop-cap
-    color #a09c9c
-
-  a
-    color #718096
-
-    &:hover
-      color #12977d
-
-  .post-meta .hover-with-bg
-    &::before
-      background #282C34
-
-    &::after
-      background #282C34
-
   .markdown-body
     h1, h2, h3, h4, h5, h6, li, s
       color:#a09c9c !important
-
-    blockquote
-      border-left .25em solid #6c6c6c;
-
-  .hover-with-bg:hover
-    background-color #24282F
-
-  /* 顶栏 */
-  .nav-link, .navbar-brand
-    color:#a09c9c !important
-
-  .navbar-col-show, .top-nav-collapse
-    background-color rgba(40, 44, 52, .8)
-
-  .animated-icon span   /* 手机端 */
-    background-color #a09c9c
-
-  /* page-number */
-  .pagination
-    .current, a:hover
-      background-color #6b6b6b73
-
-  /* back to top */
-  #scroll-top-button
-    background-color #282c34
-
-    i
-      color #a09c9c 
 
   /* Toc */
   .tocbot-list a
@@ -323,33 +120,6 @@
 
   .tocbot-active-link, footer a:hover
     color #1abc9c !important
-
-  /* footer */
-  footer, footer a
-    color #a09c9c
- 
-  /* 归档页 */
-  .list-group-item
-    color #a09c9c
-    background-color #282c34
-
-    &:hover
-      background-color #46484d
-
-  /* 标签页 */
-  .tagcloud a:hover
-    background-color #46484d
-
-  /* 友链页 */
-  .links
-    .card 
-      background-color #282c34
-
-    .card-body:hover
-      background-color #46484d
-
-    .link-title, .link-intro
-      color #a09c9c
 
   /* note */
   .note-info
@@ -379,6 +149,38 @@
 
     input, textarea
       color #a09c9c !important
+
+  /* 归档页 */
+  .list-group-item
+    color #a09c9c
+    background-color #282c34
+
+    &:hover
+      background-color #46484d
+
+  /* 标签页 */
+  .tagcloud a:hover
+    background-color #46484d
+
+  /* 友链页 */
+  .links
+    .card 
+      background-color #282c34
+
+    .card-body:hover
+      background-color #46484d
+
+    .link-title, .link-intro
+      color #a09c9c
+
+#gradient
+  color #f35626
+  background-image linear-gradient(92deg,#f35626 0,#feab3a 100%)
+  -webkit-background-clip text
+  background-clip text
+  -webkit-text-fill-color transparent
+  text-fill-color transparent
+  font-weight 800
 
 code
   font-family 'Fira Code', monospace !important
