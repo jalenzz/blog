@@ -79,8 +79,8 @@ web_analytics:  # 网页访问统计
 
 lazyload: # 对页面中的图片进行懒加载处理，可见范围外的图片不会加载
   enable: true
-  onlypost: true  # 仅在文章页使用懒加载，开启后如果自定义页面需要使用，可以在 Front-matter 里指定 `lazyload: true`
-  image: https://cdn.jsdelivr.net/gh/royce003/BlogSource/loading.svg
+  onlypost: false  # 仅在文章页使用懒加载，开启后如果自定义页面需要使用，可以在 Front-matter 里指定 `lazyload: true`
+  image: https://cdn.jsdelivr.net/gh/royce003/cdn/img/loading.svg
 
 daovoice:  # 在线客服 Daovoice 参考：http://dashboard.daovoice.io
   enable: false # 是否开启在线客服聊天
@@ -122,7 +122,7 @@ navbar:
       icon: 'iconfont icon-explore-fill',
       submenu: [
         { key: 'artitalk', link: '/artitalk/', icon: 'iconfont icon-shiguangji' },
-        { key: 'archive', link: '/archive/', icon: 'iconfont icon-archive-fill' },
+        { key: 'archive', link: '/archives/', icon: 'iconfont icon-archive-fill' },
         { key: 'gallery', link: '/gallery/', icon: 'iconfont icon-xiangce1' }
       ]
     }
@@ -173,9 +173,9 @@ index:
   banner_img_height: 100  # 头图高度，屏幕百分比，available: 0 - 100
   banner_mask_alpha: 0.3  # 头图黑色蒙版的透明度，available: 0 - 1.0， 0 是完全透明（无蒙版），1 是完全不透明
   post_default_img:   # 随机默认文章封面图，当没有指定 index_img 时会使用该文件夹中的图片，若都为空则不显示任何图片
-    url: https://cos.royce2003.top/index_img # 默认的文章封面图文件夹
+    url: https://rmt.dogedoge.com/fetch/royce/storage/index_img # 默认的文章封面图文件夹
     number: 3 # 文件夹中图片数量，图片命名从0开始 0.jpg 1.jpg 2.jpg
-    format: webp # 图片格式，保证文件夹中图片格式一致
+    format: png?fmt=webp&w=500 # 图片格式，保证文件夹中图片格式一致
   slogan:  # 首页副标题的独立设置
     enable: true  # 为 false 则不显示任何内容
     text: 今日任务：早睡 (0/1) # 为空则按 hexo config.subtitle 显示
@@ -301,7 +301,7 @@ gitalk:
 valine:
   appid: KIkO2HJm1qz9uykOuuU41i8F-9Nh9j0Va  # your leancloud application appid
   appkey: oJgS2mVg227GJIkndK0bFGtF  # your leancloud application appkey
-  placeholder: 推荐使用 utterances # comment box placeholder=
+  placeholder: Writer a comment # comment box placeholder=
   admin_email: royce2003@qq.com
 
 # 畅言
@@ -419,38 +419,18 @@ links:
     - { title: 'travellings', intro: '开往-友链接力', link: 'travellings.now.sh' }
     - { title: '维他入我心', intro: '科技/生活日常～', link: 'wtrwx.top' }
     - { title: 'Linhk1606', intro: '...', link: 'blog.lhkstudio.me' }
-    - { title: 'LeFlacon', intro: 'Let’s think!', link: 'leflacon.top' }
-    - { title: '小康博客', intro: '一个收藏回忆与分享技术的地方', link: 'www.antmoe.com' }
     - { title: '小K同學', intro: '技术，日语，云旅游', link: 'kksan.top' }
     - { title: '吃白饭的休伯利安号', intro: '卑微的考研狗', link: 'eatrice.top' }
     - { title: 'IamWu555', intro: 'A man with superb shot', link: 'blog.wubuster.com' }
-    - { title: '极客空间', intro: '一个准备高考的高三狗', link: 'www.geek-space.cn' }
-    - { title: 'MOCEHU',  intro: '一个没有技术贴的技术博客', link: 'mocehu.top' }
-    - { title: 'Codgi', intro: 'Do what you love', link: 'codgi.xin' }
     - { title: 'JimmyQin', intro: '挨拍的儿', link: 'apde.xyz' }
-    - { title: '惴与绕', intro: '一条咸鱼的日常', link: 'idkzr.com' }
-    - { title: 'yuzh', intro: '永不停歇--Never Settle', link: 'yyuzh.xyz' }
     - { title: 'Bert', intro: '面朝大海，春暖花开', link: 'ixfish.cn' }
-    - { title: 'Guan FuQing', intro: 'Error:No object found!', link: 'yiki.tech' }
-    - { title: '辉少菌', intro: '一个爱搞技术的高一党', link: 'huishao.top' }
-    - { title: '星下小屋', intro: '学习记录笔记本', link: 'skyhouse.xyz' }
-    - { title: '云游君', intro: 'All at sea.', link: 'www.yunyoujun.cn' }
-    - { title: '以成杂谈', intro: '以成，却非已成', link: 'transion.cc' }
-    - { title: 'xaoxuu', intro: 'iOS', link: 'xaoxuu.com' }
     - { title: 'Sanarous', intro: '码农人生', link: 'bestzuo.cn' }
-    - { title: '夏目友人帐', intro: '夏目友人帐', link: 'xiamuyourenzhang.cn' }
-    - { title: '小丁', intro: '世间所有的相遇，都是久别重逢', link: 'tding.top' }
     - { title: '小太', intro: '一个热爱 ACG 的技术宅', link: '713.moe' }
     - { title: '七夏浅笑', intro: '七月之约，夏末浅笑', link: 'www.julydate.com' }
     - { title: 'Mystery', intro: '心有猛虎，细嗅蔷薇', link: 'blog.say521.cn' }
-    - { title: 'barriery', intro: 'A student, programmer and explorer.', link: 'barriery.cn' }
     - { title: 'keith', intro: '一个热爱网络的学生', link: 'keithqwq.com' }
     - { title: 'Vince', intro: '努力学习技术的 Vince', link: 'i.vince.pub' }
-    - { title: 'ConstOwn', intro: '能和你一起成长，我荣幸之至', link: 'blog.juanertu.com' }
-    - { title: 'DmxZ', intro: '欢迎来到 DmxZ 的自留地！', link: 'dmx.pub' }
     - { title: 'Hcode', intro: '记录编程技术，实现在线小功能', link: 'www.hcode.top' }
-    - { title: 'LiuYun', intro: '一位信息网络爱好者的博客', link: 'blog.6yfz.cn' }
-    - { title: 'Bryce', intro: '啥都想学的程序员', link: 'bryce-huang.club' }
     - { title: '饭庄', intro: '饭庄', link: 'fanfan.im' }
     - { title: '泫', intro: 'Xuan’ blog', link: 'blog.cugxuan.cn' }
     - { title: 'Flexiston', intro: '长风破浪会有时，直挂云帆济沧海', link: 'www.flexiston.com' }
