@@ -23,7 +23,7 @@ jobs:
       env:
         baiduToken: ${{ secrets.baiduToken }}
 
-      run: sed -i "s/baiduToken/${baiduToken}/" _baiduPush.yml
+      run: sed -i "s/baiduToken/${baiduToken}/" _config.yml
     
     - name: generate
       run: hexo clean && hexo g
