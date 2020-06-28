@@ -8,13 +8,14 @@ tags:
 index_img: https://cos.royce2003.top/60394/index_img.webp-cover
 abbrlink: 60394
 top: 10
-excerpt: 2020.04.28 更新
+excerpt: 06.27 更新
 ---
 
 {% note primary %}
-2020.04.10 新增超好看的复选框 
-2020.04.13 更新动态背景代码  
-2020.04.28 自定义返回顶部图片和球形标签云
+04.10 新增超好看的复选框 
+04.13 更新动态背景代码  
+04.28 自定义返回顶部图片和球形标签云
+06.27 更新 Demo && 代码块仿 Mac
 ==随着主题的更新，文中的代码可能失效或引起错误，请自行修改==
 {% endnote %}
 
@@ -23,11 +24,12 @@ excerpt: 2020.04.28 更新
 好像还没有看到大佬写关于 Fluid 折腾的文章，就开了这个坑
 文章放了源码进来，所以挺长的，大部分是改 CSS，JS 很少
 首先，按照 Fluid 配置文件中的方法，新建自定义 CSS 和 JS
-建议创建 .styl 而不是 .css
-下方代码会是 .styl，因为写着更省事...
+对于自定义 css，建议新建 `custom.styl`，接下来的代码基本都是 styl 的，直接放入 css 文件中无法使用
+
+如果你还不知道什么是 stylus，有兴趣的话可以看看这篇文章 [『前端干货篇』：你不知道的Stylus](https://juejin.im/post/5bbd7a7c6fb9a05cfd27f4c6)
 
 {% note danger %}
-不管是什么，配置文件中都填 `.css`
+新建的是 `styl`，配置文件中也填 `.css`
 {% endnote %}
 
 ```yaml
@@ -40,7 +42,8 @@ custom_html: ''  # 自定义底部 HTML 内容（位于 footer 上方），也�
 
 [^1]
 
-主题本身采用的是头图滚动视差，非常 nice，但我可能更喜欢花里胡哨吧
+效果见 [演示站点](https://a9m5yn.coding-pages.com/)
+
 自定义 CSS 中加入如下代码
 
 ```stylus
@@ -85,7 +88,7 @@ custom_html: ''  # 自定义底部 HTML 内容（位于 footer 上方），也�
 ```
 
 然后取消原本头图的获取
-用最简单的方法，直接删去获取头图的代码，保留标签(代码前面的减号是吧这行删掉的意思，加号同理)
+用最简单的方法，直接删去获取头图的代码，保留标签
 
 ```diff
   <header style="height: <%- banner_img_height %>vh;">
@@ -1087,6 +1090,30 @@ tag_cloud:
 `textColor`: 字体颜色
 `textHeight`: 字体高度
 `maxSpeed`: 文字滚动速度
+
+### 代码块仿 Mac
+
+源网
+
+```stylus
+.markdown-body
+  pre
+    padding-bottom 5px
+
+    code
+      padding 1rem 0 .5rem 0
+
+      &::before
+        content ' '
+        position absolute
+        background #fc625d
+        border-radius 50%
+        box-shadow 20px 0 #fdbc40, 40px 0 #35cd4b
+        margin-top -20px
+        left 12px
+        height 12px
+        width 12px
+```
 
 ---
 
