@@ -21,7 +21,7 @@
   <% }%>
 <% } %>
 
-<% if (theme.highlight.copy_btn) { %>
+<% if (theme.highlight.copy_btn && !is_home()) { %>
   <%- js_ex(theme.static_prefix.clipboard, 'clipboard.min.js', 'defer') %>
   <%- js_ex(theme.static_prefix.internal_js, 'clipboard-use.js') %>
 <% } %>

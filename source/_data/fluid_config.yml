@@ -22,7 +22,7 @@ highlight: # 代码高亮
   enable: true
   style: 'Atom One Dark'  # 以在 custom.styl 内置，高亮样式见：https://highlightjs.org/static/demo/
   bg_color: true  # 是否根据 style 改变代码背景色，**如果 style 是深色背景别忘了开启此项**
-  copy_btn: false  # 是否开启复制代码的按钮
+  copy_btn: true  # 是否开启复制代码的按钮
 
 fun_features: # 一些好玩的功能
   typing: # 为 subtitle 添加打字机效果
@@ -55,7 +55,7 @@ color:  # 主题颜色配置，不一定能每一处都生效，可能会被局�
 
 font:  # 主题字体配置
   font_size: 1.1rem # 全局字号
-  font_family: "'Fira Code', 'Noto Serif SC', serif " # 全局字体
+  font_family: "'Roboto Slab', 'Noto Serif SC', serif " # 全局字体
   code_font_size: 100% # 代码的字号
 
 custom_js: # 指定自定义 js 文件路径，路径是相对 source 目录，如 /js/custom.js 对应存放目录 source/js/custom.js，支持列表
@@ -104,7 +104,7 @@ version:  # 主题版本相关
 # Header
 #---------------------------
 navbar:
-  blog_title: Royce's world # 导航栏左侧的标题，为空则按 hexo config.title 显示
+  blog_title: JalenChuh # 导航栏左侧的标题，为空则按 hexo config.title 显示
   ground_glass:  # 导航栏毛玻璃特效，部分浏览器不支持会自动不生效
     enable: true
     px: 3  # 模糊像素，只能为数字，数字越大模糊度越高
@@ -148,7 +148,7 @@ banner_parallax: true # 头图滚动视差
 #---------------------------
 footer:
   statistics:  # 展示网站的 PV、UV 统计数
-    enable: true
+    enable: false
     source: "leancloud"  # 统计数据来源，可选：leancloud | busuanzi，使用 leancloud 需要在 web_analytics 中设置 api 参数，使用 busuanzi 注意可能间歇抽风
     pv_format: "PV{}"  # 显示的文本，{}是数字的占位符（必须包含)，下同
     uv_format: "UV{}"
@@ -377,8 +377,8 @@ about:  # 关于页需要手动创建，具体请见：https://hexo.fluid-dev.co
   banner_mask_alpha: 0.3  # available: 0 - 1.0
   subtitle: '今后无论发生什么事也好<br>这个左手上的⋯⋯都是同伴的记号' # 打字机内容
   avatar: https://rmt.dogedoge.com/fetch/royce/storage/royce.png?fmt=webp # 头像
-  name: Royce
-  introduce: '<span id="gradient" style="font-family: Sriracha,cursive;">less is more.</span>' # 支持 HTML
+  name: JalenChuh
+  introduce: '<span id="gradient">less is more.</span>' # 支持 HTML
   icons: # 更多图标可从 https://github.com/fluid-dev/static/blob/master/hexo-theme-fluid/iconfont.png 查找，class 代表图标的 css class
     - { class: '', link: '' }
 
