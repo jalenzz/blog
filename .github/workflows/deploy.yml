@@ -1,18 +1,13 @@
 name: Deploy
 
-on:
-  push:
-    branches:
-      - master
-  watch:
-    types: [started]
+on: [push]
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
     - uses: actions/setup-node@v1
       with:
         node-version: '10.x'
@@ -27,7 +22,7 @@ jobs:
 
     - name: Deploy
       id: deployStatic
-      uses: TencentCloudBase/cloudbase-action@v1
+      uses: TencentCloudBase/cloudbase-action@v1.1.1
       with:
         secretId: ${{ secrets.SECRET_ID }}
         secretKey: ${{ secrets.SECRET_KEY }}
