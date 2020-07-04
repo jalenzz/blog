@@ -17,8 +17,8 @@
   },
   "dependencies": {
     "@upupming/hexo-renderer-markdown-it-plus": "^2.0.2",
-    "hexo": "^4.0.0",
-    "hexo-abbrlink": "^2.0.5",
+    "hexo": "^4.2.1",
+    "hexo-abbrlink": "^2.1.5",
     "hexo-all-minifier": "^0.5.3",
     "hexo-baidu-url-submit": "0.0.6",
     "hexo-blog-encrypt": "^3.0.12",

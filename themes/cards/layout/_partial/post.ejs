@@ -1,0 +1,34 @@
+<div class="post-card__header">
+    <% if (theme.layout.post.header.indexOf('thumbnail') !== -1) { %>
+        <%- partial('_meta/thumbnail', {post: post, position: 'list'}) %> 
+    <% } %>
+</div>
+<div class="post-card__content">
+    <a href="<%- url_for(post.link || post.path) %>" class="index-title">
+        <h2 class="post-card__title">
+            <%- post.title || theme.meta.title %>
+        </h2>
+    </a>
+    <p class="post-card__descrption">
+        <% if (theme.layout.meta.indexOf('excerpt') !== -1) { %>
+            <div class="md-content">
+                <% if (post.excerpt || post.description) { %>
+                    <%- post.excerpt || post.description %>
+                <% } else if (theme.meta.auto_excerpt.enable) { %>
+                    <%- strip_html(truncate(post.content, {length: theme.meta.auto_excerpt.length})) %>
+                <% } %>
+            </div>
+        <% } %>   
+    </p>
+</div>
+<div class="post-card__meta">
+    <% if (theme.layout.meta.indexOf('date') !== -1) { %>
+        <%- partial('_meta/date') %>
+    <% } %>
+    <% if (theme.layout.meta.indexOf('categories') !== -1) { %>
+        <%- partial('_meta/category') %> 
+    <% } %>
+</div>
+<% if (theme.layout.meta.indexOf('tags') !== -1) { %>
+    <%- partial('_meta/tags') %> 
+<% } %>
