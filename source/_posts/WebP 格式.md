@@ -1,8 +1,8 @@
 ---
 title: 加速网页加载？我选择对图片下手
 date: 2020-04-20 15:00:51
-tags: [横向评测]
-index_img: https://cos.royce2003.top/12013/index_img.webp-cover
+tags: 横向评测
+thumbnail: https://rmt.dogedoge.com/fetch/royce/storage/12013/cover.png?fmt=webp&h=310&w=800
 abbrlink: 12013
 excerpt: WebP，由 Google 开发的新型图像格式，从名字就可以看出是专门为了 Web 而设计。采用 WebP 格式能对网站速度提升起到很大帮助。
 ---

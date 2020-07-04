@@ -1,0 +1,26 @@
+navbar:
+  home: Home
+  link: Link
+  archive: Archive
+  category: Category
+  tag: Tag
+  top: Back to Top
+post:
+  top: Top
+  read_more: Read More
+  sticky: Sticky
+  comments: Comments
+  comments_placeholder: Unable to load %s, please make sure your network can access.
+  updated: updated at
+  prev_page: Previous
+  next_page: Next
+  copyright: 
+    author: 'Author: '
+    permalink: 'Permalink: '
+  expire: "This article was last updated on %s days ago, the information described in the article may be outdated."
+symbol:
+  comma: ", "
+  period: ". "
+  colon: ": "
+  brackets_l: "("
+  brackets_r: ")"
