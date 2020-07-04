@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Royce
+title: JalenChuh's Blog
 subtitle: ''
 description: '小白 | OIer | 科技生活 | 高中生'
-keywords: Royce
-author: Royce
-language: 
+keywords: 
+author: JalenChuh
+language: en
 timezone: 'Asia/Shanghai'
 
 # URL
@@ -16,14 +16,22 @@ timezone: 'Asia/Shanghai'
 url: https://royce2003.top
 root: /
 # permalink: :year/:month/:day/:title/
-permalink: posts/:abbrlink.html
+permalink: :sort/:abbrlink.html
 permalink_defaults:
+  sort: posts
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
   trailing_html: true # Set to false to remove trailing '.html' from permalinks
-  abbrlink:
-    alg: crc32   #算法： crc16(default) and crc32
-    rep: hex     #进制： dec(default) and hex
+# abbrlink config
+abbrlink:
+  alg: crc32  #support crc16(default) and crc32
+  rep: hex    #support dec(default) and hex
+  drafts: false #(true)Process draft,(false)Do not process draft
+  # Generate categories from directory-tree
+  # depth: the max_depth of directory-tree you want to generate, should > 0
+  auto_category:
+    enable: false
+    depth: 
 
 # Directory
 source_dir: source
@@ -49,8 +57,8 @@ post_asset_folder: false
 relative_link: false
 future: true
 highlight:
-  enable: false
-  line_number: true
+  enable: true
+  line_number: false
   auto_detect: false
   tab_replace: ''
   wrap: true
@@ -61,6 +69,15 @@ baidu_url_submit:
   host: royce2003.top
   token: baiduToken
   path: baidu_urls.txt
+
+feed:
+  type: atom
+  path: atom.xml
+  limit: 0
+  hub:
+  content:
+  content_limit:
+  content_limit_delim: ' '
 
 # 外部链接优化
 nofollow:
@@ -105,7 +122,7 @@ encrypt: # hexo-blog-encrypt
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
   path: ''
-  per_page: 10
+  per_page: 6
   order_by: -date
 
 # Category & Tag
@@ -137,21 +154,6 @@ include:
 exclude:
 ignore:
 
-markdown_it_plus:
-  plugins:
-    - plugin:
-      name: markdown-it-footnote
-      enable: false
-
-feed:
-  type: atom
-  path: atom.xml
-  limit: 0
-  hub:
-  content:
-  content_limit:
-  content_limit_delim: ' '
-
 all_minifier: true
 js_concator:
   enable: false
@@ -180,7 +182,12 @@ js_minifier:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: fluid
+theme: cards
+
+lazyload:
+  enable: true
+  onlypost: false
+  loadingImg: 
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

@@ -2,7 +2,7 @@
 title: Hexo Fluid 暗黑模式
 date: 2020-04-02 18:04:57
 tags: [Hexo, Fluid, CSS]
-index_img: https://cos.royce2003.top/41212/index_img.webp-cover
+thumbnail: https://rmt.dogedoge.com/fetch/royce/storage/41212/cover.png?fmt=webp&h=350&w=800
 abbrlink: 41212
 excerpt: 适用于 Hexo 的暗黑模式，目前博客已经基本上适配完成了
 ---

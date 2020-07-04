@@ -1,8 +1,0 @@
-User-agent: *
-Allow: /
-
-Disallow: /js/
-Disallow: /css/
-
-Sitemap: https://royce2003.top/sitemap.xml
-Sitemap: https://royce2003.top/baidusitemap.xml

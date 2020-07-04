@@ -5,7 +5,7 @@ tags:
   - 软件
 abbrlink: 17291
 date: 2020-04-26 20:56:01
-index_img: https://rmt.dogedoge.com/fetch/royce/storage/17291/index_img.png?w=500&fmt=webp
+thumbnail: https://rmt.dogedoge.com/fetch/royce/storage/17291/cover.png?fmt=webp&h=350&w=800
 excerpt: 不夸张的说，我认为这或许是最好的非系统的安卓手机管理工具，好看的 UI、舒适的体验，至少我目前还没有找到一个既免费又有与之相同体验的软件
 ---
 

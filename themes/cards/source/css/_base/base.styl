@@ -1,0 +1,76 @@
+:root
+    --main-color $color_main
+    --bg-color $color_background
+    --bg-content-color $color_card
+    --bg-menu #eceef2
+    --bg-tag-color $color_tags_block
+    --bg-cat-color $color_categories_block
+    --bg-code $color_codeblock
+    --bg-codeblock #f8f8f8
+    --body-color $color_font
+    --title-color $color_title
+    --border-color rgba(0,0,0,0.1)
+    --space $space_main
+    --content-width $max_width_main
+
+article
+aside
+details
+figcaption
+figure
+footer
+header
+hgroup
+menu
+nav
+section
+    display block
+
+html
+    --base-font-size $fontsize
+    font-size var(--base-font-size)
+
+::-webkit-scrollbar 
+    width .55rem !important
+    height .40rem !important
+    background 0 0 !important
+
+::-webkit-scrollbar-thumb
+    background #b5b5b5 !important
+
+@media screen and (max-width: 762px)
+    ::-webkit-scrollbar 
+        width .25rem !important
+        height .16rem !important
+
+body
+p
+    font-family 'Roboto Slab','Noto Serif SC',serif,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,pingfang sc,source han sans sc,noto sans cjk sc,sarasa gothic sc,microsoft yahei,sans-serif,Apple Color Emoji,Segoe UI Emoji,Varela Round
+
+body
+    font-weight 400
+    background-color var(--bg-color)
+    color var(--body-color)
+    transition color .6s,background-color .6s
+    margin 0
+    padding 0
+    line-height $lineheight
+
+@media screen and (max-width:650px)
+    body
+        --space $space_sm
+
+.main
+    margin 0 auto
+    padding 1.5vw 15px 0
+    // max-width var(--content-width)
+
+    &.tagscloud
+        margin 0 auto
+        padding 0 var(--space)
+        max-width 100%
+
+    &.friends 
+        margin 0 auto 
+        padding 0 var(--space)
+        max-width 100%
