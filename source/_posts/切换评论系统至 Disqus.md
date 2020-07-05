@@ -1,7 +1,7 @@
 ---
 title: 『通知』论系统切换评至 Disqus
 abbrlink: change-comment-system-into-disqus
-thumbnail: https://rmt.dogedoge.com/fetch/royce/storage/change-comment-system-into-disqus/cover.png?fmt=webp&h=400
+thumbnail: https://rmt.dogedoge.com/fetch/royce/storage/change-comment-system-into-disqus/cover.png?fmt=webp
 date: 2020-06-30 22:22:58
 sort: notice
 categories: notice
