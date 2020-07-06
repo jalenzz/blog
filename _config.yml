@@ -13,7 +13,7 @@ timezone: 'Asia/Shanghai'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://royce2003.top
+url: https://blog.JalenChuh.cn
 root: /
 # permalink: :year/:month/:day/:title/
 permalink: :sort/:abbrlink.html
@@ -66,7 +66,7 @@ highlight:
 
 baidu_url_submit:
   count: 200
-  host: royce2003.top
+  host: blog.jalenchuh.cn
   token: baiduToken
   path: baidu_urls.txt
 
@@ -84,8 +84,9 @@ nofollow:
   enable: true
   field: site
   exclude:
-    - 'royce2003.top'
-    - 'www.royce2003.top'
+    - 'jalenchuh.cn'
+    - 'www.jalenchuh.cn'
+    - 'blog.jalenchuh.cn'
     - 'neworld2002.github.io'
     - 'newsheep2003.github.io'
     - 'wtrwx.top'
