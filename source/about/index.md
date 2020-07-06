@@ -8,8 +8,8 @@ layout: about
 - 00 后，📍 Fujian, China，喜欢数码科技
 - 喜欢前端，但是很菜，在搭建博客过程中不断学习
 - 个人水平有限，在博客分享的内容可能有错，希望指出 🔍
-- 🍌 个人主页 https://www.royce2003.top
-- 🐙 GitHub [@royce003](https://github.com/royce003)
+- 🍌 个人主页 https://JalenChuh.cn
+- 🐙 GitHub [@JalenChuh](https://github.com/jalenchuh)
 - 📪 Email `JalenChuh[AT]gmail.com`
 
 ### 🌀 关于博客
@@ -19,7 +19,6 @@ layout: about
 
 ### 📛 关于名字
 
-当你看见 Royce or Jalen 或者带者一些 003 or 2003 的后缀，那可能就是我了
-关于 Royce，就随便取的，没啥故事
-关于 Jalen, JalenChuh，算是中译英？Chuh 我姓的英文翻译（或许是吧），Jalen 则是我名的谐音
+当你看见 Jalen 或者带者一些 003 or 2003 的后缀，那可能就是我了
+Jalen, JalenChuh，算是中译英？Chuh 我姓的英文翻译（或许是吧），Jalen 则是我名的谐音
 后缀的话，要不是用户名的被注册了，我才不要后缀呢🙄
