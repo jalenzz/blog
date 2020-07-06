@@ -51,8 +51,6 @@ cover:
       url: /artitalk/
     - name: 友链
       url: /friends/
-    - name: 相册
-      url: /gallery/
     - name: 关于
       url: /about/
     - name: RSS
@@ -93,7 +91,7 @@ meta:
   # 默认文章作者（可在front-matter中覆盖）
   author:
     name: JalenChuh
-    url: https://royce2003.top
+    url: https://jalenchuh.cn
   
   # 文章创建日期
   date:

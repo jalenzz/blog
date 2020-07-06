@@ -70,7 +70,7 @@ git push -u origin master
 
 ### 编写 GitHub Action
 
-以我的[个人主页](https://www.royce2003top)为例，是由 Vue.js 构建的，部署在腾讯云静态网站托管。GitHub 仓库地址：[homepage](https://github.com/royce003/homepage)
+以我的[个人主页](https://JalenChuh.cn)为例，是由 Vue.js 构建的，部署在腾讯云静态网站托管。GitHub 仓库地址：[homepage](https://github.com/jalenchuh/homepage)
 
 共分为 `Setup` `Build` `Lint` `Deploy` 四个步骤
 
@@ -240,7 +240,7 @@ jobs:
 ```yaml
 baidu_url_submit:
   count: 200
-  host: royce2003.top
+  host: blog.JalenChuh.cn
   token: baiduToken
   path: baidu_urls.txt
 ```
@@ -301,7 +301,7 @@ sed -i "s/baiduToken/${baiduToken}/" _config.yml
 deploy:
   - type: baidu_url_submitter
 -  - type: git
--    repo: git@github.com:royce003/test.git
+-    repo: git@github.com:jalenchuh/test.git
 -    branch: master
 ```
 
