@@ -75,7 +75,7 @@ feed:
   path: atom.xml
   limit: 0
   hub:
-  content:
+  content: true
   content_limit:
   content_limit_delim: ' '
 
