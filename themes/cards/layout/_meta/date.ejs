@@ -1,6 +1,6 @@
 <span class="button" style="color: #808080;">
     <%- theme.meta.date.title + date(post.date, theme.meta.date.format) %>.
-    <strong>
+    <strong style="color: var(--main-color)">
         <%- wordcount(post.content) %>
         <%- min2read(post.content) %>
         <% if (post.top) { %>
@@ -8,7 +8,7 @@
             <svg fill="var(--main-color)" width="15" height="15" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
                 <path d="M412.444 995.556c-84.608-22.116-235.605-65.167-262.727-268.687-17.99-135.822-3.626-229.888 43.335-282.396l35.186 67.883c19.911-88.69 58.738-155.648 116.48-200.86 86.656-67.827 92.075-230.643 54.187-263.254-37.917-32.54 289.778 75.975 308.764 361.03 25.259-65.165 59.535-97.706 102.927-97.706-18.12 48.782-9.984 104.007 24.334 165.518 51.47 92.288 127.274 390.856-189.582 507.592 67.683-97.707 33.905-252.43-133.362-379.976C463.915 734.976 428.658 729.53 398.89 791.98c-29.767 62.378-46.038 143.843 13.568 203.577z"/>
             </svg>
-            <strong style="color: var(--main-color)"> TOP</strong>
+            <span> TOP</span>
         <% } %>
     </strong>
 </span>

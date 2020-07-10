@@ -38,10 +38,10 @@ cover:
   sitename: JalenChuh
 
   # 若设置 logo，则优先使用 logo 代替 sitename
-  logo: 
+  logo: https://rmt.dogedoge.com/fetch/royce/storage/avatar.png?fmt=webp&w=250
   
   # logo 下方的一句话介绍
-  description: 
+  description: 哟，你终于来啦 (≧∇≦)ﾉ
   
   # cover 按钮菜单，通常用于站内导航
   menu: 
@@ -66,7 +66,7 @@ style:
 
   # 颜色配置
   color: 
-    main_color: '#ffb90f'
+    main_color: '#FF779A'
 
   # 弧度设置
   radius: 

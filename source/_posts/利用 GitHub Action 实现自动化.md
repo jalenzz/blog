@@ -46,13 +46,13 @@ Vercel 可以直接从 GitHub 导入博客仓库，且能识别静态博客类�
 
 ## 自动部署
 
-接下来进入重点，利用 GitHub Action 实现自动化部署，如果你还不知道 GitHub Action 是什么，可以看看 [官方介绍](https://github.com/features/actions)，简单来说，以你的仓库为根目录，给你一台电脑，帮你完成一些事情。如果想进一步了解，可以看看 [编写自己的 GitHub Action，体验自动化部署 - 张凯强的技术分享](https://zkqiang.cn/posts/e8ed6836/)
+接下来进入重点，利用 GitHub Action 实现自动化部署，如果你还不知道 GitHub Action 是什么，可以看看 [官方介绍](https://github.com/features/actions)，简单来说，以你的仓库为根目录，给你一台电脑，帮你完成一些事情。如果想进一步了解，可以看看 [编写自己的 GitHub Action，体验自动化部署](https://zkqiang.cn/posts/e8ed6836/)
 
 ### 连接 GitHub
 
 保证你的整个博客文件夹已 `push` 到了GitHub 上。如果没有，新建一个仓库 `Public` or `Private`  均可，然后将本地本地与仓库连接。
 
-`username` 替换成用户名，   `repo` 替换成仓库名
+`username` 替换成用户名，`repo` 替换成仓库名
 
 ```bash
 git init
@@ -69,6 +69,8 @@ git push -u origin master
 {% endnote %}
 
 ### 编写 GitHub Action
+
+从这里开始，默认你已经看完之前提到的『编写自己的 GitHub Action，体验自动化部署』，或者对 GitHub Action 有初步的了解，知道大致操作。
 
 以我的[个人主页](https://JalenChuh.cn)为例，是由 Vue.js 构建的，部署在腾讯云静态网站托管。GitHub 仓库地址：[homepage](https://github.com/jalenchuh/homepage)
 
