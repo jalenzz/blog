@@ -3,10 +3,6 @@ title: 友链
 layout: links
 
 links: 
-  - name: 暂不接受友链申请，不过可以留下网站，我可能会向你提出申请
-    textColor: '#FFF'
-    backgroundColor: '#CA2C2A'
-
   - name: Neworld2002
     url: https://neworld2002.github.io
     avatar: https://rmt.dogedoge.com/fetch/royce/storage/links/Neworld2002.jpg?fmt=webp&w=100&h=100&q=100
@@ -118,6 +114,12 @@ links:
   - name: Flexiston
     url: https://www.flexiston.com
     avatar: https://rmt.dogedoge.com/fetch/royce/storage/links/Flexiston.jpg?fmt=webp&w=100&h=100&q=100
+    textColor: '#FFF'
+    backgroundColor: '#3E74C9'
+
+  - name: ChrAlpha
+    url: https://ichr.me
+    avatar: https://rmt.dogedoge.com/fetch/royce/storage/links/ChrAlpha.jpg?fmt=webp&w=100&h=100&q=100
     textColor: '#FFF'
     backgroundColor: '#3E74C9'
 
