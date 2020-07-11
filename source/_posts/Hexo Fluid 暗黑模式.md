@@ -1,7 +1,7 @@
 ---
 title: Hexo Fluid 暗黑模式
 date: 2020-04-02 18:04:57
-tags: [Hexo, Fluid, CSS]
+tags: [Hexo, CSS, 教程]
 thumbnail: https://rmt.dogedoge.com/fetch/royce/storage/41212/cover.png?fmt=webp&h=350&w=800
 abbrlink: 41212
 excerpt: 适用于 Hexo 的暗黑模式，目前博客已经基本上适配完成了
@@ -10,6 +10,7 @@ excerpt: 适用于 Hexo 的暗黑模式，目前博客已经基本上适配完�
 大概花了一个晚上搞暗黑模式，之后几天陆续优化了下
 目前博客已经基本上适配完成了
 目前是三种方案（优先级递减）
+
 1. 媒体查询
 2. 定时开启
 3. localStorage/sessionStorage 查询
@@ -44,8 +45,6 @@ iOS、MacOS 上的 Safari 也支持
 注意！一定紧跟在 `body` 标签之后，否则会出现闪烁
 {% endnote %}
 
-
-
 ### JS
 
 然后随便找个 JS 把下面代码加进去，直接加到 `</body>` 之前也行
@@ -53,17 +52,17 @@ iOS、MacOS 上的 Safari 也支持
 ```js
 //点击事件
 function switchDarkMode() {
-	if ($('body').hasClass('dark')) {
-		$("#dark").html("🌞");
-		document.body.classList.remove('dark');
-		localStorage.setItem('noDark', '1');
-		localStorage.setItem('dark', '0');
-	} else {
-		$("#dark").html("🌙"); 
-		document.body.classList.add('dark');
-		localStorage.setItem('dark', '1');
-		localStorage.setItem('noDark', '0');
-	}
+  if ($('body').hasClass('dark')) {
+    $("#dark").html("🌞");
+    document.body.classList.remove('dark');
+    localStorage.setItem('noDark', '1');
+    localStorage.setItem('dark', '0');
+  } else {
+    $("#dark").html("🌙");
+    document.body.classList.add('dark');
+    localStorage.setItem('dark', '1');
+    localStorage.setItem('noDark', '0');
+  }
 }
 ```
 
@@ -94,7 +93,7 @@ function switchDarkMode() {
 .dark
 
   /* 主体 */
-  #board 
+  #board
     background-color #282c34
     color #a09c9c
   
@@ -108,16 +107,15 @@ function switchDarkMode() {
   .markdown-body
     h1,h2,h3,h4,h5,h6,s,li  
       color:#a09c9c !important
-    
 
   /* 顶栏 */
   .navbar-col-show
   .top-nav-collapse  
     background-color #282c34
-    
-  .navbar a  
+
+  .navbar a
     color #a09c9c !important
-    
+
   .animated-icon span   /* 手机端 */
     background-color #a09c9c
 
@@ -141,7 +139,7 @@ function switchDarkMode() {
 
     i
       color #a09c9c
-    
+
 
   /* Toc */
   .tocbot-list a
@@ -156,13 +154,13 @@ function switchDarkMode() {
   footer
   footer a
     color #a09c9c
-    
+
 
   /* 归档页 */
   .list-group-item
     color #a09c9c
     background-color #282c34
-    
+
   .list-group-item:hover
   .tagcloud a:hover
     background-color #46484d
@@ -172,14 +170,14 @@ function switchDarkMode() {
   .links
     .card  
       background-color #282c34
-        
+
     .card-body:hover  
       background-color #46484d
-        
+
     .link-title
     .link-intro  
       color #a09c9c
-    
+
 
   /* note标签 可能这配色有点丑 */
   .note-info
@@ -226,10 +224,10 @@ sessionStorage 在手机浏览器上问题很多，不推荐使用
 {% endnote %}
 
 下面是支持该特性的最低版本
-![](https://cos.royce2003.top/41212/01.webp-default)
+![支持情况](https://cos.royce2003.top/41212/01.webp-default)
 
 可以在浏览器控制台中查看他们的值
-![](https://cos.royce2003.top/41212/02.webp-default)
+![查看](https://cos.royce2003.top/41212/02.webp-default)
 
 ---
 

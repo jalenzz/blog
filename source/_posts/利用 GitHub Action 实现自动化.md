@@ -4,6 +4,7 @@ abbrlink: use-github-action
 date: 2020-07-05 10:22:30
 excerpt: 博客部署？我用 GitHub Action 自动部署<br>百度收录推送？我也用 GitHub Action 自动推送
 thumbnail: https://rmt.dogedoge.com/fetch/royce/storage/use-github-action/cover.png?fmt=webp
+tags: [GitHub Action, 教程, 自动化]
 ---
 
 ## 前言
@@ -309,7 +310,7 @@ deploy:
 
 那么之前命令中的所有 `hexo deploy` 就需要相应的替换成 `hexo deploy --config _baidupush.yml`
 
-然后在 `secrets`  中存入 `baiduToken` 
+然后在 `secrets`  中存入 `baiduToken`
 
 并编写 Action，每天北京时间 0 点自动执行
 
@@ -356,4 +357,4 @@ jobs:
 
 当然了，已经做的非常不错了。同时，期待下即将推出的 Codespaces。
 
-[^1]: GitHub Page 部署代码来自 https://hexo.fluid-dev.com/posts/actions-deploy/
+[^1]: GitHub Page 部署代码来自 <https://hexo.fluid-dev.com/posts/actions-deploy/>

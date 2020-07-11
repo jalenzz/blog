@@ -1,10 +1,6 @@
-.DS_Store
-Thumbs.db
 db.json
 package-lock.json
 *.log
-_local.yml
 node_modules/
 public/
-.deploy*/
-cos/
+_local.yml
