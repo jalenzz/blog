@@ -35,17 +35,14 @@
         <% if (page.total > 1) { %>
             <br>
             <nav role="navigation" aria-label="Pagination Navigation">
-                <% if (page.prev != 0) { %>
-                    <a href="<%= url_for(page.prev_link) %>" class="button">
-                        <%- __('post.prev_page') %>
-                    </a>
-                <% } %>
-                <span><%= page.current%> / <%= page.total%></span>
-                <% if (page.next != 0) { %>
-                    <a href="<%= url_for(page.next_link) %>" class="button">
-                        <%- __('post.next_page') %>>
-                    </a>
-                <% } %>
+                <span class="pagination" id="pagination">
+                    <%- paginator({
+                      end_size: 0,
+                      mid_size: 2,
+                      space: '',
+                      escape: false
+                    }) %>
+                  </span>
             </nav>
         <% } %>
     <% } %>

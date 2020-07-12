@@ -29,7 +29,7 @@ head:
 
   # 自定义 head
   custom_head: 
-    # - ''
+    - '<meta name="baidu-site-verification" content="qfwvQsv2Xc" />'
 
 # 封面 cover 设置
 cover: 
@@ -38,7 +38,7 @@ cover:
   sitename: JalenChuh
 
   # 若设置 logo，则优先使用 logo 代替 sitename
-  logo: https://rmt.dogedoge.com/fetch/royce/storage/avatar.png?fmt=webp&w=250
+  logo: https://rmt.dogedoge.com/fetch/royce/storage/avatar.png?fmt=webp&w=350
   
   # logo 下方的一句话介绍
   description: 哟，你终于来啦 (≧∇≦)ﾉ
@@ -53,7 +53,7 @@ cover:
       url: /friends/
     - name: 关于
       url: /about/
-    - name: RSS
+    - name: 订阅
       url: /atom.xml
 
 
