@@ -5,7 +5,7 @@
     <div class="post-title__meta">
         <% if(is_post()) { %>
             <% if (theme.layout.meta.indexOf('date') !== -1) { %>
-                <%- partial('_meta/date') %>
+                <%- partial('_meta/meta') %>
             <% } %>
             <% if (theme.layout.post.header.indexOf('categories') !== -1) { %>
                 <%- partial('_meta/category') %> 

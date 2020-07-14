@@ -29,7 +29,8 @@ head:
 
   # 自定义 head
   custom_head: 
-    - '<meta name="baidu-site-verification" content="qfwvQsv2Xc" />'
+    - '<meta name="baidu-site-verification" content="jzPGidCA2C" />'
+    - '<meta name="google-site-verification" content="f8h-WGmKg5nINq265Am0npi-SOxahjgRO2x3n5p72tA" />'
 
 # 封面 cover 设置
 cover: 
@@ -129,7 +130,7 @@ meta:
   
   # 网站页脚，支持 markdown
   footer:
-    - 'JalenChuh ©2020 | <a style="color:#999;text-decoration:none" href="http://beian.miit.gov.cn/">闽ICP备20005437号-1</a>'
+    - '<a style="color:#999;text-decoration:none" href="https://jalenchuh.cn">JalenChuh</a> ©2020 | <a style="color:#999;text-decoration:none" href="http://beian.miit.gov.cn/">闽ICP备20005437号-2</a>'
 
 
 
@@ -334,7 +335,21 @@ analytics:
       before_text: ''
       after_text: Views 
 
+  # leancloud 访问统计
+  leancloud:
+    enable: true
+    app_id: Ikn1WpEQq7e9N6H3EhY9k43J-9Nh9j0Va
+    app_key: 3SnOsnvmkYXBAT0WFNoLdEuR
+    server_url: https://lc.jalenchuh.cn # api 域名，国际版不需要填写
+    footer: 
+      enable: false  # 页脚是否显示 PV UV
+    post: 
+      enable: false # 文章页是否显示 PV
 
+
+# 数学公式渲染引擎
+math: 
+  engine: katex # mathjax || katex
 
 # ---------------------------------------------------------------
 # CDN for vendors
