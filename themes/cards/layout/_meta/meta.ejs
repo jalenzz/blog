@@ -1,8 +1,13 @@
 <span class="button" style="color: #808080;">
     <%- theme.meta.date.title + date(post.date, theme.meta.date.format) %>.
-    <strong style="color: var(--main-color)">
+    <strong class="button" style="color: var(--main-color)">
         <%- wordcount(post.content) %>
         <%- min2read(post.content) %>
+        <% if (theme.analytics.leancloud.post.enable) { %>
+            <span id="leancloud-post-views-container" style="display: none">
+                <span id="leancloud-post-views"></span> views.
+            </span>
+        <% } %>
         <% if (post.top) { %>
             <span class="separate-dot"></span>
             <svg fill="var(--main-color)" width="15" height="15" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">

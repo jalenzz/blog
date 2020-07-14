@@ -8,7 +8,7 @@ layout: about
 高中生，爱折腾的少年
 🎨 SSPAI [@Jalen](https://sspai.com/u/Jalen)
 🐙 GitHub [@JalenChuh](https://github.com/jalenchuh)
-~~🍌 个人主页 https://JalenChuh.cn~~（备案中）
+🍌 个人主页 <https://JalenChuh.cn>
 📪 Email `JalenChuh[AT]gmail.com`
 
 ### 关于博客

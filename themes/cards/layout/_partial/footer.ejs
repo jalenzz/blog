@@ -5,6 +5,13 @@
             <%- markdown(theme.meta.footer[i]) %>
         <% } %>
     <% } %>
+    <% if (theme.analytics.leancloud.footer.enable) { %>
+        <span id="leancloud-site-pv-container" style="display: none">
+            PV <span id="leancloud-site-pv"></span>
+        </span>
+        <span id="leancloud-site-uv-container" style="display: none">
+            UV <span id="leancloud-site-uv"></span>
+        </span>
+    <% } %>
     <p>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> | Theme - <a href="https://github.com/ChrAlpha/hexo-theme-cards" target="_blank">Cards</a> | ImageHost - <a href="https://www.dogedoge.com" target="_blank">DogeDoge</a></p>
 </footer>
-<%- partial('_meta/leancloud') %> 
