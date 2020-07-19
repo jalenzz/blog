@@ -1,23 +1,38 @@
-
 <img src="https://p.pstatp.com/origin/fe820001edf383f736fa" alt="main.png" title="main.png" style="max-width:100%;" />
 
 本博客采用 [Hexo](https://github.com/hexojs/hexo) + [Cards](https://github.com/ChrAlpha/hexo-theme-cards)。若想使用本站样式，下载仓库后替换本地的主题文件夹所有内容即可。
 
+### 为什么开源呢
+
+I :heart: open-source.
+
+最重要的就是备份了，最初用 Hexo 的时候，各种折腾，但又很菜，有时候出问题了解决不了，只好重装。于是乎，就开启了版本控制。
+
+然后是为了 GitHub Action 部署和云端编辑吧
+
+还有就是方便别人吧，或许会对一些人的自定义有一点点的帮助。
+
+让我意向不到的是，前段时期主题作者居然给我的仓库提了一个 lazyload 的 PR [#4](https://github.com/JalenChuh/blog/pull/4)，和仓库中的一个 issue
+
 ---
 
-与原 Cards 主题相比，本站增加了
+与原「Cards」主题相比，本站增加了
 
-1. 文章字数和阅读时间统计
+- 文章字数和阅读时间统计
 
-2. leancloud 访问统计
+- leancloud 访问统计
 
-3. 脚注
+- 脚注
 
-4. ToolTip
+- ToolTip
 
-5. 数学公式渲染引擎更换
+- 数学公式渲染引擎更换
 
-6. 一些细微的样式调整
+- 一些细微的样式调整
+
+- Disqus 评论懒加载
+
+*前四项功能来自 Fluid 主题*
 
 ## 文章字数和阅读时间统计
 
@@ -45,6 +60,8 @@
 
 若想使用 `katex`，先卸载原有渲染器 `npm uninstall hexo-renderer-marked --save`，并安装新渲染器 `npm install @upupming/hexo-renderer-markdown-it-plus --save`。最后，将 `math.engine` 设为 `katex`
 
-*1 ~ 4 功能来自 Fluid 主题*
+## Disqus 评论懒加载
+
+暂时只支持 Disqus，默认开启，无需配置
 
 Thanks 🙇
