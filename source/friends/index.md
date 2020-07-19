@@ -39,12 +39,6 @@ links:
     textColor: '#FFF'
     backgroundColor: '#3E74C9'
 
-  - name: IamWu555
-    url: https://blog.wubuster.com
-    avatar: https://rmt.dogedoge.com/fetch/royce/storage/links/IamWu555.jpg?fmt=webp&w=100&h=100&q=100
-    textColor: '#FFF'
-    backgroundColor: '#3E74C9'
-
   - name: JimmyQin
     url: https://apde.xyz
     avatar: https://rmt.dogedoge.com/fetch/royce/storage/links/JimmyQin.jpg?fmt=webp&w=100&h=100&q=100

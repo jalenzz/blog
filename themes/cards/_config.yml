@@ -308,7 +308,7 @@ comments:
 analytics:
   google_site_id:
   gtags_site_id:
-  baidu_site_id: f6526ac522397a0fbbe5820a46b9bf18
+  baidu_site_id: 
   cnzz_site_id: 
 
   # busuanzi 计数系统
@@ -344,7 +344,7 @@ analytics:
     footer: 
       enable: false  # 页脚是否显示 PV UV
     post: 
-      enable: false # 文章页是否显示 PV
+      enable: true # 文章页是否显示 PV
 
 
 # 数学公式渲染引擎

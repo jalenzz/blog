@@ -260,7 +260,7 @@
                         });
                 })
             }
-    
+
             // 发起自增请求
             function increment(Counter, incrArr) {
                 return new Promise(function (resolve, reject) {
@@ -278,7 +278,7 @@
                     });
                 });
             }
-    
+
             // 构建自增请求体
             function buildIncrement(objectId) {
                 return {
@@ -292,7 +292,7 @@
                     }
                 }
             }
-    
+
             // 校验是否为有效的 UV
             function validUV() {
                 var key = 'LeanCloud_UV_Flag';
@@ -306,12 +306,12 @@
                 localStorage.setItem(key, new Date().getTime().toString());
                 return true;
             }
-    
+
             function addCount(Counter) {
                 var enableIncr = window.location.hostname !== 'localhost';
                 var getterArr = [];
                 var incrArr = [];
-    
+
                 // 请求 PV 并自增
                 var pvCtn = document.querySelector('#leancloud-site-pv-container');
                 if (pvCtn || enableIncr) {
@@ -327,7 +327,7 @@
                     });
                     getterArr.push(pvGetter);
                 }
-    
+
                 // 请求 UV 并自增
                 var uvCtn = document.querySelector('#leancloud-site-uv-container');
                 if (uvCtn || enableIncr) {
@@ -344,7 +344,7 @@
                     });
                     getterArr.push(uvGetter);
                 }
-    
+
                 // 如果是文章，请求文章的浏览数，并自增
                 if ('<%= is_post() %>' === 'true') {
                     var viewCtn = document.querySelector('#leancloud-post-views-container');
@@ -363,7 +363,7 @@
                         getterArr.push(viewGetter);
                     }
                 }
-    
+
                 // 如果启动计数自增，批量发起自增请求
                 if (enableIncr) {
                     Promise.all(getterArr).then(() => {
@@ -371,11 +371,11 @@
                     })
                 }
             }
-    
+
             var app_id = '<%= theme.analytics.leancloud.app_id %>'
             var app_key = '<%= theme.analytics.leancloud.app_key %>'
             var server_url = '<%= theme.analytics.leancloud.server_url %>'
-    
+
             function fetchData(api_server) {
                 var Counter = (method, url, data) => {
                     return fetch(`${api_server}/1.1${url}`, {
@@ -388,12 +388,12 @@
                         body: JSON.stringify(data)
                     });
                 };
-    
+
                 addCount(Counter);
             }
-    
+
             var api_server = app_id.slice(-9) !== '-MdYXbMMI' ? server_url : `https://${app_id.slice(0, 8).toLowerCase()}.api.lncldglobal.com`;
-    
+
             if (api_server) {
                 fetchData(api_server);
             } else {

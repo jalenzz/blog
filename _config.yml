@@ -85,7 +85,6 @@ nofollow:
   field: site
   exclude:
     - 'jalenchuh.cn'
-    - 'www.jalenchuh.cn'
     - 'blog.jalenchuh.cn'
     - 'neworld2002.github.io'
     - 'newsheep2003.github.io'
@@ -93,7 +92,6 @@ nofollow:
     - 'blog.lhkstudio.me'
     - 'kksan.top'
     - 'eatrice.top'
-    - 'blog.wubuster.com'
     - 'apde.xyz'
     - 'ixfish.cn'
     - 'bestzuo.cn'
