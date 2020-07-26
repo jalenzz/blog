@@ -2,7 +2,9 @@
 
 本博客采用 [Hexo](https://github.com/hexojs/hexo) + [Cards](https://github.com/ChrAlpha/hexo-theme-cards)。若想使用本站样式，下载仓库后替换本地的主题文件夹所有内容即可。
 
-### 为什么开源呢
+**并且，一定要阅读 README 的内容，保证主题 `_config.yml` 中的信息已经全部更换为你自己的。**
+
+## 为什么开源呢
 
 I :heart: open-source.
 
@@ -16,7 +18,7 @@ I :heart: open-source.
 
 ---
 
-与原「Cards」主题相比，本站增加了
+与原「Cards」主题相比，本站比较大的更改
 
 - 文章字数和阅读时间统计
 
@@ -24,15 +26,33 @@ I :heart: open-source.
 
 - 脚注
 
-- ToolTip
-
 - 数学公式渲染引擎更换
 
 - 一些细微的样式调整
 
 - Disqus 评论懒加载
 
-*前四项功能来自 Fluid 主题*
+- Cloudflare Workers 加速 Google Analytics
+
+---
+
+并且，你可能还需要了解以下内容：
+
+- `pagination` （首页下方的页数选择） 展开
+
+- 英文字体 Roboto Slab
+- 代码字体 Fira Code
+- 中文字体 Noto Serif SC 衬线
+
+- 夜间模式切换按钮固定于右上角
+
+- 时光机页面，位于 `/source/artitalk`，详见 <https://artitalk.js.org/>。需要注意的是，本站采用的样式和 js 都经过修改，与官方略有差异
+
+- 默认的 Google Analytics 使用了 DogeDoge 提供的加速（和上面提到的利用 Cloudflare Workers 不是一个东西）
+
+- 剩下的就等你来发现了
+
+---
 
 ## 文章字数和阅读时间统计
 
@@ -50,10 +70,6 @@ I :heart: open-source.
 
 可参考本博客的文章
 
-## ToolTip
-
-鼠标悬浮在脚注上时会弹出脚注说明，可参考代码，运用在需要的地方
-
 ## 数学公式渲染引擎更换
 
 若没更换渲染引擎请将配置文件中的 `math.engine` 设为 `mathjax`
@@ -63,5 +79,11 @@ I :heart: open-source.
 ## Disqus 评论懒加载
 
 暂时只支持 Disqus，默认开启，无需配置
+
+## Google Analytics 加速
+
+详见 [SukkaW/cloudflare-workers-async-google-analytics](https://github.com/SukkaW/cloudflare-workers-async-google-analytics)
+
+只需在配置文件的 `analytics > cfga` 中填写相关配置即可，默认忽略 `localhost`
 
 Thanks 🙇

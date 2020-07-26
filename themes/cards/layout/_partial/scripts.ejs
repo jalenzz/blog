@@ -211,21 +211,6 @@
     <% }); %>
 <% } %>
 
-<script defer>
-    (function() {
-        var bp = document.createElement('script');
-        var curProtocol = window.location.protocol.split(':')[0];
-        if (curProtocol === 'https') {
-            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-        }
-        else {
-            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-        }
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(bp, s);
-    })();
-</script>
-
 <% if (theme.analytics.leancloud.enable) { %>
     <script defer>
         (function () {
@@ -406,3 +391,21 @@
         })();
     </script>
 <% } %>
+
+<% if (page.comments && theme.comments.enable) { %>
+    <script src="https://cdn.jsdelivr.net/gh/jquery/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/combine/npm/leancloud-storage@3.0.4/dist/av-min.js,gh/jalenchuh/cdn/js/Valine.min.js"></script>
+    <script>
+        new Valine({
+            lang: 'zh-cn',
+            el: '.post__comment' ,
+            app_id: '<%= theme.comments.valineAdmin.appid %>',
+            app_key: '<%= theme.comments.valineAdmin.appkey %>',
+            admin_email: '<%= theme.comments.valineAdmin.admin_email %>',
+            placeholder: '<%= theme.comments.valineAdmin.placeholder %>',
+        });
+    </script>
+<% } %>
+
+<script src="https://cdn.jsdelivr.net/npm/quicklink@2.0.0/dist/quicklink.umd.js"></script>
+<script>quicklink.listen()</script>
