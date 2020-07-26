@@ -39,7 +39,7 @@ cover:
   sitename: JalenChuh
 
   # 若设置 logo，则优先使用 logo 代替 sitename
-  logo: https://rmt.dogedoge.com/fetch/royce/storage/avatar.png?fmt=webp&w=350
+  logo: https://rmt.dogedoge.com/fetch/royce/storage/avatar.png?fmt=webp&w=150
   
   # logo 下方的一句话介绍
   description: 哟，你终于来啦 (≧∇≦)ﾉ
@@ -205,7 +205,7 @@ comments:
 
   ## Disqus
   disqus: 
-    enable: true
+    enable: false
     shortname: jalenchuh
     disqusjs:
       enable: true
@@ -259,6 +259,14 @@ comments:
     visitor: 
     serverURLs: 
 
+  ## Valine-Admin
+  valineAdmin: 
+    enable: true
+    appid: KIkO2HJm1qz9uykOuuU41i8F-9Nh9j0Va
+    appkey: oJgS2mVg227GJIkndK0bFGtF
+    placeholder: Writer a comment
+    admin_email: jalenchuh@gmail.com
+
   ## Gitalk
   gitalk:
     enable:
@@ -306,10 +314,17 @@ comments:
 # ---------------------------------------------------------------
 
 analytics:
-  google_site_id:
-  gtags_site_id:
+  google_site_id: UA-172941976-1
+  gtags_site_id: 
   baidu_site_id: 
   cnzz_site_id: 
+
+  # cloudflare-workers-async-google-analytics
+  # 详见 https://blog.skk.moe/post/cloudflare-workers-cfga/
+  cfga:
+    enable: false
+    ga_tid: UA-172941976-1
+    ga_api: https://ga.jalenchuh.workers.dev/cfga/jquery.js
 
   # busuanzi 计数系统
   busuanzi:

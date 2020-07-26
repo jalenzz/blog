@@ -45,27 +45,9 @@ links:
     textColor: '#FFF'
     backgroundColor: '#3E74C9'
 
-  - name: Bert
-    url: https://ixfish.cn
-    avatar: https://rmt.dogedoge.com/fetch/royce/storage/links/Bert.jpg?fmt=webp&w=100&h=100&q=100
-    textColor: '#FFF'
-    backgroundColor: '#3E74C9'
-
   - name: Sanarous
     url: https://bestzuo.cn
     avatar: https://rmt.dogedoge.com/fetch/royce/storage/links/Sanarous.jpg?fmt=webp&w=100&h=100&q=100
-    textColor: '#FFF'
-    backgroundColor: '#3E74C9'
-
-  - name: 小太
-    url: https://713.moe
-    avatar: https://rmt.dogedoge.com/fetch/royce/storage/links/小太.jpg?fmt=webp&w=100&h=100&q=100
-    textColor: '#FFF'
-    backgroundColor: '#3E74C9'
-
-  - name: 七夏浅笑
-    url: https://www.julydate.com
-    avatar: https://rmt.dogedoge.com/fetch/royce/storage/links/七夏浅笑.jpg?fmt=webp&w=100&h=100&q=100
     textColor: '#FFF'
     backgroundColor: '#3E74C9'
 

@@ -60,14 +60,8 @@ module.exports = (hexo) => {
         if (!indexMap[index]) {
           return match;
         }
-        let tooltip = indexMap[index].content;
-        tooltip = hexo.render.renderSync({ text: tooltip, engine: 'markdown' });
-        tooltip = tooltip.replace(/(<.+?>)/g, '');
         return '<sup id="fnref:' + index + '" class="footnote-ref">'
-          + '<a href="#fn:' + index + '" rel="footnote">'
-          + '<span class="hint--top hint--rounded" aria-label="'
-          + tooltip
-          + '">[' + index + ']</span></a></sup>';
+          + '<a href="#fn:' + index + '" rel="footnote">[' + index + ']</a></sup>';
       });
 
     // sort footnotes by their index

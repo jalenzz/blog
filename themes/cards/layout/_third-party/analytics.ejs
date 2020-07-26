@@ -1,11 +1,14 @@
 <% if (theme.analytics && theme.analytics.google_site_id) { %> 
     <!-- Google Analytics -->
     <script>
-        window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-        ga('create', '<%- theme.analytics.google_site_id %>', 'auto');
-        ga('send', 'pageview');
+        window.ga_tid = '<%- theme.analytics.google_site_id %>'; // GA-trackerID of your site.
+        (function() {
+            var dga = document.createElement("script");
+            dga.src = "https://rmt.dogedoge.com/fetch/public/ga.js";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(dga, s);
+        })();
     </script>
-    <script async src="https://www.google-analytics.com/analytics.js"></script>
 <% } %> 
 
 <% if (theme.analytics && theme.analytics.gtags) { %>
@@ -39,3 +42,19 @@
         document.write(unescape("%3Cspan id='cnzz_stat_icon_<%- theme.analytics.cnzz_site_id %>'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s13.cnzz.com/z_stat.php%3Fid%3D<%- theme.analytics.cnzz_site_id %>%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));
     </script>
 <% } %> 
+
+<% if (theme.analytics && theme.analytics.cfga.enable) { %>
+    <!-- cloudflare-workers-async-google-analytics  -->
+    <script>
+        window.ga_tid = '<%- theme.analytics.cfga.ga_tid %>';
+        window.ga_api = '<%- theme.analytics.cfga.ga_api %>';
+        (function () {
+            if (window.location.hostname !== "localhost") {
+                var js = document.createElement('script');
+                js.src = 'https://cdn.jsdelivr.net/npm/cfga@1.0.3';
+                js.async = true
+                document.body.appendChild(js);
+            }
+        })();
+    </script>
+<% } %>
