@@ -352,14 +352,14 @@ analytics:
 
   # leancloud 访问统计
   leancloud:
-    enable: true
-    app_id: Ikn1WpEQq7e9N6H3EhY9k43J-9Nh9j0Va
-    app_key: 3SnOsnvmkYXBAT0WFNoLdEuR
-    server_url: https://lc.jalenchuh.cn # api 域名，国际版不需要填写
+    enable: false
+    app_id: 
+    app_key: 
+    server_url: # api 域名，国际版不需要填写
     footer: 
       enable: false  # 页脚是否显示 PV UV
     post: 
-      enable: true # 文章页是否显示 PV
+      enable: false # 文章页是否显示 PV
 
 
 # 数学公式渲染引擎
