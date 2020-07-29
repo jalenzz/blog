@@ -34,6 +34,8 @@ I :heart: open-source.
 
 - Cloudflare Workers 加速 Google Analytics
 
+- Flying Pages
+
 ---
 
 并且，你可能还需要了解以下内容：
@@ -66,7 +68,7 @@ I :heart: open-source.
 
 `[^1]` 文章中需要脚注的地方写入，数字递增
 
-`[^1]：` 文章末尾对脚注进行说明
+`[^1]:` 文章末尾对脚注进行说明
 
 可参考本博客的文章
 
@@ -85,5 +87,13 @@ I :heart: open-source.
 详见 [SukkaW/cloudflare-workers-async-google-analytics](https://github.com/SukkaW/cloudflare-workers-async-google-analytics)
 
 只需在配置文件的 `analytics > cfga` 中填写相关配置即可，默认忽略 `localhost`
+
+## Flying Pages
+
+默认使用 Flying Pages 优化网站访问体验
+
+代码在 `cards/layout/_partial/script.ejs` 末尾
+
+详细使用教程见 <https://github.com/gijo-varghese/flying-pages>
 
 Thanks 🙇

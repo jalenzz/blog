@@ -407,5 +407,12 @@
     </script>
 <% } %>
 
-<script src="https://cdn.jsdelivr.net/npm/quicklink@2.0.0/dist/quicklink.umd.js"></script>
-<script>quicklink.listen()</script>
+<script>
+    window.FPConfig = {
+      delay: 0,
+      ignoreKeywords: ['#'],
+      maxRPS: 6,
+      hoverDelay: 0
+    };
+</script>
+<script defer src="https://cdn.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"></script>
