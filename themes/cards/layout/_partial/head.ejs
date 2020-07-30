@@ -62,7 +62,7 @@
         <script async src="<%- theme.vendors.busuanzi || '//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js' %>"></script>
     <% } %> 
     <script>(()=>{const t=document.documentElement,e="user-color-scheme",r="--color-mode",o="data-user-color-scheme",l=(t,e)=>{try{localStorage.setItem(t,e)}catch(t){}},c=t=>{try{localStorage.removeItem(t)}catch(t){}},a=t=>{try{return localStorage.getItem(t)}catch(t){return null}},n=()=>{const e=getComputedStyle(t).getPropertyValue(r);return e.length?e.replace(/["'\s]/g, ''):"dark"===e?"dark":"light"},d=()=>{t.removeAttribute(o),c(e)},u={dark:!0,light:!0},g=r=>{const l=r||a(e);l===n()?d():u[l]?t.setAttribute(o,l):d()},m={dark:"light",light:"dark"},i=()=>{var t=a(e);if(u[t])t=m[t];else{if(null!==t)return;t=m[n()]}return l(e,t),t};g(),window.onload=(()=>{const t=document.getElementById("btn-toggle-dark");t.addEventListener("click",()=>{g(i())})})})();</script>
-    <link href="https://fonts.dogedoge.com/css2?family=Roboto+Slab:wght@400;500;700&family=Fira+Code&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet" media="print" onload='this.media="all"'>
+    <link href="https://fonts.dogedoge.com/css2?family=Roboto+Slab:wght@400;500;700&family=Fira+Code&family=Noto+Serif+SC:wght@400;500;700;900&display=swap" rel="stylesheet" media="print" onload='this.media="all"'>
     <% if (theme.head.custom_head && theme.head.custom_head.forEach) { %>
         <% theme.head.custom_head.forEach((item) => { %>
             <%- item %> 
