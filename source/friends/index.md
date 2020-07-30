@@ -51,12 +51,6 @@ links:
     textColor: '#FFF'
     backgroundColor: '#3E74C9'
 
-  - name: Mystery
-    url: https://blog.say521.cn
-    avatar: https://rmt.dogedoge.com/fetch/royce/storage/links/Mystery.jpg?fmt=webp&w=100&h=100&q=100
-    textColor: '#FFF'
-    backgroundColor: '#3E74C9'
-
   - name: keith
     url: https://keithqwq.com
     avatar: https://rmt.dogedoge.com/fetch/royce/storage/links/keith.jpg?fmt=webp&w=100&h=100&q=100
