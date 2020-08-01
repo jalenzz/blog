@@ -1,5 +1,6 @@
 db.json
 package-lock.json
+yarn.lock
 *.log
 node_modules/
 public/

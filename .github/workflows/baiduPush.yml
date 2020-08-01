@@ -29,4 +29,4 @@ jobs:
       run: hexo clean && hexo g
 
     - name: push
-      run: npm run baidupush
+      run: hexo d
