@@ -2,13 +2,8 @@
     <!-- Google Analytics -->
     <script>
         window.ga_tid = '<%- theme.analytics.google_site_id %>'; // GA-trackerID of your site.
-        (function() {
-            var dga = document.createElement("script");
-            dga.src = "https://rmt.dogedoge.com/fetch/public/ga.js";
-            var s = document.getElementsByTagName("script")[0];
-            s.parentNode.insertBefore(dga, s);
-        })();
     </script>
+    <script>"use strict";!function(t,e,n){function r(t){var e=[];for(var n in t)t.hasOwnProperty(n)&&void 0!==t[n]&&e.push(c(n)+"="+c(t[n]));return e.join("&")}function o(t,e){(new Image).src=t+"?"+r(e)}function a(t,e){t="https://analytics.dogedoge.com"+t,o(t,e)}function i(){if(g){var t=g.navigationStart;if(0!=t){var e=function(t){return isNaN(t)||t==1/0||t<0?void 0:t},n={plt:e(g.loadEventStart-t),dns:e(g.domainLookupEnd-g.domainLookupStart),pdt:e(g.responseEnd-g.responseStart),rrt:e(g.redirectEnd-g.redirectStart),tcp:e(g.connectEnd-g.connectStart),srt:e(g.responseStart-g.requestStart),dit:e(g.domInteractive-t),clt:e(g.domContentLoadedEventStart-t)};for(var r in p)n[r]=p[r];a("/ga/up",n)}}}var d=t.screen,c=encodeURIComponent,s=Math.max,u=t.performance,g=u&&u.timing,p={dt:e.title,de:e.characterSet||e.charset,dr:e.referrer||void 0,ul:n.language||n.browserLanguage||n.userLanguage||void 0,sd:d.colorDepth+"-bit",sr:d.width+"x"+d.height,vp:s(e.documentElement.clientWidth,t.innerWidth||0)+"x"+s(e.documentElement.clientHeight,t.innerHeight||0),gpid:t.ga_tid.split("").reverse().join(""),z:(new Date).getTime()};"complete"==document.readyState?i():t.addEventListener("load",i)}(window,document,navigator);</script>
 <% } %> 
 
 <% if (theme.analytics && theme.analytics.gtags) { %>
