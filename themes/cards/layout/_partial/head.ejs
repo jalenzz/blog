@@ -7,9 +7,9 @@
 
     <!--icon-->
     <% if (theme.head.favicon) { %>
-        <link rel="shortcut icon" type='image/x-icon' href="<%- url_for(theme.head.favicon) %>">
+        <link rel="icon" type='image/png' href="<%- url_for(theme.head.favicon) %>">
     <% } else if (config.favicon) { %>
-        <link rel="shortcut icon" type='image/x-icon' href="<%- url_for(config.favicon) %>">
+        <link rel="icon" type='image/png' href="<%- url_for(config.favicon) %>">
     <% } %>
 
     <!-- 渲染优化 -->

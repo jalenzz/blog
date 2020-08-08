@@ -23,7 +23,7 @@
         <% } %>
         <% if (theme.optimize.back_to_top.enable) { %> 
             <a href="<%- theme.optimize.back_to_top.smoothly ? 'javaScript:void(0);' : '#' %>" id="b2t" style="<%- theme.optimize.back_to_top.smoothly ? '' : 'display: block' %>" aria-label="<%- __('navbar.top') %>" title="<%- __('navbar.top') %>">
-                <svg fill="currentColor" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M122.546 559.36a72.038 72.038 0 0 1-101.376 0 70.707 70.707 0 0 1 0-100.813L461.49 20.838a72.09 72.09 0 0 1 101.376 0l440.32 437.71a70.707 70.707 0 0 1 0 100.812 72.038 72.038 0 0 1-101.376 0L512.178 172.083zm389.632 56.32l389.632 387.277a71.936 71.936 0 0 0 101.376 0 70.707 70.707 0 0 0 0-100.813l-440.32-437.709a72.09 72.09 0 0 0-101.376 0L21.17 902.144a70.707 70.707 0 0 0 0 100.813 71.936 71.936 0 0 0 101.376 0zm0 0"/></svg>
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="24" height="24"><path fill="currentColor" d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"></path></svg>
             </a>
         <% } %>
         <% if (theme.cover.menu && theme.cover.menu.forEach) { %>

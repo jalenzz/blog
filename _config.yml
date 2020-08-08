@@ -78,6 +78,7 @@ feed:
   content: true
   content_limit:
   content_limit_delim: ' '
+  icon: favicon.png
 
 # 外部链接优化
 nofollow:
@@ -87,7 +88,6 @@ nofollow:
     - 'jalenchuh.cn'
     - 'blog.jalenchuh.cn'
     - 'neworld2002.github.io'
-    - 'newsheep2003.github.io'
     - 'wtrwx.top'
     - 'blog.lhkstudio.me'
     - 'kksan.top'

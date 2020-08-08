@@ -9,12 +9,6 @@ links:
     textColor: '#FFF'
     backgroundColor: '#3E74C9'
 
-  - name: Newsheep
-    url: https://newsheep2003.github.io
-    avatar: https://rmt.dogedoge.com/fetch/royce/storage/links/Newsheep.jpg?fmt=webp&w=100&h=100&q=100
-    textColor: '#FFF'
-    backgroundColor: '#3E74C9'
-
   - name: 维他入我心
     url: https://wtrwx.top
     avatar: https://rmt.dogedoge.com/fetch/royce/storage/links/维他入我心.jpg?fmt=webp&w=100&h=100&q=100

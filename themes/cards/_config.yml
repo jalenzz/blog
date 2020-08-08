@@ -14,7 +14,7 @@
 head: 
   
   # 网站图标
-  favicon: /favicon.ico
+  favicon: /favicon.png
   
   # 社交分享链接
   opengraph: 
@@ -188,7 +188,7 @@ optimize:
   # 返回顶部按钮
   back_to_top: 
     enable: true
-    smoothly: false
+    smoothly: true
 
   # 深色模式
   darkmode: 
