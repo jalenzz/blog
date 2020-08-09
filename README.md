@@ -1,7 +1,33 @@
-本博客已从 Hexo 更换至 Gridsome，原 Hexo Cards 主题的修改请前往 [Hexo 分支](https://github.com/JalenChuh/blog/tree/Hexo) 查看。
+# Jalen's blog
 
----
+Powered by [Gridsome](http://gridsome.org/). Theme - [gridsome-starter-blog](https://github.com/gridsome/gridsome-starter-blog)(style reference [Spencer](https://spencerwoo.com/)).
 
-本站使用 [Gridsome](http://gridsome.org/) 和 [gridsome-starter-blog](https://github.com/gridsome/gridsome-starter-blog)(样式参考 [Spencer](https://spencerwoo.com/)) 主题搭建。
+The old style of Hexo-Cards please check [the branch of Hexo]((https://github.com/JalenChuh/blog/tree/Hexo))
 
-Thanks 🙇
+## Install
+
+```bash
+git clone https://github.com/JalenChuh/blog.git
+cd blog
+yarn install
+```
+
+## Preview
+
+```bash
+yarn develop
+```
+
+## Build
+
+```bash
+yarn build
+```
+
+## Prettier
+
+```bash
+yarn prettier
+```
+
+Enjoy 🙇
