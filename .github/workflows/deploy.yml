@@ -12,19 +12,17 @@ jobs:
       with:
         node-version: '10.x'
 
-    - name: Setup Hexo
-      run: |
-        npm install hexo-cli -g
-        npm install
+    - name: Setup
+      run: yarn install
 
     - name: Generate
-      run: hexo clean && hexo g
+      run: gridsome build
 
     - name: Deploy
-      id: deployStatic
+      id: deployStaticgridsome build
       uses: TencentCloudBase/cloudbase-action@v1.1.1
       with:
         secretId: ${{ secrets.SECRET_ID }}
         secretKey: ${{ secrets.SECRET_KEY }}
         envId: ${{ secrets.ENV_ID }}
-        staticSrcPath: public
+        staticSrcPath: dist
