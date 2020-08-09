@@ -1,8 +1,0 @@
-<% (post.categories || []).forEach(function(cat) { %>
-    <span style="color: var(--main-color)">
-        <span class="separate-dot"></span>
-        <a href="<%- url_for(cat.path) %>" class="button">
-            <strong><%= cat.name %></strong>
-        </a>
-    </span>
-<% }); %>

@@ -1,6 +1,8 @@
-db.json
-package-lock.json
 *.log
-node_modules/
-public/
-_local.yml
+.cache
+.DS_Store
+src/.temp
+node_modules
+dist
+.env
+.env.*

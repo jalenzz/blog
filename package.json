@@ -1,38 +1,40 @@
 {
-  "name": "hexo-site",
-  "version": "0.0.0",
+  "name": "gridsome-blog",
   "private": true,
   "scripts": {
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore",
+    "prettier": "prettier --write **/*.{ts,js,css,html,vue}",
     "login": "tcb login",
-    "deploy": "tcb hosting:deploy public/ -e blog-17bf0f",
-    "cgs": "hexo clean && hexo generate --config _local.yml && hexo server --config _local.yml",
-    "cgd": "hexo clean && hexo generate && tcb hosting:deploy public/ -e blog-17bf0f",
-    "clean": "hexo clean",
-    "built": "hexo generate",
-    "server": "hexo server --config _local.yml",
-    "baidupush": "hexo deploy"
-  },
-  "hexo": {
-    "version": "4.2.1"
+    "deploy": "tcb hosting:deploy dist/ -e blog2-f49da"
   },
   "dependencies": {
-    "@upupming/hexo-renderer-markdown-it-plus": "^2.0.2",
-    "hexo": "^4.2.1",
-    "hexo-abbrlink": "^2.1.5",
-    "hexo-all-minifier": "^0.5.3",
-    "hexo-baidu-url-submit": "0.0.6",
-    "hexo-blog-encrypt": "^3.0.12",
-    "hexo-filter-nofollow": "^2.0.2",
-    "hexo-generator-archive": "^1.0.0",
-    "hexo-generator-baidu-sitemap": "^0.1.6",
-    "hexo-generator-category": "^1.0.0",
-    "hexo-generator-feed": "^2.2.0",
-    "hexo-generator-index": "^1.0.0",
-    "hexo-generator-index-pin-top": "^0.2.2",
-    "hexo-generator-sitemap": "^2.0.0",
-    "hexo-generator-tag": "^1.0.0",
-    "hexo-renderer-ejs": "^1.0.0",
-    "hexo-renderer-stylus": "^1.1.0",
-    "hexo-server": "^1.0.0"
+    "@fortawesome/fontawesome-svg-core": "^1.2.27",
+    "@fortawesome/free-brands-svg-icons": "^5.12.1",
+    "@fortawesome/free-solid-svg-icons": "^5.12.1",
+    "@fortawesome/vue-fontawesome": "^0.1.9",
+    "@gridsome/plugin-google-analytics": "^0.1.1",
+    "@gridsome/plugin-sitemap": "^0.4.0",
+    "@gridsome/remark-prismjs": "^0.2.0",
+    "@gridsome/source-filesystem": "^0.6.0",
+    "@gridsome/transformer-remark": "^0.5.0",
+    "@microflash/gridsome-plugin-feed": "^1.0.7",
+    "axios": "^0.19.2",
+    "disqusjs": "^1.3.0",
+    "gridsome": "^0.7.13",
+    "gridsome-plugin-remark-container": "^0.1.3",
+    "gridsome-remark-figure-caption": "^1.1.3",
+    "gridsome-remark-katex": "^0.1.1",
+    "marked": "^0.8.0",
+    "nprogress": "^0.2.0",
+    "vue-notification": "^1.3.20",
+    "vue-scrollto": "^2.18.1",
+    "word-count": "^0.2.2"
+  },
+  "devDependencies": {
+    "node-sass": "^4.12.0",
+    "prettier": "^1.19.1",
+    "sass-loader": "^8.0.0"
   }
 }

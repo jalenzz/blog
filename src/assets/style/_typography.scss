@@ -1,0 +1,126 @@
+// @import url('https://fonts.googleapis.com/css?family=Miriam+Libre:400,700|Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.dogedoge.com/css2?family=Roboto+Slab:wght@400;500;700&family=Fira+Code&family=Noto+Serif+SC:wght@400;500;700;900&display=swap');
+
+html {
+  font-size: var(--base-font-size);
+}
+
+body {
+  font-family: var(--base-font-family);
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+p {
+  margin-bottom: 1.25em;
+  font-family: var(--base-font-family);
+}
+
+figcaption {
+  margin: 1em 0;
+  text-align: center;
+  opacity: 0.7;
+  font-family: var(--base-font-family);
+}
+
+table,
+li,
+ul,
+ol,
+.navlink,
+.notification-content {
+  font-family: var(--base-font-family);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  transition: color 0.6s;
+  color: var(--title-color);
+  margin: 2.75rem 0 1rem;
+  font-family: var(--title-font-family);
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 1.802em;
+}
+
+h2 {
+  font-size: 1.602em;
+}
+
+h3 {
+  font-size: 1.424em;
+}
+
+h4 {
+  font-size: 1.266em;
+}
+
+h5 {
+  font-size: 1.125em;
+}
+
+small {
+  font-size: 0.889em;
+}
+
+strong {
+  font-weight: 600;
+}
+
+blockquote {
+  border-left: 4px solid var(--border-color);
+  padding-left: calc(var(--space) / 2);
+  color: var(--title-color);
+}
+
+em {
+  font-style: italic;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 1.25em;
+  margin-bottom: 1.25em;
+  line-height: 1.8;
+  li {
+    margin-bottom: 0.6em;
+  }
+}
+ol {
+  list-style-type: decimal;
+  margin-left: 1.25em;
+  margin-bottom: 1.25em;
+  line-height: 1.8;
+  li {
+    margin-bottom: 0.6em;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  h1 {
+    font-size: 1.562em;
+  }
+
+  h2 {
+    font-size: 1.461em;
+  }
+
+  h3 {
+    font-size: 1.314em;
+  }
+
+  h4 {
+    font-size: 1.166em;
+  }
+
+  h5 {
+    font-size: 1.025em;
+  }
+}
