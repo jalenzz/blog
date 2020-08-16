@@ -21,7 +21,7 @@
               })
               .replace(" ", ".")
           }}</span
-          ><g-link :to="p.path">{{ p.title }}</g-link>
+          ><g-link :to="p.path" class="archives__item">{{ p.title }}</g-link>
         </p>
       </div>
     </div>
@@ -123,6 +123,17 @@ export default {
 
     &::after {
       content: " ";
+    }
+  }
+  .archives__item {
+    color: var(--body-color);
+    box-shadow: inset 0 -6px 0 rgba(26, 188, 156, 0.3);
+    transition-duration: 0.3s;
+    text-decoration: none;
+
+    &:hover {
+      opacity: 1;
+      box-shadow: inset 0 -20px 0 rgba(26, 188, 156, 0.3);
     }
   }
 }

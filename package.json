@@ -7,7 +7,7 @@
     "explore": "gridsome explore",
     "prettier": "prettier --write **/*.{ts,js,css,html,vue}",
     "login": "tcb login",
-    "deploy": "tcb hosting:deploy dist/ -e blog2-f49da"
+    "deploy": "tcb hosting:deploy dist/ -e blog-17bf0f"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.27",

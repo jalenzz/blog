@@ -248,6 +248,18 @@ query Post ($id: ID!, $previousElement: ID!, $nextElement: ID!) {
       max-width: 100%;
       margin: 0 auto;
     }
+
+    a:not(.footnote-ref):not(.footnote-backref) {
+      color: var(--body-color);
+      box-shadow: inset 0 -6px 0 rgba(26, 188, 156, 0.3);
+      transition-duration: 0.3s;
+      text-decoration: none;
+
+      &:hover {
+        opacity: 1;
+        box-shadow: inset 0 -20px 0 rgba(26, 188, 156, 0.3);
+      }
+    }
   }
 
   &__navigation {

@@ -26,6 +26,12 @@ query {
   text-decoration: none;
   color: var(--body-color) !important;
   font-size: 0.9em;
+  box-shadow: inset 0 -6px 0 rgba(26, 188, 156, 0.3);
+  transition-duration: 0.3s;
+
+  &:hover {
+    box-shadow: inset 0 -20px 0 rgba(26, 188, 156, 0.3);
+  }
 
   &__image {
     vertical-align: middle;

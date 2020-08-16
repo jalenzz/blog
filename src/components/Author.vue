@@ -29,8 +29,10 @@
       ><g-link to="/archives" style="color: var(--title-color);"
         ><font-awesome :icon="['fas', 'archive']"/></g-link
       ><g-link to="/friends" style="color: #06a878;"
-        ><font-awesome :icon="['fas', 'comment-dots']"/></g-link
-      ><g-link to="/about"><font-awesome :icon="['fas', 'id-badge']"/></g-link>
+        ><font-awesome :icon="['fas', 'user-friends']"/></g-link
+      ><g-link to="/about" style="color: #0070f3"
+        ><font-awesome :icon="['fas', 'id-badge']"
+      /></g-link>
     </p>
   </div>
 </template>
@@ -75,7 +77,7 @@ export default {
     margin-top: -0.5em;
     font-size: 1em;
     a {
-      color: var(--link-color);
+      color: var(--main-color);
       margin: 0 0.5em;
     }
   }
