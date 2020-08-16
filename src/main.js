@@ -23,7 +23,7 @@ import {
   faHeart,
   faCaretSquareUp,
   faArrowUp,
-  faCommentDots,
+  faUserFriends,
   faArchive,
   faPlane,
   faPenSquare
@@ -41,7 +41,7 @@ library.add(
   faHeart,
   faCaretSquareUp,
   faArrowUp,
-  faCommentDots,
+  faUserFriends,
   faArchive,
   faPlane,
   faPenSquare

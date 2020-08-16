@@ -62,7 +62,7 @@ module.exports = {
       }
     },
     {
-      use: '@gridsome/plugin-sitemap',
+      use: "@gridsome/plugin-sitemap"
     }
   ],
 

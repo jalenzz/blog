@@ -20,11 +20,8 @@ body {
 }
 
 a:not(.button) {
-  color: var(--link-color);
-  transition: opacity 0.2s;
-  &:hover {
-    opacity: 0.8;
-  }
+  color: var(--main-color);
+  transition: 0.2s;
 }
 
 img {
@@ -57,7 +54,7 @@ sup {
   position: relative;
   top: -0.3em;
   vertical-align: top;
-  color: var(--link-color);
+  color: var(--main-color);
   margin: 0 0.2em;
 
   &::before {

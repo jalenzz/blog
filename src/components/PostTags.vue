@@ -31,6 +31,10 @@ export default {
     padding: 0.5em;
     border-radius: var(--radius);
     display: inline-block;
+    &:hover {
+      background-color: rgba(26, 188, 156, 0.3);
+      box-shadow: 0 4px rgba(26, 188, 156, 0.6);
+    }
   }
 }
 </style>

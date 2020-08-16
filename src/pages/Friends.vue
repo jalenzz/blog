@@ -27,11 +27,18 @@
     <div class="post-comments">
       <div id="disqus_thread" />
     </div>
+
+    <Author class="post-author" />
   </div>
 </template>
 
 <script>
+import Author from "~/components/Author.vue";
+
 export default {
+  components: {
+    Author
+  },
   metaInfo: {
     title: "Friends"
   },
@@ -102,6 +109,13 @@ export default {
           style: "color: #fff; background-color: #747273"
         },
         {
+          id: "奥秘 Sir",
+          link: "https://blog.say521.cn/",
+          avatar:
+            "https://rmt.dogedoge.com/fetch/royce/storage/links/奥秘 Sir.jpg?w=100",
+          style: "color: #fff; background-color: #38557e"
+        },
+        {
           id: "Hcode",
           link: "https://www.hcode.top",
           avatar:
@@ -157,6 +171,10 @@ export default {
       display: flex;
       padding: 8px;
       margin: 0 auto;
+      border-radius: 3px;
+      box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.1),
+        1px 1px 15px 0 rgba(0, 0, 0, 0.2);
+      transition: all 0.25s;
       margin-top: calc(2.25 * 16px + 32px);
       color: #444;
       background: #fff;
@@ -166,6 +184,10 @@ export default {
       max-width: 16rem;
       width: calc(100% / 4 - 16px);
       text-decoration: none;
+      &:hover {
+        opacity: 1;
+        box-shadow: 1px 10px 30px 0 rgba(0, 0, 0, 0.3);
+      }
     }
     .friends-left {
       display: flex;

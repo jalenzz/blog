@@ -22,7 +22,7 @@ body {
   --text-code-block: #37474f;
   --body-color: #000000;
   --title-color: #000000;
-  --link-color: #0070f3;
+  --main-color: #0070f3;
   --border-color: rgba(0, 0, 0, 0.1);
   --selection-color: #79ffe1;
   --space: 3.5rem;
@@ -55,5 +55,5 @@ body[data-theme='dark'] {
   --border-color: rgba(255, 255, 255, 0.1);
   --body-color: #ced8de;
   --title-color: #fff;
-  --link-color: #0070f3;
+  --main-color: #0070f3;
 }
