@@ -43,6 +43,19 @@
         </p>
 
         <p>
+          我 16 型人格测试结果为 <strong>ENFJ-A 主人公</strong>，PolitiScales
+          的结果为<strong>平等 · 人权 · 劳动</strong>。
+        </p>
+        <img
+          src="https://rmt.dogedoge.com/fetch/royce/storage/about/16-Personality-Test-Result.png"
+          alt="16 Personality Test Result"
+        />
+        <img
+          src="https://rmt.dogedoge.com/fetch/royce/storage/about/Politi-Scales-Result.png"
+          alt="Politi Scales Result"
+        />
+
+        <p>
           如果你想联系我，可以直接在评论里留言或者通过邮件（推荐）
           <a
             style="font-family: var(--monospace-font-family)"
@@ -68,7 +81,7 @@
         </p>
         <p>
           本博客题图均为自制，大部分素材来自
-          <a href="https://icons8.con/" target="_blank">icons8</a> 和
+          <a href="https://icons8.com/" target="_blank">icons8</a> 和
           <a href="https://stories.freepik.com/" target="_blank">freepik</a>。
         </p>
         <div class="admonition admonition-important">
