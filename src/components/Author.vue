@@ -3,7 +3,7 @@
     <g-image
       alt="Author image"
       class="author__image"
-      src="https://rmt.dogedoge.com/fetch/royce/storage/avatar.png?fmt=webp&w=200"
+      src="~/assets/images/author.jpg"
       width="180"
       height="180"
       blur="5"

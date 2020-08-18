@@ -10,9 +10,16 @@
           :key="friend.id"
           :href="friend.link"
           target="_blank"
-          :style="friend.style"
+          :style="'color: #fff; background-color: ' + friend.background"
           ><div class="friends-left">
-            <img class="avatar" :src="friend.avatar" />
+            <img
+              class="avatar"
+              :src="
+                'https://rmt.dogedoge.com/fetch/royce/storage/links/' +
+                  friend.id +
+                  '.jpg?w=100'
+              "
+            />
           </div>
           <div class="friends-right">
             <p class="friends-name">{{ friend.id }}</p>
@@ -48,107 +55,77 @@ export default {
         {
           id: "Neworld2002",
           link: "https://neworld2002.github.io/",
-          avatar:
-            "https://rmt.dogedoge.com/fetch/royce/storage/links/Neworld2002.jpg?w=100",
-          style: "color: #fff; background-color: #024265"
+          background: "#024265"
         },
         {
           id: "维他入我心",
           link: "https://wtrwx.top/",
-          avatar:
-            "https://rmt.dogedoge.com/fetch/royce/storage/links/维他入我心.jpg?w=100",
-          style: "color: #fff; background-color: #583066"
+          background: "#583066"
         },
         {
           id: "Linhk1606",
           link: "https://blog.lhkstudio.me/",
-          avatar:
-            "https://rmt.dogedoge.com/fetch/royce/storage/links/Linhk1606.jpg?w=100",
-          style: "color: #fff; background-color: #b59672"
+          background: "#b59672"
         },
         {
           id: "小K同學",
           link: "https://kksan.top/",
-          avatar:
-            "https://rmt.dogedoge.com/fetch/royce/storage/links/小K同學.jpg?w=100",
-          style: "color: #fff; background-color: #e5a5bc"
+          background: "#e5a5bc"
         },
         {
           id: "吃白饭的休伯利安号",
           link: "https://eatrice.top/",
-          avatar:
-            "https://rmt.dogedoge.com/fetch/royce/storage/links/吃白饭的休伯利安号.jpg?w=100",
-          style: "color: #fff; background-color: #253d9d"
+          background: "#253d9d"
         },
         {
           id: "JimmyQin",
           link: "https://apde.xyz/",
-          avatar:
-            "https://rmt.dogedoge.com/fetch/royce/storage/links/JimmyQin.jpg?w=100",
-          style: "color: #fff; background-color: #005240"
+          background: "#005240"
         },
         {
           id: "Sanarous",
           link: "https://bestzuo.cn/",
-          avatar:
-            "https://rmt.dogedoge.com/fetch/royce/storage/links/Sanarous.jpg?w=100",
-          style: "color: #fff; background-color: #bb9c64"
+          background: "#bb9c64"
         },
         {
           id: "keith",
           link: "https://keithqwq.com/",
-          avatar:
-            "https://rmt.dogedoge.com/fetch/royce/storage/links/keith.jpg?w=100",
-          style: "color: #fff; background-color: #565656"
+          background: "#565656"
         },
         {
           id: "Vince",
           link: "https://i.vince.pub",
-          avatar:
-            "https://rmt.dogedoge.com/fetch/royce/storage/links/Vince.jpg?w=100",
-          style: "color: #fff; background-color: #747273"
+          background: "#747273"
         },
         {
           id: "奥秘 Sir",
           link: "https://blog.say521.cn/",
-          avatar:
-            "https://rmt.dogedoge.com/fetch/royce/storage/links/奥秘 Sir.jpg?w=100",
-          style: "color: #fff; background-color: #38557e"
+          background: "#38557e"
         },
         {
           id: "Hcode",
           link: "https://www.hcode.top",
-          avatar:
-            "https://rmt.dogedoge.com/fetch/royce/storage/links/Hcode.jpg?w=100",
-          style: "color: #fff; background-color: #117cb7"
+          background: "#117cb7"
         },
         {
           id: "饭庄",
           link: "https://fanfan.im",
-          avatar:
-            "https://rmt.dogedoge.com/fetch/royce/storage/links/饭庄.jpg?w=100",
-          style: "color: #fff; background-color: #a3110f"
+          background: "#a3110f"
         },
         {
           id: "泫",
           link: "https://blog.cugxuan.cn",
-          avatar:
-            "https://rmt.dogedoge.com/fetch/royce/storage/links/泫.jpg?w=100",
-          style: "color: #fff; background-color: #5aa979"
+          background: "#5aa979"
         },
         {
           id: "Flexiston",
           link: "https://www.flexiston.com",
-          avatar:
-            "https://rmt.dogedoge.com/fetch/royce/storage/links/Flexiston.jpg?w=100",
-          style: "color: #fff; background-color: #4b413f"
+          background: "#4b413f"
         },
         {
           id: "ChrAlpha",
           link: "https://ichr.me",
-          avatar:
-            "https://rmt.dogedoge.com/fetch/royce/storage/links/ChrAlpha.jpg?w=100",
-          style: "color: #fff; background-color: #084267"
+          background: "#084267"
         }
       ]
     };
@@ -157,6 +134,14 @@ export default {
 </script>
 
 <style lang="scss">
+body {
+  --friends-card: rgba(0, 0, 0, 0.2);
+  --friends-card-hover: rgba(0, 0, 0, 0.3);
+}
+body[data-theme="dark"] {
+  --friends-card: rgba(255, 255, 255, 0.2);
+  --friends-card-hover: rgba(255, 255, 255, 0.3);
+}
 .friends-container {
   margin: 0 auto;
   max-width: 1080px;
@@ -172,8 +157,7 @@ export default {
       padding: 8px;
       margin: 0 auto;
       border-radius: 3px;
-      box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.1),
-        1px 1px 15px 0 rgba(0, 0, 0, 0.2);
+      box-shadow: 1px 5px 15px 0 var(--friends-card);
       transition: all 0.25s;
       margin-top: calc(2.25 * 16px + 32px);
       color: #444;
@@ -186,7 +170,7 @@ export default {
       text-decoration: none;
       &:hover {
         opacity: 1;
-        box-shadow: 1px 10px 30px 0 rgba(0, 0, 0, 0.3);
+        box-shadow: 1px 10px 30px 0 var(--friends-card-hover);
       }
     }
     .friends-left {

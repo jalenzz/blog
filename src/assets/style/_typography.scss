@@ -17,7 +17,7 @@ p {
 }
 
 figcaption {
-  margin: 1em 0;
+  margin-bottom: 1em;
   text-align: center;
   opacity: 0.7;
   font-family: var(--base-font-family);
@@ -43,6 +43,14 @@ h5 {
   font-family: var(--title-font-family);
   font-weight: 600;
   line-height: 1.5;
+  &::before {
+    display: block;
+    content: "";
+    margin-top: -5rem;
+    height: 5rem;
+    width: 1px;
+    visibility: hidden;
+  }
 }
 
 h1 {
@@ -71,7 +79,7 @@ small {
 }
 
 strong {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 blockquote {
