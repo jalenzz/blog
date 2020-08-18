@@ -126,6 +126,11 @@ export default {
           id: "ChrAlpha",
           link: "https://ichr.me",
           background: "#084267"
+        },
+        {
+          id: "Uncle_drew",
+          link: "https://cndrew.cn/",
+          background: "#393316"
         }
       ]
     };
