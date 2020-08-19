@@ -30,8 +30,10 @@
         ><font-awesome :icon="['fas', 'archive']"/></g-link
       ><g-link to="/friends" style="color: #06a878;"
         ><font-awesome :icon="['fas', 'user-friends']"/></g-link
-      ><g-link to="/about" style="color: #0070f3"
-        ><font-awesome :icon="['fas', 'id-badge']"
+      ><g-link to="/about" style="color: #117cb7"
+        ><font-awesome :icon="['fas', 'id-badge']"/></g-link
+      ><g-link to="/time" style="color: #FF7790"
+        ><font-awesome :icon="['fas', 'rocket']"
       /></g-link>
     </p>
   </div>
