@@ -187,150 +187,122 @@ query Post ($id: ID!, $previousElement: ID!, $nextElement: ID!) {
 }
 </page-query>
 
-<style lang="scss">
-.post-title {
-  padding: var(--space) 0 var(--space);
-  text-align: center;
+<style lang="stylus">
+.post-title
+  padding var(--space) 0 var(--space)
+  text-align center
 
-  &__publish-icon {
-    vertical-align: top;
-    background-color: #f7b955;
-    display: inline-block;
-    font-size: 14px;
-    height: 18px;
-    line-height: 18px;
-    border-radius: 3px;
-    padding: 0 6px;
-    color: #fff;
-  }
-}
+  &__publish-icon
+    vertical-align top
+    background-color #f7b955
+    display inline-block
+    font-size 14px
+    height 18px
+    line-height 18px
+    border-radius 3px
+    padding 0 6px
+    color #fff
 
-.post-meta {
-  font-family: var(--base-font-family);
-}
+.post-meta
+  font-family var(--base-font-family)
 
-.post {
-  &__header {
-    width: calc(100% + var(--space) * 2);
-    margin-left: calc(var(--space) * -1);
-    margin-top: calc(var(--space) * -1);
-    margin-bottom: calc(var(--space) / 2);
-    overflow: hidden;
-    border-radius: var(--radius) var(--radius) 0 0;
+.post
+  &__header
+    width calc(100% + var(--space) * 2)
+    margin-left calc(var(--space) * -1)
+    margin-top calc(var(--space) * -1)
+    margin-bottom calc((var(--space) / 2))
+    overflow hidden
+    border-radius var(--radius) var(--radius) 0 0
 
-    img {
-      width: 100%;
-    }
+    img
+      width 100%
 
-    &:empty {
-      display: none;
-    }
-  }
+    &:empty
+      display none
 
-  &__content {
-    h2:first-child {
-      margin-top: 0;
-    }
+  &__content
+    h2:first-child
+      margin-top 0
 
     // p:first-of-type {
-    //   // font-size: 1.2em;
-    //   color: var(--title-color);
+    // // font-size: 1.2em;
+    // color: var(--title-color);
     // }
+    p
+      line-height 1.8
 
-    p {
-      line-height: 1.8;
-    }
-
-    img {
+    img
       // width: calc(100% + var(--space) * 2);
       // margin-left: calc(var(--space) * -1);
-      display: block;
-      max-width: 100%;
-      margin: 0 auto;
-    }
+      display block
+      max-width 100%
+      margin 0 auto
 
-    a:not(.footnote-ref):not(.footnote-backref) {
-      color: var(--body-color);
-      box-shadow: inset 0 -6px 0 rgba(26, 188, 156, 0.3);
-      transition-duration: 0.3s;
-      text-decoration: none;
+    a:not(.footnote-ref):not(.footnote-backref)
+      color var(--body-color)
+      box-shadow inset 0 -6px 0 rgba(26, 188, 156, 0.3)
+      transition-duration 0.3s
+      text-decoration none
 
-      &:hover {
-        opacity: 1;
-        box-shadow: inset 0 -20px 0 rgba(26, 188, 156, 0.3);
-      }
-    }
-  }
+      &:hover
+        opacity 1
+        box-shadow inset 0 -20px 0 rgba(26, 188, 156, 0.3)
 
-  &__navigation {
-    border-top: 1px solid var(--border-color);
-    margin-top: calc(var(--space) / 2);
-    padding: calc(var(--space) / 2) 0 0 0;
-    overflow: auto;
+  &__navigation
+    border-top 1px solid var(--border-color)
+    margin-top calc((var(--space) / 2))
+    padding calc((var(--space) / 2)) 0 0 0
+    overflow auto
 
-    .navlink {
-      border: none;
-      text-decoration: none;
+    .navlink
+      border none
+      text-decoration none
 
-      &:first-of-type {
-        margin-bottom: calc(var(--space) / 4);
-      }
-    }
-  }
-}
+      &:first-of-type
+        margin-bottom calc((var(--space) / 4))
 
-.footnotes {
-  p {
-    display: inline;
-  }
-  hr {
-    padding: calc(var(--space) / 2) 0 0 0;
-    border: none;
-    border-top: 1px solid var(--border-color);
-    margin: 0 0;
-  }
-  .footnote-backref {
-    display: inline;
-  }
-}
+.footnotes
+  p
+    display inline
 
-.post-comments {
-  font-family: var(--base-font-family);
-  padding: calc(var(--space) / 2);
-  max-width: var(--content-width);
-  margin: 0 auto;
-}
+  hr
+    padding calc((var(--space) / 2)) 0 0 0
+    border none
+    border-top 1px solid var(--border-color)
+    margin 0 0
 
-.post-author {
-  margin-top: calc(var(--space) / 2);
-}
+  .footnote-backref
+    display inline
 
-#back-to-top {
-  position: fixed;
-  bottom: 40px;
-  right: 30px;
-  z-index: 100;
-  cursor: pointer;
-}
+.post-comments
+  font-family var(--base-font-family)
+  padding calc((var(--space) / 2))
+  max-width var(--content-width)
+  margin 0 auto
 
-#back-to-top-icon {
-  font-size: 1.1em;
-}
+.post-author
+  margin-top calc((var(--space) / 2))
 
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.3s ease-in-out;
-}
+#back-to-top
+  position fixed
+  bottom 40px
+  right 30px
+  z-index 100
+  cursor pointer
 
-.fade-enter,
-.fade-leave-to {
-  opacity: 0;
-}
+#back-to-top-icon
+  font-size 1.1em
 
-.post__navigation__ {
-  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, Segoe UI,
+.fade-enter-active, .fade-leave-active
+  transition opacity 0.3s ease-in-out
+
+.fade-enter, .fade-leave-to
+  opacity 0
+
+.post__navigation__
+  font-family "Roboto Slab", -apple-system, BlinkMacSystemFont, Segoe UI,
     Helvetica, Arial, pingfang sc, source han sans sc, noto sans cjk sc,
     sarasa gothic sc, microsoft yahei, sans-serif, Apple Color Emoji,
-    Segoe UI Emoji;
-}
+    Segoe UI Emoji
 </style>

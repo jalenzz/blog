@@ -1,5 +1,5 @@
 // Import main css
-import "~/assets/style/index.scss";
+import "~/assets/style/index.styl";
 
 // × Import default layout so we don't need to import it to every page
 // ! Use default App.vue to force reload each component on new blog page, or else $route.path
@@ -7,7 +7,7 @@ import "~/assets/style/index.scss";
 // import DefaultLayout from '~/layouts/Default.vue'
 
 // Disqus
-import "~/assets/style/disqusjs.scss";
+import "~/assets/style/disqusjs.styl";
 
 // Pagination
 import { Pager } from "gridsome";
@@ -49,7 +49,7 @@ library.add(
 
 // notifications
 import Notifications from "vue-notification/dist/ssr";
-import "~/assets/style/notification.scss";
+import "~/assets/style/notification.styl";
 
 // back to top
 import VueScrollTo from "vue-scrollto";
@@ -59,10 +59,10 @@ import axios from "axios";
 
 // NProgress
 import NProgress from "nprogress";
-import "~/assets/style/nprogress.scss";
+import "~/assets/style/nprogress.styl";
 
 // container
-import "~/assets/style/container.scss";
+import "~/assets/style/container.styl";
 
 // katex
 import "katex/dist/katex.min.css";

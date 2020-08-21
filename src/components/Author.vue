@@ -53,35 +53,30 @@ export default {
 };
 </script>
 
-<style lang="scss">
-.author {
-  margin: 0 auto;
-  max-width: 500px;
-  text-align: center;
-  padding: calc(var(--space) / 2) 0;
+<style lang="stylus">
+.author
+  margin 0 auto
+  max-width 500px
+  text-align center
+  padding calc(var(--space) / 2) 0
 
-  &__image {
-    border-radius: 100%;
-    width: 90px;
-    height: 90px;
-    margin-bottom: 1em;
-  }
+  &__image
+    border-radius 100%
+    width 90px
+    height 90px
+    margin-bottom 1em
 
-  &__intro {
-    opacity: 0.8;
-  }
+  &__intro
+    opacity 0.8
 
-  &__site-title {
-    font-size: 1.5em;
-  }
+  &__site-title
+    font-size 1.5em
 
-  &__links {
-    margin-top: -0.5em;
-    font-size: 1em;
-    a {
-      color: var(--main-color);
-      margin: 0 0.5em;
-    }
-  }
-}
+  &__links
+    margin-top -0.5em
+    font-size 1em
+
+    a
+      color var(--main-color)
+      margin 0 0.5em
 </style>

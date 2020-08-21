@@ -115,26 +115,22 @@ export default {
 };
 </script>
 
-<style lang="scss">
-.posts {
-  p span {
-    font-size: 0.85rem;
-    font-family: var(--monospace-font-family);
+<style lang="stylus">
+.posts
+  p span
+    font-size 0.85rem
+    font-family var(--monospace-font-family)
 
-    &::after {
-      content: " ";
-    }
-  }
-  .archives__item {
-    color: var(--body-color);
-    box-shadow: inset 0 -6px 0 rgba(26, 188, 156, 0.3);
-    transition-duration: 0.3s;
-    text-decoration: none;
+    &::after
+      content " "
 
-    &:hover {
-      opacity: 1;
-      box-shadow: inset 0 -20px 0 rgba(26, 188, 156, 0.3);
-    }
-  }
-}
+  .archives__item
+    color var(--body-color)
+    box-shadow inset 0 -6px 0 rgba(26, 188, 156, 0.3)
+    transition-duration 0.3s
+    text-decoration none
+
+    &:hover
+      opacity 1
+      box-shadow inset 0 -20px 0 rgba(26, 188, 156, 0.3)
 </style>

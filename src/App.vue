@@ -52,71 +52,59 @@ export default {
 };
 </script>
 
-<style lang="scss">
-#app {
-  scroll-behavior: smooth;
-}
+<style lang="stylus">
+#app
+  scroll-behavior smooth
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-height: var(--header-height);
-  padding: 0 calc(var(--space) / 2);
-  top: 0;
-  z-index: 10;
+.header
+  display flex
+  justify-content space-between
+  align-items center
+  min-height var(--header-height)
+  padding 0 calc((var(--space) / 2))
+  top 0
+  z-index 10
+
   // backdrop-filter: blur(16px);
+  &__left, &__right
+    display flex
+    align-items center
+    font-family var(--base-font-family)
 
-  &__left,
-  &__right {
-    display: flex;
-    align-items: center;
-    font-family: var(--base-font-family);
-  }
+  @media screen and (min-width 1300px)
+    // Make header sticky for large screens
+    position sticky
+    width 100%
 
-  @media screen and (min-width: 1300px) {
-    //Make header sticky for large screens
-    position: sticky;
-    width: 100%;
-  }
-}
+.main
+  margin 0 auto
+  padding 1.5vw 15px 0
 
-.main {
-  margin: 0 auto;
-  padding: 1.5vw 15px 0;
-}
-
-.footer {
+.footer
   // max-width: var(--content-width);
   // margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: var(--space) 15px var(--space);
-  text-align: center;
-  line-height: 1.8;
-  font-size: 0.9em;
-  font-family: var(--base-font-family);
+  display flex
+  flex-direction column
+  align-items center
+  justify-content center
+  padding var(--space) 15px var(--space)
+  text-align center
+  line-height 1.8
+  font-size 0.9em
+  font-family var(--base-font-family)
 
-  > span {
-    margin: 0 0.35em;
-  }
+  > span
+    margin 0 0.35em
 
-  a {
-    color: currentColor;
-  }
+  a
+    color currentColor
 
-  svg {
-    margin-right: 0.2rem;
-  }
+  svg
+    margin-right 0.2rem
 
-  #rss-stats {
-    padding-top: 0.35rem;
+  #rss-stats
+    padding-top 0.35rem
 
-    a {
-      margin-right: 0.35rem;
-    }
-  }
-}
+    a
+      margin-right 0.35rem
 </style>

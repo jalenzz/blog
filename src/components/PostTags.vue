@@ -17,24 +17,23 @@ export default {
 };
 </script>
 
-<style lang="scss">
-.post-tags {
-  margin: 1em 0 0;
+<style lang="stylus">
+.post-tags
+  margin 1em 0 0
 
-  &__link {
-    margin: 0.3em 0.6em 0.3em 0;
-    font-size: 0.8em;
-    color: currentColor;
-    text-decoration: none;
-    background-color: var(--bg-color);
-    color: currentColor !important; //Todo: remove important;
-    padding: 0.5em;
-    border-radius: var(--radius);
-    display: inline-block;
-    &:hover {
-      background-color: rgba(26, 188, 156, 0.3);
-      box-shadow: 0 4px rgba(26, 188, 156, 0.6);
-    }
-  }
-}
+  &__link
+    margin 0.3em 0.6em 0.3em 0
+    font-size 0.8em
+    color currentColor
+    text-decoration none
+    background-color var(--bg-color)
+    color currentColor !important
+    //Todo remove important;
+    padding 0.5em
+    border-radius var(--radius)
+    display inline-block
+
+    &:hover
+      background-color rgba(26, 188, 156, 0.3)
+      box-shadow 0 4px rgba(26, 188, 156, 0.6)
 </style>
