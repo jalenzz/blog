@@ -192,60 +192,49 @@ export default {
 };
 </script>
 
-<style lang="scss">
-.about-title {
-  padding: var(--space) 0 var(--space);
-  text-align: center;
-}
+<style lang="stylus">
+.about-title
+  padding var(--space) 0 var(--space)
+  text-align center
 
-.about {
-  a:not(.about-me) {
-    color: var(--body-color);
-    box-shadow: inset 0 -6px 0 rgba(26, 188, 156, 0.3);
-    transition-duration: 0.3s;
-    text-decoration: none;
+.about
+  a:not(.about-me)
+    color var(--body-color)
+    box-shadow inset 0 -6px 0 rgba(26, 188, 156, 0.3)
+    transition-duration 0.3s
+    text-decoration none
 
-    &:hover {
-      opacity: 1;
-      box-shadow: inset 0 -20px 0 rgba(26, 188, 156, 0.3);
-    }
-  }
-}
+    &:hover
+      opacity 1
+      box-shadow inset 0 -20px 0 rgba(26, 188, 156, 0.3)
 
-.post-comments {
-  font-family: var(--base-font-family);
-  padding: calc(var(--space) / 2);
-  max-width: var(--content-width);
-  margin: 0 auto;
-}
+  .about-me
+    text-decoration none
 
-.post-author {
-  margin-top: calc(var(--space) / 2);
-}
+.post-comments
+  font-family var(--base-font-family)
+  padding calc(var(--space) / 2)
+  max-width var(--content-width)
+  margin 0 auto
 
-#back-to-top {
-  position: fixed;
-  bottom: 40px;
-  right: 30px;
-  z-index: 100;
-  cursor: pointer;
-}
+.post-author
+  margin-top calc(var(--space) / 2)
 
-#back-to-top-icon {
-  font-size: 1.1em;
-}
+#back-to-top
+  position fixed
+  bottom 40px
+  right 30px
+  z-index 100
+  cursor pointer
 
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.3s ease-in-out;
-}
+#back-to-top-icon
+  font-size 1.1em
 
-.fade-enter,
-.fade-leave-to {
-  opacity: 0;
-}
+.fade-enter-active
+.fade-leave-active
+  transition opacity 0.3s ease-in-out
 
-.about-me {
-  text-decoration: none;
-}
+.fade-enter
+.fade-leave-to
+  opacity 0
 </style>

@@ -14,8 +14,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
-.post-meta {
-  font-size: 0.8em;
-}
+<style lang="stylus">
+.post-meta
+  font-size 0.8em
 </style>

@@ -67,16 +67,13 @@ export default {
       url.indexOf("appID") == -1 ? (s.src = url) : (s.innerHTML = url);
       document.getElementsByTagName("head")[0].appendChild(s);
     }
-    addScript(
-      "\
-      var appID = 'Ikn1WpEQq7e9N6H3EhY9k43J-9Nh9j0Va';\
-      var appKEY = '3SnOsnvmkYXBAT0WFNoLdEuR';\
-      var severurl = 'https://lc.jalenchuh.cn';\
-      var username = 'JalenChuh';\
-    "
-    );
-    addScript("https://cdn.jsdelivr.net/npm/jquery");
-    addScript("https://cdn.jsdelivr.net/npm/artitalk");
+    addScript(`
+      var appID = 'Ikn1WpEQq7e9N6H3EhY9k43J-9Nh9j0Va';
+      var appKEY = '3SnOsnvmkYXBAT0WFNoLdEuR';
+      var severurl = 'https://lc.jalenchuh.cn';
+      var cssurl = 'https://cdn.jsdelivr.net/gh/jalenchuh/static@9b457/css/artitalk.css'
+    `);
+    addScript("https://cdn.jsdelivr.net/gh/ArtitalkJS/Artitalk@81f3936/dist/js/artitalk.min.js");
   },
   destroyed() {
     if (process.isClient) {
@@ -90,39 +87,29 @@ export default {
 };
 </script>
 
-<style lang="scss">
-.time-title {
-  padding: var(--space) 0 var(--space);
-  text-align: center;
-}
+<style lang="stylus">
+.time-title
+  padding var(--space) 0 var(--space)
+  text-align center
 
-.post-author {
-  margin-top: calc(var(--space) / 2);
-}
+.post-author
+  margin-top calc(var(--space) / 2)
 
-#back-to-top {
-  position: fixed;
-  bottom: 40px;
-  right: 30px;
-  z-index: 100;
-  cursor: pointer;
-}
+#back-to-top
+  position fixed
+  bottom 40px
+  right 30px
+  z-index 100
+  cursor pointer
 
-#back-to-top-icon {
-  font-size: 1.1em;
-}
+#back-to-top-icon
+  font-size 1.1em
 
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.3s ease-in-out;
-}
+.fade-enter-active
+.fade-leave-active
+  transition opacity 0.3s ease-in-out
 
-.fade-enter,
-.fade-leave-to {
-  opacity: 0;
-}
-
-.shuoshuoimg:hover {
-  transform: scale(1) !important;
-}
+.fade-enter
+.fade-leave-to
+  opacity 0
 </style>

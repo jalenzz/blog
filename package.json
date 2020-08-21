@@ -1,5 +1,6 @@
 {
   "name": "gridsome-blog",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "build": "gridsome build",
@@ -33,8 +34,8 @@
     "word-count": "^0.2.2"
   },
   "devDependencies": {
-    "node-sass": "^4.12.0",
     "prettier": "^1.19.1",
-    "sass-loader": "^8.0.0"
+    "stylus": "^0.54.8",
+    "stylus-loader": "^3.0.2"
   }
 }

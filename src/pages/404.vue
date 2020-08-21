@@ -16,14 +16,12 @@
   </div>
 </template>
 
-<style lang="scss" scoped>
-.not-found-container {
-  text-align: center;
-  max-width: var(--content-width);
-  margin: 0 auto;
+<style lang="stylus" scoped>
+.not-found-container
+  text-align center
+  max-width var(--content-width)
+  margin 0 auto
 
-  .description {
-    opacity: 0.8;
-  }
-}
+  .description
+    opacity 0.8
 </style>

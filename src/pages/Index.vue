@@ -93,29 +93,25 @@ export default {
 };
 </script>
 
-<style lang="scss">
-nav {
-  max-width: var(--content-width);
-  margin: 0 auto;
-  text-align: center;
+<style lang="stylus">
+nav
+  max-width var(--content-width)
+  margin 0 auto
+  text-align center
 
-  a {
-    margin: 0 10px;
-    padding: 3px 10px;
-    border: 2px var(--main-color);
-    border-style: dashed;
-  }
-}
+  a
+    margin 0 10px
+    padding 3px 10px
+    border 2px var(--main-color)
+    border-style dashed
 
-#back-to-top {
-  position: fixed;
-  bottom: 40px;
-  right: 30px;
-  z-index: 100;
-  cursor: pointer;
-}
+#back-to-top
+  position fixed
+  bottom 40px
+  right 30px
+  z-index 100
+  cursor pointer
 
-#back-to-top-icon {
-  font-size: 1.1em;
-}
+#back-to-top-icon
+  font-size 1.1em
 </style>
