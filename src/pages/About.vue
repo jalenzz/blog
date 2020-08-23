@@ -115,8 +115,15 @@
       </div>
     </div>
 
-    <div class="post-comments">
-      <div id="disqus_thread" />
+    <div class="artalk-cards">
+      <details class="admonition admonition-note">
+        <summary>Comment</summary>
+        <p>
+          评论如无特殊原因均不会被删除，提交前请三思。<br />
+          你应该懂得如何发表适当的观点，请对自己的言论负责。
+        </p>
+      </details>
+      <div id="Artalk" />
     </div>
 
     <transition name="fade">
@@ -136,7 +143,7 @@
 <script>
 import PostMeta from "~/components/PostMeta";
 import Author from "~/components/Author.vue";
-import DisqusJS from "disqusjs";
+import "artalk/dist/Artalk.css";
 
 export default {
   components: {
@@ -176,16 +183,18 @@ export default {
     }
   },
   mounted() {
-    // Initialize post comment by DisqusJS
     if (process.env.NODE_ENV === "production") {
-      const disqusjs = new DisqusJS({
-        shortname: "jalenchuh",
-        siteName: "Jalen's Blog",
-        identifier: "jalen-blog-guestbook",
-        apikey:
-          "yMnV34hMagksc3XdQ0O9kgC87uI0genlKI7uFs07Ak8H07jPgh6rWyYeOLvahS6j",
-        admin: "JalenChuh",
-        adminLabel: "Admin"
+      window.Artalk = require("artalk");
+      const artalk = new Artalk({
+        el: "#Artalk",
+        placeholder: "说点什么 (づ￣ 3￣)づ",
+        defaultAvatar: "mp",
+        pageKey: "https://blog.jalenchuh.cn/about",
+        serverUrl: "https://artalk.jalenchuh.cn",
+        readMore: {
+          pageSize: 15,
+          autoLoad: true
+        }
       });
     }
   }
@@ -211,11 +220,38 @@ export default {
   .about-me
     text-decoration none
 
-.post-comments
+.artalk-cards
   font-family var(--base-font-family)
-  padding calc(var(--space) / 2)
+  background var(--at-bg-main)
   max-width var(--content-width)
-  margin 0 auto
+  margin 20px auto 100px
+  box-shadow 1px 1px 5px 0 rgba(0, 0, 0, 0.02), 1px 1px 15px 0 rgba(0, 0, 0, 0.03)
+
+  details
+    margin 0 auto
+    text-align center
+    font-weight 600
+    outline none
+
+    summary
+      list-style none
+      margin 4px auto !important
+      color var(--cb-admonition-icon-color) !important
+      margin 2.75rem 0 1rem
+      font-family var(--title-font-family)
+      line-height 1.5
+      outline none
+
+    summary::-webkit-details-marker
+      display none
+
+    p
+      color var(--at-font-color)
+      margin-bottom 0
+
+  @media screen and (max-width 767.5px)
+    details > p
+      text-align left
 
 .post-author
   margin-top calc(var(--space) / 2)

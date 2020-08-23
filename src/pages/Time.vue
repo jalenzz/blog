@@ -7,7 +7,7 @@
     </div>
 
     <div class="time content-box">
-      <div id="artitalk_main"></div>
+        <div id="Artalk" />
     </div>
 
     <transition name="fade">
@@ -27,6 +27,7 @@
 <script>
 import PostMeta from "~/components/PostMeta";
 import Author from "~/components/Author.vue";
+import "artalk/dist/Artalk.css";
 
 export default {
   components: {
@@ -60,29 +61,26 @@ export default {
       window.addEventListener("scroll", this.handleScroll);
     }
   },
-  mounted() {
-    function addScript(url) {
-      var s = document.createElement("script");
-      s.id = "at";
-      url.indexOf("appID") == -1 ? (s.src = url) : (s.innerHTML = url);
-      document.getElementsByTagName("head")[0].appendChild(s);
-    }
-    addScript(`
-      var appID = 'Ikn1WpEQq7e9N6H3EhY9k43J-9Nh9j0Va';
-      var appKEY = '3SnOsnvmkYXBAT0WFNoLdEuR';
-      var severurl = 'https://lc.jalenchuh.cn';
-      var cssurl = 'https://cdn.jsdelivr.net/gh/jalenchuh/static@9b457/css/artitalk.css'
-    `);
-    addScript("https://cdn.jsdelivr.net/gh/ArtitalkJS/Artitalk@81f3936/dist/js/artitalk.min.js");
-  },
   destroyed() {
     if (process.isClient) {
       window.removeEventListener("scroll", this.handleScroll);
     }
-    document
-      .querySelectorAll("#at")
-      .forEach(element => element.parentNode.removeChild(element));
-    delete window.AV;
+  },
+  mounted() {
+    if (process.env.NODE_ENV === "production") {
+      window.Artalk = require("artalk");
+      const artalk = new Artalk({
+        el: "#Artalk",
+        placeholder: "说点什么 (づ￣ 3￣)づ",
+        defaultAvatar: "mp",
+        pageKey: "https://blog.jalenchuh.cn/time",
+        serverUrl: "https://artalk.jalenchuh.cn",
+        readMore: {
+          pageSize: 15,
+          autoLoad: true
+        }
+      });
+    }
   }
 };
 </script>
