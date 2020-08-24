@@ -86,10 +86,11 @@
 </template>
 
 <script>
+import "artalk/dist/Artalk.css";
+import "katex/dist/katex.min.css";
+import Author from "~/components/Author";
 import PostMeta from "~/components/PostMeta";
 import PostTags from "~/components/PostTags";
-import Author from "~/components/Author.vue";
-import "artalk/dist/Artalk.css";
 
 export default {
   components: {
@@ -146,14 +147,13 @@ export default {
       });
     }
 
-    // Initialize post comment by DisqusJS
     if (process.env.NODE_ENV === "production") {
       window.Artalk = require("artalk");
       const artalk = new Artalk({
         el: "#Artalk",
         placeholder: "说点什么 (づ￣ 3￣)づ",
         defaultAvatar: "mp",
-        pageKey: 'https://blog.jalenchuh.cn' + this.$page.post.path,
+        pageKey: "https://blog.jalenchuh.cn" + this.$page.post.path,
         serverUrl: "https://artalk.jalenchuh.cn",
         readMore: {
           pageSize: 15,

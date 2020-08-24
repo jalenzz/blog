@@ -35,6 +35,8 @@
         <font-awesome id="back-to-top-icon" :icon="['fas', 'arrow-up']" />
       </div>
     </transition>
+
+    <Author class="post-author" />
   </div>
 </template>
 
@@ -55,9 +57,16 @@ query {
 </page-query>
 
 <script>
+import Author from "~/components/Author";
+
 export default {
-  metaInfo: {
-    title: "Archives"
+  components: {
+    Author
+  },
+  metaInfo() {
+    return {
+      title: "Archives"
+    };
   },
   data() {
     return {

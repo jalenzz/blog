@@ -6,9 +6,6 @@ import "~/assets/style/index.styl";
 // ! will not reflect correctly. See: https://github.com/gridsome/gridsome/issues/835
 // import DefaultLayout from '~/layouts/Default.vue'
 
-// Disqus
-import "~/assets/style/disqusjs.styl";
-
 // Pagination
 import { Pager } from "gridsome";
 
@@ -49,7 +46,6 @@ library.add(
 
 // notifications
 import Notifications from "vue-notification/dist/ssr";
-import "~/assets/style/notification.styl";
 
 // back to top
 import VueScrollTo from "vue-scrollto";
@@ -59,16 +55,10 @@ import axios from "axios";
 
 // NProgress
 import NProgress from "nprogress";
-import "~/assets/style/nprogress.styl";
-
-// container
-import "~/assets/style/container.styl";
-
-// katex
-import "katex/dist/katex.min.css";
 
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 export default function(Vue, { router, head, isClient }) {
+  head.htmlAttrs = { lang: "zh-Hans" };
   NProgress.configure({ easing: "ease", speed: 500, showSpinner: false });
 
   // Set default layout as a global component

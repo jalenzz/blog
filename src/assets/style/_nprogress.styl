@@ -1,5 +1,5 @@
 :root
-  --accent-color #0070F3
+  --accent-color #0070f3
 
 /* Make clicks pass-through */
 #nprogress
@@ -16,7 +16,7 @@
 
 /* Fancy blur effect */
 #nprogress .peg
-  display block
+  display none
   position absolute
   right 0px
   width 100px
@@ -26,3 +26,10 @@
   -webkit-transform rotate(3deg) translate(0px, -4px)
   -ms-transform rotate(3deg) translate(0px, -4px)
   transform rotate(3deg) translate(0px, -4px)
+
+.nprogress-custom-parent
+  overflow hidden
+  position relative
+
+.nprogress-custom-parent #nprogress .spinner, .nprogress-custom-parent #nprogress .bar
+  position absolute

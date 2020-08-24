@@ -42,21 +42,10 @@
           <s>坚定的</s>括号不换行党！只要你也不换行，我们就是好朋友
         </p>
 
-        <p>
-          我 16 型人格测试结果为 <strong>ENFJ-A 主人公</strong>，PolitiScales
-          的结果为<strong>平等 · 人权 · 劳动</strong>。
-        </p>
-        <img
-          src="https://rmt.dogedoge.com/fetch/royce/storage/about/16-Personality-Test-Result.png"
-          alt="16 Personality Test Result"
-        />
-        <img
-          src="https://rmt.dogedoge.com/fetch/royce/storage/about/Politi-Scales-Result.png"
-          alt="Politi Scales Result"
-        />
+        <p>我 ENFJ-A 主人公 / 平等 · 人权 · 劳动。</p>
 
         <p>
-          如果你想联系我，可以直接在评论里留言或者通过邮件（推荐）
+          如果你想联系我，可以直接在评论里留言或者通过邮件
           <a
             style="font-family: var(--monospace-font-family)"
             href="javascript:location='mailto:\u006a\u0061\u006c\u0065\u006e\u0063\u0068\u0075\u0068\u0040\u0067\u006d\u0061\u0069\u006c\u002e\u0063\u006f\u006d';void 0"
@@ -72,9 +61,11 @@
             href="https://github.com/gridsome/gridsome-starter-blog"
             target="_blank"
             >gridsome-starter-blog</a
-          >(样式参考
-          <a href="https://spencerwoo.com/" target="_blank">Spencer</a>)
-          主题搭建。如有疑问请查看源码：
+          >
+          主题搭建，参考
+          <a href="https://spencerwoo.com/" target="_blank">Spencer</a> &
+          <a href="https://blog.monsterx.cn/" target="_blank">Monstx</a>
+          进行了修改。 如有疑问请查看源码：
           <a href="https://github.com/jalenchuh/blog" target="_blank"
             >@jalenchuh/blog</a
           >。
@@ -141,14 +132,12 @@
 </template>
 
 <script>
-import PostMeta from "~/components/PostMeta";
-import Author from "~/components/Author.vue";
 import "artalk/dist/Artalk.css";
+import Author from "~/components/Author";
 
 export default {
   components: {
-    Author,
-    PostMeta
+    Author
   },
   metaInfo() {
     return {

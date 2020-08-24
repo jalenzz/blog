@@ -1,34 +1,30 @@
-/* PrismJS 1.15.0
-https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript */
-/**
- * prism.js default theme for JavaScript, CSS and HTML
- * Based on dabblet (http://dabblet.com)
- * @author Lea Verou
- */
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap')
+@import url('https://fonts.dogedoge.com/css2?family=Fira+Code&display=swap')
 
 pre
   padding calc((var(--space) / 3)) var(--space)
+  font-family var(--monospace-font-family)
   font-size 1em
   background-color var(--bg-code)
   margin 1em calc(0em - var(--space))
 
-  // border: 1px solid var(--border-color);
-  // border-radius: var(--radius);
   code
     padding 0em
     background-color transparent
 
-code
-  background-color var(--bg-code)
-  // border: 1px solid var(--border-color);
-  font-size 0.9em
-  padding 0.2em 0.5em
-
+/**
+ * PrismJS 1.21.0
+ * https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript+arduino+bash+c+cpp+diff+docker+ini+latex+markdown+nginx+powershell+python+yaml&plugins=line-numbers
+ * @author Lea Verou
+ * @modified spencerwooo monsterxcn
+ */
 code[class*='language-'], pre[class*='language-']
+  color var(--text-code-block)
+  background-color var(--bg-code)
+  text-shadow none
   font-family var(--monospace-font-family)
+  font-size 1em
   text-align left
-  white-space pre-wrap
+  white-space pre
   word-spacing normal
   word-break normal
   word-wrap normal
@@ -51,10 +47,13 @@ pre[class*='language-']
   color var(--text-code-block)
 
 /* Inline code */
-:not(pre) > code[class*='language-']
+:not(pre) > code[class*='language-'], :not(pre) > code
   color var(--text-code)
+  background-color transparent
   white-space normal
-  background-color var(--bg-content-color)
+  font-family var(--monospace-font-family)
+  font-size 0.9em
+  padding 0.2em 0.5em
 
   &::before
     content '`'
@@ -68,7 +67,7 @@ pre[class*='language-']
 .token.punctuation
   color #999
 
-.namespace
+.token.namespace
   opacity 0.7
 
 .token.property, .token.tag, .token.boolean, .token.number, .token.constant, .token.symbol, .token.deleted
@@ -79,7 +78,8 @@ pre[class*='language-']
 
 .token.operator, .token.entity, .token.url, .language-css .token.string, .style .token.string
   color #9a6e3a
-  // background: hsla(0, 0%, 100%, 0.5);
+  /* This background color was intended by the author of this theme.
+  background: hsla(0, 0%, 100%, .5); */
 
 .token.atrule, .token.attr-value, .token.keyword
   color #20a7e0
@@ -98,3 +98,37 @@ pre[class*='language-']
 
 .token.entity
   cursor help
+
+pre[class*='language-'].line-numbers
+  position relative
+  padding-left 3.8em
+  counter-reset linenumber
+
+pre[class*='language-'].line-numbers > code
+  position relative
+  white-space inherit
+
+.line-numbers .line-numbers-rows
+  position absolute
+  pointer-events none
+  top 0
+  font-size 100%
+  left -3.8em
+  width 3em /* works for line-numbers below 1000 lines */
+  letter-spacing -1px
+  border-right 1px dashed #999
+  -webkit-user-select none
+  -moz-user-select none
+  -ms-user-select none
+  user-select none
+
+.line-numbers-rows > span
+  display block
+  counter-increment linenumber
+
+.line-numbers-rows > span:before
+  content counter(linenumber)
+  color #999
+  display block
+  padding-right 0.8em
+  text-align right
