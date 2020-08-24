@@ -36,7 +36,9 @@ Disqus 应该算是世界上比较有名的评论系统了，但是因为一些�
 输入以下命令安装宝塔
 
 ```bash
-yum install -y wget && wget -O install.sh http://download.bt.cn/install/install_6.0.sh && sh install.sh
+yum install -y wget
+wget -O install.sh http://download.bt.cn/install/install_6.0.sh
+sh install.sh
 ```
 
 安装完成后会显示登录网址（外网）和用户名密码，需要保存。同时可能会提示进行端口放行，此时前往安全组页面查看

@@ -7,7 +7,7 @@
     </div>
 
     <div class="time content-box">
-        <div id="Artalk" />
+      <div id="Artalk" />
     </div>
 
     <transition name="fade">
@@ -25,9 +25,9 @@
 </template>
 
 <script>
-import PostMeta from "~/components/PostMeta";
-import Author from "~/components/Author.vue";
 import "artalk/dist/Artalk.css";
+import Author from "~/components/Author";
+import PostMeta from "~/components/PostMeta";
 
 export default {
   components: {

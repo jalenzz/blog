@@ -62,8 +62,8 @@ query ($page: Int) {
 </page-query>
 
 <script>
-import Author from "~/components/Author.vue";
-import PostCard from "~/components/PostCard.vue";
+import Author from "~/components/Author";
+import PostCard from "~/components/PostCard";
 
 export default {
   components: {
