@@ -3,7 +3,8 @@ title: "加速网页加载？我选择对图片下手"
 date: 2020-04-20
 published: true
 slug: use-webp
-tags: ['WebP', '瞎折腾']
+tags: ['WebP']
+cate: tech
 cover_image: "./images/use-webp.png"
 canonical_url: false
 description: "WebP，由 Google 开发的新型图像格式，从名字就可以看出是专门为了 Web 而设计。采用 WebP 格式能对网站速度提升起到很大帮助。"

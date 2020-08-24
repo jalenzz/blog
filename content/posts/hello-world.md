@@ -3,7 +3,7 @@ title: "Hello World"
 date: 2019-11-24
 published: true
 slug: hello-world
-tags: []
+cate: life
 cover_image: "./images/hello-world.png"
 canonical_url: false
 description: "庆祝我的博客诞生"

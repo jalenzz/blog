@@ -4,6 +4,7 @@ date: 2020-08-23 11:17:43
 published: true
 slug: artalk-api-php
 tags: ['Artalk', 'PHP']
+cate: tech
 cover_image: "./images/artalk-api-php.png"
 canonical_url: false
 description: "Artalk 的后端部署教程"
@@ -11,11 +12,14 @@ description: "Artalk 的后端部署教程"
 
 首先，恭喜自己，成功部署了 Artalk 的后端，这或许是件很简单的事，但对于我这种对后端（利用云服务器）一窍不通的白痴来说，这还真是件值得庆祝的事，从「白痴」进阶到了「小白」。考虑到可能也有像我这样的小白，所以这篇文章就出现了。
 
-从最开始的 Valine 到 utterances 再到 Disqus，Valine 基于 LeanCloud，但是第三方的服务总归不是特别安全，更何况还有人发了刷 Valine 评论的教程，本就不安全的 Valine 变得更不可靠；utterances 基于 GitHub 的 Issue，虽然官方并没有禁止使用 Issue 进行评论搭建，但是我总感觉怪怪的，而且众所周知，GitHub 的 API……；Disqus 应该算是世界上比较有名的评论系统了，但是因为一些原因被国内墙了，国内只能依靠 DisqusJS 进行评论浏览，而如果想要评论就必须进行代理。害，真是麻烦啊。
+从最开始的 Valine 到 utterances 再到 Disqus。  
+Valine 基于 LeanCloud，但是第三方的服务总归不是特别安全，LeanCloud 的政策也一直在边，完全切断免费版应该是不可能的，但限制只会越来越多。还有人发了刷 Valine 评论的教程，邮箱随时可能爆炸，本就不安全的 Valine 变得更不可靠。垃圾评论也越来越多，没有后端的 Valine 几乎没办法避免，Valine-Admin（Valine 评论系统的扩展和增强） 引入了垃圾评论过滤，但实际效果不佳，垃圾评论没过滤掉，反而正常评论被误杀了；  
+utterances 基于 GitHub 的 Issue，虽然官方并没有禁止使用 Issue 进行评论搭建，但是我总感觉怪怪的，而且众所周知，GitHub 的 API 在国内也非常不稳定。使用体验上，我个人觉得并不是非常好，不能进行回复，还不如直接在 Issue 界面评论；  
+Disqus 应该算是世界上比较有名的评论系统了，但是因为一些原因被国内墙了，国内只能依靠 DisqusJS 进行评论浏览，而如果想要评论就必须进行代理，要是没有这个问题，Disqus 或许是个很好的选择（除了那庞大的体积）。害，「向来冷清的本站雪上加霜 —— Monstx」真是麻烦啊。
 
-[Artalk](https://github.com/qwqcode/Artalk) 一款简洁有趣的自托管评论系统，应该算是一个比较小众的评论系统了，光是要自己部署后端就劝退一大批人了。不过这都是~~小~~大问题，现在用的 Gridsome 框架在国内应该也算是非常小众的一款博客框架了，~~但咱就喜欢与众不同（求异心理，不可取😜）~~，毕竟小而美嘛，正好有台服务器，就本着试一试的心态开始了折腾。
+[@qwqcode/Artalk](https://github.com/qwqcode/Artalk) 🌌 一款简洁有趣的自托管评论系统，应该算是一个比较小众的评论系统了，光是要自己部署后端就劝退一大批人了。不过这都是~~小~~大问题，现在用的 Gridsome 框架在国内应该也算是非常小众的一款博客框架了，~~但咱就喜欢与众不同（求异心理，不可取😜）~~，毕竟小而美嘛，正好有台服务器，就本着试一试的心态开始了折腾。
 
-教程采用阿里云学生机 + 宝塔面板进行演示
+*教程采用阿里云学生机 + 宝塔面板进行演示
 
 ## 安装宝塔面板
 
@@ -25,7 +29,7 @@ description: "Artalk 的后端部署教程"
 
 ![重装](https://rmt.dogedoge.com/fetch/royce/storage/artalk-api-php/re-install.png?fmt=webp)
 
-进入实列进行远程连接，选择 `终端连接` 进行 `密码认证`
+进入实列进行远程连接，选择 「终端连接」 进行 「密码认证」
 
 ![远程连接](https://rmt.dogedoge.com/fetch/royce/storage/artalk-api-php/remote.png?fmt=webp)
 
@@ -66,17 +70,19 @@ composer install
 php -r "copy('Config.example.php', 'Config.php');"
 ```
 
+若在出现报错 `Warning: putenv() has been disabled`，检查禁用函数中是否还存在 `putenv`。
+
 ## 修改配置
 
 在宝塔面板的文件页面中找到 `Config.php` 参照注释进行修改，如果你是按之前的步骤来的，没有进入其他目录，那 `ArtalkServerPhp` 文件夹应该是在根目录的 `root` 文件夹中。
 
 ## 添加站点
 
-更改 `ArtalkServePhp` 文件夹的权限如下图，并应用到子目录
+更改 `ArtalkServePhp` 文件夹的权限为 755，并应用到子目录
 
 ![更改权限](https://rmt.dogedoge.com/fetch/royce/storage/artalk-api-php/authority.png?fmt=webp)
 
-在宝塔面板的站点页面添加站点，根目录选择 `ArtalkServePhp` 中的 `public` 文件夹
+在宝塔面板的站点页面添加站点，根目录选择 `ArtalkServePhp/public` 文件夹
 
 ![添加站点](https://rmt.dogedoge.com/fetch/royce/storage/artalk-api-php/site.png?fmt=webp)
 

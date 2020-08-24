@@ -3,7 +3,8 @@ title: "Hexo Fluid 瞎折腾"
 date: 2020-04-01
 published: true
 slug: hexo-fluid
-tags: ['Hexo', '瞎折腾']
+tags: ['Hexo', 'Fluid']
+cate: tech
 canonical_url: false
 description: "Fluid 主题的瞎折腾汇总"
 ---

@@ -1,5 +1,8 @@
 <template>
   <div class="post-tags">
+    <g-link class="post-tags__link category" :to="post.cate.path">
+      {{ post.cate.title }}
+    </g-link>
     <g-link
       class="post-tags__link"
       v-for="tag in post.tags"
@@ -28,12 +31,11 @@ export default {
     text-decoration none
     background-color var(--bg-color)
     color currentColor !important
-    //Todo remove important;
+    //TODO: remove important;
     padding 0.5em
     border-radius var(--radius)
     display inline-block
-
-    &:hover
-      background-color rgba(26, 188, 156, 0.3)
-      box-shadow 0 4px rgba(26, 188, 156, 0.6)
+    &.category
+      color #000 !important
+      background-color #c2c2c2
 </style>

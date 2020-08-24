@@ -179,6 +179,11 @@ query Post ($id: ID!, $previousElement: ID!, $nextElement: ID!) {
       title
       path
     }
+    cate {
+      id
+      title
+      path
+    }
     description
     published
     content

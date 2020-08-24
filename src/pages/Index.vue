@@ -50,6 +50,11 @@ query ($page: Int) {
           title
           path
         }
+        cate {
+          id
+          title
+          path
+        }
       }
     }
   }
