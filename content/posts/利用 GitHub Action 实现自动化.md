@@ -3,7 +3,8 @@ title: "利用 GitHub Action 实现自动化"
 date: 2020-07-05
 published: true
 slug: use-github-action
-tags: [GitHub Action, 教程, 自动化]
+tags: ['GitHub Action', 'CI']
+cate: tech
 cover_image: "./images/use-github-action.png"
 canonical_url: false
 description: "博客部署？我用 GitHub Action 自动部署<br>百度收录推送？我也用 GitHub Action 自动推送"

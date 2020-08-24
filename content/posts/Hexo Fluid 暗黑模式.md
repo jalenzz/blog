@@ -3,7 +3,8 @@ title: "Hexo Fluid 暗黑模式"
 date: 2020-04-02
 published: true
 slug: hexo-dark-mode
-tags: ['Hexo', '折腾']
+tags: ['DarkMode', 'Hexo']
+cate: tech
 cover_image: "./images/hexo-dark-mode.png"
 canonical_url: false
 description: "适用于 Hexo 的暗黑模式，推荐在主题没有暗色模式的情况下使用"

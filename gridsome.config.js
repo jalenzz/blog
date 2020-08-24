@@ -14,7 +14,8 @@ module.exports = {
 
   templates: {
     Post: "/posts/:slug",
-    Tag: "/tag/:id"
+    Tag: "/tag/:id",
+    Category: "/category/:id"
   },
 
   plugins: [
@@ -28,6 +29,10 @@ module.exports = {
           // Creates a GraphQL collection from 'tags' in front-matter and adds a reference.
           tags: {
             typeName: "Tag",
+            create: true
+          },
+          cate: {
+            typeName: "Category",
             create: true
           }
         }
@@ -84,11 +89,6 @@ module.exports = {
       config: {
         footnotes: true
       }
-      // grayMatter: {
-      //   engines: {
-      //     yaml: s => yaml.safeLoad(s, { schema: yaml.JSON_SCHEMA }),
-      //   },
-      // },
     }
   }
 };

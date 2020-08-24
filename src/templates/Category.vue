@@ -1,11 +1,13 @@
 <template>
   <div>
-    <h1 class="tag-title text-center space-bottom"># {{ $page.tag.title }}</h1>
+    <h1 class="tag-title text-center space-bottom">
+      § {{ $page.category.title }}
+    </h1>
 
     <div class="posts">
       <div
         class="post-card content-box"
-        v-for="edge in $page.tag.belongsTo.edges"
+        v-for="edge in $page.category.belongsTo.edges"
         :key="edge.node.id"
         :post="edge.node"
         :class="{ 'post-card--has-poster': edge.node.poster }"
@@ -42,8 +44,8 @@
 </template>
 
 <page-query>
-query Tag ($id: ID!) {
-  tag (id: $id) {
+query Category ($id: ID!) {
+  category (id: $id) {
     title
     belongsTo {
       edges {
@@ -76,7 +78,7 @@ export default {
     PostMeta
   },
   metaInfo: {
-    title: "Tag"
+    title: "Category"
   },
   data() {
     return {

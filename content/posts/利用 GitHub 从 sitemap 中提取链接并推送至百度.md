@@ -3,7 +3,8 @@ title: "利用 GitHub 从 sitemap 中提取链接并推送至百度"
 date: 2020-08-11 09:05:19
 published: true
 slug: baidu-submit-using-sitemap
-tags: ['GitHub Action', '瞎折腾']
+tags: ['GitHub Action', 'Python']
+cate: tech
 cover_image: "./images/baidu-submit-using-sitemap.png"
 canonical_url: false
 description: "每天自动从 sitemap 中提取链接并推送至百度"
@@ -140,7 +141,7 @@ jobs:
       env:
         BAIDU_TOKEN: ${{ secrets.BAIDUTOKEN }}
         SITE: ${{ secrets.SITE }}
-      run: curl -H 'Content-Type:text/plain' --data-binary @urls.txt "http://data.zz.baidu.com/urls?site=${SITE}&token=${BAIDU_T
+      run: curl -H 'Content-Type:text/plain' --data-binary @urls.txt "http://data.zz.baidu.com/urls?site=${SITE}&token=${BAIDU_TOKEN}"
 ```
 
 如果是利用 `post` 进行推送，直接运行 py 文件就好了，不过在此之前需要替换刚刚文件中的 `BAIDU_TOKEN`

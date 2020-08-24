@@ -3,7 +3,8 @@ title: "HandShaker 好看实用的手机管理工具"
 date: 2020-04-26
 published: true
 slug: handshaker
-tags: ['Windows', 'App']
+tags: ['HandShaker']
+cate: tech
 cover_image: "./images/handshaker.png"
 canonical_url: false
 description: "不夸张的说，我认为这或许是最好的非系统的安卓手机管理工具，好看的 UI、舒适的体验，至少我目前还没有找到一个既免费又有与之相同体验的软件"
