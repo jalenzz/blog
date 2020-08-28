@@ -32,4 +32,12 @@ yarn build
 yarn prettier
 ```
 
-Enjoy 🙇
+Enjoy it. :bow:
+
+---
+
+:man_technologist: Jalen's blog ©Jalen Chuh. Released under the MIT License.
+
+Authored and maintained by Jalen Chuh.
+
+[@Portfolio](https://jalenchuh.cn) · [@Blog](https://blog.jalenchuh.cn) · [@GitHub](https://github.com/jalenchuh)
