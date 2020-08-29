@@ -155,6 +155,9 @@ export default {
         defaultAvatar: "mp",
         pageKey: "https://blog.jalenchuh.cn" + this.$page.post.path,
         serverUrl: "https://artalk.jalenchuh.cn",
+        gravatar: {
+          cdn: 'https://cdn.staticdn.net/avatar/'
+        },
         readMore: {
           pageSize: 15,
           autoLoad: true
