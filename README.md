@@ -4,12 +4,12 @@
 
 Powered by [Gridsome](http://gridsome.org/). Theme - [gridsome-starter-blog](https://github.com/gridsome/gridsome-starter-blog)(style reference [Spencer](https://spencerwoo.com/)).
 
-The old style of Hexo-Cards please check [the branch of Hexo](https://github.com/JalenChuh/blog/tree/Hexo).
+The old style of Hexo-Cards please check [v1.0](https://github.com/jalenchuh/blog/tree/v1.0).
 
 ## Install
 
 ```bash
-git clone https://github.com/JalenChuh/blog.git
+git clone https://github.com/jalenchuh/blog.git
 cd blog
 yarn install
 ```
