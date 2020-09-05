@@ -212,6 +212,9 @@ export default {
   .about-me
     text-decoration none
 
+    &::after
+      display none !important //TODO: Remove this!
+
 .artalk-cards
   font-family var(--base-font-family)
   background var(--at-bg-main)

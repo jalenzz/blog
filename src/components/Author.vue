@@ -79,4 +79,7 @@ export default {
     a
       color var(--main-color)
       margin 0 0.5em
+
+      &::after
+        display none //TODO: Remove this!
 </style>
