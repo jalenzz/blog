@@ -20,6 +20,9 @@ a:not(.button)
   color var(--main-color)
   transition 0.2s
 
+  &:hover
+    opacity .8
+
 img
   max-width 100%
 
@@ -58,7 +61,7 @@ sup
   src url('//at.alicdn.com/t/font_2048511_zlbbf8ayzn.eot')
   src url('//at.alicdn.com/t/font_2048511_zlbbf8ayzn.eot?#iefix') format('embedded-opentype'), url('//at.alicdn.com/t/font_2048511_zlbbf8ayzn.woff2') format('woff2'), url('//at.alicdn.com/t/font_2048511_zlbbf8ayzn.woff') format('woff'), url('//at.alicdn.com/t/font_2048511_zlbbf8ayzn.ttf') format('truetype'), url('//at.alicdn.com/t/font_2048511_zlbbf8ayzn.svg#iconfont') format('svg')
 
-a[target='_blank']::after
+.content-box a[target='_blank']::after
   font-family 'iconfont'
   content '\e681'
   color #aaa

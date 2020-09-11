@@ -11,7 +11,7 @@
         <h3 style="margin-top: 0" id="关于我"><a href="#关于我"></a>关于我</h3>
         <p>
           <a
-            href="https://JalenChuh.cn"
+            href="https://jalenchuh.cn"
             target="_blank"
             class="about-me"
             style="color: #0070f3"
@@ -47,7 +47,6 @@
         <p>
           如果你想联系我，可以直接在评论里留言或者通过邮件
           <a
-            style="font-family: var(--monospace-font-family)"
             href="javascript:location='mailto:\u006a\u0061\u006c\u0065\u006e\u0063\u0068\u0075\u0068\u0040\u0067\u006d\u0061\u0069\u006c\u002e\u0063\u006f\u006d';void 0"
             >jalenchuh[AT]gmail.com</a
           >
@@ -181,10 +180,10 @@ export default {
         pageKey: "https://blog.jalenchuh.cn/about",
         serverUrl: "https://artalk.jalenchuh.cn",
         gravatar: {
-          cdn: 'https://cdn.staticdn.net/avatar/'
+          cdn: "https://cdn.staticdn.net/avatar/"
         },
         readMore: {
-          pageSize: 15,
+          pageSize: 5,
           autoLoad: true
         }
       });

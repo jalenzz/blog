@@ -12,7 +12,6 @@
       </header>
     </div>
 
-
     <main class="main">
       <!-- <slot /> -->
       <!-- Re-render components on each route to force route path change.

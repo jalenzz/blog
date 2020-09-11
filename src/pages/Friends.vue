@@ -58,19 +58,9 @@ export default {
           background: "#024265"
         },
         {
-          id: "维他入我心",
-          link: "https://wtrwx.top/",
-          background: "#583066"
-        },
-        {
           id: "Linhk1606",
           link: "https://blog.lhkstudio.me/",
           background: "#b59672"
-        },
-        {
-          id: "小K同學",
-          link: "https://kksan.top/",
-          background: "#e5a5bc"
         },
         {
           id: "吃白饭的休伯利安号",
@@ -101,11 +91,6 @@ export default {
           id: "奥秘 Sir",
           link: "https://blog.say521.cn/",
           background: "#38557e"
-        },
-        {
-          id: "Hcode",
-          link: "https://www.hcode.top",
-          background: "#117cb7"
         },
         {
           id: "饭庄",

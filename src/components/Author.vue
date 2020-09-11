@@ -1,13 +1,15 @@
 <template>
   <div class="author">
-    <g-image
-      alt="Author image"
-      class="author__image"
-      src="~/assets/images/author.jpg"
-      width="180"
-      height="180"
-      blur="5"
-    />
+    <g-link to="/">
+      <g-image
+        alt="Author image"
+        class="author__image"
+        src="~/assets/images/author.jpg"
+        width="180"
+        height="180"
+        blur="5"
+      />
+    </g-link>
 
     <h1 v-if="showTitle" class="author__site-title">
       {{ $static.metadata.siteName }}
@@ -79,7 +81,4 @@ export default {
     a
       color var(--main-color)
       margin 0 0.5em
-
-      &::after
-        display none //TODO: Remove this!
 </style>

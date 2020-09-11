@@ -76,10 +76,10 @@ export default {
         pageKey: "https://blog.jalenchuh.cn/time",
         serverUrl: "https://artalk.jalenchuh.cn",
         gravatar: {
-          cdn: 'https://cdn.staticdn.net/avatar/'
+          cdn: "https://cdn.staticdn.net/avatar/"
         },
         readMore: {
-          pageSize: 15,
+          pageSize: 5,
           autoLoad: true
         }
       });
@@ -92,6 +92,11 @@ export default {
 .time-title
   padding var(--space) 0 var(--space)
   text-align center
+
+.artalk-nick a
+.artalk-avatar a
+  &::after
+    display none
 
 .post-author
   margin-top calc(var(--space) / 2)
