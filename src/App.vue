@@ -31,9 +31,10 @@
       </div>
       <div class="footer__links">
         Powered by <font-awesome :icon="['fas', 'rocket']" />
-        <a href="//gridsome.org" target="_blank">Gridsome</a> and
-        <font-awesome :icon="['fas', 'heart']" />Love. ImageHost -
-        <a href="https://www.dogedoge.com" target="_blank">DogeDoge</a>
+        <a href="//gridsome.org" target="_blank">Gridsome</a> ·
+        <font-awesome :icon="['fas', 'dog']" />
+        <a target="_blank" href="//dogedoge.com">DogeDoge</a>
+        and <font-awesome :icon="['fas', 'heart']" />Love.
       </div>
     </footer>
   </div>

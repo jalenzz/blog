@@ -16,7 +16,7 @@
     </h1>
 
     <p class="author__intro">
-      哟，你终于来啦 (≧∇≦)ﾉ
+      你终于来啦
     </p>
 
     <p class="author__links">

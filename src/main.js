@@ -13,35 +13,41 @@ import { Pager } from "gridsome";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { config, library } from "@fortawesome/fontawesome-svg-core";
 import {
-  faHome,
   faRss,
-  faIdBadge,
-  faRocket,
+  faDog,
+  faHome,
   faHeart,
-  faCaretSquareUp,
-  faArrowUp,
-  faUserFriends,
-  faArchive,
   faPlane,
-  faPenSquare
+  faRocket,
+  faIdBadge,
+  faArchive,
+  faArrowUp,
+  faPenSquare,
+  faAngleRight,
+  faUserFriends,
+  faCaretSquareUp,
+  faAngleDoubleRight
 } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 
 config.autoAddCss = false;
 library.add(
-  faGithub,
-  faHome,
   faRss,
-  faIdBadge,
-  faRocket,
+  faDog,
+  faHome,
   faHeart,
-  faCaretSquareUp,
-  faArrowUp,
-  faUserFriends,
-  faArchive,
   faPlane,
-  faPenSquare
+  faRocket,
+  faGithub,
+  faIdBadge,
+  faArchive,
+  faArrowUp,
+  faPenSquare,
+  faAngleRight,
+  faUserFriends,
+  faCaretSquareUp,
+  faAngleDoubleRight
 );
 
 // notifications
