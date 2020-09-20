@@ -1,9 +1,6 @@
 <template>
   <div class="post-tags">
-    <g-link
-      class="post-tags__link category"
-      :to="post.cate.path"
-    >
+    <g-link class="post-tags__link category" :to="post.cate.path">
       <font-awesome :icon="['fas', 'angle-double-right']" />
       {{ post.cate.title }}
     </g-link>

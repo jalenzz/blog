@@ -84,13 +84,17 @@ php -r "copy('Config.example.php', 'Config.php');"
 
 ## 添加站点
 
-更改 `ArtalkServePhp` 文件夹的权限为 755，并应用到子目录
+更改 `ArtalkServePhp` 文件夹的权限为 755，所有者 www，并应用到子目录。
 
 ![更改权限](https://rmt.dogedoge.com/fetch/royce/storage/artalk-api-php/authority.png?fmt=webp)
 
-在宝塔面板的站点页面添加站点，根目录选择 `ArtalkServePhp/public` 文件夹
+在宝塔面板的站点页面添加站点，根目录选择 `ArtalkServePhp`。
 
-![添加站点](https://rmt.dogedoge.com/fetch/royce/storage/artalk-api-php/site.png?fmt=webp)
+![添加站点](https://rmt.dogedoge.com/fetch/royce/storage/artalk-api-php/site.png?fmt=webp&q=80)
+
+然后在站点的设置中修改运行目录为 `/public`。
+
+![设置运行目录](https://rmt.dogedoge.com/fetch/royce/storage/artalk-api-php/run_directory.png?fmt=webp)
 
 将域名用 A 记录解析到服务器的**公网 IP**
 

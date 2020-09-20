@@ -42,37 +42,33 @@
           <s>坚定的</s>括号不换行党！只要你也不换行，我们就是好朋友
         </p>
 
-        <p>我 ENFJ-A 主人公 / 平等 · 人权 · 劳动。</p>
-
         <p>
           如果你想联系我，可以直接在评论里留言或者通过邮件
           <a
             href="javascript:location='mailto:\u006a\u0061\u006c\u0065\u006e\u0063\u0068\u0075\u0068\u0040\u0067\u006d\u0061\u0069\u006c\u002e\u0063\u006f\u006d';void 0"
-            >jalenchuh[AT]gmail.com</a
+            >jalenchuh at gmail com</a
           >
         </p>
 
         <h3 id="关于博客"><a href="#关于博客"></a>关于博客</h3>
         <p>
           本站使用
-          <a href="http://gridsome.org/" target="_blank">Gridsome</a> 和
           <a
             href="https://github.com/gridsome/gridsome-starter-blog"
             target="_blank"
             >gridsome-starter-blog</a
           >
-          主题搭建，参考
-          <a href="https://spencerwoo.com/" target="_blank">Spencer</a> &
+          搭建，参考
+          <a href="https://blog.spencerwoo.com/" target="_blank">Spencer</a> &
           <a href="https://blog.monsterx.cn/" target="_blank">Monstx</a>
-          进行了修改。 如有疑问请查看源码：
+          进行了修改。 如有疑问可以查看源码：
           <a href="https://github.com/jalenchuh/blog" target="_blank"
             >@jalenchuh/blog</a
           >。
         </p>
         <p>
           本博客题图均为自制，大部分素材来自
-          <a href="https://icons8.com/" target="_blank">icons8</a> 和
-          <a href="https://stories.freepik.com/" target="_blank">freepik</a>。
+          <a href="https://freepik.com/" target="_blank">freepik</a>。
         </p>
         <div class="admonition admonition-important">
           <div class="admonition-heading">
