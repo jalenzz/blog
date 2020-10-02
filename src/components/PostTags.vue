@@ -25,7 +25,7 @@ export default {
 <style lang="stylus">
 .post-tags
   margin 1em 0 0
-
+  font-weight: 400;
   &__link
     margin 0.3em 0.6em 0.3em 0
     font-size 0.8em

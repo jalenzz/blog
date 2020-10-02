@@ -290,6 +290,9 @@ query Post ($id: ID!, $previousElement: ID!, $nextElement: ID!) {
     border-top 1px solid var(--border-color)
     margin 0 0
 
+    &::before
+      display none
+
   .footnote-backref
     display inline
 

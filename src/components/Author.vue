@@ -20,21 +20,22 @@
     </p>
 
     <p class="author__links">
-      <g-link href="https://travellings.now.sh/" target="_blank"
+      <g-link href="https://travellings.now.sh/" title="开往" target="_blank"
         ><font-awesome :icon="['fas', 'plane']"
       /></g-link>
       <g-link
         href="//blog.jalenchuh.cn/atom.xml"
+        title="RSS 订阅"
         target="_blank"
         style="color: #F5A623;"
         ><font-awesome :icon="['fas', 'rss']"/></g-link
-      ><g-link to="/archives" style="color: var(--title-color);"
+      ><g-link to="/archives" title="归档" style="color: var(--title-color);"
         ><font-awesome :icon="['fas', 'archive']"/></g-link
-      ><g-link to="/friends" style="color: #06a878;"
+      ><g-link to="/friends" title="友链" style="color: #06a878;"
         ><font-awesome :icon="['fas', 'user-friends']"/></g-link
-      ><g-link to="/about" style="color: #117cb7"
+      ><g-link to="/about" title="关于" style="color: #117cb7"
         ><font-awesome :icon="['fas', 'id-badge']"/></g-link
-      ><g-link to="/time" style="color: #FF7790"
+      ><g-link to="/time" title="时光机" style="color: #FF7790"
         ><font-awesome :icon="['fas', 'rocket']"
       /></g-link>
     </p>
