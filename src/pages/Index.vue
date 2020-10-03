@@ -110,6 +110,9 @@ nav
     border 2px var(--main-color)
     border-style dashed
 
+.posts
+  margin-top 2.5em
+
 #back-to-top
   position fixed
   bottom 40px
