@@ -5,44 +5,8 @@
     @click.prevent="toggleTheme"
     class="toggle-theme"
   >
-    <svg
-      v-if="darkTheme"
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      class="feather feather-sun"
-    >
-      <circle cx="12" cy="12" r="5"></circle>
-      <line x1="12" y1="1" x2="12" y2="3"></line>
-      <line x1="12" y1="21" x2="12" y2="23"></line>
-      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-      <line x1="1" y1="12" x2="3" y2="12"></line>
-      <line x1="21" y1="12" x2="23" y2="12"></line>
-      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-    </svg>
-    <svg
-      v-else
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      class="feather feather-moon"
-    >
-      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-    </svg>
+    <div v-if="darkTheme" class="feather feather-sun"></div>
+    <div v-else class="feather feather-moon"></div>
   </button>
 </template>
 
@@ -69,14 +33,80 @@ export default {
 
 <style lang="stylus">
 .toggle-theme
-  background-color transparent
-  border 0
-  color var(--body-color)
+  opacity 0.65
+  position relative
+  border-radius 5px
+  width 40px
+  height 25px
+  display flex
+  -webkit-box-align center
+  align-items center
+  -webkit-box-pack center
+  justify-content center
+  transition opacity 0.3s ease 0s
+  border none
+  outline none
+  background none
   cursor pointer
+  padding 0px
+  appearance none
 
-  &:hover
-    opacity 0.8
+.feather
+  position relative
+  width 24px
+  height 24px
+  border-radius 50%
+  transition all 0.45s ease 0s
 
-  &:focus
-    outline none
+  &::before
+    content ''
+    position absolute
+    right -9px
+    top -9px
+    height 24px
+    width 24px
+    border-radius 50%
+    transition transform 0.45s ease 0s
+
+  &::after
+    content ''
+    width 8px
+    height 8px
+    border-radius 50%
+    margin -4px 0px 0px -4px
+    position absolute
+    top 50%
+    left 50%
+    box-shadow 0 -23px 0 var(--body-color), 0 23px 0 var(--body-color), 23px 0 0 var(--body-color), -23px 0 0 var(--body-color), 15px 15px 0 var(--body-color), -15px 15px 0 var(--body-color), 15px -15px 0 var(--body-color), -15px -15px 0 var(--body-color)
+    transition all 0.35s ease 0s
+
+  &-sun
+    border 4px solid var(--body-color)
+    background-color var(--body-color)
+    transform scale(0.55)
+    overflow visible
+    box-shadow none
+
+    &::before
+      border 2px solid var(--body-color)
+      transform translate(14px, -14px)
+      opacity 0
+
+    &::after
+      transform scale(1)
+
+  &-moon
+    border none
+    background-color transparent
+    transform scale(1)
+    overflow hidden
+    box-shadow inset 8px -8px 0px 0px var(--body-color)
+
+    &::before
+      border none
+      transform translate(0px, 0px)
+      opacity 1
+
+    &::after
+      transform scale(0)
 </style>
