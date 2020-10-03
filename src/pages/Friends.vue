@@ -55,27 +55,27 @@ export default {
         {
           id: "Neworld2002",
           link: "https://neworld2002.github.io/",
-          background: "#024265"
+          background: "#078589"
         },
         {
           id: "Linhk1606",
           link: "https://blog.lhkstudio.me/",
-          background: "#b59672"
+          background: "#dfa07c"
         },
         {
           id: "吃白饭的休伯利安号",
           link: "https://eatrice.top/",
-          background: "#253d9d"
+          background: "#384ea7"
         },
         {
           id: "JimmyQin",
           link: "https://apde.xyz/",
-          background: "#005240"
+          background: "#108269"
         },
         {
           id: "Sanarous",
           link: "https://bestzuo.cn/",
-          background: "#bb9c64"
+          background: "#cea463"
         },
         {
           id: "keith",
@@ -85,7 +85,7 @@ export default {
         {
           id: "Vince",
           link: "https://i.vince.pub",
-          background: "#747273"
+          background: "#c97f76"
         },
         {
           id: "奥秘 Sir",
@@ -95,7 +95,7 @@ export default {
         {
           id: "饭庄",
           link: "https://fanfan.im",
-          background: "#a3110f"
+          background: "#c83634"
         },
         {
           id: "泫",
@@ -105,17 +105,22 @@ export default {
         {
           id: "Flexiston",
           link: "https://www.flexiston.com",
-          background: "#4b413f"
+          background: "#a58884"
         },
         {
           id: "ChrAlpha",
           link: "https://ichr.me",
-          background: "#084267"
+          background: "#1d89a6"
         },
         {
           id: "Uncle_drew",
           link: "https://cndrew.cn/",
-          background: "#393316"
+          background: "#918b8b"
+        },
+        {
+          id: "Eren",
+          link: "https://erenship.com/",
+          background: "#d37597"
         }
       ]
     };
