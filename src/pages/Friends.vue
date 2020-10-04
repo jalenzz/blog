@@ -121,6 +121,11 @@ export default {
           id: "Eren",
           link: "https://erenship.com/",
           background: "#d37597"
+        },
+        {
+          id: "Austen",
+          link: "https://blogbyme.cn/",
+          background: "#e1afa5"
         }
       ]
     };
