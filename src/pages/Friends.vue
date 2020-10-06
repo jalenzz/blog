@@ -126,6 +126,11 @@ export default {
           id: "Austen",
           link: "https://blogbyme.cn/",
           background: "#e1afa5"
+        },
+        {
+          id: "CYF",
+          link: "https://blog.cyfan.top/",
+          background: "#f6b352"
         }
       ]
     };
