@@ -71,12 +71,12 @@ export default {
       window.Artalk = require("artalk");
       const artalk = new Artalk({
         el: "#Artalk",
-        placeholder: "说点什么 (づ￣ 3￣)づ",
+        placeholder: "Jalen 专属时光机",
         defaultAvatar: "mp",
         pageKey: "https://blog.jalenchuh.cn/time",
         serverUrl: "https://artalk.jalenchuh.cn",
         gravatar: {
-          cdn: "https://cdn.staticdn.net/avatar/"
+          cdn: "https://dn-qiniu-avatar.qbox.me/avatar/"
         },
         readMore: {
           pageSize: 5,

@@ -171,12 +171,12 @@ export default {
       window.Artalk = require("artalk");
       const artalk = new Artalk({
         el: "#Artalk",
-        placeholder: "说点什么 (づ￣ 3￣)づ",
+        placeholder: "欢迎留言",
         defaultAvatar: "mp",
         pageKey: "https://blog.jalenchuh.cn/about",
         serverUrl: "https://artalk.jalenchuh.cn",
         gravatar: {
-          cdn: "https://cdn.staticdn.net/avatar/"
+          cdn: "https://dn-qiniu-avatar.qbox.me/avatar/"
         },
         readMore: {
           pageSize: 5,

@@ -1651,7 +1651,7 @@ arrify@^1.0.1:
 
 "artalk@https://github.com/jalenchuh/Artalk.git":
   version "1.0.6"
-  resolved "https://github.com/jalenchuh/Artalk.git#020da4ce8136d849994269bc2684e21fba96ac32"
+  resolved "https://github.com/jalenchuh/Artalk.git#d5660bf49875b5427c5baba13c70c610f400bafe"
   dependencies:
     core-js "3"
 
