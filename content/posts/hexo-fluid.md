@@ -210,7 +210,7 @@ footer a:hover
 
 ### 标题文字特效
 
-![演示](https://cos.royce2003.top/60394/01.webp-default)
+![演示](https://rmt.dogedoge.com/fetch/royce/storage/hexo-fluid/01.webp)
 
 文字触碰动画（源网，找不到原站链接了）
 
@@ -364,7 +364,7 @@ hexo.extend.generator.register('_messageboard', function (locals) {
 换了给好看点的播放器，在指定页面加载
 需要加载的页面加入
 
-![音乐播放器](https://cos.royce2003.top/60394/02.webp-default)
+![音乐播放器](https://rmt.dogedoge.com/fetch/royce/storage/hexo-fluid/02.png?fmt=webp)
 
 #### JS
 
@@ -1022,8 +1022,6 @@ input[type=radio].orange
 [^5]
 
 `hexo-tag-cloud` 插件是 MikeCoder 写的一个 Hexo 博客的标签云插件
-
-![GIF.gif](https://cos.royce2003.top/db44ecae/03.webp-default)
 
 #### 安装插件
 

@@ -33,11 +33,11 @@ WebP 是一种现代图像格式，可为 Web 上的图像提供出色的无损�
 
 Google Chrome，Firefox，Edge，Opera 等都支持 WebP
 
-[^2]![支持列表](https://cos.royce2003.top/12013/01.webp-default)
+[^2]![支持列表](https://rmt.dogedoge.com/fetch/royce/storage/use-webp/01.png?fmt=webp)
 
 ~~万恶的~~ Safari 居然还不支持，但当看到下方的 `Safari is experimenting with supporting WebP images.`[^3] 时，还兴奋了一小会，但点进去之后...
 
-![Safari 支持情况](https://cos.royce2003.top/12013/02.webp-default)
+![Safari 支持情况](https://rmt.dogedoge.com/fetch/royce/storage/use-webp/02.png?fmt=webp)
 
 2016 年 7 月 19 日 ... wd*md:anger::anger:  
 而且 2016 年就内测过，居然给删了...  
@@ -51,21 +51,21 @@ Google Chrome，Firefox，Edge，Opera 等都支持 WebP
 
 淘宝官网中大部分图片均采用了 WebP 格式
 
-![淘宝](https://cos.royce2003.top/12013/03.webp-default)
+![淘宝](https://rmt.dogedoge.com/fetch/royce/storage/use-webp/03.png?fmt=webp)
 
 对于部分较小的图片仍采用 JPG or PNG 格式
 
-![淘宝](https://cos.royce2003.top/12013/04.webp-default)
+![淘宝](https://rmt.dogedoge.com/fetch/royce/storage/use-webp/04.png?fmt=webp)
 
 #### 京东
 
 京东官网中大部分图片均采用了 WebP 格式
 
-![京东](https://cos.royce2003.top/12013/05.webp-default)
+![京东](https://rmt.dogedoge.com/fetch/royce/storage/use-webp/05.png?fmt=webp)
 
 对于极少的图片仍采用 JPG or PNG 格式，如 Logo 等
 
-![京东](https://cos.royce2003.top/12013/06.webp-default)
+![京东](https://rmt.dogedoge.com/fetch/royce/storage/use-webp/06.png?fmt=webp)
 
 #### 腾讯、阿里云
 
@@ -74,21 +74,21 @@ Google Chrome，Firefox，Edge，Opera 等都支持 WebP
 ### 大小
 
 [^4]
-![PNG WebP 对比1](https://cos.royce2003.top/12013/07.webp-default)
-![PNG WebP 对比2](https://cos.royce2003.top/12013/08.webp-default)
+![PNG WebP 对比1](https://rmt.dogedoge.com/fetch/royce/storage/use-webp/07.png?fmt=webp)
+![PNG WebP 对比2](https://rmt.dogedoge.com/fetch/royce/storage/use-webp/08.png?fmt=webp)
 
 这些都是较小图片的对比，感觉没差太多，于是乎自己找了几张大图测了下
 图片名字为 分辨率 + 大小
 
-![大图](https://cos.royce2003.top/12013/09.webp-default)
+![大图](https://rmt.dogedoge.com/fetch/royce/storage/use-webp/09.png?fmt=webp)
 
 好像图片有点大诶，由于采用本地软件[智图](https://zhitu.isux.us/)转换，CPU 直接拉满了 qaq:sob:
 
-![CPU](https://cos.royce2003.top/12013/10.webp-default)
+![CPU](https://rmt.dogedoge.com/fetch/royce/storage/use-webp/10.png?fmt=webp)
 
 而且两张图图还出错了 qaq，就成功了两张:sob:
 
-![出错](https://cos.royce2003.top/12013/11.webp-default)
+![出错](https://rmt.dogedoge.com/fetch/royce/storage/use-webp/11.png?fmt=webp)
 
 这数据吓到我了  
 5.7 MB 直接被干到了 74.2 KB  
@@ -96,7 +96,7 @@ Google Chrome，Firefox，Edge，Opera 等都支持 WebP
 
 再来看看网络上一个[工具](https://renzhezhilu.gitee.io/webp2jpg-online/)的转换情况
 
-![webp2jpg-online](https://cos.royce2003.top/12013/12.webp-default)
+![webp2jpg-online](https://rmt.dogedoge.com/fetch/royce/storage/use-webp/12.png?fmt=webp)
 
 也是很吓人，不过前两张和智图比一下就效果不怎么样了，但是智图有对图片进行适当压缩，所以...
 
@@ -150,11 +150,11 @@ if ((sessionStorage.getItem('confirm') !== '1') && (/Safari/.test(navigator.user
 [转换工具地址](https://www.upyun.com/webp)
 这东西事实上是个 Demo，给用户体验用的，所以下载时需要手动右键另存为，不过它没限制上传数量啊
 
-![又拍云](https://cos.royce2003.top/12013/13.webp-default)
+![又拍云](https://rmt.dogedoge.com/fetch/royce/storage/use-webp/13.png?fmt=webp)
 
 下面这张图片为 GIF to WebP
 
-![又拍云](https://cos.royce2003.top/12013/14.webp-default)
+![又拍云](https://rmt.dogedoge.com/fetch/royce/storage/use-webp/14.png?fmt=webp)
 
 #### 优点
 
@@ -171,7 +171,7 @@ if ((sessionStorage.getItem('confirm') !== '1') && (/Safari/.test(navigator.user
 如果使用又拍云 CDN，可以开启 WebP 自适应  
 智能判断浏览器是否支持 WebP，来决定返回 WebP 格式图片还是原图，从而减少网络传输消耗
 
-![智能 WebP](https://cos.royce2003.top/12013/15.webp-default)
+![智能 WebP](https://rmt.dogedoge.com/fetch/royce/storage/use-webp/15.png?fmt=webp)
 
 ### 智图
 
@@ -180,7 +180,7 @@ if ((sessionStorage.getItem('confirm') !== '1') && (/Safari/.test(navigator.user
 
 软件中需要在右上角的菜单中打开生成 WebP
 
-![智图](https://cos.royce2003.top/12013/16.webp-default)
+![智图](https://rmt.dogedoge.com/fetch/royce/storage/use-webp/16.png?fmt=webp)
 
 会在图片相同位置新建一个文件夹，里面包含了智能处理后的图片和一个 WebP 文件夹
 
@@ -204,7 +204,7 @@ if ((sessionStorage.getItem('confirm') !== '1') && (/Safari/.test(navigator.user
 
 [官网](https://webp-converter.com/)
 
-![WebP Converter](https://cos.royce2003.top/12013/17.webp-default)
+![WebP Converter](https://rmt.dogedoge.com/fetch/royce/storage/use-webp/17.png?fmt=webp)
 
 options 可调节质量
 
@@ -223,7 +223,7 @@ options 可调节质量
 
 [官网](https://renzhezhilu.gitee.io/webp2jpg-online/)
 
-![webp2jpg-online](https://cos.royce2003.top/12013/18.webp-default)
+![webp2jpg-online](https://rmt.dogedoge.com/fetch/royce/storage/use-webp/18.png?fmt=webp)
 
 options 可调节质量
 
@@ -257,7 +257,7 @@ options 可调节质量
 
 这篇文章在此之前一共 18 张图片，PNG 格式大小为 25.1 MB，Snipaste 直接100质量输出，智图转 WebP 之后仅 645 KB，直接就省了 24 MB 啊:+1:
 
-![总结](https://cos.royce2003.top/12013/19.webp-default)
+![总结](https://rmt.dogedoge.com/fetch/royce/storage/use-webp/19.png?fmt=webp)
 
 [^1]: 参考 [A new image format for the Web](https://developers.google.com/speed/webp)
 [^2]: 图片来源 [Can I use...](https://caniuse.com/#feat=webp)
