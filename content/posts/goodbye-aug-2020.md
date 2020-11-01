@@ -2,6 +2,7 @@
 title: "再见八月"
 date: 2020-08-31
 published: true
+license: true
 slug: goodbye-aug-2020
 tags: ['八月', '新']
 cate: life

@@ -2,6 +2,7 @@
 title: "Hexo Fluid 暗黑模式"
 date: 2020-04-02
 published: true
+license: true
 slug: hexo-dark-mode
 tags: ['DarkMode', 'Hexo']
 cate: tech

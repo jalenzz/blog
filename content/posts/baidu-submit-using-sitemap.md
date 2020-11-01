@@ -2,6 +2,7 @@
 title: "利用 GitHub 从 sitemap 中提取链接并推送至百度"
 date: 2020-08-11 09:05:19
 published: true
+license: true
 slug: baidu-submit-using-sitemap
 tags: ['GitHub Action', 'Python']
 cate: tech

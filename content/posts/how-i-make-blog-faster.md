@@ -2,6 +2,7 @@
 title: "我是如何加速博客的"
 date: 2020-07-30
 published: true
+license: true
 slug: how-i-make-blog-faster
 tags: ['Analytics', 'Static', 'Preloading']
 cate: tech

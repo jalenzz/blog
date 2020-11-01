@@ -2,6 +2,7 @@
 title: "《生死功课》"
 date: 2020-09-19 20:43:50
 published: true
+license: true
 slug: the-death-class
 tags: ["生", "死"]
 cate: life

@@ -2,6 +2,7 @@
 title: "爱折腾的少年｜新人报道"
 date: 2020-07-07
 published: true
+license: true
 slug: newcomer-to-sspai
 tags: ['SSPAI', 'Newcomer']
 cate: life

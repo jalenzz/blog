@@ -2,6 +2,7 @@
 title: "Artalk 自托管评论系统的后端部署"
 date: 2020-08-23
 published: true
+license: true
 slug: artalk-api-php
 tags: ['Artalk', 'PHP']
 cate: tech

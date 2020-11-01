@@ -2,6 +2,7 @@
 title: "Hello World"
 date: 2019-11-24
 published: true
+license: true
 slug: hello-world
 cate: life
 cover_image: "./images/hello-world.png"

@@ -2,6 +2,7 @@
 title: "写在计算机会考前"
 date: 2020-06-20
 published: true
+license: true
 slug: before-computer-exam
 cate: life
 canonical_url: false

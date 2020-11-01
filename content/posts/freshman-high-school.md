@@ -2,6 +2,7 @@
 title: "19-20 学年总结"
 date: 2020-07-26
 published: true
+license: true
 slug: freshman-high-school
 cate: life
 cover_image: "./images/freshman-high-school.png"

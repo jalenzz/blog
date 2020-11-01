@@ -2,6 +2,7 @@
 title: "招商银行宝可梦联名卡开箱"
 date: 2020-08-27
 published: true
+license: true
 slug: cmb-pokemon-card
 tags: ['招商银行', 'Pokémon']
 cate: life

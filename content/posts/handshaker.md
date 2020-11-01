@@ -2,6 +2,7 @@
 title: "HandShaker 好看实用的手机管理工具"
 date: 2020-04-26
 published: true
+license: true
 slug: handshaker
 tags: ['HandShaker']
 cate: tech

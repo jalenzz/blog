@@ -2,6 +2,7 @@
 title: "「月记」你好高二"
 date: 2020-10-02
 published: true
+license: true
 slug: hi-sophomore
 tags: ['国庆', '高二']
 cate: life

@@ -2,6 +2,7 @@
 title: "P3368 【模板】树状数组 2"
 date: 2020-03-26
 published: true
+license: true
 slug: fenwick-tree-2
 tags: ['Algorithm']
 cate: tech

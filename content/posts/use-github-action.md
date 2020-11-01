@@ -2,6 +2,7 @@
 title: "利用 GitHub Action 实现自动化"
 date: 2020-07-05
 published: true
+license: true
 slug: use-github-action
 tags: ['GitHub Action', 'CI']
 cate: tech

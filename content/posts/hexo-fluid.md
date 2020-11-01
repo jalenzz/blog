@@ -2,6 +2,7 @@
 title: "Hexo Fluid 瞎折腾"
 date: 2020-04-01
 published: true
+license: true
 slug: hexo-fluid
 tags: ['Hexo', 'Fluid']
 cate: tech

@@ -2,6 +2,7 @@
 title: "加速网页加载？我选择对图片下手"
 date: 2020-04-20
 published: true
+license: true
 slug: use-webp
 tags: ['WebP']
 cate: tech
