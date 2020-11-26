@@ -34,9 +34,7 @@
       ><g-link to="/friends" title="友链" style="color: #06a878;"
         ><font-awesome :icon="['fas', 'user-friends']"/></g-link
       ><g-link to="/about" title="关于" style="color: #117cb7"
-        ><font-awesome :icon="['fas', 'id-badge']"/></g-link
-      ><g-link to="/time" title="时光机" style="color: #FF7790"
-        ><font-awesome :icon="['fas', 'rocket']"
+        ><font-awesome :icon="['fas', 'id-badge']"
       /></g-link>
     </p>
   </div>
