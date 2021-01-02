@@ -1284,6 +1284,11 @@
   optionalDependencies:
     prettier "^1.18.2"
 
+"@waline/client@^0.9.0":
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/@waline/client/-/client-0.9.0.tgz#bc0ba82885559cad71f47cc2becb55f3a8ac8ff5"
+  integrity sha512-26zN5GURWlMyiU57o8n7HfaKAYKe/B/5pwmXjGqrwZy0uiS/sB2rT0koRa870U9E802HjLO9uq9DRypfdVjg8A==
+
 "@webassemblyjs/ast@1.9.0":
   version "1.9.0"
   resolved "https://registry.yarnpkg.com/@webassemblyjs/ast/-/ast-1.9.0.tgz#bd850604b4042459a5a41cd7d338cbed695ed964"
@@ -1648,12 +1653,6 @@ arrify@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/arrify/-/arrify-1.0.1.tgz#898508da2226f380df904728456849c1501a4b0d"
   integrity sha1-iYUI2iIm84DfkEcoRWhJwVAaSw0=
-
-"artalk@https://github.com/jalenchuh/Artalk.git":
-  version "1.0.6"
-  resolved "https://github.com/jalenchuh/Artalk.git#dddde3040ac17bab8408e34ec9c7b2d1460533b6"
-  dependencies:
-    core-js "3"
 
 asn1.js@^5.2.0:
   version "5.4.1"
@@ -2688,7 +2687,7 @@ core-js-compat@^3.6.2, core-js-compat@^3.6.5:
     browserslist "^4.8.5"
     semver "7.0.0"
 
-core-js@3, core-js@^3.6.4, core-js@^3.6.5:
+core-js@^3.6.4, core-js@^3.6.5:
   version "3.6.5"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.6.5.tgz#7395dc273af37fb2e50e9bd3d9fe841285231d1a"
   integrity sha512-vZVEEwZoIsI+vPEuoF9Iqf5H7/M3eeQqWlQnYa8FSKKePuYTf5MWnxb5SDAzCa60b3JBRS5g9b+Dq7b1y/RCrA==

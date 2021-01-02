@@ -101,7 +101,7 @@
       </div>
     </div>
 
-    <div class="artalk-cards">
+    <div class="waline-cards">
       <details class="admonition admonition-note">
         <summary>Comment</summary>
         <p>
@@ -109,7 +109,7 @@
           你应该懂得如何发表适当的观点，请对自己的言论负责。
         </p>
       </details>
-      <div id="Artalk" />
+      <div id="waline"></div>
     </div>
 
     <transition name="fade">
@@ -127,7 +127,6 @@
 </template>
 
 <script>
-import "artalk/dist/Artalk.css";
 import Author from "~/components/Author";
 
 export default {
@@ -168,21 +167,12 @@ export default {
   },
   mounted() {
     if (process.env.NODE_ENV === "production") {
-      window.Artalk = require("artalk");
-      const artalk = new Artalk({
-        el: "#Artalk",
-        placeholder: "欢迎留言",
-        defaultAvatar: "mp",
-        pageKey: "https://blog.jalenchuh.cn/about",
-        serverUrl: "https://artalk.jalenchuh.cn",
-        gravatar: {
-          cdn: "https://dn-qiniu-avatar.qbox.me/avatar/"
-        },
-        readMore: {
-          pageSize: 5,
-          autoLoad: true
-        }
-      });
+      const Waline = require('@waline/client');
+      new Waline({
+        el: '#waline',
+        serverURL: 'https://api.jalenchuh.cn'
+        // other config
+      })
     }
   }
 };
@@ -210,7 +200,7 @@ export default {
     &::after
       display none !important //TODO: Remove this!
 
-.artalk-cards
+.waline-cards
   font-family var(--base-font-family)
   background var(--at-bg-main)
   max-width var(--content-width)
