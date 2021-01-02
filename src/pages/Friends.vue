@@ -69,7 +69,7 @@ export default {
         },
         {
           id: "JimmyQin",
-          link: "https://apde.xyz/",
+          link: "https://jimmyqin.cn/",
           background: "#108269"
         },
         {
@@ -101,11 +101,6 @@ export default {
           id: "泫",
           link: "https://blog.cugxuan.cn",
           background: "#5aa979"
-        },
-        {
-          id: "Flexiston",
-          link: "https://www.flexiston.com",
-          background: "#a58884"
         },
         {
           id: "ChrAlpha",
