@@ -167,12 +167,12 @@ export default {
   },
   mounted() {
     if (process.env.NODE_ENV === "production") {
-      const Waline = require('@waline/client');
+      const Waline = require("@waline/client");
       new Waline({
-        el: '#waline',
-        serverURL: 'https://api.jalenchuh.cn'
+        el: "#waline",
+        serverURL: "https://api.jalenchuh.cn"
         // other config
-      })
+      });
     }
   }
 };
@@ -205,7 +205,6 @@ export default {
   background var(--at-bg-main)
   max-width var(--content-width)
   margin 20px auto 100px
-  box-shadow 1px 1px 5px 0 rgba(0, 0, 0, 0.02), 1px 1px 15px 0 rgba(0, 0, 0, 0.03)
 
   details
     margin 0 auto

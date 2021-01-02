@@ -166,20 +166,20 @@ export default {
   },
   mounted() {
     // Add post outdated notification banner
-    const today = new Date()
-    const publishTime = new Date(this.$page.post.date)
+    const today = new Date();
+    const publishTime = new Date(this.$page.post.date);
     const publishedDays = Math.ceil(
       (today - publishTime) / (1000 * 60 * 60 * 24)
-    )
-    this.publishedDays = publishedDays
+    );
+    this.publishedDays = publishedDays;
 
     if (process.env.NODE_ENV === "production") {
-      const Waline = require('@waline/client');
+      const Waline = require("@waline/client");
       new Waline({
-        el: '#waline',
-        serverURL: 'https://api.jalenchuh.cn'
+        el: "#waline",
+        serverURL: "https://api.jalenchuh.cn"
         // other config
-      })
+      });
     }
   }
 };
@@ -319,7 +319,6 @@ query Post ($id: ID!, $previousElement: ID!, $nextElement: ID!) {
   background var(--at-bg-main)
   max-width var(--content-width)
   margin 20px auto 100px
-  box-shadow 1px 1px 5px 0 rgba(0, 0, 0, 0.02), 1px 1px 15px 0 rgba(0, 0, 0, 0.03)
 
   details
     margin 0 auto
@@ -418,5 +417,4 @@ query Post ($id: ID!, $previousElement: ID!, $nextElement: ID!) {
 
     &-item
       margin 0 2rem 1em 0
-
 </style>
