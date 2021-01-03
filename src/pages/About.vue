@@ -166,14 +166,12 @@ export default {
     }
   },
   mounted() {
-    if (process.env.NODE_ENV === "production") {
-      const Waline = require("@waline/client");
-      new Waline({
-        el: "#waline",
-        serverURL: "https://api.jalenchuh.cn"
-        // other config
-      });
-    }
+    const Waline = require("@waline/client");
+    new Waline({
+      el: "#waline",
+      serverURL: "https://api.jalenchuh.cn"
+      // other config
+    });
   }
 };
 </script>
