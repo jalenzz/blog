@@ -53,6 +53,9 @@ library.add(
 // back to top
 import VueScrollTo from "vue-scrollto";
 
+// Tooltip popovers
+import VTooltip from "v-tooltip";
+
 // HTTP API
 import axios from "axios";
 
@@ -82,6 +85,9 @@ export default function(Vue, { router, head, isClient }) {
     x: false,
     y: true
   });
+
+  // Popover tooltips
+  Vue.use(VTooltip);
 
   router.beforeEach((to, from, next) => {
     if (from.name !== null) {

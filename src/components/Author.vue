@@ -20,20 +20,34 @@
     </p>
 
     <p class="author__links">
-      <g-link href="https://travellings.now.sh/" title="开往" target="_blank"
+      <g-link
+        href="https://travellings.now.sh/"
+        target="_blank"
+        v-tooltip="{ content: '🛫 开往' }"
         ><font-awesome :icon="['fas', 'plane']"
       /></g-link>
       <g-link
         href="//blog.jalenchuh.cn/atom.xml"
-        title="RSS 订阅"
         target="_blank"
         style="color: #F5A623;"
+        v-tooltip="{ content: '📫 RSS' }"
         ><font-awesome :icon="['fas', 'rss']"/></g-link
-      ><g-link to="/archives" title="归档" style="color: var(--title-color);"
+      ><g-link
+        to="/archives"
+        style="color: var(--title-color);"
+        v-tooltip="{ content: '📂 Archives' }"
         ><font-awesome :icon="['fas', 'archive']"/></g-link
-      ><g-link to="/friends" title="友链" style="color: #06a878;"
+      ><g-link
+        to="/friends"
+        title="友链"
+        style="color: #06a878;"
+        v-tooltip="{ content: '🍻 Friends' }"
         ><font-awesome :icon="['fas', 'user-friends']"/></g-link
-      ><g-link to="/about" title="关于" style="color: #117cb7"
+      ><g-link
+        to="/about"
+        title="关于"
+        style="color: #117cb7"
+        v-tooltip="{ content: '🙇‍♂️ About' }"
         ><font-awesome :icon="['fas', 'id-badge']"
       /></g-link>
     </p>
@@ -80,4 +94,96 @@ export default {
     a
       color var(--main-color)
       margin 0 0.5em
+
+.tooltip
+  display block !important
+  z-index 10000
+
+  .tooltip-inner
+    background var(--bg-content-color)
+    border-radius var(--radius)
+    padding 0.2em 0.8em 0.2em
+    box-shadow 1px 1px 5px 0 rgba(0, 0, 0, 0.02), 1px 1px 15px 0 rgba(0, 0, 0, 0.03)
+
+  .tooltip-arrow
+    width 0
+    height 0
+    border-style solid
+    position absolute
+    margin 2em
+    border-color var(--bg-content-color)
+    z-index 1
+
+  &[x-placement^='top']
+    margin-bottom 5px
+
+    .tooltip-arrow
+      border-width 5px 5px 0 5px
+      border-left-color transparent !important
+      border-right-color transparent !important
+      border-bottom-color transparent !important
+      bottom -5px
+      left calc(50% - 5px)
+      margin-top 0
+      margin-bottom 0
+
+  &[x-placement^='bottom']
+    margin-top 5px
+
+    .tooltip-arrow
+      border-width 0 5px 5px 5px
+      border-left-color transparent !important
+      border-right-color transparent !important
+      border-top-color transparent !important
+      top -5px
+      left calc(50% - 5px)
+      margin-top 0
+      margin-bottom 0
+
+  &[x-placement^='right']
+    margin-left 5px
+
+    .tooltip-arrow
+      border-width 5px 5px 5px 0
+      border-left-color transparent !important
+      border-top-color transparent !important
+      border-bottom-color transparent !important
+      left -5px
+      top calc(50% - 5px)
+      margin-left 0
+      margin-right 0
+
+  &[x-placement^='left']
+    margin-right 5px
+
+    .tooltip-arrow
+      border-width 5px 0 5px 5px
+      border-top-color transparent !important
+      border-right-color transparent !important
+      border-bottom-color transparent !important
+      right -5px
+      top calc(50% - 5px)
+      margin-left 0
+      margin-right 0
+
+  &.popover
+    .popover-inner
+      background #f9f9f9
+      color black
+      padding 24px
+      border-radius 5px
+      box-shadow 0 5px 30px rgba(black, 0.1)
+
+    .popover-arrow
+      border-color #f9f9f9
+
+  &[aria-hidden='true']
+    visibility hidden
+    opacity 0
+    transition opacity 0.15s, visibility 0.15s
+
+  &[aria-hidden='false']
+    visibility visible
+    opacity 1
+    transition opacity 0.15s
 </style>
