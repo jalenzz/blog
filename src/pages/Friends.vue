@@ -59,7 +59,7 @@ export default {
         },
         {
           id: "Linhk1606",
-          link: "https://blog.lhkstudio.me/",
+          link: "https://reqwey.vercel.app/",
           background: "#dfa07c"
         },
         {
