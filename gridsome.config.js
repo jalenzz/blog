@@ -44,7 +44,7 @@ module.exports = {
         contentTypes: ["Post"],
         feedOptions: {
           title: "Jalen's Blog",
-          description: "JalenChuh - 爱折腾的少年"
+          description: "少年的我"
         },
         rss: {
           enabled: true,
@@ -81,10 +81,9 @@ module.exports = {
       autolinkHeadings: true,
       autolinkClassName: "icon icon-link",
       plugins: [
-        ["@gridsome/remark-prismjs", { showLineNumbers: true }],
         "gridsome-plugin-remark-container",
         "gridsome-remark-katex",
-        "gridsome-remark-figure-caption"
+        ["@gridsome/remark-prismjs", { showLineNumbers: true }]
       ],
       config: {
         footnotes: true
