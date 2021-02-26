@@ -27,7 +27,7 @@
       </div>
 
       <div class="admonition admonition-warning" v-if="publishedDays >= 180">
-        <p style="margin-bottom: 0;">
+        <p style="margin-bottom: 0">
           🌶 <strong>过期警告：</strong> 本页面距今已有
           {{ publishedDays }}
           天未更新，年久失修，内容可能有所偏颇，还请仔细甄别！
@@ -46,9 +46,7 @@
         <div class="license-meta">
           <div class="license-meta-item">
             <div class="license-meta-title">本文作者</div>
-            <div class="license-meta-text">
-              Jalen
-            </div>
+            <div class="license-meta-text">Jalen</div>
           </div>
           <div class="license-meta-item">
             <div class="license-meta-title">发布于</div>
@@ -79,7 +77,7 @@
           class="navlink"
           v-if="$page.previous"
           :href="$page.previous.path"
-          style="float: left;"
+          style="float: left"
           ><span class="post__navigation__">&#9664;</span>
           {{ $page.previous.title }}</a
         >
@@ -87,7 +85,7 @@
           class="navlink"
           v-if="$page.next"
           :href="$page.next.path"
-          style="float: right;"
+          style="float: right"
           >{{ $page.next.title }}
           <span class="post__navigation__">&#9654;</span></a
         >
@@ -129,7 +127,7 @@ export default {
   components: {
     Author,
     PostMeta,
-    PostTags
+    PostTags,
   },
   metaInfo() {
     return {
@@ -137,14 +135,14 @@ export default {
       meta: [
         {
           name: "description",
-          content: this.$page.post.description
-        }
-      ]
+          content: this.$page.post.description,
+        },
+      ],
     };
   },
   data() {
     return {
-      scrolledDist: 0
+      scrolledDist: 0,
     };
   },
   methods: {
@@ -152,7 +150,7 @@ export default {
       if (process.isClient) {
         this.scrolledDist = window.scrollY;
       }
-    }
+    },
   },
   created() {
     if (process.isClient) {
@@ -176,10 +174,10 @@ export default {
     const Waline = require("@waline/client");
     new Waline({
       el: "#waline",
-      serverURL: "https://api.jalenchuh.cn"
+      serverURL: "https://api.jalenchuh.cn",
       // other config
     });
-  }
+  },
 };
 </script>
 

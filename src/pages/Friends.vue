@@ -16,8 +16,8 @@
               class="avatar"
               :src="
                 'https://rmt.dogedoge.com/fetch/royce/storage/links/' +
-                  friend.id +
-                  '.jpg?w=100'
+                friend.id +
+                '.jpg?w=100'
               "
             />
           </div>
@@ -44,92 +44,72 @@ import Author from "~/components/Author";
 
 export default {
   components: {
-    Author
+    Author,
   },
   metaInfo: {
-    title: "Friends"
+    title: "Friends",
   },
   data() {
     return {
       friends: [
         {
-          id: "Neworld2002",
-          link: "https://neworld2002.github.io/",
-          background: "#078589"
-        },
-        {
-          id: "Linhk1606",
-          link: "https://reqwey.vercel.app/",
-          background: "#dfa07c"
-        },
-        {
-          id: "吃白饭的休伯利安号",
-          link: "https://eatrice.top/",
-          background: "#384ea7"
-        },
-        {
-          id: "JimmyQin",
-          link: "https://jimmyqin.cn/",
-          background: "#108269"
+          id: "Austen",
+          link: "https://blogbyme.cn/",
+          background: "#e1afa5",
         },
         {
           id: "Sanarous",
           link: "https://bestzuo.cn/",
-          background: "#cea463"
-        },
-        {
-          id: "keith",
-          link: "https://keithqwq.com/",
-          background: "#565656"
-        },
-        {
-          id: "Vince",
-          link: "https://i.vince.pub",
-          background: "#c97f76"
-        },
-        {
-          id: "奥秘 Sir",
-          link: "https://blog.say521.cn/",
-          background: "#38557e"
-        },
-        {
-          id: "饭庄",
-          link: "https://fanfan.im",
-          background: "#c83634"
-        },
-        {
-          id: "泫",
-          link: "https://blog.cugxuan.cn",
-          background: "#5aa979"
-        },
-        {
-          id: "ChrAlpha",
-          link: "https://ichr.me",
-          background: "#1d89a6"
-        },
-        {
-          id: "Uncle_drew",
-          link: "https://cndrew.cn/",
-          background: "#918b8b"
+          background: "#cea463",
         },
         {
           id: "Eren",
           link: "https://erenship.com/",
-          background: "#d37597"
+          background: "#d37597",
         },
         {
-          id: "Austen",
-          link: "https://blogbyme.cn/",
-          background: "#e1afa5"
+          id: "keith",
+          link: "https://keithqwq.com/",
+          background: "#565656",
+        },
+        {
+          id: "ChrAlpha",
+          link: "https://blog.ichr.me/",
+          background: "#1d89a6",
+        },
+        {
+          id: "奥秘 Sir",
+          link: "https://blog.say521.cn/",
+          background: "#38557e",
+        },
+        {
+          id: "Vince",
+          link: "https://i.vince.pub/",
+          background: "#c97f76",
         },
         {
           id: "CYF",
           link: "https://blog.cyfan.top/",
-          background: "#f6b352"
-        }
-      ]
+          background: "#f6b352",
+        },
+        {
+          id: "Uncle_drew",
+          link: "https://cndrew.cn/",
+          background: "#918b8b",
+        },
+        {
+          id: "Linhk1606",
+          link: "https://reqwey.vercel.app/",
+          background: "#dfa07c",
+        },
+        {
+          id: "JimmyQin",
+          link: "https://jimmyqin.cn/",
+          background: "#108269",
+        },
+      ],
     };
-  }
+  },
 };
 </script>
 

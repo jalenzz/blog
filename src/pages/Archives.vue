@@ -3,7 +3,7 @@
     <h1 class="text-center space-bottom">Archives</h1>
 
     <div class="posts content-box">
-      <p style="opacity: 0.6;">
+      <p style="opacity: 0.6">
         <strong
           >(｡･∀･)ﾉﾞ I have published a total of {{ totalPosts }} posts,
           {{ totalWords }} words since 2019.</strong
@@ -17,7 +17,7 @@
             new Date(p.date)
               .toLocaleString("en-US", {
                 month: "short",
-                day: "2-digit"
+                day: "2-digit",
               })
               .replace(" ", ".")
           }}</span
@@ -61,11 +61,11 @@ import Author from "~/components/Author";
 
 export default {
   components: {
-    Author
+    Author,
   },
   metaInfo() {
     return {
-      title: "Archives"
+      title: "Archives",
     };
   },
   data() {
@@ -74,12 +74,12 @@ export default {
       backwardsTimeKey: [],
       totalPosts: 0,
       totalWords: 0,
-      scrolledDist: 0
+      scrolledDist: 0,
     };
   },
   methods: {
     // Covert actual number to `xx.x k` expression, see: https://url.cn/JobLixKT
-    kFormatter: num => {
+    kFormatter: (num) => {
       return Math.abs(num) > 999
         ? Math.sign(num) * (Math.abs(num) / 1000).toFixed(1) + "k"
         : Math.sign(num) * Math.abs(num);
@@ -88,7 +88,7 @@ export default {
       if (process.isClient) {
         this.scrolledDist = window.scrollY;
       }
-    }
+    },
   },
   created() {
     if (process.isClient) {
@@ -104,7 +104,7 @@ export default {
     this.totalPosts = this.$page.posts.edges.length;
 
     const timeline = {};
-    this.$page.posts.edges.forEach(post => {
+    this.$page.posts.edges.forEach((post) => {
       this.totalWords += post.node.cjkWordCount;
 
       // Render timeline views
@@ -115,12 +115,10 @@ export default {
       timeline[postYear].push(post.node);
     });
     this.timeline = timeline;
-    this.backwardsTimeKey = Object.keys(timeline)
-      .sort()
-      .reverse();
+    this.backwardsTimeKey = Object.keys(timeline).sort().reverse();
 
     this.totalWords = this.kFormatter(this.totalWords);
-  }
+  },
 };
 </script>
 

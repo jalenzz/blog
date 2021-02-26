@@ -26,7 +26,7 @@ import {
   faAngleRight,
   faUserFriends,
   faCaretSquareUp,
-  faAngleDoubleRight
+  faAngleDoubleRight,
 } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import "@fortawesome/fontawesome-svg-core/styles.css";
@@ -63,7 +63,7 @@ import axios from "axios";
 import NProgress from "nprogress";
 
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
-export default function(Vue, { router, head, isClient }) {
+export default function (Vue, { router, head, isClient }) {
   head.htmlAttrs = { lang: "zh-Hans" };
   NProgress.configure({ easing: "ease", speed: 500, showSpinner: false });
 
@@ -83,7 +83,7 @@ export default function(Vue, { router, head, isClient }) {
     force: true,
     cancelable: true,
     x: false,
-    y: true
+    y: true,
   });
 
   // Popover tooltips

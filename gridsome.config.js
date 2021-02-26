@@ -15,7 +15,7 @@ module.exports = {
   templates: {
     Post: "/posts/:slug",
     Tag: "/tag/:id",
-    Category: "/category/:id"
+    Category: "/category/:id",
   },
 
   plugins: [
@@ -29,14 +29,14 @@ module.exports = {
           // Creates a GraphQL collection from 'tags' in front-matter and adds a reference.
           tags: {
             typeName: "Tag",
-            create: true
+            create: true,
           },
           cate: {
             typeName: "Category",
-            create: true
-          }
-        }
-      }
+            create: true,
+          },
+        },
+      },
     },
     {
       use: "@microflash/gridsome-plugin-feed",
@@ -44,31 +44,31 @@ module.exports = {
         contentTypes: ["Post"],
         feedOptions: {
           title: "Jalen's Blog",
-          description: "少年的我"
+          description: "少年的我",
         },
         rss: {
           enabled: true,
-          output: "/atom.xml"
+          output: "/atom.xml",
         },
         htmlFields: ["description", "content"],
         enforceTrailingSlashes: false,
-        filterNodes: node => node.published,
-        nodeToFeedItem: node => ({
+        filterNodes: (node) => node.published,
+        nodeToFeedItem: (node) => ({
           title: node.title,
           date: node.date,
-          content: marked(node.content)
-        })
-      }
+          content: marked(node.content),
+        }),
+      },
     },
     {
       use: "@gridsome/plugin-google-analytics",
       options: {
-        id: "UA-172941976-1"
-      }
+        id: "UA-172941976-1",
+      },
     },
     {
-      use: "@gridsome/plugin-sitemap"
-    }
+      use: "@gridsome/plugin-sitemap",
+    },
   ],
 
   transformers: {
@@ -83,11 +83,11 @@ module.exports = {
       plugins: [
         "gridsome-plugin-remark-container",
         "gridsome-remark-katex",
-        ["@gridsome/remark-prismjs", { showLineNumbers: true }]
+        ["@gridsome/remark-prismjs", { showLineNumbers: true }],
       ],
       config: {
-        footnotes: true
-      }
-    }
-  }
+        footnotes: true,
+      },
+    },
+  },
 };

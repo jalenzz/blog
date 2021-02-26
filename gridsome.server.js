@@ -7,12 +7,12 @@
 
 const count = require("word-count");
 
-module.exports = function(api) {
+module.exports = function (api) {
   api.loadSource(({ addCollection }) => {
     // Use the Data store API here: https://gridsome.org/docs/data-store-api/
   });
 
-  api.onCreateNode(options => {
+  api.onCreateNode((options) => {
     if (options.internal.typeName === "Post") {
       const postContent = options.content.replace(/<\/?[^>]+(>|$)/g, "");
       const wpm = 230;
@@ -22,7 +22,7 @@ module.exports = function(api) {
       return {
         ...options,
         cjkWordCount,
-        cjkReadTime
+        cjkReadTime,
       };
     }
   });
@@ -48,15 +48,15 @@ module.exports = function(api) {
       }
     `);
 
-    data.allPost.edges.forEach(element => {
+    data.allPost.edges.forEach((element) => {
       createPage({
         path: element.node.path,
         component: "./src/templates/BlogPost.vue",
         context: {
           previousElement: element.previous ? element.previous.id : "##empty##",
           nextElement: element.next ? element.next.id : "##empty##",
-          id: element.node.id
-        }
+          id: element.node.id,
+        },
       });
     });
   });

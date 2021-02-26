@@ -15,11 +15,16 @@
       {{ $static.metadata.siteName }}
     </h1>
 
-    <p class="author__intro">
-      你终于来啦
-    </p>
+    <p class="author__intro">你终于来啦</p>
 
     <p class="author__links">
+      <g-link
+        href="https://jalenchuh.cn/"
+        target="_blank"
+        style="color: #5c6977"
+        v-tooltip="{ content: '🙋‍♂️ Portfolio' }"
+        ><font-awesome :icon="['fa', 'home']"
+      /></g-link>
       <g-link
         href="https://travellings.now.sh/"
         target="_blank"
@@ -29,20 +34,15 @@
       <g-link
         href="//blog.jalenchuh.cn/atom.xml"
         target="_blank"
-        style="color: #F5A623;"
+        style="color: #f5a623"
         v-tooltip="{ content: '📫 RSS' }"
-        ><font-awesome :icon="['fas', 'rss']"/></g-link
-      ><g-link
-        to="/archives"
-        style="color: var(--title-color);"
-        v-tooltip="{ content: '📂 Archives' }"
-        ><font-awesome :icon="['fas', 'archive']"/></g-link
+        ><font-awesome :icon="['fas', 'rss']" /></g-link
       ><g-link
         to="/friends"
         title="友链"
-        style="color: #06a878;"
+        style="color: #06a878"
         v-tooltip="{ content: '🍻 Friends' }"
-        ><font-awesome :icon="['fas', 'user-friends']"/></g-link
+        ><font-awesome :icon="['fas', 'user-friends']" /></g-link
       ><g-link
         to="/about"
         title="关于"
@@ -64,7 +64,7 @@ query {
 
 <script>
 export default {
-  props: ["showTitle"]
+  props: ["showTitle"],
 };
 </script>
 

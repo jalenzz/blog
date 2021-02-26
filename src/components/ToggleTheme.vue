@@ -14,7 +14,7 @@
 export default {
   data() {
     return {
-      darkTheme: false
+      darkTheme: false,
     };
   },
   methods: {
@@ -23,11 +23,11 @@ export default {
 
       // This is using a script that is added in index.html
       window.__setPreferredTheme(this.darkTheme ? "dark" : "light");
-    }
+    },
   },
   mounted() {
     if (window.__theme == "dark") this.darkTheme = true;
-  }
+  },
 };
 </script>
 

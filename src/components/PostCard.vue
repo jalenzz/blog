@@ -30,9 +30,9 @@ import PostTags from "~/components/PostTags";
 export default {
   components: {
     PostMeta,
-    PostTags
+    PostTags,
   },
-  props: ["post"]
+  props: ["post"],
 };
 </script>
 

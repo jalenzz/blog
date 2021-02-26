@@ -25,7 +25,7 @@
         <a
           href="http://beian.miit.gov.cn/"
           target="_blank"
-          style="text-decoration: none; cursor: default;"
+          style="text-decoration: none; cursor: default"
           >闽ICP备20005437号-2</a
         >
       </div>
@@ -46,12 +46,12 @@ import ToggleTheme from "~/components/ToggleTheme.vue";
 
 export default {
   props: {
-    showLogo: { default: true }
+    showLogo: { default: true },
   },
   components: {
     Logo,
-    ToggleTheme
-  }
+    ToggleTheme,
+  },
 };
 </script>
 
@@ -66,6 +66,7 @@ export default {
   padding 0 calc((var(--space) / 2))
   top 0
   z-index 10
+  backdrop-filter blur(32px)
 
   @media screen and (min-width: 1300px)
     // Make header sticky for large screens

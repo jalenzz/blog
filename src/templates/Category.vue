@@ -75,14 +75,14 @@ import PostMeta from "~/components/PostMeta";
 export default {
   components: {
     Author,
-    PostMeta
+    PostMeta,
   },
   metaInfo: {
-    title: "Category"
+    title: "Category",
   },
   data() {
     return {
-      scrolledDist: 0
+      scrolledDist: 0,
     };
   },
   methods: {
@@ -90,7 +90,7 @@ export default {
       if (process.isClient) {
         this.scrolledDist = window.scrollY;
       }
-    }
+    },
   },
   created() {
     if (process.isClient) {
@@ -101,7 +101,7 @@ export default {
     if (process.isClient) {
       window.removeEventListener("scroll", this.handleScroll);
     }
-  }
+  },
 };
 </script>
 
