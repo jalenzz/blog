@@ -1,6 +1,8 @@
 <template>
   <div>
-    <h1 class="tag-title text-center space-bottom"># {{ $page.tag.title }}</h1>
+    <h1 class="tag-title text-center space-bottom">
+      <font-awesome :icon="['fas', 'angle-right']" /> {{ $page.tag.title }}
+    </h1>
 
     <div class="posts">
       <div

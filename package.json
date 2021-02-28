@@ -6,7 +6,7 @@
     "build": "gridsome build",
     "develop": "gridsome develop",
     "explore": "gridsome explore",
-    "prettier": "prettier --write '**/*.{ts,js,css,html,vue}' '!{dist/**,src/.temp/**}'",
+    "prettier": "prettier --write **/*.{ts,js,css,html,vue} !{dist/**,src/.temp/**}",
     "login": "tcb login",
     "deploy": "tcb hosting deploy dist/ -e blog-17bf0f"
   },

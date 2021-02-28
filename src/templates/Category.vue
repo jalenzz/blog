@@ -1,7 +1,8 @@
 <template>
   <div>
     <h1 class="tag-title text-center space-bottom">
-      § {{ $page.category.title }}
+      <font-awesome :icon="['fas', 'angle-double-right']" />
+      {{ $page.category.title }}
     </h1>
 
     <div class="posts">
