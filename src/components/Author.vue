@@ -28,8 +28,8 @@
       <g-link
         href="https://travellings.now.sh/"
         target="_blank"
-        v-tooltip="{ content: '🛫 开往' }"
-        ><font-awesome :icon="['fas', 'plane']"
+        v-tooltip="{ content: '🚇 Travelling' }"
+        ><font-awesome :icon="['fas', 'subway']"
       /></g-link>
       <g-link
         href="//blog.jalenchuh.cn/atom.xml"
