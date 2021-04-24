@@ -61,12 +61,6 @@ module.exports = {
       },
     },
     {
-      use: "@gridsome/plugin-google-analytics",
-      options: {
-        id: "UA-172941976-1",
-      },
-    },
-    {
       use: "@gridsome/plugin-sitemap",
     },
   ],
