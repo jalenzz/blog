@@ -23,7 +23,7 @@ description: "新的学期就要开始了，加油吧少年！"
 
 非常荣幸在七月初的时候获得了少数派 Matrix 的写作权限，除去「新人报道」，暑假期间发布的两篇文章 「[我是如何加速博客的](https://sspai.com/post/61820)」和「[口腔正畸你了解吗](https://sspai.com/post/62356)」都被 Matrix 精选了，每篇的阅读量也都在三千左右。
 
-![阅读量](https://rmt.dogedoge.com/fetch/royce/storage/goodbye-aug-2020/sspai.png?fmt=webp&w=1280)
+![阅读量](https://u.jalenchuh.cn/goodbye-aug-2020/sspai.png)
 
 我自己已经非常开心了，毕竟第一次在这种平台写文章，没有技术也没有文笔😦
 

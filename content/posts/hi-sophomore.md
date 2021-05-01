@@ -50,9 +50,9 @@ description: "平平无奇的第一个月"
 
 还逛了逛市中心的老房子，很有感觉，但拍照技术一如既往的差。
 
-![小巷](https://rmt.dogedoge.com/fetch/royce/storage/hi-sophomore/1.jpg)
-![楼房间](https://rmt.dogedoge.com/fetch/royce/storage/hi-sophomore/2.jpg)
-![楼梯口](https://rmt.dogedoge.com/fetch/royce/storage/hi-sophomore/3.jpg)
-![云](https://rmt.dogedoge.com/fetch/royce/storage/hi-sophomore/4.jpg)
+![小巷](https://u.jalenchuh.cn/hi-sophomore/1.jpg)
+![楼房间](https://u.jalenchuh.cn/hi-sophomore/2.jpg)
+![楼梯口](https://u.jalenchuh.cn/hi-sophomore/3.jpg)
+![云](https://u.jalenchuh.cn/hi-sophomore/4.jpg)
 
 总之，继续努力吧！

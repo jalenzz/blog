@@ -32,11 +32,11 @@ Disqus 应该算是世界上比较有名的评论系统了，但是因为一些�
 
 如果之前服务器有整过一些自己也不知道的东西，可以先重装一次系统（宝塔推荐使用 centos 8.X 的系统），记住重装时的用户名和密码。
 
-![重装](https://rmt.dogedoge.com/fetch/royce/storage/artalk-api-php/re-install.png?fmt=webp)
+![重装](https://u.jalenchuh.cn/artalk-api-php/re-install.png)
 
 进入实列进行远程连接，选择 「终端连接」 进行 「密码认证」
 
-![远程连接](https://rmt.dogedoge.com/fetch/royce/storage/artalk-api-php/remote.png?fmt=webp)
+![远程连接](https://u.jalenchuh.cn/artalk-api-php/remote.png)
 
 输入以下命令安装宝塔
 
@@ -48,11 +48,11 @@ sh install.sh
 
 安装完成后会显示登录网址（外网）和用户名密码，需要保存。同时可能会提示进行端口放行，此时前往安全组页面查看
 
-![安全组](https://rmt.dogedoge.com/fetch/royce/storage/artalk-api-php/safe.png?fmt=webp)
+![安全组](https://u.jalenchuh.cn/artalk-api-php/safe.png)
 
 若没有相关端口的放行则需要手动添加
 
-![放行端口](https://rmt.dogedoge.com/fetch/royce/storage/artalk-api-php/port.png?fmt=webp)
+![放行端口](https://u.jalenchuh.cn/artalk-api-php/port.png)
 
 ## 安装相关内容
 
@@ -66,7 +66,7 @@ yum –y install git
 
 进入 PHP 管理页面，在禁用函数中将 `putenv` 删除
 
-![删除函数禁用](https://rmt.dogedoge.com/fetch/royce/storage/artalk-api-php/putenv.png?fmt=webp)
+![删除函数禁用](https://u.jalenchuh.cn/artalk-api-php/putenv.png)
 
 在远程连接中输入
 
@@ -87,15 +87,15 @@ php -r "copy('Config.example.php', 'Config.php');"
 
 更改 `ArtalkServePhp` 文件夹的权限为 755，所有者 www，并应用到子目录。
 
-![更改权限](https://rmt.dogedoge.com/fetch/royce/storage/artalk-api-php/authority.png?fmt=webp)
+![更改权限](https://u.jalenchuh.cn/artalk-api-php/authority.png)
 
 在宝塔面板的站点页面添加站点，根目录选择 `ArtalkServePhp`。
 
-![添加站点](https://rmt.dogedoge.com/fetch/royce/storage/artalk-api-php/site.png?fmt=webp&q=80)
+![添加站点](https://u.jalenchuh.cn/artalk-api-php/site.png)
 
 然后在站点的设置中修改运行目录为 `/public`。
 
-![设置运行目录](https://rmt.dogedoge.com/fetch/royce/storage/artalk-api-php/run_directory.png?fmt=webp)
+![设置运行目录](https://u.jalenchuh.cn/artalk-api-php/run_directory.png)
 
 将域名用 A 记录解析到服务器的**公网 IP**
 

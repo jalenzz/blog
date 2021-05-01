@@ -43,7 +43,7 @@ MEIZU 16th，用着基于 Android 8.1 的 Flyme 8，好消息是，过几天就�
 
 ### Q3：哪些 App 对你的工作 / 学习 / 生活最重要
 
-![APP](https://rmt.dogedoge.com/fetch/royce/storage/newcomer-to-sspai/01.png?fmt=webp)
+![APP](https://u.jalenchuh.cn/newcomer-to-sspai/01.png)
 
 - To Do：我的学习利器，每天早晨或提前一天制订好计划。强迫症的原因，看到未完成的就很不舒服，于是乎，只好抓紧完成任务。考前复习和长假必备。
 
@@ -65,7 +65,7 @@ iPad 完全用来学习，装的软件不多。
 
 Mark Text，一款开源的 MarkDown 编辑器，个人感觉和 Typora 体验差不多。我认为体验最佳的功能是能够直接插入 Unsplash 的图片。
 
-![Mark Text](https://rmt.dogedoge.com/fetch/royce/storage/newcomer-to-sspai/02.png?fmt=webp)
+![Mark Text](https://u.jalenchuh.cn/newcomer-to-sspai/02.png)
 
 ### Q6：在你订阅的付费服务当中哪一些是不可或缺的
 

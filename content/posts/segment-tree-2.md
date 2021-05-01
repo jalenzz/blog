@@ -74,7 +74,7 @@ canonical_url: false
 
 样例说明：
 
-![img](https://rmt.dogedoge.com/fetch/royce/storage/SegmentTree2/01.jpg?fmt=webp)
+![img](https://u.jalenchuh.cn/SegmentTree2/01.jpg)
 
 故输出应为 $17$、$22(40 \bmod 38 = 2)$
 
@@ -287,7 +287,7 @@ cheng 要 down(k)
 
 要不然就会这样，一个月了才过（虽然前面有 AC 一次）
 
-![warnning](https://rmt.dogedoge.com/fetch/royce/storage/SegmentTree2/02.png?fmt=webp)
+![warnning](https://u.jalenchuh.cn/SegmentTree2/02.png)
 
 :::
 

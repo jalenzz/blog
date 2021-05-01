@@ -6,7 +6,7 @@ license: true
 slug: after-2021-spring-festival
 tags: ['春节', '红包']
 cate: life
-cover_image: "https://rmt.dogedoge.com/fetch/royce/storage/after-2021-spring-festival/02.jpg?w=1280&h=400"
+cover_image: "https://u.jalenchuh.cn/after-2021-spring-festival/02.jpg"
 canonical_url: false
 description: "春节已过，新学期来了"
 ---
@@ -25,7 +25,7 @@ description: "春节已过，新学期来了"
 
 过年最开心的应该就是收压岁钱了😋没办法，福建压岁钱平均线真的太高了，全国第一 3500
 
-![ ](https://rmt.dogedoge.com/fetch/royce/storage/after-2021-spring-festival/ysq.jpg)
+![ ](https://u.jalenchuh.cn/after-2021-spring-festival/ysq.jpg)
 
 今年还不错，算上拜年红包勉强超过平均线，但今年收的红包其实并不多，有些人没回来过年，也有些人没给
 
@@ -41,36 +41,36 @@ description: "春节已过，新学期来了"
 
 年过完了，马上要开学了，开学考也要来了。放点这段时间拍的照片吧，拍的不好，就是记录生活。
 
-![ ](https://rmt.dogedoge.com/fetch/royce/storage/after-2021-spring-festival/01.jpg?w=1280)
+![ ](https://u.jalenchuh.cn/after-2021-spring-festival/01.jpg)
 
-![ ](https://rmt.dogedoge.com/fetch/royce/storage/after-2021-spring-festival/02.jpg?w=1280)
+![ ](https://u.jalenchuh.cn/after-2021-spring-festival/02.jpg)
 
-![ ](https://rmt.dogedoge.com/fetch/royce/storage/after-2021-spring-festival/03.jpg?w=1280)
+![ ](https://u.jalenchuh.cn/after-2021-spring-festival/03.jpg)
 
-![ ](https://rmt.dogedoge.com/fetch/royce/storage/after-2021-spring-festival/04.jpg?w=1280)
+![ ](https://u.jalenchuh.cn/after-2021-spring-festival/04.jpg)
 
-![ ](https://rmt.dogedoge.com/fetch/royce/storage/after-2021-spring-festival/05.jpg?w=1280)
+![ ](https://u.jalenchuh.cn/after-2021-spring-festival/05.jpg)
 
-![ ](https://rmt.dogedoge.com/fetch/royce/storage/after-2021-spring-festival/06.jpg?w=1280)
+![ ](https://u.jalenchuh.cn/after-2021-spring-festival/06.jpg)
 
-![ ](https://rmt.dogedoge.com/fetch/royce/storage/after-2021-spring-festival/07.jpg?w=1280)
+![ ](https://u.jalenchuh.cn/after-2021-spring-festival/07.jpg)
 
-![ ](https://rmt.dogedoge.com/fetch/royce/storage/after-2021-spring-festival/08.jpg?w=1280)
+![ ](https://u.jalenchuh.cn/after-2021-spring-festival/08.jpg)
 
-![ ](https://rmt.dogedoge.com/fetch/royce/storage/after-2021-spring-festival/09.jpg?w=1280)
+![ ](https://u.jalenchuh.cn/after-2021-spring-festival/09.jpg)
 
-![ ](https://rmt.dogedoge.com/fetch/royce/storage/after-2021-spring-festival/10.jpg?w=1280)
+![ ](https://u.jalenchuh.cn/after-2021-spring-festival/10.jpg)
 
-![ ](https://rmt.dogedoge.com/fetch/royce/storage/after-2021-spring-festival/11.jpg?w=1280)
+![ ](https://u.jalenchuh.cn/after-2021-spring-festival/11.jpg)
 
-![ ](https://rmt.dogedoge.com/fetch/royce/storage/after-2021-spring-festival/12.jpg?w=1280)
+![ ](https://u.jalenchuh.cn/after-2021-spring-festival/12.jpg)
 
-![ ](https://rmt.dogedoge.com/fetch/royce/storage/after-2021-spring-festival/13.jpg?w=1280)
+![ ](https://u.jalenchuh.cn/after-2021-spring-festival/13.jpg)
 
-![ ](https://rmt.dogedoge.com/fetch/royce/storage/after-2021-spring-festival/14.jpg?w=1280)
+![ ](https://u.jalenchuh.cn/after-2021-spring-festival/14.jpg)
 
-![ ](https://rmt.dogedoge.com/fetch/royce/storage/after-2021-spring-festival/15.jpg?w=1280)
+![ ](https://u.jalenchuh.cn/after-2021-spring-festival/15.jpg)
 
-![ ](https://rmt.dogedoge.com/fetch/royce/storage/after-2021-spring-festival/16.jpg?w=1280)
+![ ](https://u.jalenchuh.cn/after-2021-spring-festival/16.jpg)
 
-![ ](https://rmt.dogedoge.com/fetch/royce/storage/after-2021-spring-festival/17.jpg?w=1280)
+![ ](https://u.jalenchuh.cn/after-2021-spring-festival/17.jpg)

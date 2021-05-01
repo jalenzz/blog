@@ -33,4 +33,4 @@ description: "如何在死亡的启示下享受更好的生命，一堂关于勇
 
 > 在严峻的事实中崇尚真实性的存在，我们才能够发现其中的隐喻和意义。
 
-![ ](https://rmt.dogedoge.com/fetch/royce/storage/the-death-class/karl-solano-wE7iXvGMPhI-unsplash.jpg?h=1280)
+![ ](https://u.jalenchuh.cn/the-death-class/karl-solano-wE7iXvGMPhI-unsplash.jpg?h=1280)

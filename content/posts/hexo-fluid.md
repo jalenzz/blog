@@ -210,7 +210,7 @@ footer a:hover
 
 ### 标题文字特效
 
-![演示](https://rmt.dogedoge.com/fetch/royce/storage/hexo-fluid/01.webp)
+![演示](https://u.jalenchuh.cn/hexo-fluid/01.webp)
 
 文字触碰动画（源网，找不到原站链接了）
 
@@ -364,7 +364,7 @@ hexo.extend.generator.register('_messageboard', function (locals) {
 换了给好看点的播放器，在指定页面加载
 需要加载的页面加入
 
-![音乐播放器](https://rmt.dogedoge.com/fetch/royce/storage/hexo-fluid/02.png?fmt=webp)
+![音乐播放器](https://u.jalenchuh.cn/hexo-fluid/02.png)
 
 #### JS
 

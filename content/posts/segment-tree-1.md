@@ -67,7 +67,7 @@ canonical_url: false
 
 **【样例解释】**
 
-![样例解释](https://rmt.dogedoge.com/fetch/royce/storage/2024/01.png?fmt=webp)
+![样例解释](https://u.jalenchuh.cn/2024/01.png)
 
 ## 题解
 

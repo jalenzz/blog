@@ -15,9 +15,9 @@
             <img
               class="avatar"
               :src="
-                'https://rmt.dogedoge.com/fetch/royce/storage/links/' +
+                'https://u.jalenchuh.cn/links/' +
                 friend.id +
-                '.jpg?w=100'
+                '.jpg!friends'
               "
             />
           </div>

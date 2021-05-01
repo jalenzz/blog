@@ -32,7 +32,7 @@ HandShaker，**握手**？那咱**交个朋友**？还是熟悉的锤子风格�
 
 不夸张的说，我认为这或许是最好的**非系统的**安卓手机管理工具，全平台通用，不限制机型（就我目前发现的软件而言）
 
-![HandShaker](https://rmt.dogedoge.com/fetch/royce/storage/17291/01.png?w=1280&fmt=webp)
+![HandShaker](https://u.jalenchuh.cn/17291/01.png)
 
 UI 还是锤子的一贯风格
 看惯了 Material Design，再看看锤子的扁平感觉也挺不错的:laughing:
@@ -44,7 +44,7 @@ UI 还是锤子的一贯风格
 连接速度还不错的，也非常方便，第一次连接好像要在手机上同意
 ~~我第一次连的时候狂点连接，半点反应都没有，都想卸载了，然后发现是自己 zz 了~~
 
-![无线链接](https://rmt.dogedoge.com/fetch/royce/storage/17291/02.gif?w=1280)
+![无线链接](https://u.jalenchuh.cn/17291/02.gif)
 
 还可通过二维码和 USB 数据线连接
 
@@ -54,43 +54,43 @@ UI 还是锤子的一贯风格
 
 相册页面还能按照手机上的不同相册来显示
 
-![文件同步](https://rmt.dogedoge.com/fetch/royce/storage/17291/03.png?w=1280&fmt=webp)
+![文件同步](https://u.jalenchuh.cn/17291/03.png)
 
 同时，如果开启完全同步，还可将相册保存在本地，即使与手机断开连接，也能操作
 
-![完全同步](https://rmt.dogedoge.com/fetch/royce/storage/17291/04.png?w=1280&fmt=webp)
+![完全同步](https://u.jalenchuh.cn/17291/04.png)
 
 但这里的相册有个小问题，**相机相册**中的照片并不是系统相机而是**谷歌相机**，这就有的迷了，不知道是不是只有 Flyme 这样
 
 其他页面也感觉非常 nice
 
-![音乐界面](https://rmt.dogedoge.com/fetch/royce/storage/17291/05.png?w=1280&fmt=webp)
+![音乐界面](https://u.jalenchuh.cn/17291/05.png)
 
-![视频界面](https://rmt.dogedoge.com/fetch/royce/storage/17291/06.png?w=1280&fmt=webp)
+![视频界面](https://u.jalenchuh.cn/17291/06.png)
 
-![下载界面](https://rmt.dogedoge.com/fetch/royce/storage/17291/07.png?w=1280&fmt=webp)
+![下载界面](https://u.jalenchuh.cn/17291/07.png)
 
-![文件页面](https://rmt.dogedoge.com/fetch/royce/storage/17291/08.png?w=1280&fmt=webp)
+![文件页面](https://u.jalenchuh.cn/17291/08.png)
 
 文件页面的图标能看得出非常用心
 
 #### 拖拽操作
 
-![拖拽操作](https://rmt.dogedoge.com/fetch/royce/storage/17291/09.gif?w=1280)
+![拖拽操作](https://u.jalenchuh.cn/17291/09.gif)
 
 支持全类型文件双向拖拽，速度非常快，比传文件的那些软件方便多了
 
 挑了个视频文件测试，文件过大时提示 」当前传输文件过大，建议通过 USB 数据线传输「，还是非常细心啊，并且你也可以不接受建议 :joy:
 
-![提示](https://rmt.dogedoge.com/fetch/royce/storage/17291/10.png?w=1280&fmt=webp)
+![提示](https://u.jalenchuh.cn/17291/10.png)
 
 但是无线传输的速度还是同不错的，能达到将近 10MB/S
 
-![无线传输](https://rmt.dogedoge.com/fetch/royce/storage/17291/11.png?w=1280&fmt=webp)
+![无线传输](https://u.jalenchuh.cn/17291/11.png)
 
 而 USB 传输的速度能达到将近 20MB/S
 
-![USB 传输](https://rmt.dogedoge.com/fetch/royce/storage/17291/12.png?w=1280&fmt=webp)
+![USB 传输](https://u.jalenchuh.cn/17291/12.png)
 
 基本满足了传输需求，比 OneDrive 的玄学速度好太多了
 
@@ -98,19 +98,19 @@ UI 还是锤子的一贯风格
 
 文件预览在我这有点玄学，是我的食用方法不对？和拖拽一样传文件到本地，但是速度只有 2MB/s 左右，偶尔能跑的和之前一样的 8MB/s
 
-![文件预览](https://rmt.dogedoge.com/fetch/royce/storage/17291/13.png?w=1280&fmt=webp)
+![文件预览](https://u.jalenchuh.cn/17291/13.png)
 
 所以用来预览大文件不太方便，不过图片什么的还是非常方便的，图片的预览会先跳出略缩图，再加载清楚
 
 还内置了音乐播放器，可以直接播放音乐，不过功能比较简陋
 
-![音乐播放器](https://rmt.dogedoge.com/fetch/royce/storage/17291/14.png?w=1280&fmt=webp)
+![音乐播放器](https://u.jalenchuh.cn/17291/14.png)
 
 #### 闪念胶囊
 
 真的超级超级 nice 啊，非常好用，之前一直在用微软的 ToDo，手机上可以同步，UI 也做的挺不错的
 
-![闪念胶囊](https://rmt.dogedoge.com/fetch/royce/storage/17291/15.png?w=1280&fmt=webp)
+![闪念胶囊](https://u.jalenchuh.cn/17291/15.png)
 
 不过最近已经开始用闪念胶囊了，至于原因，~~我自己可能也说不出来~~，总之，感觉用着更舒服一点吧，虽然这是锤子手机内置的功能，其他手机用不了。但是认真想想，在手机上记录的 ToDo 可能更多是一些零碎的小事情，需要马上去做，记下来只是怕忘了，用负一屏自带的备忘录就可以了，而在电脑上记录的可能则是一些任务规划。
 
@@ -120,16 +120,16 @@ UI 还是锤子的一贯风格
 
 同样的，也支持一些拖拽，操作很方便
 
-![闪念胶囊拖拽](https://rmt.dogedoge.com/fetch/royce/storage/17291/16.gif?w=1280)
+![闪念胶囊拖拽](https://u.jalenchuh.cn/17291/16.gif)
 
 还能对每个胶囊添加附件，同样可以拖拽
 但是对于附件有一些小限制，一个胶囊最多添加 14 个附件
 
-![闪念胶囊附件](https://rmt.dogedoge.com/fetch/royce/storage/17291/17.gif?w=1280)
+![闪念胶囊附件](https://u.jalenchuh.cn/17291/17.gif)
 
 当然了，ToDo 必备的日期肯定也是有的
 
-![闪念胶囊日期](https://rmt.dogedoge.com/fetch/royce/storage/17291/18.png?w=1280&fmt=webp)
+![闪念胶囊日期](https://u.jalenchuh.cn/17291/18.png)
 
 ### 最后
 

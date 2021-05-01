@@ -13,10 +13,10 @@ description: "皮卡丘超可爱！"
 
 在好多个月前就申请了招商银行的海贼王联名卡，真的超好看。前几天突然发现招商银行又出了宝可梦联名卡（皮卡丘），还是透明的！超级心动，在酷安看到说可以申请平级换卡，就去试了试。从申请换卡到领卡大概一周时间，到手发现真的比图片好看！
 
-![皮卡丘联名卡](https://rmt.dogedoge.com/fetch/royce/storage/cmb-pokemon-card/2.png?fmt=webp&w=1280)
-![皮卡丘联名卡](https://rmt.dogedoge.com/fetch/royce/storage/cmb-pokemon-card/1.png?fmt=webp)
-![正面](https://rmt.dogedoge.com/fetch/royce/storage/cmb-pokemon-card/card-f.jpg?w=1280)
-![反面](https://rmt.dogedoge.com/fetch/royce/storage/cmb-pokemon-card/card-b.jpg?w=1280)
+![皮卡丘联名卡](https://u.jalenchuh.cn/cmb-pokemon-card/2.png)
+![皮卡丘联名卡](https://u.jalenchuh.cn/cmb-pokemon-card/1.png)
+![正面](https://u.jalenchuh.cn/cmb-pokemon-card/card-f.jpg)
+![反面](https://u.jalenchuh.cn/cmb-pokemon-card/card-b.jpg)
 
 ## 为什么选择招商银行
 
@@ -30,7 +30,7 @@ description: "皮卡丘超可爱！"
 
 下载招商银行 App，首页下方有个储蓄卡申请，进入即可办卡，需要满足年龄 16+ 和非虚拟手机号。也可以直接在微信公众号里办卡。办理航海王联名卡在领卡是需要注意招行对人名的翻译，比如索隆在它那的翻译就不是这个，害我找了半天。申请一般都是会通过的，但也有极少情况会不通过。
 
-![申请](https://rmt.dogedoge.com/fetch/royce/storage/cmb-pokemon-card/get.png?fmt=webp)
+![申请](https://u.jalenchuh.cn/cmb-pokemon-card/get.png)
 
 办卡是不收取任何费用的，而且第一张卡免年费，千万不要被员工骗了（有看到过这种事情，被骗说要开通 xxx 服务才能免年费）。大概一星期就会收到招行的短信，去时需要身份证和手机短信，不过一些卡可能比较紧缺，一个月才收到通知也是有可能的。有些卡貌似收到通知一周内领卡还有福利啥的。就算放在网点很久不去领卡也没关系，我就放了两个月才领的卡。
 
@@ -42,6 +42,6 @@ description: "皮卡丘超可爱！"
 
 前几天还发现招行 App 里居然给卡片做了动画！真的爱了！
 
-![展示动画](https://rmt.dogedoge.com/fetch/royce/storage/cmb-pokemon-card/animation.gif)
+![展示动画](https://u.jalenchuh.cn/cmb-pokemon-card/animation.gif)
 
 第一次办卡就喜欢上了招行，估计以后是招行的忠实用户😍

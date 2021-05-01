@@ -17,31 +17,31 @@ description: "考试结束，春节将至"
 
 铁子叫我一起去店里看看小米 11，我就说一起吃个饭，顺便叫上两个玩得很好的女生，都是兄弟了。大丰收·李家，不会很贵，四个人两百多，还挺好吃的。
 
-![ ](https://rmt.dogedoge.com/fetch/royce/storage/before-SpringFestival/lijia.jpg)
+![ ](https://u.jalenchuh.cn/before-SpringFestival/lijia.jpg)
 
 还挺巧，另一个铁子也在一个地方吃饭，路上还碰到了两个同学，其中一个最后和我们在同一家店，隔壁桌哈哈哈哈哈哈。
 
-![ ](https://rmt.dogedoge.com/fetch/royce/storage/before-SpringFestival/we.jpg?w=1280)
+![ ](https://u.jalenchuh.cn/before-SpringFestival/we.jpg)
 
 还看到了满满的皮卡丘，太可爱了
 
-![ ](https://rmt.dogedoge.com/fetch/royce/storage/before-SpringFestival/pikaqiu.jpg?w=1280)
+![ ](https://u.jalenchuh.cn/before-SpringFestival/pikaqiu.jpg)
 
 前段时间在 Miniso 买的皮卡丘也超可爱
 
-![ ](https://rmt.dogedoge.com/fetch/royce/storage/before-SpringFestival/pkq.jpg?w=1280)
+![ ](https://u.jalenchuh.cn/before-SpringFestival/pkq.jpg)
 
 结束之后回学校把停放已久的自行车骑了回去
 
-![ ](https://rmt.dogedoge.com/fetch/royce/storage/before-SpringFestival/bike.jpg?w=1280)
+![ ](https://u.jalenchuh.cn/before-SpringFestival/bike.jpg)
 
 ---
 
 之后又去了趟半天的研学，常口村，习近平总书记到过的地方。印象最深的应该是那的河水，一眼望去就给人非常干净的感觉，但是没拍多少照片，河上还有皮划艇训练队。
 
-![ ](https://rmt.dogedoge.com/fetch/royce/storage/before-SpringFestival/ck1.jpg?w=1280)
+![ ](https://u.jalenchuh.cn/before-SpringFestival/ck1.jpg)
 
-![ ](https://rmt.dogedoge.com/fetch/royce/storage/before-SpringFestival/ck2.jpg?w=1280)
+![ ](https://u.jalenchuh.cn/before-SpringFestival/ck2.jpg)
 
 ---
 
@@ -49,4 +49,4 @@ description: "考试结束，春节将至"
 
 最不习惯的是晚饭时间，五点差不多就吃完晚饭了，到晚上我又必饿，又要吃夜宵，又得长体重。现在 180/65，体重和身高应该是刚刚好，身高没变我可不想体重再往上走了。
 
-![ ](https://rmt.dogedoge.com/fetch/royce/storage/before-SpringFestival/lj.jpg?w=1280)
+![ ](https://u.jalenchuh.cn/before-SpringFestival/lj.jpg)

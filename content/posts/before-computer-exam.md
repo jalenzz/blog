@@ -70,11 +70,11 @@ description: "无聊地谈谈近况"
 
 上周，终于拿到了几个月之前申请的海贼王联名卡，贼帅。
 
-![海贼王联名卡](https://rmt.dogedoge.com/fetch/royce/storage/before-computer-exam/01.png?w=1280&fmt=webp)
+![海贼王联名卡](https://u.jalenchuh.cn/before-computer-exam/01.png)
 
 办的是招行的，而且招行 APP 活动巨多，新用户办卡绑定之后直接送 30，没套路，直接打到你卡里。其他直接送钱的活动也非常的，感觉我每个月的话费有着落了。不同的卡还附带不同福利，B站 花嫁卡送半年大会员，海贼王的卡送马克杯，三个样式随机一个，贼幸运，我收到了最喜欢的那个样式
 
-![马克杯](https://rmt.dogedoge.com/fetch/royce/storage/before-computer-exam/02.png?&fmt=webp)
+![马克杯](https://u.jalenchuh.cn/before-computer-exam/02.png?&fmt=webp)
 
 顺便，拿卡需要收验证码，这是我没想到的，打电话来的时候就告诉要带身份证啊。然后它用的翻译是「索罗」.......
 
