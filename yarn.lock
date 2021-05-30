@@ -1273,10 +1273,10 @@
   optionalDependencies:
     prettier "^1.18.2"
 
-"@waline/client@^0.14.7":
-  version "0.14.7"
-  resolved "https://registry.yarnpkg.com/@waline/client/-/client-0.14.7.tgz#951e41caa27c2d6ce09f10f04717a67e8bc3926b"
-  integrity sha512-nxggvVwuzGzzSsL6vS9oEqPfcknjAzABr8BExA1Z2fy5yE9QTa5Y4mr+6xAaprZDjotQ01VVoc2NTlgD9zkzUA==
+"@waline/client@^0.17.0":
+  version "0.17.0"
+  resolved "https://registry.yarnpkg.com/@waline/client/-/client-0.17.0.tgz#2ca3b4a8bac235e48c4f5afe36e8c7111204020e"
+  integrity sha512-Tr6SjHRmHU01zfs5tXrvrhMOa5GmVn5C5O0KGteoizh2JGK06dhAEHb47cVn4KfsTN2jtc+6ByEsqGQK1AJ+kQ==
 
 "@webassemblyjs/ast@1.9.0":
   version "1.9.0"
