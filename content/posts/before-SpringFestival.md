@@ -15,15 +15,13 @@ description: "考试结束，春节将至"
 
 ---
 
-铁子叫我一起去店里看看小米 11，我就说一起吃个饭，顺便叫上两个玩得很好的女生，都是兄弟了。大丰收·李家，不会很贵，四个人两百多，还挺好吃的。
+和铁子们聚餐
 
 ![ ](https://u.jalenchuh.cn/before-SpringFestival/lijia.jpg)
 
-还挺巧，另一个铁子也在一个地方吃饭，路上还碰到了两个同学，其中一个最后和我们在同一家店，隔壁桌哈哈哈哈哈哈。
-
 ![ ](https://u.jalenchuh.cn/before-SpringFestival/we.jpg)
 
-还看到了满满的皮卡丘，太可爱了
+满满的皮卡丘，太可爱了
 
 ![ ](https://u.jalenchuh.cn/before-SpringFestival/pikaqiu.jpg)
 

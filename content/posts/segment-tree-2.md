@@ -1,7 +1,7 @@
 ---
 title: "P3372 【模板】线段树 2"
 date: 2020-07-11
-published: true
+published: false
 license: true
 slug: segment-tree-2
 tags: ['Algorithm']

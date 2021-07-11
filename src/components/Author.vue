@@ -26,7 +26,7 @@
         ><font-awesome :icon="['fa', 'home']"
       /></g-link>
       <g-link
-        href="https://travellings.now.sh/"
+        href="https://travellings.link/"
         target="_blank"
         v-tooltip="{ content: '🚇 Travelling' }"
         ><font-awesome :icon="['fas', 'subway']"

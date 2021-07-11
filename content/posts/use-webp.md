@@ -39,8 +39,8 @@ Google Chrome，Firefox，Edge，Opera 等都支持 WebP
 
 ![Safari 支持情况](https://u.jalenchuh.cn/use-webp/02.png)
 
-2016 年 7 月 19 日 ... wd*md:anger::anger:  
-而且 2016 年就内测过，居然给删了...  
+2016 年 7 月 19 日:anger::anger:
+而且 2016 年就内测过，居然给删了...
 和 Google 竞争？没有技术做好？我肯定相信前者
 
 ### 使用情况
@@ -90,8 +90,8 @@ Google Chrome，Firefox，Edge，Opera 等都支持 WebP
 
 ![出错](https://u.jalenchuh.cn/use-webp/11.png)
 
-这数据吓到我了  
-5.7 MB 直接被干到了 74.2 KB  
+这数据吓到我了
+5.7 MB 直接被干到了 74.2 KB
 11.6 MB 直接被干到了 266 KB
 
 再来看看网络上一个[工具](https://renzhezhilu.gitee.io/webp2jpg-online/)的转换情况
@@ -100,21 +100,19 @@ Google Chrome，Firefox，Edge，Opera 等都支持 WebP
 
 也是很吓人，不过前两张和智图比一下就效果不怎么样了，但是智图有对图片进行适当压缩，所以...
 
-原本四张图总大小 87.5 MB，现在 15.7 MB  
+原本四张图总大小 87.5 MB，现在 15.7 MB
 反正都 NB 就是了
 
 再说下智图的压缩，和网络上处理的对比了下，除非放大看细节，要不然没差
-
-三张对比图放在蓝奏云上了 <https://jalen.lanzous.com/ibnfvza>
 
 顺便再说下，WebP 是支持动图的，也就是说 GIF 也可以转成 WebP，不过目前我找到的大部分工具都不支持转换，[又拍云](https://www.upyun.com/webp)支持
 
 ### 总结
 
-图片体积小，支持透明、动画，不过少数浏览器不支持  
+图片体积小，支持透明、动画，不过少数浏览器不支持
 ~~万恶的~~ Safari 以后应该也是会支持的吧
 
-能有效缓解网页加载过慢的情况 ~~（不配图加载最快了）~~  
+能有效缓解网页加载过慢的情况 ~~（不配图加载最快了）~~
 还能有效缓解流量太大导致的费用过高（针对对象存储）
 
 WebP 支持 Alpha 透明和 24-bit 颜色数，例如 PNG8 中的毛边问题是不会出现的
@@ -124,9 +122,14 @@ WebP 支持 Alpha 透明和 24-bit 颜色数，例如 PNG8 中的毛边问题是
 但是有的时候就很玄学了，我曾试过在 JPG 图片通过压缩工具压缩到体积很小的情况下，再去转成 WebP，体积反而变大了，这说明 JPG 比 WebP 体积更小吗？我觉得应该没有。  
 本身 JPG 的体积已经很小了，图片质量也非常差，但是大部分情况 WebP 在差不多相同大小的情况下，图片质量能明显高出很多，不排除个例
 
-真是因为这些优势，本站已将所有的图片换成了 WebP 格式（图标 icon 和个别特例除外）  
-那对于~~万恶的~~ Safari 怎么办呢？  
-加几行代码不就好了，~~简单高效（bushi）~~
+真是因为这些优势，本站已将所有的图片换成了 WebP 格式（图标 icon 和个别特例除外）
+
+:::info
+最新 Safari 已经支持 WebP 了
+:::
+
+那对于~~万恶的~~ Safari 怎么办呢？
+加几行代码不就好了，~~简单高效~~
 
 ```js
 if ((sessionStorage.getItem('confirm') !== '1') && (/Safari/.test(navigator.userAgent) && !/Chrome/.test(navigator.userAgent))) {
