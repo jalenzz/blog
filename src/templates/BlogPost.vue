@@ -415,4 +415,7 @@ query Post ($id: ID!, $previousElement: ID!, $nextElement: ID!) {
 
     &-item
       margin 0 2rem 1em 0
+
+.v[data-class=v] .vaction
+  display none
 </style>

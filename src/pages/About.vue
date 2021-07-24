@@ -240,4 +240,7 @@ export default {
 
 .fade-enter, .fade-leave-to
   opacity 0
+
+.v[data-class=v] .vaction
+  display none
 </style>
