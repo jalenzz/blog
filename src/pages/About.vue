@@ -242,5 +242,5 @@ export default {
   opacity 0
 
 .v[data-class=v] .vaction
-  display none
+  display none !important
 </style>
