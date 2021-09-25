@@ -15,9 +15,7 @@
             <img
               class="avatar"
               :src="
-                'https://u.jalenchuh.cn/links/' +
-                friend.id +
-                '.jpg!friends'
+                'https://u.jalenchuh.cn/links/' + friend.id + '.jpg!friends'
               "
             />
           </div>

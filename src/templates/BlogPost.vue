@@ -174,7 +174,7 @@ export default {
     const Waline = require("@waline/client");
     new Waline({
       el: "#waline",
-      login: 'disable',
+      login: "disable",
       dark: 'body[data-theme="dark"]',
       serverURL: "https://api.jalenchuh.cn",
       // other config
