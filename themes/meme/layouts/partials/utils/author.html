@@ -1,0 +1,48 @@
+{{- $author := dict -}}
+{{- if .Params.original | default .Site.Params.original -}}
+    {{- with .Site.Author.name -}}
+        {{- $author = merge $author (dict "name" .) -}}
+    {{- end -}}
+    {{- with .Site.Author.email -}}
+        {{- $author = merge $author (dict "email" .) -}}
+    {{- end -}}
+    {{- with .Site.Author.motto -}}
+        {{- $author = merge $author (dict "motto" .) -}}
+    {{- end -}}
+    {{- with .Site.Author.avatar -}}
+        {{- $author = merge $author (dict "avatar" .) -}}
+    {{- end -}}
+    {{- $baseURLWithLangFix := (printf "%s%s/" (strings.TrimSuffix "/" .Site.BaseURL) .Site.LanguagePrefix) -}}
+    {{- with .Site.Author.website | default $baseURLWithLangFix -}}
+        {{- $author = merge $author (dict "website" .) -}}
+    {{- end -}}
+    {{- with .Site.Copyright -}}
+        {{- $author = merge $author (dict "copyright" .) -}}
+    {{- end -}}
+    {{- with .Site.Author.twitter -}}
+        {{- $author = merge $author (dict "twitter" .) -}}
+    {{- end -}}
+{{- else -}}
+    {{- with .Params.author -}}
+        {{- $author = merge $author (dict "name" .) -}}
+    {{- end -}}
+    {{- with .Params.email -}}
+        {{- $author = merge $author (dict "email" .) -}}
+    {{- end -}}
+    {{- with .Params.motto -}}
+        {{- $author = merge $author (dict "motto" .) -}}
+    {{- end -}}
+    {{- with .Params.avatar -}}
+        {{- $author = merge $author (dict "avatar" .) -}}
+    {{- end -}}
+    {{- with .Params.website -}}
+        {{- $author = merge $author (dict "website" .) -}}
+    {{- end -}}
+    {{- with .Params.copyright -}}
+        {{- $author = merge $author (dict "copyright" .) -}}
+    {{- end -}}
+    {{- with .Params.twitter -}}
+        {{- $author = merge $author (dict "twitter" .) -}}
+    {{- end -}}
+{{- end -}}
+{{- return $author -}}

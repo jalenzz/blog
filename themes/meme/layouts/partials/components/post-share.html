@@ -1,0 +1,120 @@
+{{ if and .Site.Params.enablePostShare (.Params.share | default .Site.Params.displayPostShare) }}
+
+    {{- $title := (partial "utils/title.html" (dict "$" . "title" .Title)).rawTitle -}}
+
+    {{- $description := .Description | default (partial "utils/summary.html" .) | default .Site.Params.siteDescription | plainify | htmlUnescape -}}
+
+    {{- $images := partial "utils/images.html" . -}}
+    {{- $images = union $images (slice (.Site.Params.siteLogo | absURL)) -}}
+    {{- $images = index $images 0 -}}
+
+    {{- $hashtags := newScratch -}}
+    {{- with .Params.tags -}}
+        {{- range . -}}
+            {{- $tag := . -}}
+            {{- $url := urls.Parse (. | urlize) -}}
+            {{- $path := $url.Path -}}
+            {{- with $.Site.GetPage (printf `/tags/%s` $path) -}}
+                {{- $hashtags.Add "tags" (replace (.LinkTitle | default $tag) " " "") -}}
+            {{- end -}}
+            {{- $hashtags.Add "tags" "," -}}
+        {{- end -}}
+    {{- end -}}
+    {{- $hashtags.Set "firsttag" "%23" -}}
+    {{- $hashtags.Add "firsttag" (index (split ($hashtags.Get "tags") ",") 0) -}}
+
+    <div class="post-share">
+
+        {{ if .Site.Params.displayShareOnText }}
+            <div class="share-text">{{ i18n "shareOn" }}</div>
+        {{ end }}
+
+        <div class="share-items">
+
+            {{ if .Site.Params.shareOnTwitter }}
+                <div class="share-item twitter">
+                    {{ $url := (printf `https://twitter.com/share?url=%s&text=%s&hashtags=%s&via=%s` .Permalink $title ($hashtags.Get "tags" | default "") .Site.Params.siteTwitter) }}
+                    <a href="{{ $url }}" title="{{ i18n "shareOnTitle" }}{{ i18n "twitter" }}" target="_blank" rel="noopener">
+                        {{- partial "utils/icon.html" (dict "$" . "name" "twitter" "class" "twitter-icon") -}}
+                    </a>
+                </div>
+            {{ end }}
+
+            {{ if .Site.Params.shareOnFacebook }}
+                <div class="share-item facebook">
+                    {{ $url := (printf `https://www.facebook.com/sharer/sharer.php?u=%s&hashtag=%s` .Permalink ($hashtags.Get "firsttag" | default "")) }}
+                    <a href="{{ $url }}" title="{{ i18n "shareOnTitle" }}{{ i18n "facebook" }}" target="_blank" rel="noopener">
+                        {{- partial "utils/icon.html" (dict "$" . "name" "facebook" "class" "facebook-icon") -}}
+                    </a>
+                </div>
+            {{ end }}
+
+            {{ if .Site.Params.shareOnLinkedIn }}
+                <div class="share-item linkedin">
+                    {{ $url := (printf `https://www.linkedin.com/shareArticle?mini=true&url=%s&title=%s&summary=%s&source=%s` .Permalink $title $description .Site.Title) }}
+                    <a href="{{ $url }}" title="{{ i18n "shareOnTitle" }}{{ i18n "linkedin" }}" target="_blank" rel="noopener">
+                        {{- partial "utils/icon.html" (dict "$" . "name" "linkedin" "class" "linkedin-icon") -}}
+                    </a>
+                </div>
+            {{ end }}
+
+            {{ if .Site.Params.shareOnTelegram }}
+                <div class="share-item telegram">
+                    {{ $url := (printf `https://t.me/share/url?url=%s&text=%s` .Permalink $title) }}
+                    <a href="{{ $url }}" title="{{ i18n "shareOnTitle" }}{{ i18n "telegram" }}" target="_blank" rel="noopener">
+                        {{- partial "utils/icon.html" (dict "$" . "name" "telegram" "class" "telegram-icon") -}}
+                    </a>
+                </div>
+            {{ end }}
+
+            {{ if .Site.Params.shareOnWeibo }}
+                <div class="share-item weibo">
+                    {{ $url := (printf `https://service.weibo.com/share/share.php?&url=%s&title=%s&pic=%s&searchPic=false` .Permalink $title $images) }}
+                    <a href="{{ $url }}" title="{{ i18n "shareOnTitle" }}{{ i18n "weibo" }}" target="_blank" rel="noopener">
+                        {{- partial "utils/icon.html" (dict "$" . "name" "weibo" "class" "weibo-icon") -}}
+                    </a>
+                </div>
+            {{ end }}
+
+            {{ if .Site.Params.shareOnDouban }}
+                <div class="share-item douban">
+                    {{ $url := (printf `https://www.douban.com/share/service?href=%s&name=%s&text=%s` .Permalink $title $description) }}
+                    <a href="{{ $url }}" title="{{ i18n "shareOnTitle" }}{{ i18n "douban" }}" target="_blank" rel="noopener">
+                        {{- partial "utils/icon.html" (dict "$" . "name" "douban" "class" "douban-icon") -}}
+                    </a>
+                </div>
+            {{ end }}
+
+            {{ if .Site.Params.shareOnQQ }}
+                <div class="share-item qq">
+                    {{ $url := (printf `https://connect.qq.com/widget/shareqq/index.html?url=%s&title=%s&summary=%s&pics=%s&site=%s` .Permalink $title $description $images .Site.Title) }}
+                    <a href="{{ $url }}" title="{{ i18n "shareOnTitle" }}{{ i18n "qq" }}" target="_blank" rel="noopener">
+                        {{- partial "utils/icon.html" (dict "$" . "name" "qq" "class" "qq-icon") -}}
+                    </a>
+                </div>
+            {{ end }}
+
+            {{ if .Site.Params.shareOnQzone }}
+                <div class="share-item qzone">
+                    {{ $url := (printf `https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=%s&title=%s&summary=%s&pics=%s&site=%s` .Permalink $title $description $images .Site.Title) }}
+                    <a href="{{ $url }}" title="{{ i18n "shareOnTitle" }}{{ i18n "qzone" }}" target="_blank" rel="noopener">
+                        {{- partial "utils/icon.html" (dict "$" . "name" "qzone" "class" "qzone-icon") -}}
+                    </a>
+                </div>
+            {{ end }}
+
+            {{ if .Site.Params.shareViaQRCode }}
+                <div class="share-item qrcode">
+                    <div class="qrcode-container" title="{{ i18n "shareViaTitle" }}{{ i18n "qrcode" }}">
+                        {{- partial "utils/icon.html" (dict "$" . "name" "qrcode" "class" "qrcode-icon") -}}
+                        <div id="qrcode-img"></div>
+                    </div>
+                    {{ partial "third-party/qrcode-generator.html" . }}
+                </div>
+            {{ end }}
+
+        </div>
+
+    </div>
+
+{{ end }}
