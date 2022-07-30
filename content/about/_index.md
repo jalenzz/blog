@@ -15,6 +15,7 @@ title: "About"
 另外，因为~~技术有限，刚刚接触 Hugo 还不是特别熟悉~~ 懒，先暂时把友联也放在这吧
 
 [Austen](https://blogbyme.cn/)🔗
+[ek1ng](https://ek1ng.com/)🔗
 [Jimmyqin](https://jimmyqin.com/)🔗
 [Sanarous](https://bestzuo.cn/)🔗
 [Eren](https://www.erenship.com/)
