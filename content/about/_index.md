@@ -16,7 +16,7 @@ title: "About"
 
 [Austen](https://blogbyme.cn/)🔗
 [ek1ng](https://ek1ng.com/)🔗
-[Lotus](https://l0tus.vip)
+[Lotus](https://l0tus.vip)🔗
 [Jimmyqin](https://jimmyqin.com/)🔗
 [Sanarous](https://bestzuo.cn/)🔗
 [Eren](https://www.erenship.com/)
@@ -24,6 +24,8 @@ title: "About"
 [Vince](https://i.vince.pub/)🔗
 [Uncle_drew](https://cndrew.cn/)🔗
 [陈 YF](https://blog.cyfan.top/)🔗
-[Reqwey](https://reqwey.vercel.app/)
+[Reqwey](https://reqwey.vercel.app/)🔗
+[ChrAlpha](https://blog.ichr.me/)🔗
+[奥秘Sir](https://blog.say521.cn/)
 
-[keith（无法打开）](https://keithqwq.com/) [ChrAlpha（博客空白）](https://blog.ichr.me/) [奥秘Sir（无法打开）](https://blog.say521.cn/)
+[keith（无法打开）](https://keithqwq.com/)
