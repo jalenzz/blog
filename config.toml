@@ -22,7 +22,7 @@ defaultContentLanguageInSubdir = false
 pluralizeListTitles = false
 
 # 摘要的字数限制
-summaryLength = 42
+summaryLength = 65
 
 # 是否开启 GitHub 风格的 Emoji 书写方式
 enableEmoji = true
