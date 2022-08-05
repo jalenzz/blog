@@ -1,0 +1,35 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-20.04
+
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        submodules: true
+        fetch-depth: 0
+
+    - name: Setup
+      uses: peaceiris/actions-hugo@v2
+      with:
+        hugo-version: '0.101.0'
+        extended: true
+
+    - name: Build
+      run: hugo --minify
+
+    - name: Login
+      uses: manyuanrong/setup-ossutil@v2.0
+      with:
+        endpoint: ${{ secrets.ENDPOINT }}
+        access-key-id: ${{ secrets.OSS_KEY_ID }}
+        access-key-secret: ${{ secrets.OSS_KEY_SECRET }}
+
+    - name: Deploy
+      run: ossutil cp -rf public oss://blog-jalen/
