@@ -16,6 +16,7 @@ title: "About"
 
 [Austen](https://blogbyme.cn/)🔗
 [ek1ng](https://ek1ng.com/)🔗
+[Lotus](https://l0tus.vip)
 [Jimmyqin](https://jimmyqin.com/)🔗
 [Sanarous](https://bestzuo.cn/)🔗
 [Eren](https://www.erenship.com/)
