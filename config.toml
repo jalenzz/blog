@@ -953,11 +953,11 @@ uglyURLs = false
     # 菜单栏
     fontFamilyMenu = ""
     # 文章标题、文章副标题、列表标题、列表的年份和月份标题、相关文章标题、文章上下篇标题、表格的表头、定义列表中的术语
-    fontFamilyTitle = ""
+    fontFamilyTitle = "'Cinzel Decorative', 'Noto Serif SC', serif"
     # 分节标题、目录标题
     fontFamilyHeadings = ""
     # 代码、上标、文章元信息、文章更新徽章、文章的 Git 版本信息、极简页脚、不蒜子站点浏览计数
-    fontFamilyCode = "'Fira Code', 'Noto Serif SC'"
+    fontFamilyCode = "'JetBrains Mono', 'Noto Serif SC', serif"
     # 引用
     fontFamilyQuote = ""
     # 文章目录
@@ -967,10 +967,10 @@ uglyURLs = false
     # 页脚
     fontFamilyFooter = "'Cinzel Decorative', 'Noto Serif SC', serif"
     # 主体
-    fontFamilyBody = "'Libre Baskerville', 'Noto Serif SC', serif"
+    fontFamilyBody = "'JetBrains Mono', 'Noto Serif SC', serif"
 
     # 网络字体链接
-    fontsLink = "https://fonts.googleapis.com/css2?family=Fira+Code&family=Noto+Serif+SC:wght@400;500;700;900&family=Cinzel+Decorative:wght@700;900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+    fontsLink = "https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital@0;1&family=Noto+Serif+SC:wght@400;700&family=Cinzel+Decorative:wght@700;900&display=swap"
     # 说明：要想读者一定体验到你设置的字体，最好
     #      采用网络字体。MemE 主题目前仅支持
     #      Google Fonts 的链接，请前往
@@ -980,7 +980,7 @@ uglyURLs = false
     ######################################
     ## 字号（单位：px）
 
-    fontSize = 16
+    fontSize = 18
 
     ######################################
     ## 制表符的宽度
@@ -1000,7 +1000,7 @@ uglyURLs = false
     enableParagraphIndent = true
 
     # 是否缩进第一段（全局设置）
-    indentFirstParagraph = false
+    indentFirstParagraph = true
     # 说明：文章的 Front Matter 中的 `indentFirstParagraph`
     #      的优先级高于此处
 
@@ -1094,17 +1094,17 @@ uglyURLs = false
     # 文章的 Git 版本信息
 
     # 是否开启
-    enablePostGitInfo = false
+    enablePostGitInfo = true
 
     # 是否显示（全局设置）
-    displayPostGitInfo = false
+    displayPostGitInfo = true
     # 说明：文章的 Front Matter 中的 `gitinfo`
     #      的优先级高于此处
 
     # 仓库地址
-    repoURL = ""
+    repoURL = "https://github.com/jalenzz/blog"
     # 编辑地址
-    repoEditURL = ""
+    repoEditURL = "https://github.com/jalenzz/blob/master"
 
     # Git 的图标
     gitIcon = "code-branch"
