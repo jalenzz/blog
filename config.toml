@@ -31,7 +31,7 @@ enableEmoji = true
 footnoteReturnLinkContents = "↩"
 
 # 是否启用 Git 版本信息
-enableGitInfo = false
+enableGitInfo = true
 
 # 是否生成 robots.txt 文件
 enableRobotsTXT = true
@@ -1104,7 +1104,7 @@ uglyURLs = false
     # 仓库地址
     repoURL = "https://github.com/jalenzz/blog"
     # 编辑地址
-    repoEditURL = "https://github.com/jalenzz/blob/master"
+    repoEditURL = "https://github.com/jalenzz/blog/edit/main"
 
     # Git 的图标
     gitIcon = "code-branch"
