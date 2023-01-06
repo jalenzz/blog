@@ -2,7 +2,7 @@
 
 Powered by [Hugo]. Theme - [MemE].
 
-The old style of [Gridsome] and [Hexo-Cards] 
+The old style of [Gridsome] and [Hexo-Cards]
 
 ## Install
 
@@ -18,7 +18,7 @@ git clone https://github.com/jalenzz/blog.git
 
 ```bash
 cd blog
-hugo -D
+hugo serve
 ```
 
 ## Build

@@ -3,15 +3,15 @@ title: "About"
 dropCap: false
 ---
 
-- 🙋‍♂️ Jalen
-- 🏫 HDU🤖
-- 👨‍💻 [GitHub]
-- 🐧 1098870059
-- 📧 `jalenchuh # gmail.com`
+- :raising_hand_man: Jalen
+- :school: HDU:robot:
+- :man_technologist: [GitHub]
+- :penguin: 1098870059
+- :e-mail: `jalenchuh # gmail.com`
 
 ---
 
-博客 22 年暑假经历了大翻修。从最初接触博客时的 Hexo 到小白就能上手的 Gridea 再到没什么人用的 Gridsome，兜兜转转，现在又用上了 Hugo。刚接触博客时肯定喜欢那些花里胡哨的，但是现在，已经在美化博客的道路上走到了尽头，还是简单的好😁
+博客 22 年暑假经历了大翻修。从最初接触博客时的 Hexo 到小白就能上手的 Gridea 再到没什么人用的 Gridsome，兜兜转转，现在又用上了 Hugo。刚接触博客时肯定喜欢那些花里胡哨的，但是现在，已经在美化博客的道路上走到了尽头，还是简单的好:grin:
 
 新的博客，新的开始，一切都是新的。以前的文章、以前的评论也没有留下来的必要了，那些让人脚趾扣地的文章我自己留着欣赏就够了哈哈哈哈哈。
 
@@ -30,6 +30,7 @@ dropCap: false
 [GitHub]: https://github.com/jalenzz
 [Atom]: /atom.xml
 [RSS]: /rss.xml
+
 [Austen]: https://blogbyme.cn/
 [ek1ng]: https://ek1ng.com/
 [Lotus]: https://l0tus.vip/

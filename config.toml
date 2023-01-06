@@ -14,6 +14,8 @@ theme = "meme"
 # `hugo new` 新建文章自动打开的文本编辑器
 newContentEditor = ""
 
+buildFuture = true
+
 # i18n
 defaultContentLanguage = "zh"
 defaultContentLanguageInSubdir = false
@@ -629,9 +631,9 @@ uglyURLs = false
     disqusShortname = ""
 
     ## Valine
-    enableValine = false
-    valineAppId = ""
-    valineAppKey = ""
+    enableValine = true
+    valineAppId = "Qxn7n6GYp4KBjCCMtJcBWIbL-gzGzoHsz"
+    valineAppKey = "qjQxlSHtE3j7aoO4fMaFNzVa"
     valinePlaceholder = "Just go go"
     valinePath = ""
     valineAvatar = "mm"
