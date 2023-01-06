@@ -679,11 +679,19 @@ uglyURLs = false
 
 
     ######################################
+    # 自行添加的百度统计
+
+    # 说明：仅在生产环境（production）下渲染
+
+    enableBaiduAnalytics = true
+    baiduAnalyticsID = "ea9c5cc8c145363506253554ed0c7cea"
+
+    ######################################
     # Google Analytics
 
     # 说明：仅在生产环境（production）下渲染
 
-    enableGoogleAnalytics = true
+    enableGoogleAnalytics = false
 
     # 跟踪代码的类型
     trackingCodeType = "gtag"

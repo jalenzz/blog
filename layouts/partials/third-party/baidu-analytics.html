@@ -1,0 +1,11 @@
+{{ if and .Site.Params.enableBaiduAnalytics (eq hugo.Environment "production") }}
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?{{ .Site.Params.baiduAnalyticsID }}";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+{{ end }}
