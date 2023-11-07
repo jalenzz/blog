@@ -19,28 +19,16 @@ dropCap: false
 
 ---
 
-因为比较菜，没新建友链页面，就先暂时都放在这吧
+没新建友链页面，就先暂时都放在这吧
 
-[Austen]🔗[ek1ng]🔗[Lotus]🔗[Jimmyqin]🔗[Sanarous]🔗[Eren]
-
-[Vince]🔗[Uncle_drew]🔗[陈 YF]🔗[Reqwey]🔗[ChrAlpha]🔗[奥秘 Sir]
-
-无法打开：[keith]
+[Austen]🔗[Jimmyqin]🔗[Eren]🔗[Reqwey]🔗[奥秘 Sir]
 
 [GitHub]: https://github.com/jalenzz
 [Atom]: /atom.xml
 [RSS]: /rss.xml
 
 [Austen]: https://blogbyme.cn/
-[ek1ng]: https://ek1ng.com/
-[Lotus]: https://l0tus.vip/
 [Jimmyqin]: https://jimmyqin.com/
-[Sanarous]: https://bestzuo.cn/
 [Eren]: https://www.erenship.com/
-[Vince]: https://i.vince.pub/
-[Uncle_drew]: https://cndrew.cn/
-[陈 YF]: https://blog.cyfan.top/
 [Reqwey]: https://reqwey.vercel.app
-[ChrAlpha]: https://blog.ichr.me/
 [奥秘 Sir]: https://blog.say521.cn/
-[keith]: https://keithqwq.com/

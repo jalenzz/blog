@@ -220,6 +220,11 @@ cd hiteSur-icon-theme
 git clone https://github.com/vinceliuice/WhiteSur-wallpapers.git
 cd WhiteSur-wallpapers
 sudo ./install-gnome-backgrounds.sh
+
+# Grub Theme
+git clone https://github.com/vinceliuice/grub2-themes.git
+cd grub2-themes
+sudo ./install.sh -t whitesur -i whitesur -s ultrawide2k
 ```
 
 ### extension

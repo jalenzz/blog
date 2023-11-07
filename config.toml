@@ -1281,7 +1281,7 @@ uglyURLs = false
     displaySiteCopyright = true
 
     # 自定义页脚（支持 Markdown）
-    customFooter = "[闽ICP备20005437号](https://beian.miit.gov.cn)"
+    customFooter = "[闽ICP备20005437号](https://beian.miit.gov.cn)  <br> [![upyun](/upyun_logo.svg)](https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral)"
 
     displayBusuanziSiteUVAndPV = false
     busuanziSiteUVText = "本站访客数"
