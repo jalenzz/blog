@@ -136,7 +136,6 @@ autoProxy=true
 
 Windows 11 应该默认安装，如果没有也可以通过微软商店安装
 
-
 ## APT 换源
 
 备份源文件
@@ -355,6 +354,16 @@ sudo apt install fcitx5 fcitx5-chinese-addons
 ```bash
 sudo apt install gnome-tweaks
 ```
+
+## ROS
+
+人生苦短，我用小鱼的一键安装
+
+```bash
+wget http://fishros.com/install -O fishros && sh ./fishros
+```
+
+小鱼的一键安装还可以干挺多其他事情的，具体请看 [小鱼的一键安装系列](https://fishros.org.cn/forum/topic/20/%E5%B0%8F%E9%B1%BC%E7%9A%84%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%E7%B3%BB%E5%88%97?lang=zh-CN)
 
 ---
 
