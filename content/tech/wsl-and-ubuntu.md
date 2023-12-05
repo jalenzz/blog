@@ -1,11 +1,11 @@
 ---
-title: "WSL 配置"
+title: "WSL && Ubuntu"
 date: 2023-11-29 15:17:41+08:00
 draft: false
-tags: ["WSL", "Windows"]
+tags: ["WSL", "Ubuntu"]
 ---
 
-## WSL
+# WSL
 
 适用于 Linux 的 Windows 子系统
 
@@ -15,7 +15,7 @@ tags: ["WSL", "Windows"]
 
 > [什么是适用于 Linux 的 Windows 子系统？](https://learn.microsoft.com/zh-cn/windows/wsl/about)
 
-### WSL and WSL2
+## WSL and WSL2
 
 WSL 2 是适用于 Linux 的 Windows 子系统体系结构的一个新版本，它支持适用于 Linux 的 Windows 子系统在 Windows 上运行 ELF64 Linux 二进制文件。它的主要目标是提高文件系统性能，以及添加完全的系统调用兼容性。
 
@@ -114,19 +114,9 @@ wsl --set-version <Distro> 2
 wsl --set-default-version 2
 ```
 
-## 配置 Shell 环境
+## WLS 代理配置
 
-### 终端
-
-推荐 Windows Terminal，微软在 2019 年发布的新一代 Windows 终端工具，好看好用还能直接识别本机安装的全部 WSL 环境
-
-<!-- ![]() -->
-
-Windows 11 应该默认安装，如果没有也可以通过微软商店安装
-
-### 代理配置
-
-WSL 2.0 支持和 Windows 使用相同的网络，只需要在 `%userprofile%\.wslconfig` 中设置
+WSL 2.0 支持和 Windows 使用相同的网络，只需要在 `%userprofile%\.wslconfig` 中设置（没有的话新建一个，`%userprofile%` 是 `C:\User\用户名`）
 
 ```sh
 [experimental]
@@ -138,7 +128,16 @@ autoProxy=true
 
 > WSL 2.0 以前版本参考 [WSL2 的一些网络访问问题 - 野声 (cat.ms)](https://cat.ms/wsl2-network-tricks)
 
-### APT 换源
+## 终端
+
+推荐 Windows Terminal，微软在 2019 年发布的新一代 Windows 终端工具，好看好用还能直接识别本机安装的全部 WSL 环境
+
+<!-- ![]() -->
+
+Windows 11 应该默认安装，如果没有也可以通过微软商店安装
+
+
+## APT 换源
 
 备份源文件
 
@@ -167,15 +166,15 @@ deb http://security.ubuntu.com/ubuntu/ jammy-security main restricted universe m
 
 > 其他版本详见 [ubuntu | 镜像站使用帮助 | 清华大学开源软件镜像站](https://mirror.tuna.tsinghua.edu.cn/help/ubuntu/)
 
-更新 apt 缓存和软件
+更新 apt 缓存
 
 ```bash
-sudo apt update && sudo apt upgrade
+sudo apt update
 ```
 
-### zsh
+## zsh
 
-Ubuntu 默认 shell 环境 `bash` 提供了基础的命令行交互功能，这边非常推荐 `zsh`，有丰富的插件和主题~~（好看是第一生产力）~~
+Ubuntu 默认 shell 环境 `bash` 提供了基础的命令行交互功能，这边非常推荐 `zsh`，有丰富的插件和主题 ~~（好看是第一生产力）~~
 
 安装 `zsh`
 
@@ -189,7 +188,7 @@ sudo apt install zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-如果安装 `oh-my-zsh` 时没有将 `zsh` 设为默认 shell 环境，可以通过以下命令
+如果安装 `oh-my-zsh` 时没有将 `zsh` 设为默认 shell 环境，可以使用以下命令
 
 ```bash
 chsh -s $(which zsh)
@@ -197,11 +196,13 @@ chsh -s $(which zsh)
 
 <!-- ![]() -->
 
-#### 插件
+### 插件
 
-##### zsh-autosuggestions
+> 修改 `.zshrc` 之后记得 `source ~/.zshrc`
 
-根据历史记录和完成情况在输入时提示命令
+#### zsh-autosuggestions
+
+根据历史记录和完成情况在输入时提示命令，非常非常好用！
 
 ```bash
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
@@ -216,7 +217,7 @@ plugins=(
 )
 ```
 
-##### zsh-syntax-highlighting
+#### zsh-syntax-highlighting
 
 为 `zsh` 命令提供高亮
 
@@ -233,9 +234,9 @@ plugins=(
 )
 ```
 
-### autojump
+#### autojump
 
-快速跳转不同的目录、路径、文件夹
+[autojump](https://github.com/wting/autojump) - 快速跳转不同的目录、路径、文件夹
 
 将 `python` 指向 `pyhton3`
 
@@ -259,7 +260,59 @@ cd autojump
 autoload -U compinit && compinit -u
 ```
 
-#### 主题
+#### fzf
+
+[fzf](https://github.com/junegunn/fzf) 是一个通用的命令行模糊查找器
+
+```sh
+sudo apt install fzf bat
+```
+
+在 `.zshrc` 中添加
+
+```sh
+source /usr/share/doc/fzf/examples/key-bindings.zsh
+source /usr/share/doc/fzf/examples/completion.zsh
+# Preview file content using bat (https://github.com/sharkdp/bat)
+export FZF_CTRL_T_OPTS="
+  --preview 'batcat -n --color=always {}'
+    --bind 'ctrl-/:change-preview-window(down|hidden|)'"
+```
+
+- `CTRL+T` - 将选定的文件和目录粘贴到命令行上
+- `CTRL+R` - 将历史记录中选定的命令粘贴到命令行上
+- `ALT+C` - 进入选定的目录
+
+还可以在 `cd **` 之后按 `tab` 模糊搜索文件夹
+
+#### thefuck
+
+[The Fuck](https://github.com/nvbn/thefuck) 是一款出色的应用程序，可以纠正之前控制台命令中的错误
+
+```sh
+sudo apt update
+sudo apt install python3-dev python3-pip python3-setuptools
+pip3 install thefuck --user
+```
+
+在 `.zshrc` 中添加
+
+```sh
+export PATH="$PATH:$HOME/.local/bin"
+eval $(thefuck --alias FUCK)
+```
+
+现在，你输命令之后就可以输入 `fuck` 来自动纠错了，如果你还想在输错命令之后通过双击 `ESC` 来纠错，可以在 `.zshrc` 中添加
+
+```sh
+plugins=( 
+    # other plugins...
+    thefuck
+)
+
+```
+
+### 主题
 
 `oh-my-zsh` 提供了非常多漂亮的主题
 
@@ -273,7 +326,7 @@ ZSH_THEME="${theme-name}"
 
 ##### Starship
 
-`oh-my-zsh` 提供了的主题挺多的，不过我还是选择 [Starship: Cross-Shell Prompt](https://starship.rs/)
+`oh-my-zsh` 提供的主题挺多的，不过我选择更好看的 [Starship: Cross-Shell Prompt](https://starship.rs/)
 
 安装
 
@@ -287,4 +340,22 @@ curl -sS https://starship.rs/install.sh | sh
 eval "$(starship init zsh)"
 ```
 
-> 我的 `.zshrc` 和 `starship` 配置 [jalenzz/dotfiles](https://github.com/jalenzz/dotfiles)
+## fcitx5
+
+安装 fcitx5 和 中文输入法引擎
+
+```bash
+sudo apt install fcitx5 fcitx5-chinese-addons
+```
+
+`设置 > 区域与语言 > 管理已安装的语言 > 键盘输入法系统` 设置为 fcitx5
+
+设置 fcitx5 开机自启动，可以在 gnome-tweaks（中文名 优化）中直接将 Fcitx 5 添加到「开机启动程序」列表中
+
+```bash
+sudo apt install gnome-tweaks
+```
+
+---
+
+> 我的配置文件 [jalenzz/dotfiles](https://github.com/jalenzz/dotfiles)
