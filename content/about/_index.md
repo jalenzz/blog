@@ -4,9 +4,9 @@ dropCap: false
 ---
 
 - :raising_hand_man: Jalen
-- :school: HDU:robot:
+- :school: HDU :robot:
 - :man_technologist: [GitHub]
-- :penguin: 1098870059
+<!-- - :penguin: 1098870059 -->
 - :e-mail: `jalenchuh # gmail.com`
 
 ---
