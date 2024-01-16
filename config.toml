@@ -456,7 +456,7 @@ uglyURLs = false
     # 说明：left（左边）或 right（右边）
 
     # 是否按月份分隔列表
-    groupByMonth = true
+    groupByMonth = false
 
     # 是否开启十二生肖
     chineseZodiac = true
@@ -517,7 +517,7 @@ uglyURLs = false
     enableDarkMode = true
 
     # 默认模式
-    defaultTheme = "light"
+    defaultTheme = "dark"
     # 说明：light（浅色模式）或 dark（深色模式）
 
     # 是否隐藏模式切换开关
@@ -687,7 +687,7 @@ uglyURLs = false
 
     # 说明：仅在生产环境（production）下渲染
 
-    enableBaiduAnalytics = true
+    enableBaiduAnalytics = false
     baiduAnalyticsID = "ea9c5cc8c145363506253554ed0c7cea"
 
     ######################################
@@ -981,7 +981,7 @@ uglyURLs = false
     # 页脚
     fontFamilyFooter = "'Cinzel Decorative', 'Noto Serif SC', serif"
     # 主体
-    fontFamilyBody = "'JetBrains Mono', 'Noto Serif SC', serif"
+    fontFamilyBody = "Calibri, 'Noto Serif SC', serif"
 
     # 网络字体链接
     fontsLink = "https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital@0;1&family=Noto+Serif+SC:wght@400;700&family=Cinzel+Decorative:wght@700;900&display=swap"
@@ -1036,7 +1036,7 @@ uglyURLs = false
     ## 首字下沉
 
     # 是否开启（全局设置）
-    enableDropCap = true
+    enableDropCap = false
     # 说明：文章的 Front Matter 中的 `dropCap`
     #      的优先级高于此处
 
