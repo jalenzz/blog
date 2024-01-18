@@ -1,35 +1,43 @@
 # Jalen's blog
 
-Powered by [Hugo]. Theme - [MemE].
+![status](https://img.shields.io/github/workflow/status/jalenchuh/blog/Deploy?style=flat)
 
-The old style of [Gridsome] and [Hexo-Cards]
+Powered by [Gridsome](http://gridsome.org/). Theme - [gridsome-starter-blog](https://github.com/gridsome/gridsome-starter-blog)(style reference [Spencer](https://spencerwoo.com/)).
+
+The old style of Hexo-Cards please check [v1.0](https://github.com/jalenchuh/blog/tree/v1.0).
 
 ## Install
 
 ```bash
-sudo snap install go
-sudo snap install hugo
-git clone https://github.com/jalenzz/blog.git
+git clone https://github.com/jalenchuh/blog.git
+cd blog
+yarn install
 ```
-
-:warning: Do not use `apt` to install hugo, the version is outdated.
 
 ## Preview
 
 ```bash
-cd blog
-hugo serve
+yarn develop
 ```
 
 ## Build
 
 ```bash
-hugo
+yarn build
 ```
 
-Enjoy 🙇
+## Prettier
 
-[Hugo]: https://gohugo.io
-[MemE]: https://github.com/reuixiy/hugo-theme-meme
-[Gridsome]: https://github.com/jalenzz/blog/tree/v2.0
-[Hexo-Cards]: https://github.com/jalenzz/blog/tree/v1.0
+```bash
+yarn prettier
+```
+
+Enjoy it. :bow:
+
+---
+
+:man_technologist: **Jalen's blog** ©Jalen Chuh. Released under the MIT License.
+
+Authored and maintained by Jalen Chuh.
+
+[@Portfolio](https://jalenchuh.cn) · [@Blog](https://blog.jalenchuh.cn) · [@GitHub](https://github.com/jalenchuh)

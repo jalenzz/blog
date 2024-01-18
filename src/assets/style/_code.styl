@@ -1,0 +1,132 @@
+pre
+  padding calc((var(--space) / 3)) var(--space)
+  font-family var(--monospace-font-family)
+  font-size 1em
+  background-color var(--bg-code)
+  margin 1em calc(0em - var(--space))
+
+  code
+    padding 0em
+    background-color transparent
+
+/**
+ * PrismJS 1.21.0
+ * https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript+arduino+bash+c+cpp+diff+docker+ini+latex+markdown+nginx+powershell+python+yaml&plugins=line-numbers
+ * @author Lea Verou
+ * @modified spencerwooo monsterxcn
+ */
+code[class*='language-'], pre[class*='language-']
+  color var(--text-code-block)
+  background-color var(--bg-code)
+  text-shadow none
+  font-family var(--monospace-font-family)
+  font-size 1em
+  text-align left
+  white-space pre
+  word-spacing normal
+  word-break normal
+  word-wrap normal
+  line-height 1.5
+  -moz-tab-size 2
+  -o-tab-size 2
+  tab-size 2
+  -webkit-hyphens none
+  -moz-hyphens none
+  -ms-hyphens none
+  hyphens none
+
+@media print
+  code[class*='language-'], pre[class*='language-']
+    text-shadow none
+
+/* Code blocks */
+pre[class*='language-']
+  overflow auto
+  color var(--text-code-block)
+
+/* Inline code */
+:not(pre) > code[class*='language-'], :not(pre) > code
+  color var(--text-code)
+  background-color transparent
+  white-space normal
+  font-family var(--monospace-font-family)
+  font-size 0.9em
+  padding 0.2em 0.5em
+
+  &::before
+    content '`'
+
+  &::after
+    content '`'
+
+.token.comment, .token.prolog, .token.doctype, .token.cdata
+  color slategray
+
+.token.punctuation
+  color #999
+
+.token.namespace
+  opacity 0.7
+
+.token.property, .token.tag, .token.boolean, .token.number, .token.constant, .token.symbol, .token.deleted
+  color #c71b7b
+
+.token.selector, .token.attr-name, .token.string, .token.char, .token.builtin, .token.inserted
+  color #690
+
+.token.operator, .token.entity, .token.url, .language-css .token.string, .style .token.string
+  color #9a6e3a
+  /* This background color was intended by the author of this theme.
+  background: hsla(0, 0%, 100%, .5); */
+
+.token.atrule, .token.attr-value, .token.keyword
+  color #20a7e0
+
+.token.function, .token.class-name
+  color #dd4a68
+
+.token.regex, .token.important, .token.variable
+  color #e90
+
+.token.important, .token.bold
+  font-weight bold
+
+.token.italic
+  font-style italic
+
+.token.entity
+  cursor help
+
+pre[class*='language-'].line-numbers
+  position relative
+  padding-left 3.8em
+  counter-reset linenumber
+
+pre[class*='language-'].line-numbers > code
+  position relative
+  white-space inherit
+
+.line-numbers .line-numbers-rows
+  position absolute
+  pointer-events none
+  top 0
+  font-size 100%
+  left -3.8em
+  width 3em /* works for line-numbers below 1000 lines */
+  letter-spacing -1px
+  border-right 1px dashed #999
+  -webkit-user-select none
+  -moz-user-select none
+  -ms-user-select none
+  user-select none
+
+.line-numbers-rows > span
+  display block
+  counter-increment linenumber
+
+.line-numbers-rows > span:before
+  content counter(linenumber)
+  color #999
+  display block
+  padding-right 0.8em
+  text-align right
