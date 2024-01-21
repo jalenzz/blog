@@ -1,7 +1,7 @@
 ---
 title: "Hello World"
 date: 2019-11-24
-published: true
+published: false
 license: true
 slug: hello-world
 cate: life

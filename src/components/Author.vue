@@ -1,14 +1,8 @@
 <template>
   <div class="author">
     <g-link to="/">
-      <g-image
-        alt="Author image"
-        class="author__image"
-        src="~/assets/images/author.jpg"
-        width="180"
-        height="180"
-        blur="5"
-      />
+      <g-image alt="Author image" class="author__image" src="~/assets/images/author.jpg" width="180" height="180"
+        blur="5" />
     </g-link>
 
     <h1 v-if="showTitle" class="author__site-title">
@@ -18,38 +12,15 @@
     <p class="author__intro">你终于来啦</p>
 
     <p class="author__links">
-      <g-link
-        href="https://jalenchuh.cn/"
-        target="_blank"
-        style="color: #5c6977"
-        v-tooltip="{ content: '🙋‍♂️ Portfolio' }"
-        ><font-awesome :icon="['fa', 'home']"
-      /></g-link>
-      <g-link
-        href="https://travellings.link/"
-        target="_blank"
-        v-tooltip="{ content: '🚇 Travelling' }"
-        ><font-awesome :icon="['fas', 'subway']"
-      /></g-link>
-      <g-link
-        href="//blog.jalenchuh.cn/atom.xml"
-        target="_blank"
-        style="color: #f5a623"
-        v-tooltip="{ content: '📫 RSS' }"
-        ><font-awesome :icon="['fas', 'rss']" /></g-link
-      ><g-link
-        to="/friends"
-        title="友链"
-        style="color: #06a878"
-        v-tooltip="{ content: '🍻 Friends' }"
-        ><font-awesome :icon="['fas', 'user-friends']" /></g-link
-      ><g-link
-        to="/about"
-        title="关于"
-        style="color: #117cb7"
-        v-tooltip="{ content: '🙇‍♂️ About' }"
-        ><font-awesome :icon="['fas', 'id-badge']"
-      /></g-link>
+      <g-link href="https://jalenz.cn/" target="_blank" style="color: #5c6977"
+        v-tooltip="{ content: '🙋‍♂️ Portfolio' }"><font-awesome :icon="['fa', 'home']" /></g-link>
+      <g-link href="https://travellings.link/" target="_blank" v-tooltip="{ content: '🚇 Travelling' }"><font-awesome
+          :icon="['fas', 'subway']" /></g-link>
+      <g-link href="//jalenz.cn/atom.xml" target="_blank" style="color: #f5a623"
+        v-tooltip="{ content: '📫 RSS' }"><font-awesome :icon="['fas', 'rss']" /></g-link><g-link to="/friends" title="友链"
+        style="color: #06a878" v-tooltip="{ content: '🍻 Friends' }"><font-awesome
+          :icon="['fas', 'user-friends']" /></g-link><g-link to="/about" title="关于" style="color: #117cb7"
+        v-tooltip="{ content: '🙇‍♂️ About' }"><font-awesome :icon="['fas', 'id-badge']" /></g-link>
     </p>
   </div>
 </template>

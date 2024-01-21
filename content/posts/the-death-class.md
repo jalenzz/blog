@@ -1,7 +1,7 @@
 ---
 title: "《生死功课》"
 date: 2020-09-19 20:43:50
-published: true
+published: false
 license: true
 slug: the-death-class
 tags: ["生", "死"]
@@ -31,4 +31,4 @@ description: "如何在死亡的启示下享受更好的生命，一堂关于勇
 
 > 在严峻的事实中崇尚真实性的存在，我们才能够发现其中的隐喻和意义。
 
-![ ](https://u.jalenchuh.cn/the-death-class/karl-solano-wE7iXvGMPhI-unsplash.jpg?h=1280)
+![ ](https://u.jalenz.cn/the-death-class/karl-solano-wE7iXvGMPhI-unsplash.jpg?h=1280)

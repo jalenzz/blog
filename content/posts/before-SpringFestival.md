@@ -1,7 +1,7 @@
 ---
 title: "春节·前"
 date: 2021-02-06 22:34:47
-published: true
+published: false
 license: true
 slug: before-SpringFestival
 tags: ['考试', '研学', '春节']
@@ -17,29 +17,29 @@ description: "考试结束，春节将至"
 
 和铁子们聚餐
 
-![ ](https://u.jalenchuh.cn/before-SpringFestival/lijia.jpg)
+![ ](https://u.jalenz.cn/before-SpringFestival/lijia.jpg)
 
-![ ](https://u.jalenchuh.cn/before-SpringFestival/we.jpg)
+![ ](https://u.jalenz.cn/before-SpringFestival/we.jpg)
 
 满满的皮卡丘，太可爱了
 
-![ ](https://u.jalenchuh.cn/before-SpringFestival/pikaqiu.jpg)
+![ ](https://u.jalenz.cn/before-SpringFestival/pikaqiu.jpg)
 
 前段时间在 Miniso 买的皮卡丘也超可爱
 
-![ ](https://u.jalenchuh.cn/before-SpringFestival/pkq.jpg)
+![ ](https://u.jalenz.cn/before-SpringFestival/pkq.jpg)
 
 结束之后回学校把停放已久的自行车骑了回去
 
-![ ](https://u.jalenchuh.cn/before-SpringFestival/bike.jpg)
+![ ](https://u.jalenz.cn/before-SpringFestival/bike.jpg)
 
 ---
 
 之后又去了趟半天的研学，常口村，习近平总书记到过的地方。印象最深的应该是那的河水，一眼望去就给人非常干净的感觉，但是没拍多少照片，河上还有皮划艇训练队。
 
-![ ](https://u.jalenchuh.cn/before-SpringFestival/ck1.jpg)
+![ ](https://u.jalenz.cn/before-SpringFestival/ck1.jpg)
 
-![ ](https://u.jalenchuh.cn/before-SpringFestival/ck2.jpg)
+![ ](https://u.jalenz.cn/before-SpringFestival/ck2.jpg)
 
 ---
 
@@ -47,4 +47,4 @@ description: "考试结束，春节将至"
 
 最不习惯的是晚饭时间，五点差不多就吃完晚饭了，到晚上我又必饿，又要吃夜宵，又得长体重。现在 180/65，体重和身高应该是刚刚好，身高没变我可不想体重再往上走了。
 
-![ ](https://u.jalenchuh.cn/before-SpringFestival/lj.jpg)
+![ ](https://u.jalenz.cn/before-SpringFestival/lj.jpg)

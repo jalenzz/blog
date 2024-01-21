@@ -1,7 +1,7 @@
 ---
 title: "初·开学"
 date: 2021-03-21 17:40:19
-published: true
+published: false
 license: true
 slug: new-term-0321
 tags: ['军训', '医院']

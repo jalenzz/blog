@@ -1,7 +1,7 @@
 ---
 title: "19-20 学年总结"
 date: 2020-07-26
-published: true
+published: false
 license: true
 slug: freshman-high-school
 cate: life

@@ -1,12 +1,12 @@
 ---
 title: "末·过去的一学期"
 date: 2021-07-11 10:43:57
-published: true
+published: false
 license: true
 slug: hi-gao3
 tags: ['考试', '高三']
 cate: life
-cover_image: "https://u.jalenchuh.cn/hi-gao3/m1.jpg!cover"
+cover_image: "https://u.jalenz.cn/hi-gao3/m1.jpg!cover"
 canonical_url: false
 description: "再见高二，你好高三"
 ---

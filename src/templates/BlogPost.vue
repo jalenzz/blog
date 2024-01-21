@@ -1,17 +1,11 @@
 <template>
   <div>
-    <notifications
-      class="notify-style"
-      position="bottom right"
-      width="var(--toast-width)"
-    />
+    <notifications class="notify-style" position="bottom right" width="var(--toast-width)" />
 
     <div class="post-title">
       <h1 class="post-title__text">
         {{ $page.post.title }}
-        <span class="post-title__publish-icon" v-if="!$page.post.published"
-          >DRAFT</span
-        >
+        <span class="post-title__publish-icon" v-if="!$page.post.published">DRAFT</span>
       </h1>
 
       <PostMeta :post="$page.post" />
@@ -19,11 +13,7 @@
 
     <div class="post content-box">
       <div class="post__header">
-        <g-image
-          alt="Cover image"
-          v-if="$page.post.cover_image"
-          :src="$page.post.cover_image"
-        />
+        <g-image alt="Cover image" v-if="$page.post.cover_image" :src="$page.post.cover_image" />
       </div>
 
       <div class="admonition admonition-warning" v-if="publishedDays >= 180">
@@ -40,7 +30,7 @@
         <div class="license-title">{{ $page.post.title }}</div>
         <div class="license-link">
           <a :href="$page.post.path">
-            https://blog.jalenchuh.cn{{ $page.post.path }}
+            https://jalenz.cn{{ $page.post.path }}
           </a>
         </div>
         <div class="license-meta">
@@ -55,13 +45,9 @@
           <div class="license-meta-item">
             <div class="license-meta-title">许可协议</div>
             <div class="license-meta-text">
-              <a
-                href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh"
-                rel="nofollow noopener noreferrer"
-                target="_blank"
-              >
-                CC BY-NC-SA 4.0</a
-              >
+              <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="nofollow noopener noreferrer"
+                target="_blank">
+                CC BY-NC-SA 4.0</a>
             </div>
           </div>
         </div>
@@ -73,22 +59,11 @@
       </div>
 
       <div class="post__navigation">
-        <a
-          class="navlink"
-          v-if="$page.previous"
-          :href="$page.previous.path"
-          style="float: left"
-          ><span class="post__navigation__">&#9664;</span>
-          {{ $page.previous.title }}</a
-        >
-        <a
-          class="navlink"
-          v-if="$page.next"
-          :href="$page.next.path"
-          style="float: right"
-          >{{ $page.next.title }}
-          <span class="post__navigation__">&#9654;</span></a
-        >
+        <a class="navlink" v-if="$page.previous" :href="$page.previous.path" style="float: left"><span
+            class="post__navigation__">&#9664;</span>
+          {{ $page.previous.title }}</a>
+        <a class="navlink" v-if="$page.next" :href="$page.next.path" style="float: right">{{ $page.next.title }}
+          <span class="post__navigation__">&#9654;</span></a>
       </div>
     </div>
 
@@ -104,11 +79,7 @@
     </div>
 
     <transition name="fade">
-      <div
-        id="back-to-top"
-        v-scroll-to="{ el: '#app' }"
-        v-if="scrolledDist > 800"
-      >
+      <div id="back-to-top" v-scroll-to="{ el: '#app' }" v-if="scrolledDist > 800">
         <font-awesome id="back-to-top-icon" :icon="['fas', 'arrow-up']" />
       </div>
     </transition>
@@ -176,7 +147,7 @@ export default {
       el: "#waline",
       login: "disable",
       dark: 'body[data-theme="dark"]',
-      serverURL: "https://api.jalenchuh.cn",
+      serverURL: "https://api.jalenz.cn",
       // other config
     });
   },

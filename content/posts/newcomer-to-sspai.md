@@ -21,7 +21,7 @@ description: "非常荣幸加入少数派 Matrix，这是我的第一篇文章�
 
 大家好，我是 JalenChuh，00 后。名字来源于我的中文名，名算是完全按照拼音翻译过来的，姓是对应的英文翻译。
 
-从初中开始就对科技类感兴趣，现在也是。平常除了学习，喜欢折腾自己的[博客](https://blog.jalenchuh.cn)。
+从初中开始就对科技类感兴趣，现在也是。平常除了学习，喜欢折腾自己的[博客](https://jalenz.cn)。
 
 不算是某一个品牌的粉丝，因产品而定。想体验苹果生态，但是买不起，希望大学之后能靠自己的努力实现。
 
@@ -43,7 +43,7 @@ MEIZU 16th，用着基于 Android 8.1 的 Flyme 8，好消息是，过几天就�
 
 ### Q3：哪些 App 对你的工作 / 学习 / 生活最重要
 
-![APP](https://u.jalenchuh.cn/newcomer-to-sspai/01.png)
+![APP](https://u.jalenz.cn/newcomer-to-sspai/01.png)
 
 - To Do：我的学习利器，每天早晨或提前一天制订好计划。强迫症的原因，看到未完成的就很不舒服，于是乎，只好抓紧完成任务。考前复习和长假必备。
 
@@ -65,7 +65,7 @@ iPad 完全用来学习，装的软件不多。
 
 Mark Text，一款开源的 MarkDown 编辑器，个人感觉和 Typora 体验差不多。我认为体验最佳的功能是能够直接插入 Unsplash 的图片。
 
-![Mark Text](https://u.jalenchuh.cn/newcomer-to-sspai/02.png)
+![Mark Text](https://u.jalenz.cn/newcomer-to-sspai/02.png)
 
 ### Q6：在你订阅的付费服务当中哪一些是不可或缺的
 

@@ -1,7 +1,7 @@
 ---
 title: "「月记」你好高二"
 date: 2020-10-02
-published: true
+published: false
 license: true
 slug: hi-sophomore
 tags: ['国庆', '高二']
@@ -44,9 +44,9 @@ description: "平平无奇的第一个月"
 
 还逛了逛市中心的老房子，很有感觉，但拍照技术一如既往的差。
 
-![小巷](https://u.jalenchuh.cn/hi-sophomore/1.jpg)
-![楼房间](https://u.jalenchuh.cn/hi-sophomore/2.jpg)
-![楼梯口](https://u.jalenchuh.cn/hi-sophomore/3.jpg)
-![云](https://u.jalenchuh.cn/hi-sophomore/4.jpg)
+![小巷](https://u.jalenz.cn/hi-sophomore/1.jpg)
+![楼房间](https://u.jalenz.cn/hi-sophomore/2.jpg)
+![楼梯口](https://u.jalenz.cn/hi-sophomore/3.jpg)
+![云](https://u.jalenz.cn/hi-sophomore/4.jpg)
 
 总之，继续努力吧！

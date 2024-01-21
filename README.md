@@ -1,15 +1,15 @@
 # Jalen's blog
 
-![status](https://img.shields.io/github/workflow/status/jalenchuh/blog/Deploy?style=flat)
+![status](https://img.shields.io/github/workflow/status/jalenzz/blog/Deploy?style=flat)
 
 Powered by [Gridsome](http://gridsome.org/). Theme - [gridsome-starter-blog](https://github.com/gridsome/gridsome-starter-blog)(style reference [Spencer](https://spencerwoo.com/)).
 
-The old style of Hexo-Cards please check [v1.0](https://github.com/jalenchuh/blog/tree/v1.0).
+The old style of Hexo-Cards please check [v1.0](https://github.com/jalenzz/blog/tree/v1.0).
 
 ## Install
 
 ```bash
-git clone https://github.com/jalenchuh/blog.git
+git clone https://github.com/jalenzz/blog.git
 cd blog
 yarn install
 ```
@@ -40,4 +40,4 @@ Enjoy it. :bow:
 
 Authored and maintained by Jalen Chuh.
 
-[@Portfolio](https://jalenchuh.cn) · [@Blog](https://blog.jalenchuh.cn) · [@GitHub](https://github.com/jalenchuh)
+[@Portfolio](https://jalenz.cn) · [@Blog](https://jalenz.cn) · [@GitHub](https://github.com/jalenzz)

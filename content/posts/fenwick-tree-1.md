@@ -1,7 +1,7 @@
 ---
 title: "P3368 【模板】树状数组 1"
 date: 2020-03-18
-published: true
+published: false
 license: true
 slug: fenwick-tree-1
 tags: ['Algorithm']

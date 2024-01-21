@@ -4,25 +4,16 @@
 
     <div class="friends-container text-center space-bottom">
       <div class="friends-content">
-        <a
-          class="friends-card btn"
-          v-for="friend in friends"
-          :key="friend.id"
-          :href="friend.link"
-          target="_blank"
-          :style="'color: #fff; background-color: ' + friend.background"
-          ><div class="friends-left">
-            <img
-              class="avatar"
-              :src="
-                'https://u.jalenchuh.cn/links/' + friend.id + '.jpg!friends'
-              "
-            />
+        <a class="friends-card btn" v-for="friend in friends" :key="friend.id" :href="friend.link" target="_blank"
+          :style="'color: #fff; background-color: ' + friend.background">
+          <div class="friends-left">
+            <img class="avatar" :src="'https://u.jalenz.cn/links/' + friend.id + '.jpg!friends'
+              " />
           </div>
           <div class="friends-right">
             <p class="friends-name">{{ friend.id }}</p>
-          </div></a
-        >
+          </div>
+        </a>
       </div>
       <!-- <p class="note">
         * 本站不再接受<strong>主动</strong>友链申请

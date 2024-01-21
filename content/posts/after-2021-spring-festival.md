@@ -1,12 +1,12 @@
 ---
 title: "春节·后"
 date: 2021-02-22 11:50:00
-published: true
+published: false
 license: true
 slug: after-2021-spring-festival
 tags: ['春节', '红包']
 cate: life
-cover_image: "https://u.jalenchuh.cn/after-2021-spring-festival/02.jpg"
+cover_image: "https://u.jalenz.cn/after-2021-spring-festival/02.jpg"
 canonical_url: false
 description: "春节已过，新学期来了"
 ---
@@ -25,7 +25,7 @@ description: "春节已过，新学期来了"
 
 过年最开心的应该就是收压岁钱了😋没办法，福建压岁钱平均线真的太高了，全国第一 3500
 
-![ ](https://u.jalenchuh.cn/after-2021-spring-festival/ysq.jpg)
+![ ](https://u.jalenz.cn/after-2021-spring-festival/ysq.jpg)
 
 今年还不错，算上拜年红包勉强超过平均线
 
@@ -41,36 +41,36 @@ description: "春节已过，新学期来了"
 
 年过完了，马上要开学了，开学考也要来了。放点这段时间拍的照片吧，拍的不好，就是记录生活。
 
-![ ](https://u.jalenchuh.cn/after-2021-spring-festival/01.jpg)
+![ ](https://u.jalenz.cn/after-2021-spring-festival/01.jpg)
 
-![ ](https://u.jalenchuh.cn/after-2021-spring-festival/02.jpg)
+![ ](https://u.jalenz.cn/after-2021-spring-festival/02.jpg)
 
-![ ](https://u.jalenchuh.cn/after-2021-spring-festival/03.jpg)
+![ ](https://u.jalenz.cn/after-2021-spring-festival/03.jpg)
 
-![ ](https://u.jalenchuh.cn/after-2021-spring-festival/04.jpg)
+![ ](https://u.jalenz.cn/after-2021-spring-festival/04.jpg)
 
-![ ](https://u.jalenchuh.cn/after-2021-spring-festival/05.jpg)
+![ ](https://u.jalenz.cn/after-2021-spring-festival/05.jpg)
 
-![ ](https://u.jalenchuh.cn/after-2021-spring-festival/06.jpg)
+![ ](https://u.jalenz.cn/after-2021-spring-festival/06.jpg)
 
-![ ](https://u.jalenchuh.cn/after-2021-spring-festival/07.jpg)
+![ ](https://u.jalenz.cn/after-2021-spring-festival/07.jpg)
 
-![ ](https://u.jalenchuh.cn/after-2021-spring-festival/08.jpg)
+![ ](https://u.jalenz.cn/after-2021-spring-festival/08.jpg)
 
-![ ](https://u.jalenchuh.cn/after-2021-spring-festival/09.jpg)
+![ ](https://u.jalenz.cn/after-2021-spring-festival/09.jpg)
 
-![ ](https://u.jalenchuh.cn/after-2021-spring-festival/10.jpg)
+![ ](https://u.jalenz.cn/after-2021-spring-festival/10.jpg)
 
-![ ](https://u.jalenchuh.cn/after-2021-spring-festival/11.jpg)
+![ ](https://u.jalenz.cn/after-2021-spring-festival/11.jpg)
 
-![ ](https://u.jalenchuh.cn/after-2021-spring-festival/12.jpg)
+![ ](https://u.jalenz.cn/after-2021-spring-festival/12.jpg)
 
-![ ](https://u.jalenchuh.cn/after-2021-spring-festival/13.jpg)
+![ ](https://u.jalenz.cn/after-2021-spring-festival/13.jpg)
 
-![ ](https://u.jalenchuh.cn/after-2021-spring-festival/14.jpg)
+![ ](https://u.jalenz.cn/after-2021-spring-festival/14.jpg)
 
-![ ](https://u.jalenchuh.cn/after-2021-spring-festival/15.jpg)
+![ ](https://u.jalenz.cn/after-2021-spring-festival/15.jpg)
 
-![ ](https://u.jalenchuh.cn/after-2021-spring-festival/16.jpg)
+![ ](https://u.jalenz.cn/after-2021-spring-festival/16.jpg)
 
-![ ](https://u.jalenchuh.cn/after-2021-spring-festival/17.jpg)
+![ ](https://u.jalenz.cn/after-2021-spring-festival/17.jpg)

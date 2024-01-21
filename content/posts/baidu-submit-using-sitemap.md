@@ -29,7 +29,7 @@ Gridsome 官网上看到官方称其 _SEO-friendly_
 
 ```xml
 <url>
-  <loc>https://blog.jalenchuh.cn/</loc>
+  <loc>https://jalenz.cn/</loc>
 </url>
 ```
 
@@ -60,7 +60,7 @@ import re
 import urllib
 import requests
 
-sitemap = 'https://blog.jalenchuh.cn/sitemap.xml'
+sitemap = 'https://jalenz.cn/sitemap.xml'
 
 html = urllib.request.urlopen(sitemap).read().decode('utf-8')
 result = re.findall(re.compile(r'(?<=<loc>).*?(?=</loc>)'), html)
@@ -156,7 +156,7 @@ jobs:
 
 ## 配置
 
-具体配置见 [README](https://github.com/JalenChuh/baidu-url-submit-by-using-sitemap#readme)
+具体配置见 [README](https://github.com/jalenzz/baidu-url-submit-by-using-sitemap#readme)
 
 ## 结束
 

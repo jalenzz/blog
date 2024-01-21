@@ -1,7 +1,7 @@
 ---
 title: "P3368 【模板】树状数组 2"
 date: 2020-03-26
-published: true
+published: false
 license: true
 slug: fenwick-tree-2
 tags: ['Algorithm']
@@ -61,7 +61,7 @@ canonical_url: false
 
 ##### 样例 1 解释：
 
-![解释](https://u.jalenchuh.cn/fenwick-tree-2/01.png)
+![解释](https://u.jalenz.cn/fenwick-tree-2/01.png)
 
 故输出结果为 6、10。
 
@@ -85,7 +85,7 @@ canonical_url: false
 
 通过差分数组将其转换为单点修改区间查询，没错，就是树状数组 1，的单点修改区间查询
 
-说到差分我就想到了 xzt 卖煎饼，想到 xzt 卖煎饼我就想到了暴力 $O(nm)$ 解法，想到这个解法就想到了我是多么菜鸡<img src="https://u.jalenchuh.cn/fenwick-tree-2/02.png" data-align="inline">
+说到差分我就想到了 xzt 卖煎饼，想到 xzt 卖煎饼我就想到了暴力 $O(nm)$ 解法，想到这个解法就想到了我是多么菜鸡<img src="https://u.jalenz.cn/fenwick-tree-2/02.png" data-align="inline">
 
 #### 前置知识 差分数组
 

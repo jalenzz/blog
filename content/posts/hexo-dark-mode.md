@@ -11,6 +11,9 @@ canonical_url: false
 description: "适用于 Hexo 的暗黑模式，推荐在主题没有暗色模式的情况下使用"
 ---
 
+:::warning 🚨
+[Fluid v1.8.2](https://github.com/fluid-dev/hexo-theme-fluid/releases/tag/v1.8.2) 已官方支持暗黑模式
+:::
 
 大概花了一个晚上搞暗黑模式，之后几天陆续优化了下
 目前博客已经基本上适配完成了
@@ -228,10 +231,10 @@ sessionStorage 在手机浏览器上问题很多，不推荐使用
 :::
 
 下面是支持该特性的最低版本
-![支持情况](https://u.jalenchuh.cn/hexo-dark-mode/01.png)
+![支持情况](https://u.jalenz.cn/hexo-dark-mode/01.png)
 
 可以在浏览器控制台中查看他们的值
-![查看](https://u.jalenchuh.cn/hexo-dark-mode/02.png)
+![查看](https://u.jalenz.cn/hexo-dark-mode/02.png)
 
 ---
 

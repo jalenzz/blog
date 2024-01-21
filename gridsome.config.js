@@ -8,9 +8,9 @@ const marked = require("marked");
 // const yaml = require('js-yaml')
 
 module.exports = {
-  siteUrl: "https://blog.jalenchuh.cn",
+  siteUrl: "https://jalenz.cn",
   siteName: "Jalen's Blog",
-  siteDescription: "爱折腾的少年",
+  siteDescription: "Jalen's Blog",
 
   templates: {
     Post: "/posts/:slug",
@@ -44,7 +44,7 @@ module.exports = {
         contentTypes: ["Post"],
         feedOptions: {
           title: "Jalen's Blog",
-          description: "少年的我",
+          description: "Jalen's Blog",
         },
         rss: {
           enabled: true,
