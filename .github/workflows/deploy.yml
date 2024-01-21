@@ -21,11 +21,12 @@ jobs:
     - name: Generate
       run: yarn run build
 
-    - name: Deploy
-      id: deployStatic
-      uses: TencentCloudBase/cloudbase-action@v1.1.1
+    - name: Login
+      uses: manyuanrong/setup-ossutil@v2.0
       with:
-        secretId: ${{ secrets.SECRET_ID }}
-        secretKey: ${{ secrets.SECRET_KEY }}
-        envId: ${{ secrets.ENV_ID }}
-        staticSrcPath: dist
+        endpoint: ${{ secrets.ENDPOINT }}
+        access-key-id: ${{ secrets.OSS_KEY_ID }}
+        access-key-secret: ${{ secrets.OSS_KEY_SECRET }}
+
+    - name: Deploy
+      run: ossutil cp -rf dist oss://blog-jalen/
