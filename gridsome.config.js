@@ -11,6 +11,7 @@ module.exports = {
   siteUrl: "https://jalenz.cn",
   siteName: "Jalen's Blog",
   siteDescription: "Jalen's Blog",
+  titleTemplate: "%s",
 
   templates: {
     Post: "/posts/:slug",

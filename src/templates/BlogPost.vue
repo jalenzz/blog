@@ -65,17 +65,16 @@
         <a class="navlink" v-if="$page.next" :href="$page.next.path" style="float: right">{{ $page.next.title }}
           <span class="post__navigation__">&#9654;</span></a>
       </div>
-    </div>
 
-    <div class="waline-cards">
-      <details class="admonition admonition-note">
-        <summary>Comment</summary>
-        <p>
-          评论如无特殊原因均不会被删除，提交前请三思。<br />
-          你应该懂得如何发表适当的观点，请对自己的言论负责。
-        </p>
-      </details>
-      <div id="waline"></div>
+      <hr />
+      <div class="comments-container">
+        <script type="application/javascript" src="https://giscus.app/client.js" data-repo="jalenzz/blog"
+          data-repo-id="MDEwOlJlcG9zaXRvcnkyNDUzOTk0NDM=" data-category="Announcements"
+          data-category-id="DIC_kwDODqB_k84Cckgo" data-mapping="title" data-strict="0" data-reactions-enabled="1"
+          data-emit-metadata="0" data-input-position="top" :data-theme="themeUrl" data-lang="zh-CN" data-loading="lazy"
+          crossorigin="anonymous" async>
+        </script>
+      </div>
     </div>
 
     <transition name="fade">
@@ -87,6 +86,14 @@
     <Author class="post-author" />
   </div>
 </template>
+
+<static-query>
+query {
+  metadata {
+    siteUrl
+  }
+}
+</static-query>
 
 <script>
 import "katex/dist/katex.min.css";
@@ -113,6 +120,7 @@ export default {
   },
   data() {
     return {
+      themeUrl: '',
       scrolledDist: 0,
     };
   },
@@ -126,6 +134,12 @@ export default {
   created() {
     if (process.isClient) {
       window.addEventListener("scroll", this.handleScroll);
+    }
+    if (process.env.NODE_ENV === 'development') {
+      this.themeUrl = 'http://localhost:8080/assets/css/comment.css';
+    } else if (process.env.NODE_ENV === 'production') {
+      console.log(this.$static.metadata.siteUrl);
+      this.themeUrl = this.$static.metadata.siteUrl + '/assets/css/comment.css';
     }
   },
   destroyed() {
@@ -141,15 +155,6 @@ export default {
       (today - publishTime) / (1000 * 60 * 60 * 24)
     );
     this.publishedDays = publishedDays;
-
-    const Waline = require("@waline/client");
-    new Waline({
-      el: "#waline",
-      login: "disable",
-      dark: 'body[data-theme="dark"]',
-      serverURL: "https://api.jalenz.cn",
-      // other config
-    });
   },
 };
 </script>

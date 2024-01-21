@@ -9,7 +9,7 @@
       {{ $static.metadata.siteName }}
     </h1>
 
-    <p class="author__intro">你终于来啦</p>
+    <p class="author__intro">你终于来啦👻</p>
 
     <p class="author__links">
       <g-link href="https://jalenz.cn/" target="_blank" style="color: #5c6977"

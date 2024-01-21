@@ -36,8 +36,8 @@ Enjoy it. :bow:
 
 ---
 
-:man_technologist: **Jalen's blog** ©Jalen Chuh. Released under the MIT License.
+:man_technologist: **Jalen's blog** ©jalenz. Released under the MIT License.
 
-Authored and maintained by Jalen Chuh.
+Authored and maintained by jalenz.
 
 [@Portfolio](https://jalenz.cn) · [@Blog](https://jalenz.cn) · [@GitHub](https://github.com/jalenzz)

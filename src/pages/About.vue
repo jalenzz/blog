@@ -58,17 +58,16 @@
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="waline-cards">
-      <details class="admonition admonition-note">
-        <summary>Comment</summary>
-        <p>
-          评论如无特殊原因均不会被删除，提交前请三思。<br />
-          你应该懂得如何发表适当的观点，请对自己的言论负责。
-        </p>
-      </details>
-      <div id="waline"></div>
+      <hr />
+      <div class="comments-container">
+        <script type="application/javascript" src="https://giscus.app/client.js" data-repo="jalenzz/blog"
+          data-repo-id="MDEwOlJlcG9zaXRvcnkyNDUzOTk0NDM=" data-category="Announcements"
+          data-category-id="DIC_kwDODqB_k84Cckgo" data-mapping="title" data-strict="0" data-reactions-enabled="1"
+          data-emit-metadata="0" data-input-position="top" :data-theme="themeUrl" data-lang="zh-CN" data-loading="lazy"
+          crossorigin="anonymous" async>
+        </script>
+      </div>
     </div>
 
     <transition name="fade">
@@ -100,6 +99,7 @@ export default {
   },
   data() {
     return {
+      themeUrl: '',
       scrolledDist: 0,
     };
   },
@@ -114,6 +114,11 @@ export default {
     if (process.isClient) {
       window.addEventListener("scroll", this.handleScroll);
     }
+    if (process.env.NODE_ENV === 'development') {
+      this.themeUrl = 'http://localhost:8080/assets/css/comment.css';
+    } else if (process.env.NODE_ENV === 'production') {
+      this.themeUrl = this.$static.metadata.siteUrl + '/assets/css/comment.css';
+    }
   },
   destroyed() {
     if (process.isClient) {
@@ -121,17 +126,18 @@ export default {
     }
   },
   mounted() {
-    const Waline = require("@waline/client");
-    new Waline({
-      el: "#waline",
-      login: "disable",
-      dark: 'body[data-theme="dark"]',
-      serverURL: "https://api.jalenz.cn",
-      // other config
-    });
+
   },
 };
 </script>
+
+<static-query>
+query {
+  metadata {
+    siteUrl
+  }
+}
+</static-query>
 
 <style lang="stylus">
 .about-title
