@@ -61,7 +61,7 @@ canonical_url: false
 
 ##### 样例 1 解释：
 
-![解释](https://u.jalenz.cn/fenwick-tree-2/01.png)
+![解释](https://u.jalenz.cn/fenwick-tree-2/01.png?blog)
 
 故输出结果为 6、10。
 

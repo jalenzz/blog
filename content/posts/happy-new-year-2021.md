@@ -6,7 +6,7 @@ license: true
 slug: happy-new-year-2021
 tags: ['新年']
 cate: life
-cover_image: "./images/happy-new-year-2021.png"
+cover_image: "https://u.jalenz.cn/cover_image/happy-new-year-2021.png?webp"
 canonical_url: false
 description: "祝大家新年快乐"
 ---

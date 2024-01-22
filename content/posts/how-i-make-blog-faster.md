@@ -6,7 +6,7 @@ license: true
 slug: how-i-make-blog-faster
 tags: ['Analytics', 'Static', 'Preloading']
 cate: tech
-cover_image: "./images/how-i-make-blog-faster.png"
+cover_image: "https://u.jalenz.cn/cover_image/how-i-make-blog-faster.png?webp"
 canonical_url: false
 description: "折腾博客这么久了，加速博客算是有点经验吧"
 ---
@@ -22,9 +22,9 @@ description: "折腾博客这么久了，加速博客算是有点经验吧"
 
 不多说了，先来看看我的成果：
 
-![speed desktop](https://u.jalenz.cn/how-i-make-blog-faster/speed_desktop.png)
+![speed desktop](https://u.jalenz.cn/how-i-make-blog-faster/speed_desktop.png?blog)
 
-![speed mobile](https://u.jalenz.cn/how-i-make-blog-faster/speed_mobile.png)
+![speed mobile](https://u.jalenz.cn/how-i-make-blog-faster/speed_mobile.png?blog)
 
 如果你和我一样，时不时用 PageSpeed Insights 跑跑博客、F12 看看网页加载速度，那么接下来的内容可能会对你有点帮助。
 
@@ -256,7 +256,7 @@ server_url 为该应用绑定的 API 域名
 
 引入的文件总共就 1 kb 多一点点，速度也是杠杠的，基本两个文件各自都能在 100ms 内加载完成，总共也就 200ms，而我测试后发现，大部分时间两个文件总共加载时间都在 100ms 内。
 
-![ga](https://u.jalenz.cn/how-i-make-blog-faster/ga.png)
+![ga](https://u.jalenz.cn/how-i-make-blog-faster/ga.png?blog)
 
 强烈推荐使用这种方法，速度贼快，还省事。
 
@@ -282,7 +282,7 @@ server_url 为该应用绑定的 API 域名
 由 Google 的团队开发，通过脚本检测当前可视区域内的链接，进行预加载。
 比如下方图片中共包含 6 个本站链接，本页面所有内容加载完成后，就会对这 6 个链接预先加载，在本地留下缓存，使得点击跳转的后的加载速度变快。因为它会加载当前可视区的所有链接，所以对服务器的负担会比较重。
 
-![quicklink](https://u.jalenz.cn/how-i-make-blog-faster/quicklink.png)
+![quicklink](https://u.jalenz.cn/how-i-make-blog-faster/quicklink.png?blog)
 
 他采用的预加载是在 `<head>` 中引入 `<link>`
 

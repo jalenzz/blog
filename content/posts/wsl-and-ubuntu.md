@@ -6,7 +6,7 @@ published: true
 license: true
 slug: wsl-and-ubuntu
 cate: tech
-cover_image: "./images/wsl-and-ubuntu.png"
+cover_image: "https://u.jalenz.cn/cover_image/wsl-and-ubuntu.png?webp"
 canonical_url: false
 description: "虽然 Windows 是一坨💩 但 WSL 还是不错的"
 ---

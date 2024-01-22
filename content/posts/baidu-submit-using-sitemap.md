@@ -6,7 +6,7 @@ license: true
 slug: baidu-submit-using-sitemap
 tags: ['GitHub Action', 'Python']
 cate: tech
-cover_image: "./images/baidu-submit-using-sitemap.png"
+cover_image: "https://u.jalenz.cn/cover_image/baidu-submit-using-sitemap.png?webp"
 canonical_url: false
 description: "每天自动从 sitemap 中提取链接并推送至百度"
 ---

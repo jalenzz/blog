@@ -6,7 +6,7 @@ license: true
 slug: hexo-dark-mode
 tags: ['DarkMode', 'Hexo']
 cate: tech
-cover_image: "./images/hexo-dark-mode.png"
+cover_image: "https://u.jalenz.cn/cover_image/hexo-dark-mode.png?webp"
 canonical_url: false
 description: "适用于 Hexo 的暗黑模式，推荐在主题没有暗色模式的情况下使用"
 ---
@@ -231,10 +231,10 @@ sessionStorage 在手机浏览器上问题很多，不推荐使用
 :::
 
 下面是支持该特性的最低版本
-![支持情况](https://u.jalenz.cn/hexo-dark-mode/01.png)
+![支持情况](https://u.jalenz.cn/hexo-dark-mode/01.png?blog)
 
 可以在浏览器控制台中查看他们的值
-![查看](https://u.jalenz.cn/hexo-dark-mode/02.png)
+![查看](https://u.jalenz.cn/hexo-dark-mode/02.png?blog)
 
 ---
 

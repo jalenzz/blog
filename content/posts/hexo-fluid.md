@@ -364,7 +364,7 @@ hexo.extend.generator.register('_messageboard', function (locals) {
 换了给好看点的播放器，在指定页面加载
 需要加载的页面加入
 
-![音乐播放器](https://u.jalenz.cn/hexo-fluid/02.png)
+![音乐播放器](https://u.jalenz.cn/hexo-fluid/02.png?blog)
 
 #### JS
 

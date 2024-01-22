@@ -5,7 +5,7 @@ published: false
 license: true
 slug: hello-world
 cate: life
-cover_image: "./images/hello-world.png"
+cover_image: "https://u.jalenz.cn/cover_image/hello-world.png?webp"
 canonical_url: false
 description: "庆祝我的博客诞生"
 ---

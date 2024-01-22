@@ -6,7 +6,7 @@ license: true
 slug: handshaker
 tags: ['HandShaker']
 cate: tech
-cover_image: "./images/handshaker.png"
+cover_image: "https://u.jalenz.cn/cover_image/handshaker.png?webp"
 canonical_url: false
 description: "不夸张的说，我认为这或许是最好的非系统的安卓手机管理工具，好看的 UI、舒适的体验，至少我目前还没有找到一个既免费又有与之相同体验的软件"
 ---
@@ -32,7 +32,7 @@ HandShaker，**握手**？那咱**交个朋友**？还是熟悉的锤子风格�
 
 不夸张的说，我认为这或许是最好的**非系统的**安卓手机管理工具，全平台通用，不限制机型（就我目前发现的软件而言）
 
-![HandShaker](https://u.jalenz.cn/17291/01.png)
+![HandShaker](https://u.jalenz.cn/17291/01.png?blog)
 
 UI 还是锤子的一贯风格
 看惯了 Material Design，再看看锤子的扁平感觉也挺不错的:laughing:
@@ -54,23 +54,23 @@ UI 还是锤子的一贯风格
 
 相册页面还能按照手机上的不同相册来显示
 
-![文件同步](https://u.jalenz.cn/17291/03.png)
+![文件同步](https://u.jalenz.cn/17291/03.png?blog)
 
 同时，如果开启完全同步，还可将相册保存在本地，即使与手机断开连接，也能操作
 
-![完全同步](https://u.jalenz.cn/17291/04.png)
+![完全同步](https://u.jalenz.cn/17291/04.png?blog)
 
 但这里的相册有个小问题，**相机相册**中的照片并不是系统相机而是**谷歌相机**，这就有的迷了，不知道是不是只有 Flyme 这样
 
 其他页面也感觉非常 nice
 
-![音乐界面](https://u.jalenz.cn/17291/05.png)
+![音乐界面](https://u.jalenz.cn/17291/05.png?blog)
 
-![视频界面](https://u.jalenz.cn/17291/06.png)
+![视频界面](https://u.jalenz.cn/17291/06.png?blog)
 
-![下载界面](https://u.jalenz.cn/17291/07.png)
+![下载界面](https://u.jalenz.cn/17291/07.png?blog)
 
-![文件页面](https://u.jalenz.cn/17291/08.png)
+![文件页面](https://u.jalenz.cn/17291/08.png?blog)
 
 文件页面的图标能看得出非常用心
 
@@ -82,15 +82,15 @@ UI 还是锤子的一贯风格
 
 挑了个视频文件测试，文件过大时提示 」当前传输文件过大，建议通过 USB 数据线传输「，还是非常细心啊，并且你也可以不接受建议 :joy:
 
-![提示](https://u.jalenz.cn/17291/10.png)
+![提示](https://u.jalenz.cn/17291/10.png?blog)
 
 但是无线传输的速度还是同不错的，能达到将近 10MB/S
 
-![无线传输](https://u.jalenz.cn/17291/11.png)
+![无线传输](https://u.jalenz.cn/17291/11.png?blog)
 
 而 USB 传输的速度能达到将近 20MB/S
 
-![USB 传输](https://u.jalenz.cn/17291/12.png)
+![USB 传输](https://u.jalenz.cn/17291/12.png?blog)
 
 基本满足了传输需求，比 OneDrive 的玄学速度好太多了
 
@@ -98,19 +98,19 @@ UI 还是锤子的一贯风格
 
 文件预览在我这有点玄学，是我的食用方法不对？和拖拽一样传文件到本地，但是速度只有 2MB/s 左右，偶尔能跑的和之前一样的 8MB/s
 
-![文件预览](https://u.jalenz.cn/17291/13.png)
+![文件预览](https://u.jalenz.cn/17291/13.png?blog)
 
 所以用来预览大文件不太方便，不过图片什么的还是非常方便的，图片的预览会先跳出略缩图，再加载清楚
 
 还内置了音乐播放器，可以直接播放音乐，不过功能比较简陋
 
-![音乐播放器](https://u.jalenz.cn/17291/14.png)
+![音乐播放器](https://u.jalenz.cn/17291/14.png?blog)
 
 #### 闪念胶囊
 
 真的超级超级 nice 啊，非常好用，之前一直在用微软的 ToDo，手机上可以同步，UI 也做的挺不错的
 
-![闪念胶囊](https://u.jalenz.cn/17291/15.png)
+![闪念胶囊](https://u.jalenz.cn/17291/15.png?blog)
 
 不过最近已经开始用闪念胶囊了，至于原因，~~我自己可能也说不出来~~，总之，感觉用着更舒服一点吧，虽然这是锤子手机内置的功能，其他手机用不了。但是认真想想，在手机上记录的 ToDo 可能更多是一些零碎的小事情，需要马上去做，记下来只是怕忘了，用负一屏自带的备忘录就可以了，而在电脑上记录的可能则是一些任务规划。
 
@@ -129,7 +129,7 @@ UI 还是锤子的一贯风格
 
 当然了，ToDo 必备的日期肯定也是有的
 
-![闪念胶囊日期](https://u.jalenz.cn/17291/18.png)
+![闪念胶囊日期](https://u.jalenz.cn/17291/18.png?blog)
 
 ### 最后
 

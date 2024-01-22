@@ -6,7 +6,7 @@ published: false
 license: true
 slug: ubuntu20-04-config
 cate: tech
-cover_image: "./images/ubuntu20-04-config.png"
+cover_image: "https://u.jalenz.cn/cover_image/ubuntu20-04-config.png?webp"
 canonical_url: false
 description: 大概就是我重装了 n 遍 Ubuntu，终于在截止目前重装的倒数第二遍的时候脑瓜子突然灵光一闪，想起来把基本的一些配置全部记下，万一下次还要重装就不用再去一个个搜了
 ---

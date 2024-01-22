@@ -67,7 +67,7 @@ canonical_url: false
 
 **【样例解释】**
 
-![样例解释](https://u.jalenz.cn/2024/01.png)
+![样例解释](https://u.jalenz.cn/2024/01.png?blog)
 
 ## 题解
 

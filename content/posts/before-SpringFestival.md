@@ -6,7 +6,7 @@ license: true
 slug: before-SpringFestival
 tags: ['考试', '研学', '春节']
 cate: life
-cover_image: "./images/before-SpringFestival.png"
+cover_image: "https://u.jalenz.cn/cover_image/before-SpringFestival.png?webp"
 canonical_url: false
 description: "考试结束，春节将至"
 ---

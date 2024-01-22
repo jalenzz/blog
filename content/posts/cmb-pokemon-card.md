@@ -6,15 +6,15 @@ license: true
 slug: cmb-pokemon-card
 tags: ['招商银行', 'Pokémon']
 cate: life
-cover_image: "./images/cmb-pokemon-card.png"
+cover_image: "https://u.jalenz.cn/cover_image/cmb-pokemon-card.png?webp"
 canonical_url: false
 description: "皮卡丘超可爱！"
 ---
 
 在好多个月前就申请了招商银行的海贼王联名卡，真的超好看。前几天突然发现招商银行又出了宝可梦联名卡（皮卡丘），还是透明的！超级心动，在酷安看到说可以申请平级换卡，就去试了试。从申请换卡到领卡大概一周时间，到手发现真的比图片好看！
 
-![皮卡丘联名卡](https://u.jalenz.cn/cmb-pokemon-card/2.png)
-![皮卡丘联名卡](https://u.jalenz.cn/cmb-pokemon-card/1.png)
+![皮卡丘联名卡](https://u.jalenz.cn/cmb-pokemon-card/2.png?blog)
+![皮卡丘联名卡](https://u.jalenz.cn/cmb-pokemon-card/1.png?blog)
 ![正面](https://u.jalenz.cn/cmb-pokemon-card/card-f.jpg)
 ![反面](https://u.jalenz.cn/cmb-pokemon-card/card-b.jpg)
 
@@ -30,7 +30,7 @@ description: "皮卡丘超可爱！"
 
 下载招商银行 App，首页下方有个储蓄卡申请，进入即可办卡，需要满足年龄 16+ 和非虚拟手机号。也可以直接在微信公众号里办卡。办理航海王联名卡在领卡是需要注意招行对人名的翻译，比如索隆在它那的翻译就不是这个，害我找了半天。申请一般都是会通过的，但也有极少情况会不通过。
 
-![申请](https://u.jalenz.cn/cmb-pokemon-card/get.png)
+![申请](https://u.jalenz.cn/cmb-pokemon-card/get.png?blog)
 
 办卡是不收取任何费用的，而且第一张卡免年费，千万不要被员工骗了（有看到过这种事情，被骗说要开通 xxx 服务才能免年费）。大概一星期就会收到招行的短信，去时需要身份证和手机短信，不过一些卡可能比较紧缺，一个月才收到通知也是有可能的。有些卡貌似收到通知一周内领卡还有福利啥的。就算放在网点很久不去领卡也没关系，我就放了两个月才领的卡。
 

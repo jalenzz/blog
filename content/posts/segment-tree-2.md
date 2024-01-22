@@ -6,7 +6,7 @@ license: true
 slug: segment-tree-2
 tags: ['Algorithm']
 cate: tech
-cover_image: "./images/segment-tree-2.png"
+cover_image: "https://u.jalenz.cn/cover_image/segment-tree-2.png?webp"
 canonical_url: false
 ---
 
@@ -287,7 +287,7 @@ cheng 要 down(k)
 
 要不然就会这样，一个月了才过（虽然前面有 AC 一次）
 
-![warnning](https://u.jalenz.cn/SegmentTree2/02.png)
+![warnning](https://u.jalenz.cn/SegmentTree2/02.png?blog)
 
 :::
 
