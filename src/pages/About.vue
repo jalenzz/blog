@@ -8,14 +8,29 @@
       <div class="about_content">
         <h3 style="margin-top: 0" id="关于我"><a href="#关于我"></a>关于我</h3>
         <p>
-          <a href="https://jalenz.cn" target="_blank" class="about-me" style="color: #0070f3"><font-awesome
-              :icon="['fas', 'id-badge']" /> Student</a>
+          <a
+            href="https://jalenz.cn"
+            target="_blank"
+            class="about-me"
+            style="color: #0070f3"
+            ><font-awesome :icon="['fas', 'id-badge']" /> Student</a
+          >
           /
-          <a href="https://github.com/jalenzz" target="_blank" class="about-me"
-            style="color: var(--title-color)"><font-awesome :icon="['fab', 'github']" /> Developer</a>
+          <a
+            href="https://github.com/jalenzz"
+            target="_blank"
+            class="about-me"
+            style="color: var(--title-color)"
+            ><font-awesome :icon="['fab', 'github']" /> Developer</a
+          >
           /
-          <a href="https://sspai.com/u/Jalen/posts" target="_blank" class="about-me" style="color: #ca2c2a"><font-awesome
-              :icon="['fas', 'pen-square']" /> Writer</a>
+          <a
+            href="https://sspai.com/u/Jalen/posts"
+            target="_blank"
+            class="about-me"
+            style="color: #ca2c2a"
+            ><font-awesome :icon="['fas', 'pen-square']" /> Writer</a
+          >
         </p>
 
         <p>
@@ -30,20 +45,32 @@
         <h3 id="关于博客"><a href="#关于博客"></a>关于博客</h3>
         <p>
           本站使用 Gridsome 搭建，参考
-          <a href="https://github.com/spencerwooo/blog" target="_blank">@spencerwooo/blog</a>
+          <a href="https://github.com/spencerwooo/blog" target="_blank"
+            >@spencerwooo/blog</a
+          >
           和
-          <a href="https://github.com/monsterxcn/myBlog" target="_blank">@monsterxcn/myBlog</a>
+          <a href="https://github.com/monsterxcn/myBlog" target="_blank"
+            >@monsterxcn/myBlog</a
+          >
           进行了修改，开源于
-          <a href="https://github.com/jalenzz/blog" target="_blank">@jalenzz/blog</a>
+          <a href="https://github.com/jalenzz/blog" target="_blank"
+            >@jalenzz/blog</a
+          >
         </p>
         <div class="admonition admonition-important">
           <div class="admonition-heading">
             <h5>
               <div class="admonition-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16">
-                  <path fill-rule="evenodd"
-                    d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z">
-                  </path>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="16"
+                  viewBox="0 0 14 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"
+                  ></path>
                 </svg>
               </div>
               版权
@@ -51,7 +78,11 @@
           </div>
           <div class="admonition-content">
             除特殊说明，文章均采用
-            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">CC BY-NC-SA 4.0 协议</a>
+            <a
+              href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh"
+              target="_blank"
+              >CC BY-NC-SA 4.0 协议</a
+            >
             <br />
             博客题图均为自制，部分素材来自
             <a href="https://freepik.com/" target="_blank">freepik</a>
@@ -71,7 +102,11 @@
     </div>
 
     <transition name="fade">
-      <div id="back-to-top" v-scroll-to="{ el: '#app' }" v-if="scrolledDist > 400">
+      <div
+        id="back-to-top"
+        v-scroll-to="{ el: '#app' }"
+        v-if="scrolledDist > 400"
+      >
         <font-awesome id="back-to-top-icon" :icon="['fas', 'arrow-up']" />
       </div>
     </transition>
@@ -124,10 +159,7 @@ export default {
     if (process.isClient) {
       window.removeEventListener("scroll", this.handleScroll);
     }
-  },
-  mounted() {
-
-  },
+  }
 };
 </script>
 

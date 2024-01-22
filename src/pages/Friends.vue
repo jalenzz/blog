@@ -4,11 +4,19 @@
 
     <div class="friends-container text-center space-bottom">
       <div class="friends-content">
-        <a class="friends-card btn" v-for="friend in friends" :key="friend.id" :href="friend.link" target="_blank"
-          :style="'color: #fff; background-color: ' + friend.background">
+        <a
+          class="friends-card btn"
+          v-for="friend in friends"
+          :key="friend.id"
+          :href="friend.link"
+          target="_blank"
+          :style="'color: #fff; background-color: ' + friend.background"
+        >
           <div class="friends-left">
-            <img class="avatar" :src="'https://u.jalenz.cn/links/' + friend.id + '.jpg!friends'
-              " />
+            <img
+              class="avatar"
+              :src="'https://u.jalenz.cn/links/' + friend.id + '.jpg!friends'"
+            />
           </div>
           <div class="friends-right">
             <p class="friends-name">{{ friend.id }}</p>

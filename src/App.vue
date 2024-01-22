@@ -22,14 +22,24 @@
     <footer class="footer">
       <div class="footer__copyright">
         Jalen © 2019 - {{ new Date().getFullYear() }}.
-        <a href="http://beian.miit.gov.cn/" target="_blank" style="text-decoration: none">闽ICP备20005437号-2</a>
+        <a
+          href="http://beian.miit.gov.cn/"
+          target="_blank"
+          style="text-decoration: none"
+          >闽ICP备20005437号-2</a
+        >
       </div>
       <div class="footer__links">
         Powered by <font-awesome :icon="['fas', 'rocket']" />
-        <a href="//gridsome.org" style="text-decoration: none" target="_blank">Gridsome</a>
+        <a href="//gridsome.org" style="text-decoration: none" target="_blank"
+          >Gridsome</a
+        >
         and <font-awesome :icon="['fas', 'heart']" />Love.
       </div>
-      <a href="//www.upyun.com/?utm_source=lianmeng&utm_medium=referral" target="_blank">
+      <a
+        href="//www.upyun.com/?utm_source=lianmeng&utm_medium=referral"
+        target="_blank"
+      >
         <g-image src="~/assets/images/upyun.svg" />
       </a>
     </footer>

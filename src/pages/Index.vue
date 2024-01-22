@@ -5,14 +5,22 @@
 
     <!-- List posts -->
     <div class="posts">
-      <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node" />
+      <PostCard
+        v-for="edge in $page.posts.edges"
+        :key="edge.node.id"
+        :post="edge.node"
+      />
     </div>
 
     <!-- Pagination -->
     <Pager :info="$page.posts.pageInfo" />
 
     <transition name="fade">
-      <div id="back-to-top" v-scroll-to="{ el: '#app' }" v-if="scrolledDist > 400">
+      <div
+        id="back-to-top"
+        v-scroll-to="{ el: '#app' }"
+        v-if="scrolledDist > 400"
+      >
         <font-awesome id="back-to-top-icon" :icon="['fas', 'arrow-up']" />
       </div>
     </transition>
