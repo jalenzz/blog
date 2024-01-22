@@ -3,6 +3,7 @@
   <head>
     ${head}
   </head>
+
   <body ${bodyAttrs}>
     <script>
       // Add dark / light detection that runs before Vue.js load. Borrowed from overreacted.io
@@ -25,6 +26,27 @@
           try {
             localStorage.setItem("theme", newTheme);
           } catch (err) {}
+
+          // Update giscus theme
+          const iframe = document.querySelector("iframe.giscus-frame");
+          if (!iframe) return;
+          themeUrl =
+            window.location.protocol +
+            "//" +
+            window.location.host +
+            "/assets/css/comment-" +
+            newTheme +
+            ".css";
+          iframe.contentWindow.postMessage(
+            {
+              giscus: {
+                setConfig: {
+                  theme: themeUrl,
+                },
+              },
+            },
+            "https://giscus.app"
+          );
         };
 
         var darkQuery = window.matchMedia("(prefers-color-scheme: dark)");

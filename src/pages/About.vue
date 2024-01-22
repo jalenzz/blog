@@ -91,14 +91,24 @@
       </div>
 
       <hr />
-      <div class="comments-container">
-        <script type="application/javascript" src="https://giscus.app/client.js" data-repo="jalenzz/blog"
-          data-repo-id="MDEwOlJlcG9zaXRvcnkyNDUzOTk0NDM=" data-category="Announcements"
-          data-category-id="DIC_kwDODqB_k84Cckgo" data-mapping="title" data-strict="0" data-reactions-enabled="1"
-          data-emit-metadata="0" data-input-position="top" :data-theme="themeUrl" data-lang="zh-CN" data-loading="lazy"
-          crossorigin="anonymous" async>
-        </script>
-      </div>
+      <script
+        type="application/javascript"
+        src="https://giscus.app/client.js"
+        data-repo="jalenzz/blog"
+        data-repo-id="MDEwOlJlcG9zaXRvcnkyNDUzOTk0NDM="
+        data-category="Announcements"
+        data-category-id="DIC_kwDODqB_k84Cckgo"
+        data-mapping="title"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        :data-theme="themeUrl"
+        data-lang="zh-CN"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async
+      ></script>
     </div>
 
     <transition name="fade">
@@ -134,7 +144,13 @@ export default {
   },
   data() {
     return {
-      themeUrl: '',
+      themeUrl:
+        window.location.protocol +
+        "//" +
+        window.location.host +
+        "/assets/css/comment-" +
+        localStorage.getItem("theme") +
+        ".css",
       scrolledDist: 0,
     };
   },
@@ -149,17 +165,12 @@ export default {
     if (process.isClient) {
       window.addEventListener("scroll", this.handleScroll);
     }
-    if (process.env.NODE_ENV === 'development') {
-      this.themeUrl = 'http://localhost:8080/assets/css/comment.css';
-    } else if (process.env.NODE_ENV === 'production') {
-      this.themeUrl = this.$static.metadata.siteUrl + '/assets/css/comment.css';
-    }
   },
   destroyed() {
     if (process.isClient) {
       window.removeEventListener("scroll", this.handleScroll);
     }
-  }
+  },
 };
 </script>
 
