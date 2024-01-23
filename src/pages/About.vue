@@ -34,8 +34,7 @@
         </p>
 
         <p>
-          欢迎来到小破站，我是 Jalen，00 后，性别男爱好女。<br />
-          爱折腾的少年，信奉「好看就是生产力」（大雾），对大部分未知事物感兴趣<br />
+          Jalen，信奉「好看就是生产力」（大雾）<br />
           喜欢 🏓 🏐 🏊‍♂️ 💻 and Emoji 😆<br />
           <s>坚定的</s>括号不换行党！只要你也不换行，我们就是好朋友
         </p>
@@ -144,13 +143,7 @@ export default {
   },
   data() {
     return {
-      themeUrl:
-        window.location.protocol +
-        "//" +
-        window.location.host +
-        "/assets/css/comment-" +
-        localStorage.getItem("theme") +
-        ".css",
+      themeUrl: '',
       scrolledDist: 0,
     };
   },
@@ -164,6 +157,13 @@ export default {
   created() {
     if (process.isClient) {
       window.addEventListener("scroll", this.handleScroll);
+      this.themeUrl =
+        window.location.protocol +
+        "//" +
+        window.location.host +
+        "/assets/css/comment-" +
+        localStorage.getItem("theme") +
+        ".css";
     }
   },
   destroyed() {

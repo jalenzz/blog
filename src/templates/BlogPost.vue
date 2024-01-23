@@ -159,13 +159,7 @@ export default {
   },
   data() {
     return {
-      themeUrl:
-        window.location.protocol +
-        "//" +
-        window.location.host +
-        "/assets/css/comment-" +
-        localStorage.getItem("theme") +
-        ".css",
+      themeUrl: "",
       scrolledDist: 0,
     };
   },
@@ -179,6 +173,13 @@ export default {
   created() {
     if (process.isClient) {
       window.addEventListener("scroll", this.handleScroll);
+      this.themeUrl =
+        window.location.protocol +
+        "//" +
+        window.location.host +
+        "/assets/css/comment-" +
+        localStorage.getItem("theme") +
+        ".css";
     }
   },
   destroyed() {
