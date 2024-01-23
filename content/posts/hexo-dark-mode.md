@@ -6,7 +6,7 @@ license: true
 slug: hexo-dark-mode
 tags: ['DarkMode', 'Hexo']
 cate: tech
-cover_image: "https://u.jalenz.cn/cover_image/hexo-dark-mode.png?webp"
+cover_image: "./images/hexo-dark-mode.png"
 canonical_url: false
 description: "适用于 Hexo 的暗黑模式，推荐在主题没有暗色模式的情况下使用"
 ---

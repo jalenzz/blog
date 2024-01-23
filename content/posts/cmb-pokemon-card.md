@@ -6,7 +6,7 @@ license: true
 slug: cmb-pokemon-card
 tags: ['招商银行', 'Pokémon']
 cate: life
-cover_image: "https://u.jalenz.cn/cover_image/cmb-pokemon-card.png?webp"
+cover_image: "./images/cmb-pokemon-card.png"
 canonical_url: false
 description: "皮卡丘超可爱！"
 ---

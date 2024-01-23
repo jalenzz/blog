@@ -6,7 +6,7 @@ license: true
 slug: use-webp
 tags: ['WebP']
 cate: tech
-cover_image: "https://u.jalenz.cn/cover_image/use-webp.png?webp"
+cover_image: "./images/use-webp.png"
 canonical_url: false
 description: "WebP，由 Google 开发的新型图像格式，从名字就可以看出是专门为了 Web 而设计。采用 WebP 格式能对网站速度提升起到很大帮助。"
 ---

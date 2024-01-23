@@ -6,7 +6,7 @@ license: true
 slug: newcomer-to-sspai
 tags: ['SSPAI', 'Newcomer']
 cate: life
-cover_image: "https://u.jalenz.cn/cover_image/newcomer-to-sspai.png?webp"
+cover_image: "./images/newcomer-to-sspai.png"
 canonical_url: false
 description: "非常荣幸加入少数派 Matrix，这是我的第一篇文章😋"
 ---

@@ -5,7 +5,7 @@ published: false
 license: true
 slug: freshman-high-school
 cate: life
-cover_image: "https://u.jalenz.cn/cover_image/freshman-high-school.png?webp"
+cover_image: "./images/freshman-high-school.png"
 canonical_url: false
 description: "不知不觉，高中已经过去三分之一了，任重道远，加油吧少年"
 ---

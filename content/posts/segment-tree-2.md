@@ -6,7 +6,7 @@ license: true
 slug: segment-tree-2
 tags: ['Algorithm']
 cate: tech
-cover_image: "https://u.jalenz.cn/cover_image/segment-tree-2.png?webp"
+cover_image: "./images/segment-tree-2.png"
 canonical_url: false
 ---
 

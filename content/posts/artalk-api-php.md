@@ -6,7 +6,7 @@ license: true
 slug: artalk-api-php
 tags: ['Artalk', 'PHP']
 cate: tech
-cover_image: "https://u.jalenz.cn/cover_image/artalk-api-php.png?webp"
+cover_image: "./images/artalk-api-php.png"
 canonical_url: false
 description: "Artalk 的后端部署教程"
 ---

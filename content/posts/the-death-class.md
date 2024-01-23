@@ -6,7 +6,7 @@ license: true
 slug: the-death-class
 tags: ["生", "死"]
 cate: life
-cover_image: "https://u.jalenz.cn/cover_image/the-death-class.png?webp"
+cover_image: "./images/the-death-class.png"
 canonical_url: false
 description: "如何在死亡的启示下享受更好的生命，一堂关于勇气和疗愈的生命教育课"
 ---

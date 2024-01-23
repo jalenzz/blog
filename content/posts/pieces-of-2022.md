@@ -6,7 +6,7 @@ published: true
 license: true
 slug: pieces-of-2022
 cate: life
-cover_image: "https://u.jalenz.cn/cover_image/pieces-of-2022.png?webp"
+cover_image: "./images/pieces-of-2022.png"
 canonical_url: false
 
 ---

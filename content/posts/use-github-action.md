@@ -6,7 +6,7 @@ license: true
 slug: use-github-action
 tags: ['GitHub Action', 'CI']
 cate: tech
-cover_image: "https://u.jalenz.cn/cover_image/use-github-action.png?webp"
+cover_image: "./images/use-github-action.png"
 canonical_url: false
 description: "博客部署？我用 GitHub Action 自动部署<br>百度收录推送？我也用 GitHub Action 自动推送"
 ---

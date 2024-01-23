@@ -6,7 +6,7 @@ license: true
 slug: how-i-make-blog-faster
 tags: ['Analytics', 'Static', 'Preloading']
 cate: tech
-cover_image: "https://u.jalenz.cn/cover_image/how-i-make-blog-faster.png?webp"
+cover_image: "./images/how-i-make-blog-faster.png"
 canonical_url: false
 description: "折腾博客这么久了，加速博客算是有点经验吧"
 ---

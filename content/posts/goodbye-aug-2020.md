@@ -6,7 +6,7 @@ license: true
 slug: goodbye-aug-2020
 tags: ['八月', '新']
 cate: life
-cover_image: "https://u.jalenz.cn/cover_image/goodbye-aug-2020.png?webp"
+cover_image: "./images/goodbye-aug-2020.png"
 canonical_url: false
 description: "新的学期就要开始了，加油吧少年！"
 ---
