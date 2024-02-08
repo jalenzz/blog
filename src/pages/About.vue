@@ -9,11 +9,11 @@
         <h3 style="margin-top: 0" id="关于我"><a href="#关于我"></a>关于我</h3>
         <p>
           <a
-            href="https://jalenz.cn"
+            href="https://www.hdu.edu.cn"
             target="_blank"
             class="about-me"
             style="color: #0070f3"
-            ><font-awesome :icon="['fas', 'id-badge']" /> Student</a
+            ><font-awesome :icon="['fas', 'id-badge']" /> HDU</a
           >
           /
           <a
@@ -21,25 +21,26 @@
             target="_blank"
             class="about-me"
             style="color: var(--title-color)"
-            ><font-awesome :icon="['fab', 'github']" /> Developer</a
+            ><font-awesome :icon="['fab', 'github']" /> jalenzz</a
           >
           /
-          <a
-            href="https://sspai.com/u/Jalen/posts"
+          <a  
             target="_blank"
             class="about-me"
-            style="color: #ca2c2a"
-            ><font-awesome :icon="['fas', 'pen-square']" /> Writer</a
+            style="color: #efa371;">
+            <font-awesome :icon="['fas', 'envelope']" />
+            jalenchuh@gmail.com</a
           >
+          
         </p>
 
         <p>
-          Jalen，信奉「好看就是生产力」（大雾）<br />
-          喜欢 🏓 🏐 🏊‍♂️ 💻 and Emoji 😆<br />
-          <s>坚定的</s>括号不换行党！只要你也不换行，我们就是好朋友
+          🫠 Ctrl CV Engineer <br />
+          😍 坚定的括号不换行党！<br />
+          🥳 最喜欢去陌生的城市走走看看<br />
+          😶‍🌫️ 信奉好看就是生产力！<br />
+          😆 like Emoji 
         </p>
-
-        <p>如果你想联系我，可以直接在评论里留言或者通过邮件</p>
 
         <h3 id="关于博客"><a href="#关于博客"></a>关于博客</h3>
         <p>
