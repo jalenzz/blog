@@ -10187,6 +10187,11 @@ validate-npm-package-license@^3.0.1:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
 
+vara@^1.4.1:
+  version "1.4.1"
+  resolved "https://mirrors.huaweicloud.com/repository/npm/vara/-/vara-1.4.1.tgz#974272696f39682bc4da7cc2e2f73d5fd683c305"
+  integrity sha512-oX+D+jXIJTmdQb7+OeuhvxSvSJB1PG8X2mzI3u7wTbuJ4v2QskA2fNlkNnyI2883YBRmEoA6R9gJg4jHiVNvXQ==
+
 vary@~1.1.2:
   version "1.1.2"
   resolved "https://mirrors.huaweicloud.com/repository/npm/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"

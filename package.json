@@ -28,6 +28,7 @@
     "marked": "^2.0.0",
     "nprogress": "^0.2.0",
     "v-tooltip": "2.1.2",
+    "vara": "^1.4.1",
     "vue-scrollto": "^2.20.0",
     "word-count": "^0.2.2"
   },

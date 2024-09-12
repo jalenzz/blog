@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="about-title">
-      <h1 class="about-title__text">About</h1>
+    <div class="about-title" id="about-title">
+        <!-- <h1 class="about-title__text">About</h1> -->
     </div>
 
     <div class="about content-box">
@@ -24,14 +24,10 @@
             ><font-awesome :icon="['fab', 'github']" /> jalenzz</a
           >
           /
-          <a  
-            target="_blank"
-            class="about-me"
-            style="color: #efa371;">
+          <a target="_blank" class="about-me" style="color: #efa371">
             <font-awesome :icon="['fas', 'envelope']" />
             jalenchuh@gmail.com</a
           >
-          
         </p>
 
         <p>
@@ -39,7 +35,7 @@
           😍 坚定的括号不换行党！<br />
           🥳 最喜欢去陌生的城市走走看看<br />
           😶‍🌫️ 信奉好看就是生产力！<br />
-          😆 like Emoji 
+          😆 like Emoji
         </p>
 
         <h3 id="关于博客"><a href="#关于博客"></a>关于博客</h3>
@@ -121,7 +117,7 @@
       </div>
     </transition>
 
-    <Author class="post-author" />
+    <Author class="post-author" ref="authorComponent" />
   </div>
 </template>
 
@@ -144,7 +140,7 @@ export default {
   },
   data() {
     return {
-      themeUrl: '',
+      themeUrl: "",
       scrolledDist: 0,
     };
   },
@@ -154,6 +150,14 @@ export default {
         this.scrolledDist = window.scrollY;
       }
     },
+  },
+  mounted() {
+    this.$refs.authorComponent.initializeVara(
+      "#about-title",
+      "About",
+      50,
+      2000
+    );
   },
   created() {
     if (process.isClient) {
@@ -258,4 +262,17 @@ query {
 
 .v[data-class=v] .vaction
   display none !important
+
+#about-title
+  width 80%
+  margin 20px auto
+
+  *
+    margin 0
+    padding 0
+
+  .hidden
+    width 0
+    opacity 0
+    overflow hidden
 </style>

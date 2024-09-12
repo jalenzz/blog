@@ -11,8 +11,8 @@
       />
     </g-link>
 
-    <h1 v-if="showTitle" class="author__site-title">
-      {{ $static.metadata.siteName }}
+    <h1 v-if="showTitle" class="author__site-title" id="author-title">
+      <!-- {{ $static.metadata.siteName }} -->
     </h1>
 
     <p class="author__intro">你终于来啦👻</p>
@@ -65,6 +65,40 @@ query {
 <script>
 export default {
   props: ["showTitle"],
+  methods: {
+    initializeVara(selector, text, yPosition, duration) {
+      const fontSize =
+        window.screen.width < 700 ? 32 : window.screen.width < 1200 ? 56 : 72;
+
+      new this.$vara(
+        selector,
+        "https://cdn.jsdelivr.net/npm/vara@1.4.0/fonts/Satisfy/SatisfySL.json",
+        [
+          {
+            text: text,
+            y: yPosition,
+            fromCurrentPosition: { y: false },
+            duration: duration,
+            id: "blog",
+          },
+        ],
+        {
+          strokeWidth: 2,
+          color: "#000000",
+          fontSize: fontSize,
+          textAlign: "center",
+        }
+      );
+    },
+  },
+  mounted() {
+    this.$nextTick(() => {
+      // 查找 id 为 author-title 的元素
+      if (document.getElementById("author-title")) {
+        this.initializeVara("#author-title", "Hi, I'm Jalen", 10, 3000);
+      }
+    });
+  },
 };
 </script>
 
@@ -186,4 +220,17 @@ export default {
     visibility visible
     opacity 1
     transition opacity 0.15s
+
+#author-title
+  width 80%
+  margin 20px auto
+
+  *
+    margin 0
+    padding 0
+
+  .hidden
+    width 0
+    opacity 0
+    overflow hidden
 </style>

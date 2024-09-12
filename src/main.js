@@ -64,6 +64,9 @@ import axios from "axios";
 // NProgress
 import NProgress from "nprogress";
 
+// Vara
+import Vara from "vara";
+
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 export default function (Vue, { router, head, isClient }) {
   head.htmlAttrs = { lang: "zh-Hans" };
@@ -100,4 +103,7 @@ export default function (Vue, { router, head, isClient }) {
   router.afterEach((to, from) => {
     NProgress.done();
   });
+
+  // Vara
+  Vue.prototype.$vara = Vara;
 }
