@@ -214,17 +214,4 @@ body[data-theme="dark"]
   margin calc(var(--space) / 2) 0
   font-size 0.9em
   opacity 0.8
-
-#friends-title
-  width 80%
-  margin 20px auto
-
-  *
-    margin 0
-    padding 0
-
-  .hidden
-    width 0
-    opacity 0
-    overflow hidden
 </style>

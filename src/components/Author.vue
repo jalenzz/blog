@@ -69,7 +69,10 @@ export default {
     initializeVara(selector, text, yPosition, duration) {
       const fontSize =
         window.screen.width < 700 ? 32 : window.screen.width < 1200 ? 56 : 72;
-
+      const isDarkMode =
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches;
+      const color = isDarkMode ? "#ced8de" : "#000000";
       new this.$vara(
         selector,
         "https://cdn.jsdelivr.net/npm/vara@1.4.0/fonts/Satisfy/SatisfySL.json",
@@ -84,7 +87,7 @@ export default {
         ],
         {
           strokeWidth: 2,
-          color: "#000000",
+          color: color,
           fontSize: fontSize,
           textAlign: "center",
         }
@@ -220,17 +223,4 @@ export default {
     visibility visible
     opacity 1
     transition opacity 0.15s
-
-#author-title
-  width 80%
-  margin 20px auto
-
-  *
-    margin 0
-    padding 0
-
-  .hidden
-    width 0
-    opacity 0
-    overflow hidden
 </style>

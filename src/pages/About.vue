@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="about-title" id="about-title">
-        <!-- <h1 class="about-title__text">About</h1> -->
+      <!-- <h1 class="about-title__text">About</h1> -->
     </div>
 
     <div class="about content-box">
@@ -262,17 +262,4 @@ query {
 
 .v[data-class=v] .vaction
   display none !important
-
-#about-title
-  width 80%
-  margin 20px auto
-
-  *
-    margin 0
-    padding 0
-
-  .hidden
-    width 0
-    opacity 0
-    overflow hidden
 </style>
