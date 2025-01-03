@@ -4,22 +4,26 @@ on:
   push:
     branches:
       - main
+  pull_request:
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-node@v1
+    - uses: actions/checkout@v4
       with:
-        node-version: '16.x'
+        submodules: true
+        fetch-depth: 1
 
-    - name: Setup
-      run: yarn install
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@v2
+      with:
+        hugo-version: '0.140.1'
+        extended: true
 
-    - name: Generate
-      run: yarn run build
+    - name: Build
+      run: hugo --minify
 
     - name: Login
       uses: manyuanrong/setup-ossutil@v2.0
@@ -29,4 +33,4 @@ jobs:
         access-key-secret: ${{ secrets.OSS_KEY_SECRET }}
 
     - name: Deploy
-      run: ossutil cp -rf dist oss://blog-jalen/
+      run: ossutil cp -rf public oss://blog-jalen/

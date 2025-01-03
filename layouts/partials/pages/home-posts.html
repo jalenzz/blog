@@ -1,0 +1,63 @@
+<main class="main list" id="main">
+    <div class="main-inner">
+
+        <div id="welcome-text" style="min-height: 150px;"></div>
+        <script src="https://cdn.jsdelivr.net/npm/vara@1.4.0/lib/vara.min.js" async></script>
+        <script>
+            const fontSize = window.screen.width < 700 ? 25 : window.screen.width < 1200 ? 45 : 60;
+            document.addEventListener('DOMContentLoaded', async function() {
+                while (typeof Vara === 'undefined') {
+                    await new Promise(resolve => setTimeout(resolve, 100));
+                }
+                new Vara("#welcome-text", "https://cdn.jsdelivr.net/npm/vara@1.4.0/fonts/Satisfy/SatisfySL.json", [{
+                    text: "Nice to meet you !",
+                    y: 10,
+                    fontSize: fontSize,
+                    strokeWidth: 2,
+                    color: "var(--color-contrast-high)",
+                    duration: 3000,
+                    textAlign: "center",
+                }]);
+            });
+        </script>
+
+        <div class="content list-group">
+            {{ $pages := where .Site.RegularPages "Section" "in" .Site.Params.mainSections }}
+            {{ if .Site.Params.enableHideInHomepage }}
+            {{ $pages = where $pages ".Params.hideInHomepage" "ne" true }}
+            {{ end }}
+
+            {{ range $pages.GroupByDate "2006" }}
+            {{ $.Scratch.Delete "zodiacName" }}
+            {{ if $.Site.Params.chineseZodiac }}
+            {{ $zodiacName := (index $.Site.Data.ChineseZodiac (string (mod .Key 12))) }}
+            {{ $.Scratch.Set "zodiacName" $zodiacName }}
+            {{ end }}
+            {{ $zodiacName := $.Scratch.Get "zodiacName" }}
+            <h2 class="list-year">{{ .Key }}{{ if $.Site.Params.chineseZodiac }}{{ partial "utils/icon.html" (dict "$" $ "name" $zodiacName "class" "chinese-zodiac") }}{{ end }}</h2>
+            {{ if $.Site.Params.groupByMonth }}
+            {{ range .Pages.GroupByDate "January" }}
+            <h3 class="list-month">{{ .Key }}</h3>
+            <ul class="list-part">
+                {{ range .Pages }}
+                <li class="list-item">
+                    <a href="{{ .RelPermalink }}" class="list-item-title">{{ .Title }}</a>
+                    <span class="list-item-date">{{ .Date.Format "01-02" }}</span>
+                </li>
+                {{ end }}
+            </ul>
+            {{ end }}
+            {{ else }}
+            <ul class="list-part">
+                {{ range .Pages }}
+                <li class="list-item">
+                    <a href="{{ .RelPermalink }}" class="list-item-title">{{ .Title }}</a>
+                    <span class="list-item-date">{{ .Date.Format "01-02" }}</span>
+                </li>
+                {{ end }}
+            </ul>
+            {{ end }}
+            {{ end }}
+        </div>
+    </div>
+</main>
