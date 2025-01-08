@@ -1,3 +1,3 @@
-+++
-title = "Tech"
-+++
+---
+title: "Tech"
+---

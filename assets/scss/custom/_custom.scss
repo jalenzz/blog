@@ -1,1 +1,9 @@
 @import url('https://gw.alipayobjects.com/os/k/font/lxgwwenkaiscreenr.css');
+
+.list-title,
+.term-title,
+.list-year,
+.list-month,
+article[data-type="about"] .post-title {
+    font-family: 'glyph-correction', 'Cinzel Decorative', 'I.MingCP', serif;
+}

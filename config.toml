@@ -2,7 +2,7 @@
 # 站点配置
 
 baseURL        = "https://jalenzz.com/"
-title          = "JALEN"
+title          = "Jalen"
 languageCode   = "zh-CN"
 hasCJKLanguage = true
 # 版权信息（支持 Markdown）
@@ -960,11 +960,11 @@ uglyURLs           = false
     # 菜单栏
     fontFamilyMenu = ""
     # 文章标题、文章副标题、列表标题、列表的年份和月份标题、相关文章标题、文章上下篇标题、表格的表头、定义列表中的术语
-    fontFamilyTitle = "'Cinzel Decorative', serif"
+    fontFamilyTitle = ""
     # 分节标题、目录标题
-    fontFamilyHeadings = "'Cinzel Decorative', 'LXGW WenKai Screen R', 'Noto Serif SC', serif"
+    fontFamilyHeadings = ""
     # 代码、上标、文章元信息、文章更新徽章、文章的 Git 版本信息、极简页脚、不蒜子站点浏览计数
-    fontFamilyCode = "'JetBrains Mono', 'LXGW WenKai Screen R', 'Noto Serif SC', serif"
+    fontFamilyCode = "'JetBrains Mono', 'LXGW WenKai Screen R', serif"
     # 引用
     fontFamilyQuote = ""
     # 文章目录
@@ -972,12 +972,12 @@ uglyURLs           = false
     # 说明文字
     fontFamilyCaption = ""
     # 页脚
-    fontFamilyFooter = "'Cinzel Decorative', 'LXGW WenKai Screen R', 'Noto Serif SC', serif"
+    fontFamilyFooter = ""
     # 主体
-    fontFamilyBody = "'LXGW WenKai Screen R', 'Noto Serif SC', serif"
+    fontFamilyBody = "'LXGW WenKai Screen R', serif"
 
     # 网络字体链接
-    fontsLink = "https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital@0;1&family=Noto+Serif+SC:wght@400;700&family=Cinzel+Decorative:wght@700;900&display=swap"
+    fontsLink = "https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital@0;1&family=Cinzel+Decorative:wght@700;900&display=swap"
     # 说明：要想读者一定体验到你设置的字体，最好
     #      采用网络字体。MemE 主题目前仅支持
     #      Google Fonts 的链接，请前往
@@ -1104,7 +1104,7 @@ uglyURLs           = false
     enablePostGitInfo = false
 
     # 是否显示（全局设置）
-    displayPostGitInfo = true
+    displayPostGitInfo = false
     # 说明：文章的 Front Matter 中的 `gitinfo`
     #      的优先级高于此处
 
@@ -1120,19 +1120,19 @@ uglyURLs           = false
     displayCommitHash = true
 
     # 是否显示改动信息
-    displayCommitMessage = true
+    displayCommitMessage = false
     # 改动信息的图标
     msgIcon = "info"
 
     # 是否显示反馈链接
-    displayFeedback = true
+    displayFeedback = false
     # 反馈链接的图标
     feedbackIcon = "question"
     # 反馈链接的文本
     feedbackText = "Feedback"
 
     # 是否显示编辑链接
-    displayEditLink = true
+    displayEditLink = false
     # 编辑链接的图标
     editIcon = "edit"
     # 编辑链接的文本
@@ -1215,7 +1215,7 @@ uglyURLs           = false
     #      的是一篇更旧的文章。
 
     # 是否开启
-    enablePostNav = false
+    enablePostNav = true
 
     # 是否仅限于相同的文章分区
     postNavInSection = false
@@ -1464,7 +1464,7 @@ uglyURLs           = false
     # 作者信息
     [params.author]
         # 名字
-        name = "jalen"
+        name = "Jalen"
         # 邮箱
         email = "jalenchuh@gmail.com"
         # 座右铭或简介

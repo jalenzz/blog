@@ -1,3 +1,3 @@
-+++
-title = "Life"
-+++
+---
+title: "Life"
+---
