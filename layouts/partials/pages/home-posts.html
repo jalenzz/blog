@@ -1,26 +1,5 @@
 <main class="main list" id="main">
     <div class="main-inner">
-
-        <div id="welcome-text" style="min-height: 150px;"></div>
-        <script src="https://cdn.jsdelivr.net/npm/vara@1.4.0/lib/vara.min.js" async></script>
-        <script>
-            const fontSize = window.screen.width < 700 ? 25 : window.screen.width < 1200 ? 45 : 60;
-            document.addEventListener('DOMContentLoaded', async function() {
-                while (typeof Vara === 'undefined') {
-                    await new Promise(resolve => setTimeout(resolve, 100));
-                }
-                new Vara("#welcome-text", "https://cdn.jsdelivr.net/npm/vara@1.4.0/fonts/Satisfy/SatisfySL.json", [{
-                    text: "Nice to meet you !",
-                    y: 10,
-                    fontSize: fontSize,
-                    strokeWidth: 2,
-                    color: "var(--color-contrast-high)",
-                    duration: 3000,
-                    textAlign: "center",
-                }]);
-            });
-        </script>
-
         <div class="content list-group">
             {{ $pages := where .Site.RegularPages "Section" "in" .Site.Params.mainSections }}
             {{ if .Site.Params.enableHideInHomepage }}

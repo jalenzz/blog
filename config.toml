@@ -1,9 +1,9 @@
 ##########################################
 # 站点配置
 
-baseURL        = "https://jalenzz.com/"
-title          = "Jalen"
-languageCode   = "zh-CN"
+baseURL = "https://jalenzz.com/"
+title = "Jalen's Blog"
+languageCode = "zh-CN"
 hasCJKLanguage = true
 # 版权信息（支持 Markdown）
 copyright = "[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)"
@@ -15,7 +15,7 @@ theme = "meme"
 newContentEditor = ""
 
 # i18n
-defaultContentLanguage         = "zh-cn"
+defaultContentLanguage = "zh-cn"
 defaultContentLanguageInSubdir = false
 
 # 标题大小写格式
@@ -42,13 +42,13 @@ enableRobotsTXT = true
 
 # URL 相关
 disablePathToLower = false
-relativeURLs       = false
-uglyURLs           = false
+relativeURLs = false
+uglyURLs = false
 
 # URL 结构
 [permalinks]
     categories = "/categories/:slug/"
-    tags       = "/tags/:slug/"
+    tags = "/tags/:slug/"
 
 # 类别
 [taxonomies]
@@ -58,37 +58,42 @@ uglyURLs           = false
 [frontmatter]
     lastmod = ["lastmod", ":git", ":fileModTime", ":default"]
 
+[pagination]
+    disableAliases = false
+    # 每一分页的文章数（仅对「文章摘要」首页布局有效）
+    pagerSize = 5
+    path = 'page'
+
 # Markdown 渲染器
 [markup]
     defaultMarkdownHandler = "goldmark"
-
     [markup.goldmark]
         [markup.goldmark.extensions]
             definitionList = true
-            footnote       = true
-            linkify        = true
-            strikethrough  = true
-            table          = true
-            taskList       = true
-            typographer    = false
+            footnote = true
+            linkify = true
+            strikethrough = true
+            table = true
+            taskList = true
+            typographer = false
         [markup.goldmark.parser]
-            attribute         = true
-            autoHeadingID     = true
+            attribute = true
+            autoHeadingID = true
             autoHeadingIDType = "github"
         [markup.goldmark.renderer]
             hardWraps = false
-            unsafe    = true
-            xHTML     = false
+            unsafe = true
+            xHTML = false
     [markup.highlight]
-        codeFences         = true
-        guessSyntax        = false
-        lineNos            = true
+        codeFences = true
+        guessSyntax = false
+        lineNos = true
         lineNumbersInTable = true
-        noClasses          = false
+        noClasses = false
     [markup.tableOfContents]
         startLevel = 2
-        endLevel   = 6
-        ordered    = true
+        endLevel = 6
+        ordered = true
 
 # 压缩 HTML
 [minify.tdewolff.html]
@@ -96,18 +101,18 @@ uglyURLs           = false
 
 # 相关文章
 [related]
-    threshold    = 80
+    threshold = 80
     includeNewer = true
-    toLower      = true
+    toLower = true
     [[related.indices]]
-        name   = "categories"
+        name = "categories"
         weight = 100
     [[related.indices]]
-        name   = "tags"
+        name = "tags"
         weight = 95
     [[related.indices]]
-        name    = "date"
-        weight  = 10
+        name = "date"
+        weight = 10
         pattern = "2006"
 
 # Atom 文件格式的媒体类型
@@ -117,42 +122,43 @@ uglyURLs           = false
 # MemE 主题自定义的 Atom 模板
 [outputFormats.SectionsAtom]
     mediaType = "application/atom+xml"
-    baseName  = "atom"
+    baseName = "atom"
 
 # MemE 主题自定义的 RSS 模板
 [outputFormats.SectionsRSS]
     mediaType = "application/rss+xml"
-    baseName  = "rss"
+    baseName = "rss"
 
 # lunr.js 的搜索索引
 [outputFormats.SearchIndex]
     mediaType = "application/json"
-    baseName  = "search"
+    baseName = "search"
 
 # Algolia 的搜索索引
 [outputFormats.Algolia]
-    mediaType      = "application/json"
-    baseName       = "algolia"
-    isPlainText    = true
+    mediaType = "application/json"
+    baseName = "algolia"
+    isPlainText = true
     notAlternative = true
 
 # Hugo 的输出控制
 [outputs]
     page = ["HTML"]
     # home = ["HTML", "SectionsAtom", "SectionsRSS", "SearchIndex", "Algolia"]
-    home     = ["HTML", "SectionsAtom", "SectionsRSS"]
-    section  = ["HTML"]
+    home = ["HTML", "SectionsAtom", "SectionsRSS"]
+    section = ["HTML"]
     taxonomy = ["HTML"]
-    term     = ["HTML"]
+    term = ["HTML"]
 
 # RSS & Atom 文章数限制
 [services.rss]
     limit = -1
 
 
+
 ##########################################
 # 菜单配置
-#
+
 # MemE 主题支持以下四种菜单：
 # 1. main       顶栏下方（居中布局）或里面（弹性
 #               布局）的菜单栏
@@ -160,7 +166,7 @@ uglyURLs           = false
 #               人生」和「视频片段」布局）
 # 3. socials    社交栏（关于页面的极简页脚）
 # 4. links      链接栏（关于页面的极简页脚）
-#
+
 # 菜单内的配置说明如下：
 # pageref/url   内链地址/外链地址
 # name          文本（留空（""）则无）
@@ -173,32 +179,11 @@ uglyURLs           = false
 #               `lang-switcher`、`search`）
 [menu]
     ## 菜单栏
-    [[menu.main]]
-        pageref = "/"
-        name    = "首页"
-        weight  = 1
-    [[menu.main]]
-        pageref = "/life/"
-        name    = "生活"
-        weight  = 2
-        pre     = "internal"
-    [[menu.main]]
-        pageref = "/tech/"
-        name    = "技术"
-        weight  = 3
-        pre     = "internal"
-    [[menu.main]]
-        pageref = "/about/"
-        name    = "关于"
-        weight  = 4
-        pre     = "internal"
-    [[menu.main]]
-        weight     = 5
-        identifier = "theme-switcher"
+
 
 ##########################################
 # 主题配置
-#
+
 [params]
     ######################################
     # 顶栏
@@ -215,7 +200,7 @@ uglyURLs           = false
     # 说明：对弹性布局的顶栏无效
 
     # 背景
-    headerBackground = "linear-gradient(90deg, #f795331a 0, #f370551a 15%, #ef4e7b1a 30%, #a166ab1a 44%, #5073b81a 58%, #1098ad1a 72%, #07b39b1a 86%, #6dba821a 100%)"
+    headerBackground = "transparent"
     # 说明：https://developer.mozilla.org/zh-CN/docs/Web/CSS/background
 
     # 顶栏布局
@@ -236,13 +221,13 @@ uglyURLs           = false
     siteBrandSVG = false
     # 如果是，请将你的 SVG 放到 `SVG.toml` 文
     # 件内，并配置以下项。单位：px。
-    siteBrandSVGWidth  = 250
+    siteBrandSVGWidth = 250
     siteBrandSVGHeight = 100
-    siteBrandSVGFill   = "#fff"
+    siteBrandSVGFill = "#fff"
     # 如果否，则会使用你的站点标题作为默认值，并
     # 以文字的形式显示，下方可配置字号和字色。字
     # 体请到底部的字体部分配置。单位：em。
-    siteBrandFontSize  = 1
+    siteBrandFontSize = 1
     siteBrandFontColor = "var(--color-contrast-high)"
 
 
@@ -282,15 +267,15 @@ uglyURLs           = false
     homeLinksPadding = 1
 
     ## 「视频片段」
-    homePoster         = ""
-    homeVideoWebm      = ""
-    homeVideoMp4       = ""
-    homeLogo           = ""
-    homeLogoLink       = ""
-    homeTitle          = ""
-    homeMotto          = ""
-    homeDescription    = ""
-    homeKeywords       = ""
+    homePoster = ""
+    homeVideoWebm = ""
+    homeVideoMp4 = ""
+    homeLogo = ""
+    homeLogoLink = ""
+    homeTitle = ""
+    homeMotto = ""
+    homeDescription = ""
+    homeKeywords = ""
     homeLinksDelimiter = ""
 
     ## 「文章摘要」
@@ -450,6 +435,10 @@ uglyURLs           = false
     #      有一个比手动指定更高的优先级——
     #      Front Matter 中的 `description`。
 
+    # 自定页脚（支持 Template 与 Markdown 语法）
+    feedFooter = """> 阅读原文：<{{ .Permalink }}>  
+> 博客公告：博客现已开通邮件订阅，欢迎[通过 Substack 订阅](https://username.substack.com)支持我的创作！"""
+
 
     ######################################
     # 深色模式
@@ -458,7 +447,7 @@ uglyURLs           = false
     enableDarkMode = true
 
     # 默认模式
-    defaultTheme = "dark"
+    defaultTheme = "light"
     # 说明：light（浅色模式）或 dark（深色模式）
 
     # 是否隐藏模式切换开关
@@ -480,12 +469,7 @@ uglyURLs           = false
     # 网页应用
 
     # 说明：前往 https://realfavicongenerator.net/
-    #      生成相关图标和文件，下载后解压，仅保留
-    #      android-chrome-512x512.png、
-    #      apple-touch-icon.png、
-    #      mstile-150x150.png、
-    #      safari-pinned-tab.svg、favicon.ico、
-    #      site.webmanifest 这些文件，删除其余。
+    #      生成相关图标和文件，下载后解压。
     #      然后将这些文件移动到 ~/blog/static/icons/
     #      目录下，再将 favicon.ico、site.webmanifest
     #      移动到 ~/blog/static/ 目录下，
@@ -493,17 +477,23 @@ uglyURLs           = false
     #      manifest.json，并检查和修改相关内容
     #      （图标的路径）。
 
-    themeColor             = "#fff"
-    themeColorDark         = "#16171d"
-    safariMaskColor        = "#2a6df4"
-    msApplicationTileColor = "#fff"
+    # 注意：要检查你的图标
+    #      请前往 https://realfavicongenerator.net/favicon-checker。
+    #      如果检测到任何问题，检查生成的文件和
+    #      ~/blog/themes/meme/static/ 目录下
+    #      相关文件的文件名差异。如果有差异，
+    #      这意味着某些文件可能已经过时。
+    #      如有需要，请提 Issue。
+
+    themeColor = "#fff"
+    themeColorDark = "#16171d"
 
 
     ######################################
     # 网页头部元数据、搜索引擎优化（SEO）、社交网络发现
 
-    jsonLD       = true
-    openGraph    = true
+    jsonLD = true
+    openGraph = true
     twitterCards = true
     # 注意：如果你设置 twitterCards 为 `true`，
     #      请务必开启 openGraph。否则，网页的
@@ -554,7 +544,7 @@ uglyURLs           = false
     # 说明：文章的 Front Matter 中的 `mermaid`
     #      的优先级高于此处
 
-    mermaidTheme     = 'default'
+    mermaidTheme = 'default'
     mermaidThemeDark = 'dark'
 
 
@@ -572,46 +562,46 @@ uglyURLs           = false
     autoLoadComments = true
 
     ## Disqus
-    enableDisqus    = false
+    enableDisqus = false
     disqusShortname = ""
 
     ## Valine
-    enableValine         = false
-    valineAppId          = ""
-    valineAppKey         = ""
-    valinePlaceholder    = "Just go go"
-    valinePath           = ""
-    valineAvatar         = "mm"
-    valineMeta           = ["nick", "mail", "link"]
-    valinePageSize       = 10
-    valineLang           = "zh-cn"
-    valineVisitor        = false
-    valineHighlight      = true
-    valineAvatarForce    = false
-    valineRecordIP       = false
-    valineServerURLs     = ""
-    valineEmojiCDN       = ""
-    valineEmojiMaps      = {}
-    valineEnableQQ       = false
+    enableValine = false
+    valineAppId = ""
+    valineAppKey = ""
+    valinePlaceholder = "Just go go"
+    valinePath = ""
+    valineAvatar = "mm"
+    valineMeta = ["nick", "mail", "link"]
+    valinePageSize = 10
+    valineLang = "zh-cn"
+    valineVisitor = false
+    valineHighlight = true
+    valineAvatarForce = false
+    valineRecordIP = false
+    valineServerURLs = ""
+    valineEmojiCDN = ""
+    valineEmojiMaps = {}
+    valineEnableQQ = false
     valineRequiredFields = []
     # 说明：https://valine.js.org/
 
     ## Utterances
-    enableUtterances    = false
-    utterancesRepo      = ""
+    enableUtterances = false
+    utterancesRepo = ""
     utterancesIssueTerm = "pathname"
-    utterancesTheme     = "github-light"
+    utterancesTheme = "github-light"
     utterancesThemeDark = "photon-dark"
-    utterancesLabel     = ""
+    utterancesLabel = ""
     # 说明：https://utteranc.es/
 
     ## Gitalk
-    enableGitalk       = false
-    gitalkClientID     = "your_client_id"
+    enableGitalk = false
+    gitalkClientID = "your_client_id"
     gitalkClientSecret = "your_client_secret"
-    gitalkRepo         = "your_repository"
-    gitalkOwner        = "your_gitalk_owner"
-    gitalkAdmin        = ["your_gitalk_admin"]
+    gitalkRepo = "your_repository"
+    gitalkOwner = "your_gitalk_owner"
+    gitalkAdmin = ["your_gitalk_admin"]
 
     # 1. default (`location.href`)
     # 2. pathname (`location.pathname`)
@@ -636,48 +626,48 @@ uglyURLs           = false
     gitalkLanguage = "zh-CN"
 
     gitalkDistractionFreeMode = false
-    gitalkPerPage             = 10
-    gitalkPagerDirection      = "last"
+    gitalkPerPage = 10
+    gitalkPagerDirection = "last"
     gitalkCreateIssueManually = false
-    gitalkProxy               = "https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token"
-    gitalkStaggerDelayBy      = 150
-    gitalkAppearAnimation     = "accordionVertical"
-    gitalkEnterAnimation      = "accordionVertical"
-    gitalkLeaveAnimation      = "accordionVertical"
-    gitalkEnableHotKey        = true
+    gitalkProxy = "https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token"
+    gitalkStaggerDelayBy = 150
+    gitalkAppearAnimation = "accordionVertical"
+    gitalkEnterAnimation = "accordionVertical"
+    gitalkLeaveAnimation = "accordionVertical"
+    gitalkEnableHotKey = true
     # 说明：https://github.com/gitalk/gitalk
 
     ## Giscus
-    enableGiscus           = true
-    giscusRepo             = "jalenzz/blog"
-    giscusRepoId           = "MDEwOlJlcG9zaXRvcnkyNDUzOTk0NDM="
-    giscusCategory         = "Announcements"
-    giscusCategoryId       = "DIC_kwDODqB_k84Cckgo"
-    giscusMapping          = "pathname"
-    giscusStrict           = false
+    enableGiscus = true
+    giscusRepo = "jalenzz/blog"
+    giscusRepoId = "MDEwOlJlcG9zaXRvcnkyNDUzOTk0NDM="
+    giscusCategory = "Announcements"
+    giscusCategoryId = "DIC_kwDODqB_k84Cckgo"
+    giscusMapping = "pathname"
+    giscusStrict = false
     giscusReactionsEnabled = true
-    giscusEmitMetaData     = false
-    giscusInputPosition    = "top"
-    giscusTheme            = "light"
-    giscusThemeDark        = "dark"
-    giscusLang             = "zh-CN"
+    giscusEmitMetaData = false
+    giscusInputPosition = "top"
+    giscusTheme = "light"
+    giscusThemeDark = "dark"
+    giscusLang = "zh-CN"
     # 说明：https://giscus.app/zh-CN
 
     # Remark42
-    enableRemark42                = false
-    remark42Host                  = ""
-    remark42SiteId                = "remark"
-    remark42Url                   = ""
-    remark42Components            = ["embed"]
-    remark42MaxShownComments      = 15
-    remark42MaxLastComments       = 15
-    remark42Theme                 = "light"
-    remark42PageTitle             = ""
-    remark42Locale                = "zh"
+    enableRemark42 = false
+    remark42Host = ""
+    remark42SiteId = "remark"
+    remark42Url = ""
+    remark42Components = ["embed"]
+    remark42MaxShownComments = 15
+    remark42MaxLastComments = 15
+    remark42Theme = "light"
+    remark42PageTitle = ""
+    remark42Locale = "zh"
     remark42ShowEmailSubscription = true
-    remark42ShowRssSubscription   = true
-    remark42SimpleView            = false
-    remark42NoFooter              = false
+    remark42ShowRssSubscription = true
+    remark42SimpleView = false
+    remark42NoFooter = false
     # 说明：https://remark42.com/docs/configuration/frontend/
 
 
@@ -712,9 +702,9 @@ uglyURLs           = false
     enableGoogleAutoAds = false
 
     ## 广告单元
-    enableGoogleAdUnits     = false
-    googleAdSlot            = ""
-    googleAdSlotInArticle   = ""
+    enableGoogleAdUnits = false
+    googleAdSlot = ""
+    googleAdSlotInArticle = ""
     googleAdSlotAutoRelaxed = ""
 
 
@@ -879,7 +869,7 @@ uglyURLs           = false
     enableCaption = true
 
     # 说明文字的前缀
-    captionPrefix = "◎ "
+    captionPrefix = "※ "
 
 
     ######################################
@@ -956,7 +946,7 @@ uglyURLs           = false
     #      SVG，则可留空（""）品牌栏字体。
 
     # 品牌栏
-    fontFamilySiteBrand = "'Cinzel Decorative', cursive"
+    fontFamilySiteBrand = ""
     # 菜单栏
     fontFamilyMenu = ""
     # 文章标题、文章副标题、列表标题、列表的年份和月份标题、相关文章标题、文章上下篇标题、表格的表头、定义列表中的术语
@@ -964,7 +954,7 @@ uglyURLs           = false
     # 分节标题、目录标题
     fontFamilyHeadings = ""
     # 代码、上标、文章元信息、文章更新徽章、文章的 Git 版本信息、极简页脚、不蒜子站点浏览计数
-    fontFamilyCode = "'JetBrains Mono', 'LXGW WenKai Screen R', serif"
+    fontFamilyCode = "'Source Code Pro', 'Noto Serif SC', monospace"
     # 引用
     fontFamilyQuote = ""
     # 文章目录
@@ -974,10 +964,10 @@ uglyURLs           = false
     # 页脚
     fontFamilyFooter = ""
     # 主体
-    fontFamilyBody = "'LXGW WenKai Screen R', serif"
+    fontFamilyBody = "Georgia Pro, Noto Serif SC, serif"
 
     # 网络字体链接
-    fontsLink = "https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital@0;1&family=Cinzel+Decorative:wght@700;900&display=swap"
+    fontsLink = "https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;700&family=Source+Code+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap"
     # 说明：要想读者一定体验到你设置的字体，最好
     #      采用网络字体。MemE 主题目前仅支持
     #      Google Fonts 的链接，请前往
@@ -1055,8 +1045,8 @@ uglyURLs           = false
     ######################################
     ## 着重号
 
-    # 说明：MemE 主题自创的新 Markdown 语法
-    #      `..文本..`
+    # 说明：MemE 主题定义的语法 `..文本..`
+    #      https://www.w3.org/International/clreq/#id84
 
     # 是否开启
     enableEmphasisPoint = true
@@ -1111,7 +1101,7 @@ uglyURLs           = false
     # 仓库地址
     repoURL = "https://github.com/jalenzz/blog"
     # 编辑地址
-    repoEditURL       = "https://github.com/jalenzz/blog/edit/main"
+    repoEditURL = "https://github.com/jalenzz/blog/edit/main"
     repoEditURLSuffix = ""
 
     # Git 的图标
@@ -1152,22 +1142,7 @@ uglyURLs           = false
 
     displayShareOnText = false
 
-    postShareItems = [
-        "facebook",
-        "mastodon",
-        "fediverse",
-        "twitter",
-        "linkedin",
-        "telegram",
-        "weibo",
-        "douban",
-        "qq",
-        "qzone",
-        "pocket",
-        "hackernews",
-        "qrcode",
-        "email",
-    ]
+    postShareItems = ["facebook", "mastodon", "fediverse", "x", "linkedin", "telegram", "weibo", "douban", "qq", "qzone", "pocket", "hackernews", "qrcode", "email"]
 
     # 从网络获取 Fediverse 实例列表用于输入建议
     fetchFediverseInstances = false
@@ -1225,7 +1200,7 @@ uglyURLs           = false
     # 极简页脚
 
     # 是否开启
-    enableMinimalFooter        = false
+    enableMinimalFooter = false
     enableVerticalBarStructure = false
     # 说明：如果开启此项，显示在右边的部类或分区
     #      将会包含全部的第一级部类或分区，并且
@@ -1274,29 +1249,29 @@ uglyURLs           = false
     displaySiteCreatedYear = true
 
     # 年份与作者之间的图标，留空（""）则无
-    iconBetweenYearAndAuthor = "heart"
+    iconBetweenYearAndAuthor = ""
     # 图标颜色
     iconColor = "#f06292"
     # 是否开启图标的跳动效果
     iconAnimation = true
 
     # 是否显示站点的作者名称
-    displaySiteAuthorName = true
+    displaySiteAuthorName = false
 
     # 是否显示 Hugo 和 MemE 的链接
-    displayPoweredBy = true
+    displayPoweredBy = false
 
     # 是否显示站点的版权信息
-    displaySiteCopyright = true
+    displaySiteCopyright = false
 
     # 自定义页脚（支持 Markdown）
     customFooter = "[闽ICP备20005437号](https://beian.miit.gov.cn)  <br> [![upyun](/upyun.svg)](https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral)"
 
     displayBusuanziSiteUVAndPV = false
-    busuanziSiteUVText         = "本站访客数"
-    busuanziSiteUVIcon         = "user"
-    busuanziSitePVText         = "本站访问量"
-    busuanziSitePVIcon         = "eye"
+    busuanziSiteUVText = "本站访客数"
+    busuanziSiteUVIcon = "user"
+    busuanziSitePVText = "本站访问量"
+    busuanziSitePVIcon = "eye"
     # 说明：仅在生产环境（production）下渲染
     #      文本或图标，留空（""）则无
     #      https://busuanzi.ibruce.info/
@@ -1409,8 +1384,8 @@ uglyURLs           = false
 
     enableAlgoliaSearch = false
 
-    algoliaAppId     = ""
-    algoliaApiKey    = ""
+    algoliaAppId = ""
+    algoliaApiKey = ""
     algoliaIndexName = ""
     # 说明：https://www.algolia.com/
 
@@ -1423,7 +1398,7 @@ uglyURLs           = false
 
     # 视频地址
     fofVideoWebm = ""
-    fofVideoMp4  = ""
+    fofVideoMp4 = ""
     # 说明：视频地址可留空（""）
 
 
@@ -1438,26 +1413,26 @@ uglyURLs           = false
         #      将 path 设置为 "js/lib.min.js"，
         #      并将文件放到你的 /static/js/lib.min.js
         [params.lib.path]
-            clipboard         = "/npm/clipboard-polyfill@2.8.6/dist/clipboard-polyfill.min.js"
-            instantsearch     = "/npm/instantsearch.js@2/dist/instantsearch.min.js"
-            gitalk            = "/npm/gitalk@1/dist/gitalk.min.js"
-            gitalk_css        = "/npm/gitalk@1/dist/gitalk.css"
-            instantpage       = "/npm/instant.page@5.1.0/instantpage.min.js"
-            katex             = "/npm/katex@0.13.0/dist/katex.min.js"
-            katex_css         = "/npm/katex@0.13.0/dist/katex.min.css"
-            katex_mhchem      = "/npm/katex@0.13.0/dist/contrib/mhchem.min.js"
+            clipboard = "/npm/clipboard-polyfill@2.8.6/dist/clipboard-polyfill.min.js"
+            instantsearch = "/npm/instantsearch.js@2/dist/instantsearch.min.js"
+            gitalk = "/npm/gitalk@1/dist/gitalk.min.js"
+            gitalk_css = "/npm/gitalk@1/dist/gitalk.css"
+            instantpage = "/npm/instant.page@5.1.0/instantpage.min.js"
+            katex = "/npm/katex@0.13.0/dist/katex.min.js"
+            katex_css = "/npm/katex@0.13.0/dist/katex.min.css"
+            katex_mhchem = "/npm/katex@0.13.0/dist/contrib/mhchem.min.js"
             katex_auto_render = "/npm/katex@0.13.0/dist/contrib/auto-render.min.js"
-            lunr              = "/npm/lunr@2.3.9/lunr.min.js"
-            lunr_tinyseg      = "/npm/lunr-languages@1.4.0/tinyseg.js"
-            lunr_stemmer      = "/npm/lunr-languages@1.4.0/min/lunr.stemmer.support.min.js"
-            lunr_lang         = "/npm/lunr-languages@1.4.0/min/lunr.de.min.js"
-            mathjax           = "/npm/mathjax@3.1.2/es5/tex-mml-chtml.js"
-            medium_zoom       = "/npm/medium-zoom@latest/dist/medium-zoom.min.js"
-            mermaid           = "/npm/mermaid@8.8.3/dist/mermaid.min.js"
-            qrcode            = "/npm/qrcode-generator@1.4.4/qrcode.min.js"
-            valine            = "/npm/valine@1.4.14/dist/Valine.min.js"
-            busuanzi          = "https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
-            utterances        = "https://utteranc.es/client.js"
+            lunr = "/npm/lunr@2.3.9/lunr.min.js"
+            lunr_tinyseg = "/npm/lunr-languages@1.4.0/tinyseg.js"
+            lunr_stemmer = "/npm/lunr-languages@1.4.0/min/lunr.stemmer.support.min.js"
+            lunr_lang = "/npm/lunr-languages@1.4.0/min/lunr.de.min.js"
+            mathjax = "/npm/mathjax@3.1.2/es5/tex-mml-chtml.js"
+            medium_zoom = "/npm/medium-zoom@latest/dist/medium-zoom.min.js"
+            mermaid = "/npm/mermaid@8.8.3/dist/mermaid.min.js"
+            qrcode = "/npm/qrcode-generator@1.4.4/qrcode.min.js"
+            valine = "/npm/valine@1.4.14/dist/Valine.min.js"
+            busuanzi = "https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
+            utterances = "https://utteranc.es/client.js"
 
 
     ######################################
@@ -1468,7 +1443,7 @@ uglyURLs           = false
         # 邮箱
         email = "jalenchuh@gmail.com"
         # 座右铭或简介
-        motto  = ""
+        motto = ""
         avatar = "favicon.ico" # 头像
         # 网站（默认值：baseURL）
         website = ""
