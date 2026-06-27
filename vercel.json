@@ -1,0 +1,8 @@
+{
+  "installCommand": "git submodule update --init --recursive",
+  "build": {
+    "env": {
+      "HUGO_VERSION": "0.163.1"
+    }
+  }
+}
