@@ -179,6 +179,13 @@ uglyURLs = false
 #               `lang-switcher`、`search`）
 [menu]
     ## 菜单栏
+    [[menu.main]]
+        url = "https://github.com/jalenzz"
+        name = ""
+        weight = 1
+        pre = "external"
+        post = "github"
+        identifier = "github"
 
 
 ##########################################
