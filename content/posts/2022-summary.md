@@ -1,5 +1,5 @@
 ---
-title: "二〇二二的碎片"
+title: "2022 年终总结"
 date: 2023-01-05
 draft: false
 ---
